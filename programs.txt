@@ -1,0 +1,5 @@
+TextToSpeech Software:
+sudo apt install festival
+text2wave exampletext.txt -o output.wav
+
+-------------------------------------------------------------------------------------------------

@@ -1,0 +1,4 @@
+rsync [Quelle] [Ziel]
+
+
+"~" funktioniert nicht, man muss "/home/bf" nutzen
