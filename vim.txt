@@ -1,5 +1,8 @@
 How to paste something from the clipboard into vim
 ----------------------------------
+ctrl + shift + v
+
+OR:
 
 Copy some text to the clipboard with ctrl + c -> go into vim
 -> go into insert mode (i) -> go to the menu of the terminal on the upper part of the window
