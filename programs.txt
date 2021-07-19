@@ -1,6 +1,5 @@
-Text To Speech Software: (with crappy quality)
-sudo apt install festival
-text2wave exampletext.txt -o output.wav
+A sqlite3 browser (comfortable gui program for sqlite3 databases)
+sudo apt install sqlitebrowser
 
 -------------------------------------------------------------------------------------------------
 
@@ -8,3 +7,11 @@ Testing gTTS (Google Text To Speech) (better quality, female voice)
 sudo pip3 install gtts
 
 gtts-cli -f test.txt -o output.mp3
+
+-------------------------------------------------------------------------------------------------
+
+Text To Speech Software: (with crappy quality)
+sudo apt install festival
+text2wave exampletext.txt -o output.wav
+
+-------------------------------------------------------------------------------------------------
