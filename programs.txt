@@ -1,6 +1,9 @@
 A sqlite3 browser (comfortable gui program for sqlite3 databases)
 sudo apt install sqlitebrowser
 
+=> works great, you can insert records, update records very fast, don't forget to write changes (ctrl + s)
+=> databases can be opened with a shortcut, very intuitive user interface
+
 -------------------------------------------------------------------------------------------------
 
 gTTS (Google Text To Speech) (better quality than festival, female voice)
