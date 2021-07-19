@@ -3,7 +3,7 @@ sudo apt install sqlitebrowser
 
 -------------------------------------------------------------------------------------------------
 
-Testing gTTS (Google Text To Speech) (better quality, female voice)
+gTTS (Google Text To Speech) (better quality than festival, female voice)
 sudo pip3 install gtts
 
 gtts-cli -f test.txt -o output.mp3
