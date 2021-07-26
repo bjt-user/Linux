@@ -18,6 +18,7 @@ Achtung: "Conflicting Constraints" können vorkommen, wenn man übersieht, dass 
 Neues Problem: Der Kreis auf dem Rechteck war nicht sichtbar.
 => Lösung, das Rechteck war über dem Kreis und hat das Rechteck verdeckt.
 Ich habe das Rechteck um 180° gedreht und den Kreis von unten gezeichnet.
+(3dimensionales Drehen = erst mittlere Maustaste gedrückt halten, dann rechte Maustaste gedrückt halten)
 Dann Sketch beendet und irgendwie auf "Hole" Button und dann "through all" auswählen und "ok".
 
 ---------------------------------------------------------------------------------------------------
