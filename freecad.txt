@@ -14,4 +14,7 @@ Achtung: "Conflicting Constraints" können vorkommen, wenn man übersieht, dass 
 
 => In der Pad-Ansicht, waren die Löcher schon automatisch "gebohrt".
 
+
+Neues Problem: Das Rechteck hat die selbe Farbe wie der Kreis und der Kreis ist daher nicht sichtbar.
+
 ---------------------------------------------------------------------------------------------------
