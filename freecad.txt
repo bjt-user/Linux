@@ -22,4 +22,6 @@ Wenn es dann immer noch verdeckt ist, ein bisschen drehen mit middle mouse butto
 (3dimensionales Drehen = erst mittlere Maustaste gedrückt halten, dann rechte Maustaste gedrückt halten)
 Dann Sketch beendet und irgendwie auf "Hole" Button und dann "through all" auswählen und "ok".
 
+=> geschicktere Lösung: nach dem Erstellen des Sketches den Button "switches between section and full view" klicken, dann sieht man den Kreis direkt!
+
 ---------------------------------------------------------------------------------------------------
