@@ -1,6 +1,11 @@
+Install: sudo apt install slic3r
+
 How to create a .gcode file from a .stl file:
 
 slic3r --output speakerbox2.gcode speaker_box_p1_v2.stl
 
 => but the standard settings seem to be bad, print is very wobbly and loose
 not a solid plastic
+
+I was not able to start the GUI of the program.
+-----------------------------------------------------------------------------------------------------------------
