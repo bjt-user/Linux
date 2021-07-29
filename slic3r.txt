@@ -1,3 +1,5 @@
 How to create a .gcode file from a .stl file:
 
 slic3r --output speakerbox2.gcode speaker_box_p1_v2.stl
+
+=> but the standard settings seem to be bad, print is very wobbly and loose
