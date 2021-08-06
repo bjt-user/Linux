@@ -1,5 +1,6 @@
 To initialize a printer you first have to use "CUPS".
 (there are youtube tutorials how to do it)
+Type http://localhost:631/ in a browser.
 
 Various commands that might help, when printing doesn't work:
 lpq       - seems to show the printing schedule of the default printer
