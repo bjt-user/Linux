@@ -29,3 +29,5 @@ Dann Sketch beendet und irgendwie auf "Hole" Button und dann "through all" ausw�
 shortcuts:
 shift + left arrow key   |   rotate view 90° left
 shift + right arrow key   |   rotate view 90° right
+
+https://wiki.freecadweb.org/Sandbox:Keyboard_Shortcuts
