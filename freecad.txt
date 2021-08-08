@@ -25,3 +25,7 @@ Dann Sketch beendet und irgendwie auf "Hole" Button und dann "through all" ausw�
 => geschicktere Lösung: nach dem Erstellen des Sketches den Button "switches between section and full view" klicken, dann sieht man den Kreis direkt!
 
 ---------------------------------------------------------------------------------------------------
+
+shortcuts:
+shift + left arrow key   |   rotate view 90° left
+shift + right arrow key   |   rotate view 90° right
