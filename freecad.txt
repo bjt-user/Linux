@@ -29,6 +29,10 @@ Dann Sketch beendet und irgendwie auf "Hole" Button und dann "through all" ausw√
 Wenn man Dinge im Data View editiert, aber die 3d Ansicht sich nicht aktualisiert hilft folgender Python Command:
 App.getDocument("drawerhandle2").recompute()
 
+oder
+
+App.ActiveDocument.recompute()
+
 ---------------------------------------------------------------------------------------------------
 
 shortcuts:
