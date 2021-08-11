@@ -53,3 +53,5 @@ Dann irgendwo in der Zeichenebene in der Nähe des Objekts hinklicken.
 Jetzt einen zweiten Punkt in der Zeichenebene setzen, am besten nicht zu weit entfernt vom ersten Punkt.
 Jetzt den Cursor bewegen und das Objekt rotiert um die ausgewählte Achse.
 Shift gedrückt halten, damit es einrastet, z.B. bei 90° oder 180°.
+
+funktioniert aber irgendwie nicht so zuverlässig, wird oft schief
