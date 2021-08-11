@@ -73,3 +73,6 @@ Draft.move([FreeCAD.ActiveDocument.Pad],FreeCAD.Vector(0,10,0),copy=False)
 
 But it doesn't work if you have multiple pads in a document.
 You have to use FreeCAD.ActiveDocument.nameofthepad or FreeCAD.ActiveDocument.nameoftheimport
+
+Wenn kommt "Draft is not defined", muss man erst
+"import Draft" eingeben.
