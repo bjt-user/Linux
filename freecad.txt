@@ -66,4 +66,6 @@ In der Klammer von axis=FreeCAD.Vector() steht die Achse drin, um die es sich dr
 
 Objekt bewegen:
 Habe das Objekt bewegt mit Draft -> Move, aber es hat nicht funktioniert und die Rotation wurde zurückgesetzt.
-Try with this command: Draft.move([FreeCAD.ActiveDocument.Pad],FreeCAD.Vector(0,10,0),copy=False)
+
+This command works: Draft.move([FreeCAD.ActiveDocument.Pad],FreeCAD.Vector(0,10,0),copy=False)
+(this example moves 10mm in y direction)
