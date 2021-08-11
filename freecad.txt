@@ -40,3 +40,15 @@ shift + left arrow key   |   rotate view 90° left
 shift + right arrow key   |   rotate view 90° right
 
 https://wiki.freecadweb.org/Sandbox:Keyboard_Shortcuts
+
+---------------------------------------------------------------------------------------------------
+
+Objekt drehen:
+Draft Workbench auswählen
+Objekt in der "Model"-Ansicht auswählen.
+Jetzt die "current working plane" auswählen. (oben mittig in der Toolleiste)
+(Hier muss man die Achse auswählen, um die man das Objekt drehen will)
+"Rotate" Werkzeug anklicken
+Dann irgendwo in der Zeichenebene hinklicken.
+Jetzt den Cursor bewegen und das Objekt rotiert um die ausgewählte Achse.
+Shift gedrückt halten, damit es einrastet, z.B. bei 90° oder 180°.
