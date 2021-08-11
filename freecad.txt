@@ -55,3 +55,9 @@ Jetzt den Cursor bewegen und das Objekt rotiert um die ausgewählte Achse.
 Shift gedrückt halten, damit es einrastet, z.B. bei 90° oder 180°.
 
 funktioniert aber irgendwie nicht so zuverlässig, wird oft schief
+
+besser geht es mit diesem Python Command:
+Draft.rotate([FreeCAD.ActiveDocument.Pad],90.0,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,-1,0),copy=False)
+
+Die 90.0 sind hier die Grad Drehung.
+In der Klammer von axis=FreeCAD.Vector() steht die Achse drin, um die es sich drehen soll. (hier scheinbar die Y-Achse in negativer Richtung)
