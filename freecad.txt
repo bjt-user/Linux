@@ -61,3 +61,9 @@ Draft.rotate([FreeCAD.ActiveDocument.Pad],90.0,FreeCAD.Vector(0,0,0),axis=FreeCA
 
 Die 90.0 sind hier die Grad Drehung.
 In der Klammer von axis=FreeCAD.Vector() steht die Achse drin, um die es sich drehen soll. (hier scheinbar die Y-Achse in negativer Richtung)
+
+---------------------------------------------------------------------------------------------------
+
+Objekt bewegen:
+Habe das Objekt bewegt mit Draft -> Move, aber es hat nicht funktioniert und die Rotation wurde zurückgesetzt.
+Try with this command: Draft.move([FreeCAD.ActiveDocument.Pad],FreeCAD.Vector(0,10,0),copy=False)
