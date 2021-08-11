@@ -70,3 +70,5 @@ Habe das Objekt bewegt mit Draft -> Move, aber es hat nicht funktioniert und die
 This command works:
 Draft.move([FreeCAD.ActiveDocument.Pad],FreeCAD.Vector(0,10,0),copy=False)
 (this example moves 10mm in y direction)
+
+But it doesn't work if you have multiple pads in a document.
