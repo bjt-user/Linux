@@ -65,6 +65,7 @@ In der Klammer von axis=FreeCAD.Vector() steht die Achse drin, um die es sich dr
 Noch einfacher geht es über das "Data" Register im linken Menü.
 Hier kann unter "Placement" -> "Angle" und "Axis" die Drehung eingestellt werden.
 Hier kann man auch die Pfeile am Ende der Textbox drücken und gedrückt halten um zu sehen, wie sich das Objekt dreht.
+(funktioniert scheinbar nur bei Imports oder ganzen Bodies/Parts)
 
 ---------------------------------------------------------------------------------------------------
 
@@ -85,6 +86,7 @@ Wenn kommt "Draft is not defined", muss man erst
 Noch einfacher geht es im "Data" Register im linken Menü.
 Unter "Placement" -> "Position".
 Hier kann man mit den Pfeiltasten am Ende der Textbox in Echtzeit bewegen.
+(funktioniert scheinbar nur bei Imports oder ganzen Bodies/Parts)
 
 ---------------------------------------------------------------------------------------------------
 
