@@ -62,7 +62,7 @@ Draft.rotate([FreeCAD.ActiveDocument.Pad],90.0,FreeCAD.Vector(0,0,0),axis=FreeCA
 Die 90.0 sind hier die Grad Drehung.
 In der Klammer von axis=FreeCAD.Vector() steht die Achse drin, um die es sich drehen soll. (hier scheinbar die Y-Achse in negativer Richtung)
 
-Noch einfacher geht es über das "Data" Register im rechten Menü.
+Noch einfacher geht es über das "Data" Register im linken Menü.
 Hier kann unter "Placement" -> "Angle" und "Axis" die Drehung eingestellt werden.
 Hier kann man auch die Pfeile am Ende der Textbox drücken und gedrückt halten um zu sehen, wie sich das Objekt dreht.
 
@@ -81,3 +81,7 @@ You have to use FreeCAD.ActiveDocument.nameofthepad or FreeCAD.ActiveDocument.na
 
 Wenn kommt "Draft is not defined", muss man erst
 "import Draft" eingeben.
+
+Noch einfacher geht es im "Data" Register im linken Menü.
+Unter "Placement" -> "Position".
+Hier kann man mit den Pfeiltasten am Ende der Textbox in Echtzeit bewegen.
