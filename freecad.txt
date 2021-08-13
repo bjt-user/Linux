@@ -85,3 +85,11 @@ Wenn kommt "Draft is not defined", muss man erst
 Noch einfacher geht es im "Data" Register im linken Menü.
 Unter "Placement" -> "Position".
 Hier kann man mit den Pfeiltasten am Ende der Textbox in Echtzeit bewegen.
+
+---------------------------------------------------------------------------------------------------
+
+Fehlermeldung beim Padden:
+"Pad: Result has multiple solids"
+
+=> Ein Pad muss immer an die vorhergehenden Pads angeschlossen sein und darf nicht in der Luft hängen.
+Es muss ein zusammenhängendes Objekt geschaffen werden.
