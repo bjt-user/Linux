@@ -95,3 +95,12 @@ Fehlermeldung beim Padden:
 
 => Ein Pad muss immer an die vorhergehenden Pads angeschlossen sein und darf nicht in der Luft hängen.
 Es muss ein zusammenhängendes Objekt geschaffen werden.
+
+---------------------------------------------------------------------------------------------------
+
+Text ausfräsen:
+
+Den Shapestring mit Part -> Extrude aufpolstern. (so groß, dass er das komplette vorige Objekt durchlöchert)
+Dann den extrudierten Shapestring in das Objekt positionieren. (Über das Register Data -> Position)
+Jetzt erst das vorige Gesamtobjekt auswählen, dann mit strg + Klick das Extrudierte Objekt auswählen.
+Dann Part -> Cut.
