@@ -2,3 +2,9 @@ cube([2,3,4]);
 
 Erzeugt einen Würfel.
 F5 drücken um Vorschau zu sehen.
+
+cylinder(r=5,h=6);
+
+Zylinder mit Radius 5 und Höhe 6.
+
+Ein "#" vor einem Objekt macht es durchsichtig.
