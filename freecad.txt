@@ -106,3 +106,10 @@ Jetzt erst das vorige Gesamtobjekt auswählen, dann mit strg + Klick das Extrudi
 Dann Part -> Cut.
 VORSICHT: DANACH WAR DAS PROJEKT NICHT MEHR WIE GEWOHNT BEARBEITBAR!!!
 Daher wahrscheinlich nur als allerletzten Schritt denkbar.
+
+---------------------------------------------------------------------------------------------------
+
+Shapestrings pocketen
+
+Manchmal funktioniert hier ein "Through all" nicht, da man dann wohl durch den allerersten Sketch des Grundkörpers geht.
+Dann darf man nicht komplett durchfräsen, sondern z.B. bei einem 5mm "dicken" Körper nur 4mm reinfräsen.
