@@ -105,3 +105,4 @@ Dann den extrudierten Shapestring in das Objekt positionieren. (Über das Regist
 Jetzt erst das vorige Gesamtobjekt auswählen, dann mit strg + Klick das Extrudierte Objekt auswählen.
 Dann Part -> Cut.
 VORSICHT: DANACH WAR DAS PROJEKT NICHT MEHR WIE GEWOHNT BEARBEITBAR!!!
+Daher wahrscheinlich nur als allerletzten Schritt denkbar.
