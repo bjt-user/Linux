@@ -16,3 +16,4 @@ I was not able to start the GUI of the program.
 -----------------------------------------------------------------------------------------------------------------
 
 --bed-temperature 60  |  to enable the heated bed and heat it to 60 degree celsius, default = no bed heating
+=> did NOT work, it shows 60 bed temperature in the gcode as a comment, but the printer does not heat the bed
