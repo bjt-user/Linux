@@ -12,3 +12,15 @@ convert -append ...
 Resizing an image:
 convert input.png -resize 1920x1080! output.png
 (without the exclamation mark the tool will keep the "aspect ratio" and the output has not the exact dimensions)
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+image editing with GIMP
+-----------------------
+Cropping:
+Select the "crop" tool in the left panel.
+Leftclick and hold in the image area.
+Drag a rectangle and stop holding the mouse button when you are done.
+Now press enter.
