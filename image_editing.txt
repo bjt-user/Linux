@@ -13,6 +13,12 @@ Resizing an image:
 convert input.png -resize 1920x1080! output.png
 (without the exclamation mark the tool will keep the "aspect ratio" and the output has not the exact dimensions)
 
+Adding text to an image:
+convert -pointsize 20 -fill yellow -draw 'text 600,900 "BEFORE"' printbed_before2.png printbed_before3.png
+The 600,900 are the x,y pixel dimensions where the text starts.
+Look at the resolution before adding text!
+pointsize is the size of the text.
+
 
 
 
