@@ -4,10 +4,8 @@ How to create a .gcode file from a .stl file:
 
 slic3r --output speakerbox2.gcode speaker_box_p1_v2.stl
 
-=> but the standard settings seem to be bad, print is very wobbly and loose
-not a solid plastic
+=> but the standard settings have a default of 3mm filament diameter
 
-Probably because the filament diameter was set wrong:
 "--filament-diameter Diameter in mm of your raw filament (default: 3)"
 => I have 1.75mm
 
