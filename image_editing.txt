@@ -3,3 +3,6 @@ image editing in linux on the command line
 
 Combine two images side by side and have a fixed height for both images:
 convert +append leftimage.png rightimage.png -resize x1080 output.png
+
+To vertically append images:
+convert -append ...
