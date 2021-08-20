@@ -8,3 +8,7 @@ convert +append leftimage.png rightimage.png -resize x1080 output.png
 
 To vertically append images:
 convert -append ...
+
+Resizing an image:
+convert input.png -resize 1920x1080! output.png
+(without the exclamation mark the tool will keep the "aspect ratio" and the output has not the exact dimensions)
