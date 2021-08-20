@@ -13,8 +13,13 @@ slic3r --output speakerbox2.gcode speaker_box_p1_v2.stl
 
 
 I was not able to start the GUI of the program.
------------------------------------------------------------------------------------------------------------------
 
+--wipe
+Wipe the nozzle while doing a retraction (default: no)
+=> This option helped me to get a better first layer and less strining in holes.
+
+-----------------------------------------------------------------------------------------------------------------
+BUGS:
 --bed-temperature 60  |  to enable the heated bed and heat it to 60 degree celsius, default = no bed heating
 => did NOT work, it shows 60 bed temperature in the gcode as a comment, but the printer does not heat the bed
 The gcode for heating up the bed to 60 degrees would be "M140 S60" or "M190 S60" if the printer should heat it up to 60 and wait
