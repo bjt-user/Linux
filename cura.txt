@@ -8,3 +8,7 @@ You can give a name and insert the properties of your printer.
 => cura has a nice gui, shows how much filament is needed and the duration of the print
 
 Attention: You have to add +25% to the estimated printing time cura displays.
+
+
+Prints with the "recommended" seem to be turn out way better than in "custom" mode with "Draft" profile even though the settings appear to be equal
+they are not.
