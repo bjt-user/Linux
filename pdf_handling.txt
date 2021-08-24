@@ -1,3 +1,3 @@
 Merge PDFs:
 
-pdfunite example1.pdf example2.pdf output.pdf
+pdfunite example1.pdf example2.pdf example3.pdf output.pdf
