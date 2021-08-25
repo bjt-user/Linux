@@ -113,3 +113,13 @@ Shapestrings pocketen
 
 Manchmal funktioniert hier ein "Through all" nicht, da man dann wohl durch den allerersten Sketch des Grundkörpers geht.
 Dann darf man nicht komplett durchfräsen, sondern z.B. bei einem 5mm "dicken" Körper nur 4mm reinfräsen.
+
+---------------------------------------------------------------------------------------------------
+
+Kegel/cones
+
+Man kann zwar mit Part -> Cone einen Kegel erzeugen, den kann man aber nicht bearbeiten, da er nicht Part of the active Body ist.
+Besser: Einen Sketch erzeugen, der nur rechts oder links der Y-Achse existiert.
+Dann "revolve around a selected sketch", dann sollte man direkt einen Cone sehen bei 360°.
+Denn er hat wohl standardmäßig revolve around the Y-axis ausgewählt.
+Man kann aber auch andere Achsen (wahrscheinlich auch selbst erzeugte) verwenden.
