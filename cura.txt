@@ -10,5 +10,4 @@ You can give a name and insert the properties of your printer.
 Attention: You have to add +25% to the estimated printing time cura displays.
 
 
-Prints with the "recommended" seem to be turn out way better than in "custom" mode with "Draft" profile even though the settings appear to be equal
-they are not.
+Rafts are good for printing gears, but rafts also create a bad first layer for holes.
