@@ -11,3 +11,4 @@ Attention: You have to add +25% to the estimated printing time cura displays.
 
 
 Rafts are good for printing gears, but rafts also create a bad first layer for holes.
+Because brims lead to elefant food at gears.
