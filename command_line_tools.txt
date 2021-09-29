@@ -1,0 +1,19 @@
+Make bootable USB stick: (fast and easy with "dd" command)
+
+sudo fdisk -l
+
+This should show your USB stick in the last output line like this:
+/dev/sdb1  *     2048 120979455 120977408 57.7G  c W95 FAT32 (LBA)
+
+Now 'cd' into the folder your .iso file is in.
+cd ~/Downloads
+
+sudo dd if=./manjaro-xfce-21.1.4-210927-linux513.iso of=/dev/sdb
+
+if stands for input file, of stands for output file
+
+Notice, that you don't type the 1 after sdb. That is the partitioning that happens automatically.
+
+Now you can unmount your USB stick and take it out.
+
+-------------------------------------------------------------------------------------------------------------------------
