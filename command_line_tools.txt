@@ -18,4 +18,6 @@ The . before /manjaro... means that the file is in the folder you are currently 
 
 Now you can unmount your USB stick and take it out.
 
+=> FAIL: was not able to boot the image. Windows kept coming up.
+
 -------------------------------------------------------------------------------------------------------------------------
