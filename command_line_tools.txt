@@ -14,6 +14,8 @@ if stands for input file, of stands for output file
 
 Notice, that you don't type the 1 after sdb. That is the partitioning that happens automatically.
 
+The . before /manjaro... means that the file is in the folder you are currently in.
+
 Now you can unmount your USB stick and take it out.
 
 -------------------------------------------------------------------------------------------------------------------------
