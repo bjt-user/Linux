@@ -20,6 +20,8 @@ Now you can unmount your USB stick and take it out.
 
 => FAIL: was not able to boot the image. Windows kept coming up.
 But the same result with "Balena Etcher".
-Compaq/HP Notebooks seem not be able to boot into Linux.
+=> Then I used the BIOS tool "HP Disk Sanitizer" which deletes the disk drive and makes it not readable anymore.
+This took 22 hours.
+=> After that the laptop actually booted into Manjaro.
 
 -------------------------------------------------------------------------------------------------------------------------
