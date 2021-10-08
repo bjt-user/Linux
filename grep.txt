@@ -1,0 +1,3 @@
+grep -ni word file1.txt       prints all lines that contain the word "word" from the file "file1.txt"
+(option i for "ignore case" (not case sensitive))
+(option n to show the line numbers)
