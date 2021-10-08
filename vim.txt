@@ -7,3 +7,17 @@ OR:
 Copy some text to the clipboard with ctrl + c -> go into vim
 -> go into insert mode (i) -> go to the menu of the terminal on the upper part of the window
 -> edit -> paste
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+Vimdiff ohne Farbcodierung:
+
+Folgendes in die .vimrc schreiben (wenn sie nicht existiert im home-Verzeichnis, dann neue Datei anlegen):
+
+if $COLOR=='OFF'
+  set t_Co=0
+endif
+
+
+Und vimdiff mit folgendem Befehl aufrufen: COLOR=OFF vimdiff file1 file2
+Das diffchange highlighting bleibt leider, kann man aber mit :hi DiffText term=none ausstellen (hat bei mir nicht in der vimrc funktioniert) 
