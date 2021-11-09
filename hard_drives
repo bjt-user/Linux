@@ -3,3 +3,12 @@ Bought a new SSD.
 (Ubuntu makes a mount sound though)
 
 sudo apt install gparted
+(it is a GUI program)
+=> it recognizes the SSD
+==> device -> create new partition table -> gpt
+==> create a new partition in the unallocated space (file system: ext4)
+===> Apply all operations
+
+Now the SSD is recognized by the file browser.
+
+But I still can't copy paste files into the SSD because of permission problems.
