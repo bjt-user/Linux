@@ -1,3 +1,5 @@
 Bought a new SSD.
 => it is not recognized in file browser by Ubuntu and Debian.
 (Ubuntu makes a mount sound though)
+
+sudo apt install gparted
