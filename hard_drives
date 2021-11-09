@@ -12,3 +12,7 @@ sudo apt install gparted
 Now the SSD is recognized by the file browser.
 
 But I still can't copy paste files into the SSD because of permission problems.
+
+sudo dd if=/dev/sda of=/dev/sdb
+=> started at 19:42
+=> finished at ?
