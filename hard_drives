@@ -2,6 +2,8 @@ Bought a new SSD.
 => it is not recognized in file browser by Ubuntu and Debian.
 (Ubuntu makes a mount sound though)
 
+With "lsblk" you can see all hard drives.
+
 sudo apt install gparted
 (it is a GUI program)
 => it recognizes the SSD
@@ -23,3 +25,8 @@ sudo dd if=/dev/sda of=/dev/sdb
 
 => SSD is not visible in file browser anymore.
 Maybe the problem is that I created a partition.
+
+GParted says there is a problem with partitions or something.
+So I fill the SSD with all zeros and then try again with the dd command.
+
+sudo dd if=/dev/zero of=/dev/sdb bs=1M
