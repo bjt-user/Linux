@@ -30,3 +30,11 @@ GParted says there is a problem with partitions or something.
 So I fill the SSD with all zeros and then try again with the dd command.
 
 sudo dd if=/dev/zero of=/dev/sdb bs=1M
+=>
+dd: error writing '/dev/sdb': No space left on device
+122105+0 records in
+122104+0 records out
+128035675136 bytes (128GB, 119GiB) copied, 10074,8s, 12,7 MB/s
+
+Jetzt nochmal versuchen zu klonen mit dd.
+sudo dd if=/dev/sda of=/dev/sdb
