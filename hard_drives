@@ -16,3 +16,10 @@ But I still can't copy paste files into the SSD because of permission problems.
 sudo dd if=/dev/sda of=/dev/sdb
 => started at 19:42
 => finished at ?
+"dd: writing to '/dev/sdb': No space left on device
+250069679+0 records in
+250069678+0 records out
+128035675136 bytes (128GB, 119GiB) copied, 28423,8 s, 4,5MB/s"
+
+=> SSD is not visible in file browser anymore.
+Maybe the problem is that I created a partition.
