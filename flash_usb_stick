@@ -1,0 +1,4 @@
+On Debian balenaEtcher did not start.
+
+./balenaEtcher-1.5.122-x64.AppImage --no-sandbox
+=> with this command balenaEtcher works!
