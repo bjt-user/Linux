@@ -43,3 +43,7 @@ sudo dd if=/dev/sda of=/dev/sdb
 It did probably not work because the drives don't have the same memory size, so you can't copy data bit by bit.
 
 While partitioning etc., the drive has to unmounted, otherwise the functions will be grey in Gparted!
+
+To copy the internal drive I can't unmount it because I am using it.
+=> So I probably have to use a Linux Live System on a USB stick.
+==> Downloaded Gparted Live.
