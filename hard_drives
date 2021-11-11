@@ -36,9 +36,10 @@ dd: error writing '/dev/sdb': No space left on device
 122104+0 records out
 128035675136 bytes (128GB, 119GiB) copied, 10074,8s, 12,7 MB/s
 
-Jetzt nochmal versuchen zu klonen mit dd.
+Trying again with dd:
 sudo dd if=/dev/sda of=/dev/sdb
+=> not recognized by file browser
 
-It will probably not work because the drives don't have the same memory size, so you can't copy data bit by bit.
+It did probably not work because the drives don't have the same memory size, so you can't copy data bit by bit.
 
 While partitioning etc., the drive has to unmounted, otherwise the functions will be grey in Gparted!
