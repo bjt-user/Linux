@@ -47,3 +47,9 @@ While partitioning etc., the drive has to unmounted, otherwise the functions wil
 To copy the internal drive I can't unmount it because I am using it.
 => So I probably have to use a Linux Live System on a USB stick.
 ==> Downloaded Gparted Live.
+
+All attempts failed.
+########################################################################################################################################################
+CONCLUSION:
+- either install a fresh operating system (recommended)
+- or use two usb to sata cables, connect both drives to a third computer and use GParted on that
