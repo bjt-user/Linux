@@ -38,3 +38,5 @@ dd: error writing '/dev/sdb': No space left on device
 
 Jetzt nochmal versuchen zu klonen mit dd.
 sudo dd if=/dev/sda of=/dev/sdb
+
+While partitioning etc., the drive has to unmounted, otherwise the functions will be grey in Gparted!
