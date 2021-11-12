@@ -5,3 +5,7 @@ On Debian balenaEtcher did not start.
 
 But what to do if the USB-stick is recognized by "lsusb" but not by "fdisk -l" or the file browser?
 Then balenaEtcher doesn't know it either...
+
+run the following command (but don't wait for direct output)
+sudo tail -n 0 -f /var/log/syslog
+When you plug/unplug USB-stick messages should be printed to the terminal.
