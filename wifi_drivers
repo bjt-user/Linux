@@ -8,3 +8,4 @@ This command shows the wifi controller.
 Then I took an old HP laptop.
 Took the wifi module from the back which was easily accessible.
 Put it into my Acer laptop and the wifi worked out of the box I did not have to do anything.
+"Qualcomm Atheros AR9285 Wireless Network Adapter" works on Ubuntu 20.04 out of the box, zero installation.
