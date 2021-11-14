@@ -8,6 +8,7 @@ cube([2,3,4]);
 Produziert ein viereckiges Objekt. (Länge, Breite, Höhe)
 
 F5 drücken um Vorschau zu sehen.
+F6 drücken zum rendern.
 
 Linke Maustaste gedrückt halten und Maus bewegen um die Perspektive zu ändern.
 Rechte Maustaste gedrückt halten und Maus bewegen um die Position im 3d View zu ändern.
