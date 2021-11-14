@@ -25,3 +25,28 @@ Folgender Code bewegt einen Zylinder um 4 Stellen nach vorne, hinten, oben:
 translate([4,4,4]) {
     cylinder(2, 1.5, 3);
 }
+
+#############################################################################################
+# FILLETS ###################################################################################
+#############################################################################################
+
+%minkowski() {
+cube(
+[platelength-8,
+platewidth-8,
+plateheight]);
+
+translate([4,4,0]) {
+  cylinder(plateheight,
+    4,
+    4);
+  }
+}
+
+Die Minkowski-Funktion ist eine komplexe mathematische Funktion.
+Unter anderem addiert sie die Dimensionen der beiden Objekte die verbunden werden.
+Daher muss der Zylinder etwas in das Rechteck hineingeschoben werden und 
+vom Rechteck wieder jeweils die zweifache Verschiebung abgezogen werden.
+Verschiebung ist hier gleich des Zylinderradius.
+Man könnte hier noch die 4 als eine Variable setzen.
+platelength, plateheight, platewidth sind Variablen.
