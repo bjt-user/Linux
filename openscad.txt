@@ -1,7 +1,7 @@
 https://openscad.org/cheatsheet/
 
 Variablen deklarieren:
-myVariable = 120;
+my_variable = 120;
 
 cube([2,3,4]);
 
