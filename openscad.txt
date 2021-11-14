@@ -11,7 +11,8 @@ F5 drücken um Vorschau zu sehen.
 
 Linke Maustaste gedrückt halten und Maus bewegen um die Perspektive zu ändern.
 Rechte Maustaste gedrückt halten und Maus bewegen um die Position im 3d View zu ändern.
-Mausrad gedrückt halten und Maus bewegen zum Zoomen. (oder Mausrad drehen)
+Mausrad gedrückt halten und Maus bewegen zum Zoomen.
+Mausrad drehen zoomt auch, jedoch verändert sich auch die Skala.
 
 cylinder(r=5,h=6);
 
