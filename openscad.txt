@@ -14,7 +14,7 @@ cylinder(r=5,h=6);
 
 Zylinder mit Radius 5 und Höhe 6.
 
-Ein "#" vor einem Objekt macht es durchsichtig.
+Ein "%" vor einem Objekt macht es durchsichtig.
 
 Folgender Code bewegt einen Zylinder um 4 Stellen nach vorne, hinten, oben:
 translate([4,4,4]) {
