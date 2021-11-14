@@ -1,8 +1,12 @@
 cube([2,3,4]);
 
-Produces a square object.
+Produziert ein viereckiges Objekt
 
 F5 drücken um Vorschau zu sehen.
+
+Linke Maustaste gedrückt halten und Maus bewegen um die Perspektive zu ändern.
+Rechte Maustaste gedrückt halten und Maus bewegen um die Position im 3d View zu ändern.
+Mausrad gedrückt halten und Maus bewegen zum Zoomen. (oder Mausrad drehen)
 
 cylinder(r=5,h=6);
 
