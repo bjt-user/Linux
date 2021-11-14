@@ -1,6 +1,6 @@
 cube([2,3,4]);
 
-Produziert ein viereckiges Objekt
+Produziert ein viereckiges Objekt. (Länge, Breite, Höhe)
 
 F5 drücken um Vorschau zu sehen.
 
