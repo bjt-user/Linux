@@ -34,10 +34,10 @@ translate([4,4,4]) {
 cube(
 [platelength-8,
 platewidth-8,
-plateheight]);
+plateheight/2]);
 
 translate([4,4,0]) {
-  cylinder(plateheight,
+  cylinder(plateheight/2,
     4,
     4);
   }
