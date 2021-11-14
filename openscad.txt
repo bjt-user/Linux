@@ -1,5 +1,8 @@
 https://openscad.org/cheatsheet/
 
+Variablen deklarieren:
+myVariable = 120;
+
 cube([2,3,4]);
 
 Produziert ein viereckiges Objekt. (Länge, Breite, Höhe)
