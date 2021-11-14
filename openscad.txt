@@ -1,6 +1,7 @@
 cube([2,3,4]);
 
-Erzeugt einen Würfel.
+Produces a square object.
+
 F5 drücken um Vorschau zu sehen.
 
 cylinder(r=5,h=6);
