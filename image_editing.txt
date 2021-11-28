@@ -34,3 +34,12 @@ Select the "crop" tool in the left panel.
 Leftclick and hold in the image area.
 Drag a rectangle and stop holding the mouse button when you are done.
 Now press enter.
+
+Drawing a line:
+Select the paintbrush/pencil/... tool on the left.
+With right click on the icon you choose a particular tool.
+On the left side further down left click on the brush and select the shape of your tool.
+(for example "1. pixel")
+Left click on the canvas once to make a dot. Now hold the shift key.
+Then you can select a second point which will be the end point of the line.
+You can keep on doing this to create contiguous objects.
