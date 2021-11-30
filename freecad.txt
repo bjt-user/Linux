@@ -123,3 +123,17 @@ Besser: Einen Sketch erzeugen, der nur rechts oder links der Y-Achse existiert.
 Dann "revolve around a selected sketch", dann sollte man direkt einen Cone sehen bei 360°.
 Denn er hat wohl standardmäßig revolve around the Y-axis ausgewählt.
 Man kann aber auch andere Achsen (wahrscheinlich auch selbst erzeugte) verwenden.
+
+---------------------------------------------------------------------------------------------------
+
+Konische Zahnräder
+
+Zwei Zahnräder mit unterschiedlicher Modulgröße erzeugen.
+Dann ein Zahnrad in unterschiedlicher Z-Position positionieren.
+Ein Zahnrad auswählen.
+Nun in "Part Design" -> "Loft a selected profile through other profile sections" auswählen.
+Auf "Add Section" klicken.
+Auf den Reiter "Model" klicken.
+Jetzt auf das zweite Gear klicken. (kurz warten, kann 2-3 Sekunden dauern)
+Nun wird das konische Zahnrad erzeugt.
+Jetzt nochmal auf den Reiter "Tasks" und mit "Ok" bestätigen.
