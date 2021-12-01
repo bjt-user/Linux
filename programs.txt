@@ -18,3 +18,7 @@ sudo apt install festival
 text2wave exampletext.txt -o output.wav
 
 -------------------------------------------------------------------------------------------------
+
+Record your screen:
+sudo apt install simplescreenrecorder
+=> the program can be started over the "show applications" menu
