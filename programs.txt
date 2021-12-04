@@ -25,6 +25,7 @@ sudo apt install simplescreenrecorder
 "You are using a non-X11 window system (e.g. Wayland) which is currently not supported by SimpleScreenRecorder.
 Several features will most likely not work properly.
 In order to solve this, you should log out, choose a X11/Xorg session at the login screen, and then log back in."
+=> does not work on Debian, but DOES work on Ubuntu
 
 You could probably just use OBS instead.
 sudo apt install obs-studio
