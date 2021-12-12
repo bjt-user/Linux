@@ -1,0 +1,2 @@
+Jumping a word back/forward while entering commands in the terminal:
+ctrl + arrowkeys
