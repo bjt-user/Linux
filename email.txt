@@ -1,8 +1,9 @@
 #Sending/Receiving Emails In The Terminal?
 #######################################################################
+WARNING: NEVER INSTALL THE PACKAGE "QMAIL"
+
 mutt (FAIL)
 -----------
-WARNING: NEVER INSTALL THE PACKAGE "QMAIL"
 
 sudo apt install mutt
 
@@ -31,6 +32,11 @@ Maybe I entered a wrong password? But I don't get prompted for a password anymor
 
 Maybe try neomutt or a different software.
 
+neomutt (fail)
+-------
+sudo apt install neomutt
+
+same problem as in mutt
 -------------------------------------------------------------------------------------------------
 
 GUI Email-Client
