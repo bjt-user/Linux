@@ -32,6 +32,8 @@ Maybe I entered a wrong password? But I don't get prompted for a password anymor
 
 Maybe try neomutt or a different software.
 
+Operation manuelle Installation könnte evtl. helfen.
+
 neomutt (fail)
 -------
 sudo apt install neomutt
