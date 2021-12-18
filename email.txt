@@ -25,7 +25,7 @@ content of muttrc:
 mutt
 
 => Unexpected TLS handshake...
-Maybe I entered a wrong password? But I don't get promped for a password anymore.
+Maybe I entered a wrong password? But I don't get prompted for a password anymore.
 
 -------------------------------------------------------------------------------------------------
 
