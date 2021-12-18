@@ -1,0 +1,23 @@
+Sending/Receiving Emails In The Terminal?
+-----------------------------------------
+WARNING: NEVER INSTALL THE PACKAGE "QMAIL"
+
+sudo apt install mutt
+
+cd
+
+cd .config
+
+If there is no .config folder, create one.
+
+mkdir mutt
+
+cd mutt
+
+vim muttrc
+
+-------------------------------------------------------------------------------------------------
+
+GUI Email-Client
+
+https://github.com/bjt-user/Linux/blob/master/evolution.txt
