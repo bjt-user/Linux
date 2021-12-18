@@ -33,6 +33,10 @@ Maybe try neomutt or a different software.
 
 Operation manuelle Installation könnte evtl. helfen.
 
+mutt -v zeigt u.a.:
+Mutt 2.0.5 (2021-01-21)
+configure options: --with-gnutls
+
 neomutt (fail)
 -------
 sudo apt install neomutt
