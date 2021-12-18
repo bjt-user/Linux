@@ -1,5 +1,7 @@
-Sending/Receiving Emails In The Terminal?
------------------------------------------
+#Sending/Receiving Emails In The Terminal?
+#######################################################################
+mutt (FAIL)
+-----------
 WARNING: NEVER INSTALL THE PACKAGE "QMAIL"
 
 sudo apt install mutt
