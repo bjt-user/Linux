@@ -16,6 +16,16 @@ cd mutt
 
 vim muttrc
 
+content of muttrc:
+
+"set folder = "imaps://myname@emailservice.com@[imapservername]:[portnumber]"
+
+"set spoolfile = "+INBOX"
+
+mutt
+
+=> Unexpected TLS handshake...
+
 -------------------------------------------------------------------------------------------------
 
 GUI Email-Client
