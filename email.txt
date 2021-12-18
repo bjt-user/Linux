@@ -27,6 +27,8 @@ mutt
 => Unexpected TLS handshake...
 Maybe I entered a wrong password? But I don't get prompted for a password anymore.
 
+Maybe try neomutt or a different software.
+
 -------------------------------------------------------------------------------------------------
 
 GUI Email-Client
