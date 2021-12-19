@@ -59,6 +59,8 @@ Daher muss der Zylinder etwas in das Rechteck hineingeschoben werden und
 vom Rechteck wieder jeweils die zweifache Verschiebung abgezogen werden.
 Verschiebung ist hier gleich des Zylinderradius.
 
+=> funktioniert aber nicht immer, z.B. bei sehr dünnen Rechtecken, z.B. wenn man so Wände erzeugen will.
+
 #############################################################################################
 # MODULES ###################################################################################
 #############################################################################################
