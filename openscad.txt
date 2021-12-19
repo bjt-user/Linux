@@ -74,3 +74,5 @@ actions
 
 include <filename> acts as if the contents of the included file were written in the including file, and
 use <filename> imports modules and functions, but does not execute any commands other than those definitions.
+
+(before including/using make sure you save your file in the same folder as the file you want to include/use)
