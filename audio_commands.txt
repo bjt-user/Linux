@@ -22,3 +22,10 @@ qpaeq
 
 Error
 solution: https://linuxhint.com/install-pulseaudio-equalizer-linux-mint/
+
+to be continued...
+
+
+
+Using OpenShot:
+Imported movie, separate audio command took forever so I quit.
