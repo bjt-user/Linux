@@ -7,3 +7,12 @@ Converting to .webm works the same way:
 ffmpeg -i input.mp4 output.webm
 
 ----------------------------------------------------------------------------------------
+
+Volume problem in movies
+-------------------------
+
+In movies the volume is always unappropriate, shootings and music is very loud,
+quiet conversations you want to hear are unhearable silent.
+In my experience while using headphones this problem is less dominant but still exists.
+
+sudo apt install pulseaudio_equalizer
