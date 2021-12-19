@@ -58,3 +58,11 @@ Unter anderem addiert sie die Dimensionen der beiden Objekte die verbunden werde
 Daher muss der Zylinder etwas in das Rechteck hineingeschoben werden und 
 vom Rechteck wieder jeweils die zweifache Verschiebung abgezogen werden.
 Verschiebung ist hier gleich des Zylinderradius.
+
+#############################################################################################
+# MODULES ###################################################################################
+#############################################################################################
+Modules work like functions or methods in programming.
+module name ( parameters ) {
+actions
+}
