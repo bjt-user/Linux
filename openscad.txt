@@ -33,16 +33,23 @@ translate([4,4,4]) {
 # FILLETS ###################################################################################
 #############################################################################################
 
-%minkowski() {
+$fn=40;
+
+platelength=40;
+platewidth=10;
+plateheight=4;
+filletradius=2;
+
+minkowski() {
 cube(
-[platelength-8,
-platewidth-8,
+[platelength-filletradius*2,
+platewidth-filletradius*2,
 plateheight/2]);
 
-translate([4,4,0]) {
+translate([filletradius,filletradius,0]) {
   cylinder(plateheight/2,
-    4,
-    4);
+    filletradius,
+    filletradius);
   }
 }
 
@@ -51,5 +58,3 @@ Unter anderem addiert sie die Dimensionen der beiden Objekte die verbunden werde
 Daher muss der Zylinder etwas in das Rechteck hineingeschoben werden und 
 vom Rechteck wieder jeweils die zweifache Verschiebung abgezogen werden.
 Verschiebung ist hier gleich des Zylinderradius.
-Man könnte hier noch die 4 als eine Variable setzen.
-platelength, plateheight, platewidth sind Variablen.
