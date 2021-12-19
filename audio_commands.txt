@@ -16,3 +16,9 @@ quiet conversations you want to hear are unhearable silent.
 In my experience while using headphones this problem is less dominant but still exists.
 
 sudo apt install pulseaudio-equalizer
+
+command to start the program:
+qpaeq
+
+Error
+solution: https://linuxhint.com/install-pulseaudio-equalizer-linux-mint/
