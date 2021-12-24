@@ -8,4 +8,4 @@ In PCB Layout Editor:
 Alt + 3  -> opens 3d viewer
 
 GND-Layer
-If the ground plane worked the ground pins have a dashed line around them.
+If the ground plane worked the ground pins have a dashed circle around them or rather 4 corners.
