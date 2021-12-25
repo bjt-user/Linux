@@ -87,3 +87,5 @@ If the ground plane worked the ground pins have a dashed circle around them or r
 How to delete unwanted text on the pcb?
 Moving the cursor on the text and hitting the DEL key does not work.
 => hover over the text and hit E. Then uncheck "visibility".
+
+Last step in PCB layout editor "perform design rules checks" (bug symbol).
