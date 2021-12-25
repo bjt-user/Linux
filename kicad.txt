@@ -1,3 +1,17 @@
+#####################################################################################################
+# Schematic Layout Editor
+#####################################################################################################
+
+Zooming:
+F1: Zoom into cursor position (stronger zoom than mouse wheel)
+F2: Zoom out
+Pos 1: Go back to standard view
+
+#####################################################################################################
+# PCB Layout Editor
+#####################################################################################################
+
+
 How to straighten lines in PCB layout editor?
 
 Zoom in to the line. Left click to select, then right click -> properties and set the X or Y coordinates to the same point.
@@ -7,9 +21,7 @@ Or press E instead of the right click.
 In PCB Layout Editor:
 Alt + 3  -> opens 3d viewer
 
-Zooming:
-F1: Zoom into cursor position (stronger zoom than mouse wheel)
-F2: Zoom out
+
 
 GND-Layer
 If the ground plane worked the ground pins have a dashed circle around them or rather 4 corners.
