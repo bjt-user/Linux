@@ -48,6 +48,8 @@ Add a PWR_FLAG-symbol and connect it to the GND-symbol.
 Those two symbols are only connected to eachother and nowhere else.
 => Now ERC is happy.
 If you also have unconnected positive voltages you have to do it similarly.
+(You can also connect the PWR_FLAG symbol directly to a GND symbol that is inside the circuit,
+but you have to put it very close to the GND symbol so that it is directly tied to it.)
 
 #####################################################################################################
 # PCB Layout Editor
