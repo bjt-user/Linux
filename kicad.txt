@@ -71,6 +71,9 @@ and not be printed on the pcb)
 The checkboxes in front of the layer enable/disable visibility of the layer.
 The arrow in front of the layer signals which layer you are working on right now.
 
+Though the hotkeys are the same as in Schematic Layout Editor you have to leftclick to select a part
+before you can rotate, move, ect...
+
 
 How to straighten lines in PCB layout editor?
 
