@@ -17,6 +17,8 @@ F1: Zoom into cursor position (stronger zoom than mouse wheel)
 F2: Zoom out
 Pos 1: Go back to standard view
 
+When the schematic is done, go to tools->annotate schematic!
+
 #####################################################################################################
 # PCB Layout Editor
 #####################################################################################################
