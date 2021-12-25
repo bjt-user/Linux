@@ -1,4 +1,4 @@
-Step 1: Make a schematic in Schematic Layout Editor
+Step 1: Make a schematic in Schematic Layout Editor and annotate symbols
 Step 2: Go into PCB Layout Editor and load the Schematic
 Step 3: Asign Footprints
 Step 4: Routing
@@ -8,6 +8,9 @@ Step 6: Export Gerber Files
 #####################################################################################################
 # Schematic Layout Editor
 #####################################################################################################
+
+A: place and select symbol at cursor position
+E: show properties of the symbol at cursor position
 
 Zooming:
 F1: Zoom into cursor position (stronger zoom than mouse wheel)
