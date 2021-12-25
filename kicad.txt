@@ -77,4 +77,7 @@ Alt + 3  -> opens 3d viewer
 
 
 GND-Layer
-If the ground plane worked the ground pins have a dashed circle around them or rather 4 corners.
+If the ground plane worked the ground pins have a dashed circle around them or rather 4 corners (in the 3d view).
+
+How to delete unwanted text on the pcb?
+Moving the cursor on the text and hitting the DEL key does not work.
