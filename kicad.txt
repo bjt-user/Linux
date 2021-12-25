@@ -66,6 +66,8 @@ After everything is assign click apply and save and ok.
 
 On the right hand side you see a lot of different layers.
 To see what each layer is hover with the mouse over the layer.
+(dwgs.user = explanatory drawing from the user, those will probably not be in the gerber file
+and not be printed on the pcb)
 The checkboxes in front of the layer enable/disable visibility of the layer.
 The arrow in front of the layer signals which layer you are working on right now.
 
