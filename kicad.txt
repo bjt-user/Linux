@@ -42,7 +42,12 @@ After adding annotations click the "perform electrical rules check" button on th
 Click on "run".
 => I get the warning: pin conntected to other pins but not driven by any pin
 (this happened to GND-connections)
-(you can probably ignore this warning)
+(you can probably ignore this warning, but to get rid of it:
+Add another GND-symbol and place it outside of the circuit.
+Add a PWR_FLAG-symbol and connect it to the GND-symbol.
+Those two symbols are only connected to eachother and nowhere else.
+=> Now ERC is happy.
+If you also have unconnected positive voltages you have to do it similarly.
 
 #####################################################################################################
 # PCB Layout Editor
