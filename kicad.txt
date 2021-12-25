@@ -30,9 +30,16 @@ F1: Zoom into cursor position (stronger zoom than mouse wheel)
 F2: Zoom out
 Pos 1: Go back to standard view
 
+For electrical connections it is important that there are "junction points" between wires
+that have been placed separately. Sometimes these are created automatically, sometimes not.
+You can place them manually by clicking the symbol on the right hand side.
+
 When the schematic is done, go to tools->annotate schematic!
 (this adds numbers to the parts, R1, R2,...)
 (places numbers where the "?" in the reference of the part was)
+
+After adding annotations click the "perform electrical rules check" button on the upper side of the screen.
+Click on "run".
 
 #####################################################################################################
 # PCB Layout Editor
