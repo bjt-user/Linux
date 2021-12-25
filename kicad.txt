@@ -9,13 +9,20 @@ Step 6: Export Gerber Files
 # Schematic Layout Editor
 #####################################################################################################
 
+Activating "change cursor shape" at the left hand side helps to place parts on the same x/y-position.
+
 A: place and select symbol/part at cursor position
 E: show properties of the symbol at cursor position (no left click needed)
+(this is needed to set part value and reference)
 M: move part at cursor position (no left click needed)
+G: drag part at cursor position (no left click needed) (part stays in connection with the circuit)
 C: copy part at cursor position (no left click needed)
+R: rotate part
+W: place wire at cursor position (to end the wire do a left-click)
 DEL/ENTF: delete part at cursor position (no left click needed)
 (or you can select multiple parts by using the "select item" tool (mouse symbol)
 and dragging a rectangle around them)
+ESC: end the current mode
 
 
 Zooming:
@@ -24,6 +31,8 @@ F2: Zoom out
 Pos 1: Go back to standard view
 
 When the schematic is done, go to tools->annotate schematic!
+(this adds numbers to the parts, R1, R2,...)
+(places numbers where the "?" in the reference of the part was)
 
 #####################################################################################################
 # PCB Layout Editor
