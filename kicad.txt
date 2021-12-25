@@ -11,6 +11,7 @@ Step 6: Export Gerber Files
 
 A: place and select symbol/part at cursor position
 E: show properties of the symbol at cursor position (no left click needed)
+M: move part at cursor position (no left click needed)
 C: copy part at cursor position (no left click needed)
 DEL/ENTF: delete part at cursor position (no left click needed)
 (or you can select multiple parts by using the "select item" tool (mouse symbol)
