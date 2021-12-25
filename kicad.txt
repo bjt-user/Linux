@@ -51,11 +51,14 @@ If you also have unconnected positive voltages you have to do it similarly.
 (You can also connect the PWR_FLAG symbol directly to a GND symbol that is inside the circuit,
 but you have to put it very close to the GND symbol so that it is directly tied to it.)
 
-Now click on "assign PCB footprints to schematic symbols".
+Now click on "assign PCB footprints to schematic symbols" on the upper side of the screen.
 On the left hand side you have the footprint library i.e. "Battery".
 On the right side you have the footprints.
 You can filter the footprints by name if you enable the button in front of the search field.
 You can copy and paste footprints to other symbols with ctrl + c and ctrl + v.
+You can view the footprint by clicking on the corresponding button on the upper left side.
+(there is also a 3d viewer or measure distances with a tool)
+After everything is assign click apply and save and ok.
 
 #####################################################################################################
 # PCB Layout Editor
