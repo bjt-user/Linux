@@ -7,5 +7,9 @@ Or press E instead of the right click.
 In PCB Layout Editor:
 Alt + 3  -> opens 3d viewer
 
+Zooming:
+F1: Zoom into cursor position (stronger zoom than mouse wheel)
+F2: Zoom out
+
 GND-Layer
 If the ground plane worked the ground pins have a dashed circle around them or rather 4 corners.
