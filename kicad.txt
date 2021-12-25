@@ -1,6 +1,6 @@
 Step 1: Make a schematic in Schematic Layout Editor and annotate symbols
 Step 2: Go into PCB Layout Editor and load the Schematic
-Step 3: Asign Footprints
+Step 3: Assign Footprints
 Step 4: Routing
 Step 5: Make automatic check that everything is connected and view PCB layout in 3d view
 Step 6: Export Gerber Files
@@ -9,8 +9,13 @@ Step 6: Export Gerber Files
 # Schematic Layout Editor
 #####################################################################################################
 
-A: place and select symbol at cursor position
-E: show properties of the symbol at cursor position
+A: place and select symbol/part at cursor position
+E: show properties of the symbol at cursor position (no left click needed)
+C: copy part at cursor position (no left click needed)
+DEL/ENTF: delete part at cursor position (no left click needed)
+(or you can select multiple parts by using the "select item" tool (mouse symbol)
+and dragging a rectangle around them)
+
 
 Zooming:
 F1: Zoom into cursor position (stronger zoom than mouse wheel)
