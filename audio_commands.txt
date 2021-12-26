@@ -48,6 +48,7 @@ Then it worked.
 But how do I just cut the audio without cutting the video clip too?
 => don't use short cut, use the mouse, left click to select the clip,
 right click on the clip -> slice -> keep both sides
+Then select the clip, right click and put the volume to 10% or delete the audio clip.
 
 ----------------------------------------------------------------------------------------
 
