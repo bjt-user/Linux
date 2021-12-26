@@ -46,7 +46,8 @@ Imported movie, separate audio command took forever so I quit.
 Tried it another time. Waited 2 minutes switched to browser in the meantime.
 Then it worked.
 But how do I just cut the audio without cutting the video clip too?
-=> don't use short cut, use the mouse, right click -> slice -> keep both sides
+=> don't use short cut, use the mouse, left click to select the clip,
+right click on the clip -> slice -> keep both sides
 
 ----------------------------------------------------------------------------------------
 
