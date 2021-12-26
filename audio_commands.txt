@@ -29,6 +29,9 @@ Then select the clip, right click and put the volume to 10% or delete the audio 
 => this works ok, but the performance is a little slow, maybe reduce the quality of the video
 before doing this!
 
+Exporting was a problem at 720p 30fps medium quality.
+Took 1 hour and the file is now 4.3GB big which is way too much.
+
 ----------------------------------------------------------------------------------------
 
 VLC Media Player:
