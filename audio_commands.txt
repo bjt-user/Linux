@@ -6,37 +6,13 @@ Converting to .webm works the same way:
 
 ffmpeg -i input.mp4 output.webm
 
-----------------------------------------------------------------------------------------
-
+########################################################################################
 Volume problem in movies
--------------------------
+########################################################################################
 
 In movies the volume is always unappropriate, shootings and music is very loud,
 quiet conversations you want to hear are unhearable silent.
 In my experience while using headphones this problem is less dominant but still exists.
-
-sudo apt install pulseaudio-equalizer
-
-command to start the program:
-qpaeq
-
-Error
-solution: https://linuxhint.com/install-pulseaudio-equalizer-linux-mint/
-
-sudo vim /etc/pulse/default.pa
-
-Add the below-given lines at the bottom of the/etc/pulse/default.pa file.
-load-module module-equalizer-sink
-load-module module-dbus-protocol
-
-Next, kill the PulseAudio service and restart it:
-$ pulseaudio --kill && pulseaudio --start
-
-Now, open the PulseAudio with the command:
-$ qpaeq
-
-=> Ok, jetzt funktioniert zwar das Programm, aber ich kann mit dem Programm nichts anfangen.
-Scheint auch keine Dateien zu manipulieren sondern nur generell den Output.
 
 ----------------------------------------------------------------------------------------
 
@@ -61,3 +37,30 @@ Tools -> Effects and Filters (ctrl + E)
 
 => try experimenting with enabling equalizer and/or enabling compressor
 ==> doesn't really seem to help, maybe you have to change some settings
+
+----------------------------------------------------------------------------------------
+
+Try that didn't get me anywhere:
+
+sudo apt install pulseaudio-equalizer
+
+command to start the program:
+qpaeq
+
+Error
+solution: https://linuxhint.com/install-pulseaudio-equalizer-linux-mint/
+
+sudo vim /etc/pulse/default.pa
+
+Add the below-given lines at the bottom of the/etc/pulse/default.pa file.
+load-module module-equalizer-sink
+load-module module-dbus-protocol
+
+Next, kill the PulseAudio service and restart it:
+$ pulseaudio --kill && pulseaudio --start
+
+Now, open the PulseAudio with the command:
+$ qpaeq
+
+=> Ok, jetzt funktioniert zwar das Programm, aber ich kann mit dem Programm nichts anfangen.
+Scheint auch keine Dateien zu manipulieren sondern nur generell den Output.
