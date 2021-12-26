@@ -48,3 +48,5 @@ Imported movie, separate audio command took forever so I quit.
 VLC Media Player:
 
 Tools -> Effects and Filters (ctrl + E)
+
+=> try experimenting with enabling equalizer and/or enabling compressor
