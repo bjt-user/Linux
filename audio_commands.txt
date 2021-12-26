@@ -43,6 +43,11 @@ Scheint auch keine Dateien zu manipulieren sondern nur generell den Output.
 Using OpenShot:
 Imported movie, separate audio command took forever so I quit.
 
+Tried it another time. Waited 2 minutes switched to browser in the meantime.
+Then it worked.
+But how do I just cut the audio without cutting the video clip too?
+=> don't use short cut, use the mouse, right click -> slice -> keep both sides
+
 ----------------------------------------------------------------------------------------
 
 VLC Media Player:
