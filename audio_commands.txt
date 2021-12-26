@@ -23,7 +23,20 @@ qpaeq
 Error
 solution: https://linuxhint.com/install-pulseaudio-equalizer-linux-mint/
 
-to be continued...
+sudo vim /etc/pulse/default.pa
+
+Add the below-given lines at the bottom of the/etc/pulse/default.pa file.
+load-module module-equalizer-sink
+load-module module-dbus-protocol
+
+Next, kill the PulseAudio service and restart it:
+$ pulseaudio --kill && pulseaudio --start
+
+Now, open the PulseAudio with the command:
+$ qpaeq
+
+=> Ok, jetzt funktioniert zwar das Programm, aber ich kann mit dem Programm nichts anfangen.
+Scheint auch keine Dateien zu manipulieren sondern nur generell den Output.
 
 
 
