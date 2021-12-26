@@ -50,3 +50,4 @@ VLC Media Player:
 Tools -> Effects and Filters (ctrl + E)
 
 => try experimenting with enabling equalizer and/or enabling compressor
+==> doesn't really seem to help, maybe you have to change some settings
