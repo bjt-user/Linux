@@ -42,3 +42,9 @@ Scheint auch keine Dateien zu manipulieren sondern nur generell den Output.
 
 Using OpenShot:
 Imported movie, separate audio command took forever so I quit.
+
+----------------------------------------------------------------------------------------
+
+VLC Media Player:
+
+Tools -> Effects and Filters (ctrl + E)
