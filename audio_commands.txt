@@ -50,6 +50,9 @@ But how do I just cut the audio without cutting the video clip too?
 right click on the clip -> slice -> keep both sides
 Then select the clip, right click and put the volume to 10% or delete the audio clip.
 
+=> this works ok, but the performance is a little slow, maybe reduce the quality of the video
+before doing this!
+
 ----------------------------------------------------------------------------------------
 
 VLC Media Player:
