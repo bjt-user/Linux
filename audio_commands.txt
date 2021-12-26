@@ -38,7 +38,7 @@ $ qpaeq
 => Ok, jetzt funktioniert zwar das Programm, aber ich kann mit dem Programm nichts anfangen.
 Scheint auch keine Dateien zu manipulieren sondern nur generell den Output.
 
-
+----------------------------------------------------------------------------------------
 
 Using OpenShot:
 Imported movie, separate audio command took forever so I quit.
