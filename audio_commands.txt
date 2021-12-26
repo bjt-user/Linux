@@ -31,6 +31,8 @@ before doing this!
 
 Exporting was a problem at 720p 30fps medium quality.
 Took 1 hour and the file is now 4.3GB big which is way too much.
+The problem was the original file was 720X320 at 24 fps and the new file is 720x1980 at 30fps.
+So I chose the wrong export option.
 
 ----------------------------------------------------------------------------------------
 
