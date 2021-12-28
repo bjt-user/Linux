@@ -38,6 +38,8 @@ Took 1 hour and the file is now 4.3GB big which is way too much.
 The problem was the original file was 720X320 at 24 fps and the new file is 720x1980 at 30fps.
 So I chose the wrong export option.
 
+Rendering/exporting doesn't work, produces big files with bad quality.
+
 ----------------------------------------------------------------------------------------
 
 VLC Media Player:
@@ -46,6 +48,7 @@ Tools -> Effects and Filters (ctrl + E)
 
 => try experimenting with enabling equalizer and/or enabling compressor
 ==> doesn't really seem to help, maybe you have to change some settings
+===> changed settings, doesn't help
 
 ----------------------------------------------------------------------------------------
 
