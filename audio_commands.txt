@@ -38,7 +38,12 @@ Took 1 hour and the file is now 4.3GB big which is way too much.
 The problem was the original file was 720X320 at 24 fps and the new file is 720x1980 at 30fps.
 So I chose the wrong export option.
 
-Rendering/exporting doesn't work, produces big files with bad quality.
+Rendering/exporting video has to be done in advanced mode.
+You need to view the video and audio settings of the original video in file browser (video bitrate,
+audio bitrate, sample rate, codec, dimensions).
+The file size of the exported video is ok now, but I still have problems with the resolution.
+The video is squished together and the black frames on bottom and top are bigger than orignal
+even though I selected the same resolution.
 
 ----------------------------------------------------------------------------------------
 
