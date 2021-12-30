@@ -44,6 +44,7 @@ audio bitrate, sample rate, codec, dimensions).
 The file size of the exported video is ok now, but I still have problems with the resolution.
 The video is squished together and the black frames on bottom and top are bigger than orignal
 even though I selected the same resolution.
+Außerdem Audiotrack verschoben...
 
 ----------------------------------------------------------------------------------------
 
