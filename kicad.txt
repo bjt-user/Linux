@@ -105,3 +105,6 @@ In PCB Layout Editor hover over the footprint with your mouse and press 'E'.
 Click "edit footpring". Then your footprint is shown.
 Hover over the hole or pad you want to change and press 'E'.
 Then you can change the hole and pad size.
+
+You can export that custom footprint, but it is not shown in the library.
+So we have to find out how to add a custom library as the standard library is read-only which is good.
