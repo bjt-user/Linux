@@ -96,3 +96,12 @@ Moving the cursor on the text and hitting the DEL key does not work.
 => hover over the text and hit E. Then uncheck "visibility".
 
 Last step in PCB layout editor "perform design rules checks" (bug symbol).
+
+######################################################################################################
+# How to edit footprints #############################################################################
+######################################################################################################
+
+In PCB Layout Editor hover over the footprint with your mouse and press 'E'.
+Click "edit footpring". Then your footprint is shown.
+Hover over the hole or pad you want to change and press 'E'.
+Then you can change the hole and pad size.
