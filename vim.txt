@@ -31,3 +31,6 @@ Mehrere Dateien öffnen:
 oder
 
 :split dateiname
+
+Scheinbar kann man so beliebig viele Dateien nebeneinander öffnen.
+Wie kann man zwischen den Dateien wechseln?
