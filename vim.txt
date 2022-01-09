@@ -21,3 +21,9 @@ endif
 
 Und vimdiff mit folgendem Befehl aufrufen: COLOR=OFF vimdiff file1 file2
 Das diffchange highlighting bleibt leider, kann man aber mit :hi DiffText term=none ausstellen (hat bei mir nicht in der vimrc funktioniert) 
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Mehrere Dateien öffnen:
+
+:vsplit dateiname
