@@ -27,3 +27,7 @@ Das diffchange highlighting bleibt leider, kann man aber mit :hi DiffText term=n
 Mehrere Dateien öffnen:
 
 :vsplit dateiname
+
+oder
+
+:split dateiname
