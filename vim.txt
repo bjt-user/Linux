@@ -33,7 +33,11 @@ oder
 :split dateiname
 
 Scheinbar kann man so beliebig viele Dateien nebeneinander öffnen.
-Wie kann man zwischen den Dateien wechseln?
+Zwischen den Dateien wechseln:
+ctrl + w + w (w doppelt drücken)
+oder
+ctrl + w + h (nach links wechseln)
+ctrl + w + l (nach rechts wechseln)
 
 -----------------------------------------------------------------------------------------------------------------------------
 
