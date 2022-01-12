@@ -22,3 +22,5 @@ Ich adde folgendes in die Datei:
 state.plugged = yes
 
 state.unplugged = unknown
+
+=> bringt nichts
