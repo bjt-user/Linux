@@ -12,3 +12,13 @@ $ pulseaudio -k
 $ pulseaudio --start
 
 => did not solve the problem
+
+-----------------------------------------------------------------------------------------
+
+Ich adde folgendes in die Datei:
+
+[Jack Headphone]
+
+state.plugged = yes
+
+state.unplugged = unknown
