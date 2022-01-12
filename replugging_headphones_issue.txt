@@ -1,6 +1,6 @@
 Problem: after every reboot I have to replug headphones
 
-vim /usr/share/pulseaudio/alsa-mixer/paths/analog-output-lineout.conf
+sudo vim /usr/share/pulseaudio/alsa-mixer/paths/analog-output-lineout.conf
 
 [Element Headphone]
 switch = off (--->Change off to on)
@@ -10,3 +10,5 @@ SAVE FILE AND restart pulseaudio:
 
 $ pulseaudio -k
 $ pulseaudio --start
+
+=> did not solve the problem
