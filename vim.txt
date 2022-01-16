@@ -41,6 +41,16 @@ ctrl + w + l (nach rechts wechseln)
 
 -----------------------------------------------------------------------------------------------------------------------------
 
+Execute terminal commands inside of vim
+
+to execute a bash script (% stands for the file name)
+:!./%
+
+or to first clear terminal and then execute script:
+:!clear;./%
+
+-----------------------------------------------------------------------------------------------------------------------------
+
 Help
 
 :help
