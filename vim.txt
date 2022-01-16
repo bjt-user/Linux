@@ -43,7 +43,7 @@ ctrl + w + l (nach rechts wechseln)
 
 Execute terminal commands inside of vim
 ---------------------------------------
-to execute a bash script (% stands for the file name)
+to execute a bash script (% stands for the file name that is opened in vim)
 :!./%
 
 or to first clear terminal and then execute script:
