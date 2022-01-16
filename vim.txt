@@ -50,6 +50,10 @@ or to first clear terminal and then execute script:
 :!clear;./%
 
 (vim doesnt know about aliases that are set in the terminal)
+=> ich muss lernen wie man in vim keys mapped, sonst bringt es mir keinen Vorteil,
+da ich sonst mit :wq und alias schneller bin
+
+https://vim.fandom.com/wiki/Mapping_keys_in_Vim_-_Tutorial_(Part_1)
 
 -----------------------------------------------------------------------------------------------------------------------------
 
