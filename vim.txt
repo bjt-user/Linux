@@ -49,6 +49,8 @@ to execute a bash script (% stands for the file name)
 or to first clear terminal and then execute script:
 :!clear;./%
 
+(vim doesnt know about aliases that are set in the terminal)
+
 -----------------------------------------------------------------------------------------------------------------------------
 
 Help
