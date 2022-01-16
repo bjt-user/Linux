@@ -59,6 +59,7 @@ Folgendes in die .vimrc reinschreiben:
 nmap <F5> :!clear;./% <CR>
 
 nmap bedeutet, dass es das Mapping nur im "normal" mode erfolgt.
+<CR> bedeutet, dass der command auch direkt ausgeführt wird und nicht mit ENTER bestätigt werden muss.
 
 -----------------------------------------------------------------------------------------------------------------------------
 
