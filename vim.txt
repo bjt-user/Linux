@@ -42,7 +42,7 @@ ctrl + w + l (nach rechts wechseln)
 -----------------------------------------------------------------------------------------------------------------------------
 
 Execute terminal commands inside of vim
-
+---------------------------------------
 to execute a bash script (% stands for the file name)
 :!./%
 
@@ -50,12 +50,12 @@ or to first clear terminal and then execute script:
 :!clear;./%
 
 (vim doesnt know about aliases that are set in the terminal)
-=> ich muss lernen wie man in vim keys mapped, sonst bringt es mir keinen Vorteil,
-da ich sonst mit :wq und alias schneller bin
 
+Key Mappings in VIM
+-------------------
 https://vim.fandom.com/wiki/Mapping_keys_in_Vim_-_Tutorial_(Part_1)
 
-Folgendes in die .vimrc reinschreiben:
+Folgendes in die .vimrc reinschreiben (to execute the bash script that is opened in vim):
 nmap <F5> :!clear;./% <CR>
 
 nmap bedeutet, dass es das Mapping nur im "normal" mode erfolgt.
