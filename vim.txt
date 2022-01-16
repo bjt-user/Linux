@@ -55,6 +55,11 @@ da ich sonst mit :wq und alias schneller bin
 
 https://vim.fandom.com/wiki/Mapping_keys_in_Vim_-_Tutorial_(Part_1)
 
+Folgendes in die .vimrc reinschreiben:
+nmap <F5> :!clear;./% <CR>
+
+nmap bedeutet, dass es das Mapping nur im "normal" mode erfolgt.
+
 -----------------------------------------------------------------------------------------------------------------------------
 
 Help
