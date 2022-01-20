@@ -39,6 +39,9 @@ oder
 ctrl + w + h (nach links wechseln)
 ctrl + w + l (nach rechts wechseln)
 
+to close every window except the current one:
+:only
+
 -----------------------------------------------------------------------------------------------------------------------------
 
 Execute terminal commands inside of vim
