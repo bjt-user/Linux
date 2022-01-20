@@ -11,7 +11,7 @@ Copy some text to the clipboard with ctrl + c -> go into vim
 
 -----------------------------------------------------------------------------------------------------------------------------
 Vimdiff ohne Farbcodierung:
-
+---------------------------
 Folgendes in die .vimrc schreiben (wenn sie nicht existiert im home-Verzeichnis, dann neue Datei anlegen):
 
 if $COLOR=='OFF'
@@ -24,8 +24,8 @@ Das diffchange highlighting bleibt leider, kann man aber mit :hi DiffText term=n
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-Mehrere Dateien öffnen:
-
+Mehrere Dateien (nebeneinander) öffnen:
+---------------------------------------
 :vsplit dateiname
 
 oder
