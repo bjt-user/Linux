@@ -1,0 +1,5 @@
+How to push to gitlab
+---------------------
+git push --repo https://gitlab.com/bjt-user1/Linux
+
+then you will be asked for username and password
