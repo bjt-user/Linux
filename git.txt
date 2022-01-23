@@ -15,7 +15,8 @@ then
 git push
 
 Enter credentials again and it might remember the credentials?!
-Did it work?
+=> worked like a charm!
+But where are the credentials stored?
 
 Pulling
 -------
