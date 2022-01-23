@@ -56,3 +56,4 @@ Now go into nvim with "nvim" command.
 :P and press [TAB] key until you are at :PlugStatus.
 :PlugStatus
 
+It says that it didn't find auto-pairs.
