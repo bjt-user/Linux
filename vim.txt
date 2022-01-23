@@ -54,6 +54,19 @@ or to first clear terminal and then execute script:
 
 (vim doesnt know about aliases that are set in the terminal)
 
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Help
+
+:help
+
+:help <topic>
+
+#############################################################################################################################
+##########
+# .vimrc #
+##########
 Key Mappings in VIM
 -------------------
 https://vim.fandom.com/wiki/Mapping_keys_in_Vim_-_Tutorial_(Part_1)
@@ -64,10 +77,31 @@ nmap <F5> :!clear;./% <CR>
 nmap bedeutet, dass es das Mapping nur im "normal" mode erfolgt.
 <CR> bedeutet, dass der command auch direkt ausgeführt wird und nicht mit ENTER bestätigt werden muss.
 
------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
 
-Help
+Implementing a status line in VIM:
+----------------------------------
+" STATUS LINE ------------------------------------------------------------ {{{
+" spaces are escpaed with "\ " "
 
-:help
+set statusline=
 
-:help <topic>
+set statusline+=%F
+set statusline+=\ %M
+set statusline+=\ %Y
+set statusline+=\ %R
+
+" Use a divider to separate the left side from the right side.
+set statusline+=%=
+
+" Status line right side.
+set statusline+=ascii:\ %b
+set statusline+=\ hex:\ 0x%B
+set statusline+=\ row:\ %l
+set statusline+=\ col:\ %c
+set statusline+=\ percent:\ %p%%
+
+" Show the status on the second to last line.
+set laststatus=2
+
+" }}}
