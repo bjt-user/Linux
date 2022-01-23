@@ -6,3 +6,5 @@ But you can change to master branch after clicking on "commit".
 ---------------------------------------------------------------------------
 
 How to delete a branch?
+
+Click on "2 branches" link in the main project window.
