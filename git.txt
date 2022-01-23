@@ -8,6 +8,15 @@ How to push without entering username and password?
 git config --global user.name myusername?
 => nope, doesnt work
 
+Try this command:
+git config --global credential.helper store
+
+then
+git push
+
+Enter credentials again and it might remember the credentials?!
+Did it work?
+
 Pulling
 -------
 
