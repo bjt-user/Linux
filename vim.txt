@@ -1,3 +1,9 @@
+Navigation
+----------
+In normal mode:
+fp    : to go to the next occurance of the letter "p" in the current line
+
+
 How to paste something from the clipboard into vim
 ----------------------------------
 ctrl + shift + v
