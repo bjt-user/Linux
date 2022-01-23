@@ -111,6 +111,7 @@ set laststatus=2
 # INSTALLING PLUGINS ##################################################
 #######################################################################
 
+[TRIAL STAGE]
 Trying to install plugins without root access:
 Copy plugin/auto-pairs.vim to ~/.vim/plugin
 https://github.com/jiangmiao/auto-pairs
