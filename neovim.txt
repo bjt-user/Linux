@@ -5,3 +5,7 @@ Is opened with the command "nvim <file>".
 It should be possible to install language servers with coc.
 
 But where is the equivalent of the .vimrc config file?
+
+Apparrently you have to create a nvim-Folder in ~/.config path.
+And then create a init.vim file.
+~/.config/nvim/init.vim
