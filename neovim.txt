@@ -59,3 +59,10 @@ Now go into nvim with "nvim" command.
 It says that it didn't find auto-pairs. (because we didn't install them)
 To install plugins type
 :PlugInstall
+
+=> and it works (closes ( [ or { automatically after the cursor)
+
+commands for later usage:
+:PlugUpdate to update plugins
+:PlugClean to get rid of plugins you dont use anymore (probably those you deleted from the file)
+:PlugUpgrade to upgrade vim-plug
