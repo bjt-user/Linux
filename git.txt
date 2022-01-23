@@ -6,6 +6,7 @@ then you will be asked for username and password
 
 How to push without entering username and password?
 git config --global user.name myusername?
+=> nope, doesnt work
 
 Pulling
 -------
