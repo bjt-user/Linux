@@ -1,3 +1,4 @@
 Using gitlab on the website itself seems to not work very well.
 
-Adding something opens a new branch.
+Adding something opens a new branch on default.
+But you can change to master branch after clicking on "commit".
