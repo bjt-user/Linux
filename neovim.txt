@@ -56,4 +56,6 @@ Now go into nvim with "nvim" command.
 :P and press [TAB] key until you are at :PlugStatus.
 :PlugStatus
 
-It says that it didn't find auto-pairs.
+It says that it didn't find auto-pairs. (because we didn't install them)
+To install plugins type
+:PlugInstall
