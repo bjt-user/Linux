@@ -3,20 +3,21 @@ How to push to gitlab
 git push --repo https://gitlab.com/bjt-user1/Linux
 
 then you will be asked for username and password
-
+-----------------------------------------------------------
 How to push without entering username and password?
-git config --global user.name myusername?
+----------------------------------------------------
+FAIL: git config --global user.name myusername?
 => nope, doesnt work
 
-Try this command:
+
 git config --global credential.helper store
 
 then
 git push
+and enter credentials again (it remembers them)
 
-Enter credentials again and it might remember the credentials?!
 => worked like a charm!
-But where are the credentials stored?
+(credentials are stored in ~/.git-credentials.)
 
 Pulling
 -------
