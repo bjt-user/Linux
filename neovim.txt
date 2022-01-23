@@ -32,3 +32,16 @@ We will manage our plugins in a separate file.
 mkdir ~/.config/nvim/vim-plug
 
 touch ~/.config/nvim/vim-plug/plugins.vim
+
+Add a plugin
+------------
+
+Put this into the plugins.vim file:
+(it should close brackets automatically)
+
+call plug#begin('~/.config/nvim/autoload/plugged')
+
+    " Auto pairs for '(' '[' '{'
+    Plug 'jiangmiao/auto-pairs'
+
+call plug#end()
