@@ -3,3 +3,10 @@ How to push to gitlab
 git push --repo https://gitlab.com/bjt-user1/Linux
 
 then you will be asked for username and password
+
+
+Once you have cloned the repository you can't clone again to update the content.
+The following command seems to work:
+
+git pull origin
+
