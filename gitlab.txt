@@ -10,4 +10,4 @@ You have to do it with the "edit" button from the drop down menu.
 
 How to delete a branch?
 
-Click on "2 branches" link in the main project window.
+Click on "2 branches" (or however many branches you have atm) link in the main project window.
