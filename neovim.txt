@@ -18,6 +18,7 @@ And then create a init.vim file.
 ############################################
 # HOW TO INSTALL PLUGINS ###################
 ############################################
+(https://github.com/junegunn/vim-plug)
 
 Install "vim-plug"
 ------------------
