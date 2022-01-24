@@ -84,6 +84,11 @@ nmap <F5> :!clear;./% <CR>
 
 nmap bedeutet, dass es das Mapping nur im "normal" mode erfolgt.
 <CR> bedeutet, dass der command auch direkt ausgeführt wird und nicht mit ENTER bestätigt werden muss.
+------------------------------------------------------------------------------------------------------------
+
+" the autoindent feature inserts an indent if it detects an indent in the line before "
+" you can delete it again with <backspace> key or ctrl+D "
+set autoindent
 
 ------------------------------------------------------------------------------------------------------------
 
