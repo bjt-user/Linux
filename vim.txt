@@ -90,6 +90,9 @@ nmap bedeutet, dass es das Mapping nur im "normal" mode erfolgt.
 " you can delete it again with <backspace> key or ctrl+D "
 set autoindent
 
+" the smartindent feature makes an indent after { and so on and it seems to stop after } "
+set smartindent
+
 ------------------------------------------------------------------------------------------------------------
 
 Implementing a status line in VIM:
