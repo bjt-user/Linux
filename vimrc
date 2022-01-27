@@ -24,11 +24,11 @@ nmap <F7> :!clear;python3 % <CR>
 
 nmap <F8> :!clear;java % <CR>
 
-"improving the switching between windows
-"(ctrl+h to go left)
-"(ctrl+l to go right)
-"(ctrl+k to go up)
-"(ctrl+j to go down)
+"improving the switching between windows (helpful for splits and nerdtree)
+"(ctrl+h to go to left window)
+"(ctrl+l to go to right window)
+"(ctrl+k to go to upper window)
+"(ctrl+j to go to bottom window)
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
