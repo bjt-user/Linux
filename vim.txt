@@ -14,6 +14,8 @@ Copy some text to the clipboard with ctrl + c -> go into vim
 -> go into insert mode (i) -> go to the menu of the terminal on the upper part of the window
 -> edit -> paste
 
+OR:
+go into insert mode -> shift + einfg
 
 -----------------------------------------------------------------------------------------------------------------------------
 Vimdiff ohne Farbcodierung:
@@ -27,6 +29,10 @@ endif
 
 Und vimdiff mit folgendem Befehl aufrufen: COLOR=OFF vimdiff file1 file2
 Das diffchange highlighting bleibt leider, kann man aber mit :hi DiffText term=none ausstellen (hat bei mir nicht in der vimrc funktioniert) 
+-----------------------------------------------------------------------------------------------------------------------------
+Disable yellow highlighting (search results or something similar)
+---------------------------
+:nohl
 
 -----------------------------------------------------------------------------------------------------------------------------
 
@@ -138,6 +144,7 @@ https://github.com/jiangmiao/auto-pairs
 (closes "(", "[", "{" automatically)
 
 Pasting manually into a putty session with vim does not really work.
+(formatting issues which can maybe be fixed)
 But
 git clone git clone https://github.com/vim-scripts/Auto-Pairs
 worked on that server without root!
