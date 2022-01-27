@@ -5,7 +5,7 @@ fp    : to go to the next occurance of the letter "p" in the current line
 
 
 How to paste something from the clipboard into vim
-----------------------------------
+--------------------------------------------------
 ctrl + shift + v
 
 OR:
@@ -47,6 +47,11 @@ ctrl + w + l (nach rechts wechseln)
 
 to close every window except the current one:
 :only
+
+to close all windows:
+:qa
+or
+:qa! (to discard changes)
 
 -----------------------------------------------------------------------------------------------------------------------------
 
