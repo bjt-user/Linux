@@ -24,6 +24,16 @@ nmap <F7> :!clear;python3 % <CR>
 
 nmap <F8> :!clear;java % <CR>
 
+"improving the switching between windows
+"(ctrl+h to go left)
+"(ctrl+l to go right)
+"(ctrl+k to go up)
+"(ctrl+j to go down)
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
 
 " STATUS LINE ------------------------------------------------------------ {{{
 " spaces are escpaed with "\ " "
