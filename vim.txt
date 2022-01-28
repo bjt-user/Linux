@@ -17,6 +17,7 @@ Copy some text to the clipboard with ctrl + c -> go into vim
 OR:
 go into insert mode -> shift + einfg
 
+------------------------------------------------------------------
 How to copy some text and replace another part of the file with it
 ------------------------------------------------------------------
 
