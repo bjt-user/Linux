@@ -6,16 +6,33 @@ fp    : to go to the next occurance of the letter "p" in the current line
 
 How to paste something from the clipboard into vim
 --------------------------------------------------
-ctrl + shift + v
+ctrl + shift + v (does not work for putty sessions)
 
 OR:
 
 Copy some text to the clipboard with ctrl + c -> go into vim
--> go into insert mode (i) -> go to the menu of the terminal on the upper part of the window
+-> go into insert mode (i) -> go to the menu of the terminal on the upper part of the window (does not work for putty)
 -> edit -> paste
 
 OR:
 go into insert mode -> shift + einfg
+
+How to copy some text and replace another part of the file with it
+------------------------------------------------------------------
+
+go to the beginning of the word
+type "v" and select the word with navigation keys
+"y" to yank
+go to the next word
+type "v" and select the word with navigation keys
+"p" to paste
+
+OR:
+go to the beginning of the word
+"yw" to yank word
+go to the next word
+"vw" to select word
+"p" to paste
 
 -----------------------------------------------------------------------------------------------------------------------------
 Vimdiff ohne Farbcodierung:
