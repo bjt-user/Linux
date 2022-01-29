@@ -31,6 +31,9 @@ I get one warning with redirecting to ...https://gitlab.com/bjt-user1/Linux.git
 So I changed the .git/config to https://gitlab.com/bjt-user1/Linux.git
 => it worked (no more warnings)
 
+After that first time it worked to just type:
+git pull
+
 --------------------------------------------------------
 How to make vim your standard editor for commit messages
 --------------------------------------------------------
