@@ -1,0 +1,5 @@
+To view the size of all files in the folder you are in:
+du -h
+
+To view the size of the folder you are in:
+du -h | tail -1
