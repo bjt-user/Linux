@@ -16,13 +16,17 @@ set tabstop=2
 " use 2 spaces when indenting with << or >> "
 set shiftwidth=2
 
-nmap <F5> :!clear;./% <CR>
+" <bar> is needed to change between internal vim commands and terminal
+" commands
+" shortcut to save file, clear terminal and execute file:
+nmap <F5> :w <bar> !clear;./% <CR>
 
-nmap <F6> :!clear;bash -x % <CR>
+nmap <F6> :w <bar> !clear;bash -x % <CR>
 
-nmap <F7> :!clear;python3 % <CR>
+nmap <F7> :w <bar> !clear;python3 % <CR>
 
-nmap <F8> :!clear;java % <CR>
+nmap <F8> :w <bar> !clear;java % <CR>
+
 
 "improving the switching between windows (helpful for splits and nerdtree)
 "(ctrl+h to go to left window)
