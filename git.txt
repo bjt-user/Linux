@@ -39,3 +39,13 @@ How to make vim your standard editor for commit messages
 --------------------------------------------------------
 git config --global core.editor "vim"
 (or change the contents of ~/.gitconfig)
+
+-----------------------------------------
+How to show the current branch you are in
+-----------------------------------------
+git rev-parse --abbrev-ref HEAD
+
+-----------------------------------------------------
+How to clone a specific branch of a repo (not master)
+-----------------------------------------------------
+git clone -b <branch> <remote_repo>
