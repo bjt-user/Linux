@@ -54,3 +54,8 @@ git show
 How to clone a specific branch of a repo (not master)
 -----------------------------------------------------
 git clone -b <branch> <remote_repo>
+
+-----------------------------------------------------------------
+You can check if you have added the remote as HTTPS or SSH using
+-----------------------------------------------------------------
+git remote -v
