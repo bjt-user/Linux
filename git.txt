@@ -45,6 +45,11 @@ How to show the current branch you are in
 -----------------------------------------
 git rev-parse --abbrev-ref HEAD
 
+or
+
+git show
+(and look at the first line and the string after HEAD->)
+
 -----------------------------------------------------
 How to clone a specific branch of a repo (not master)
 -----------------------------------------------------
