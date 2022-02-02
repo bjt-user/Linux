@@ -10,8 +10,9 @@ set number
 
 set autoindent
 set smartindent
-
 set tabstop=2
+" to make <tab> and <<,>> use spaces instead of actual tab:
+set expandtab
 
 " use 2 spaces when indenting with << or >> "
 set shiftwidth=2
