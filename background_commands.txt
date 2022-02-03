@@ -1,0 +1,11 @@
+How to run a command in the background
+--------------------------------------
+
+Add the ampersand symbol (&) at the end of the command:
+
+command &
+
+
+Use the jobs utility to display the status of all stopped and background jobs in the current shell session:
+
+jobs -l
