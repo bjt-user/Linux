@@ -9,3 +9,7 @@ command &
 Use the jobs utility to display the status of all stopped and background jobs in the current shell session:
 
 jobs -l
+
+or if you don't need the job-id (?) just type:
+
+jobs
