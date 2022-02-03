@@ -10,7 +10,7 @@ Use the jobs utility to display the status of all stopped and background jobs in
 
 jobs -l
 
-or if you don't need the number in front of the job (no idea what it is for) just type:
+or if you don't need the second number in front of the job (no idea what it is for) just type:
 
 jobs
 
