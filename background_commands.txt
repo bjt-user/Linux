@@ -13,3 +13,12 @@ jobs -l
 or if you don't need the job-id (?) just type:
 
 jobs
+
+
+To bring a background process to the foreground, use the fg command:
+
+fg
+
+If you have multiple background jobs, include % and the job ID after the command:
+
+fg %1
