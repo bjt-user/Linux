@@ -3,4 +3,4 @@ Searching the man pages
 
 /pattern
 
-But how to find the next occurence of the word?
+After that type <n> to get to the next occurence of the word.
