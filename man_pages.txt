@@ -4,3 +4,9 @@ Searching the man pages
 /pattern
 
 After that type <n> to get to the next occurence of the word.
+
+
+Advanced:
+The command above is doing a forward search.
+To do a backward search type:
+?pattern
