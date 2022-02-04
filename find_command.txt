@@ -1,2 +1,6 @@
 to show files that start with "te" and are in the current directory:
 find . -name te*
+
+If you use two asterix like this:
+find . -name *te*
+you need AT LEAST TWO CHARACTERS!!!
