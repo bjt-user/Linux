@@ -17,6 +17,9 @@ set expandtab
 " use 2 spaces when indenting with << or >> "
 set shiftwidth=2
 
+"KEYBINDINGS (keybindings for plugins are further down)
+nmap <F2> :!clear;chmod +x % <CR>
+
 " <bar> is needed to change between internal vim commands and terminal
 " commands
 " shortcut to save file, clear terminal and execute file:
