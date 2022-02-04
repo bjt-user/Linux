@@ -1,0 +1,6 @@
+Searching the man pages
+-----------------------
+
+/pattern
+
+But how to find the next occurence of the word?
