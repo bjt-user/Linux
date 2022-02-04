@@ -8,3 +8,6 @@ you need AT LEAST TWO CHARACTERS!!!
 find . -iname *na*
 
 -i is for ignoring case
+
+
+There are problems with this utility though, it shows folders with permission denied...
