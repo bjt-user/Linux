@@ -4,3 +4,7 @@ find . -name te*
 If you use two asterix like this:
 find . -name *te*
 you need AT LEAST TWO CHARACTERS!!!
+
+find . -iname *na*
+
+-i is for ignoring case
