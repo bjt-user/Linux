@@ -7,3 +7,6 @@ Todo:
 Lernen, wie man Teile von pdfs schwärtzt.
 
 Vielleicht mit pypdf ausseinandersetzen.
+
+Open pdf in gimp -> Paintbrush -> then export with *.pdf ending.
+Seems like you can only do this with one page at a time.
