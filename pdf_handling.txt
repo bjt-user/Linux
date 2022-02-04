@@ -5,3 +5,5 @@ pdfunite example1.pdf example2.pdf example3.pdf output.pdf
 
 Todo:
 Lernen, wie man Teile von pdfs schwärtzt.
+
+Vielleicht mit pypdf ausseinandersetzen.
