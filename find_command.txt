@@ -1,0 +1,2 @@
+to show files that start with "te" and are in the current directory:
+find . -name te*
