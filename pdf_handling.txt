@@ -3,10 +3,8 @@ Merge PDFs:
 pdfunite example1.pdf example2.pdf example3.pdf output.pdf
 
 
-Todo:
-Lernen, wie man Teile von pdfs schwärtzt.
-
-Vielleicht mit pypdf ausseinandersetzen.
-
 Open pdf in gimp -> Paintbrush -> then export with *.pdf ending.
 Seems like you can only do this with one page at a time.
+
+
+TODO: Play around with python pdf libs.
