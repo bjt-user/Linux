@@ -59,3 +59,8 @@ git clone -b <branch> <remote_repo>
 You can check if you have added the remote as HTTPS or SSH using
 -----------------------------------------------------------------
 git remote -v
+
+
+TODO:
+try to squash commits in master branch
+https://stackoverflow.com/questions/55325930/git-how-to-squash-all-commits-on-master-branch
