@@ -38,6 +38,17 @@ go to the next word
 "vw" to select word
 "p" to paste
 
+------------------
+Search and replace
+------------------
+
+Sometimes you have a string that has multiple occurances in the file
+and you want to replace it with another string.
+But usually you don't want to do this operation for the entire file.
+
+This replaces the word "search" with the word "replace" in line 8 to 10:
+:8,10 s/search/replace/g 
+
 -----------------------------------------------------------------------------------------------------------------------------
 Vimdiff ohne Farbcodierung:
 ---------------------------
