@@ -5,6 +5,9 @@ endif
 filetype plugin on
 syntax on
 
+" set the color scheme:
+color industry
+
 " show line numbers "
 set number
 
