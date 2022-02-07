@@ -97,3 +97,5 @@ coc.nvim OK (not loaded)
 
 Es fehlt wahrscheinlich noch der Eintrag des Plugins in die Datei:
 ~/.config/nvim/vim-plug/plugins.vim
+Dort zwischen call plug#begin(...) und call plug#end() folgendes einfügen:
+neoclide/coc.nvim
