@@ -99,3 +99,16 @@ Es fehlt wahrscheinlich noch der Eintrag des Plugins in die Datei:
 ~/.config/nvim/vim-plug/plugins.vim
 Dort zwischen call plug#begin(...) und call plug#end() folgendes einfügen:
 neoclide/coc.nvim
+
+Fehlermeldung: node is not executable
+
+sudo apt install nodejs
+
+Fehlermeldung: cant find yarn or npm in your path
+
+sudo apt install npm
+
+:CocInstall coc-sh
+=> this time something is installed
+
+How to view installed language servers?
