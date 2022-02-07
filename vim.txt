@@ -86,6 +86,10 @@ And you can cylce throug them.
 To select a color scheme:
 :color industry
 
+You can write
+color industry
+into .vimrc to set it permanently
+
 -----------------------------------------------------------------------------------------------------------------------------
 
 Mehrere Dateien (nebeneinander) öffnen:
