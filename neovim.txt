@@ -67,3 +67,10 @@ commands for later usage:
 :PlugUpdate to update plugins
 :PlugClean to get rid of plugins you dont use anymore (probably those you deleted from the file)
 :PlugUpgrade to upgrade vim-plug
+
+--------------------------------------
+How to install a bash language server?
+--------------------------------------
+
+:CocInstall coc-sh
+=> not an editor command...
