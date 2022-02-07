@@ -66,6 +66,13 @@ Disable yellow highlighting (search results or something similar)
 ---------------------------
 :nohl
 
+--------------------------------------------------------------
+colorschemes
+------------
+to view the current color scheme:
+
+:colorscheme
+
 -----------------------------------------------------------------------------------------------------------------------------
 
 Mehrere Dateien (nebeneinander) öffnen:
