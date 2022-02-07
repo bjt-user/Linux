@@ -94,3 +94,6 @@ coc.nvim OK (not loaded)
 
 :CocInstall coc-sh
 => not an editor command...
+
+Es fehlt wahrscheinlich noch der Eintrag des Plugins in die Datei:
+~/.config/nvim/vim-plug/plugins.vim
