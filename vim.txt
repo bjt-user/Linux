@@ -72,6 +72,16 @@ colorschemes
 to view the current color scheme:
 
 :colorscheme
+or
+:color
+
+to see all installed color scheme:
+
+:colorscheme [space] [tab]
+or
+:color [space] [tab]
+
+And you can cylce throug them.
 
 -----------------------------------------------------------------------------------------------------------------------------
 
