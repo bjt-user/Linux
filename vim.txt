@@ -83,6 +83,9 @@ or
 
 And you can cylce throug them.
 
+To select a color scheme:
+:color industry
+
 -----------------------------------------------------------------------------------------------------------------------------
 
 Mehrere Dateien (nebeneinander) öffnen:
