@@ -90,3 +90,5 @@ in your (neo)vim.
 Now check plugins with
 :PlugStatus
 
+:CocInstall coc-sh
+=> not an editor command...
