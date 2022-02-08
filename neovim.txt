@@ -112,3 +112,4 @@ sudo apt install npm
 => this time something is installed
 
 How to view installed language servers?
+:CocList extensions
