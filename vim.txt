@@ -90,6 +90,16 @@ You can write
 color industry
 into .vimrc to set it permanently
 
+--------------
+AUTOCOMPLETION
+--------------
+There is autocompletion in plain vim without installing any plugins.
+Out of the box it only works for words that were already used within the current file.
+To get a list of words that can be made out of the current letters:
+ctrl + n
+
+But how can you choose one of those words?
+
 -----------------------------------------------------------------------------------------------------------------------------
 
 Mehrere Dateien (nebeneinander) öffnen:
