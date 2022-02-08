@@ -60,6 +60,19 @@ You can check if you have added the remote as HTTPS or SSH using
 -----------------------------------------------------------------
 git remote -v
 
+--------------------------------------------------
+How to go back to the commit (and discard modifications)
+--------------------------------------------------
+Changes that haven't been committed to the local repository are called "local" changes in Git.
+They exist in your Working Copy, but you haven't wrapped them in a commit, yet.
+
+If you want to discard this type of changes, you can use the git restore command:
+
+git restore index.html
+
+or to restore all files in the current folder:
+git restore .
+--------------------------------------------------
 
 TODO:
 try to squash commits in master branch
