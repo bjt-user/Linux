@@ -113,3 +113,10 @@ sudo apt install npm
 
 How to view installed language servers?
 :CocList extensions
+
+    ? means invalid extension
+    * means extension is activated
+    + means extension is loaded
+    - means extension is disabled
+
+https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#manage-coc-extensions
