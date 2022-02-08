@@ -98,7 +98,11 @@ Out of the box it only works for words that were already used within the current
 To get a list of words that can be made out of the current letters:
 ctrl + n
 
-But how can you choose one of those words?
+How can you choose one of those words?
+ctrl + n
+
+But how can you cycle through those words?
+with arrow keys, but using arrow keys sucks
 
 -----------------------------------------------------------------------------------------------------------------------------
 
