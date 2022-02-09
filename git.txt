@@ -72,7 +72,12 @@ git restore index.html
 
 or to restore all files in the current folder:
 git restore .
---------------------------------------------------
+-------------------------------------
+How to show changes since last commit
+-------------------------------------
+
+To see changes since last commit (that were not added yet):
+git diff
 
 TODO:
 try to squash commits in master branch
