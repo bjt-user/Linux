@@ -130,6 +130,9 @@ to close all windows:
 or
 :qa! (to discard changes)
 
+Outside of vim:
+vim -O file1 file2
+
 -----------------------------------------------------------------------------------------------------------------------------
 
 Execute terminal commands inside of vim
