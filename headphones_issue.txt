@@ -1,4 +1,14 @@
+[seems to be a common bug within pulseaudio or alsa that cannot be fixed]
 Problem: after every reboot I have to replug headphones
+
+sudo vim /usr/share/pulseaudio/alsa-mixer/paths/analog-output-lineout.conf
+
+[Element Headphone]
+switch = off (--->Change off to on)
+volume = off
+
+SAVE FILE AND restart pulseaudio:
+
 
 sudo vim /usr/share/pulseaudio/alsa-mixer/paths/analog-output-lineout.conf
 
