@@ -125,6 +125,10 @@ https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#manage-coc-extens
 # DIFFERENCES TO VIM ###########
 ################################
 
+-------------------------------------------
+keybindings and executing terminal commands
+-------------------------------------------
+
 If you import the keybindings from vim you should delete the "!clear" commands.
 It creates unwanted characters in the output and you don't need to clear the terminal in nvim at this point.
 
