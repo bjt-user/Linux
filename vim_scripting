@@ -1,6 +1,8 @@
 Vim scripts have the .vim ending.
 To execute a vimscript type :source %
 
+https://devhints.io/vimscript-functions
+
 I am trying to build a function that comments the line if it is not commented
 or uncomment if it is commented no matter in which column the cursor is.
 And at the same time not overwriting any registers.
