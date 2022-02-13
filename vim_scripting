@@ -3,6 +3,8 @@ To execute a vimscript type :source %
 
 I am trying to build a function that comments the line if it is not commented
 or uncomment if it is commented no matter in which column the cursor is.
+And at the same time not overwriting any registers.
+(for example if you do "dd" that line is saved in a register)
 
 let name = "John"
 
