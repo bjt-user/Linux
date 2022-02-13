@@ -1,6 +1,8 @@
 Vim scripts have the .vim ending.
 To execute a vimscript type :source %
 
+https://vimhelp.org/usr_41.txt.html#function-list
+
 https://devhints.io/vimscript-functions
 
 I am trying to build a function that comments the line if it is not commented
