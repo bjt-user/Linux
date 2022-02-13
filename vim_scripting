@@ -1,0 +1,24 @@
+To execute a vimscript type :source %
+
+I am trying to build a function that comments the line if it is not commented
+or uncomment if it is commented no matter in which column the cursor is.
+
+let name = "John"
+
+echo "Hello, " . name
+echo "test"
+
+"to save the current line in a variable called "curline":
+let curline=getline('.')
+echo curline
+
+"to get the first character of a variable:
+let firstpart=strpart(curline, 0, 1)
+echo firstpart
+
+if firstpart == "\""
+  echo "this is a comment"
+endif
+
+"a keystroke in normal mode:
+normal G
