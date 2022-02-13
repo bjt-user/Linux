@@ -5,8 +5,8 @@ endif
 filetype plugin on
 syntax on
 
-" set the color scheme:
-color industry
+" set the color scheme (only recommended for Powershell):
+"color industry
 
 " show line numbers "
 set number
