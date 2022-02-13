@@ -1,3 +1,4 @@
+Vim scripts have the .vim ending.
 To execute a vimscript type :source %
 
 I am trying to build a function that comments the line if it is not commented
