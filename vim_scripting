@@ -2,6 +2,8 @@ Vim scripts have the .vim ending.
 To execute a vimscript type :source %
 (or "so %")
 
+https://vim.help/41-write-a-vim-script
+
 https://vimhelp.org/usr_41.txt.html#function-list
 
 https://devhints.io/vimscript-functions
