@@ -1,7 +1,7 @@
 "put this in your .vimrc:
 "let mapleader=","
 "map <unique> <Leader>c :call Commenter() <CR>
-"the you can comment/uncomment bash lines by hitting , then c
+"then you can comment/uncomment bash lines by hitting , then c
 
 function Commenter ()
   "get the content of the current line:
