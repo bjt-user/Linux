@@ -33,7 +33,7 @@ After this operation, 18.5 MB of additional disk space will be used.
 (was a fast installation)
 You have to add a source before recording.
 You can choose "window capture" and then add the window you want to record.
-=> does not seem to work for Linux Terminals
+=> does not seem to work for recording Linux Terminals
 
 -------------------------------------------------------------------------------------------------
 
