@@ -157,6 +157,10 @@ or to first clear terminal and then execute script:
 
 (vim doesnt know about aliases that are set in the terminal)
 
+--------------------------------
+How to see the detected filetype
+--------------------------------
+:set ft?
 
 -----------------------------------------------------------------------------------------------------------------------------
 
