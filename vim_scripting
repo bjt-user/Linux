@@ -28,6 +28,13 @@ echo "Hello, " . name
 
 ---------------------------------
 
+functions
+---------
+
+It looks like function names have to start with an upper case character otherwise you get an error.
+
+-------------------------------------------------------------------------------------------------------
+
 "this worked without the function and only inside the script itself:
 
 function {commenter} ()
