@@ -34,6 +34,13 @@ let colpos=col('.')
 
 echo colpos
 
+getting the line number where the cursor is currently at:
+
+let linepos=line('.')
+
+echo linepos
+
+
 
 functions
 ---------
