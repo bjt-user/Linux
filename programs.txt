@@ -35,6 +35,8 @@ You have to add a source before recording.
 You can choose "window capture" and then add the window you want to record.
 => does not seem to work for recording Linux Terminals
 
+Scheint mal wieder an Wayland zu liegen.
+
 -------------------------------------------------------------------------------------------------
 
 Watch videos:
