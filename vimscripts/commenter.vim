@@ -2,6 +2,7 @@
 "let mapleader=","
 "map <unique> <Leader>c :call Commenter() <CR>
 "then you can comment/uncomment bash lines by hitting , then c
+"it also works for multiple lines. type <3> <,> <c>
 
 function Commenter ()
   "get the content of the current line:
