@@ -37,7 +37,7 @@ It looks like function names have to start with an upper case character otherwis
 
 "this worked without the function and only inside the script itself:
 
-function {commenter} ()
+function Commenter ()
   let curline=getline('.')
 
   let firstpart=strpart(curline, 0, 1)
