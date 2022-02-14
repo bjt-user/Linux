@@ -35,7 +35,6 @@ It looks like function names have to start with an upper case character otherwis
 
 -------------------------------------------------------------------------------------------------------
 
-"this worked without the function and only inside the script itself:
 
 function Commenter ()
   let curline=getline('.')
@@ -52,3 +51,7 @@ function Commenter ()
   endif
 endfunction
 
+Put this in a file in .vim/plugin/filename.vim
+
+Then you can execute this function in vim with :call Commenter()
+It does not work as intendet yet.
