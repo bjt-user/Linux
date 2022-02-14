@@ -28,6 +28,13 @@ echo "Hello, " . name
 
 ---------------------------------
 
+getting the cursor position:
+
+let colpos=col('.')
+
+echo colpos
+
+
 functions
 ---------
 
@@ -54,4 +61,3 @@ endfunction
 Put this in a file in .vim/plugin/filename.vim
 
 Then you can execute this function in vim with :call Commenter()
-It does not work as intendet yet.
