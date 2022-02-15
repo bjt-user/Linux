@@ -1,3 +1,6 @@
+"put this in your .vimrc:
+"let mapleader=","
+
 map <unique> <Leader>c :call Commenter() <CR>
 
 function Commenter ()
