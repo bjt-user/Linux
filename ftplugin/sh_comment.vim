@@ -1,6 +1,8 @@
 "put this in your .vimrc:
 "let mapleader=","
 
+"TODO: it does not work if the line is indented
+
 map <unique> <Leader>c :call Commenter() <CR>
 
 function Commenter ()
