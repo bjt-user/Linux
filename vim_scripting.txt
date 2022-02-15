@@ -55,6 +55,9 @@ write
 echo "this is a shell script!!!"
 and it will be executed everytime you open a file with filename *.sh with vim
 
+It is also recognized as shell script when you have a #!/bin/bash in the first line
+and a different fileending.
+
 -------------------------------------------------------------------------------------------------------
 
 
