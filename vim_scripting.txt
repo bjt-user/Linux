@@ -47,6 +47,14 @@ functions
 
 It looks like function names have to start with an upper case character otherwise you get an error.
 
+filetype plugins
+----------------
+
+Put a file named sh_something.vim into .vim/ftplugin/
+write
+echo "this is a shell script!!!"
+and it will be executed everytime you open a file with filename *.sh with vim
+
 -------------------------------------------------------------------------------------------------------
 
 
