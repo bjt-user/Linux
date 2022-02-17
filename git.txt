@@ -63,9 +63,10 @@ git remote -v
 --------------------------------------------------
 How to go back to the commit (and discard modifications)
 --------------------------------------------------
-Changes that haven't been committed to the local repository are called "local" changes in Git.
-They exist in your Working Copy, but you haven't wrapped them in a commit, yet.
+Changes that HAVE been added can be resettet with this:
+git reset
 
+Changes that haven't been added.
 If you want to discard this type of changes, you can use the git restore command:
 
 git restore index.html
