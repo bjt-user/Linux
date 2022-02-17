@@ -206,6 +206,7 @@ set smartindent
 
 ------------------------------------------------------------------------------------------------------------
 
+
 Implementing a status line in VIM:
 ----------------------------------
 " STATUS LINE ------------------------------------------------------------ {{{
@@ -238,13 +239,17 @@ set laststatus=2
 # INSTALLING PLUGINS ##################################################
 #######################################################################
 
-Trying to install plugins without root access:
+To find out which files Vim has actually loaded, execute
+
+:scriptnames
+
+installing plugins without root access:
 Copy plugin/auto-pairs.vim to ~/.vim/plugin
 https://github.com/jiangmiao/auto-pairs
 (closes "(", "[", "{" automatically)
 
 Pasting manually into a putty session with vim does not really work.
 (formatting issues which can maybe be fixed)
-But
+(maybe problems come from "set autoindent")
 git clone git clone https://github.com/vim-scripts/Auto-Pairs
-worked on that server without root!
+Try pasting into "vi" next time to prevent formatting failures.
