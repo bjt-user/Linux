@@ -1,0 +1,5 @@
+Flatpak is a utility for software deployment and package management for Linux. It is advertised as offering a sandbox environment in which users can run application software in isolation from the rest of the system.
+
+Flatpak ist eine Alternative zu der von Canonical entwickelten Paketverwaltung Snappy, im Unterschied zu dieser aber weitgehend auf grafische Oberflächen beschränkt.
+
+sudo apt install flatpak
