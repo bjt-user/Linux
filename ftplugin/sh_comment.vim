@@ -1,7 +1,7 @@
 "(echos for debugging are commented out)
 "using <c-u> before call eliminates the number you type before the command
 "but you can still catch that number with v:count or v:count1
-map <unique> <Leader>c :<c-u>call Commenter() <CR>
+nmap <unique> <Leader>c :<c-u>call Commenter() <CR>
 
 let s:firstrun="true"
 
