@@ -50,6 +50,12 @@ or
 git show
 (and look at the first line and the string after HEAD->)
 
+this works at least when you did not make changes:
+git status
+
+git branch -a
+
+(in detached head mode you need a different command)
 -----------------------------------------------------
 How to clone a specific branch of a repo (not master)
 -----------------------------------------------------
