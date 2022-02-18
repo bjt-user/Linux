@@ -198,7 +198,7 @@ The 'n' in ':nmap' and ':nnoremap' denotes normal mode.
 <CR> bedeutet, dass der command auch direkt ausgeführt wird und nicht mit ENTER bestätigt werden muss.
 
 "noremap" means The {rhs} of the map is not re-mappable.
-=> which does not work for me, so I will stick with nmap
+=> which does not seem to work for me, so I will stick with nmap
 ------------------------------------------------------------------------------------------------------------
 
 " the autoindent feature inserts an indent if it detects an indent in the line before "
