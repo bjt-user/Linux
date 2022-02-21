@@ -86,6 +86,9 @@ di=1;4;31;42
 
 in your LS_COLORS variable would make directories appear in bold underlined red text with a green background!
 
+my favorite for directories (black color on dark grey background):
+LS_COLORS='di=0;30;100'; export LS_COLORS
+
 -------------------------------------------------------------------
 How to source .bashrc (so it takes effect without restarting shell)
 -------------------------------------------------------------------
