@@ -2,3 +2,22 @@ only show files (with hidden files) (ignore directories)
 ls -lap | grep -v /
 
 (ls -p adds "/" to directories)
+
+------------------------------
+How to adjust the colors of ls
+------------------------------
+
+We can run the following command to do so:
+
+LS_COLORS="di=1;31"
+
+The di=1;31 bit tells ls that directories (di) are (=) bold (1;) red (31).
+
+echo $LS_COLORS
+
+=> did not work
+
+-------------------------------------------------------------------
+How to source .bashrc (so it takes effect without restarting shell)
+-------------------------------------------------------------------
+. ~/.bashrc
