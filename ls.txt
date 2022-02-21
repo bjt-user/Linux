@@ -20,6 +20,11 @@ echo $LS_COLORS
 LS_COLORS='di=0;31'; export LS_COLORS
 
 => that worked instantly without sourcing .bashrc
+di=directory
+
+LS_COLORS='di=0;32'; export LS_COLORS
+
+=> ist fürs erste ok, man könnte vll noch den Hintergrund ändern bei den directories
 
 -------------------------------------------------------------------
 How to source .bashrc (so it takes effect without restarting shell)
