@@ -21,6 +21,8 @@ set expandtab
 set shiftwidth=2
 
 "KEYBINDINGS (keybindings for plugins are further down)
+let mapleader=","
+
 nmap <F2> :!clear;chmod +x % <CR>
 
 " <bar> is needed to change between internal vim commands and terminal
