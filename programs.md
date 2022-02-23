@@ -41,8 +41,6 @@ You can choose "window capture" and then add the window you want to record.
 [see display_server.md](display_server.md)
 
 ---
----
----
 
 Watch videos:
 sudo apt install vlc
