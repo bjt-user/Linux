@@ -1,5 +1,5 @@
 Vim scripts have the .vim ending.
-To execute a vimscript type `source %`
+To execute a vimscript type `:source %`
 (or "so %")
 
 If you put your example.vim file into `~/.vim/plugin` it gets executed everytime you start vim.\
