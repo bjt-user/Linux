@@ -1,5 +1,4 @@
-Navigation
-----------
+#### Navigation
 In normal mode:
 fp    : to go to the next occurance of the letter "p" in the current line
 
@@ -7,8 +6,7 @@ gg    : go to first line
 G     : go to last line
 
 
-How to paste something from the clipboard into vim
---------------------------------------------------
+#### How to paste something from the clipboard into vim
 ctrl + shift + v (does not work for putty sessions)
 
 OR:
@@ -20,9 +18,8 @@ Copy some text to the clipboard with ctrl + c -> go into vim
 OR:
 go into insert mode -> shift + einfg
 
-------------------------------------------------------------------
-How to copy some text and replace another part of the file with it
-------------------------------------------------------------------
+
+#### How to copy some text and replace another part of the file with it
 
 go to the beginning of the word
 type "v" and select the word with navigation keys
@@ -38,9 +35,7 @@ go to the next word
 "vw" to select word
 "p" to paste
 
-------------------
-Search and replace
-------------------
+#### Search and replace
 
 Sometimes you have a string that has multiple occurances in the file
 and you want to replace it with another string.
@@ -59,9 +54,9 @@ or
 :.,$s/foo/bar/
 for the current line until the end of the file
 
-------
-Search
-------
+
+#### Search
+
 
 /pattern
 
@@ -71,9 +66,8 @@ then / and <enter> to get to the next occurence
 To get rid of the highlighted patterns:
 :nohl
 
------------------------------------------------------------------------------------------------------------------------------
-Vimdiff ohne Farbcodierung:
----------------------------
+#### Vimdiff ohne Farbcodierung:
+
 Folgendes in die .vimrc schreiben (wenn sie nicht existiert im home-Verzeichnis, dann neue Datei anlegen):
 
 if $COLOR=='OFF'
@@ -83,14 +77,14 @@ endif
 
 Und vimdiff mit folgendem Befehl aufrufen: COLOR=OFF vimdiff file1 file2
 Das diffchange highlighting bleibt leider, kann man aber mit :hi DiffText term=none ausstellen (hat bei mir nicht in der vimrc funktioniert) 
------------------------------------------------------------------------------------------------------------------------------
-Disable yellow highlighting (search results or something similar)
----------------------------
-:nohl
 
---------------------------------------------------------------
-colorschemes
-------------
+#### Disable yellow highlighting (search results or something similar)
+```
+:nohl
+```
+
+#### colorschemes
+
 to view the current color scheme:
 
 :colorscheme
@@ -98,18 +92,25 @@ or
 :color
 
 to see all installed color scheme:
-
+```
 :colorscheme [space] [tab]
+```
 or
+```
 :color [space] [tab]
+```
 
 And you can cylce throug them.
 
 To select a color scheme:
+```
 :color industry
+```
 
 You can write
+```
 color industry
+```
 into .vimrc to set it permanently
 
 --------------
