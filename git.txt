@@ -43,6 +43,10 @@ git config --global core.editor "vim"
 -----------------------------------------
 How to show the current branch you are in
 -----------------------------------------
+git branch
+
+or
+
 git rev-parse --abbrev-ref HEAD
 
 or
