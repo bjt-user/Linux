@@ -2,8 +2,8 @@
 In normal mode:
 fp    : to go to the next occurance of the letter "p" in the current line
 
-gg    : go to first line
-G     : go to last line
+`gg`    : go to first line\
+`G`     : go to last line
 
 
 #### How to paste something from the clipboard into vim
@@ -57,11 +57,12 @@ for the current line until the end of the file
 
 #### Search
 
-
+```
 /pattern
+```
 
-then / and <enter> to get to the next occurence
-? and <enter> to go in reverse direction
+then `/` and `<enter>` to get to the next occurence\
+`?` and `<enter>` to go in reverse direction
 
 To get rid of the highlighted patterns:
 :nohl
@@ -113,9 +114,8 @@ color industry
 ```
 into .vimrc to set it permanently
 
---------------
-AUTOCOMPLETION
---------------
+#### AUTOCOMPLETION
+
 There is autocompletion in plain vim without installing any plugins.
 Out of the box it only works for words that were already used within the current file.
 To get a list of words that can be made out of the current letters:
@@ -130,14 +130,15 @@ Once a word is selected it is placed into the editor and you can keep on writing
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-Mehrere Dateien (nebeneinander) öffnen:
----------------------------------------
+#### Mehrere Dateien (nebeneinander) öffnen:
+
+```
 :vsplit dateiname
-
+```
 oder
-
+```
 :split dateiname
-
+```
 Scheinbar kann man so beliebig viele Dateien nebeneinander öffnen.
 Zwischen den Dateien wechseln:
 ctrl + w + w (w doppelt drücken)
@@ -154,8 +155,9 @@ or
 :qa! (to discard changes)
 
 Outside of vim:
+```
 vim -O file1 file2
-
+```
 -----------------------------------------------------------------------------------------------------------------------------
 
 Execute terminal commands inside of vim
@@ -214,6 +216,7 @@ set smartindent
 
 Implementing a status line in VIM:
 ----------------------------------
+```
 " STATUS LINE ------------------------------------------------------------ {{{
 " spaces are escpaed with "\ " "
 
@@ -238,7 +241,7 @@ set statusline+=\ percent:\ %p%%
 set laststatus=2
 
 " }}}
-
+```
 
 #######################################################################
 # INSTALLING PLUGINS ##################################################
