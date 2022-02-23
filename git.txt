@@ -60,6 +60,12 @@ git status
 git branch -a
 
 (in detached head mode you need a different command)
+
+----------------------
+How to switch branches
+----------------------
+git checkout -b [branchname]
+
 -----------------------------------------------------
 How to clone a specific branch of a repo (not master)
 -----------------------------------------------------
