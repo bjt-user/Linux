@@ -21,7 +21,7 @@ text2wave exampletext.txt -o output.wav
 
 -------------------------------------------------------------------------------------------------
 
-Record your screen (wayland fails):
+**Record your screen** (wayland fails):
 sudo apt install simplescreenrecorder
 => the program can be started over the "show applications" menu
 "You are using a non-X11 window system (e.g. Wayland) which is currently not supported by SimpleScreenRecorder.
@@ -37,7 +37,7 @@ You have to add a source before recording.
 You can choose "window capture" and then add the window you want to record.
 => does not seem to work for recording Linux Terminals
 
-Just switch to "Default X11" in the login menu instead of wayland and SSR works.
+**Just switch to "Default X11" in the login menu instead of wayland and SSR works.**
 
 -------------------------------------------------------------------------------------------------
 
