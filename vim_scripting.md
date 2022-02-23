@@ -24,38 +24,41 @@ execute "normal Inew text \<Esc>
 
 ---------------------------------
 simple vimscript:
-
+```
 let name = "John"
 
 echo "Hello, " . name
-
+```
 ---------------------------------
 
 getting the cursor position:
-
+```
 let colpos=col('.')
 
 echo colpos
-
+```
 getting the line number where the cursor is currently at:
-
+```
 let linepos=line('.')
 
 echo linepos
-
+```
 
 
 functions
 ---------
 
 It looks like function names have to start with an upper case character otherwise you get an error.
+Use `function!` so you don't get errors when opening multiple files. (i.e. `vim -O file1 file2`)
 
 filetype plugins
 ----------------
 
 Put a file named sh_something.vim into .vim/ftplugin/
 write
+```
 echo "this is a shell script!!!"
+```
 and it will be executed everytime you open a file with filename *.sh with vim
 
 It is also recognized as shell script when you have a #!/bin/bash in the first line
@@ -63,7 +66,7 @@ and a different fileending.
 
 -------------------------------------------------------------------------------------------------------
 
-
+```
 function Commenter ()
   let curline=getline('.')
 
@@ -78,7 +81,8 @@ function Commenter ()
     execute "normal i\"\<Esc>"
   endif
 endfunction
+```
 
-Put this in a file in .vim/plugin/filename.vim
+Put this in a file in `.vim/plugin/filename.vim`
 
-Then you can execute this function in vim with :call Commenter()
+Then you can execute this function in vim with `:call Commenter()`
