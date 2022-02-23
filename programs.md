@@ -1,6 +1,6 @@
 # short manuals and hints for useful programs
 
-A sqlite3 browser (comfortable gui program for sqlite3 databases)
+A **sqlite3 browser** (comfortable gui program for sqlite3 databases)
 sudo apt install sqlitebrowser
 
 => works great, in the "browse data" area you can insert records, update records very fast, don't forget to write changes (ctrl + s)
@@ -8,7 +8,7 @@ sudo apt install sqlitebrowser
 
 -------------------------------------------------------------------------------------------------
 
-gTTS (Google Text To Speech) (better quality than festival, female voice)
+**gTTS (Google Text To Speech)** (better quality than festival, female voice)
 sudo pip3 install gtts
 
 gtts-cli -f test.txt -o output.mp3
