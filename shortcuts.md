@@ -1,5 +1,4 @@
-How to add custom shortcuts in Debian (with gnome)
--------------------------------------
+#### How to add custom shortcuts in Debian (with gnome)
 
 Go to settings -> devices -> keyboard -> scroll down to "custom shortcuts" -> + -> give a name
 -> for a self-made python script type the following command:
