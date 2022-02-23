@@ -1,6 +1,0 @@
-Do not install the package "qmail".
-It destroys Debian.
-
-It causes errors on Ubuntu, but Ubuntu itself remains stable.
-
-If you want a stable Linux install you do Linux from scratch and install everything from sourcem and don't use paket managers.
