@@ -1,6 +1,6 @@
 Vim scripts have the .vim ending.
 To execute a vimscript type `:source %`
-(or "so %")
+(or `:so %`)
 
 If you put your example.vim file into `~/.vim/plugin` it gets executed everytime you start vim.\
 There is also the folder `~/.vim/ftplugin` for plugins that are for specific filetypes, but for a start thats too complicated.
