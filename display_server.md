@@ -10,7 +10,8 @@ ps -e | grep X
 856 tty2     00:00:54 Xorg
 ```
 
---------------------------------------------------
-How to change the display server/windowing system:
---------------------------------------------------
+---
+
+## How to change the display server/windowing system:
+
 In Debian and Ubuntu you can change between X11 and wayland in the login menu.
