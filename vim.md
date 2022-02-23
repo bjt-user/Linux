@@ -117,6 +117,8 @@ color industry
 ```
 into .vimrc to set it permanently
 
+---
+
 If colors annoy you:
 ```
 :syntax off
