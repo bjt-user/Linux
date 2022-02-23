@@ -243,14 +243,12 @@ set laststatus=2
 " }}}
 ```
 
-#######################################################################
-# INSTALLING PLUGINS ##################################################
-#######################################################################
+#### INSTALLING PLUGINS
 
 To find out which files Vim has actually loaded, execute
-
+```
 :scriptnames
-
+```
 installing plugins without root access:
 Copy plugin/auto-pairs.vim to ~/.vim/plugin
 https://github.com/jiangmiao/auto-pairs
