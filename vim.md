@@ -160,7 +160,7 @@ vim -O file1 file2
 ```
 -----------------------------------------------------------------------------------------------------------------------------
 
-Execute terminal commands inside of vim
+#### Execute terminal commands inside of vim
 ---------------------------------------
 to execute a bash script (% stands for the file name that is opened in vim)
 :!./%
@@ -170,14 +170,15 @@ or to first clear terminal and then execute script:
 
 (vim doesnt know about aliases that are set in the terminal)
 
---------------------------------
-How to see the detected filetype
---------------------------------
-:set ft?
 
+#### How to see the detected filetype
+
+```
+:set ft?
+```
 -----------------------------------------------------------------------------------------------------------------------------
 
-Help
+#### Help
 
 :help
 
@@ -185,11 +186,10 @@ Help
 
 When in help type :only to make the help screen full screen.
 
-#############################################################################################################################
-##########
-# .vimrc #
-##########
-Key Mappings in VIM
+
+### .vimrc and vimscripting
+
+#### Key Mappings in VIM
 -------------------
 https://vim.fandom.com/wiki/Mapping_keys_in_Vim_-_Tutorial_(Part_1)
 
@@ -214,7 +214,7 @@ set smartindent
 ------------------------------------------------------------------------------------------------------------
 
 
-Implementing a status line in VIM:
+#### Implementing a status line in VIM:
 ----------------------------------
 ```
 " STATUS LINE ------------------------------------------------------------ {{{
