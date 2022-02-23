@@ -1,13 +1,20 @@
 "(echos for debugging are commented out)
 "using <c-u> before call eliminates the number you type before the command
 "but you can still catch that number with v:count or v:count1
-nmap <unique> <silent> <Leader>c :<c-u>call Commenter() <CR>
+"if you use <unique> you run into a problem when opening more than one file
+"(i.e. vim -O file1 file2)
+"so you should use nore in front of map
+"i am not sure if it is working correctly, last tmie I checked you could still remap
+"the righthandside of the command, but this fixes errors when opening more than one file
+nnoremap <silent> <Leader>c :<c-u>call Commenter() <CR>
 
 let s:firstrun="true"
 
 "using abort for a function just means that it will stop when an error
 "occurs (easier to read error messages)
-function Commenter() abort
+"the ! after function means it replaces an existing function with the same name
+"the ! is neede to open more than one file at once
+function! Commenter() abort
   let l:i = v:count1
   while l:i>0
     if s:firstrun=="true"
