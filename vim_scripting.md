@@ -15,7 +15,7 @@ https://vimhelp.org/usr_41.txt.html#function-list
 https://devhints.io/vimscript-functions
 
 I am trying to build a function that comments the line if it is not commented
-or uncomment if it is commented no matter in which column the cursor is.
+or uncomment if it is commented no matter in which column the cursor is.\
 And at the same time not overwriting any registers.
 (for example if you do "dd" that line is saved in a register)
 
@@ -48,7 +48,7 @@ echo linepos
 functions
 ---------
 
-It looks like function names have to start with an upper case character otherwise you get an error.
+It looks like function names have to start with an upper case character otherwise you get an error.\
 Use `function!` so you don't get errors when opening multiple files. (i.e. `vim -O file1 file2`)
 
 filetype plugins
