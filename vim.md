@@ -163,11 +163,13 @@ vim -O file1 file2
 #### Execute terminal commands inside of vim
 ---------------------------------------
 to execute a bash script (% stands for the file name that is opened in vim)
+```
 :!./%
-
+```
 or to first clear terminal and then execute script:
+```
 :!clear;./%
-
+```
 (vim doesnt know about aliases that are set in the terminal)
 
 
@@ -179,11 +181,12 @@ or to first clear terminal and then execute script:
 -----------------------------------------------------------------------------------------------------------------------------
 
 #### Help
-
+```
 :help
-
+```
+```
 :help <topic>
-
+```
 When in help type :only to make the help screen full screen.
 
 
@@ -194,8 +197,9 @@ When in help type :only to make the help screen full screen.
 https://vim.fandom.com/wiki/Mapping_keys_in_Vim_-_Tutorial_(Part_1)
 
 Folgendes in die .vimrc reinschreiben (to execute the bash script that is opened in vim):
+```
 nmap <F5> :!clear;./% <CR>
-
+```
 To map keys that work only in the normal mode, use the ':nmap' or ':nnoremap' command.
 The 'n' in ':nmap' and ':nnoremap' denotes normal mode.
 <CR> bedeutet, dass der command auch direkt ausgeführt wird und nicht mit ENTER bestätigt werden muss.
