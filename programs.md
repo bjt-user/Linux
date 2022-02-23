@@ -1,4 +1,4 @@
-## short manuals and hints for useful programs
+# short manuals and hints for useful programs
 
 A sqlite3 browser (comfortable gui program for sqlite3 databases)
 sudo apt install sqlitebrowser
