@@ -87,10 +87,13 @@ Das diffchange highlighting bleibt leider, kann man aber mit :hi DiffText term=n
 #### colorschemes
 
 to view the current color scheme:
-
+```
 :colorscheme
+```
 or
+```
 :color
+```
 
 to see all installed color scheme:
 ```
@@ -113,6 +116,11 @@ You can write
 color industry
 ```
 into .vimrc to set it permanently
+
+If colors annoy you:
+```
+:syntax off
+```
 
 #### AUTOCOMPLETION
 
