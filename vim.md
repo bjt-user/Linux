@@ -1,6 +1,6 @@
 #### Navigation
-In normal mode:
-fp    : to go to the next occurance of the letter "p" in the current line
+In normal mode:\
+`fp`    : to go to the next occurance of the letter "p" in the current line
 
 `gg`    : go to first line\
 `G`     : go to last line
