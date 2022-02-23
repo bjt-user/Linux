@@ -1,4 +1,4 @@
-Do **not** install the package "qmail".\
+Do **not** install the apt package `qmail`.\
 It destroys Debian.\
 (the package does not seem to exist anymore on Debian 11)
 
