@@ -19,7 +19,7 @@ Text To Speech Software: (with crappy quality)
 sudo apt install festival
 text2wave exampletext.txt -o output.wav
 
--------------------------------------------------------------------------------------------------
+- - -
 
 **Record your screen** (wayland fails):
 sudo apt install simplescreenrecorder
@@ -47,7 +47,7 @@ You can choose "window capture" and then add the window you want to record.
 Watch videos:
 sudo apt install vlc
 
--------------------------------------------------------------------------------------------------
+***
 
 openshot:
 todo: report bug: crash when clicking on preferences
