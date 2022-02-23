@@ -38,6 +38,7 @@ You can choose "window capture" and then add the window you want to record.
 => does not seem to work for recording Linux Terminals
 
 **Just switch to "Default X11" in the login menu instead of wayland and SSR works.**
+[see display_server.md](display_server.md)
 
 -------------------------------------------------------------------------------------------------
 
