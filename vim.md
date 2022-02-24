@@ -275,10 +275,10 @@ Try pasting into "vi" next time to prevent formatting failures.
 
 #### Markdown (.md files)
 
-These observations were made in vim version 8.2. 
-.md files will be partly rendered in vim.
-And you can even **follow links** with `gf`. (for local files)
+These observations were made in vim version 8.2.\
+.md files will be partly rendered in vim.\
+And you can even **follow links** with `gf`. (for local files)\
 (see also `:h gf`)
 
-(for internet links you could try `gx`)
+(for internet links you could try `gx`)\
 netrw should open the link with the external handler (see :h netrw-gx)
