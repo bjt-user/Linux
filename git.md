@@ -142,3 +142,11 @@ https://www.youtube.com/watch?v=V5KrD7CmO4o&ab_channel=TheModernCoder
 
 Squashing commits locally did work,\
 but `git push` did not work.
+
+```
+ git reset --soft [hexcode of initial commit]
+```
+This squashes all commits. But you still have to `git push --force`...
+```
+remote: GitLab: You are not allowed to force push code to a protected branch on this project.
+```
