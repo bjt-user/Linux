@@ -108,11 +108,20 @@ or to restore all files in the current folder:
 ```
 git restore .
 ```
-#### How to show changes since last commit
+#### Show changes Since Last Commit
 
 To see changes since last commit (that were not added yet):
 ```
 git diff
+```
+
+#### tab completion (for changing branches i.e.)
+```
+curl -O https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+```
+put this into your `~/.bashrc`
+```
+source ~/git-completion.bash
 ```
 TODO:
 try to squash commits in master branch
