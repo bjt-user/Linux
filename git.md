@@ -136,6 +136,7 @@ git switch 6<tab>
 ```
 and branch name will be autocompleted.
 
-TODO:
-try to squash commits in master branch
-https://stackoverflow.com/questions/55325930/git-how-to-squash-all-commits-on-master-branch
+#### squash commits (clear up history)
+
+https://www.youtube.com/watch?v=V5KrD7CmO4o&ab_channel=TheModernCoder
+
