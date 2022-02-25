@@ -1,7 +1,7 @@
 #### How to push to gitlab
-
+```
 git push --repo https://gitlab.com/bjt-user1/Linux
-
+```
 then you will be asked for username and password
 
 #### How to push without entering username and password?
@@ -9,11 +9,13 @@ then you will be asked for username and password
 FAIL: git config --global user.name myusername?
 => nope, doesnt work
 
-
+```
 git config --global credential.helper store
-
+```
 then
+```
 git push
+```
 and enter credentials again (it remembers them)
 
 => worked like a charm!
@@ -23,37 +25,39 @@ and enter credentials again (it remembers them)
 
 Once you have cloned the repository you can't clone again to update the content.
 The following command seems to work:
-
+```
 git pull origin
-
+```
 I get one warning with redirecting to ...https://gitlab.com/bjt-user1/Linux.git
 So I changed the .git/config to https://gitlab.com/bjt-user1/Linux.git
 => it worked (no more warnings)
 
 After that first time it worked to just type:
+```
 git pull
-
+```
 
 #### How to make vim your standard editor for commit messages
-
+```
 git config --global core.editor "vim"
+```
 (or change the contents of ~/.gitconfig)
 
 #### How to show the current branch you are in
 
-git branch
+`git branch`
 
 or
 
-git rev-parse --abbrev-ref HEAD
+`git rev-parse --abbrev-ref HEAD`
 
 or
 
-git show
+`git show`
 (and look at the first line and the string after HEAD->)
 
 this works at least when you did not make changes:
-git status
+`git status`
 
 git branch -a
 
