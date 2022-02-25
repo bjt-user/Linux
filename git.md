@@ -93,7 +93,7 @@ git clone -b <branch> <remote_repo>
 git remote -v
 ```
 
-#### How to go back to the commit (and discard modifications)
+#### go back to the commit (and discard modifications)
 
 Changes that HAVE been added can be resettet with this:
 ```
@@ -123,6 +123,13 @@ put this into your `~/.bashrc`
 ```
 source ~/git-completion.bash
 ```
+
+Now you can do
+```
+git switch 6<tab>
+```
+and branch name will be autocompleted.
+
 TODO:
 try to squash commits in master branch
 https://stackoverflow.com/questions/55325930/git-how-to-squash-all-commits-on-master-branch
