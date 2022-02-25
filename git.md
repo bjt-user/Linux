@@ -136,8 +136,9 @@ git switch 6<tab>
 ```
 and branch name will be autocompleted.
 
-#### squash commits (clear up history)
+#### squash commits (FAIL)
 
 https://www.youtube.com/watch?v=V5KrD7CmO4o&ab_channel=TheModernCoder
 
-(but `git push` did not work)
+Squashing commits locally did work,\
+but `git push` did not work.
