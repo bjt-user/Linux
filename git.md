@@ -136,7 +136,7 @@ git switch 6<tab>
 ```
 and branch name will be autocompleted.
 
-#### squash commits (FAIL)
+#### squash commits
 
 https://www.youtube.com/watch?v=V5KrD7CmO4o&ab_channel=TheModernCoder
 
@@ -150,3 +150,7 @@ This squashes all commits. But you still have to `git push --force`...
 ```
 remote: GitLab: You are not allowed to force push code to a protected branch on this project.
 ```
+
+In `gitlab` master branches are protected by default.\
+Go to `settings` in the left menu on the bottom.\
+Go to `repository`. There you can `unprotect` the master branch.
