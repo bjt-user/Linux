@@ -45,22 +45,29 @@ git config --global core.editor "vim"
 
 #### How to show the current branch you are in
 
-`git branch`
+```
+git branch
+```
 
 or
-
-`git rev-parse --abbrev-ref HEAD`
+```
+git rev-parse --abbrev-ref HEAD
+```
 
 or
-
-`git show`
+```
+git show
+```
 (and look at the first line and the string after HEAD->)
 
 this works at least when you did not make changes:
-`git status`
+```
+git status
+```
 
+```
 git branch -a
-
+```
 (in detached head mode you need a different command)
 
 
@@ -89,16 +96,18 @@ git remote -v
 #### How to go back to the commit (and discard modifications)
 
 Changes that HAVE been added can be resettet with this:
+```
 git reset
-
+```
 Changes that haven't been added.
 If you want to discard this type of changes, you can use the git restore command:
 ```
 git restore index.html
 ```
 or to restore all files in the current folder:
+```
 git restore .
-
+```
 #### How to show changes since last commit
 
 To see changes since last commit (that were not added yet):
