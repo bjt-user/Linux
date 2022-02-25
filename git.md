@@ -1,10 +1,10 @@
-#### How to push to gitlab
+#### push to gitlab
 ```
 git push --repo https://gitlab.com/bjt-user1/Linux
 ```
 then you will be asked for username and password
 
-#### How to push without entering username and password?
+#### push without entering username and password?
 
 FAIL: git config --global user.name myusername?
 => nope, doesnt work
@@ -37,13 +37,13 @@ After that first time it worked to just type:
 git pull
 ```
 
-#### How to make vim your standard editor for commit messages
+#### make vim your standard editor for commit messages
 ```
 git config --global core.editor "vim"
 ```
 (or change the contents of ~/.gitconfig)
 
-#### How to show the current branch you are in
+#### show the current branch you are in
 
 ```
 git branch
@@ -83,7 +83,7 @@ git checkout master
 ```
 
 
-#### How to clone a specific branch of a repo (not master)
+#### clone a specific branch of a repo (not master)
 ```
 git clone -b <branch> <remote_repo>
 ```
@@ -113,6 +113,12 @@ git restore .
 To see changes since last commit (that were not added yet):
 ```
 git diff
+```
+
+#### show history (all commits)
+
+```
+git log --pretty=oneline
 ```
 
 #### tab completion (for changing branches i.e.)
