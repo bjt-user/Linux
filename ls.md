@@ -1,11 +1,11 @@
 only show files (with hidden files) (ignore directories)
+```
 ls -lap | grep -v /
-
+```
 (ls -p adds "/" to directories)
 
-------------------------------
-How to adjust the colors of ls
-------------------------------
+
+#### How to adjust the colors of ls
 
 LS_COLORS='di=0;31'; export LS_COLORS
 
@@ -89,7 +89,9 @@ in your LS_COLORS variable would make directories appear in bold underlined red 
 my favorite for directories (black color on dark grey background):
 LS_COLORS='di=0;30;100'; export LS_COLORS
 
--------------------------------------------------------------------
-How to source .bashrc (so it takes effect without restarting shell)
--------------------------------------------------------------------
+
+#### How to source .bashrc (so it takes effect without restarting shell)
+
+```
 . ~/.bashrc
+```
