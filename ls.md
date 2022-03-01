@@ -20,6 +20,11 @@ LS_COLORS='di=0;32'; export LS_COLORS
 LS_COLORS='di=0;32;107'; export LS_COLORS
 => directories with white background an green forground
 
+directories with grey background and black foreground:
+```
+LS_COLORS='di=0;30;47'
+```
+
 Blue = 34
 Green = 32
 Light Green = 1;32
