@@ -16,3 +16,8 @@ DESCRIPTION
 
     edit files in place (makes backup if SUFFIX supplied)
 ```
+
+The following command replaces the string `<tag>` with the string `<notag>` in the file `test`.
+```
+sed -i 's/<tag>/<notag>/' test
+```
