@@ -8,7 +8,7 @@ DESCRIPTION
     is consequently more efficient.  But it is sed's ability to filter text
     in a pipeline which particularly distinguishes it from other  types  of
     editors.
-``
+```
 
 
 ```
