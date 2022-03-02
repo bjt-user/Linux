@@ -24,7 +24,8 @@ The following command replaces the string `<tag>` with the string `<notag>` in t
 sed -i 's/<tag>/<notag>/' test
 ```
 
-this deletes all tags in a file named `test`:
+this deletes all single line tags in a file named `test`:
 ```
 sed -i 's/<.*>//' test
 ```
+It does not work if a tag stretches over multiple lines though.
