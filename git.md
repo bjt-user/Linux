@@ -124,7 +124,10 @@ git diff --no-color
 ```
 git log --pretty=oneline
 ```
-
+or to see only the last 3 commits and hex codes with a length of 8:
+```
+git log -n3 --oneline
+```
 #### tab completion (for changing branches i.e.)
 ```
 curl -O https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
