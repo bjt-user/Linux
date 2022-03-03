@@ -28,8 +28,8 @@ The following command seems to work:
 ```
 git pull origin
 ```
-I get one warning with redirecting to ...https://gitlab.com/bjt-user1/Linux.git
-So I changed the .git/config to https://gitlab.com/bjt-user1/Linux.git
+I get one warning with redirecting to `...https://gitlab.com/bjt-user1/Linux.git`\
+So I changed the `.git/config` to `https://gitlab.com/bjt-user1/Linux.git`\
 => it worked (no more warnings)
 
 After that first time it worked to just type:
