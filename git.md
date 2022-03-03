@@ -108,6 +108,13 @@ or to restore all files in the current folder:
 ```
 git restore .
 ```
+
+#### undo a commit
+
+this creates a new commit but undoes the changes from the commit-id provided:
+```
+git revert <commit-id>
+```
 #### Show changes Since Last Commit
 
 To see changes since last commit (that were not added yet):
