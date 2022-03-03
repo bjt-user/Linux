@@ -114,6 +114,10 @@ To see changes since last commit (that were not added yet):
 ```
 git diff
 ```
+or (if you are in a shitty terminal i.e. PowerShell):
+```
+git diff --no-color
+```
 
 #### show history (all commits)
 
