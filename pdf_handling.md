@@ -14,9 +14,10 @@ sudo apt-get install texlive-extra-utils
 ```
 
 ```
-pdfcrop --margins "400 400 0 0" input.pdf output.pdf
+pdfcrop --margins "-600 -450 0 0" input.pdf output.pdf
 ```
 
-=> does **not** work, the `pdf` just gets smaller
+(see `pdfcrop --help`)
+(`--margins "<left> <top> <right> <bottom>"                    (0 0 0 0)`)
 
 TODO: Play around with python pdf libs.
