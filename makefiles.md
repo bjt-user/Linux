@@ -1,3 +1,5 @@
+A Makefile is a unix tool to compile software projects.
+
 #### Why use makefiles?
 
 Makefiles can detect which source files have changed and need to be recompiled.\
