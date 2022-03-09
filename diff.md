@@ -17,7 +17,8 @@ Given a `diff file1 file2`, `<` means the line is missing in file2 and `>` means
 `3d2` and `5a5` denote line numbers affected and which actions were performed.\
 The number on the left of the character is the line number in file1.txt.\
 The number on the right is the line number in file2.txt.\
-But it is not really clear what this means...
+But it is not really clear what this means...\
+"The 3d2 and 5a5 can be ignored, they are commands for patch which is often used with diff."
 
 
 #### Ignore The Order Of The lines
