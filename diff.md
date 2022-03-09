@@ -2,6 +2,8 @@ You can compare files with the `diff` command. (`diff file1 file2`)
 
 #### But What Does The Output Mean Exactly?
 
+Given a `diff file1 file2`, `<` means the line is missing in file2 and `>` means the line is missing in file1.
+
 `<` - denotes lines in file1.txt
 
 `>` - denotes lines in file2.txt
@@ -14,9 +16,9 @@ You can compare files with the `diff` command. (`diff file1 file2`)
 
 `3d2` and `5a5` denote line numbers affected and which actions were performed.\
 The number on the left of the character is the line number in file1.txt.\
-The number on the right is the line number in file2.txt.
+The number on the right is the line number in file2.txt.\
+But it is not really clear what this means...
 
-Given a `diff file1 file2`, `<` means the line is missing in file2 and `>` means the line is missing in file1.
 
 #### Ignore The Order Of The lines
 
