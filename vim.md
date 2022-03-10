@@ -61,8 +61,12 @@ for the current line until the end of the file
 /pattern
 ```
 
-then `/` and `<enter>` to get to the next occurence\
+hit `n` to go to the next occurence
+
+or hit `/` and `<enter>` to get to the next occurence\
 `?` and `<enter>` to go in reverse direction
+
+`/\cpattern` for case insensitive search
 
 To get rid of the highlighted patterns:
 :nohl
