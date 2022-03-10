@@ -69,7 +69,7 @@ or hit `/` and `<enter>` to get to the next occurence\
 `/\cpattern` for case insensitive search
 
 To get rid of the highlighted patterns:
-:nohl
+`:nohl`
 
 #### Vimdiff ohne Farbcodierung:
 
