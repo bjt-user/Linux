@@ -7,7 +7,7 @@ In normal mode:\
 
 
 #### paste something from the clipboard into vim
-ctrl + shift + v (does not work for putty sessions)
+ctrl + shift + v (does only work in putty sessions if you enable it in settings)
 
 OR:
 
@@ -18,6 +18,18 @@ Copy some text to the clipboard with ctrl + c -> go into vim
 OR:
 go into insert mode -> shift + einfg
 
+To turn off autoindent when you paste code, there's a special "paste" mode.
+
+Type
+```
+:set paste
+```
+Then paste your code. Note that the text in the tooltip now says `-- INSERT (paste) --`.
+
+After you pasted your code, turn off the paste-mode, so that auto-indenting when you type works correctly again.
+```
+:set nopaste
+```
 
 #### copy some text and replace another part of the file with it
 
