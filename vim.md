@@ -6,7 +6,7 @@ In normal mode:\
 `G`     : go to last line
 
 
-#### How to paste something from the clipboard into vim
+#### paste something from the clipboard into vim
 ctrl + shift + v (does not work for putty sessions)
 
 OR:
@@ -19,7 +19,7 @@ OR:
 go into insert mode -> shift + einfg
 
 
-#### How to copy some text and replace another part of the file with it
+#### copy some text and replace another part of the file with it
 
 go to the beginning of the word
 type "v" and select the word with navigation keys
@@ -70,6 +70,17 @@ or hit `/` and `<enter>` to get to the next occurence\
 
 To get rid of the highlighted patterns:
 `:nohl`
+
+#### go to definition
+
+`gd` will take you to the local declaration.
+`gD` will take you to the global declaration.
+`g*` search for the word under the cursor (like `*`, but `g*` on 'rain' will find words like 'rainbow').
+`g#` same as `g*` but in backward direction.
+`gf` will go to the file under the cursor
+
+I hit `gD` while the cursor was at the call of a bash function that was declared in the same file.\
+And it took me to the function declaration.
 
 #### Vimdiff ohne Farbcodierung:
 
