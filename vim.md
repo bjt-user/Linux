@@ -73,10 +73,10 @@ To get rid of the highlighted patterns:
 
 #### go to definition
 
-`gd` will take you to the local declaration.
-`gD` will take you to the global declaration.
-`g*` search for the word under the cursor (like `*`, but `g*` on 'rain' will find words like 'rainbow').
-`g#` same as `g*` but in backward direction.
+`gd` will take you to the local declaration\
+`gD` will take you to the global declaration\
+`g*` search for the word under the cursor (like `*`, but `g*` on 'rain' will find words like 'rainbow')\
+`g#` same as `g*` but in backward direction\
 `gf` will go to the file under the cursor
 
 I hit `gD` while the cursor was at the call of a bash function that was declared in the same file.\
