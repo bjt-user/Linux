@@ -10,7 +10,7 @@ alias vimrc='vim ~/.vimrc'
 alias vimftp='cd ~/.vim/ftplugin'
 
 #get size of current folder
-alias fsize='printf "The size of this folder is: ";du -h . | tail -1'
+alias fsize='printf "The size of this folder is: ";du -h . | tail -1 | cut -f1'
 
 #remove all docker containers
 alias killd='sudo docker container prune -f'
