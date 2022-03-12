@@ -2,7 +2,7 @@ Too see all environment variables:
 ```
 env
 ```
-
+***
 ### PATH
 #### show the path
 
