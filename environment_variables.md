@@ -7,11 +7,15 @@ env
 
 To set an environment variable:
 ```
-set MYVAR=EXAMPLE
+export MYVAR=EXAMPLE
 ```
 To remove an environment variable:
 ```
 unset MYVAR
+```
+search for specific environment variable:
+```
+env | grep MYVAR
 ```
 ***
 ### PATH
