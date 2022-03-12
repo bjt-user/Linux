@@ -9,6 +9,9 @@ alias gos='cd ~/Coding/scripts'
 alias vimrc='vim ~/.vimrc'
 alias vimftp='cd ~/.vim/ftplugin'
 
+alias bashaliases='vim ~/.bash_aliases'
+alias bashrc='vim ~/.bashrc'
+
 #get size of current folder
 alias fsize='printf "The size of this folder is: ";du -h . | tail -1 | cut -f1'
 
