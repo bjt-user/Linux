@@ -1,8 +1,17 @@
 ### ENVIRONMENT VARIABLES
 
-Too see all environment variables:
+To see all environment variables:
 ```
 env
+```
+
+To set an environment variable:
+```
+set MYVAR=EXAMPLE
+```
+To remove an environment variable:
+```
+unset MYVAR
 ```
 ***
 ### PATH
