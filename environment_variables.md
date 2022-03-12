@@ -10,7 +10,7 @@ Show the `PATH`:
 ```
 echo $PATH
 ```
-
+***
 
 There are different ways to set the `PATH`.\
 To temporarily add a binary to the `PATH` just type 
