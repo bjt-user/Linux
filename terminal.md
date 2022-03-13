@@ -1,12 +1,12 @@
 #### Useful shortcuts and tricks while entering commands in a terminal
 
-*these work in Debian (will probably not work in something like `Putty`)*
+*these work in Debian (might not work in something like `Putty`)*
 
 Jumping a word back/forward while entering commands in the terminal:\
 ctrl + arrowkeys\
 or\
 alt + f -> to move one word forward\
-alt + b -><t><tab> to move one word backwards
+alt + b -> to move one word backwards
 
 Go to the beginning of the line:\
 ctrl + a
