@@ -6,7 +6,7 @@ Jumping a word back/forward while entering commands in the terminal:\
 ctrl + arrowkeys\
 or\
 alt + f -> to move one word forward\
-alt + b -><\t> to move one word backwards
+alt + b -><t> to move one word backwards
 
 Go to the beginning of the line:\
 ctrl + a
