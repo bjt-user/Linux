@@ -20,6 +20,9 @@ ctrl + w
 to yank the text back you just deleted:\
 ctrl + y
 
+to switch two words (space separated) around:\
+alt + t
+
 
 ***
 
