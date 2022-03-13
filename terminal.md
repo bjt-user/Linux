@@ -41,3 +41,10 @@ Then just type
 ```
 sudo !!
 ```
+
+***
+
+to view files on the command line that are bigger than one screen (and maybe when you don't have vi or vim installed) you can use less.
+```
+less textfile.txt
+```
