@@ -1,4 +1,4 @@
-#### Useful shortcuts while entering commands in a terminal
+#### Useful shortcuts and tricks while entering commands in a terminal
 
 *these work in Debian (will probably not work in something like `Putty`)*
 
