@@ -58,7 +58,9 @@ This replaces the word "search" with the word "replace" in line 8 to 10:
 
 There are some symbols that can be used in the range part of the command.
 For example:
+```
 :0,$ s/badword/goodword/g
+```
 for the entire file
 
 or
