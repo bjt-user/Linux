@@ -8,6 +8,9 @@ or\
 alt + f -> to move one word forward\
 alt + b -> to move one word backwards
 
+ctrl + f -> move one character forward\
+ctrl + b -> move one character back
+
 Go to the beginning of the line:\
 ctrl + a
 
