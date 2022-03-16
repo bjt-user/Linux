@@ -1,6 +1,9 @@
-#Sending/Receiving Emails In The Terminal?
-#######################################################################
-WARNING: NEVER INSTALL THE PACKAGE "QMAIL"
+#### Sending/Receiving Emails In The Terminal?
+
+Up to this point I was not able to send/receive emails in a terminal.\
+I think I got it working some time ago with `gmail` and `python`.
+
+**WARNING: NEVER INSTALL THE PACKAGE "QMAIL"**
 
 mutt (FAIL)
 -----------
@@ -46,4 +49,4 @@ same problem as in mutt
 
 GUI Email-Client
 
-https://github.com/bjt-user/Linux/blob/master/evolution.txt
+[Evolution.md](evolution.md)
