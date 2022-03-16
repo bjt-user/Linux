@@ -79,8 +79,10 @@ hit `n` to go to the next occurence
 
 or hit `/` and `<enter>` to get to the next occurence\
 `?` and `<enter>` to go in reverse direction
-
-`/\cpattern` for case insensitive search
+```
+/\cpattern
+```
+for case insensitive search
 
 To get rid of the highlighted patterns:
 `:nohl`
