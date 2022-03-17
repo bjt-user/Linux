@@ -24,7 +24,8 @@ to delete one word (space delimited) backwards:\
 ctrl + w
 
 to delete the character at cursor position:\
-ctrl + d
+ctrl + d\
+(only works if there is something to delete, otherwise it will terminate the shell)
 
 to delete the character in front of the cursor (backspace):\
 ctrl + h
@@ -39,6 +40,8 @@ to go back and forth in history (without using arrowkeys):\
 ctrl + p\
 ctrl + n
 
+the equivalent to <enter> (executes a command):\
+ctrl + m
 
 ***
 
