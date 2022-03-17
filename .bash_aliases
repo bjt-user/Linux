@@ -32,3 +32,12 @@ newbash() {
   chmod +x $filename
   printf "#!/bin/bash" > $filename
 }
+
+#for annoying folder structures where a folder only contains one other folder (as used in java)
+march() {
+  folder_count=$(ls -d */ 2>/dev/null | wc -l)
+  while [ $folder_count -eq 1 ]; do
+    cd *
+    folder_count=$(ls -d */ 2>/dev/null | wc -l)
+  done
+}
