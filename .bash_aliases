@@ -34,6 +34,7 @@ newbash() {
 }
 
 #for annoying folder structures where a folder only contains one other folder (as used in java)
+#cd into the only existing folder if there is exactly one folder until you are in a directory that does not contain exactly one folder
 march() {
   folder_count=$(ls -d */ 2>/dev/null | wc -l)
   while [ $folder_count -eq 1 ]; do
