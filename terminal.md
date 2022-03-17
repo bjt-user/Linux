@@ -29,8 +29,8 @@ ctrl + y
 to switch two words (space separated) around:\
 alt + t
 
-to go back and forth in history (without using arrowkeys):
-ctrl + p
+to go back and forth in history (without using arrowkeys):\
+ctrl + p\
 ctrl + n
 
 
