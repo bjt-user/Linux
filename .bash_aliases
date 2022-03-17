@@ -48,7 +48,7 @@ march() {
 
   folder_count=$(ls -d */ 2>/dev/null | wc -l)
   while [ $folder_count -eq 1 ]; do
-    cd *
+    cd */
     folder_count=$(ls -d */ 2>/dev/null | wc -l)
   done
 }
