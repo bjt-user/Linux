@@ -42,3 +42,13 @@ march() {
     folder_count=$(ls -d */ 2>/dev/null | wc -l)
   done
 }
+
+#for annoying folder structures where a folder only contains one other folder (as used in java)
+revmarch() {
+  cd ..
+  folder_count=$(ls -d */ 2>/dev/null | wc -l)
+  while [ $folder_count -eq 1 ]; do
+    cd ..
+    folder_count=$(ls -d */ 2>/dev/null | wc -l)
+  done
+}
