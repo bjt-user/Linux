@@ -38,7 +38,14 @@ newbash() {
 
 #for annoying folder structures where a folder only contains one other folder (as used in java)
 #cd into the only existing folder if there is exactly one folder until you are in a directory that does not contain exactly one folder
+#you can supply a folder as an argument and if you do so it will cd into that folder
 march() {
+  if [ $# -eq 1 ]; then
+    cd $1
+  elif [ $# -gt 1 ]; then
+    printf "Too many arguments supplied.\n"
+  fi
+
   folder_count=$(ls -d */ 2>/dev/null | wc -l)
   while [ $folder_count -eq 1 ]; do
     cd *
