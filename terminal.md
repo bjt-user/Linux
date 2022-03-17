@@ -23,6 +23,12 @@ ctrl + u
 to delete one word (space delimited) backwards:\
 ctrl + w
 
+to delete the character at cursor position:\
+ctrl + d
+
+to delete the character in front of the cursor (backspace):\
+ctrl + h
+
 to yank the text back you just deleted:\
 ctrl + y
 
