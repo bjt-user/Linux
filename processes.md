@@ -5,3 +5,4 @@ This command seemed to solve this problem:
 ```
 killall code
 ```
+(seems to kill all processes related to `vscode`)
