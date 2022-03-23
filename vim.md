@@ -6,7 +6,7 @@ In normal mode:\
 `G`     : go to last line
 
 #### save and quit
-Usually you do `:wq` to write and quit, but you can also do `:x`.
+Usually you do `:wq` to write and quit, but you can also do `:x`.\
 `:x` saves only if you actually made changes and then quits, otherwise it just quits.
 
 #### paste something from the clipboard into vim
