@@ -115,6 +115,12 @@ this creates a new commit but undoes the changes from the commit-id provided:
 ```
 git revert <commit-id>
 ```
+
+This goes back to the commit with the SHA b8457dd\
+(look with `git log -n3 --oneline` at your last commits and the SHAs)
+```
+git reset --hard b8457dd
+```
 #### Show changes Since Last Commit
 
 To see changes since last commit (that were not added yet):
