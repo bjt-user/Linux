@@ -70,7 +70,7 @@ to view files on the command line that are bigger than one screen (and maybe whe
 ```
 less textfile.txt
 ```
-
+***
 to search the history:\
 ctrl + r\
 (then once you find something you can hit ctrl + r again to go through multiple commands)
