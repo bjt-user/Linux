@@ -81,6 +81,11 @@ Then type
 ```
 to run the command with number 3 in the history.
 
+To view the last n commands might also be helpful sometimes:
+```
+history | tail -10
+```
+
 ***
 
 to view files on the command line that are bigger than one screen (and maybe when you don't have vi or vim installed) you can use less.
