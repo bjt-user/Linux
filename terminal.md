@@ -52,6 +52,13 @@ Going back to GUI:\
 ctrl + alt + F2
 
 ***
+to view files on the command line that are bigger than one screen (and maybe when you don't have vi or vim installed) you can use less.
+```
+less textfile.txt
+```
+***
+
+#### history and previously executed commands
 
 Execute the previous command:
 ```
@@ -86,13 +93,6 @@ To view the last n commands might also be helpful sometimes:
 history | tail -10
 ```
 
-***
-
-to view files on the command line that are bigger than one screen (and maybe when you don't have vi or vim installed) you can use less.
-```
-less textfile.txt
-```
-***
 to search the history:\
 ctrl + r\
 (then once you find something you can hit ctrl + r again to go through multiple commands)
