@@ -109,6 +109,6 @@ Put this in your .bashrc or .bash_profile or whatever you have:
 ```
 bind Space:magic-space
 ```
-
+***
 Then you can do `!!` and then press `<space>` to expand that command before entering it.\
 Or `!cd`, then `<space>`, `!105`, then `<space>` etc...
