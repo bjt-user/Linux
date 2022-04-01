@@ -96,3 +96,11 @@ history | tail -10
 to search the history:\
 ctrl + r\
 (then once you find something you can hit ctrl + r again to go through multiple commands)
+
+***
+#### more tips for productivity and speed
+
+This takes you back to the directory you have previously been in:
+```
+cd -
+```
