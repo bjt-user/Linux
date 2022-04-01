@@ -64,6 +64,23 @@ Then just type
 sudo !!
 ```
 
+```
+!vim
+```
+will print the last `vim` command that you ran and run it again.
+
+You can do something like
+```
+history | grep myfile.txt
+```
+(you can tab complete filenames here)\
+which will give you a numbered list of your last commands.\
+Then type
+```
+!3
+```
+to run the command with number 3 in the history.
+
 ***
 
 to view files on the command line that are bigger than one screen (and maybe when you don't have vi or vim installed) you can use less.
