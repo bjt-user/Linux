@@ -4,7 +4,8 @@ Type
 ```
 http://localhost:631/
 ```
-in a browser.
+in a browser.\
+Administration => Manage Printers   - shows all your printers that you have configured
 
 Various commands that might help, when printing doesn't work:
 `lpq`       - seems to show the printing schedule of the default printer\
