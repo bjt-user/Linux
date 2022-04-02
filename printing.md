@@ -13,3 +13,9 @@ Various commands that might help, when printing doesn't work:
 `lp example.pdf`              - prints the document example.pdf\
 => this did not work for a `.mbox` file\
 `cancel yourprinter-14`       - cancels a print jobs that is shown in "lpstat" (where "yourprinter-14" is in the first column of a lpstat prompt)
+
+#### printing emails
+
+I encountered problems when printing emails from Evolution in a `.mbox` format.\
+When trying to print the email from Evolution it said "printer not found".\
+`lp example.mbox` prints the email but not in a human readable way.
