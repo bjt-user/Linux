@@ -18,4 +18,6 @@ Various commands that might help, when printing doesn't work:
 
 I encountered problems when printing emails from Evolution in a `.mbox` format.\
 When trying to print the email from Evolution it said "printer not found".\
-`lp example.mbox` prints the email but not in a human readable way.
+`lp example.mbox` prints the email but not in a human readable way.\
+Seems to be a file with some kind of `html` stuff in it.\
+I can't open it in Firefox however.
