@@ -26,4 +26,5 @@ I renamed the file to `example.html` and then typed
 ```
 firefox example.html
 ```
-and it was displayed and it was correctly rendered but it had some ugly characters at the start.
+and it was displayed and it was correctly rendered but it had some ugly characters at the start and end.\
+So i used `vim` to delete everything up to `<DOCTYPE HTML...>` then did `firefox example.html` and printed it from firefox.
