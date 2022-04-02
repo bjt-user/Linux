@@ -21,3 +21,9 @@ When trying to print the email from Evolution it said "printer not found".\
 `lp example.mbox` prints the email but not in a human readable way.\
 Seems to be a file with some kind of `html` stuff in it.\
 I can't open it in Firefox however.
+
+I renamed the file to `example.html` and then typed
+```
+firefox example.html
+```
+and it was displayed and it was correctly rendered but it had some ugly characters at the start.
