@@ -1,4 +1,4 @@
-To cut a string, separate it by <tabs>, and use only the first part:
+To cut a string, separate it by `<tabs>`, and use only the first part:
 ```
 cut -f1
 ```
