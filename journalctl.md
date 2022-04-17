@@ -22,3 +22,10 @@ to view the latest logs first (reverse mode):
 ```
 journalctl -r
 ```
+
+***
+Another way to view logfiles:
+```
+sudo less /var/log/messages
+```
+You can also delete messages in vim: `sudo vim /var/log/messages`
