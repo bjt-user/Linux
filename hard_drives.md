@@ -85,3 +85,4 @@ Unmounting the hdd before unplugging (just to be safe):
 ```
 sudo umount /media/bf/*
 ```
+If `target is busy` error occurs close terminal and open a new one.
