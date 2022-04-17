@@ -61,7 +61,7 @@ All attempts failed.
 #- or use two usb to sata cables, connect both drives to a third computer and use GParted on that                                                      #
 ***
 
-#### external hard drive
+#### external hard drive as backup
 
 goal: backup data with `rsync` to hard drive
 
@@ -73,4 +73,16 @@ Then connect the UBS-to-SATA-cable with the hdd and computer.
 You can access the data of that external drive in that folder:
 ```
 /media/bf/[longlistofnumber]/home/bf...
+```
+
+Backup your data like this:
+```
+#!/bin/env bash
+
+rsync -aAxv --delete /home/bf/Documents /media/bf/*/home/bf/
+```
+
+Unmounting the hdd (just to be safe):
+```
+sudo umount /media/bf/*
 ```
