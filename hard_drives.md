@@ -55,8 +55,14 @@ To copy the internal drive I can't unmount it because I am using it.
 ==> Downloaded Gparted Live.
 
 All attempts failed.
-########################################################################################################################################################
+***
 #CONCLUSION:                                                                                                                                           
 #- either install a fresh operating system (recommended)                                                                                               # 
 #- or use two usb to sata cables, connect both drives to a third computer and use GParted on that                                                      #
-########################################################################################################################################################
+***
+
+#### external hard drive
+
+goal: backup data with `rsync` to hard drive
+
+there was a neat command that prints to the screen everytime you connect a new device, i want to find that
