@@ -12,8 +12,6 @@ sudo journalctl --vacuum-time=2d
 It does not work.\
 I said `vacuum-time=1h` and I still have logs from three days ago.
 
-from stackoverflow:\
-*After some research I found that you can't delete logs for a specific systemd unit, because the logs are interlaced and if you delete only one unit you'll corrupt the logs, so journalctl doesn't let you.*
 
 to view all logs:
 ```
