@@ -9,7 +9,8 @@ or to delete everything except to last 2 days:
 sudo journalctl --vacuum-time=2d
 ```
 
-(the display of deleted bytes seems to be broken (it always says 0B deleted))
+It does not work.\
+I said `vacuum-time=1h` and I still have logs from three days ago.
 
 to view all logs:
 ```
