@@ -63,12 +63,11 @@ All attempts failed.
 
 #### external hard drive as backup
 
-goal: backup data with `rsync` to hard drive
-
 ```
 watch lsblk
 ```
-Then connect the UBS-to-SATA-cable with the hdd and computer.
+Then connect the UBS-to-SATA-cable with the hdd and computer.\
+(and wait for like 5 seconds)
 
 You can access the data of that external drive in that folder:
 ```
@@ -82,7 +81,7 @@ Backup your data like this:
 rsync -aAxv --delete /home/bf/Documents /media/bf/*/home/bf/
 ```
 
-Unmounting the hdd (just to be safe):
+Unmounting the hdd before unplugging (just to be safe):
 ```
 sudo umount /media/bf/*
 ```
