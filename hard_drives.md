@@ -2,9 +2,11 @@ Bought a new SSD.
 => it is not recognized in file browser by Ubuntu and Debian.
 (Ubuntu makes a mount sound though)
 
-With "lsblk" you can see all hard drives.
+With `lsblk` you can see all hard drives.
 
+```
 sudo apt install gparted
+```
 (it is a GUI program)
 => it recognizes the SSD
 ==> device -> create new partition table -> gpt
@@ -14,8 +16,9 @@ sudo apt install gparted
 Now the SSD is recognized by the file browser.
 
 But I still can't copy paste files into the SSD because of permission problems.
-
+```
 sudo dd if=/dev/sda of=/dev/sdb
+```
 => started at 19:42
 => finished at ?
 "dd: writing to '/dev/sdb': No space left on device
@@ -28,8 +31,9 @@ Maybe the problem is that I created a partition.
 
 GParted says there is a problem with partitions or something.
 So I fill the SSD with all zeros and then try again with the dd command.
-
+```
 sudo dd if=/dev/zero of=/dev/sdb bs=1M
+```
 =>
 dd: error writing '/dev/sdb': No space left on device
 122105+0 records in
@@ -37,7 +41,9 @@ dd: error writing '/dev/sdb': No space left on device
 128035675136 bytes (128GB, 119GiB) copied, 10074,8s, 12,7 MB/s
 
 Trying again with dd:
+```
 sudo dd if=/dev/sda of=/dev/sdb
+```
 => not recognized by file browser
 
 It did probably not work because the drives don't have the same memory size, so you can't copy data bit by bit.
@@ -50,7 +56,7 @@ To copy the internal drive I can't unmount it because I am using it.
 
 All attempts failed.
 ########################################################################################################################################################
-#CONCLUSION:                                                                                                                                           #
+#CONCLUSION:                                                                                                                                           
 #- either install a fresh operating system (recommended)                                                                                               # 
 #- or use two usb to sata cables, connect both drives to a third computer and use GParted on that                                                      #
 ########################################################################################################################################################
