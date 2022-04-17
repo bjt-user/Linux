@@ -65,4 +65,7 @@ All attempts failed.
 
 goal: backup data with `rsync` to hard drive
 
-there was a neat command that prints to the screen everytime you connect a new device, i want to find that
+```
+watch lsblk
+```
+Then connect the UBS-to-SATA-cable with the hdd and computer.
