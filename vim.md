@@ -34,6 +34,12 @@ After you pasted your code, turn off the paste-mode, so that auto-indenting when
 :set nopaste
 ```
 
+#### copy from vim to the system clipboard
+Does not seem to work on a typical vim installation.
+
+stackoverflow-Quote:\
+*You must have vim compiled with the +clipboard feature for ANY of the below suggestions to work in the first place! This is NOT the default on most systems.*
+
 #### copy some text and replace another part of the file with it
 
 go to the beginning of the word
