@@ -24,6 +24,7 @@ journalctl -r
 ```
 
 ***
+#### /var/log/messages
 Another way to view logfiles:
 ```
 sudo less /var/log/messages
