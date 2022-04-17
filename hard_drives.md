@@ -69,3 +69,8 @@ goal: backup data with `rsync` to hard drive
 watch lsblk
 ```
 Then connect the UBS-to-SATA-cable with the hdd and computer.
+
+You can access the data of that external drive in that folder:
+```
+/media/home/bf/[longlistofnumber]/home/bf...
+```
