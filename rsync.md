@@ -4,9 +4,15 @@ rsync [Quelle] [Ziel]
 "~" funktioniert nicht, man muss "/home/bf" nutzen
 
 example to back up a folder on a second pc:
+```
+rsync -aAxv --delete /home/bf/Documents bf@[hostname]:/home/bf
+```
+or (what I did before I knew you could just use the hostname...):
+```
 rsync -aAxv --delete /home/bf/Documents bf@[ip-address of the other pc]:/home/bf
-
-to get the ip of the second pc type: "hostname -I" on that pc
+```
+to get the ip of the second pc type: `hostname -I` on that pc\
+(but just using the hostname is way better)
 
 ----------------------------------------------------------------------------------------------
 
