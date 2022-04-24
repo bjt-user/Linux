@@ -11,9 +11,9 @@ gsettings set org.gnome.desktop.lockdown disable-lock-screen 'true'
 ----------------------------------------------------------------------------------------------------------------------
 
 #### showing the day of the week
-
+```
 gsettings set org.gnome.desktop.interface clock-show-weekday true
-
+```
 ***
 
 #### disable cursor blinking
