@@ -96,13 +96,14 @@ for case insensitive search
 To get rid of the highlighted patterns:
 `:nohl`
 
-#### go to definition
+#### go to definition / file / link
 
 `gd` will take you to the local declaration\
 `gD` will take you to the global declaration\
 `g*` search for the word under the cursor (like `*`, but `g*` on 'rain' will find words like 'rainbow')\
 `g#` same as `g*` but in backward direction\
-`gf` will go to the file under the cursor
+`gf` will go to the file under the cursor\
+`gx` will open a link in firefox
 
 I hit `gD` while the cursor was at the call of a bash function that was declared in the same file.\
 And it took me to the function declaration.
