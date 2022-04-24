@@ -1,4 +1,9 @@
-This will show various `gnome` settings:
+You can use this command and pipe into `grep` to see settings that are interesting to you:
+```
+gsettings list-recursively
+```
+
+This will show various `gnome` settings regarding the desktop:
 ```
 gsettings list-recursively org.gnome.desktop.interface
 ```
