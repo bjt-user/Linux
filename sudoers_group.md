@@ -14,3 +14,5 @@ So I add the user `myuser` to the sudoers group like this:
 root    ALL=(ALL)       ALL
 myuser  ALL=(ALL)       ALL
 ```
+(note that there is a `tab` after `root`)\
+=> and that worked.
