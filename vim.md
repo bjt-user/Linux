@@ -179,6 +179,14 @@ ctrl + n
 
 Once a word is selected it is placed into the editor and you can keep on writing.
 
+#### autoformat
+
+type
+```
+gg=G
+```
+This will fix all indentations in the file.
+
 -----------------------------------------------------------------------------------------------------------------------------
 
 #### Mehrere Dateien (nebeneinander) öffnen:
