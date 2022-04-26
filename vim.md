@@ -185,7 +185,11 @@ type
 ```
 gg=G
 ```
-This will fix all indentations in the file.
+This will fix all indentations in the file. (`vim 8.0`)
+
+Did **not** work in `vim 7.4`.\
+It said `6 lines indented` but did nothing.\
+It seems to work for `if`s, but not for functions.
 
 -----------------------------------------------------------------------------------------------------------------------------
 
