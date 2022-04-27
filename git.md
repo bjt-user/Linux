@@ -156,6 +156,13 @@ git switch 6<tab>
 ```
 and branch name will be autocompleted.
 
+#### delete a branch
+
+To Force Delete a Local Branch:
+```
+git branch -D <branch-name>
+```
+
 #### squash commits
 
 https://www.youtube.com/watch?v=V5KrD7CmO4o&ab_channel=TheModernCoder
