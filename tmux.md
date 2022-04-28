@@ -22,7 +22,7 @@ default `prefix key` is `ctrl + b`\
 
 `tmux attach` (or `tmux a`)  to go back into the tmux session\
 `tmux a -t 1`   to go to tmux session 1 (you can see the session number with `tmux ls`)\
-`tmux new -s "monitor"  to create a new session and give it the new "monitor"\
+`tmux new -s "monitor"`  to create a new session and give it the new "monitor"\
 `tmux kill-server`    to kill all sessions
 
 #### customize tmux
