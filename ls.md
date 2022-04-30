@@ -4,20 +4,26 @@ ls -lap | grep -v /
 ```
 (ls -p adds "/" to directories)
 
+list only directories:
+```
+ls -d */
+```
 
 #### How to adjust the colors of ls
 
+```
 LS_COLORS='di=0;31'; export LS_COLORS
-
+```
 The di=1;31 bit tells ls that directories (di) are bold (1;) red (31).
 
 => that worked instantly without sourcing .bashrc
-
+```
 LS_COLORS='di=0;32'; export LS_COLORS
-
+```
 => ist fürs erste ok, man könnte vll noch den Hintergrund ändern bei den directories
-
+```
 LS_COLORS='di=0;32;107'; export LS_COLORS
+```
 => directories with white background an green forground
 
 directories with grey background and black foreground:
