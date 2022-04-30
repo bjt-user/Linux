@@ -27,6 +27,10 @@ this deletes the lines 4 to 8:
 ```
 sed --in-place '4,8d' shoppinglist.txt
 ```
+to use that in a `bash` script with variables:
+```
+sed --in-place "${delete_from},${delete_to}d" ${FILE_PATH}
+```
 ***
 
 #### working with tags and html
