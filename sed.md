@@ -18,12 +18,15 @@ DESCRIPTION
 ```
 
 ---
-
+this deletes the 2nd line of the file `shoppinglist.txt`
+```
+sed --in-place '2d' shoppinglist.txt
+```
 The following command replaces the string `<tag>` with the string `<notag>` in the file `test`.
 ```
 sed -i 's/<tag>/<notag>/' test
 ```
-
+***
 this deletes all single line tags in a file named `test`:
 ```
 sed -i 's/<.*>//' test
