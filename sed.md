@@ -24,10 +24,12 @@ this deletes the 2nd line of the file `shoppinglist.txt`
 sed --in-place '2d' shoppinglist.txt
 ```
 this deletes the lines 4 to 8:
-``
+```
 sed --in-place '4,8d' shoppinglist.txt
 ```
 ***
+
+#### working with tags and html
 The following command replaces the string `<tag>` with the string `<notag>` in the file `test`.
 ```
 sed -i 's/<tag>/<notag>/' test
