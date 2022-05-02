@@ -11,3 +11,5 @@ ln -s /home/bf/scripts/hw.sh alink
 
 Soft links or symbolic links seem to be used predominantly.\
 I read that hard links have the disadvantage of not working across different file systems or partitions, etc.
+
+A `ls -l` shows the symbolic links in the current directory through a `->`.
