@@ -37,6 +37,21 @@ After that first time it worked to just type:
 git pull
 ```
 
+Sometimes you get this weird warning when doing a `git pull`:
+```
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged.
+```
+To get rid of the warning I would do the following command:
+```
+git config --global pull.ff only
+```
+This makes sure that the `pull` does not create a new commit.\
+Which is weird because I would never want a `pull` to create a new commit.
+
+The long answer is here: \
+https://stackoverflow.com/questions/62653114/how-can-i-deal-with-this-git-warning-pulling-without-specifying-how-to-reconci
+
 #### make vim your standard editor for commit messages
 ```
 git config --global core.editor "vim"
