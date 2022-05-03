@@ -178,6 +178,10 @@ To Force Delete a Local Branch:
 git branch -D <branch-name>
 ```
 
+delete branch remotely
+```
+git push origin --delete remoteBranchName
+```
 #### squash commits
 
 https://www.youtube.com/watch?v=V5KrD7CmO4o&ab_channel=TheModernCoder
