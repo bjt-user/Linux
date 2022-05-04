@@ -30,4 +30,5 @@ to kill a job
 ```
 kill [jobid]
 ```
-But then the job is still listed as `terminated` in `jobs` command for some time.
+But then the job is still listed as `terminated` in `jobs` command for some time.\
+And then disappears after a few seconds.
