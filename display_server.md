@@ -36,4 +36,4 @@ A display server is a protocol, not a program you can install.
 wayland seems to be more modern.\
 xorg is older and the trend seems to go towards wayland because it seems to be easier to work with it as a developer.
 
-But a lot of applications don't work with wayland yet, because with wayland the application has to draw its own window.
+But a lot of applications don't work with wayland yet, because with wayland the application has to draw its own window or something like that.
