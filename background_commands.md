@@ -25,3 +25,9 @@ If you have multiple background jobs, include % and the job ID after the command
 ```
 fg %1
 ```
+
+to kill a job
+```
+kill [jobid]
+```
+But then the job is still listed as `terminated` in `jobs` command for some time.
