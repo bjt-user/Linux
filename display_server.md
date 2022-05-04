@@ -25,7 +25,7 @@ ps -e | grep X
 ```
 ``` output
 856 tty2     00:00:54 Xorg
-
+```
 ---
 
 #### what is a display server
