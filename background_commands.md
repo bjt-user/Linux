@@ -5,7 +5,7 @@ Add the ampersand symbol `&` at the end of the command:
 ```
 command &
 ```
-Then press <enter> to get back to the command prompt.
+Then press `<enter>` to get back to the command prompt.
 
 
 Use the jobs utility to display the status of all stopped and background jobs in the current shell session:
