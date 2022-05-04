@@ -31,4 +31,9 @@ to kill a job
 kill [jobid]
 ```
 But then the job is still listed as `terminated` in `jobs` command for some time.\
-And then disappears after a few seconds.
+And then disappears after a few seconds.\
+=> but it does not always work, I wanted to kill a `stopped` process but nothing happened.
+```
+kill -9 [jobid/processid]
+```
+This command killed it!
