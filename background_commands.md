@@ -48,3 +48,13 @@ And then disappears after a few seconds.\
 kill -9 [jobid/processid]
 ```
 This command killed it!
+
+#### to test: disown
+
+Start a job in the background and then type.
+
+```
+disown %[jobid]
+```
+And then that process should still be there even after closing the terminal.\
+But you will not find it in the `jobs` list.
