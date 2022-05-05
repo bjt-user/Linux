@@ -68,13 +68,18 @@ This replaces the word "search" with the word "replace" in line 8 to 10:
 There are some symbols that can be used in the range part of the command.
 For example:
 ```
+:%s/foo/bar/g
+```
+or (a longer and worse way of doing the same thing)
+```
 :0,$ s/badword/goodword/g
 ```
 for the entire file
 
 or
-
+```
 :.,$s/foo/bar/
+```
 for the current line until the end of the file
 
 
