@@ -14,8 +14,10 @@ You need to use this
 ```
 nohup ./whileecho.sh &
 ```
-to redirect the output to a file named nohup.out.
+to redirect the output to a file named nohup.out.\
+And your session will not be interrupted anymore.
 
+#### show jobs
 
 Use the jobs utility to display the status of all stopped and background jobs in the current shell session:
 ```
