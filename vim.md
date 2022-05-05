@@ -1,9 +1,17 @@
-#### Navigation
+#### Navigation (in the file)
 In normal mode:\
 `fp`    : to go to the next occurance of the letter "p" in the current line
 
 `gg`    : go to first line\
 `G`     : go to last line
+
+#### Navigation (in the filesystem)
+```
+:Explore
+```
+This way you can choose another file to open.\
+Select a file and hit `o` to open it in horizontal split.\
+`v` for vertical split.
 
 #### save and quit
 Usually you do `:wq` to write and quit, but you can also do `:x`.\
