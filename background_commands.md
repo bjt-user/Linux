@@ -7,6 +7,15 @@ command &
 ```
 Then press `<enter>` to get back to the command prompt.
 
+=> this only works well for processes that don't produce any output to the terminal.\
+A process that prints to terminal will still print that to the terminal and interrupt your session.
+
+You need to use this
+```
+nohup ./whileecho.sh &
+```
+to redirect the output to a file named nohup.out.
+
 
 Use the jobs utility to display the status of all stopped and background jobs in the current shell session:
 ```
