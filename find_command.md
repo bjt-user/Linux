@@ -1,3 +1,5 @@
+# search for specific file names
+
 to show files that start with "te" and are in the current directory:
 ```
 find . -name te*
@@ -22,3 +24,6 @@ find where-to-look criteria action 2>/dev/null
 find . -iname "data*.txt" -print 2>/dev/null
 ```
 
+# search through file contents
+
+https://stackoverflow.com/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux#16957078
