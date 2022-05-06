@@ -32,6 +32,13 @@ to use that in a `bash` script with variables:
 sed --in-place "${delete_from},${delete_to}d" ${FILE_PATH}
 ```
 ***
+#### inserting a line at a specific line
+Inserting the line `This is the new line` at line 2 of file `replace_lines.txt`:
+```
+sed -i '2i\This is the new line\' replace_lines.txt
+```
+The line that was previously in line 2 is now in line 3.\
+And all the lines after that have shifted one line down.
 
 #### working with tags and html
 The following command replaces the string `<tag>` with the string `<notag>` in the file `test`.
