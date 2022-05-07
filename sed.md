@@ -32,6 +32,10 @@ to use that in a `bash` script with variables:
 sed --in-place "${delete_from},${delete_to}d" ${FILE_PATH}
 ```
 ***
+#### replace a string everywhere in a file
+```
+sed -i 's/foo/bar/' replace_lines.txt
+```
 #### replace only at a specific line
 
 With this command the string `foo` will be replaced by the string `bar`, but only in line 2 of the file `replace_lines.txt`.
