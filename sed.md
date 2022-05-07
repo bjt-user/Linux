@@ -50,6 +50,13 @@ sed -i '2i\This is the new line\' replace_lines.txt
 The line that was previously in line 2 is now in line 3.\
 And all the lines after that have shifted one line down.
 
+In a bash script with variables you have to use it like this:
+```
+sed -i "${line_number}s/${section_number}/${section_counter}/" ${LIST_PATH}
+```
+Use double quotes around the command part of sed and curly brackets to enclose variables.\
+With single quotes I got an error.
+
 #### working with tags and html
 The following command replaces the string `<tag>` with the string `<notag>` in the file `test`.
 ```
