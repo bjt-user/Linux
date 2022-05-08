@@ -50,6 +50,11 @@ sed -i '2i\This is the new line\' replace_lines.txt
 The line that was previously in line 2 is now in line 3.\
 And all the lines after that have shifted one line down.
 
+It also works with a different syntax:
+```
+sed -i "2i a line" insert_lines.txt
+```
+
 In a bash script with variables you have to use it like this:
 ```
 sed -i "${line_number}s/${section_number}/${section_counter}/" ${LIST_PATH}
