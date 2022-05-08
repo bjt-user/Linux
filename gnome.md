@@ -1,5 +1,5 @@
 Also see this:\
-https://gitlab.com/bjt-user/Linux/-/blob/master/gsettings.md
+gsettings.md
 
 #### custom keyboard shortcuts
 
