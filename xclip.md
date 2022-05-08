@@ -1,3 +1,5 @@
+Utility to copy to the clipboard.
+
 ```
 sudo apt install xclip
 ```
