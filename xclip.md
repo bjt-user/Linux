@@ -11,3 +11,11 @@ see what is in xclip (does only work for things you piped into xclip not for the
 ```
 xclip -o
 ```
+
+This is said to only work in `x` applications. (xorg applications?) \
+Did not work in firefox or gedit...only in terminal.
+
+If you want to copy into other applications (for example firefox):
+```
+cat file | xclip -selection clipboard
+```
