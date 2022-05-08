@@ -42,6 +42,14 @@ With this command the string `foo` will be replaced by the string `bar`, but onl
 ```
 sed -i '2s/foo/bar/' replace_lines.txt
 ```
+
+In a bash script with variables you have to use it like this:
+```
+sed -i "${line_number}s/${section_number}/${section_counter}/" ${LIST_PATH}
+```
+Use double quotes around the command part of sed and curly brackets to enclose variables.\
+With single quotes I got an error.
+
 #### inserting a line at a specific line
 Inserting the line `This is the new line` at line 2 of file `replace_lines.txt`:
 ```
@@ -55,12 +63,6 @@ It also works with a different syntax:
 sed -i "2i a line" insert_lines.txt
 ```
 
-In a bash script with variables you have to use it like this:
-```
-sed -i "${line_number}s/${section_number}/${section_counter}/" ${LIST_PATH}
-```
-Use double quotes around the command part of sed and curly brackets to enclose variables.\
-With single quotes I got an error.
 
 #### working with tags and html
 The following command replaces the string `<tag>` with the string `<notag>` in the file `test`.
