@@ -63,6 +63,11 @@ It also works with a different syntax:
 sed -i "2i a line" insert_lines.txt
 ```
 
+In a bash script inside a for loop with an array I had to do it like this:
+```
+sed -i "${insert_position}i\\${line}\\" ${LIST_PATH}
+```
+(where line was the element in a foreach style for loop)
 
 #### working with tags and html
 The following command replaces the string `<tag>` with the string `<notag>` in the file `test`.
