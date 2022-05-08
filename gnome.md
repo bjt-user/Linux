@@ -1,5 +1,5 @@
 Also see this:\
-[gsettings.md]
+(gsettings.md)
 
 #### custom keyboard shortcuts
 
