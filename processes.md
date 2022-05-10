@@ -28,8 +28,10 @@ ps -eo pid,lstart,cmd
 
 `man ps`
 ```
--f     Do full-format listing. This option can be combined with many other UNIX-style options to add additional columns.  It also causes the command arguments to be printed.
-When used with -L, the NLWP (number of threads) and LWP (thread ID) columns will be added.  See the c option, the format keyword args, and the format keyword comm.
+-f     Do full-format listing. This option can be combined with many other UNIX-style options to add additional columns.
+It also causes the command arguments to be printed.
+When used with -L, the NLWP (number of threads) and LWP (thread ID) columns will be added.
+See the c option, the format keyword args, and the format keyword comm.
 ```
 ```
 -e     Select all processes.  Identical to -A.
