@@ -29,6 +29,10 @@ To sort after the time/date:
 ```
 ps -eo pid,lstart,cmd,s --sort=start_time | less
 ```
+to sort in reverse order add a `-` infront of the sort key:
+```
+ps -eo pid,lstart,cmd,s --sort=-start_time | less
+```
 
 ```
 ps -eo pid,lstart,cmd,s
