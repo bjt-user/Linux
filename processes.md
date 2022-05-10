@@ -25,8 +25,13 @@ ps -eo pid,lstart,cmd
 ```
 (it is a formatted way of viewing the processes, you the process id (`pid`), the start date and time (`lstart`), and the command the process was started with (`cmd`))
 
+To sort after the time/date:
 ```
-ps -eo pid,lstart,cmd
+ps -eo pid,lstart,cmd,s --sort=start_time | less
+```
+
+```
+ps -eo pid,lstart,cmd,s
 ```
 seems to also show the state of the processes, unfortunatelly only abbreviated
 
