@@ -39,7 +39,8 @@ See the c option, the format keyword args, and the format keyword comm.
 ```
 ```
 -o format
-User-defined format.  format is a single argument in the form of a blank-separated or comma-separated list, which offers a way to specify individual output columns.
+User-defined format.
+format is a single argument in the form of a blank-separated or comma-separated list, which offers a way to specify individual output columns.
 The recognized keywords are described in the STANDARD FORMAT SPECIFIERS section below.
 Headers may be renamed (ps -o pid,ruser=RealUser -o comm=Command) as desired.
 If all column headers are empty (ps -o pid= -o comm=) then the header line will not be output.
