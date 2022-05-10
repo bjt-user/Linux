@@ -19,3 +19,8 @@ ffmpeg -i MOVI0002.avi movie2.mp4
 But it worked!
 
 The program seems to analyze the input file and take the file ending of the supplied output file name as wanted output format.
+
+To force the output file to have 20 frames per second:
+```
+ffmpeg -i MOVI0002.avi -r 20 movie2.mp4
+```
