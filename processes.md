@@ -25,6 +25,11 @@ ps -eo pid,lstart,cmd
 ```
 (it is a formatted way of viewing the processes, you the process id (`pid`), the start date and time (`lstart`), and the command the process was started with (`cmd`))
 
+```
+ps -eo pid,lstart,cmd
+```
+seems to also show the state of the processes, unfortunatelly only abbreviated
+
 #### ps options
 
 `man ps`
