@@ -24,3 +24,11 @@ To force the output file to have 20 frames per second:
 ```
 ffmpeg -i MOVI0002.avi -r 20 movie2.mp4
 ```
+
+**TODO: test this command:\
+(from the ffmpeg docs https://ffmpeg.org/ffmpeg.html)
+```
+To set the video bitrate of the output file to 64 kbit/s:
+
+ffmpeg -i input.avi -b:v 64k -bufsize 64k output.avi
+```
