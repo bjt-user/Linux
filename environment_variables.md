@@ -34,9 +34,10 @@ To temporarily add a binary to the `PATH` just type
 export PATH=$PATH:/home/myuser/opt/myprogram/bin
 ```
 
-You can put that line into your `.bashrc` or `.bash_profile`, etc. for a permanent solution.
+You can put that line into your `.bashrc` or `.bash_profile`, etc. for a permanent solution.\
+`bash -s` to source `.bashrc` and make the environment variables take effect.
 
-But a cleaner way is to adjust the `PATH` here:
+But a "cleaner" (or another) way is to adjust the `PATH` here:
 ```
 sudo vim /etc/profile
 ```
