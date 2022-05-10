@@ -23,6 +23,7 @@ This shows the start date and time of all the processes in a more detailled way:
 ```
 ps -eo pid,lstart,cmd
 ```
+(it is a formatted way of viewing the processes, you the process id (`pid`), the start date and time (`lstart`), and the command the process was started with (`cmd`))
 
 #### ps options
 
