@@ -54,6 +54,11 @@ l    is multi-threaded (using CLONE_THREAD, like NPTL pthreads do)
 +    is in the foreground process group
 ```
 
+```
+ps -eo pid,lstart,cmd,s,%cpu,%mem
+```
+to also show the cpu and memory usage of the process
+
 #### ps options
 
 `man ps`
