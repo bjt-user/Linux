@@ -58,6 +58,10 @@ s    is a session leader
 l    is multi-threaded (using CLONE_THREAD, like NPTL pthreads do)
 +    is in the foreground process group
 ```
+The values at the bottoms appear when you use the `stat` keyword like this:
+```
+ps -eo pid,lstart,cmd,stat
+```
 
 ```
 ps -eo pid,lstart,cmd,s,%cpu,%mem
