@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # $BASH_SOURCE seems to be either path to .bashrc or .bash_profile
+# you dont really need this because you can just do bash -s
 alias sourcebash='source ${BASH_SOURCE}'
 
 alias cputemp='/home/bf/Coding/scripts/get_cpu_temp.sh'
