@@ -48,4 +48,10 @@ bind -n C-h select-pane -L
 bind -n C-l select-pane -R
 bind -n C-k select-pane -U
 bind -n C-j select-pane -D
+```
+#### resizing panes
 
+The command above did not always work.\
+What you can do is `prefix + :` \
+Then you are in a command prompt, then type
+`resize-pane -R 10` - to expand the current pane 10 pixels (or whatever unit) to the right
