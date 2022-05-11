@@ -147,7 +147,7 @@ or (if you are in a shitty terminal i.e. PowerShell):
 git diff --no-color
 ```
 
-#### show history (all commits)
+#### history
 
 ```
 git log --pretty=oneline
@@ -156,6 +156,12 @@ or to see only the last 3 commits and hex codes with a length of 8:
 ```
 git log -n3 --oneline
 ```
+
+show the number of commits in the repository:
+```
+git log --oneline | wc -l
+```
+
 #### tab completion (for changing branches i.e.)
 ```
 curl -O https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
