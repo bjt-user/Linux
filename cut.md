@@ -8,3 +8,7 @@ But you can use any separator like this:
 ```
 cut -d':' -f2 /etc/passwd | tail -n 5
 ```
+
+---
+
+`cut` seems to only work for files, not for strings or variables with strings.
