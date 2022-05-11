@@ -26,3 +26,10 @@ gsettings set org.gnome.desktop.interface clock-show-weekday true
 ```
 gsettings set org.gnome.desktop.interface cursor-blink false
 ```
+
+#### disable the bell
+To not have a sound anymore when in the terminal and for example hitting `<tab>` and there are no choices.\
+Or hitting the end of the file in vim.
+```
+gsettings set org.gnome.desktop.wm.preferences audible-bell false
+```
