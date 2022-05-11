@@ -162,6 +162,11 @@ show the number of commits in the repository:
 git log --oneline | wc -l
 ```
 
+clone without history:
+```
+git clone --depth=1 https://gitlab.com/bjt-user/Linux.git
+```
+
 #### tab completion (for changing branches i.e.)
 ```
 curl -O https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
