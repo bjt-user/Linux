@@ -166,6 +166,7 @@ clone without history:
 ```
 git clone --depth=1 https://gitlab.com/bjt-user/Linux.git
 ```
+(you can just delete the `.git` folder after that to not make it a git repo anymore)
 
 #### tab completion (for changing branches i.e.)
 ```
