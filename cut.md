@@ -17,3 +17,6 @@ cut -d':' -f2 /etc/passwd | tail -n 5
 ```
 foldername=$(cut -d'/' -f5 <<<$repo)
 ```
+stackoverflow explanation:\
+*Because cut expects to read from standard input (if not a file),*
+*we use <<< to tell bash to provide the contents of $var on standard input. This is called a here string.*
