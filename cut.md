@@ -11,4 +11,9 @@ cut -d':' -f2 /etc/passwd | tail -n 5
 
 ---
 
-`cut` seems to only work for files, not for strings or variables with strings.
+#### cut on variables
+
+`cut` expects to read from a file or stdin, but with `<<<` you can also pass a variable to it.
+```
+foldername=$(cut -d'/' -f5 <<<$repo)
+```
