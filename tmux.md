@@ -10,6 +10,7 @@ default `prefix key` is `ctrl + b`\
 
 `ctrl + b` and then type `"` to split terminal windows horizontically.\
 `prefix` and then `%`   splits terminals vertically\
+`prefix` and then `!`   popout pane (make current pane into a window) \
 `prefix` and then `arrowkey`    to switch between terminals\
 `prefix` and then `c`   to open a new terminal window\
 `prefix` and then `n`   to go to the next terminal window\
@@ -54,7 +55,8 @@ bind -n C-j select-pane -D
 Let's say you have two panes.\
 You typed `tmux` and then did `prefix + %` to have a vertical split.\
 Now you can do `prefix + :` to get into the command mode.\
-Then type `break-pane` hit enter and you will have two windows instead of two vertically split panes.
+Then type `break-pane` hit enter and you will have two windows instead of two vertically split panes.\
+Or just do `prefix + !` to pop out the current pane.
 
 To do the opposite, make 2 windows into 1 window with 2 panes I did this:
 ```
