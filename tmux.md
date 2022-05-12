@@ -49,6 +49,21 @@ bind -n C-l select-pane -R
 bind -n C-k select-pane -U
 bind -n C-j select-pane -D
 ```
+#### converting panes to windows and converting windows to panes
+
+Let's say you have two panes.\
+You typed `tmux` and then did `prefix + %` to have a vertical split.\
+Now you can do `prefix + :` to get into the command mode.\
+Then type `break-pane` hit enter and you will have two windows instead of two vertically split panes.
+
+To do the opposite, make 2 windows into 1 window with 2 panes I did this:
+```
+join-pane -s 1 -t 0 
+```
+The 1 seems to stand for window number 1 and the 0 for window number 0.\
+But now there is a horizontal split between the two panes.\
+To switch between horizontal and vertical split do `prefix + space`.
+
 #### resizing panes
 
 The command above did not always work.\
