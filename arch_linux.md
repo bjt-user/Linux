@@ -30,3 +30,10 @@ sdb      8:16   1  57.7G  0 disk
 ├─sdb2   8:18   1   3.9M  0 part /media/bf/54C5-9C6C
 └─sdb3   8:19   1  54.8G  0 part /media/bf/writable
 ```
+But after unplugging, typing `watch lsblk` again:
+```
+sdb      8:16   1  57.7G  0 disk
+├─sdb1   8:17   1   748M  0 part /media/bf/ARCH_202205
+└─sdb2   8:18   1    78M  0 part
+```
+It looks better.
