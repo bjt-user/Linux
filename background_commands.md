@@ -39,7 +39,7 @@ fg %1
 
 to kill a job
 ```
-kill [jobid]
+kill %[jobid]
 ```
 But then the job is still listed as `terminated` in `jobs` command for some time.\
 And then disappears after a few seconds.\
