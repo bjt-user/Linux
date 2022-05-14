@@ -426,6 +426,9 @@ But it doesnt boot into the OS, probably because the laptop does not support `UE
 
 ## analysis
 
+There are two main types of partition table available.\
+These are the #Master Boot Record (MBR) and #GUID Partition Table (GPT).
+
 "If you are installing on older hardware, especially on old laptops, consider choosing `MBR` because its BIOS might not support `GPT`"\
 https://wiki.archlinux.org/title/Partitioning
 
