@@ -251,3 +251,173 @@ pacstrap /mnt base linux linux-firmware
 ```
 This seems to install the `Arch Linux` base package.\
 Takes a couple of minutes.
+
+#### generate file system table
+```
+genfstab -U /mnt >> /mnt/etc/fstab
+```
+(no output)
+
+```
+arch-chroot /mnt
+```
+And the prompt changes slightly
+
+Set time zone
+```
+ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
+```
+To know how to enter the time zone you can do
+```
+ls /usr/share/zoneinfo/
+```
+for the time zone and
+```
+ls /usr/share/zoneinfo/Europe
+```
+to know the city
+
+#### set hardware clock
+```
+hwclock --systohc
+```
+#### configure locale
+```
+pacman -S vim
+```
+to be able to edit config files.
+```
+vim /etc/locale.gen
+```
+I uncommented this line:
+```
+de_DE.UTF-8 UTF-8
+```
+Now run
+```
+locale-gen
+```
+If you set the console keyboard layout, make the changes persistent in vconsole.conf(5):
+```
+/etc/vconsole.conf
+```
+and insert the line
+```
+KEYMAP=de-latin1
+```
+#### create the hostname
+Create a file called `hostname` in `/etc`
+```
+vim /etc/hostname
+```
+And just pick a name.\
+I entered "arch-cli-machine".
+
+#### create the hosts file
+```
+vim /etc/hosts
+```
+
+and put in these lines:
+```
+127.0.0.1        localhost
+::1              localhost
+127.0.1.1        [myhostname]
+```
+where myhostname is "arch-cli-machine".
+
+#### set root password
+```
+passw
+```
+
+#### create a user
+``` 
+useradd -m bf -s /bin/bash
+```
+`-s` is the standard shell for the user
+
+now set the password for the new user:
+```
+passwd bf
+```
+
+#### install and configure sudo
+```
+pacman -S sudo
+```
+```
+EDITOR=vim visudo
+```
+and above the line that starts with root I enter
+```
+bf ALL=(ALL:ALL) ALL
+```
+(or duplicate the root line and change root to bf)
+
+#### install grub
+```
+pacman -S grub
+```
+
+#### install stuff (because youtube tutorial says so)
+
+```
+pacman -S efibootmgr dosfstools os-prober mtools
+```
+
+#### create EFI dir
+
+```
+mkdir /boot/EFI
+```
+```
+mount /dev/sda1 /boot/EFI
+```
+
+```
+grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck
+```
+ERROR:
+```
+EFI variables are not supported on this system.
+```
+
+trying to resolve this error by exiting out of `chroot`
+```
+exit
+modprobe efivarfs
+```
+Now `chroot` back in.
+```
+arch-chroot /mnt
+```
+```
+grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck
+```
+Still the same error...
+
+Trying to proceed anyway...
+
+Maybe this laptop does not support `UEFI`?!
+
+```
+grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+```
+pacman -S networkmanager
+```
+```
+systemctl enable NetworkManager
+```
+#### reboot
+Exit out of the `chroot`
+```
+exit
+umount -l /mnt
+shutdown -r now
+```
+But before that disconnect the USB stick.
+
+But it doesnt boot into the OS, probably because the laptop does not support `UEFI`.
