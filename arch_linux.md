@@ -245,7 +245,7 @@ I didn't do anything for 1-2 minutes and then it seemed to have accepted a defau
 ```
 mount /dev/sda2 /mnt
 ```
-
+#### base installation
 ```
 pacstrap /mnt base linux linux-firmware
 ```
