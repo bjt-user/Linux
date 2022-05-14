@@ -53,3 +53,64 @@ First step will be to get rid of US keyboard layout.\
 ```
 loadkeys de-latin1
 ```
+
+#### installing wifi
+
+with
+```
+ip link
+```
+it seems you can list network devices.
+
+I get
+```
+...
+4: wlan0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN mode DORMANT group default qlen 1000 link/ether 00:1b:77:... brd ff:ff:ff:ff:ff:ff
+```
+
+Enter
+```
+iwctl
+```
+to get into an interactive prompt.
+```
+[iwd]# device list
+```
+To list your wifi devices.\
+Output:
+```
+name    Address     Powered     Adapter     Mode
+wlan0   00:1b:77:...    on      phy0        station
+
+Then, to initiate a scan for networks (**note that this command will not output anything**):
+```
+[iwd]# station wlan0 scan
+```
+
+You can then list all available networks:
+```
+[iwd]# station wlan0 get-networks
+```
+
+Finally, to connect to a network:
+```
+[iwd]# station wlan0 connect [SSID]
+```
+(SSID is your network name)\
+```
+output:
+```
+Type the network passphrase for ... psk.
+```
+
+If a passphrase is required, you will be prompted to enter it. Alternatively, you can supply it as a command line argument:
+```
+$ iwctl --passphrase passphrase station device connect SSID
+```
+
+Now exit `iwctl` with `CTRL + D`.
+
+```
+ping google.com
+```
+And I can connect to the internet!
