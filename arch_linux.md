@@ -431,4 +431,4 @@ https://wiki.archlinux.org/title/Partitioning
 
 "A third, less common alternative is using a partitionless disk, which is also discussed."
 
-Also for the boot partition I should not use `EFI` I should use `FAT32` but still mount to `/boot/efi`.
+Also for the boot partition I should **not** use `EFI`. I should use `FAT32` but still mount to `/boot/efi`.
