@@ -1,5 +1,5 @@
 ```
-adduser -m -s /bin/bash -g users bofo
+useradd -m bf -s /bin/bash -g users bf
 ```
 This way you add a user.\
 `-m` means that a `home` folder for the user will be created.\
