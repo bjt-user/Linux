@@ -430,3 +430,5 @@ But it doesnt boot into the OS, probably because the laptop does not support `UE
 https://wiki.archlinux.org/title/Partitioning
 
 "A third, less common alternative is using a partitionless disk, which is also discussed."
+
+Also for the boot partition I should not use `EFI` I should use `FAT32` but still mount to `/boot/efi`.
