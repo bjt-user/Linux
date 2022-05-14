@@ -10,6 +10,6 @@ This way you add a user.\
 
 You can add a password with `-p` but it is not recommended, because the password (or encrypted password) will be visible by users listing the processes.
 
-Fail: But when I do a `su - bofo` with the root user I cannot set a password with `passwd` because it asks for the current password.
+Fail: But when I do a `su - bf` with the root user I cannot set a password with `passwd` because it asks for the current password.
 
-=> Be root (`su`) and type `passwd bofo`. Then you won't be asked for the current password and can change the password instantly.
+=> Be root (`su`) and type `passwd bf`. Then you won't be asked for the current password and can change the password instantly.
