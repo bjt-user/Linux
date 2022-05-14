@@ -423,3 +423,10 @@ But before that disconnect the USB stick.
 ## FAIL
 
 But it doesnt boot into the OS, probably because the laptop does not support `UEFI`.
+
+## analysis
+
+"If you are installing on older hardware, especially on old laptops, consider choosing `MBR` because its BIOS might not support `GPT`"\
+https://wiki.archlinux.org/title/Partitioning
+
+"A third, less common alternative is using a partitionless disk, which is also discussed."
