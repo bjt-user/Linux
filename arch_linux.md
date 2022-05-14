@@ -420,4 +420,6 @@ shutdown -r now
 ```
 But before that disconnect the USB stick.
 
+## FAIL
+
 But it doesnt boot into the OS, probably because the laptop does not support `UEFI`.
