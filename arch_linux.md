@@ -37,3 +37,19 @@ sdb      8:16   1  57.7G  0 disk
 └─sdb2   8:18   1    78M  0 part
 ```
 It looks better.
+
+#### installation
+
+After booting into the flashed USB I get the option to choose between different installation types.\
+I chose the first option "Arch Installation..."\
+some commands are being ran.\
+Then I am in a command prompt called `root@archiso`.
+
+#### keyboard layout
+First step will be to get rid of US keyboard layout.\
+`-` is at `ß`.\
+`y` is at `z`
+
+```
+loadkeys de-latin1
+```
