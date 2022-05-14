@@ -131,3 +131,123 @@ I get into a `less`ed output and scroll down with `j`.\
 ```
 timedatectl set-timezone Europe/Berlin
 ```
+
+#### partition the disk
+
+When recognized by the live system, disks are assigned to a block device such as /dev/sda, /dev/nvme0n1 or /dev/mmcblk0. To identify these devices, use `lsblk` or `fdisk`.
+```
+fdisk -l
+```
+Results ending in rom, loop or airoot may be ignored.
+
+I have `sda` with 300G and `sdb` with 57G but 748M seem to be written.\
+`sdb` should be the UBS-stick with the arch iso.\
+`sda` is the hard drive.
+
+The following partitions are required for a chosen device:
+
+- One partition for the root directory `/`.
+- For booting in UEFI mode: an EFI system partition.
+
+Use fdisk or parted to modify partition tables. For example:
+```
+fdisk /dev/the_disk_to_be_partitioned
+```
+
+So I do
+```
+fdisk /dev/sda
+```
+because I want to partition the hard drive and not the USB stick.
+
+Now I am in a new command prompt. (you can press `m` for help)
+
+Type
+```
+g
+```
+for "create a new empty GPT partition table\
+Output: `created a new GPT disklabel (GUID: 0C88...)`
+
+Type
+```
+n
+```
+to "add a new partition"\
+create partion 1 so enter
+```
+1
+```
+
+First sector: Just hit enter (and accept the default of 2048)\
+(whatever that means)
+
+Last sector: Enter `+550M`\
+(this is for the EFI partition)
+
+It tells me
+```
+Partition #1 contains a ext4 signature.
+Do you want to remove the signature? Y/N
+```
+I type `Y`
+
+Now the second partition:
+```
+n
+```
+to create a new partition\
+partition number
+```
+2
+```
+First sector: Just hit enter (leave it as default, it will be at the end of the last sector)\
+Last sector: Just hit enter to give it the remaining space
+
+Now do `t` to "change a partition type"\
+`1` to change the type of the first partition\
+type `L` to list everything\
+`q` to quit out of the `less`ed list\
+`1` for `EFI System`
+
+```
+w
+```
+to write and partition the disks and go out of the command prompt
+
+And when I now type `lsblk` it looks good.\
+`sda1` is 550M and `sda2` is 297.6G
+
+#### mkfs (make filesystem)
+
+Now make the boot partition a FAT32 filesystem:
+```
+mkfs.fat -F32 /dev/sda1
+```
+
+Make the second partition
+```
+mkfs.ext4 /dev/sda2
+```
+Then it said
+```
+/dev/sda2 contains unknown readable demand paged pure executable data
+proceed anyway?
+```
+I hit `y` and then another prompt came with
+```
+Creating journal...
+```
+I didn't do anything for 1-2 minutes and then it seemed to have accepted a default answer.
+
+#### mount the big partition
+
+```
+mount /dev/sda2 /mnt
+```
+
+```
+pacstrap /mnt base linux linux-firmware
+```
+This seems to install the `Arch Linux` base package.\
+Takes a couple of minutes.
