@@ -114,3 +114,20 @@ Now exit `iwctl` with `CTRL + D`.
 ping google.com
 ```
 And I can connect to the internet!
+
+```
+timedatectl
+```
+is 5 minutes behind and says `NTP service: inactive`
+```
+timedatectl set-ntp true
+```
+How to get into the right time zone?
+```
+timedatectl list-timezones
+```
+I get into a `less`ed output and scroll down with `j`.\
+`Europe/Berlin` looks good.
+```
+timedatectl set-timezone Europe/Berlin
+```
