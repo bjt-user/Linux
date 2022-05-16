@@ -30,8 +30,7 @@ Force input to 1 frame and output to 20 frames:
 ffmpeg -r 1 -i MOVI0004.avi -r 20 movie4.mp4
 ```
 speed was 2.5x\
-but it still takes very long and laptop gets hot\
-i think the output file gets longer now...
+but it still takes very long and laptop gets hot
 
 **TODO: test this command:\
 (from the ffmpeg docs https://ffmpeg.org/ffmpeg.html)
