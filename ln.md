@@ -20,7 +20,7 @@ A `ls -l` shows the symbolic links in the current directory through a `->`.
 
 #### make a symlink folder
 
-This creates the folder `newlinkfolder` that always has the same contents as the `/home/bf/scripts` folder.
+This creates the folder `newlinkfolder` in the current working directory that always has the same contents as the `/home/bf/scripts` folder.
 ```
 ln -s /home/bf/scripts newlinkfolder
 ```
