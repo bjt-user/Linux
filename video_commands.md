@@ -25,6 +25,12 @@ To force the output file to have 20 frames per second:
 ffmpeg -i MOVI0002.avi -r 20 movie2.mp4
 ```
 
+Force input to 1 frame and output to 20 frames:
+```
+ffmpeg -r 1 -i MOVI0004.avi -r 20 movie4.mp4
+```
+speed was 2.5x
+
 **TODO: test this command:\
 (from the ffmpeg docs https://ffmpeg.org/ffmpeg.html)
 ```
