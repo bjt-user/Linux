@@ -17,3 +17,11 @@ ln -s /home/bf/scripts/hw.sh alink
 #### view if there are soft links
 
 A `ls -l` shows the symbolic links in the current directory through a `->`.
+
+#### make a symlink folder
+
+This creates the folder `newlinkfolder` that always has the same contents as the `/home/bf/scripts` folder.
+```
+ln -s /home/bf/scripts newlinkfolder
+```
+Note that you can't seem to make an existing folder into a symlink even when it is empty.
