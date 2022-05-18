@@ -1,6 +1,6 @@
 #### Navigation (in the file)
 In normal mode:\
-`fp`    : to go to the next occurance of the letter "p" in the current line
+`fp`    : to go to the next occurance of the letter "p" in the current line \
 `Fp`    : to go to the previous occurance of the letter "p" in the current line
 
 `gg`    : go to first line\
