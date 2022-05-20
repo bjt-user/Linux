@@ -21,3 +21,10 @@ If you want to copy into other applications (for example firefox):
 ```
 cat file | xclip -selection clipboard
 ```
+
+#### error when connected via ssh
+
+Doesn't seem to work if you are connected via ssh:
+```
+Error: Can't open display: (null)
+```
