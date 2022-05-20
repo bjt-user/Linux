@@ -4,6 +4,15 @@ ffmpeg -t 20 -i inputfile.mp4 outputfile.mp4
 ```
 => duration: 2 seconds
 
+cut out first 30 seconds without reencoding:
+```
+time(ffmpeg -ss 00:00:30 -i input.mp4 -c copy output.mp4)
+```
+duration: 11s
+
+***
+Fails where reencoding occured:
+
 Cut out the first 30 seconds and saved it in a second file:
 ```
 ffmpeg -ss 00:00:30 -i inputfile.mp4 outputfile.mp4
