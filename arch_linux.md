@@ -452,4 +452,26 @@ Trying to create an `MBR` (`DOS`) partition table:
 ```
 o
 ```
+Then the `i` command outputs: `No partition is defined yet`. So I guess it was wiped.
 
+It looks like you don't need a boot partition for MBR so I will just do one partition with the file system `83: Linux`.
+
+```
+n
+```
+to add a new partition
+
+```
+p
+```
+(primary partition)
+```
+1
+```
+(partition number 1)
+
+Then I hit enter to accept the default of 2048 for the `first sector`.\
+`Last sector ...:` I hit enter to go with the default of writing until the end.
+
+Now hit `i` to look at the partition.\
+And the partition is automatically `83 Linux`, so I dont need to change the partition type. (you could do that with `t`)
