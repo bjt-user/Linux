@@ -268,6 +268,8 @@ arch-chroot /mnt
 ```
 And the prompt changes slightly
 
+#### configure locale 2
+
 Set time zone
 ```
 ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
@@ -286,7 +288,7 @@ to know the city
 ```
 hwclock --systohc
 ```
-#### configure locale
+#### configure locale 3
 ```
 pacman -S vim
 ```
@@ -518,4 +520,112 @@ hwclock --systohc
 
 ```
 pacman -S vim
+```
+
+```
+vim /etc/locale.gen
+```
+uncommented `de_DE.UTF-8 UTF-8`
+```
+locale-gen
+```
+
+```
+vim /etc/locale.conf
+```
+put in `LANG=de_DE.UTF-8` and save the file
+
+If you set the console keyboard layout, make the changes persistent in vconsole.conf(5):
+```
+/etc/vconsole.conf
+```
+and insert the line
+```
+KEYMAP=de-latin1
+```
+
+```
+vim /etc/hostname
+```
+And just pick a name.
+```
+vim /etc/hosts
+```
+and put in these lines:
+```
+127.0.0.1        localhost
+::1              localhost
+127.0.1.1        [myhostname]
+```
+
+```
+passwd
+```
+to set a pw for root
+
+``` 
+useradd -m bf -s /bin/bash
+```
+
+```
+passwd bf
+```
+```
+pacman -S sudo
+```
+```
+EDITOR=vim visudo
+```
+and above the line that starts with root I enter
+```
+bf ALL=(ALL:ALL) ALL
+```
+
+```
+pacman -S grub networkmanager network-manager-applet dialog dosfstools os-prober mtools linux-headers base-devel wpa_supplicant wireless_tools
+```
+Hit enter twice to confirm the default and proceed with installation.
+
+With `mbr` you don't have a boot partition so from here it will be different to the first try!
+
+```
+grub-install --target=i386-pc /dev/sda
+```
+Then it should respond with
+```
+Installing for i386-pc platform.
+Installation finished. No error reported.
+```
+```
+grub-mkconfig -o /boot/grub/grub.cfg
+```
+```
+exit
+```
+```
+umount -a
+```
+you get `target is busy` errors but tutorial says that is fine
+```
+reboot
+```
+**unplug usb-stick**
+
+Choose the first option `Arch-Linux`.\
+And login with your root user.
+
+```
+systemctl start NetworkManager
+```
+
+Because I use wifi I do this:
+```
+nmtui
+```
+=> activate a connection (it is in german now...)\
+Then select your router hit enter and enter the password.
+
+Make `NetworkManager` start automatically at boot time:
+```
+systemctl enable NetworkManager
 ```
