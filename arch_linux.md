@@ -81,7 +81,7 @@ Output:
 ```
 name    Address     Powered     Adapter     Mode
 wlan0   00:1b:77:...    on      phy0        station
-
+```
 Then, to initiate a scan for networks (**note that this command will not output anything**):
 ```
 [iwd]# station wlan0 scan
