@@ -112,3 +112,15 @@ bind Space:magic-space
 
 Then you can do `!!` and then press `<space>` to expand that command before entering it.\
 Or `!cd`, then `<space>`, `!105`, then `<space>` etc...
+
+#### type of the terminal
+
+If you have no display server and just the console (for example after an Arch install),\
+you can type
+```
+echo $TERM
+```
+and it will say
+```
+linux
+```
