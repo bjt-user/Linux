@@ -97,21 +97,22 @@ Finally, to connect to a network:
 [iwd]# station wlan0 connect [SSID]
 ```
 (SSID is your network name)\
-```
 output:
 ```
 Type the network passphrase for ... psk.
+Passphrase:
 ```
+(`Passphrase` just means wifi password)
 
 If a passphrase is required, you will be prompted to enter it. Alternatively, you can supply it as a command line argument:
 ```
-$ iwctl --passphrase passphrase station device connect SSID
+$ iwctl --passphrase [passphrase] station [device] connect [SSID]
 ```
 
 Now exit `iwctl` with `CTRL + D`.
 
 ```
-ping google.com
+ping -c 3 google.com
 ```
 And I can connect to the internet!
 
