@@ -141,4 +141,8 @@ PS1="[\u@\h \W]\$${cursor_styles} "
 source ~/.bashrc
 ```
 
+16 means a solid, non-blinking block,\
+2 means cursor_foreground_black=2\
+112 means cursor_background_white=112
+
 This link contains all colors and styles: https://gist.github.com/anonymous/8f1e6c22b5213faf8170dcfc2b0f5b93
