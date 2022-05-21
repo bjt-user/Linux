@@ -485,3 +485,25 @@ w
 to write and partition the disks and go out of the command prompt
 
 Checked `lsblk` and it looks ok.
+
+Now make the filesystem:
+```
+mkfs.ext4 /dev/sda1
+```
+Mount the only partition:
+```
+mount /dev/sda1 /mnt
+```
+install the base system
+```
+pacstrap /mnt base linux linux-firmware
+```
+
+```
+genfstab -U /mnt >> /mnt/etc/fstab
+```
+to verify type `cat /mnt/etc/fstab`\
+Then leave the installer:
+```
+arch-chroot /mnt
+```
