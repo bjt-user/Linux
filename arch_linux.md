@@ -507,3 +507,11 @@ Then leave the installer:
 ```
 arch-chroot /mnt
 ```
+
+```
+ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
+```
+
+```
+hwclock --systohc
+```
