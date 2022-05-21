@@ -629,3 +629,6 @@ Make `NetworkManager` start automatically at boot time:
 ```
 systemctl enable NetworkManager
 ```
+=> everything seems to work fine now (scp works, pacman works, git clone works)
+
+But I need to change the language back to english but keep german keyboard layout.
