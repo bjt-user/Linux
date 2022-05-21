@@ -133,7 +133,7 @@ I get into a `less`ed output and scroll down with `j`.\
 timedatectl set-timezone Europe/Berlin
 ```
 
-#### partition the disk
+#### partitioning the disk
 
 When recognized by the live system, disks are assigned to a block device such as /dev/sda, /dev/nvme0n1 or /dev/mmcblk0. To identify these devices, use `lsblk` or `fdisk`.
 ```
@@ -162,6 +162,10 @@ fdisk /dev/sda
 because I want to partition the hard drive and not the USB stick.
 
 Now I am in a new command prompt. (you can press `m` for help)
+
+Now it is time to choose a partition table.
+
+`MBR` partition table (also known as `DOS` or `MS-DOS` partition table)
 
 Type
 ```
@@ -436,3 +440,16 @@ https://wiki.archlinux.org/title/Partitioning
 "A third, less common alternative is using a partitionless disk, which is also discussed."
 
 Also for the boot partition I should **not** use `EFI`. I should use `FAT32` but still mount to `/boot/efi`.
+
+#### second try
+
+I booted from USB again, had to do everything again until the partitioning section.\
+But the partitions seem to be already created.
+
+When I am in `fdisk -l` command prompt and type `i` and then `1` or `2` I can see the partitions.\
+I could try to delete them or just create a new label.\
+Trying to create an `MBR` (`DOS`) partition table:
+```
+o
+```
+
