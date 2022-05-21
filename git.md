@@ -212,3 +212,11 @@ remote: GitLab: You are not allowed to force push code to a protected branch on 
 In `gitlab` master branches are protected by default.\
 Go to `settings` in the left menu on the bottom.\
 Go to `repository`. There you can `unprotect` the master branch.
+
+#### download a single file from a gitlab repo
+click on the file on gitlab, click on raw and copy the link\
+or just write `/-/raw/[branchname]/[filename]` after the repo link\
+then use wget:
+```
+wget https://gitlab.com/bjt-user/Linux/-/raw/master/vimrc
+```
