@@ -475,3 +475,13 @@ Then I hit enter to accept the default of 2048 for the `first sector`.\
 
 Now hit `i` to look at the partition.\
 And the partition is automatically `83 Linux`, so I dont need to change the partition type. (you could do that with `t`)
+
+Hit `p` to print the partition table.\
+And it shows again the disklabel type `dos` and the one partition with `83 - Linux`.
+
+```
+w
+```
+to write and partition the disks and go out of the command prompt
+
+Checked `lsblk` and it looks ok.
