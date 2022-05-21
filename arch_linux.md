@@ -632,3 +632,21 @@ systemctl enable NetworkManager
 => everything seems to work fine now (scp works, pacman works, git clone works)
 
 But I need to change the language back to english but keep german keyboard layout.
+
+So I change the locale back to english
+```
+vim /etc/locale.gen
+```
+I commented this line back:
+```
+de_DE.UTF-8 UTF-8
+```
+and uncomment this:
+```
+en_US.UTF-8 UTF-8
+```
+```
+locale-gen
+```
+The command `locale` still shows an error.
+Then I did `sudo reboot` and it seemed to have worked.
