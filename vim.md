@@ -209,12 +209,12 @@ It seems to work for `if`s, but not for functions.
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-#### Mehrere Dateien (nebeneinander) öffnen:
+#### opening multiple files (horizontal split or vertical split)
 
 ```
 :vsplit dateiname
 ```
-oder
+or
 ```
 :split dateiname
 ```
@@ -233,7 +233,7 @@ to close all windows:
 or
 :qa! (to discard changes)
 
-Outside of vim:
+Outside of vim (for vertical split):
 ```
 vim -O file1 file2
 ```
