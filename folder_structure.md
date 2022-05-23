@@ -1,3 +1,5 @@
+https://wiki.ubuntuusers.de/Verzeichnisstruktur/
+
 Understanding the Linux folder structure
 ----------------------------------------
 
