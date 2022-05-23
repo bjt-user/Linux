@@ -12,7 +12,8 @@ In normal mode:\
 ```
 This way you can choose another file to open.\
 Select a file and hit `o` to open it in horizontal split.\
-`v` for vertical split.
+`v` for vertical split.\
+`Enter` to open in the entire window/tab.
 
 #### save and quit
 Usually you do `:wq` to write and quit, but you can also do `:x`.\
