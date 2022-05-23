@@ -124,6 +124,9 @@ You can also search after the word under the cursor with `*` (forward search) an
 I hit `gD` while the cursor was at the call of a bash function that was declared in the same file.\
 And it took me to the function declaration.
 
+#### delete until character
+type `dt"` to delete everything until the next `"` character appears.
+
 #### Vimdiff ohne Farbcodierung:
 
 Folgendes in die .vimrc schreiben (wenn sie nicht existiert im home-Verzeichnis, dann neue Datei anlegen):
