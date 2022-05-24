@@ -1,5 +1,7 @@
 #### Useful shortcuts and tricks while entering commands in a terminal
 
+<kbd>Up</kbd>
+
 *these work in Debian and seem to work in a Arch Linux console*
 
 Jumping a word back/forward while entering commands in the terminal:\
