@@ -6,51 +6,51 @@
 Jumping a word back/forward while entering commands in the terminal:\
 <kbd>ctrl</kbd> + <kbd>arrowkeys</kbd> *(does not work in Putty)*\
 or\
-alt + f -> to move one word forward\
-alt + b -> to move one word backwards
+<kbd>alt</kbd> + <kbd>f</kbd> -> to move one word forward\
+<kbd>alt</kbd> + <kbd>b</kbd> -> to move one word backwards
 
-ctrl + f -> move one character forward\
-ctrl + b -> move one character back
+<kbd>ctrl</kbd> + <kbd>f</kbd> -> move one character forward\
+<kbd>ctrl</kbd> + <kbd>b</kbd> -> move one character back
 
 Go to the beginning of the line:\
-ctrl + a
+<kbd>ctrl</kbd> + <kbd>a</kbd>
 
 To delete from the cursor position to the end of the line:\
-ctrl + k
+<kbd>ctrl</kbd> + <kbd>k</kbd>
 
 to delete everything from cursor position to the beginning of the line:\
-ctrl + u
+<kbd>ctrl</kbd> + <kbd>u</kbd>
 
 to delete one word (space delimited) backwards:\
-ctrl + w
+<kbd>ctrl</kbd> + <kbd>w</kbd>
 
 to delete the character at cursor position:\
-ctrl + d\
+<kbd>ctrl</kbd> + <kbd>d</kbd>\
 (only works if there is something to delete, otherwise it will terminate the shell)
 
 to delete the character in front of the cursor (backspace):\
-ctrl + h
+<kbd>ctrl</kbd> + <kbd>h</kbd>
 
 to yank the text back you just deleted:\
-ctrl + y
+<kbd>ctrl</kbd> + <kbd>y</kbd>
 
 to switch two words (space separated) around:\
-alt + t
+<kbd>alt</kbd> + <kbd>t</kbd>
 
 to go back and forth in history (without using arrowkeys):\
-ctrl + p\
-ctrl + n
+<kbd>ctrl</kbd> + <kbd>p</kbd>\
+<kbd>ctrl</kbd> + <kbd>n</kbd>
 
 the equivalent to <enter> (executes a command):\
-ctrl + m
+<kbd>ctrl</kbd> + <kbd>m</kbd>
 
 ***
 
 Opening a terminal that is not part of the GUI:\
-ctrl + alt + F3
+<kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F3</kbd>
 
 Going back to GUI:\
-ctrl + alt + F2
+<kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F2</kbd>
 
 ***
 to view files on the command line that are bigger than one screen (and maybe when you don't have vi or vim installed) you can use less.
@@ -95,8 +95,8 @@ history | tail -10
 ```
 
 to search the history:\
-ctrl + r\
-(then once you find something you can hit ctrl + r again to go through multiple commands)
+<kbd>ctr</kbd> + <kbd>r</kbd>\
+(then once you find something you can hit <kbd>ctrl</kbd> + <kbd>r</kbd> again to go through multiple commands)
 
 ***
 #### more tips for productivity and speed
