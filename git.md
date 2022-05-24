@@ -108,6 +108,12 @@ git clone -b <branch> <remote_repo>
 git remote -v
 ```
 
+#### git add
+```
+git add -p
+```
+The `-p` option for `git add` is really handy, because you can look through parts of your changes and confirm each one.
+
 #### go back to the commit (and discard modifications)
 
 Changes that HAVE been added can be resettet with this:
