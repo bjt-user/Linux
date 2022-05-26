@@ -650,3 +650,5 @@ locale-gen
 ```
 The command `locale` still shows an error.
 Then I did `sudo reboot` and it seemed to have worked.
+
+=> I have a working Arch Linux machine
