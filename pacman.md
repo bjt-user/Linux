@@ -13,6 +13,11 @@ pacman -Qe
 ```
 shows explicitly installed packages
 
+
+```
+pacman -Qi openssh
+```
+shows information about a package
 ```
 pacman -Ss openssh
 ```
