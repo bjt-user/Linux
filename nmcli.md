@@ -32,7 +32,7 @@ Because you did not use `sudo`
 sudo nmcli d wifi connect [SSID] --ask
 ```
 This works if you enter the right password.
-
+***
 
 ```
 nmcli general status
