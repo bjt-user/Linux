@@ -17,3 +17,16 @@ nmcli d wifi list
 This lists all wifi access points in the area with `SSID`, `SIGNAL`, `RATE`, etc.
 
 but how to connect?
+
+```
+nmcli d wifi connect [SSID] --ask
+```
+Then you get prompted for a password. And then an error:
+```
+Failed to add/activate new connection: Not authorized to control networking.\
+Because you did not use `sudo`
+
+```
+sudo nmcli d wifi connect [SSID] --ask
+```
+This works if you enter the right password.
