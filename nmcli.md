@@ -25,7 +25,7 @@ Then you get prompted for a password. And then an error:
 ```
 Failed to add/activate new connection: Not authorized to control networking.\
 Because you did not use `sudo`
-
+```
 #### connect to wifi
 
 ```
@@ -38,3 +38,8 @@ This works if you enter the right password.
 nmcli general status
 ```
 shows if you are connected or not
+
+```
+nmcli connection show
+```
+shows the current connection and an old connection
