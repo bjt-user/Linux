@@ -142,6 +142,17 @@ This goes back to the commit with the SHA b8457dd\
 ```
 git reset --hard b8457dd
 ```
+
+#### restore deleted files
+
+Sometimes it can happen that you delete a file accidently.\
+Maybe while executing a script that contained a bug.\
+`git status` will show you a deleted file
+but you can get it back with
+```
+git restore filename/foldername
+```
+
 #### Show changes Since Last Commit
 
 To see changes since last commit (that were not added yet):
