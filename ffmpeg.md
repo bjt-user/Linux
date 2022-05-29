@@ -19,7 +19,10 @@ duration: 2s
 (start the video at 00:00:57 and then take 4 seconds, so it extracts from 00:00:57 to 00:01:01)\
 Even with converting formats and reencoding if you just cut out small parts this is very fast.
 
-But can you cut out a part of the video in the middle and put it all back together?
+But can you cut out a part of the video in the middle and put it all back together?\
+https://gist.github.com/donis/85f4f96d16549fa43d02 \
+so you have to take the first part until the scene you dont want, take the second part, and then concatenate them back together.\
+maybe you can write a script that does that more conveniently.
 
 ***
 Fails where reencoding occured:
