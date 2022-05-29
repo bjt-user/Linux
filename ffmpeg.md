@@ -16,7 +16,7 @@ time(ffmpeg -ss 00:00:57 -t 4 -i random_video.mkv aliases.mp4)
 ```
 duration: 2s
 
-(start the video at 00:00:57 and then take 4 seconds)
+(start the video at 00:00:57 and then take 4 seconds)\
 Even with converting formats and reencoding if you just cut out small parts this is very fast.
 
 ***
