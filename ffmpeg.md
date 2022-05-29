@@ -24,7 +24,8 @@ https://gist.github.com/donis/85f4f96d16549fa43d02 \
 so you have to take the first part until the scene you dont want, take the second part, and then concatenate them back together.\
 maybe you can write a script that does that more conveniently.
 
-I wrote a script that works, but when cutting with ffmpeg sometimes there seems to be a big quality loss even without reencoding...
+I wrote a script that works, but when cutting with ffmpeg sometimes there seems to be a big quality loss even without reencoding...\
+with reencoding the quality was much better but it takes longer...
 
 ***
 Fails where reencoding occured:
