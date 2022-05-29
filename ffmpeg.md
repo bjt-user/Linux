@@ -25,7 +25,7 @@ so you have to take the first part until the scene you dont want, take the secon
 maybe you can write a script that does that more conveniently.
 
 I wrote a script that works, but when cutting with ffmpeg sometimes there seems to be a big quality loss even without reencoding...\
-with reencoding the quality was much better but it takes very long...
+there is one warning: `track 1: codec frame size is not set`
 
 ***
 Fails where reencoding occured:
