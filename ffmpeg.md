@@ -10,10 +10,18 @@ time(ffmpeg -ss 00:00:30 -i input.mp4 -c copy output.mp4)
 ```
 duration: 11s
 
+You can combine these two to cut out parts of a video:
+```
+time(ffmpeg -ss 00:00:57 -t 4 -i random_video.mkv aliases.mp4)
+```
+duration: 2s
+
+Even with converting formats and reencoding if you just cut out small parts this is very fast.
+
 ***
 Fails where reencoding occured:
 
-Cut out the first 30 seconds and saved it in a second file:
+Cut out the first 30 seconds of a 1.5 hour video and saved the rest of the video in a second file:
 ```
 ffmpeg -ss 00:00:30 -i inputfile.mp4 outputfile.mp4
 ```
@@ -24,4 +32,4 @@ Try this command:
 ```
 ffmpeg -ss 00:00:30 -i inputfile.mp4 -acodec copy outputfile.mp4
 ```
-=> nope that still takes very long
+=> nope that still takes very long (because of wrong option)
