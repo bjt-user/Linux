@@ -111,7 +111,7 @@ for case insensitive search
 To get rid of the highlighted patterns:
 `:nohl`
 
-You can also search after the word under the cursor with `*` (forward search) and `#` (backward search)
+You can also **search after the word under the cursor** with `*` (forward search) and `#` (backward search)
 
 #### go to definition / file / link
 
