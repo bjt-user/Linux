@@ -22,6 +22,7 @@ The possible backgrounds:
 105 = light purple background
 106 = turquoise background
 107 = white background
+
 All possible colors:
 30  = black
 31  = red
