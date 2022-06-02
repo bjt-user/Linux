@@ -20,6 +20,10 @@ with <kbd>F10</kbd> you can go into the menu and navigate with arrow keys
 then you can choose a file with arrowkeys and hit enter to go into that file\
 But how do I exit out of that file?
 
+#### quitting the prompt
+when youre stuck inside a prompt do this:\
+`ctrl + g`
+
 #### keybinding
 
 emacs is older than the <kbd>alt</kbd> key, back in the day it was called `meta`, so when you see <kbd>m</kbd> it actually means <kbd>alt</kbd>.
