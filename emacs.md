@@ -58,4 +58,5 @@ https://www.emacswiki.org/emacs/InstallingPackages#h5o-4
 
 seems to have worked.
 
-but i cant find package `evil`. how do i search for packages and update packages?
+but i cant find package `evil`. how do i search for packages and update packages?\
+https://www.emacswiki.org/emacs/Evil
