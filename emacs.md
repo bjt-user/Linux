@@ -18,6 +18,10 @@ with <kbd>F10</kbd> you can go into the menu and navigate with arrow keys
 then you can choose a file with arrowkeys and hit enter to go into that file\
 But how do I exit out of that file?
 
+#### keybinding
+
+emacs is older than the <kbd>alt</kbd> key, back in the day it was called `meta`, so when you see <kbd>m</kbd> it actually means <kbd>alt</kbd>.
+
 #### problem: info messages too blue
 
 Info messages at the bottom of the screen are dark blue and hard to read...
