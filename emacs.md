@@ -13,8 +13,7 @@ emacs
 ***
 with <kbd>F10</kbd> you can go into the menu and navigate with arrow keys
 
-<kbd>alt</kbd> + <kbd>m</kbd> then enter `dired` choose a directory hit enter\
-(doesnt always work...)\
+<kbd>alt</kbd> + <kbd>x</kbd> then enter `dired` choose a directory hit enter\
 then you can choose a file with arrowkeys and hit enter to go into that file\
 But how do I exit out of that file?
 
