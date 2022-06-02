@@ -1,3 +1,5 @@
+It looks like you can use `emacs` with a Desktop Environment (xorg) and also without it.
+
 ```
 sudo dnf install emacs
 ```
