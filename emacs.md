@@ -44,3 +44,7 @@ put in this line
 ```
 (setq frame-background-mode 'dark)
 ```
+
+#### proxy
+alt + x `package-install` enter \
+now it seems it can't get past the proxy
