@@ -22,6 +22,11 @@ But how do I exit out of that file?
 
 emacs is older than the <kbd>alt</kbd> key, back in the day it was called `meta`, so when you see <kbd>m</kbd> it actually means <kbd>alt</kbd>.
 
+<kbd>m</kbd> = <kbd>alt</kbd>\
+<kbd>C</kbd> = <kbd>ctrl</kbd>\
+<kbd>S</kbd> = <kbd>shift</kbd>\
+<kbd>s</kbd> = <kbd>super</kbd> (`Windows key`)
+
 #### problem: info messages too blue
 
 Info messages at the bottom of the screen are dark blue and hard to read...
