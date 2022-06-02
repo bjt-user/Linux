@@ -31,5 +31,16 @@ emacs is older than the <kbd>alt</kbd> key, back in the day it was called `meta`
 
 #### problem: info messages too blue
 
-Info messages at the bottom of the screen are dark blue and hard to read...
-With <kbd>alt</kbd>+<kbd>x</kbd> `list-colors-display` you can see the all the colors emacs knows about in the current display.
+Info messages at the bottom of the screen are dark blue and hard to read...\
+With <kbd>alt</kbd>+<kbd>x</kbd> `list-colors-display` you can see the all the colors emacs knows about in the current display.\
+with c-x o you can cycle through windows\
+but it is read-only
+
+```
+touch ~/.emacs.d/init.el
+vim ~/.emacs.d/init.el
+```
+put in this line
+```
+(setq frame-background-mode 'dark)
+```
