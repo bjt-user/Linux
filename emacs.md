@@ -69,3 +69,11 @@ put this in `init.el`:
   (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
   (package-initialize)
 ```
+
+but now I see that emacs generated a file named `init.el~`... what to do now?\
+I ignore it.
+
+```
+M-x package-refresh-contents
+```
+failed to download gnu package....
