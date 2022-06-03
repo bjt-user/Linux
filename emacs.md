@@ -77,3 +77,7 @@ I ignore it.
 M-x package-refresh-contents
 ```
 `failed to download gnu archive`....
+
+https://github.com/emacs-evil/evil
+
+But it seems like the proxy is still not working.
