@@ -60,3 +60,12 @@ seems to have worked.
 
 but i cant find package `evil`. how do i search for packages and update packages?\
 https://www.emacswiki.org/emacs/Evil
+
+#### evil mode
+
+put this in `init.el`:
+```
+(require 'package)
+  (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+  (package-initialize)
+```
