@@ -1,3 +1,6 @@
+Doesn't work behind proxy.\
+Documentation sucks.
+
 It looks like you can use `emacs` with a Desktop Environment (xorg) and also without it.
 
 ```
