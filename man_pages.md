@@ -5,7 +5,7 @@ sudo pacman -S man-pages man
 
 Searching for man pages
 -----------------------
-type `man term` and hit <kbd>tab</kbd> twice
+type for example `man term` and hit <kbd>tab</kbd> twice
 
 Searching the man pages
 -----------------------
