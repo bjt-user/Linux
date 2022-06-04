@@ -1,3 +1,6 @@
+## gnome settings
+You can configure `gnome` with the `gsettings` command.
+
 You can use this command and pipe into `grep` to see settings that are interesting to you:
 ```
 gsettings list-recursively
