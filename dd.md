@@ -16,3 +16,7 @@ WARNING: use this with extreme caution:
 ```
 sudo dd if=/dev/zero of=/dev/sdX
 ```
+
+
+#### todo
+try option `status=progress` to get some information printed to stdout while writing to disk
