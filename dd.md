@@ -16,6 +16,7 @@ WARNING: use this with extreme caution:
 ```
 sudo dd if=/dev/zero of=/dev/sdX
 ```
+(this takes very long, so you should use the `status` option)
 
 
 #### todo
