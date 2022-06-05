@@ -28,6 +28,8 @@ sudo dd if=/dev/zero of=/dev/sdb bs=1M status=progress
 (or `bs=10M`)\
 (default `bs` is 512)
 
+write speed seems to get slower and slower...
+
 
 #### todo
 try option `status=progress` to get some information printed to stdout while writing to disk
