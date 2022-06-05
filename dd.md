@@ -25,6 +25,7 @@ sudo dd if=/dev/zero of=/dev/sdb bs=1M status=progress
 ```
 (maybe next time put `time()` around it)\
 (or try `bs=4096` but that is probably slower that would be 4KB)\
+(or `bs=10M`)\
 (default `bs` is 512)
 
 
