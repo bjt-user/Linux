@@ -23,13 +23,16 @@ so I try this:
 ```
 sudo dd if=/dev/zero of=/dev/sdb bs=1M status=progress
 ```
-(maybe next time put `time()` around it)\
 (or try `bs=4096` but that is probably slower that would be 4KB)\
 (or `bs=10M`)\
 (default `bs` is 512)
 
 write speed seems to get slower and slower...
 
+output:
+```
+31708938240 bytes (32 GB, 30 GiB) copied, 3181.97 s, 10.0 MB/s
+```
 
 #### todo
 try option `status=progress` to get some information printed to stdout while writing to disk
