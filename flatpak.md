@@ -29,3 +29,7 @@ that works.
 
 You can also just hit <kbd>super/window</kbd> and type `agenda` to run it.
 
+
+#### todo
+
+how to uninstall an application?
