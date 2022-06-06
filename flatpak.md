@@ -17,7 +17,7 @@ You have to enable `flathub` so you can pull from it:
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
-#### agenda installation
+#### example: agenda installation
 ```
 flatpak install flathub com.github.dahenson.agenda
 ```
