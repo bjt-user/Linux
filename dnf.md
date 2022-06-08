@@ -29,3 +29,8 @@ to verify that the repository is enabled:
 ```
 dnf repolist -v
 ```
+
+But I get an error installing an `epel` package:
+```
+Curl error (37): Couldn't read a file:// file for file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-8 [Couldn't open file /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-8]
+```
