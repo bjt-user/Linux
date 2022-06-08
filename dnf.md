@@ -5,3 +5,7 @@ sudo dnf repolist
 ```
 will show all repositories that `dnf` gets packages from.
 
+Repositories can be configured in
+```
+/etc/yum.repos.d
+```
