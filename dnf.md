@@ -18,7 +18,7 @@ Repositories can be configured in
 ```
 sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 ```
-(version 9 is available)
+(version 9 is available and I used that, but the system uses 8 because the docker container was oracle linux 8)
 
 to see where those files have been installed:
 ```
@@ -34,3 +34,13 @@ But I get an error installing an `epel` package:
 ```
 Curl error (37): Couldn't read a file:// file for file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-8 [Couldn't open file /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-8]
 ```
+
+```
+rpm --import http://download.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-6
+```
+
+And now it works! I can install `epel` packages.
+
+The problem might have been that I installed `epel` version 9 on `oracle linux` 8.\
+Maybe you don't have to import the gpg key when you pick the right version.\
+Yes there is a `RPM-GPG-KEY-EPEL-9` in `/etc/pki/rpm-gpg`.
