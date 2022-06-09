@@ -32,3 +32,8 @@ apt list fonts-*
 ```
 sudo apt install -y fonts-inconsolata fonts-hack
 ```
+
+#### good colors
+
+For the terminal I like:
+- `fira code regular`
