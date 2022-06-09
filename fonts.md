@@ -35,5 +35,5 @@ sudo apt install -y fonts-inconsolata fonts-hack
 
 #### good colors
 
-For the terminal I like:
+For the terminal emulators I like:
 - `fira code regular`
