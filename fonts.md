@@ -18,3 +18,9 @@ https://en.wikipedia.org/wiki/Ligature_(writing)
 In writing and typography, a ligature occurs where two or more graphemes or letters are joined to form a single glyph.
 
 You have to be very careful when using this kind of fonts.
+
+
+#### view fonts
+
+viewing fonts that are installed on your system:\
+https://flathub.org/apps/details/org.gnome.font-viewer
