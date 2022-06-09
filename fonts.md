@@ -1,3 +1,5 @@
+#### monospace fonts
+
 It is important to use a font with a fixed width also called monospaced fonts.\
 A monospaced font, also called a fixed-pitch, fixed-width, or non-proportional font, is a font whose letters and characters each occupy the same amount of horizontal space.
 
@@ -7,3 +9,12 @@ Even though computers can now display a wide variety of fonts, the majority of I
 https://en.wikipedia.org/wiki/Monospaced_font
 
 https://en.wikipedia.org/wiki/List_of_monospaced_typefaces
+
+#### ligatures
+
+Some fonts have ligatures. 
+https://en.wikipedia.org/wiki/Ligature_(writing)
+
+In writing and typography, a ligature occurs where two or more graphemes or letters are joined to form a single glyph.
+
+You have to be very careful when using this kind of fonts.
