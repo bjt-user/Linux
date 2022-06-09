@@ -36,4 +36,4 @@ sudo apt install -y fonts-inconsolata fonts-hack
 #### good colors
 
 For the terminal emulators I like:
-- `fira code regular`
+- `fira code regular` (`sudo apt install fonts-firacode`)
