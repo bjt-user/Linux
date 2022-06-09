@@ -24,3 +24,11 @@ You have to be very careful when using this kind of fonts.
 
 viewing fonts that are installed on your system:\
 https://flathub.org/apps/details/org.gnome.font-viewer
+
+#### install fonts
+```
+apt list fonts-*
+```
+```
+sudo apt install -y fonts-inconsolata fonts-hack
+```
