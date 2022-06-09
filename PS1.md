@@ -4,7 +4,7 @@ PS1 can be configured in `~/.bashrc`.
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;37m\]\w\[\033[00m\]\$ '
 ```
 
-The possible backgrounds:\
+backgrounds:\
 40  = black background\
 41  = red background\
 42  = green background\
@@ -22,7 +22,8 @@ The possible backgrounds:\
 106 = turquoise background\
 107 = white background
 
-All possible colors:\
+foregrounds:\
+01 = bold white\
 30  = black\
 31  = red\
 32  = green\
