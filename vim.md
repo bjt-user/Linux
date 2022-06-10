@@ -6,7 +6,7 @@ In normal mode:\
 `gg`    : go to first line\
 `G`     : go to last line
 
-<kbd>ctrl + f</kbd> : go one page forward (but still display the last two lines for continuity)
+<kbd>ctrl + f</kbd> : go one page forward (but still display the last two lines for continuity)\
 <kbd>ctrl + b</kbd> : go back one page
 
 #### Navigation (in the filesystem)
