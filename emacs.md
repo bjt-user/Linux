@@ -55,6 +55,14 @@ put in this line
 
 https://www.emacswiki.org/emacs/FullScreen
 
+put this
+```
+(custom-set-variables
+ '(initial-frame-alist (quote ((fullscreen . maximized)))))
+```
+into `~/.emacs`\
+=> that works
+
 #### evil mode
 
 https://www.emacswiki.org/emacs/Evil#h5o-4
