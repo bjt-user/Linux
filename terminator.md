@@ -11,6 +11,7 @@ Paste it into your current profile and comment out lines you already had.
 
 
 Good color schemes are:
+- Onehalfdark (but delete the `background_color` line if you use transparent terminal background)
 
 Bad color schemes:
 - Afterglow
