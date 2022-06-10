@@ -11,3 +11,7 @@ Paste it into your current profile and comment out lines you already had.
 
 
 Good color schemes are:
+
+Bad color schemes:
+- Afterglow
+- batman
