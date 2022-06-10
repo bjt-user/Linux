@@ -66,6 +66,27 @@ https://www.emacswiki.org/emacs/Evil
 
 #### evil mode
 
+https://www.emacswiki.org/emacs/Evil#h5o-4
+
+```
+cd ~/.emacs.d
+git clone --depth=1 https://github.com/emacs-evil/evil.git
+```
+
+Then add the following lines to ~/.emacs:
+```
+(add-to-list 'load-path "~/.emacs.d/evil")
+(require 'evil)
+(evil-mode 1)
+```
+
+And now vim-keybindings work.
+
+
+#### melpa fails
+
+melpa sucks pretty bad, better `git clone` packages into `.emacs.d`
+
 put this in `init.el`:
 ```
 (require 'package)
