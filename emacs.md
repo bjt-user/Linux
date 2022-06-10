@@ -71,6 +71,18 @@ Then add the following lines to ~/.emacs:
 
 And now vim-keybindings work.
 
+#### org mode
+
+```
+cd ~/.emacs.d
+git clone --depth=1 https://git.savannah.gnu.org/git/emacs/org-mode.git
+```
+
+https://orgmode.org/org.html#Installation
+
+```
+autoloads: command not found...
+```
 
 #### proxy
 alt + x `package-install` enter \
