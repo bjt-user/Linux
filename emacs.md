@@ -51,7 +51,9 @@ put in this line
 ```
 (setq frame-background-mode 'dark)
 ```
+#### starting in full screen
 
+https://www.emacswiki.org/emacs/FullScreen
 
 #### evil mode
 
