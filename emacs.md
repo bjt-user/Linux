@@ -52,17 +52,6 @@ put in this line
 (setq frame-background-mode 'dark)
 ```
 
-#### proxy
-alt + x `package-install` enter \
-now it seems it can't get past the proxy
-
-try putting this code into the `~/.emacs.d/init.el`:\
-https://www.emacswiki.org/emacs/InstallingPackages#h5o-4
-
-seems to have worked.
-
-but i cant find package `evil`. how do i search for packages and update packages?\
-https://www.emacswiki.org/emacs/Evil
 
 #### evil mode
 
@@ -81,6 +70,19 @@ Then add the following lines to ~/.emacs:
 ```
 
 And now vim-keybindings work.
+
+
+#### proxy
+alt + x `package-install` enter \
+now it seems it can't get past the proxy
+
+try putting this code into the `~/.emacs.d/init.el`:\
+https://www.emacswiki.org/emacs/InstallingPackages#h5o-4
+
+seems to have worked.
+
+but i cant find package `evil`. how do i search for packages and update packages?\
+https://www.emacswiki.org/emacs/Evil
 
 
 #### melpa fails
