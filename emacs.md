@@ -53,6 +53,8 @@ put in this line
 ```
 #### starting in full screen
 
+the gui-version of `emacs` doesn't start in maximized mode.
+
 https://www.emacswiki.org/emacs/FullScreen
 
 put this
