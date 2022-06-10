@@ -1,3 +1,5 @@
+https://wiki.archlinux.org/title/Flatpak
+
 ## flatpak setup
 
 Flatpak is a utility for software deployment and package management for Linux.\
@@ -33,6 +35,19 @@ flatpak run com.github.dahenson.agenda
 that works.
 
 You can also just hit <kbd>super/window</kbd> and type `agenda` to run it.
+
+#### managing flatpaks
+
+To list all the added repositories do:
+```
+flatpak remotes
+```
+
+show all installed flatpaks:
+```
+flatpak list
+```
+This includes installed `runtimes` that are necessary to run an application.
 
 
 #### todo
