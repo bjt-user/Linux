@@ -1,7 +1,15 @@
-PS1 can be configured in `~/.bashrc`.
+PS1 can be configured in `~/.bashrc`. (there are PS1 settings for colored terminals and for uncolored terminals)
+```
+cat ~/.bashrc | grep -n "PS1"
+```
 
+bold white current working directory:
 ```
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;37m\]\w\[\033[00m\]\$ '
+```
+white current working directory and a space before and after the `$`:
+```
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[97;37m\]\w\[\033[00m\] \$ '
 ```
 
 backgrounds:\
