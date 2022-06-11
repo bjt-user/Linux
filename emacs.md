@@ -116,7 +116,7 @@ You just need a `.org` file and start.\
 You can use `*` for headers.\
 Then go into insert mode and hit <kbd>tab</kbd> to fold in and out the contents under that heading.
 
-Moving list items with `M-arrowkeys` only works if there is a space after the `+` sign like this:\
+Moving list items with `M-arrowkeys` only works if there is a <kbd>space</kbd> after the `+` sign like this:\
 ```
 + item 1
 + item 2
