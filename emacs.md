@@ -111,16 +111,17 @@ Then you can navigate with arrowkeys or vimkeys and enter (to go back a dir hit 
 https://www.emacswiki.org/emacs/OrgMode \
 https://orgmode.org/manual/index.html
 
-But maybe org mode is already enabled by default.\
+According to the docs org mode is already enabled and implemented by default.\
 You just need a `.org` file and start.\
 You can use `*` for headers.\
 Then go into insert mode and hit <kbd>tab</kbd> to fold in and out the contents under that heading.
+
+Moving list items with `M-arrowkeys` doesn't work.
 
 But you might need something like this:\
 https://github.com/Somelauw/evil-org-mode \
 to make org mode work better with evil mode
 
-but i dont think it is properly installed
 
 installation fails:
 
