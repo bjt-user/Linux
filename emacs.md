@@ -116,8 +116,13 @@ You just need a `.org` file and start.\
 You can use `*` for headers.\
 Then go into insert mode and hit <kbd>tab</kbd> to fold in and out the contents under that heading.
 
-Moving list items with `M-arrowkeys` doesn't work.\
-Even when evil mode is disabled it still doesn't work.
+Moving list items with `M-arrowkeys` only works if there is a space after the `+` sign like this:\
+```
++ item 1
++ item 2
++ ...
+```
+But it does not work with vim-keys.
 
 https://github.com/GuiltyDolphin/org-evil
 
