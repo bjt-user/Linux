@@ -51,6 +51,9 @@ put in this line
 ```
 (setq frame-background-mode 'dark)
 ```
+
+or change your terminal color scheme (make blue lighter)
+
 #### starting in full screen
 
 the gui-version of `emacs` doesn't start in maximized mode.
@@ -82,6 +85,11 @@ Then add the following lines to ~/.emacs:
 ```
 
 And now vim-keybindings work.
+
+#### navigation
+
+how to open a file?\
+`C-x d` type in a path and hit <kbd>enter</kbd>
 
 #### org mode
 
