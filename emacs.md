@@ -122,6 +122,7 @@ Moving list items with `M-arrowkeys` only works if there is a <kbd>space</kbd> a
 + item 2
 + ...
 ```
+But it only works in `gui-mode` and with arrowkey.\
 But it does not work with vim-keys.
 
 https://github.com/GuiltyDolphin/org-evil
