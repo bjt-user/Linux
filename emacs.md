@@ -118,8 +118,8 @@ Then go into insert mode and hit <kbd>tab</kbd> to fold in and out the contents 
 
 Moving list items with `M-arrowkeys` doesn't work.
 
-But you might need something like this:\
-https://github.com/Somelauw/evil-org-mode \
+https://github.com/GuiltyDolphin/org-evil
+
 to make org mode work better with evil mode
 
 
