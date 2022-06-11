@@ -108,7 +108,8 @@ Then you can navigate with arrowkeys or vimkeys and enter (to go back a dir hit 
 
 #### org mode
 
-https://www.emacswiki.org/emacs/OrgMode
+https://www.emacswiki.org/emacs/OrgMode \
+https://orgmode.org/manual/index.html
 
 But maybe org mode is already enabled by default.\
 You just need a `.org` file and start.\
