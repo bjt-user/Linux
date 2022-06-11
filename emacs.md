@@ -1,15 +1,27 @@
 Doesn't work behind proxy.\
 Documentation sucks.
 
-It looks like you can use `emacs` with a Desktop Environment (xorg) and also without it.
 
 ```
 sudo dnf install emacs
 ```
 
+#### gui version or terminal version
+
+You can use `emacs` with a Desktop Environment (xorg) and also without it.\
+In case you decide to use emacs in terminal mode always, install `emacs-nox` (emacs with no X support).
+
+If you have installed both versions, this will start the gui-version:
 ```
 emacs
 ```
+
+If I start the terminal version by hitting the window key and typing emacs and choosing the terminal version, then emacs will open in a `gnome-terminal`.\
+I guess I will just use
+```
+alias emacs='emacs -nw'
+```
+to open the terminal version when I type `emacs` in terminator.
 
 #### exiting emacs
 
