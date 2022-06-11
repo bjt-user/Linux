@@ -52,7 +52,9 @@ put in this line
 (setq frame-background-mode 'dark)
 ```
 
-or change your terminal color scheme (make blue lighter)
+or change your terminal color scheme (make blue lighter)\
+but the default terminal for the terminal version is `gnome-terminal`.\
+How do I change that to terminator?
 
 #### starting in full screen
 
@@ -89,7 +91,8 @@ And now vim-keybindings work.
 #### navigation
 
 how to open a file?\
-`C-x d` type in a path and hit <kbd>enter</kbd>
+`C-x d` type in a path and hit <kbd>enter</kbd>\
+Then you can navigate with arrowkeys or vimkeys and enter (to go back a dir hit enter on the `..`)
 
 #### org mode
 
@@ -103,6 +106,10 @@ https://orgmode.org/org.html#Installation
 ```
 autoloads: command not found...
 ```
+
+#### markdown
+
+With a plain emacs installation `markdown` (.md) files are not rendered in any way. It is just plain text.
 
 #### proxy
 alt + x `package-install` enter \
