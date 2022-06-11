@@ -50,8 +50,11 @@ flatpak list
 This includes installed `runtimes` that are necessary to run an application.
 
 
-#### todo
+#### uninstalling apps
 
-how to uninstall an application?
+```
+flatpak uninstall [app id or app name]
+```
 
+You can also delete unused runtimes or application data:\
 https://fostips.com/remove-flatpak-apps-free-up-disk/
