@@ -123,7 +123,9 @@ Moving list items with `M-arrowkeys` only works if there is a <kbd>space</kbd> a
 + ...
 ```
 But it only works in `gui-mode` and with arrowkey.\
-But it does not work with vim-keys.
+`terminator` uses <kbd>alt</kbd> + <kbd>up/down</kbd> for changing terminal focus.\
+But I could change that.\
+But it does not work with vim-keys in gui-mode.
 
 https://github.com/GuiltyDolphin/org-evil
 
