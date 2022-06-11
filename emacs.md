@@ -108,6 +108,17 @@ Then you can navigate with arrowkeys or vimkeys and enter (to go back a dir hit 
 
 #### org mode
 
+But maybe org mode is already enabled by default.\
+You just need a `.org` file and start.\
+You can use `*` for headers.\
+Then go into insert mode and hit <kbd>tab</kbd> to fold in and out the contents under that heading.
+
+But you might need something like this:\
+https://github.com/Somelauw/evil-org-mode \
+to make org mode work better with evil mode
+
+installation fails:
+
 ```
 cd ~/.emacs.d
 git clone --depth=1 https://git.savannah.gnu.org/git/emacs/org-mode.git
