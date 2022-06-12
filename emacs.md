@@ -245,7 +245,6 @@ Some basics to make emacs somewhat usable:
 ;; stop creating those #auto-save# files
 (setq auto-save-default nil)
 
-(setq make-backup-files nil) ; stop creating ~ files
 
 (custom-set-variables
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
