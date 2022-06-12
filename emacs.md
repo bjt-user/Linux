@@ -118,6 +118,7 @@ Maybe try this:
 
 https://www.spacemacs.org/
 
+https://www.youtube.com/watch?v=fdLCuJcS2Aw
 
 #### evil mode
 
@@ -136,6 +137,10 @@ Then add the following lines to ~/.emacs:
 ```
 
 And now vim-keybindings work.
+
+But it does not work well. There is an error message sometimes when I open emacs and then dired mode doesnt work...\
+Also I think it does not work well with org-mode...
+Feels very uncomplete...
 
 #### navigation
 
