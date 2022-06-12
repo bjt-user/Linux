@@ -96,8 +96,8 @@ I will try to put this into `.emacs`:
 (setq auto-save-default nil)
 ```
 
-But will this also prevent the `...~` file?
-
+But will this also prevent the `...~` file? No.\
+`test.org~` is created after a `:w` and `:q` with `evil-mode`.
 
 
 #### evil mode
