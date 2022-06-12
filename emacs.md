@@ -120,6 +120,14 @@ https://www.spacemacs.org/
 
 https://www.youtube.com/watch?v=fdLCuJcS2Aw
 
+from the website:
+```
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+```
+but you have to clean your `.emacs.d` folder first and then there is no spacemacs folder it is all directly in the .emacs folder...
+
+And it does not work, no vim keybindings, just vanilla emacs.
+
 #### evil mode
 
 https://www.emacswiki.org/emacs/Evil#h5o-4
