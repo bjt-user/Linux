@@ -128,6 +128,21 @@ but you have to clean your `.emacs.d` folder first and then there is no spacemac
 
 But you need emacs version 27.1 or above. So I might install a flatpak.
 
+First delete `~/.emacs` and `~/.emacs.d` (be careful not to delete `~`)
+```
+sudo apt remove emacs
+sudo apt autoremove
+sudo flatpak install emacs
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+```
+Hit <kbd>windows</kbd> emacs.\
+And then a config wizard appears!
+
+But it gives me a warning:
+```
+Warning: You are running an unofficial flatpak version of gnu emacs!
+```
+
 #### evil mode
 
 https://www.emacswiki.org/emacs/Evil#h5o-4
