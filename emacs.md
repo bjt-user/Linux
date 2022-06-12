@@ -82,6 +82,24 @@ put this
 into `~/.emacs`\
 => that works
 
+#### problem: emacs creates weird files
+
+I have a file called `test.org`, but emacs creates a second file called `#text.org#` and a third file called `test.org~`.\
+
+https://www.emacswiki.org/emacs/AutoSave
+
+*By default, auto-save files are stored in the current directory with a file name on the form #file#.*
+
+I will try to put this into `.emacs`:
+```
+;; stop creating those #auto-save# files
+(setq auto-save-default nil)
+```
+
+But will this also prevent the `...~` file?
+
+
+
 #### evil mode
 
 https://www.emacswiki.org/emacs/Evil#h5o-4
