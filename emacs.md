@@ -126,7 +126,7 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ```
 but you have to clean your `.emacs.d` folder first and then there is no spacemacs folder it is all directly in the .emacs folder...
 
-And it does not work, no vim keybindings, just vanilla emacs.
+But you need emacs version 27.1 or above. So I might install a flatpak.
 
 #### evil mode
 
@@ -234,3 +234,19 @@ M-x package-refresh-contents
 https://github.com/emacs-evil/evil
 
 But it seems like the proxy is still not working.
+
+
+#### .emacs
+
+Some basics to make emacs somewhat usable:
+```
+(setq make-backup-files nil) ; stop creating ~ files
+(setq frame-background-mode 'dark)
+;; stop creating those #auto-save# files
+(setq auto-save-default nil)
+
+(setq make-backup-files nil) ; stop creating ~ files
+
+(custom-set-variables
+ '(initial-frame-alist (quote ((fullscreen . maximized)))))
+```
