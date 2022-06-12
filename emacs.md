@@ -99,6 +99,16 @@ I will try to put this into `.emacs`:
 But will this also prevent the `...~` file? No.\
 `test.org~` is created after a `:w` and `:q` with `evil-mode`.
 
+https://www.emacswiki.org/emacs/BackupFiles
+
+I try this in `~/.emacs`:
+```
+(setq make-backup-files nil) ; stop creating ~ files
+```
+I could also set another backup directory, but for now it is just annoying.
+
+=> that worked, no annoying files anymore. I could utilize backup folders in the future but not now.
+
 
 #### evil mode
 
