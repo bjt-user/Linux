@@ -109,6 +109,8 @@ I could also set another backup directory, but for now it is just annoying.
 
 => that worked, no annoying files anymore. I could utilize backup folders in the future but not now.
 
+I still get an error when I quit emacs with evil mode...
+
 
 #### evil mode
 
