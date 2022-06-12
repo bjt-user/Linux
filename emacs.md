@@ -112,6 +112,13 @@ I could also set another backup directory, but for now it is just annoying.
 I still get an error when I quit emacs with evil mode...
 
 
+#### spacemacs
+
+Maybe try this:
+
+https://www.spacemacs.org/
+
+
 #### evil mode
 
 https://www.emacswiki.org/emacs/Evil#h5o-4
