@@ -82,3 +82,10 @@ endfunction
 Put this in a file in `.vim/plugin/filename.vim`
 
 Then you can execute this function in vim with `:call Commenter()`
+
+
+#### vim manual
+
+On the cli type `vim`. enter `:help`. enter `:only` to view the help in the whole screen.
+
+When you scroll down you see help files you can go into by placing the cursor on them and typing `gf` (goto file).
