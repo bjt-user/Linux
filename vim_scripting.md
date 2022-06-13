@@ -5,12 +5,8 @@ To execute a vimscript type `:source %`
 If you put your example.vim file into `~/.vim/plugin` it gets executed everytime you start vim.\
 There is also the folder `~/.vim/ftplugin` for plugins that are for specific filetypes, but for a start thats too complicated.
 
-https://vim.help/41-write-a-vim-script
-
 see functions you can use with argument explanation:
 :help functions
-
-https://vimhelp.org/usr_41.txt.html#function-list
 
 https://devhints.io/vimscript-functions
 
@@ -54,14 +50,14 @@ Use `function!` so you don't get errors when opening multiple files. (i.e. `vim 
 filetype plugins
 ----------------
 
-Put a file named sh_something.vim into .vim/ftplugin/
+Put a file named `sh_something.vim` into `~/.vim/ftplugin/`
 write
 ```
 echo "this is a shell script!!!"
 ```
 and it will be executed everytime you open a file with filename *.sh with vim
 
-It is also recognized as shell script when you have a #!/bin/bash in the first line
+It is also recognized as shell script when you have a `#!/bin/bash` in the first line
 and a different fileending.
 
 -------------------------------------------------------------------------------------------------------
