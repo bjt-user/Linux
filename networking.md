@@ -43,3 +43,7 @@ When my wireless connection breaks I get:
 ```
 curl: (6) Could not resolve host: www.google.com
 ```
+
+#### http response status codes
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
