@@ -57,6 +57,7 @@ to view files on the command line that are bigger than one screen (and maybe whe
 ```
 less textfile.txt
 ```
+
 ***
 
 #### history and previously executed commands
