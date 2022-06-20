@@ -82,3 +82,16 @@ $ qpaeq
 
 => Ok, jetzt funktioniert zwar das Programm, aber ich kann mit dem Programm nichts anfangen.
 Scheint auch keine Dateien zu manipulieren sondern nur generell den Output.
+
+***
+
+#### audacity
+
+```
+sudo apt install audacity
+```
+
+Cut out audio: Select a range with the mouse and hit <kbd>del</kbd>
+
+Keep everything but the selected: select a range with the mouse and go to `edit -> remove special -> trim audio`. (or <kbd>ctrl</kbd> + <kbd>t</kbd>\
+Then put it on the beginning of the track with `tracks -> align tracks -> start to zero`
