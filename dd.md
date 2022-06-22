@@ -42,6 +42,8 @@ sudo apt purge snapd
 then I deleted all loop devices in `/dev`. But they were still there.\
 But after a `reboot` they were gone.
 
+But then I didnt have audio anymore.
+
 #### fill drive with zeros
 WARNING: use this with extreme caution:
 ```
