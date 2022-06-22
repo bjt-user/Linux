@@ -95,3 +95,21 @@ Cut out audio: Select a range with the mouse and hit <kbd>del</kbd>
 
 Keep everything but the selected: select a range with the mouse and go to `edit -> remove special -> trim audio`. (or <kbd>ctrl</kbd> + <kbd>t</kbd>\
 Then put it on the beginning of the track with `tracks -> align tracks -> start to zero`
+
+
+#### no sound issue
+
+I had the issue that no sound was working on Ubuntu anymore because of various system problems.
+
+Then I did
+
+```
+sudo apt reinstall alsa-base
+```
+```
+sudo apt reinstall pulseaudio
+```
+```
+reboot
+```
+And sound was working again.
