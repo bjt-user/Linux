@@ -34,6 +34,11 @@ loop16   7:16   0    47M  1 loop /snap/snapd/16010
 
 How do I remove those drives?
 
+I could remove some with this command:
+```
+sudo apt purge snapd
+```
+
 #### fill drive with zeros
 WARNING: use this with extreme caution:
 ```
