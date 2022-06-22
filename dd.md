@@ -11,6 +11,8 @@ then stick in the drive
 sudo dd if=~/Downloads/archlinux-2022.05.01-x86_64.iso of=/dev/sdb
 ```
 
+=> this usually worked, but one time I got an error and I got 0-16 "loop" devices in `lsblk`...
+
 #### fill drive with zeros
 WARNING: use this with extreme caution:
 ```
