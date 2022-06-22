@@ -12,6 +12,27 @@ sudo dd if=~/Downloads/archlinux-2022.05.01-x86_64.iso of=/dev/sdb
 ```
 
 => this usually worked, but one time I got an error and I got 0-16 "loop" devices in `lsblk`...
+```
+loop0    7:0    0 938,5M  1 loop /snap/android-studio/119
+loop1    7:1    0     4K  1 loop /snap/bare/5
+loop2    7:2    0  55,5M  1 loop /snap/core18/2344
+loop3    7:3    0 998,6M  1 loop /snap/android-studio/121
+loop4    7:4    0  61,9M  1 loop /snap/core20/1494
+loop5    7:5    0  61,9M  1 loop /snap/core20/1518
+loop6    7:6    0   219M  1 loop /snap/gnome-3-34-1804/72
+loop7    7:7    0   219M  1 loop /snap/gnome-3-34-1804/77
+loop8    7:8    0  55,5M  1 loop /snap/core18/2409
+loop9    7:9    0 248,8M  1 loop /snap/gnome-3-38-2004/99
+loop10   7:10   0  54,2M  1 loop /snap/snap-store/558
+loop11   7:11   0  65,2M  1 loop /snap/gtk-common-themes/1519
+loop12   7:12   0  81,3M  1 loop /snap/gtk-common-themes/1534
+loop13   7:13   0    51M  1 loop /snap/snap-store/547
+loop14   7:14   0  44,7M  1 loop /snap/snapd/15904
+loop15   7:15   0 254,1M  1 loop /snap/gnome-3-38-2004/106
+loop16   7:16   0    47M  1 loop /snap/snapd/16010
+```
+
+How do I remove those drives?
 
 #### fill drive with zeros
 WARNING: use this with extreme caution:
