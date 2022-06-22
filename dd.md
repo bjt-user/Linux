@@ -39,6 +39,9 @@ I could remove some with this command:
 sudo apt purge snapd
 ```
 
+then I deleted all loop devices in `/dev`. But they were still there.\
+But after a `reboot` they were gone.
+
 #### fill drive with zeros
 WARNING: use this with extreme caution:
 ```
