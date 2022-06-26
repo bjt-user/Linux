@@ -44,3 +44,9 @@ enable proxy clips if you dont have powerful hardware.\
 this means that you work with videos in reduced quality for previewing and stuff but the result will be rendered in the actual desired quality.
 
 https://kdenlive.org/en/project/kdenlive-proxy-clips/
+
+#### reduce volume of a clip
+
+effects->audio corrections->volume (keyframeable) and drag that into the clip
+
+then leftclick the clip and you can adjust the `gain` (set it to -30 to have a big effect)
