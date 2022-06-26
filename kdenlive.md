@@ -7,6 +7,12 @@ Project -> Add clip or folder
 
 Then it appears in the left box and from there you can move it in the bottom in the working area.
 
+#### working area and directory area
+There are two areas (I just call the working area and directory area).\
+And two video boxes. One box shows the video of the clip that is in the "staging area" or however you want to call it.\
+The video on the right shows the video in the working area.\
+You can play it with the play button or just hit <kbd>space</kbd>.
+
 #### cut pieces out of a video
 
 select the `razor tool` or hit <kbd>x</kbd>
@@ -16,3 +22,8 @@ when you are done you can switch back to the `selection tool` or hit <kbd>s</kbd
 
 then you can do this again for the end of the part you want to cut out.\
 switch to `selection tool` and left click the part you want to remove and hit <kbd>del</kbd>.
+
+#### fade in/out
+
+move the mouse to the upper right corner of a clip until a small red circle appears.\
+drag that circle into the clip depending on how long the fade should last.
