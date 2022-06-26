@@ -50,3 +50,9 @@ https://kdenlive.org/en/project/kdenlive-proxy-clips/
 effects->audio corrections->volume (keyframeable) and drag that into the clip
 
 then leftclick the clip and you can adjust the `gain` (set it to -30 to have a big effect)
+
+#### rendering
+
+I havent found an option for no reencoding yet.
+
+You can tick the `more options` box and then select how much threads you want to use.
