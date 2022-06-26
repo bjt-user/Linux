@@ -37,3 +37,10 @@ drag that circle into the clip depending on how long the fade should last.
 
 ctrl + pos1 - go to beginning of the timeline \
 ctrl + enter - render project
+
+#### enable proxy clips
+
+enable proxy clips if you dont have powerful hardware.\
+this means that you work with videos in reduced quality for previewing and stuff but the result will be rendered in the actual desired quality.
+
+https://kdenlive.org/en/project/kdenlive-proxy-clips/
