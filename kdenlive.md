@@ -13,6 +13,11 @@ And two video boxes. One box shows the video of the clip that is in the `project
 The video on the right shows the video in the working area.\
 You can play it with the play button or just hit <kbd>space</kbd>.
 
+#### scroll bar
+
+The scroll bar for the timeline of the working area is hidden and will only be visible if you move the mouse towards it.\
+It is below the area for the video and audio clips.
+
 #### cut pieces out of a video
 
 select the `razor tool` or hit <kbd>x</kbd>
