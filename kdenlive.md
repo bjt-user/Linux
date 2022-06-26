@@ -53,6 +53,7 @@ then leftclick the clip and you can adjust the `gain` (set it to -30 to have a b
 
 #### rendering
 
-I havent found an option for no reencoding yet.
+I havent found an option for no reencoding yet.\
+It's probably not possible if you edit it.
 
 You can tick the `more options` box and then select how much threads you want to use.
