@@ -35,4 +35,5 @@ drag that circle into the clip depending on how long the fade should last.
 
 #### keyboard shortcuts
 
-ctrl + pos1 - go to beginning of the timeline
+ctrl + pos1 - go to beginning of the timeline \
+ctrl + enter - render project
