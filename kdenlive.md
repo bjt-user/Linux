@@ -57,3 +57,6 @@ I havent found an option for no reencoding yet.\
 It's probably not possible if you edit it.
 
 You can tick the `more options` box and then select how much threads you want to use.
+
+A 90min video rendered to the .webm standard profile with 2 threads took 30 minutes.\
+Quality is ok.
