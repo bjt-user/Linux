@@ -32,3 +32,7 @@ switch to `selection tool` and left click the part you want to remove and hit <k
 
 move the mouse to the upper right corner of a clip until a small red circle appears.\
 drag that circle into the clip depending on how long the fade should last.
+
+#### keyboard shortcuts
+
+ctrl + pos1 - go to beginning of the timeline
