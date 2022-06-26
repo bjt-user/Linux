@@ -7,9 +7,9 @@ Project -> Add clip or folder
 
 Then it appears in the left box and from there you can move it in the bottom in the working area.
 
-#### working area and directory area
-There are two areas (I just call the working area and directory area).\
-And two video boxes. One box shows the video of the clip that is in the "staging area" or however you want to call it.\
+#### working area and project bin
+There are two areas (the working area and project bin).\
+And two video boxes. One box shows the video of the clip that is in the `project bin`.\
 The video on the right shows the video in the working area.\
 You can play it with the play button or just hit <kbd>space</kbd>.
 
