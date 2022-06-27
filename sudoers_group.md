@@ -16,3 +16,13 @@ myuser  ALL=(ALL)       ALL
 ```
 (note that there is a `tab` after `root`)\
 => and that worked.
+
+
+
+#### wheel group
+
+A more modern way seems to be to just add a user to the `wheel` group.
+
+```
+usermod -aG wheel <myuser>
+```
