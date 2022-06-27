@@ -33,6 +33,8 @@ apt list fonts-*
 sudo apt install -y fonts-inconsolata fonts-hack
 ```
 
+(this does not work on `Fedora 36` with `dnf`)
+
 #### good colors
 
 For the terminal emulators I like:
