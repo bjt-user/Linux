@@ -18,7 +18,8 @@ Repositories can be configured in
 ```
 sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 ```
-(version 9 is available and I used that, but the system uses 8 because the docker container was oracle linux 8)
+(version 9 is available and I used that, but the system uses 8 because the docker container was oracle linux 8)\
+this did not work on `Fedora 36` machine
 
 to see where those files have been installed:
 ```
