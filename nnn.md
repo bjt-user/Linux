@@ -8,4 +8,5 @@ type `nnn` to start it.
 
 You can use vim keys to navigate.
 
-<kbd>.</kbd> to toggle hidden files on and off
+<kbd>.</kbd> to toggle hidden files on and off\
+<kbd>ESC</kbd><kbd>ESC</kbd> quit
