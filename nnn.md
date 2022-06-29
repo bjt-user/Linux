@@ -10,3 +10,6 @@ You can use vim keys to navigate.
 
 <kbd>.</kbd> to toggle hidden files on and off\
 <kbd>ESC</kbd><kbd>ESC</kbd> quit
+
+
+How to go up one directory?
