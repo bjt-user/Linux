@@ -17,3 +17,12 @@ You can use vim keys to navigate.
 <kbd>!</kbd> open folder in the terminal\
 <kbd>e</kbd> open file in the editor that is saved in the environment variable `$VISUAL`\
 `/pattern` to search for a file or folder
+
+#### copy or move files
+
+<kbd>space</kbd> select file
+
+type <kbd>2</kbd> for the second tab and select the folder there where you want to copy your file to
+
+<kbd>p</kbd> - for "coPy here"\
+<kbd>v</kbd> - for "moVe here"
