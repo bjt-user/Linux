@@ -18,6 +18,8 @@ You can play it with the play button or just hit <kbd>space</kbd>.
 The scroll bar for the timeline of the working area is hidden and will only be visible if you move the mouse towards it.\
 It is below the area for the video and audio clips.
 
+You can also scroll horizontally by clicking and holding the mid mouse button and moving the mouse.
+
 #### cut pieces out of a video
 
 select the `razor tool` or hit <kbd>x</kbd>
