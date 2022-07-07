@@ -28,3 +28,9 @@ ip.dst == 10.101.11.10
 ```
 
 You can also right click on an entry and select `apply filter` -> `selected`
+
+
+#### dictionairy
+
+tcp retransmission https://en.wikipedia.org/wiki/Retransmission_(data_networks) \
+=> means data is being resent because no acknoledgement came from the destination
