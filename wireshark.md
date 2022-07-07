@@ -16,3 +16,8 @@ type this in the upper filter text box:
 ip.addr == 38.145.60.21
 ```
 and hit enter
+
+or to filter for the `source ip`:
+```
+ip.src == 10.101.11.27
+```
