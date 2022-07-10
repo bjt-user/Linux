@@ -22,3 +22,4 @@ adding the `-i` option:
 youtube-dl -i -f mp4 --yes-playlist 'https://www.youtube.com/watch?v=ElWo5fd4rIU&list=PLYmlEoSHldN7HJapyiQ8kFLUsk_a7EjCw&index=2'
 ```
 => that at least leads to a progress bar
+it takes very long but it downloads one video after the other
