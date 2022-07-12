@@ -38,7 +38,8 @@ drag that circle into the clip depending on how long the fade should last.
 #### keyboard shortcuts
 
 ctrl + pos1 - go to beginning of the timeline \
-ctrl + enter - render project
+ctrl + enter - render project\
+shift + drag a rectangle with left mouse - to select multiple clips
 
 #### enable proxy clips
 
