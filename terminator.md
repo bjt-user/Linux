@@ -19,4 +19,6 @@ Bad color schemes:
 
 #### standard keybindings
 
-<kbd>ctrl</kbd> + <kbd>PageDown/PageUp</kbd>
+<kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>t</kbd> - open new tab\
+<kbd>ctrl</kbd> + <kbd>PageDown/PageUp</kbd> - switch to next tab
+
