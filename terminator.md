@@ -16,3 +16,7 @@ Good color schemes are:
 Bad color schemes:
 - Afterglow
 - batman
+
+#### standard keybindings
+
+<kbd>ctrl</kbd> + <kbd>PageDown/PageUp</kbd>
