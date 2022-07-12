@@ -17,7 +17,7 @@ You can use vim keys to navigate.
 <kbd>d</kbd> - to toggle file details on and off\
 <kbd>e</kbd> open file in the editor that is saved in the environment variable `$VISUAL`\
 `/pattern` to search for a file or folder\
-<kbd>x</kbd> then confirm with <kbd>y</kbd> - delete a file
+<kbd>x</kbd> then confirm with <kbd>y</kbd> - delete a file\
 <kbd>n</kbd> create new file/folder/link (hit <kbd>f</kbd> next for file then give it a name)
 
 #### copy or move files
