@@ -53,3 +53,5 @@ And add the line like this:
 %sudo ALL=(ALL) NOPASSWD: ALL
 ```
 (you don't need tabs, one space between words is enough)
+
+It might need a proper `reboot` for a group change and sudoers file change to properly take effect.
