@@ -44,3 +44,5 @@ This program is written by `Debarshi Ray`:
 ```
 sudo pacman -S inetutils
 ```
+
+Looks like I have to get my IP from the `ip address` command in the future.
