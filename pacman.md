@@ -29,6 +29,12 @@ uninstall a package:
 sudo pacman -R inetutils
 ```
 
+You can also use
+```
+pacman -Su
+```
+ to upgrade all packages that are out-of-date.
+
 #### packages
 
 How to install the `hostname` command with pacman?
