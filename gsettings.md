@@ -36,3 +36,8 @@ Or hitting the end of the file in vim.
 ```
 gsettings set org.gnome.desktop.wm.preferences audible-bell false
 ```
+
+#### disable spell check in text editor
+```
+gsettings set org.gnome.TextEditor spellcheck false
+```
