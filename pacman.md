@@ -64,6 +64,14 @@ $ sudo pacman -Sy
 error: failed retrieving file 'docker-ce.db' from download.docker.com : The requested URL returned error: 404
 ```
 
+=> the link is to binary packages of docker not to a repo
+
+after deleting that false repo I did
+```
+sudo pacman -Sy
+```
+again and this updates and shows all repos
+
 #### packages
 
 How to install the `hostname` command with pacman?
