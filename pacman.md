@@ -1,3 +1,5 @@
+https://wiki.archlinux.org/title/Pacman
+
 ```
 pacman -S packagename
 ```
@@ -34,6 +36,28 @@ You can also use
 pacman -Su
 ```
  to upgrade all packages that are out-of-date.
+
+#### repositories
+
+repositories can be configured in `/etc/pacman.conf`
+
+I tried it like this:
+```
+[docker-ce]
+SigLevel = Optional TrustAll
+Server = https://download.docker.com/linux/static/stable/x86_64/
+```
+And it failed:
+```
+warning: database file for 'docker-ce' does not exist (use '-Sy' to download)
+```
+
+You could try the `-y` option:
+```
+-y, --refresh
+Download a fresh copy of the master package database from the server(s) defined in pacman.conf(5). This should typically be used each time you use
+--sysupgrade or -u. Passing two --refresh or -y flags will force a refresh of all package databases, even if they appear to be up-to-date.
+```
 
 #### packages
 
