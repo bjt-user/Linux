@@ -59,6 +59,11 @@ Download a fresh copy of the master package database from the server(s) defined 
 --sysupgrade or -u. Passing two --refresh or -y flags will force a refresh of all package databases, even if they appear to be up-to-date.
 ```
 
+```
+$ sudo pacman -Sy
+error: failed retrieving file 'docker-ce.db' from download.docker.com : The requested URL returned error: 404
+```
+
 #### packages
 
 How to install the `hostname` command with pacman?
