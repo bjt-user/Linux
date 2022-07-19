@@ -20,4 +20,5 @@ Have to go with the full path of the executable files to make it work again:
 
 But the question is why this does not work?
 
-I think the problem was that I did not put a `shebang` at the beginning of the file and the `$PATH` was not recognized as a variable.
+I think the problem was that I did not put a `shebang` at the beginning of the file and the `$PATH` was not recognized as a variable.\
+=> nope it still doesnt work
