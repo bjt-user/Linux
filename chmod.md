@@ -19,3 +19,24 @@ give everyone every permission for the file `startup.sh`
 ```
 sudo chmod 777 startup.sh
 ```
+
+***
+
+you can also use a different system to grant permissions
+
+u: user\
+g: group\
+o: others\
+a: all
+
+-/+
+
+r: read\
+w: write\
+x: execute
+
+for example:
+```
+chmod u+x file
+```
+give user permission to execute the file
