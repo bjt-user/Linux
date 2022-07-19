@@ -1,5 +1,8 @@
 #### Where to set the PATH
 
+It can be set in infinite places but where do you set it so it does not break everything else and works even for the root user?
+
+Or do you have to set it for every user and the root user in `.bashrc`
 
 
 
@@ -14,3 +17,5 @@ Have to go with the full path of the executable files to make it work again:
 ```
 /usr/bin/vim /etc/environment
 ```
+
+But the question is why this does not work?
