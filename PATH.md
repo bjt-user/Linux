@@ -4,6 +4,15 @@ It can be set in infinite places but where do you set it so it does not break ev
 
 Or do you have to set it for every user and the root user in `.bashrc`
 
+#### startup files
+
+https://www.ibm.com/docs/en/aix/7.1?topic=customization-system-startup-files
+
+The first file that the operating system uses at login time is the /etc/environment file.\
+The /etc/environment file contains variables specifying the basic environment for all processes.
+
+The second file that the operating system uses at login time is the /etc/profile file.
+
 
 
 ## FAILS
