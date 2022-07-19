@@ -25,6 +25,7 @@ I think the problem was that I did not put a `shebang` at the beginning of the f
 
 
 - `etc/profile`
+
 it says I should create a custom.sh shell script in `/etc/profile.d/`:
 ```
 # It's NOT a good idea to change this file unless you know what you
