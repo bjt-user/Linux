@@ -42,3 +42,11 @@ But a "cleaner" (or another) way is to adjust the `PATH` here:
 sudo vim /etc/profile
 ```
 
+
+
+#### troubleshooting
+
+putting this into `/etc/environment` destroys the entire PATH:
+```
+export PATH=$PATH:/usr/lib/jvm/java-17-openjdk-17.0.3.0.7-2.el8_6.x86_64/bin
+```
