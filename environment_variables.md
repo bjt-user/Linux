@@ -37,12 +37,15 @@ export PATH=$PATH:/home/myuser/opt/myprogram/bin
 You can put that line into your `.bashrc` or `.bash_profile`, etc. for a permanent solution.\
 `bash -s` to source `.bashrc` and make the environment variables take effect.
 
-But a "cleaner" (or another) way is to adjust the `PATH` here:
+another way is to adjust the `PATH` here:
 ```
 sudo vim /etc/profile
 ```
 
+or in `/etc/environment`
 
+but what is the correct way to do it, so that also the root user has this path?\
+and not only the normal user.
 
 #### troubleshooting
 
