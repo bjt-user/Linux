@@ -22,3 +22,13 @@ But the question is why this does not work?
 
 I think the problem was that I did not put a `shebang` at the beginning of the file and the `$PATH` was not recognized as a variable.\
 => nope it still doesnt work
+
+
+- `etc/profile`
+it says I should create a custom.sh shell script in `/etc/profile.d/`:
+```
+# It's NOT a good idea to change this file unless you know what you
+# are doing. It's much better to create a custom.sh shell script in
+# /etc/profile.d/ to make custom changes to your environment, as this
+# will prevent the need for merging in future updates.
+```
