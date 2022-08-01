@@ -20,3 +20,11 @@ You have to enable it by typing
 sudo raspi-config
 ```
 3 interface options -> I2 SSH
+
+Then use
+```
+hostname -I
+```
+to get the IP
+
+Because DNS will only work after a successful connect with the IP...
