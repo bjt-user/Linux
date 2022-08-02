@@ -7,3 +7,26 @@ you can also grep for specific traffic
 ```
 sudo tcpdump | grep -i "bf"
 ```
+
+check your interface with
+```
+ip addr
+```
+
+Then filter for your interface:
+```
+sudo tcpdump -i enp1s0
+```
+This is probably only useful if you have multiple interfaces, like wifi, bluetooth, ethernet etc...
+
+Filter source:\
+get your ip with `hostname -I`\
+then filer for source with your ip:
+```
+tcpdump src [myip]
+```
+
+filer destination:
+```
+tcpdump dst [destination ip]
+```
