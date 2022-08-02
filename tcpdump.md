@@ -30,3 +30,8 @@ filer destination:
 ```
 tcpdump dst [destination ip]
 ```
+
+
+You can also filter for source port or destination port.
+
+https://www.youtube.com/watch?v=1lDfCRM6dWk
