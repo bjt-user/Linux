@@ -47,6 +47,8 @@ or in `/etc/environment`
 but what is the correct way to do it, so that also the root user has this path?\
 and not only the normal user.
 
+If you put something in `/etc/environment` you need to use the shebang at the beginning of the `environment` file.
+
 #### troubleshooting
 
 putting this into `/etc/environment` destroys the entire PATH:
