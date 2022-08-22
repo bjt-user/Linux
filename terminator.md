@@ -1,3 +1,7 @@
+```
+man terminator_config
+```
+
 #### color schemes
 
 https://github.com/EliverLara/terminator-themes/blob/master/themes.md
@@ -22,3 +26,16 @@ Bad color schemes:
 <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>t</kbd> - open new tab\
 <kbd>ctrl</kbd> + <kbd>PageDown/PageUp</kbd> - switch to next tab
 
+#### custom keybindings
+
+changing keybindings with right click did not work permanently.
+
+```
+$ cat ~/.config/terminator/config
+...
+[keybindings]
+  full_screen = <Ctrl><Shift>F11
+  next_tab = <Ctrl>Tab
+  close_term = <Ctrl>w
+...
+```
