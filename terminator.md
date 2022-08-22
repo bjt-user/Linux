@@ -39,3 +39,39 @@ $ cat ~/.config/terminator/config
   close_term = <Ctrl>w
 ...
 ```
+
+
+#### example config file
+
+`~/.config/terminator/config`
+
+this should work quite well:
+```
+[global_config]
+  focus = system
+[keybindings]
+  full_screen = <Ctrl><Shift>F11
+  next_tab = <Ctrl>Tab
+  close_term = <Ctrl>w
+[profiles]
+  [[default]]
+    background_darkness = 0.8
+    background_type = transparent
+    cursor_blink = False
+    cursor_color = "#FFFFFF"
+    font = Inconsolata Medium 14
+    foreground_color = "#ffffff"
+    show_titlebar = False
+    custom_command = 'echo \"foo#bar\"'
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+      size = 1980, 1080
+    [[[child]]]
+      type = Terminal
+      parent = window0
+[plugins]
+```
