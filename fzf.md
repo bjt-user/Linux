@@ -4,7 +4,7 @@
 sudo dnf install fzf
 ```
 
-put this in your `~/.bashrc`:
+to enable <kbd>ctrl + r</kbd> for fzf bash history search put this in your `~/.bashrc`:
 ```
 # fzf - make ctrl + r work with fzf
 source /usr/share/fzf/shell/key-bindings.bash
