@@ -38,3 +38,8 @@ https://extensions.gnome.org/extension/4099/no-overview/
 
 I just clicked on install browser extension then clicked on install then turned it on and then it downloaded and installed itself.\
 For manual download and install you need to know the gnome shell version which you can see in settings -> about.
+
+Looks like you can just `git clone --depth=1` into here
+```
+/home/myuser/.local/share/gnome-shell/extensions
+```
