@@ -29,3 +29,9 @@ the window manager is called `Mutter`.
 gnome-extensions list
 ```
 to see all installed gnome extensions
+
+You can install extensions via browser but that seems weird.\
+You can also download a `.zip` by selecting `shell version` and `extension version`.
+(i think they mean gnome version with "shell version")
+
+https://extensions.gnome.org/extension/4099/no-overview/
