@@ -44,3 +44,8 @@ Looks like you can just put a folder that is named like this: `multi-monitors-ad
 /home/myuser/.local/share/gnome-shell/extensions
 ```
 (from a github repo)
+
+then you might need to enable it
+```
+gnome-extensions enable multi-monitors-add-on@spin83
+```
