@@ -214,7 +214,7 @@ Did **not** work in `vim 7.4`.\
 It said `6 lines indented` but did nothing.\
 It seems to work for `if`s, but not for functions.
 
------------------------------------------------------------------------------------------------------------------------------
+***
 
 #### opening multiple files (horizontal split or vertical split)
 
@@ -244,7 +244,7 @@ Outside of vim (for vertical split):
 ```
 vim -O file1 file2
 ```
------------------------------------------------------------------------------------------------------------------------------
+***
 #### multiline edit
 
 to write in multiple lines at once:
@@ -255,8 +255,10 @@ to write in multiple lines at once:
 - hit <kbd>Esc</kbd>
 => and your text will appear in multiple lines
 
+***
+
 #### Execute terminal commands inside of vim
----------------------------------------
+
 to execute a bash script (% stands for the file name that is opened in vim)
 ```
 :!./%
@@ -267,13 +269,14 @@ or to first clear terminal and then execute script:
 ```
 (vim doesnt know about aliases that are set in the terminal)
 
+***
 
 #### How to see the detected filetype
 
 ```
 :set ft?
 ```
------------------------------------------------------------------------------------------------------------------------------
+***
 
 #### Help
 ```
@@ -288,7 +291,7 @@ When in help type :only to make the help screen full screen.
 ### .vimrc and vimscripting
 
 #### Key Mappings in VIM
--------------------
+
 https://vim.fandom.com/wiki/Mapping_keys_in_Vim_-_Tutorial_(Part_1)
 
 Folgendes in die .vimrc reinschreiben (to execute the bash script that is opened in vim):
@@ -309,11 +312,11 @@ set autoindent
 " the smartindent feature makes an indent after { and so on and it seems to stop after } "
 set smartindent
 
-------------------------------------------------------------------------------------------------------------
+***
 
 
 #### Implementing a status line in VIM:
-----------------------------------
+
 ```
 " STATUS LINE ------------------------------------------------------------ {{{
 " spaces are escpaed with "\ " "
