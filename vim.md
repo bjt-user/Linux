@@ -1,3 +1,5 @@
+### vim usage
+
 #### Navigation (in the file)
 In normal mode:\
 `fp`    : to go to the next occurance of the letter "p" in the current line \
@@ -287,6 +289,7 @@ or to first clear terminal and then execute script:
 ```
 When in help type :only to make the help screen full screen.
 
+***
 
 ### .vimrc and vimscripting
 
