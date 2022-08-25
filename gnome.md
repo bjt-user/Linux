@@ -20,3 +20,12 @@ the window manager is called `Mutter`.
 
 <kbd>super</kbd> + <kbd>arrowkeys</kbd> move window to the right/left or maximize window\
 <kbd>super</kbd> + <kbd>shift</kbd> + <kbd>arrowkeys (right/left)</kbd> move window to a different screen
+
+***
+
+#### gnome extensions
+
+```
+gnome-extensions list
+```
+to see all installed gnome extensions
