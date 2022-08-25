@@ -245,6 +245,15 @@ Outside of vim (for vertical split):
 vim -O file1 file2
 ```
 -----------------------------------------------------------------------------------------------------------------------------
+#### multiline edit
+
+to write in multiple lines at once:
+- press <kbd>ctrl + v</kbd> to go into visual block mode
+- move down or up one or more lines (with <kbd>j/k</kbd>)
+- press <kbd>shift + i</kbd>
+- type your text (you will only see it appear in one line)
+- hit <kbd>Esc</kbd>
+=> and your text will appear in multiple lines
 
 #### Execute terminal commands inside of vim
 ---------------------------------------
