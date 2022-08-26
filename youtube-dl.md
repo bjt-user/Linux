@@ -40,4 +40,5 @@ downloads the `.opus` format...
 ```
 youtube-dl -x -f m4a [link]
 ```
-seems to be the best syntax, because a lot of devices, like cars don't play `.opus` which is an open source format.
+seems to be the best syntax, because a lot of devices, like cars don't play `.opus` which is an open source format.\
+`m4a` is a mp4 format that just contains audio.
