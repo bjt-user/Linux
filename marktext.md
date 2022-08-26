@@ -15,6 +15,14 @@ You have to hit <kbd>super</kbd> to go to the application view and type `marktex
 
 with <kbd>ctrl + e</kbd> you can switch between edit mode and view mode.
 
+#### usage hints
+
+To format via mouse you need to be in "view mode".
+Click the three lines at the upper left corner.\
+Go to `format` and select whatever format you want.\
+
+Or use the keyboard shortcut.
+
 #### features
 
 You can also copy code to clipboard.\
