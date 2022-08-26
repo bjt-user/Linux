@@ -1,6 +1,7 @@
 ### vim usage
 
 #### Navigation (in the file)
+
 In normal mode:\
 `fp`    : to go to the next occurance of the letter "p" in the current line \
 `Fp`    : to go to the previous occurance of the letter "p" in the current line
@@ -12,19 +13,23 @@ In normal mode:\
 <kbd>ctrl + b</kbd> : go back one page
 
 #### Navigation (in the filesystem)
+
 ```
 :Explore
 ```
+
 This way you can choose another file to open.\
 Select a file and hit `o` to open it in horizontal split.\
 `v` for vertical split.\
 `Enter` to open in the entire window/tab.
 
 #### save and quit
+
 Usually you do `:wq` to write and quit, but you can also do `:x`.\
 `:x` saves only if you actually made changes and then quits, otherwise it just quits.
 
 #### paste something from the clipboard into vim
+
 ctrl + shift + v (does only work in putty sessions if you enable it in settings)
 
 OR:
@@ -39,17 +44,21 @@ go into insert mode -> shift + einfg
 To turn off autoindent when you paste code, there's a special "paste" mode.
 
 Type
+
 ```
 :set paste
 ```
+
 Then paste your code. Note that the text in the tooltip now says `-- INSERT (paste) --`.
 
 After you pasted your code, turn off the paste-mode, so that auto-indenting when you type works correctly again.
+
 ```
 :set nopaste
 ```
 
 #### copy from vim to the system clipboard
+
 **Does not** seem to **work** on a typical vim installation.
 
 stackoverflow-Quote:\
@@ -82,21 +91,36 @@ This replaces the word "search" with the word "replace" in line 8 to 10:
 
 There are some symbols that can be used in the range part of the command.
 For example:
+
 ```
 :%s/foo/bar/g
 ```
+
 or (a longer and worse way of doing the same thing)
+
 ```
 :0,$ s/badword/goodword/g
 ```
+
 for the entire file
 
 or
+
 ```
 :.,$s/foo/bar/
 ```
+
 for the current line until the end of the file
 
+or
+
+```
+:5,10s/\[/\[\[
+```
+
+to replace in lines 5-10 one `[`  with two `[[` (they need to be escaped)
+
+---
 
 #### Search
 
@@ -108,9 +132,11 @@ hit `n` to go to the next occurence
 
 or hit `/` and `<enter>` to get to the next occurence\
 `?` and `<enter>` to go in reverse direction
+
 ```
 /\cpattern
 ```
+
 for case insensitive search
 
 To get rid of the highlighted patterns:
@@ -131,6 +157,7 @@ I hit `gD` while the cursor was at the call of a bash function that was declared
 And it took me to the function declaration.
 
 #### delete until character
+
 type `dt"` to delete everything until the next `"` character appears.
 
 #### Vimdiff ohne Farbcodierung:
@@ -141,11 +168,11 @@ if $COLOR=='OFF'
   set t_Co=0
 endif
 
-
 Und vimdiff mit folgendem Befehl aufrufen: COLOR=OFF vimdiff file1 file2
 Das diffchange highlighting bleibt leider, kann man aber mit :hi DiffText term=none ausstellen (hat bei mir nicht in der vimrc funktioniert) 
 
 #### Disable yellow highlighting (search results or something similar)
+
 ```
 :nohl
 ```
@@ -153,19 +180,25 @@ Das diffchange highlighting bleibt leider, kann man aber mit :hi DiffText term=n
 #### colorschemes
 
 to view the current color scheme:
+
 ```
 :colorscheme
 ```
+
 or
+
 ```
 :color
 ```
 
 to see all installed color scheme:
+
 ```
 :colorscheme [space] [tab]
 ```
+
 or
+
 ```
 :color [space] [tab]
 ```
@@ -173,19 +206,23 @@ or
 And you can cylce throug them.
 
 To select a color scheme:
+
 ```
 :color industry
 ```
 
 You can write
+
 ```
 color industry
 ```
+
 into .vimrc to set it permanently
 
 ---
 
 If colors annoy you:
+
 ```
 :syntax off
 ```
@@ -207,9 +244,11 @@ Once a word is selected it is placed into the editor and you can keep on writing
 #### autoformat
 
 type
+
 ```
 gg=G
 ```
+
 This will fix all indentations in the file. (`vim 8.0`)
 
 Did **not** work in `vim 7.4`.\
@@ -223,10 +262,13 @@ It seems to work for `if`s, but not for functions.
 ```
 :vsplit dateiname
 ```
+
 or
+
 ```
 :split dateiname
 ```
+
 Scheinbar kann man so beliebig viele Dateien nebeneinander öffnen.
 Zwischen den Dateien wechseln:
 ctrl + w + w (w doppelt drücken)
@@ -243,32 +285,40 @@ or
 :qa! (to discard changes)
 
 Outside of vim (for vertical split):
+
 ```
 vim -O file1 file2
 ```
+
 ***
+
 #### multiline edit
 
 to write in multiple lines at once:
+
 - press <kbd>ctrl + v</kbd> to go into visual block mode
 - move down or up one or more lines (with <kbd>j/k</kbd>)
 - press <kbd>shift + i</kbd>
 - type your text (you will only see it appear in one line)
 - hit <kbd>Esc</kbd>
-=> and your text will appear in multiple lines
+  => and your text will appear in multiple lines
 
 ***
 
 #### Execute terminal commands inside of vim
 
 to execute a bash script (% stands for the file name that is opened in vim)
+
 ```
 :!./%
 ```
+
 or to first clear terminal and then execute script:
+
 ```
 :!clear;./%
 ```
+
 (vim doesnt know about aliases that are set in the terminal)
 
 ***
@@ -278,15 +328,19 @@ or to first clear terminal and then execute script:
 ```
 :set ft?
 ```
+
 ***
 
 #### Help
+
 ```
 :help
 ```
+
 ```
 :help <topic>
 ```
+
 When in help type :only to make the help screen full screen.
 
 ***
@@ -298,9 +352,11 @@ When in help type :only to make the help screen full screen.
 https://vim.fandom.com/wiki/Mapping_keys_in_Vim_-_Tutorial_(Part_1)
 
 Folgendes in die .vimrc reinschreiben (to execute the bash script that is opened in vim):
+
 ```
 nmap <F5> :!clear;./% <CR>
 ```
+
 To map keys that work only in the normal mode, use the ':nmap' or ':nnoremap' command.
 The 'n' in ':nmap' and ':nnoremap' denotes normal mode.
 <CR> bedeutet, dass der command auch direkt ausgeführt wird und nicht mit ENTER bestätigt werden muss.
@@ -316,7 +372,6 @@ set autoindent
 set smartindent
 
 ***
-
 
 #### Implementing a status line in VIM:
 
@@ -350,9 +405,11 @@ set laststatus=2
 #### INSTALLING PLUGINS
 
 To find out which files Vim has actually loaded, execute
+
 ```
 :scriptnames
 ```
+
 installing plugins without root access:
 Copy plugin/auto-pairs.vim to ~/.vim/plugin
 https://github.com/jiangmiao/auto-pairs
