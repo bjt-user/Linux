@@ -347,6 +347,13 @@ When in help type :only to make the help screen full screen.
 
 ### .vimrc and vimscripting
 
+#### cursor shape and behavior
+put this in your .vimrc for a solid nonblinking block:
+```
+let &t_ve= "\e[?25h\e[?16;143;255c"
+```
+(because if youre in `$TERM=linux` you start out with a blinking underscore...)
+
 #### Key Mappings in VIM
 
 https://vim.fandom.com/wiki/Mapping_keys_in_Vim_-_Tutorial_(Part_1)
