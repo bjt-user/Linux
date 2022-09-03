@@ -9,7 +9,12 @@ Repositories can be configured in
 ```
 /etc/yum.repos.d
 ```
+#### TODO: where files are installed
 
+try this:
+https://unix.stackexchange.com/a/715986/438538
+
+***
 #### repositories
 `epel` - extra packages for enterprise linux
 
