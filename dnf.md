@@ -68,10 +68,9 @@ https://stackoverflow.com/a/48609783/13253079
 
 
 
-> 
-These tools work together. DNF handles dependency solving, finding files on the network, repository management, and so on. RPM handles the lower-level part of actually putting the files on your system.
+> These tools work together. DNF handles dependency solving, finding files on the network, repository management, and so on. RPM handles the lower-level part of actually putting the files on your system.
 
-In most cases as an end user, DNF is all you need to interact with. You might use RPM commands for lower-level troubleshooting, but in most cases DNF provides all the functionality in a more friendly manner.
+> In most cases as an end user, DNF is all you need to interact with. You might use RPM commands for lower-level troubleshooting, but in most cases DNF provides all the functionality in a more friendly manner.
 
-Note that you may also see "Yum". DNF is the successor to that tool, which essentially did the same thing. In recent versions of the Fedora OS, yum and dnf are exactly interchangeable.
+> Note that you may also see "Yum". DNF is the successor to that tool, which essentially did the same thing. In recent versions of the Fedora OS, yum and dnf are exactly interchangeable.
 
