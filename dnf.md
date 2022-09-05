@@ -9,10 +9,19 @@ Repositories can be configured in
 ```
 /etc/yum.repos.d
 ```
-#### TODO: where files are installed
+#### where files are installed
 
-try this:
 https://unix.stackexchange.com/a/715986/438538
+
+before installing:
+```
+dnf repoquery -l fzf
+```
+
+after installing:
+```
+rpm -ql fzf
+```
 
 ***
 #### repositories
