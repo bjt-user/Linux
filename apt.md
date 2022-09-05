@@ -13,3 +13,8 @@ To show where all the files of the package `fzf` are installed:
 ```
 apt-file list fzf
 ```
+
+You can also try this after the package is already installed:
+```
+dpkg -L fzf
+```
