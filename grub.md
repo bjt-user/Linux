@@ -52,7 +52,7 @@ sudo reboot
 ```
 
 And the grub boot menu is not showing anymore!
-
+***
 #### troubleshooting
 
 In a **fedora**-server VM after following the steps:
@@ -62,11 +62,11 @@ $ sudo update-grub
 ```
 
 
-> Unter Fedora und openSUSE führen Sie stattdessen `grub2-mkconfig -o /path/to/grub.cfg` aus
+> Unter Fedora und openSUSE führen Sie stattdessen `grub2-mkconfig -o /path/to/grub.cfg` aus\
 Michael Kofler - Linux (das umfassende Handbuch)
 
 I did this:
 ```
 grub2-mkconfig -o /etc/grub2.cfg
 ```
-=> that worked but the `GRUB_TIMEOUT=0` did the trick
+=> that worked (the `GRUB_TIMEOUT=0` did the trick, not the `GRUB_DISABLE_OS_PROBER=true` part)
