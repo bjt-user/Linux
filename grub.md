@@ -55,7 +55,7 @@ And the grub boot menu is not showing anymore!
 
 #### troubleshooting
 
-In a fedora-server VM after following the steps:
+In a **fedora**-server VM after following the steps:
 ```
 $ sudo update-grub
 /usr/sbin/update-grub: line 4: grub-mkconfig: not found
@@ -63,6 +63,7 @@ $ sudo update-grub
 
 
 > Unter Fedora und openSUSE führen Sie stattdessen `grub2-mkconfig -o /path/to/grub.cfg` aus
+Michael Kofler - Linux (das umfassende Handbuch)
 
 I did this:
 ```
