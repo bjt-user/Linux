@@ -4,7 +4,7 @@ How to ignore the boot-menu so I can also boot directly into my os?
 
 I try this:
 
-Add this to /etc/default/grub:
+Add this to `/etc/default/grub`:
 ```
 GRUB_DISABLE_OS_PROBER=true
 ```
@@ -61,4 +61,11 @@ $ sudo update-grub
 /usr/sbin/update-grub: line 4: grub-mkconfig: not found
 ```
 
-unresolved issue...
+
+> Unter Fedora und openSUSE führen Sie stattdessen `grub2-mkconfig -o /path/to/grub.cfg` aus
+
+I did this:
+```
+grub2-mkconfig -o /etc/grub2.cfg
+```
+=> that worked but the `GRUB_TIMEOUT=0` did the trick
