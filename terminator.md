@@ -40,6 +40,11 @@ $ cat ~/.config/terminator/config
 ...
 ```
 
+***
+#### renaming tabs
+
+double click on the tab title\
+(the shortcuts in the settings dont seem to work)
 
 #### example config file
 
