@@ -1,4 +1,4 @@
-package manager for debian
+**package manager for debian**
 
 I try to install a debian package with dkpg and not with apt.\
 apt uses dpkg under the hood.
@@ -16,3 +16,11 @@ I can view it like this:
 ```
 sudo dpkg-query -l | grep "virtual"
 ```
+
+#### TODO
+
+try to install a `.deb` package with `apt`
+```
+sudo apt install /path/to/package/name.deb
+```
+https://unix.stackexchange.com/questions/159094/how-to-install-a-deb-file-by-dpkg-i-or-by-apt
