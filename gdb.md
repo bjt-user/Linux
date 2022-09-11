@@ -37,3 +37,31 @@ gcc -g3 hw.c -o hw.out
 But how to set breakpoints or step through code?
 
 https://web.eecs.umich.edu/~sugih/pointers/gdbQS.html
+
+```
+gdb hw.out
+```
+
+Then inside gdb you have to specify the **source file** to set a breakpoint (not the output file):
+```
+(gdb) break hw.c:1
+Breakpoint 1 at 0x1139: file hw.c, line 4.
+```
+
+Then type  `run`:
+```
+(gdb) run
+Starting program: /home/bf/Coding/C/hello_world/hw.out 
+
+Breakpoint 1, main () at hw.c:4
+4		printf("hello world\n");
+```
+
+Then type `n` to step through the code:
+```
+(gdb) n
+hello world
+5		return 0;
+(gdb) n
+6	}
+```
