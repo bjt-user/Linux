@@ -35,3 +35,5 @@ gcc -g3 hw.c -o hw.out
 ```
 
 But how to set breakpoints or step through code?
+
+https://web.eecs.umich.edu/~sugih/pointers/gdbQS.html
