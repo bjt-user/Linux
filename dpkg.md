@@ -17,10 +17,14 @@ I can view it like this:
 sudo dpkg-query -l | grep "virtual"
 ```
 
-#### TODO
+#### install a deb package with apt
 
 try to install a `.deb` package with `apt`
 ```
 sudo apt install /path/to/package/name.deb
 ```
 https://unix.stackexchange.com/questions/159094/how-to-install-a-deb-file-by-dpkg-i-or-by-apt
+
+=> I tried this with `flatap`.
+1. you need to specifiy the **full** path
+2. it seems you need to install all the dependencies before...
