@@ -47,6 +47,7 @@ Then inside gdb you have to specify the **source file** to set a breakpoint (not
 (gdb) break hw.c:1
 Breakpoint 1 at 0x1139: file hw.c, line 4.
 ```
+(I wanted to set the breakpoint on line 1 but the first line of the main method is in line 4, so it sets it there)
 
 Then type  `run`:
 ```
