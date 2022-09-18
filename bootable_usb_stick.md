@@ -6,6 +6,12 @@ This should show your USB stick in the last output line like this:
 ```
 /dev/sdb1  *     2048 120979455 120977408 57.7G  c W95 FAT32 (LBA)
 ```
+
+or
+```
+lsblk
+```
+
 Now 'cd' into the folder your .iso file is in.
 ```
 cd ~/Downloads
@@ -17,6 +23,11 @@ if stands for input file, of stands for output file
 Notice, that you don't type the 1 after sdb. That is the partitioning that happens automatically.
 
 The `.` before `/manjaro...` means that the file is in the folder you are currently in.
+
+use `status=progress` so you can see what it is doing and how long it might take
+```
+sudo dd if=./manjaro-gnome-21.3.7-minimal-220816-linux515.iso of=/dev/sdb status=progress
+```
 
 Now you can unmount your USB stick and take it out.
 
