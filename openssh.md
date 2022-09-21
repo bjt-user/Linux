@@ -16,7 +16,7 @@ systemctl status sshd
 
 #### permission denied
 
-I get a permission denied, even though I typed the right password.\
+I get a permission denied when trying to ssh into root user, even though I typed the right password.\
 This was on a new Arch install.
 
 To resolve this issue, edit the `/etc/ssh/sshd_config` file and change the following entries.
