@@ -14,6 +14,18 @@ systemctl status sshd
 
 ## Troubleshooting
 
+#### permission denied
+
 I get a permission denied, even though I typed the right password.\
-This was on a new Arch install.\
-Maybe because time was not synchronized or NTP is no...
+This was on a new Arch install.
+
+To resolve this issue, edit the `/etc/ssh/sshd_config` file and change the following entries.
+```
+#PermitRootLogin prohibit-password
+#PasswordAuthentication yes
+```
+The above entries should be as shown below:
+```
+PermitRootLogin yes
+PasswordAuthentication yes
+```
