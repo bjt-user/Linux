@@ -17,4 +17,5 @@ The boot loader passes the parameters to the kernel.
 You can check the parameters your system was booted up with by running `cat /proc/cmdline`
 
 You can press `e` in the `grub boot menu` to temporarily set kernel parameters.\
+(but it seems to be american keyboard layout)\
 Press <kbd>Ctrl+x</kbd> to boot with these parameters.
