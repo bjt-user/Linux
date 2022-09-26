@@ -150,6 +150,12 @@ To get rid of the highlighted patterns:
 
 You can also **search after the word under the cursor** with `*` (forward search) and `#` (backward search)
 
+The search pattern seems to be in regex.\
+You can search for everything that is in between backticks ` ` ` like this:
+```
+/`.*`
+```
+
 #### go to definition / file / link
 
 `gd` will take you to the local declaration\
