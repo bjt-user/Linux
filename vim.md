@@ -120,6 +120,12 @@ or
 
 to replace in lines 5-10 one `[`  with two `[[` (they need to be escaped)
 
+use the `c` flag to confirm each substitution!
+```
+:%s/foo/bar/c
+```
+then confirm with <kbd>y</kbd>
+
 ---
 
 #### Search
