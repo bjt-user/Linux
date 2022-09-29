@@ -5,6 +5,12 @@ If your curl is at least version 7.19.4:
 curl --noproxy '*' https://www.google.com
 ```
 
+***
+
+Save output to file:
+```
+curl -L https://www.bloomberg.com/markets/stocks -o bloomberg-stocks.html
+```
 
 #### no output?
 
