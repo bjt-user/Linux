@@ -80,3 +80,11 @@ this deletes all single line tags in a file named `test`:
 sed -i 's/<.*>//' test
 ```
 It does not work if a tag stretches over multiple lines though.
+
+***
+
+#### replace all tabs with two spaces
+
+```
+sed -i 's/\t/  /g' MyMainClass.java
+```
