@@ -18,4 +18,6 @@ The cookies are stored in a sqlite db, but it is locked when you still have Fire
 sqlite3 cookies.sqlite
 ```
 
-(maybe it is easier to view it in `sqlitebrowser`?)
+(it is easier to view it in `sqlitebrowser`)
+
+The column `host` has the base urls in it `.stackoverflow.com`
