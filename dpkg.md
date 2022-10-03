@@ -28,3 +28,22 @@ https://unix.stackexchange.com/questions/159094/how-to-install-a-deb-file-by-dpk
 => I tried this with `flatap`.
 1. you need to specifiy the **full** path
 2. it seems you need to install all the dependencies before...
+
+
+#### show/count all installed packages
+
+```
+$ apt list --installed | wc -l
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+2824
+```
+
+```
+dpkg-query -l | wc -l
+2866
+```
+
+Where is the difference coming from?\
+Maybe some packages where not installed with apt?
