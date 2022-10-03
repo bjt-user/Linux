@@ -43,3 +43,5 @@ youtube-dl -x -f m4a [link]
 ```
 seems to be the best syntax, because a lot of devices, like cars don't play `.opus` which is an open source format.\
 `m4a` is a mp4 format that just contains audio.
+
+It seems like you have to hit <kbd>enter</kbd> after this line `[ffmpeg] Post-process file Hitman - Contracts Original Soundtrack - Budapest Bath Hotel-rWjVrlGjZ2s.m4a exists, skipping`.
