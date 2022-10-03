@@ -14,7 +14,7 @@ I added the `"window.restoreFullscreen": true` line at the bottom:
     "vim.leader": ",",
     "redhat.telemetry.enabled": false,
     "extensions.ignoreRecommendations": true,
-    "window.newWindowDimensions": "fullscreen"
+    "window.newWindowDimensions": "fullscreen",
     "window.restoreFullscreen": true
 }
 ```
