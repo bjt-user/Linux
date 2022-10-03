@@ -47,3 +47,5 @@ dpkg-query -l | wc -l
 
 Where is the difference coming from?\
 Maybe some packages where not installed with apt?
+
+But then I installed a `.deb` package with `dpkg -i` and it increased both counters...
