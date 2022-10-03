@@ -24,6 +24,7 @@ youtube-dl -i -f mp4 --yes-playlist 'https://www.youtube.com/watch?v=ElWo5fd4rIU
 => that at least leads to a progress bar
 it takes very long but it downloads one video after the other
 
+***
 
 #### downloading audio
 
