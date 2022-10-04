@@ -25,7 +25,7 @@ This also tells you the path to the config file:
 
 (https://github.com/junegunn/vim-plug)
 
-#### Install "vim-plug"
+#### with "vim-plug"
 
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
@@ -39,7 +39,7 @@ mkdir ~/.config/nvim/vim-plug
 
 touch ~/.config/nvim/vim-plug/plugins.vim
 
-#### Add a plugin
+#### Add a plugin with vimplug
 
 Put this into the plugins.vim file:
 (it should close brackets automatically)
@@ -74,9 +74,14 @@ commands for later usage:
 :PlugClean to get rid of plugins you dont use anymore (probably those you deleted from the file)
 :PlugUpgrade to upgrade vim-plug
 
---------------------------------------
-How to install a bash language server?
---------------------------------------
+#### manual?
+
+how to do it???
+
+***
+
+#### How to install a bash language server?
+
 
 :CocInstall coc-sh
 => not an editor command...
