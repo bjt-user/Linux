@@ -85,6 +85,22 @@ Your configuration file is in ~/.config/nvim/init.vim, but your plugins go into:
 
 See `:h packages` (Vim 8.0 and Neovim) for more information.
 
+this directory structure already exists:
+```
+cd ~/.local/share/nvim
+```
+so I create the rest:
+```
+mkdir -p site/pack/coc/start
+cd site/pack/coc/start
+git clone https://github.com/neoclide/coc.nvim.git
+```
+
+now I open nvim by typing `nvim` and get the following error:
+```
+[coc.nvim] build/index.js not found, please install dependencies and compile coc.nvim by: yarn install
+```
+
 ***
 
 #### How to install a bash language server?
