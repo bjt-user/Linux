@@ -202,6 +202,13 @@ I insatlled like this:
 
 Maybe proxy problem...
 
+There is a `coc-java` folder in `~/.config/coc/extensions/node_modules`
+
+```
+**Note**: You can manually download jdt.ls and extract the content to data
+ 22 folder of coc-java, get the folder path by `:echo coc#util#extension_root().'/coc-java-data/server'` in your vim.
+```
+
 ## DIFFERENCES TO VIM
 
 -------------------------------------------
