@@ -238,6 +238,9 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
 ```
 now you can accept suggestions with <kbd>enter</kbd>
 
+There appear warning signs on the left hand site. But how to read them?\
+**Hover** with the **cursor** over the highlighted word!!!
+
 ## DIFFERENCES TO VIM
 
 -------------------------------------------
