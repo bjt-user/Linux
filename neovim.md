@@ -170,13 +170,6 @@ how to see all installed LSPs:
 :CocList extensions
 ```
 
-***
-
-:CocInstall coc-sh
-=> this time something is installed
-
-How to view installed language servers?
-:CocList extensions
 
     ? means invalid extension
     * means extension is activated
