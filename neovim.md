@@ -35,6 +35,23 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 there is a `~/.local/share/nvim/site/autoload/plug.vim` file now
 
+then I put this into `~/.config/nvim/init.vim`:
+```
+call plug#begin('~/.config/nvim/autoload/plugged')
+
+    " Auto pairs for '(' '[' '{'
+    Plug 'jiangmiao/auto-pairs'
+
+call plug#end()
+```
+
+open `nvim` and type
+```
+:PlugInstall
+```
+
+=> then `autopairs` was installed and it worked
+
 ***
 old install:
 
