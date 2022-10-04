@@ -155,6 +155,23 @@ but `:PlugStatus` says:
 coc.nvim: OK (not loaded)
 ```
 
+The problem was, that I did not put the `call plug#begin('~/.config/nvim/autoload/plugged')` and \
+`call plug#end()` around my plugins:
+```
+"""""""""""
+" VIMPLUG "
+"""""""""""
+
+call plug#begin('~/.config/nvim/autoload/plugged')
+  " Auto pairs for '(' '[' '{'
+  Plug 'jiangmiao/auto-pairs'
+
+  " Use release branch (recommend)
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
+```
+If this is in your `init.vim` both plugins are available and work.
+
 ***
 old install:
 
