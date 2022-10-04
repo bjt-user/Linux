@@ -1,6 +1,8 @@
+```
 sudo apt install neovim
+```
 
-Is opened with the command "nvim <file>".
+Is opened with the command `nvim <file>`.
 
 It should be possible to install language servers with coc.
 
@@ -75,12 +77,13 @@ How to install a bash language server?
 :CocInstall coc-sh
 => not an editor command...
 
-Put these two lines into ~/.config/neovim/init.vim:
+Put these two lines into `~/.config/neovim/init.vim`:
 
+```
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
+```
 (maybe you can also put this into a file specifically for plugins)
 
 Now do:
@@ -102,7 +105,9 @@ neoclide/coc.nvim
 
 Fehlermeldung: node is not executable
 
+```
 sudo apt install nodejs
+```
 
 Fehlermeldung: cant find yarn or npm in your path
 
