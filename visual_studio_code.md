@@ -20,3 +20,10 @@ I added the `"window.restoreFullscreen": true` line at the bottom:
 ```
 
 => then start vs code, go into full screen, exit and open it up again => it now starts in full screen
+
+#### workspace trust
+
+`trust` seems to be just annoying, you can disable `workspace trust` like this (or in the settings inside vscode):
+```
+"security.workspace.trust.enabled": false
+```
