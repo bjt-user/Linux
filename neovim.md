@@ -144,8 +144,23 @@ to build that from source you have to use `yarn` and I dont know about that and 
 
 #### How to install a bash language server?
 
+Putting this into `~/.config/nvim/init.vim` worked:
+```
+" Use release branch (recommend)
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+```
 
+but `:PlugStatus` says:
+```
+coc.nvim: OK (not loaded)
+```
+
+***
+old install:
+
+```
 :CocInstall coc-sh
+```
 => not an editor command...
 
 Put these two lines into `~/.config/nvim/init.vim`:
