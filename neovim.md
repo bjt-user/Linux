@@ -58,23 +58,6 @@ type
 ```
 to see the status of the plugins
 
-***
-old install:
-
-this was the old command that I installed it with, but I think the other path is more correct for installing plugins in nvim:
-```
-curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
-You should now have plug.vim in your autoload directory so it will load of on start.
-
-Add a new file for plugins
-
-We will manage our plugins in a separate file.
-
-mkdir ~/.config/nvim/vim-plug
-
-touch ~/.config/nvim/vim-plug/plugins.vim
 
 #### Add a plugin with vimplug
 
@@ -144,6 +127,10 @@ to build that from source you have to use `yarn` and I dont know about that and 
 
 #### How to install a bash language server?
 
+```
+sudo dnf install nodejs
+```
+
 Putting this into `~/.config/nvim/init.vim` worked:
 ```
 " Use release branch (recommend)
@@ -172,50 +159,18 @@ call plug#end()
 ```
 If this is in your `init.vim` both plugins are available and work.
 
+```
+:CocInstall coc-sh
+```
+
+=> it worked
+
+how to see all installed LSPs:
+```
+:CocList extensions
+```
+
 ***
-old install:
-
-```
-:CocInstall coc-sh
-```
-=> not an editor command...
-
-Put these two lines into `~/.config/nvim/init.vim`:
-
-```
-source $HOME/.config/nvim/vim-plug/plugins.vim
-
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-```
-(maybe you can also put this into a file specifically for plugins)
-
-Now do:
-:PlugInstall
-in your (neo)vim.
-
-Now check plugins with
-:PlugStatus
-
-coc.nvim OK (not loaded)
-
-:CocInstall coc-sh
-=> not an editor command...
-
-Es fehlt wahrscheinlich noch der Eintrag des Plugins in die Datei:
-`~/.config/nvim/vim-plug/plugins.vim`
-Dort zwischen `call plug#begin(...)` und `call plug#end()` folgendes einfügen:
-```
-neoclide/coc.nvim
-```
-Fehlermeldung: node is not executable
-
-```
-sudo apt install nodejs
-```
-
-Fehlermeldung: cant find yarn or npm in your path
-
-sudo apt install npm
 
 :CocInstall coc-sh
 => this time something is installed
