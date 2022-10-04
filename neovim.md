@@ -138,6 +138,8 @@ now I open nvim by typing `nvim` and get the following error:
 [coc.nvim] build/index.js not found, please install dependencies and compile coc.nvim by: yarn install
 ```
 
+to build that from source you have to use `yarn` and I dont know about that and it didnt work out of the box
+
 ***
 
 #### How to install a bash language server?
