@@ -1,9 +1,11 @@
-#### open in full screen
+#### settings config file
 
 I found `settings.json` at:
 ```
 ~/.config/Code/User/settings.json
 ```
+
+#### open in full screen
 
 I added the `"window.restoreFullscreen": true` line at the bottom:
 ```
