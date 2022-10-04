@@ -241,6 +241,21 @@ now you can accept suggestions with <kbd>enter</kbd>
 There appear warning signs on the left hand site. But how to read them?\
 **Hover** with the **cursor** over the highlighted word!!!
 
+add this to `.vimrc`, so you can hit <kbd>shift+k</kbd> or upper case `K` to see the documentation of a function,\
+when the cursor is on the function name:
+```
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call ShowDocumentation()<CR>
+
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction
+```
+
 ## DIFFERENCES TO VIM
 
 -------------------------------------------
