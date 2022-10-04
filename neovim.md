@@ -196,6 +196,12 @@ I insatlled like this:
 [coc.nvim] jdt.ls not found, downloading...
 ```
 
+```
+[coc.nvim] Download jdt.ls failed, you can download it at https://download.eclipse.org/jdtls/snapshots/?d
+```
+
+Maybe proxy problem...
+
 ## DIFFERENCES TO VIM
 
 -------------------------------------------
