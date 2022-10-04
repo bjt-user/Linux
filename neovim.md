@@ -50,7 +50,7 @@ touch ~/.config/nvim/vim-plug/plugins.vim
 
 #### Add a plugin with vimplug
 
-Put this into the plugins.vim file:
+Put this into the `plugins.vim` file:
 (it should close brackets automatically)
 
 ```
