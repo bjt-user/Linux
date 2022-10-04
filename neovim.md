@@ -6,20 +6,22 @@ Is opened with the command `nvim <file>`.
 
 It should be possible to install language servers with coc.
 
-#########################################
-#user config file (equivalent of .vimrc)#
-#########################################
+#### config file (equivalent of .vimrc)
 
-It is possible to load the content of .vimrc into neovim.
+It is possible to load the content of .vimrc into neovim.\
 But for the start I will use the standard neovim path for the user config file.
 
-You have to create a nvim-Folder in ~/.config path.
+You have to create a nvim-Folder in ~/.config path.\
 And then create a init.vim file.
-~/.config/nvim/init.vim
+`~/.config/nvim/init.vim`
 
-############################################
-# HOW TO INSTALL PLUGINS ###################
-############################################
+This also tells you the path to the config file:
+```
+:help config
+```
+
+#### HOW TO INSTALL PLUGINS
+
 (https://github.com/junegunn/vim-plug)
 
 Install "vim-plug"
