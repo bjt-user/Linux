@@ -223,6 +223,21 @@ tar -xvf jdt-language-server-latest.tar.gz
 <kbd>ctrl + n</kbd> - select next suggestion \
 <kbd>ctrl + p</kbd> - select previous suggestion
 
+by default I can't find a way to accept the suggestions...\
+but you can add this to your `init.vim`: (there is an example vim configuration on the github)
+
+```
+ """"""""""""
+ " COC.NVIM "
+ """"""""""""
+  
+ " Make <CR> to accept selected completion item or notify coc.nvim to format
+ " <C-g>u breaks current undo, please make your own choice.
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                             \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+```
+now you can accept suggestions with <kbd>enter</kbd>
+
 ## DIFFERENCES TO VIM
 
 -------------------------------------------
