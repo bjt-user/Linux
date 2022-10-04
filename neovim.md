@@ -76,7 +76,14 @@ commands for later usage:
 
 #### manual?
 
-how to do it???
+https://stackoverflow.com/a/50122211/13253079
+
+In Neovim, the directory structure follows the freedesktop's XDG Base Directory Specification.\
+Your configuration file is in ~/.config/nvim/init.vim, but your plugins go into:
+
+`~/.local/share/nvim/site/pack/*/start`
+
+See `:h packages` (Vim 8.0 and Neovim) for more information.
 
 ***
 
