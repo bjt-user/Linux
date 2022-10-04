@@ -20,43 +20,45 @@ This also tells you the path to the config file:
 :help config
 ```
 
-#### HOW TO INSTALL PLUGINS
+***
+## HOW TO INSTALL PLUGINS
 
 (https://github.com/junegunn/vim-plug)
 
-Install "vim-plug"
-------------------
+#### Install "vim-plug"
+
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 You should now have plug.vim in your autoload directory so it will load of on start.
 
 Add a new file for plugins
----------------------------
+
 We will manage our plugins in a separate file.
 
 mkdir ~/.config/nvim/vim-plug
 
 touch ~/.config/nvim/vim-plug/plugins.vim
 
-Add a plugin
-------------
+#### Add a plugin
 
 Put this into the plugins.vim file:
 (it should close brackets automatically)
 
+```
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
+```
 
 But before you can use the plugins, you have to source them.
 
-Add the following line to init.vim
-
+Add the following line to `init.vim`
+```
 source $HOME/.config/nvim/vim-plug/plugins.vim
-
+```
 Now go into nvim with "nvim" command.
 :P and press [TAB] key until you are at :PlugStatus.
 :PlugStatus
