@@ -33,6 +33,11 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ```
 => but the `:PlugInstall` is still not found
 
+there is a `~/.local/share/nvim/site/autoload/plug.vim` file now
+
+***
+old install:
+
 this was the old command that I installed it with, but I think the other path is more correct for installing plugins in nvim:
 ```
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
