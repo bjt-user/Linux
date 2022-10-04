@@ -217,6 +217,11 @@ tar -xvf jdt-language-server-latest.tar.gz
 
 => and now it works! but it takes a second to load the completion!
 
+***
+#### coc usage
+
+<kbd>ctrl + n</kbd> - select next suggestion \
+<kbd>ctrl + p</kbd> - select previous suggestion
 
 ## DIFFERENCES TO VIM
 
