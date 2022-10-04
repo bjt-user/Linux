@@ -178,7 +178,23 @@ how to see all installed LSPs:
 
 https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#manage-coc-extensions
 
+
+You could also manage extensions in a config file\
+https://github.com/neoclide/coc.nvim/wiki/Language-servers
+
 ***
+
+#### java language server
+
+It does not really work at the moment.\
+I insatlled like this:
+```
+:CocInstall coc-java
+```
+
+```
+[coc.nvim] jdt.ls not found, downloading...
+```
 
 ## DIFFERENCES TO VIM
 
