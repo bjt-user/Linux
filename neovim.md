@@ -209,6 +209,15 @@ There is a `coc-java` folder in `~/.config/coc/extensions/node_modules`
  22 folder of coc-java, get the folder path by `:echo coc#util#extension_root().'/coc-java-data/server'` in your vim.
 ```
 
+```
+cd ~/.config/coc/extensions/coc-java-data/server
+wget https://download.eclipse.org/jdtls/snapshots/jdt-language-server-latest.tar.gz
+tar -xvf jdt-language-server-latest.tar.gz
+```
+
+=> and now it works! but it takes a second to load the completion!
+
+
 ## DIFFERENCES TO VIM
 
 -------------------------------------------
