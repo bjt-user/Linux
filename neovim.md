@@ -185,10 +185,11 @@ coc.nvim OK (not loaded)
 => not an editor command...
 
 Es fehlt wahrscheinlich noch der Eintrag des Plugins in die Datei:
-~/.config/nvim/vim-plug/plugins.vim
-Dort zwischen call plug#begin(...) und call plug#end() folgendes einfügen:
+`~/.config/nvim/vim-plug/plugins.vim`
+Dort zwischen `call plug#begin(...)` und `call plug#end()` folgendes einfügen:
+```
 neoclide/coc.nvim
-
+```
 Fehlermeldung: node is not executable
 
 ```
