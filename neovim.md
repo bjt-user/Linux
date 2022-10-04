@@ -52,6 +52,12 @@ open `nvim` and type
 
 => then `autopairs` was installed and it worked
 
+type
+```
+:PlugStatus
+```
+to see the status of the plugins
+
 ***
 old install:
 
