@@ -79,7 +79,7 @@ How to install a bash language server?
 :CocInstall coc-sh
 => not an editor command...
 
-Put these two lines into `~/.config/neovim/init.vim`:
+Put these two lines into `~/.config/nvim/init.vim`:
 
 ```
 source $HOME/.config/nvim/vim-plug/plugins.vim
@@ -128,9 +128,9 @@ How to view installed language servers?
 
 https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#manage-coc-extensions
 
-################################
-# DIFFERENCES TO VIM ###########
-################################
+***
+
+## DIFFERENCES TO VIM
 
 -------------------------------------------
 keybindings and executing terminal commands
