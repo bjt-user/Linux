@@ -9,6 +9,31 @@ sudo dnf install autojump
 
 But if you install from a package manager the `j` command is not available by default.
 
+```
+$ dnf repoquery -l autojump
+...
+/etc/profile.d/autojump.sh
+/usr/bin/autojump
+/usr/lib/python3.10/site-packages/__pycache__/autojump_data.cpython-310.opt-1.pyc
+/usr/lib/python3.10/site-packages/__pycache__/autojump_data.cpython-310.pyc
+/usr/lib/python3.10/site-packages/__pycache__/autojump_match.cpython-310.opt-1.pyc
+/usr/lib/python3.10/site-packages/__pycache__/autojump_match.cpython-310.pyc
+/usr/lib/python3.10/site-packages/__pycache__/autojump_utils.cpython-310.opt-1.pyc
+/usr/lib/python3.10/site-packages/__pycache__/autojump_utils.cpython-310.pyc
+/usr/lib/python3.10/site-packages/autojump_data.py
+/usr/lib/python3.10/site-packages/autojump_match.py
+/usr/lib/python3.10/site-packages/autojump_utils.py
+/usr/share/autojump
+/usr/share/autojump/autojump.bash
+/usr/share/autojump/icon.png
+/usr/share/doc/autojump
+/usr/share/doc/autojump/AUTHORS
+/usr/share/doc/autojump/README.md
+/usr/share/licenses/autojump
+/usr/share/licenses/autojump/LICENSE
+/usr/share/man/man1/autojump.1.gz
+```
+
 => no idea how to enable it, so you better install manually
 
 ```
