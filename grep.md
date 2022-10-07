@@ -11,3 +11,10 @@ Show the 6 lines BEFORE the search pattern:
 ```
 grep -B6 march ~/.bash_profile
 ```
+
+#### grep for multiple strings
+
+You have to escape a pipe inside the double quotes.
+```
+cat /etc/os-release | grep -i "name\|version"
+```
