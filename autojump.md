@@ -12,6 +12,7 @@ But if you install from a package manager the `j` command is not available by de
 => no idea how to enable it, so you better install manually
 
 ```
+sudo -i
 cd /opt
 git clone https://github.com/wting/autojump.git
 cd autojump
@@ -26,3 +27,5 @@ Please manually add the following line(s) to ~/.bashrc:
 ```
 
 Restarted terminal and still `j: command not found`....
+
+Maybe this is because I installed it as `root`....
