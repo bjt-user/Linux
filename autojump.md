@@ -2,7 +2,6 @@ https://github.com/wting/autojump
 
 #### installation
 
-fail:
 ```
 sudo dnf install autojump
 ```
@@ -34,7 +33,12 @@ $ dnf repoquery -l autojump
 /usr/share/man/man1/autojump.1.gz
 ```
 
-=> no idea how to enable it, so you better install manually
+You have to put this into ~/.bashrc:
+```
+source /usr/share/autojump/autojump.bash
+```
+
+#### manual install fail
 
 ```
 sudo -i
