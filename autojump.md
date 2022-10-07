@@ -1,5 +1,9 @@
 https://github.com/wting/autojump
 
+A program that learns from your `cd` commands.\
+And even when you do `!` from `nnn`.\
+So it knows which folders you visit frequently and you can jump to it easily with the `j` command.
+
 #### installation
 
 ```
