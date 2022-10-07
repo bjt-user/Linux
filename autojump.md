@@ -58,3 +58,15 @@ Please manually add the following line(s) to ~/.bashrc:
 Restarted terminal and still `j: command not found`....
 
 Maybe this is because I installed it as `root`....
+
+#### usage
+
+for your cd behavior statistics:
+```
+autojump -s
+```
+
+```
+j scr
+```
+to jump into a frequently used folder in `~/Coding/scripts`
