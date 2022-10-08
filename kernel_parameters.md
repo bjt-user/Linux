@@ -26,3 +26,16 @@ Add a kernel parameter in the form of name=value in GRUB_CMDLINE_LINUX_DEFAULT v
 => didnt do anything
 
 > Have you tried to run the command "sudo grub-mkconfig -o /boot/grub/grub.cfg" after doing the change?
+
+So you need to run
+```
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+after the change of the file `/etc/default/grub`
+
+But now it says:
+```
+Legacy `ask'  parameter no longer supported.
+Loading initial ramdisk ...
+error: you need to load the kernel first
+```
