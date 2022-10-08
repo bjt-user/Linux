@@ -22,3 +22,7 @@ Press <kbd>Ctrl+x</kbd> to boot with these parameters.
 
 > If you want to add kernel parameters during boot time on a Debian based system, edit GRUB config template at /etc/default/grub.
 Add a kernel parameter in the form of name=value in GRUB_CMDLINE_LINUX_DEFAULT variable.
+
+=> didnt do anything
+
+> Have you tried to run the command "sudo grub-mkconfig -o /boot/grub/grub.cfg" after doing the change?
