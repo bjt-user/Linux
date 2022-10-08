@@ -4,7 +4,9 @@ A program that learns from your `cd` commands.\
 And even when you do `!` from `nnn`.\
 So it knows which folders you visit frequently and you can jump to it easily with the `j` command and just the first letters of that folder name.
 
-#### installation
+### installation
+
+#### fedora 36
 
 ```
 sudo dnf install autojump
@@ -38,6 +40,17 @@ $ dnf repoquery -l autojump
 ```
 
 You have to put this into ~/.bashrc:
+```
+source /usr/share/autojump/autojump.bash
+```
+
+#### Ubuntu
+
+```
+sudo apt install autojump
+```
+
+put this in your bashrc:
 ```
 source /usr/share/autojump/autojump.bash
 ```
