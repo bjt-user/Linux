@@ -39,3 +39,5 @@ Legacy `ask'  parameter no longer supported.
 Loading initial ramdisk ...
 error: you need to load the kernel first
 ```
+
+using `vga=0x318` and then `grub-mkconfig -o /boot/grub/grub.cfg` didnt change the resolution (should be 1024×768x24)
