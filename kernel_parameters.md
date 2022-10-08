@@ -41,3 +41,12 @@ error: you need to load the kernel first
 ```
 
 using `vga=0x318` and then `grub-mkconfig -o /boot/grub/grub.cfg` didnt change the resolution (should be 1024×768x24)
+
+#### sysctl
+
+configure kernel parameters at runtime
+
+to see all kernel parameters
+```
+sysctl -a
+```
