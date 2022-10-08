@@ -2,6 +2,8 @@ https://wiki.archlinux.org/title/Kernel_parameters
 
 https://docs.kernel.org/admin-guide/kernel-parameters.html
 
+
+#### fails
 ```
 vga=   [BOOT,X86-32] Select a particular video mode
         See Documentation/x86/boot.rst and
@@ -45,9 +47,12 @@ using `vga=0x318` and then `grub-mkconfig -o /boot/grub/grub.cfg` didnt change t
 vga=0x100 also doing nothing
 
 ***
+
+#### changing screen resolution success
+
 `video=800x600` worked!!!
 
-Put `video=800x600` into `/etc/default/grub`\
+Put `video=800x600` into the variable `GRUB_CMDLINE_LINUX_DEFAULT` in `/etc/default/grub`\
 and then do
 ```
 sudo grub-mkconfig -o /boot/grub/grub.cfg
