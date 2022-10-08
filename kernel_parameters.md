@@ -42,6 +42,17 @@ error: you need to load the kernel first
 
 using `vga=0x318` and then `grub-mkconfig -o /boot/grub/grub.cfg` didnt change the resolution (should be 1024×768x24)
 
+vga=0x100 also doing nothing
+
+***
+`video=800x600` worked!!!
+
+Put `video=800x600` into `/etc/default/grub`\
+and then do
+```
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+***
 #### sysctl
 
 configure kernel parameters at runtime
