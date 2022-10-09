@@ -37,3 +37,6 @@ Notes:
 - You would not normally build a package as root. Doing an su to root is only necessary for installing the compiled binaries into system directories.
 - After becoming familiar with make and its uses, you may wish to add additional optimization options passed to gcc in the standard Makefile included or created in the package you are installing. Some of these common options are -O2, -fomit-frame-pointer, -funroll-loops, and -mpentium (if you are running a Pentium cpu). Use caution and good sense when modifying a Makefile! 
 - After the make creates the binaries, you may wish to strip them. The strip command removes the symbolic debugging information from the binaries, and reduces their size, often drastically. This also disables debugging, of course.
+
+The link provides 5 examples of programs that are being build from source.\
+It also has some detailed explanation of different problems that may come up during a build from source.
