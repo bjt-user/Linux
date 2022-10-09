@@ -7,6 +7,8 @@ https://www.linuxfromscratch.org/lfs/view/stable/
 
 You probably need an internet connection to download all build tools that you need.
 
+***
+
 #### iv. Prerequisites
 
 https://tldp.org/HOWTO/Software-Building-HOWTO-2.html
@@ -61,13 +63,14 @@ which will look in your local system for every file listed in the md5sums-file, 
 
 Some software providers sign archive files instead of (or as well as) providing an md5 checksum. In this case you should:
 
-    download the provider’s public key from their website (using https where possible)
-    download the “signature file” for the archive-file; this will be a small file which has the same base name as the downloaded file, with suffix “.sig” or “.asc”
-    perform the following steps
+-download the provider’s public key from their website (using https where possible)
+- download the “signature file” for the archive-file; this will be a small file which has the same base name as the downloaded file, with suffix “.sig” or “.asc”
+- perform the following steps
 
-# needed only once for each key, ie each "publisher"
+needed only once for each key, ie each "publisher"
+```
 gpg --import {public-key}
 
 gpg --verify {signature-file-name}
-
+```
 The verify step decrypts the signature-file, revealing a checksum; it then runs a checksum algorithm over the real file and checks that they are the same. Obviously, the “gpg” application needs to be installed locally.
