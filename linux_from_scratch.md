@@ -40,3 +40,34 @@ Notes:
 
 The link provides 5 examples of programs that are being build from source.\
 It also has some detailed explanation of different problems that may come up during a build from source.
+
+#### check your downloaded files: md5sum
+
+Both the “http” and “ftp” network protocols can be intercepted by criminals or other undesirable parties who can then modify data as it downloads. Data can also potentially be corrupted by accident while underway (though this is not common). And when using a mirror-site, it is possible that someone has modified the files there (ie that the files on the mirror are not the same as those from the original publisher). It is therefore a good idea to verify that what you downloaded is what the original publisher intended.
+
+Many sites provide an md5sum file for each archive file, which holds a checksum of the contents of the file; sometimes a single md5sums file holds checksums for a number of other files. You should always obtain an md5sums file from the original site, never a mirror. And you should download it via the secure https protocol if possible. The unix md5sum commandline tool can then be used to compute the checksum of the big archive file, and compare it to the expected values to ensure the contents are as expected.
+
+To compute the sum of a single file:
+
+   md5sum file-to-check
+
+and “by hand” verify the output of this application against the expected value. If the value is in a webpage, you can open the “find” dialog on that page and copy-and-paste the value output by the md5sum program. The “find” will match only if the values are the same.
+
+If the software provider provides an md5sums file which has a list of (filename, checksum) pairs, then you can run:
+
+   md5sum -c md5sums-file
+
+which will look in your local system for every file listed in the md5sums-file, compute its checksum, and report an error if it is not the expected value.
+
+Some software providers sign archive files instead of (or as well as) providing an md5 checksum. In this case you should:
+
+    download the provider’s public key from their website (using https where possible)
+    download the “signature file” for the archive-file; this will be a small file which has the same base name as the downloaded file, with suffix “.sig” or “.asc”
+    perform the following steps
+
+# needed only once for each key, ie each "publisher"
+gpg --import {public-key}
+
+gpg --verify {signature-file-name}
+
+The verify step decrypts the signature-file, revealing a checksum; it then runs a checksum algorithm over the real file and checks that they are the same. Obviously, the “gpg” application needs to be installed locally.
