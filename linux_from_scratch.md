@@ -11,6 +11,11 @@ You probably need an internet connection to download all build tools that you ne
 
 #### iv. Prerequisites
 
+two good resources to read:\
+http://www.tldp.org/HOWTO/Software-Building-HOWTO.html
+
+http://moi.vonos.net/linux/beginners-installing-from-source/
+
 https://tldp.org/HOWTO/Software-Building-HOWTO-2.html
 
 https://tldp.org/HOWTO/Software-Building-HOWTO-3.html
