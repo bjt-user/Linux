@@ -52,3 +52,20 @@ worked well at was easy to set up
 
 but id like to have the VM inside my `terminator` \
 right now using `virt-manager` is clunky because I have to click it so it caches my keyboard.
+
+***
+
+#### todo: launch VM in a terminal emulator
+
+1. create a virtual image
+
+This creates a virtual image that can store 10GB of data:
+```
+qemu-img create -f qcow2 arch.img 10G
+```
+
+this should start the VM based on the .iso file:
+```
+qemu-system-x86_64 -enable-kvm -cdrom archlinux-2022.09.03-x86_64.iso -boot menu=on -drive file=arch.img -m 2G
+```
+-m sets the ammount of RAM
