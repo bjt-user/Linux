@@ -81,3 +81,8 @@ gpg --verify {signature-file-name}
 The verify step decrypts the signature-file, revealing a checksum; it then runs a checksum algorithm over the real file and checks that they are the same. Obviously, the “gpg” application needs to be installed locally.
 
 In general, it is best to perform all steps except “make install” as a normal system user, not root. This avoids mistakes and possibly some attacks (though as the install step is done as root that isn’t much protection). However installing software into the global /bin or /usr directories usually requires administration privileges (unless you’re using a “user-based package manager” or similar rare setup).
+
+#### configure
+
+Many software packages therefore come with a shell-script named “configure” and a template makefile named “Makefile.in”.\
+The configure script takes a list of configuration options on the commandline, and converts the template makefile into a real makefile customised for the local computer and the installer’s wishes.
