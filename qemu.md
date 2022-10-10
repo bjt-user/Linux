@@ -94,3 +94,8 @@ qemu-system-x86_64 -enable-kvm -cdrom archlinux-2022.09.03-x86_64.iso -boot menu
 $ qemu-system-x86_64 -enable-kvm -cdrom archlinux-2022.09.03-x86_64.iso -boot menu=on -drive file=arch.img -m 2G -nographic -curses
 qemu-system-x86_64: -curses: warning: -curses is deprecated, use -display curses instead.
 ```
+
+this also didnt work:
+```
+qemu-system-x86_64 -enable-kvm -cdrom archlinux-2022.09.03-x86_64.iso -boot menu=on -drive file=arch.img -m 2G -nographic -display curses
+```
