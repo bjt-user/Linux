@@ -31,7 +31,7 @@ looks like you can create virtual machines by using the `virt-manager` program.
 
 ***
 
-#### first try
+#### first try using virt-manager
 
 ```
 sudo virt-manager
