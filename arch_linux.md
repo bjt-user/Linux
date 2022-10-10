@@ -293,6 +293,8 @@ hwclock --systohc
 pacman -S vim
 ```
 to be able to edit config files.
+
+omit these optional steps: (it configures the language of your system)
 ```
 vim /etc/locale.gen
 ```
@@ -304,6 +306,8 @@ Now run
 ```
 locale-gen
 ```
+(end of optional steps)
+
 If you set the console keyboard layout, make the changes persistent in vconsole.conf(5):
 ```
 /etc/vconsole.conf
@@ -335,7 +339,7 @@ where myhostname is "arch-cli-machine".
 
 #### set root password
 ```
-passw
+passwd
 ```
 
 #### create a user
