@@ -47,3 +47,8 @@ Then a popup comes up `root may not have permissions for the file...do you want 
 ...
 
 then a new window pops up and I have a new VM.
+
+worked well at was easy to set up
+
+but id like to have the VM inside my `terminator` \
+right now using `virt-manager` is clunky because I have to click it so it caches my keyboard.
