@@ -28,3 +28,22 @@ sudo systemctl enable --now libvirtd
 #### usage
 
 looks like you can create virtual machines by using the `virt-manager` program.
+
+***
+
+#### first try
+
+```
+sudo virt-manager
+```
+
+click on `create a new virtual machine` -> local isntall media
+
+browse->browse local-> archlinux iso ausgewählt
+
+Then a popup comes up `root may not have permissions for the file...do you want to change this now?`\
+-> yes
+
+...
+
+then a new window pops up and I have a new VM.
