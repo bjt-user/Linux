@@ -29,6 +29,8 @@ sudo systemctl enable --now libvirtd
 
 looks like you can create virtual machines by using the `virt-manager` program.
 
+<kbd>ctrl (left) + alt (left)</kbd> - grab keyboard from or to vm
+
 ***
 
 #### first try using virt-manager
@@ -99,3 +101,9 @@ this also didnt work:
 ```
 qemu-system-x86_64 -enable-kvm -cdrom archlinux-2022.09.03-x86_64.iso -boot menu=on -drive file=arch.img -m 2G -nographic -display curses
 ```
+
+this also didnt work:
+```
+qemu-system-x86_64 -enable-kvm -cdrom archlinux-2022.09.03-x86_64.iso -boot menu=on -drive file=arch.img -m 2G -nographic -display curses -append 'console=ttyS0'
+```
+qemu-system-x86_64: -append only allowed with -kernel option
