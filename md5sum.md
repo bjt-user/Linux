@@ -1,3 +1,9 @@
+A checksum is like the digital fingerprint of a file.
+
+A checksum is a small-sized datum from a block of digital data for the purpose of detecting errors which may have been introduced during its transmission or storage.
+
+md5, sha256, etc are "secure hash algorithms".
+
 ```
 man md5sum
 ```
