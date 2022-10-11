@@ -30,7 +30,7 @@ $ md5sum myisofile.iso
 3f0ae4fba42e2840c01b9eb6be02cf85  myisofile.iso
 ```
 
-#### TODO: how to compare those two things without manually looking?
+#### how to compare those two things without manually looking?
 
 probably like this:
 ```
