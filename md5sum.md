@@ -8,10 +8,6 @@ md5, sha256, etc are "secure hash algorithms".
 man md5sum
 ```
 
-what is this???
-
-https://www.youtube.com/watch?v=pYNuKXjcriM
-
 
 #### .md5 files
 
