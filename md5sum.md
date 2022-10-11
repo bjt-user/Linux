@@ -37,3 +37,11 @@ probably like this:
 $ md5sum -c myisofile.iso.md5 
 myisofile.iso: OK
 ```
+
+And when you dont have the `myisofile.iso` in your directory it looks like this:
+```
+$ md5sum -c myisofile.iso.md5 
+md5sum: myisofile.iso: No such file or directory
+myisofile.iso: FAILED open or read
+md5sum: WARNING: 1 listed file could not be read
+```
