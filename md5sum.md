@@ -31,3 +31,9 @@ $ md5sum myisofile.iso
 ```
 
 #### TODO: how to compare those two things without manually looking?
+
+probably like this:
+```
+$ md5sum -c myisofile.iso.md5 
+myisofile.iso: OK
+```
