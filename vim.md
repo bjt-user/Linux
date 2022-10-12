@@ -357,7 +357,7 @@ I put this in my vimrc to switch between tabs with ctrl + n/p:
 nnoremap <C-n> :tabn<CR>
 nnoremap <C-p> :tabp<CR>
 ```
-I think ctrl + n and ctrl + p is not used by anything else.
+ctrl + n is used for completion, but only in insert mode, and I want to switch tabs only in normal mode.
 
 #### Help
 
