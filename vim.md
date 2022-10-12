@@ -344,6 +344,13 @@ or to first clear terminal and then execute script:
 
 ***
 
+#### tabs
+
+Since vim 7 there are tabs.\
+https://stackoverflow.com/questions/53664/how-to-effectively-work-with-multiple-files-in-vim#53668
+
+`:tabe [tab-key]` - open a file in a new tab (hit <kbd>tab</kbd> for a very nice tab-completion)
+
 #### Help
 
 ```
