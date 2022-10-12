@@ -134,7 +134,8 @@ then confirm with <kbd>y</kbd>
 /pattern
 ```
 
-hit `n` to go to the next occurence
+hit `n` to go to the next occurrence\
+hit `N` to go to the previous occurrence
 
 or hit `/` and `<enter>` to get to the next occurence\
 `?` and `<enter>` to go in reverse direction
