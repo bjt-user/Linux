@@ -351,13 +351,14 @@ https://stackoverflow.com/questions/53664/how-to-effectively-work-with-multiple-
 
 `:tabe [tab-key]` - open a file in a new tab (hit <kbd>tab</kbd> for a very nice tab-completion)
 
-I put this in my vimrc to switch between tabs with ctrl + n/p:
+I put this in my vimrc to switch between tabs with ctrl + n/p in normal mode:
 ```
 "working with tabs (feature since vim 7)
 nnoremap <C-n> :tabn<CR>
 nnoremap <C-p> :tabp<CR>
 ```
-ctrl + n is used for completion, but only in insert mode, and I want to switch tabs only in normal mode.
+ctrl + n/p is used for completion, but only in insert mode, and I want to switch tabs only in normal mode.\
+So this seems to work.
 
 #### Help
 
