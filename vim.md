@@ -351,7 +351,7 @@ https://stackoverflow.com/questions/53664/how-to-effectively-work-with-multiple-
 
 `:tabe [tab-key]` - open a file in a new tab (hit <kbd>tab</kbd> for a very nice tab-completion)
 
-I put this in my vimrc:
+I put this in my vimrc to switch between tabs with ctrl + n/p:
 ```
 "working with tabs (feature since vim 7)
 nnoremap <C-n> :tabn<CR>
