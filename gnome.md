@@ -26,7 +26,7 @@ the window manager is called `Mutter`.
 #### lock screen
 
 Click in the upper right corner and hit `settings` to go into the gnome settings\
-keyboard -> view and customize shortcuts -> system -> lock screen (default: super + l)
+keyboard -> view and customize shortcuts -> system -> lock screen (default: <kbd>super</kbd> + <kbd>l</kbd>)
 
 ***
 #### gnome extensions
