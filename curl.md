@@ -27,3 +27,20 @@ curl -L https://www.bloomberg.com/markets/stocks
 According to stackoverflow this is because this website is only accessible via https.\
 (which is weird because that should be most sites today)\
 https://stackoverflow.com/questions/17732137/curl-get-request-returns-no-output
+
+
+***
+***
+***
+
+#### good websites to curl
+
+get weather information:
+```
+curl wttr.in/Berlin
+```
+
+get your public ip address:
+```
+curl ifconfig.co
+```
