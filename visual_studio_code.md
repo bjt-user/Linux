@@ -29,3 +29,14 @@ I added the `"window.restoreFullscreen": true` line at the bottom:
 ```
 "security.workspace.trust.enabled": false
 ```
+
+#### extensions
+
+```
+code --list-extensions
+```
+
+
+Settings for extensions: <kbd>ctrl</kbd>+<kbd>,</kbd> to open general settings\
+=> extensions => click your Extension\
+(note that your extension has to be enabled to show up in the settings)
