@@ -9,6 +9,13 @@ killall code
 ```
 (seems to kill all processes related to `vscode`)
 
+#### force to kill a process
+
+Sometimes a normal kill will not end a process, so you need:
+```
+kill -9 [pid]
+```
+
 #### view processes
 
 a lot of people just do
