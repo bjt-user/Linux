@@ -35,6 +35,13 @@ I added the `"window.restoreFullscreen": true` line at the bottom:
 "security.workspace.trust.enabled": false
 ```
 
+#### disable update notification
+
+put this in your `~/.config/Code/User/settings.json`
+```
+"update.mode": "none"
+```
+
 #### extensions
 
 ```
