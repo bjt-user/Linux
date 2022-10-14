@@ -5,6 +5,11 @@ I found `settings.json` at:
 ~/.config/Code/User/settings.json
 ```
 
+put this in your bashrc or bash_profile:
+```
+alias codesettings='vim ~/.config/Code/User/settings.json'
+```
+
 #### open in full screen
 
 I added the `"window.restoreFullscreen": true` line at the bottom:
