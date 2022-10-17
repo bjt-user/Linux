@@ -29,6 +29,13 @@ Click in the upper right corner and hit `settings` to go into the gnome settings
 keyboard -> view and customize shortcuts -> system -> lock screen (default: <kbd>super</kbd> + <kbd>l</kbd>)
 
 ***
+#### workspaces
+
+<kbd>super</kbd> + <kbd>page up/down</kbd> to switch to another workspace\
+=> if there is no other workspace you get into an empty workspace\
+=> once you open an application in that empty workspace it becomes a new workspace
+
+***
 #### gnome extensions
 
 ```
