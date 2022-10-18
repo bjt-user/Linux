@@ -29,3 +29,29 @@ You can check if everything is still the same except the order with this command
 ```
 diff <(sort sortme1.txt) <(sort sortme2.txt)
 ```
+
+
+#### different output
+
+to make the output of `diff` look different you can use option `-u`:
+```
+$ diff -u comparefiles1.txt comparefiles2.txt
+--- comparefiles1.txt	2022-10-18 05:09:49.785386744 +0200
++++ comparefiles2.txt	2022-10-18 05:16:12.952445168 +0200
+@@ -1,10 +1,11 @@
+ #!/bin/bash
+ 
+-echo "this is different" > log.txt
++echo "this is NOT the same" > log.txt
+ 
+-function() test {
+-  echo "longer"
+-  echo "longer"
++function test() {
++  echo "short func"
+ }
+ 
++echo "this is a very very very very very long longlonglonglonglonglong line"
++
+ exit 0
+```
