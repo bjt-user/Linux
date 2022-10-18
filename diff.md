@@ -55,3 +55,8 @@ $ diff -u comparefiles1.txt comparefiles2.txt
 +
  exit 0
 ```
+
+***
+#### colored output
+
+use the option `--color` for colored output
