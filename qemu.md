@@ -25,6 +25,9 @@ You have to enable (and start) `libvirtd` (on some distributions, like Fedora):
 sudo systemctl enable --now libvirtd
 ```
 
+You have to start `virt-manager` as root.\
+Otherwise on Ubuntu the connection to `QEMU/kvm` will fail.
+
 #### usage
 
 looks like you can create virtual machines by using the `virt-manager` program.
