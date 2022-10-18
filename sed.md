@@ -88,3 +88,20 @@ It does not work if a tag stretches over multiple lines though.
 ```
 sed -i 's/\t/  /g' MyMainClass.java
 ```
+
+#### print from a specific line to the end
+
+print everything from line 5 to the end of the file:
+```
+sed -n '5,$p' myfile.txt
+```
+
+print only line 5:
+```
+sed -n '5p' myfile.txt
+```
+
+print line 5,6, and 7:
+```
+sed -n '5,7p' myfile.txt
+```
