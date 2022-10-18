@@ -342,6 +342,10 @@ or to first clear terminal and then execute script:
 :set ft?
 ```
 
+#### detect trailing whitespace
+```
+:set list
+```
 ***
 
 #### tabs
