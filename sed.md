@@ -89,6 +89,7 @@ It does not work if a tag stretches over multiple lines though.
 sed -i 's/\t/  /g' MyMainClass.java
 ```
 
+***
 #### print from a specific line to the end
 
 print everything from line 5 to the end of the file:
