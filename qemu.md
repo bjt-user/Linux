@@ -113,3 +113,8 @@ qemu-system-x86_64: -append only allowed with -kernel option
 
 
 #### snapshots
+
+#### troubleshooting
+
+It looks like `qemu` only starts from the iso file the first time and when you don't install the operating system right after the first boot you cant boot from the iso file anymore, which is weird.\
+Shouldnt it be possible to also set snapshots during isntallation?
