@@ -15,11 +15,12 @@ myuser:~/Coding/scripts/tmp $ wc -l xaa
 myuser:~/Coding/scripts/tmp $ wc -l xab
 93 xab
 ```
+(that the files have the same number of lines seems to be a coincidence)
 
 So
 ```
 split -n2 filename
 ```
-will split a file in the middle and create two files with
+will split a file in the middle and create two files which are the same size in bytes
 
-(but I noticed, that it did split a comment in half which is undesirable)
+(I noticed, that it did split a comment in half)
