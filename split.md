@@ -21,3 +21,5 @@ So
 split -n2 filename
 ```
 will split a file in the middle and create two files with
+
+(but I noticed, that it did split a comment in half which is undesirable)
