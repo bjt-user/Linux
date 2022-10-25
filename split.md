@@ -18,6 +18,20 @@ $ wc -l xab
 86 xab
 ```
 
+#### output file name
+
+```
+split -l 153 myfile outputfile
+```
+Then there will be output files like this:
+```
+outputfileaa
+outputfileab
+outputfileac
+```
+
+***
+
 #### split by size of a file
 ```
 $ split -n2 config 
