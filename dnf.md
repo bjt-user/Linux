@@ -62,6 +62,32 @@ Yes there is a `RPM-GPG-KEY-EPEL-9` in `/etc/pki/rpm-gpg`.
 
 ***
 
+#### search for packages and files
+
+with
+```
+dnf provides filename
+```
+you can search with a filename to see in which package the file is in.
+
+For example a program told me I need `pdflatex` and there was no `pdflatex` package available.
+
+```
+$ pandoc -f markdown -t pdf mymarkdown.md -o mymarkdown.pdf
+pdflatex not found. Please select a different --pdf-engine or install pdflatex
+
+$ dnf provides pdflatex
+Last metadata expiration check: 0:47:54 ago on Thu 27 Oct 2022 10:57:38 AM CEST.
+texlive-latex-9:20210325-47.fc36.noarch : A TeX macro package that defines LaTeX
+Repo        : fedora
+Matched from:
+Filename    : /usr/bin/pdflatex
+```
+
+So `pdflatex` is a binary file that is in the package `texlive-latex-9:20210325-47.fc36.noarch`.
+
+***
+
 #### dnf and rpm
 
 https://stackoverflow.com/a/48609783/13253079
