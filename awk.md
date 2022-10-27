@@ -1,3 +1,6 @@
+awk is good for working with data that is arranged in columns.\
+a space is usually the deliminator for every column.
+
 #### columns
 
 print only the first column of something:
