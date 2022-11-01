@@ -133,7 +133,7 @@ how to change the cursor in the pure `linux` terminal.
 
 in the pure arch-linux terminal the cursor is a blinking underscore.
 
-You can modify your `.bashrc` like this:
+You can modify your `.bashrc` (or `.bash_profile` if you don't have a `.bashrc`) like this:
 add this line before the `PS1` statement and make sure `PS1` statement has double quotes:
 ```
 cursor_styles="\e[?16;2;112;c"
