@@ -1,7 +1,7 @@
 awk is good for working with data that is arranged in columns.\
 a space is usually the deliminator for every column.
 
-#### columns
+#### print columns
 
 print only the first column of something:
 ```
@@ -13,4 +13,8 @@ to also omit the first line (header):
 ls -la | awk '{ print $1 }' | tail -n +2
 ```
 
+print multiple columns:
+```
+who -b | awk '{ print $3, $4 }'
+```
 ***
