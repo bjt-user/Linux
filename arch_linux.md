@@ -642,6 +642,7 @@ systemctl enable NetworkManager
 ***
 #### TODO: qemu installation
 
+You cant shut down the virtual machine until installation is finished.
 
 ***
 #### if you want to configure the locale
