@@ -526,18 +526,7 @@ hwclock --systohc
 pacman -S vim
 ```
 
-```
-vim /etc/locale.gen
-```
-uncommented `de_DE.UTF-8 UTF-8`
-```
-locale-gen
-```
 
-```
-vim /etc/locale.conf
-```
-put in `LANG=de_DE.UTF-8` and save the file
 
 If you set the console keyboard layout, make the changes persistent in vconsole.conf(5):
 ```
@@ -635,6 +624,23 @@ systemctl enable NetworkManager
 ```
 => everything seems to work fine now (scp works, pacman works, git clone works)
 
+=> I have a working Arch Linux machine
+
+#### if you want to configure the locale
+
+```
+vim /etc/locale.gen
+```
+uncommented `de_DE.UTF-8 UTF-8`
+```
+locale-gen
+```
+
+```
+vim /etc/locale.conf
+```
+put in `LANG=de_DE.UTF-8` and save the file
+
 But I need to change the language back to english but keep german keyboard layout.
 
 So I change the locale back to english
@@ -655,4 +661,3 @@ locale-gen
 The command `locale` still shows an error.
 Then I did `sudo reboot` and it seemed to have worked.
 
-=> I have a working Arch Linux machine
