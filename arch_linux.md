@@ -639,6 +639,11 @@ systemctl enable NetworkManager
 
 => I have a working Arch Linux machine
 
+***
+#### TODO: qemu installation
+
+
+***
 #### if you want to configure the locale
 
 ```
