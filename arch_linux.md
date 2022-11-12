@@ -4,6 +4,19 @@ Took the mirror from "Uni Bayreuth".\
 And then the first link:\
 archlinux-2022.05.01-x86_64.iso
 
+#### verify download
+
+download a .sig file from the downloads page from the link `ISO PGP signature` \
+https://archlinux.org/download/#checksums
+
+then put the .sig file in the same folder with your download and run:
+```
+gpg --keyserver-options auto-key-retrieve --verify archlinux-version-x86_64.iso.sig
+```
+=> it says `good signature` but also a warning that it is not a trusted signature, whatever, it seeems to be ok
+
+***
+
 Then the plan is to use `dd` to flash the USB-stick.
 
 ```
