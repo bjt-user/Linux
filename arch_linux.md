@@ -569,7 +569,8 @@ passwd
 ```
 to set a pw for root (**mandatory - otherwise you cant login anymore**)
 
-creating a user is optional:
+***
+creating a user is **optional**:
 ``` 
 useradd -m bf -s /bin/bash
 ```
@@ -577,7 +578,7 @@ useradd -m bf -s /bin/bash
 ```
 passwd bf
 ```
-***
+
 ```
 pacman -S sudo
 ```
@@ -588,6 +589,7 @@ and above the line that starts with root I enter
 ```
 bf ALL=(ALL:ALL) ALL
 ```
+***
 
 ```
 pacman -S grub networkmanager network-manager-applet dialog dosfstools os-prober mtools linux-headers base-devel wpa_supplicant wireless_tools
