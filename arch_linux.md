@@ -644,7 +644,9 @@ systemctl enable NetworkManager
 ***
 #### TODO: qemu installation
 
-You cant shut down the virtual machine until installation is finished.
+You cant shut down the virtual machine until installation is finished.\
+You can close the window though and leave the VM running.\
+(but that will block the RAM that it uses)
 
 ***
 #### if you want to configure the locale
