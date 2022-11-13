@@ -625,7 +625,7 @@ Choose the first option `Arch-Linux`.\
 And login with your root user.
 
 ```
-systemctl start NetworkManager
+systemctl enable --now NetworkManager
 ```
 
 Because I use wifi I do this:
@@ -635,10 +635,6 @@ nmtui
 => activate a connection (it is in german now...)\
 Then select your router hit enter and enter the password.
 
-Make `NetworkManager` start automatically at boot time:
-```
-systemctl enable NetworkManager
-```
 => everything seems to work fine now (scp works, pacman works, git clone works)
 
 => I have a working Arch Linux machine
