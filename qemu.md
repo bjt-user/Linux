@@ -124,3 +124,21 @@ Now I get
 no bootable device
 ```
 and cant seem to recover from that
+
+#### network 'default' is not active
+
+Error starting domain: Requested operation is not valid: network 'default' is not active
+
+see the networks:
+```
+sudo virsh net-list --all
+```
+
+start the default network:
+```
+sudo virsh net-start default
+```
+
+=> the `default` network does not seem to start at boot time maybe you can make it auto start as well
+
+***
