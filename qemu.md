@@ -141,4 +141,8 @@ sudo virsh net-start default
 
 => the `default` network does not seem to start at boot time maybe you can make it auto start as well
 
+```
+sudo virsh net-autostart default
+```
+
 ***
