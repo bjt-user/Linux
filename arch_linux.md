@@ -567,8 +567,9 @@ and put in these lines:
 ```
 passwd
 ```
-to set a pw for root
+to set a pw for root (**mandatory - otherwise you cant login anymore**)
 
+creating a user is optional:
 ``` 
 useradd -m bf -s /bin/bash
 ```
@@ -576,6 +577,7 @@ useradd -m bf -s /bin/bash
 ```
 passwd bf
 ```
+***
 ```
 pacman -S sudo
 ```
