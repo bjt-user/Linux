@@ -102,3 +102,6 @@ cmake . -DCMAKE_BUILD_TYPE=Release {some options ...}
 
 https://www.linuxfromscratch.org/lfs/view/stable/chapter01/resources.html
 
+and how to ask for help: \
+https://www.linuxfromscratch.org/lfs/view/stable/chapter01/askforhelp.html
+
