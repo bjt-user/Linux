@@ -97,3 +97,8 @@ Either the application is simple enough that it doesn’t need it, or the softwa
 Some projects use cmake as their build-tool. cmake works somewhat like configure (see above); it generates a makefile whose content depends on the options passed to the cmake command, and on features of the local system. The steps require to build a cmake-based package are identical to the “configure/make” examples above except that the configure step is replaced by:
 
 cmake . -DCMAKE_BUILD_TYPE=Release {some options ...}
+
+#### faq and mailing lists
+
+https://www.linuxfromscratch.org/lfs/view/stable/chapter01/resources.html
+
