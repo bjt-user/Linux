@@ -4,6 +4,14 @@ Took the mirror from "Uni Bayreuth".\
 And then the first link:\
 archlinux-2022.05.01-x86_64.iso
 
+this is a symlink to the latest version: \
+http://ftp.tu-chemnitz.de/pub/linux/archlinux/iso/latest/archlinux-x86_64.iso
+
+so you can do:
+```
+wget http://ftp.tu-chemnitz.de/pub/linux/archlinux/iso/latest/archlinux-x86_64.iso
+```
+
 #### verify download
 
 download a .sig file from the downloads page from the link `ISO PGP signature` \
@@ -13,6 +21,7 @@ then put the .sig file in the same folder with your download and run:
 ```
 gpg --keyserver-options auto-key-retrieve --verify archlinux-version-x86_64.iso.sig
 ```
+(the `.sig` file needs to have the same file name as the `.iso` file but then end with `.sig`) \
 => it says `good signature` but also a warning that it is not a trusted signature, whatever, it seeems to be ok
 
 ***
