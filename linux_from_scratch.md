@@ -105,3 +105,11 @@ https://www.linuxfromscratch.org/lfs/view/stable/chapter01/resources.html
 and how to ask for help: \
 https://www.linuxfromscratch.org/lfs/view/stable/chapter01/askforhelp.html
 
+
+#### troubleshooting
+
+why creating a new partition?\
+you usually dont have any unpartitioned space in your running linux distro,\
+so this will not work.
+
+what is a `wget-list`? the command doesnt work...
