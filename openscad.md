@@ -61,18 +61,16 @@ Verschiebung ist hier gleich des Zylinderradius.
 
 => funktioniert aber nicht immer, z.B. bei sehr dünnen Rechtecken, z.B. wenn man so Wände erzeugen will.
 
-#############################################################################################
-# MODULES ###################################################################################
-#############################################################################################
+## MODULES
 
 Modules work like functions or methods in programming.
+```
 module name ( parameters ) {
 actions
 }
+```
 
-#############################################################################################
-# Including or using code from different files ##############################################
-#############################################################################################
+## Including or using code from different files
 
 include <filename> acts as if the contents of the included file were written in the including file, and
 use <filename> imports modules and functions, but does not execute any commands other than those definitions.
