@@ -29,9 +29,7 @@ translate([4,4,4]) {
     cylinder(2, 1.5, 3);
 }
 
-#############################################################################################
-# FILLETS ###################################################################################
-#############################################################################################
+## FILLETS
 
 $fn=40;
 
@@ -68,6 +66,11 @@ Modules work like functions or methods in programming.
 module name ( parameters ) {
 actions
 }
+```
+
+to use a module from another file in your file put this at the beginning:
+```
+use <rounded_rect.scad>
 ```
 
 ## Including or using code from different files
