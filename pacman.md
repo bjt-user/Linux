@@ -90,3 +90,12 @@ sudo pacman -S inetutils
 ```
 
 Looks like I have to get my IP from the `ip address` command in the future.
+
+***
+#### files
+
+to see where and which files will be installed:
+```
+pacman -Fy nnn
+```
+(the `y` is used to synchronize the db, you might not have to do this every time)
