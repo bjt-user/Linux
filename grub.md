@@ -52,6 +52,17 @@ sudo reboot
 ```
 
 And the grub boot menu is not showing anymore!
+
+***
+#### update-grub
+
+https://unix.stackexchange.com/questions/111889/how-do-i-update-grub-in-arch-linux#111924
+
+The update-grub command is just a script which runs the grub-mkconfig tool to generate a grub.cfg file. See the Archlinux GRUB documentation. It refers to the following:
+```
+# grub-mkconfig -o /boot/grub/grub.cfg
+```
+
 ***
 #### troubleshooting
 
