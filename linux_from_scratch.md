@@ -110,6 +110,8 @@ https://www.linuxfromscratch.org/lfs/view/stable/chapter01/askforhelp.html
 
 why creating a new partition?\
 you usually dont have any unpartitioned space in your running linux distro,\
-so this will not work.
+so this will not work.\
+=> at least in `qemu` you can add a disk\
+view -> details -> add hardware -> storage > select 10GB and click finish
 
 what is a `wget-list`? the command doesnt work...
