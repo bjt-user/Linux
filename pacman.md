@@ -101,7 +101,13 @@ pacman -Ql package_name
 ```
 
 To retrieve a list of the files installed by a "remote package":\
-(whatever a `remote package` is)
+(whatever that is...)
 ```
 pacman -Fl package_name
 ```
+
+search for a specific file/command you want
+```
+pacman -F hostname
+```
+=> this shows me that I can get the hostname command with the `inetutils` package
