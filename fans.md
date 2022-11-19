@@ -37,3 +37,7 @@ after the program has completed.
 
 /usr/sbin/pwmconfig: There are no pwm-capable sensor modules installed
 ```
+
+## what is acpi?
+
+https://acpica.org/sites/acpica/files/ACPI-Introduction.pdf
