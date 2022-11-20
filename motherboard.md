@@ -9,6 +9,7 @@ SMBIOS  stands for System Management BIOS, while DMI stands for Desktop Manageme
 ***
 #### get information about your bios
 
+```
 sudo dmidecode -t 0
-
+```
 ***
