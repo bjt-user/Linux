@@ -119,3 +119,9 @@ put it somewhere and edit its properties with the `e` key
 you should set units to millimeter on the left hand side\
 and use a grid of for example 0.5000mm or 1.0000mm at the top\
 (thats the distance between the dots)
+
+then you have to save it to a footprint library \
+you should create a custom footprint library
+
+here you can manage the path of the footprint libraries:\
+`preferences` -> `manage footprint libraries`
