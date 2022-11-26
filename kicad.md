@@ -61,7 +61,7 @@ You can view the footprint by clicking on the corresponding button on the upper 
 (there is also a 3d viewer or measure distances with a tool)
 After everything is assign click apply and save and ok.
 
-**
+***
 ## PCB Layout Editor
 
 On the right hand side you see a lot of different layers.
