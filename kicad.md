@@ -110,3 +110,12 @@ So we have to find out how to add a custom library as the standard library is re
 #### todo: custom footprints
 
 there seem to be no footprints for simple rocker switches
+
+open `footprint editor` \
+file -> new footrpint (or ctrl + n) \
+then you can use for example the `add pad` button on the right hand side \
+put it somewhere and edit its properties with the `e` key
+
+you should set units to millimeter on the left hand side\
+and use a grid of for example 0.5000mm or 1.0000mm at the top\
+(thats the distance between the dots)
