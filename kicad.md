@@ -133,3 +133,11 @@ here you can manage the path of the footprint libraries:\
 ***
 ## todo: custom symbols
 
+open `symbol editor`
+
+`file` -> `new symbol`
+
+then you have to create a symbol library and add that symbol to it
+
+then you can use the buttons on the right hand side to create a symbol
+
