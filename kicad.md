@@ -131,7 +131,7 @@ here you can manage the path of the footprint libraries:\
 `preferences` -> `manage footprint libraries`
 
 ***
-## todo: custom symbols
+## custom symbols
 
 open `symbol editor`
 
@@ -145,3 +145,6 @@ to draw lines you have to select `add lines and polygons to the symbol body`,\
 then click somewhere, draw the line, and complete the line by a double left mouse click
 
 you can form coils and transformer windings with the `add arcs arcs to symbol body` button
+
+you can add a **footprint** to the symbol with `edit` -> `properties`\
+=> after that when you add that symbol to your schematic it will automatically have that footprint in it
