@@ -141,3 +141,5 @@ then you have to create a symbol library and add that symbol to it
 
 then you can use the buttons on the right hand side to create a symbol
 
+to draw lines you have to select `add lines and polygons to the symbol body`,\
+then click somewhere, draw the line, and complete the line by a double left mouse click
