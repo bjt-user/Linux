@@ -62,7 +62,6 @@ After everything is assign click apply and save and ok.
 
 #####################################################################################################
 # PCB Layout Editor
-#####################################################################################################
 
 On the right hand side you see a lot of different layers.
 To see what each layer is hover with the mouse over the layer.
@@ -99,7 +98,6 @@ Last step in PCB layout editor "perform design rules checks" (bug symbol).
 
 ######################################################################################################
 # How to edit footprints #############################################################################
-######################################################################################################
 
 In PCB Layout Editor hover over the footprint with your mouse and press 'E'.
 Click "edit footpring". Then your footprint is shown.
@@ -108,3 +106,7 @@ Then you can change the hole and pad size.
 
 You can export that custom footprint, but it is not shown in the library.
 So we have to find out how to add a custom library as the standard library is read-only which is good.
+
+#### todo: custom footprints
+
+there seem to be no footprints for simple rocker switches
