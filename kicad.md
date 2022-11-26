@@ -122,6 +122,8 @@ you should set units to millimeter on the left hand side\
 and use a grid of for example 0.5000mm or 1.0000mm at the top\
 (thats the distance between the dots)
 
+You can view how it looks with `view` -> `3d viewer` or <kbd>alt + 3</kbd>
+
 then you have to save it to a footprint library \
 you should create a custom footprint library
 
