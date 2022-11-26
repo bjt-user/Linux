@@ -143,3 +143,5 @@ then you can use the buttons on the right hand side to create a symbol
 
 to draw lines you have to select `add lines and polygons to the symbol body`,\
 then click somewhere, draw the line, and complete the line by a double left mouse click
+
+you can form coils and transformer windings with the `add arcs arcs to symbol body` button
