@@ -129,3 +129,7 @@ you should create a custom footprint library
 
 here you can manage the path of the footprint libraries:\
 `preferences` -> `manage footprint libraries`
+
+***
+## todo: custom symbols
+
