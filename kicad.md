@@ -1,11 +1,11 @@
 ## general workflow
 
-Step 1: Make a schematic in Schematic Layout Editor and annotate symbols
-Step 2: Perform Electronic Rule Check & Assign Footprints to the schematic symbols
-Step 3: Go into PCB Layout Editor and load the Schematic
-Step 4: Routing
-Step 5: Make automatic check that everything is connected and view PCB layout in 3d view
-Step 6: Export Gerber Files
+Step 1: Make a schematic in Schematic Layout Editor and annotate symbols\
+Step 2: Perform Electronic Rule Check & Assign Footprints to the schematic symbols\
+Step 3: Go into PCB Layout Editor and load the Schematic\
+Step 4: Routing\
+Step 5: Make automatic check that everything is connected and view PCB layout in 3d view\
+Step 6: Export Gerber Files\
 
 ***
 ## Schematic Layout Editor
