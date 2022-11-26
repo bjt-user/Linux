@@ -77,19 +77,26 @@ The arrow in front of the layer signals which layer you are working on right now
 Though the hotkeys are the same as in Schematic Layout Editor you have to leftclick to select a part
 before you can rotate, move, ect...
 
+First select the `Edge.Cuts` layer and use the `add graphic polygon` tool to set the dimensions of your pcb.\
+The have to connect the last end of the polygon to the beginning of the first line.\
+Check with <kbd>alt + 3</kbd> to see if it worked.
+
+Then if you want to have a **ground layer** on the back:\
+Select layer `B.Cu` and select the `add filled zones` tool.\
+Click on the left upper corner of your pcb dimensions.\
+Then you have to select the pad you want to have on that layer.\
+In my case it was `Net-(BT1-Pad2)`.\
+Hit ok. Then click the upper right corner of your pcb dimensions.\
+Then the lower right corner, the lower left corner, and again the upper left corner.\
+Then check with <kbd>alt + 3</kbd> if it worked.\
+If the ground plane worked the ground pins have a dashed circle around them (in the 3d view).
 
 How to straighten lines in PCB layout editor?
 
 Zoom in to the line. Left click to select, then right click -> properties and set the X or Y coordinates to the same point.
 Or press E instead of the right click.
 
-Alt + 3  -> opens 3d viewer \
-B: refill filled layers
-
-
-
-GND-Layer
-If the ground plane worked the ground pins have a dashed circle around them or rather 4 corners (in the 3d view).
+Alt + 3  -> opens 3d viewer
 
 How to delete unwanted text on the pcb?
 Moving the cursor on the text and hitting the DEL key does not work.
