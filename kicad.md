@@ -64,14 +64,14 @@ After everything is assign click apply and save and ok.
 ***
 ## PCB Layout Editor
 
-On the right hand side you see a lot of different layers.
-To see what each layer is hover with the mouse over the layer.
+On the right hand side you see a lot of different layers.\
+To see what each layer is hover with the mouse over the layer.\
 (dwgs.user = explanatory drawing from the user, those will probably not be in the gerber file
-and not be printed on the pcb)
-(adhesive layers are if parts are glued onto the board probably never relevant for hobbyists)
+and not be printed on the pcb)\
+(adhesive layers are if parts are glued onto the board probably never relevant for hobbyists)\
 (paste layers are also probably not relevant for most hobby users
-is only relevant if you want an assembled board or stencil)
-The checkboxes in front of the layer enable/disable visibility of the layer.
+is only relevant if you want an assembled board or stencil)\
+The checkboxes in front of the layer enable/disable visibility of the layer.\
 The arrow in front of the layer signals which layer you are working on right now.
 
 Though the hotkeys are the same as in Schematic Layout Editor you have to leftclick to select a part
@@ -83,7 +83,7 @@ How to straighten lines in PCB layout editor?
 Zoom in to the line. Left click to select, then right click -> properties and set the X or Y coordinates to the same point.
 Or press E instead of the right click.
 
-Alt + 3  -> opens 3d viewer
+Alt + 3  -> opens 3d viewer \
 B: refill filled layers
 
 
