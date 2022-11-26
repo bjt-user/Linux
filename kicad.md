@@ -130,6 +130,15 @@ you should create a custom footprint library
 here you can manage the path of the footprint libraries:\
 `preferences` -> `manage footprint libraries`
 
+Usually you need at least one `pad` to connect your part to other parts.\
+Those pads need `pad numbers` through which they will be connected.\
+Those `pad numbers` have to fit to the schematic symbols.
+
+If you want to add **mounting holes** to your footprint:\
+click `add pad`, hover over the pad, hit <kbd>e</kbd> \
+select `pad type: npth, mechanical` (npth means `no pad through hole`)\
+and hit ok
+
 ***
 ## custom symbols
 
