@@ -1,3 +1,5 @@
+## general workflow
+
 Step 1: Make a schematic in Schematic Layout Editor and annotate symbols
 Step 2: Perform Electronic Rule Check & Assign Footprints to the schematic symbols
 Step 3: Go into PCB Layout Editor and load the Schematic
@@ -5,9 +7,8 @@ Step 4: Routing
 Step 5: Make automatic check that everything is connected and view PCB layout in 3d view
 Step 6: Export Gerber Files
 
-#####################################################################################################
-# Schematic Layout Editor
-#####################################################################################################
+***
+## Schematic Layout Editor
 
 Activating "change cursor shape" at the left hand side helps to place parts on the same x/y-position.
 
@@ -60,8 +61,8 @@ You can view the footprint by clicking on the corresponding button on the upper 
 (there is also a 3d viewer or measure distances with a tool)
 After everything is assign click apply and save and ok.
 
-#####################################################################################################
-# PCB Layout Editor
+**
+## PCB Layout Editor
 
 On the right hand side you see a lot of different layers.
 To see what each layer is hover with the mouse over the layer.
@@ -96,8 +97,8 @@ Moving the cursor on the text and hitting the DEL key does not work.
 
 Last step in PCB layout editor "perform design rules checks" (bug symbol).
 
-######################################################################################################
-# How to edit footprints #############################################################################
+***
+## How to edit footprints
 
 In PCB Layout Editor hover over the footprint with your mouse and press 'E'.
 Click "edit footpring". Then your footprint is shown.
@@ -107,7 +108,8 @@ Then you can change the hole and pad size.
 You can export that custom footprint, but it is not shown in the library.
 So we have to find out how to add a custom library as the standard library is read-only which is good.
 
-#### todo: custom footprints
+***
+## custom footprints
 
 there seem to be no footprints for simple rocker switches
 
