@@ -174,3 +174,23 @@ you can add a **footprint** to the symbol with `edit` -> `properties`\
 ***
 ## todo: export gerber files
 
+open `pcb layout editor`
+
+`perform design rules check` to make sure there are no errors
+
+file -> plot
+
+plot format: gerber
+
+now select an output directory\
+(make a new directory just for the gerber files for this project)
+
+now select all the layers you need
+
+then click `generate drill files`
+
+in the new window the standard settings should be ok, but check them again,\
+then `generate drill files` and `close`
+
+click `plot`\
+`close`
