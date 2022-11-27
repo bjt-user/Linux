@@ -204,3 +204,4 @@ you have to zip the gerber folder and upload that zip file
 zip -r gerber_files_flyback.zip gerber_files_flyback
 ```
 
+To get 2 layers pcbs for around 5$ you need to have 100mm x 100mm dimensions.
