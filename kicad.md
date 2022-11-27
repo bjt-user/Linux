@@ -170,3 +170,7 @@ you can form coils and transformer windings with the `add arcs arcs to symbol bo
 
 you can add a **footprint** to the symbol with `edit` -> `properties`\
 => after that when you add that symbol to your schematic it will automatically have that footprint in it
+
+***
+## todo: export gerber files
+
