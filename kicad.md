@@ -94,7 +94,7 @@ I think it is good to make the "filled zone" of the ground layer way bigger than
 
 When you have to change the filled zone, you should hit <kbd>b</kbd> afterwards so that it applies the filled zone again.
 
-When you have to change the `edge.cuts` afterwards you need to click on it with the left mouse button and then hit <kbd>e</kbd>.\
+When you have to **change** the `edge.cuts` **afterwards** you need to click on it with the left mouse button and then hit <kbd>e</kbd>.\
 And this probably only work, if the `filled zone` is not exactly on that line...
 
 How to straighten lines in PCB layout editor?
