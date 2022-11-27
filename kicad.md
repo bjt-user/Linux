@@ -89,7 +89,8 @@ In my case it was `Net-(BT1-Pad2)`.\
 Hit ok. Then click the upper right corner of your pcb dimensions.\
 Then the lower right corner, the lower left corner, and again the upper left corner.\
 Then check with <kbd>alt + 3</kbd> if it worked.\
-If the ground plane worked the ground pins have a dashed circle around them (in the 3d view).
+If the ground plane worked the ground pins have a dashed circle around them (in the 3d view).\
+I think it is good to make the "filled zone" of the ground layer way bigger than your edge.cuts, because then it will be easier to select the edge.cuts later, because you probably need to change the edge.cuts again.
 
 How to straighten lines in PCB layout editor?
 
