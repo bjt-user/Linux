@@ -172,7 +172,7 @@ you can add a **footprint** to the symbol with `edit` -> `properties`\
 => after that when you add that symbol to your schematic it will automatically have that footprint in it
 
 ***
-## todo: export gerber files
+## export gerber files
 
 open `pcb layout editor`
 
@@ -194,3 +194,13 @@ then `generate drill files` and `close`
 
 click `plot`\
 `close`
+
+***
+## upload gerber files to jlcpcb
+
+you have to zip the gerber folder and upload that zip file
+
+```
+zip -r gerber_files_flyback.zip gerber_files_flyback
+```
+
