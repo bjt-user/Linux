@@ -92,6 +92,8 @@ Then check with <kbd>alt + 3</kbd> if it worked.\
 If the ground plane worked the ground pins have a dashed circle around them (in the 3d view).\
 I think it is good to make the "filled zone" of the ground layer way bigger than your edge.cuts, because then it will be easier to select the edge.cuts later, because you probably need to change the edge.cuts again.
 
+When you have to change the filled zone, you should hit <kbd>b</kbd> afterwards so that it applies the filled zone again.
+
 How to straighten lines in PCB layout editor?
 
 Zoom in to the line. Left click to select, then right click -> properties and set the X or Y coordinates to the same point.
