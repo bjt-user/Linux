@@ -1,3 +1,5 @@
+Standard **port** for most printers seems to be `9100`.
+
 To initialize a printer you first have to use "CUPS".
 (there are youtube tutorials how to do it)
 Type 
