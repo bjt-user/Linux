@@ -35,6 +35,9 @@ keyboard -> view and customize shortcuts -> system -> lock screen (default: <kbd
 => if there is no other workspace you get into an empty workspace\
 => once you open an application in that empty workspace it becomes a new workspace
 
+you can move a window to the next workspace with <kbd>super</kbd> + <kbd>shift</kbd> + <kbd>page up/down</kbd> \
+(click on it to make sure it is selected first)
+
 ***
 #### gnome extensions
 
