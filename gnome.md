@@ -48,6 +48,11 @@ gnome-extensions list --disabled
 ```
 to see all disabled extensions and `--enabled` to see all enabled extensions
 
+to disable an extension:
+```
+gnome-extensions disable [extension name]
+```
+
 You can install extensions via browser but that seems weird.\
 You can also download a `.zip` by selecting `shell version` and `extension version`.
 (i think they mean gnome version with "shell version")
