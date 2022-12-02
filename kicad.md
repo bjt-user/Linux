@@ -68,9 +68,9 @@ After everything is assign click apply and save and ok.
 
 On the right hand side you see a lot of different layers.\
 To see what each layer is hover with the mouse over the layer.\
-(dwgs.user = explanatory drawing from the user, those will probably not be in the gerber file
+(**dwgs.user** = explanatory drawing from the user, those will probably not be in the gerber file
 and not be printed on the pcb)\
-(adhesive layers are if parts are glued onto the board probably never relevant for hobbyists)\
+(**adhesive layers** are if parts are glued onto the board probably never relevant for hobbyists)\
 (paste layers are also probably not relevant for most hobby users
 is only relevant if you want an assembled board or stencil)\
 The checkboxes in front of the layer enable/disable visibility of the layer.\
