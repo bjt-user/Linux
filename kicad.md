@@ -64,6 +64,8 @@ After everything is assign click apply and save and ok.
 ***
 ## PCB Layout Editor
 
+### layers
+
 On the right hand side you see a lot of different layers.\
 To see what each layer is hover with the mouse over the layer.\
 (dwgs.user = explanatory drawing from the user, those will probably not be in the gerber file
@@ -74,6 +76,14 @@ is only relevant if you want an assembled board or stencil)\
 The checkboxes in front of the layer enable/disable visibility of the layer.\
 The arrow in front of the layer signals which layer you are working on right now.
 
+**F.SilkS** is the silkscreen.\
+With the silkscreen part names like U1 R1 D1 / text and so on, and outlines of the parts will be drawn.
+
+**f.fab** is the fabrication layer - it will **NOT** be part of the pcb.\
+You need f.fab only if you let the pcb manufacturer do the assembly of the parts.\
+If you solder the parts on the pcb yourself, you do NOT need it.
+
+***
 Though the hotkeys are the same as in Schematic Layout Editor you have to leftclick to select a part
 before you can rotate, move, ect...
 
