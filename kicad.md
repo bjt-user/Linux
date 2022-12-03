@@ -218,4 +218,18 @@ you have to zip the gerber folder and upload that zip file
 zip -r gerber_files_flyback.zip gerber_files_flyback
 ```
 
-To get 2 layers pcbs for around 5$ you need to have 100mm x 100mm dimensions.
+To get 2 layers pcbs for 2$ (**without shipping**) you need to have 100mm x 100mm dimensions.
+
+### last order
+
+"global standard direct line" was the cheapest shipping option
+
+SUMMARY
+
+Merchandise Total $2.00
+
+Shipping $3.52
+
+Customs duties & taxes $1.05
+
+Grand Total: $6.57
