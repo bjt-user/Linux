@@ -162,6 +162,10 @@ click `add pad`, hover over the pad, hit <kbd>e</kbd> \
 select `pad type: npth, mechanical` (npth means `no pad through hole`)\
 and hit ok
 
+**make your custom library show up on top**\
+=> footprint editor -> file -> new library -> select a location for your footprints \
+name it "1_custom_footprints"
+
 ***
 ## custom symbols
 
