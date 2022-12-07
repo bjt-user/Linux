@@ -6,6 +6,11 @@ version 1.2.1
 
 inkscape creates vector graphics opposed to pixel graphics.
 
+#### terminology
+
+what is **fill**
+
+what is **stroke**
 
 #### how to draw a line
 
