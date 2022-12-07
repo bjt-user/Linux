@@ -12,6 +12,9 @@ what is **fill**
 
 what is **stroke**
 
+hit this when an object is selected:\
+<kbd>ctrl + shift + f</kbd>
+
 #### how to draw a line
 
 lines keep disappearing
