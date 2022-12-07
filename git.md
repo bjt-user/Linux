@@ -172,6 +172,17 @@ This goes back to the commit with the SHA b8457dd\
 git reset --hard b8457dd
 ```
 
+#### go back one commit
+
+```
+git reset --hard HEAD~1
+```
+
+go back three commits:
+```
+git reset --hard HEAD~3
+```
+
 #### restore deleted files
 
 Sometimes it can happen that you delete a file accidently.\
