@@ -50,7 +50,8 @@ with <kbd>#</kbd> you can switch the grid on and off (or view->page grid)
 interface->grids
 
 you can for example switch to `mm` and select the `rectangular grid` pane\
-set spacing x to 2.540 and spacing y to 2.540.
+set spacing x to 2.540 and spacing y to 2.540.\
+=> then 2 squares seem to be 2.54mm on each side
 
 
 #### export to png
