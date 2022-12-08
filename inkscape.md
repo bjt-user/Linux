@@ -40,7 +40,8 @@ you can select them with the select tool (<kbd>s</kbd>)
 
 then you can move the objects with arrow keys\
 (but it is an uneven number of millimeters)\
-can you set the ammount of millimeters that a stroke with an arrowkey will move the object?
+can you set the ammount of millimeters that a stroke with an arrowkey will move the object?\
+preferences -> behaviour -> steps
 
 #### export to png
 
