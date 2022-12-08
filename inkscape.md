@@ -28,6 +28,7 @@ hold <kbd>shift</kbd> and click on the black button at the bottom left\
 
 or <kbd>ctrl + shift + f</kbd> and select stroke and fill
 
+But how to I make that line straight?
 
 #### export to png
 
