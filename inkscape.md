@@ -36,7 +36,7 @@ and then hold <kbd>ctrl</kbd> while drawing the line to make it straight
 
 #### moving objects
 
-you can select them with the select tool (s)
+you can select them with the select tool (<kbd>s</kbd>)
 
 then you can move the objects with arrow keys\
 (but it is an uneven number of millimeters)\
