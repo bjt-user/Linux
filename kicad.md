@@ -166,6 +166,14 @@ and hit ok
 => footprint editor -> file -> new library -> select a location for your footprints \
 name it "1_custom_footprints.pretty"
 
+### export custom footprints
+
+in the `footprint editor`:\
+file -> print -> print -> print to file\
+select output format: svg\
+select the location for the file\
+print
+
 ***
 ## custom symbols
 
