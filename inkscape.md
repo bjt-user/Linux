@@ -53,6 +53,8 @@ you can for example switch to `mm` and select the `rectangular grid` pane\
 set spacing x to 2.540 and spacing y to 2.540.\
 => then 2 squares seem to be 2.54mm on each side
 
+But that does not work as I would expect it...the grid size stays the same as you zoom in and out...
+
 
 #### export to png
 
