@@ -43,6 +43,16 @@ then you can move the objects with arrow keys\
 can you set the ammount of millimeters that a stroke with an arrowkey will move the object?\
 preferences -> behaviour -> steps
 
+#### grid
+
+with <kbd>#</kbd> you can switch the grid on and off (or view->page grid)
+
+interface->grids
+
+you can for example switch to `mm` and select the `rectangular grid` pane\
+set spacing x to 2.540 and spacing y to 2.540.
+
+
 #### export to png
 
 file -> export png image
