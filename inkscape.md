@@ -1,3 +1,5 @@
+#### installation
+
 ```
 sudo dnf install inkscape
 ```
@@ -31,6 +33,14 @@ or <kbd>ctrl + shift + f</kbd> and select stroke and fill
 But how to I make that line **straight**?\
 hit <kbd>b</kbd> leftclick on the screen\
 and then hold <kbd>ctrl</kbd> while drawing the line to make it straight
+
+#### moving objects
+
+you can select them with the select tool (s)
+
+then you can move the objects with arrow keys\
+(but it is an uneven number of millimeters)\
+can you set the ammount of millimeters that a stroke with an arrowkey will move the object?
 
 #### export to png
 
