@@ -166,13 +166,15 @@ and hit ok
 => footprint editor -> file -> new library -> select a location for your footprints \
 name it "1_custom_footprints.pretty"
 
-### export custom footprints
+### export custom footprints to svg
 
 in the `footprint editor`:\
 file -> print -> print -> print to file\
 select output format: svg\
 select the location for the file\
 print
+
+(now it should be usable for `fritzing`)
 
 ***
 ## custom symbols
