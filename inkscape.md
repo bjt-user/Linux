@@ -28,8 +28,6 @@ hold <kbd>shift</kbd> and click on the black button at the bottom left\
 
 or <kbd>ctrl + shift + f</kbd> and select stroke and fill
 
-but in version 1.2.1 this does not work anymore\
-the bezier tool (b) makes rectangles now and not lines...
 
 #### export to png
 
