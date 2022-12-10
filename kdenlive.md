@@ -55,6 +55,15 @@ effects->audio corrections->volume (keyframeable) and drag that into the clip
 then leftclick the clip and you can adjust the `gain` (set it to -30 to have a big effect)
 
 ***
+#### transitions
+
+Add a transition of two video clips.\
+Put one video clip over the other one.\
+Then click on the small dot on the upper video clip and there will be a "wipe" transition added".
+
+With audio it does not work like that, it will just fade in and out for some time if you click this dot at the corner of the audio clips.
+
+***
 #### rendering
 
 I havent found an option for no reencoding yet.\
