@@ -30,6 +30,11 @@ when you are done you can switch back to the `selection tool` or hit <kbd>s</kbd
 then you can do this again for the end of the part you want to cut out.\
 switch to `selection tool` and left click the part you want to remove and hit <kbd>del</kbd>.
 
+Another way is to set the "selection line" to the right time, then select the clip you want to cut.\
+And then hit <kbd>shift + r</kbd>.
+
+***
+
 #### fade in/out
 
 move the mouse to the upper right corner of a clip until a small red circle appears.\
