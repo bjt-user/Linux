@@ -10,6 +10,12 @@ rwx \
 read only would be: 100\
 which is 4 in decimal. (0+0+4)
 
+read and execute would be: 101\
+which is 5 in decimal. (1+0+4)
+
+read and write would be: 110\
+which is 6 in decimal. (0+2+4)
+
 every permission is: 111\
 which is 7 in decimal. (1+2+4)
 
