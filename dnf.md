@@ -109,3 +109,10 @@ Run entirely from system cache, don't update the cache and use it even in case i
 
 DNF uses a separate cache for each user under which it executes. The cache for the root user is called the system cache. This switch allows a regular  user  read-only  access  to  the  system cache, which usually is more fresh than the user's and thus he does not have to wait for metadata sync.
 ```
+
+You might set aliases like this:
+```
+alias dnf search=dnf search -C
+```
+
+The same for `dnf list` -> `dnf list -C "foo"`
