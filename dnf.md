@@ -100,3 +100,12 @@ https://stackoverflow.com/a/48609783/13253079
 
 > Note that you may also see "Yum". DNF is the successor to that tool, which essentially did the same thing. In recent versions of the Fedora OS, yum and dnf are exactly interchangeable.
 
+
+#### search or list packages without syncing
+
+```
+-C, --cacheonly
+Run entirely from system cache, don't update the cache and use it even in case it is expired.
+
+DNF uses a separate cache for each user under which it executes. The cache for the root user is called the system cache. This switch allows a regular  user  read-only  access  to  the  system cache, which usually is more fresh than the user's and thus he does not have to wait for metadata sync.
+```
