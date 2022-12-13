@@ -63,6 +63,7 @@ to move an object to a layer:\
 select the object, right click -> move to layer\
 or drag and drop in the layer view
 
+If you just want to have **one object above the other** you do not necessarily have to make a new layer, you can just put it on top of the other object in the **layer view**. (in the order of objects in one layer)
 
 #### export to png
 
