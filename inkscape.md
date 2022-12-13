@@ -55,6 +55,14 @@ set spacing x to 2.540 and spacing y to 2.540.\
 
 But that does not work as I would expect it...the grid size stays the same as you zoom in and out...
 
+#### layers
+
+<kbd>ctrl + shift + l</kbd> (or click on the layer button at the left bottom)
+
+to move an object to a layer:\
+select the object, right click -> move to layer\
+or drag and drop in the layer view
+
 
 #### export to png
 
