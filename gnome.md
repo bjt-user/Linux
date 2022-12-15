@@ -75,3 +75,12 @@ then you might need to enable it
 ```
 gnome-extensions enable multi-monitors-add-on@spin83
 ```
+
+#### gnome tweaks
+
+with the application `gnome tweaks` you can configure startup applications.\
+But you can't configure on which screen/workspace they appear.
+
+They seem to appear where they were at shutdown time.
+
+---
