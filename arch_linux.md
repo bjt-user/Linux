@@ -691,3 +691,9 @@ locale-gen
 The command `locale` still shows an error.
 Then I did `sudo reboot` and it seemed to have worked.
 
+***
+
+#### archinstaller
+
+In the normal iso image there should also be an installer included.\
+It should be started by typing `archinstall`.
