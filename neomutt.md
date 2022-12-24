@@ -16,3 +16,9 @@ gnutls_handshake: An unexpected TLS packet was received
 #### todo: install from source
 
 maybe thatll work
+
+```
+sudo git clone https://github.com/neomutt/neomutt.git /opt/neomutt
+```
+
+but the `./configure` will fail
