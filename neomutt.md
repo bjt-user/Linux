@@ -13,7 +13,6 @@ But there is still the unsolveable barrier of this error:
 gnutls_handshake: An unexpected TLS packet was received
 ```
 
-<span style="color:blue">some *blue* text</span>.
 
 #### todo: install from source
 
