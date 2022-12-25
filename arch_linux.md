@@ -695,6 +695,8 @@ Then I did `sudo reboot` and it seemed to have worked.
 
 #### TODO: archinstaller
 
+https://github.com/archlinux/archinstall
+
 In the normal iso image there should also be an installer included.\
 It should be started by typing `archinstall` when you are in the `root@archiso` prompt.\
 First you select the normal first option `install arch linux...`, the you get into the promp `root@archiso`.\
