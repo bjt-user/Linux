@@ -65,6 +65,10 @@ or drag and drop in the layer view
 
 If you just want to have **one object above the other** you do not necessarily have to make a new layer, you can just put it on top of the other object in the **layer view**. (in the order of objects in one layer)
 
+#### page properties
+
+You can `resize page to content` (<kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>r</kbd>)
+
 #### export to png
 
 file -> export png image
