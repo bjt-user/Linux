@@ -714,3 +714,15 @@ archinstall
 ```
 
 => failed to install packages to new root
+
+By default, the archinstall script uses the `cfdisk` utility to partition disks during the installation process.\
+However, it is possible to specify a different partitioning tool to use by passing the -p option to the archinstall command and specifying the desired partitioning tool.
+
+For example, to use fdisk as the partitioning tool during the Arch Linux installation process, you can run the following command:
+```
+archinstall -p fdisk
+```
+Alternatively, you can use the parted tool by specifying parted as the partitioning tool:
+```
+archinstall -p parted
+```
