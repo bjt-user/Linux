@@ -693,7 +693,7 @@ Then I did `sudo reboot` and it seemed to have worked.
 
 ***
 
-#### archinstaller
+#### TODO: archinstaller
 
 In the normal iso image there should also be an installer included.\
 It should be started by typing `archinstall` when you are in the `root@archiso` prompt.\
@@ -701,3 +701,14 @@ First you select the normal first option `install arch linux...`, the you get in
 Then type `archinstall`.\
 But make sure you have an internet connection before you start it.
 
+```
+loadkeys de-latin1
+```
+```
+curl -I https://www.google.com
+```
+```
+archinstall
+```
+
+=> failed to install packages to new root
