@@ -16,6 +16,10 @@ or devices which ask you to sign in to your Google Account using only your usern
 smtplib.SMTPDataError: (554, b'Transaction failed\nReject due to policy restrictions.\nFor explanation visit https://postmaster.web.de/error-messages?ip=217.233.166.75&c=hi')
 ```
 
+**proton mail** will not even show you their imap/smpt server\
+you would need to buy a licence "Included with Mail Plus, Proton Unlimited, and Proton for Business."\
+=> proton mail is crap
+
 Maybe try `zoho mail`.
 
 ***
