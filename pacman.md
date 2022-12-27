@@ -19,7 +19,7 @@ shows explicitly installed packages
 ```
 pacman -Qi openssh
 ```
-shows information about a package\
+shows information about an **installed** package\
 only works if the package is installed...
 
 this is for packages that are not installed yet:

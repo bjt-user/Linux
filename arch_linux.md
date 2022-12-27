@@ -693,6 +693,13 @@ Then I did `sudo reboot` and it seemed to have worked.
 
 ***
 
+#### useful pacman packages
+
+to get for example `nslookup` and `dig` command:
+```
+pacman -S bind
+```
+
 #### TODO: archinstaller
 
 https://github.com/archlinux/archinstall
