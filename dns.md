@@ -13,3 +13,11 @@ check your `resolv.conf`
 ```
 cat /etc/resolv.conf
 ```
+
+When you change your `resolv.conf` and reboot, `NetworkManager` will overwrite your changes to `resolv.conf`.
+
+To check if `NetworkManager` is enabled:
+```
+systemctl status NetworkManager
+```
+
