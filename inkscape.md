@@ -8,14 +8,23 @@ version 1.2.1
 
 inkscape creates vector graphics opposed to pixel graphics.
 
+#### getting started
+
+good tutorial:\
+https://www.youtube.com/watch?v=8f011wdiW7g&list=PLqazFFzUAPc5lOQwDoZ4Dw2YSXtO7lWNv&index=2
+
 #### terminology
 
-what is **fill**
+**objects vs. path**:\
+With the `bezier tool` you can draw lines. By using the `bezier tool` you create a "path" but NOT an object.\
+With the `rectangle tool` or the `circle tool` you create "objects".
 
-what is **stroke**
+You can select an "object" and click path->object to path and then you can double click the object (that is now a path).\
+And then you can change/move the "points"/corners of that path and change the shape of that object.
 
-hit this when an object is selected:\
-<kbd>ctrl + shift + f</kbd>
+#### view
+
+<kbd>ctrl</kbd> + <kbd>4</kbd> - center page
 
 #### how to draw a line
 
