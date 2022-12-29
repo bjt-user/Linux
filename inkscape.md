@@ -55,7 +55,7 @@ set spacing x to 2.540 and spacing y to 2.540.\
 
 But that does not work as I would expect it...the grid size stays the same as you zoom in and out...
 
-#### layers / overlapping problem
+#### layers / levels / overlapping problem
 
 If you just want to have **one object above the other** you do **not** necessarily have to make a new layer.\
 There are four buttons at the top of the screen.
@@ -63,6 +63,12 @@ There are four buttons at the top of the screen.
 `lower selection one step` (<kbd>page down</kbd>)\
 `raise selection one step` (<kbd>page up</kbd>)\
 `raise selection to top` (<kbd>home</kbd>) (seems to be <kbd>pos1</kbd> on german keyboards)
+
+You can hit <kbd>tab</kbd> to cycle through all objects beginning from the lowest object\
+and then going higher in "levels".
+
+If you have an object that is hidden behind another object, you can hold <kbd>alt</kbd> and click several times.\
+Then it should cycle through all objects that are behind the upper object.
 
 If you want to mess with layers:\
 <kbd>ctrl + shift + l</kbd> (or click on the layer button at the left bottom)
@@ -85,9 +91,15 @@ You can `resize page to content` (<kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>r</k
 
 If you select a rectangle and click a color on the bottom you change the `fill color`.
 
+**No fill**: If you go to the `fill and stroke menu` with <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>f</kbd> and select the `fill` pane\
+you can click on the X-symbol (`no paint`) to not use any fill at all.
+
 #### stroke
 
 If you select a rectangle object and hold <kbd>shift</kbd> and then click on a color on the bottom you change the `stroke color`.
+
+**No stroke**: If you go to the `fill and stroke menu` with <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>f</kbd> and select the `stroke` pane\
+you can click on the X-symbol (`no paint`) to not use any stroke at all.
 
 #### export to png
 
@@ -102,6 +114,15 @@ the `custom` pane lets you set coordinates which should be exported
 
 ***
 ## advanced features
+
+#### groups
+
+select an object, hold <kbd>shift</kbd>, then select another object\
+hit <kbd>ctrl</kbd> + <kbd>g</kbd> (or object->group) to group those objects together.
+
+to ungroup those objects again you can select the group and hit <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>g</kbd>
+
+When you have a group all actions you do will be performed on all objects in that group.
 
 #### rounding corners
 
