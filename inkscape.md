@@ -58,7 +58,7 @@ But that does not work as I would expect it...the grid size stays the same as yo
 #### layers / levels / overlapping problem
 
 If you just want to have **one object above the other** you do **not** necessarily have to make a new layer.\
-There are four buttons at the top of the screen.
+There are four buttons at the top of the screen.\
 `lower selection to bottom` (<kbd>end</kbd>)\
 `lower selection one step` (<kbd>page down</kbd>)\
 `raise selection one step` (<kbd>page up</kbd>)\
