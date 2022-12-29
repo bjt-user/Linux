@@ -55,15 +55,23 @@ set spacing x to 2.540 and spacing y to 2.540.\
 
 But that does not work as I would expect it...the grid size stays the same as you zoom in and out...
 
-#### layers
+#### layers / overlapping problem
 
+If you just want to have **one object above the other** you do **not** necessarily have to make a new layer.\
+There are four buttons at the top of the screen.
+`lower selection to bottom` (<kbd>end</kbd>)\
+`lower selection one step` (<kbd>page down</kbd>)\
+`raise selection one step` (<kbd>page up</kbd>)\
+`raise selection to top` (<kbd>home</kbd>) (seems to be <kbd>pos1</kbd> on german keyboards)
+
+If you want to mess with layers:\
 <kbd>ctrl + shift + l</kbd> (or click on the layer button at the left bottom)
 
 to move an object to a layer:\
 select the object, right click -> move to layer\
 or drag and drop in the layer view
 
-If you just want to have **one object above the other** you do not necessarily have to make a new layer, you can just put it on top of the other object in the **layer view**. (in the order of objects in one layer)
+
 
 #### document properties
 
@@ -91,4 +99,11 @@ drawing will just export the drawing and not the whole page, background is trans
 if you select an object with the selection tool and use the `selection` pane, just that object will be exported\
 the `custom` pane lets you set coordinates which should be exported
 
+
+***
+## advanced features
+
+#### rounding corners
+
+Double click an object (for example a rectangle) and then move the round dot at the upper right corner of the object to round the edges.
 
