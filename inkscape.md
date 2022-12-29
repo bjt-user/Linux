@@ -34,7 +34,7 @@ hit <kbd>b</kbd> \
 left click on one spot then left click another spot\
 then hit <kbd>enter</kbd>\
 then the line is not visible\
-hold <kbd>shift</kbd> and click on the black button at the bottom left\
+hold <kbd>shift</kbd> and click on the black button at the bottom left (that changes the stroke color)\
 => now you have a black line that is not invisible
 
 or <kbd>ctrl + shift + f</kbd> and select stroke and fill
