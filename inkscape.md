@@ -73,6 +73,14 @@ Here you can set how big the page is.
 
 You can `resize page to content` (<kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>r</kbd>)
 
+#### fill
+
+If you select a rectangle and click a color on the bottom you change the `fill color`.
+
+#### stroke
+
+If you select a rectangle object and hold <kbd>shift</kbd> and then click on a color on the bottom you change the `stroke color`.
+
 #### export to png
 
 file -> export png image
