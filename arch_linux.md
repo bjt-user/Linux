@@ -13,7 +13,7 @@ wget http://ftp.tu-chemnitz.de/pub/linux/archlinux/iso/latest/archlinux-x86_64.i
 ```
 
 ```
-wget http://ftp.tu-chemnitz.de/pub/linux/archlinux/iso/latest/archlinux-2022.12.01-x86_64.iso.sig
+wget http://ftp.tu-chemnitz.de/pub/linux/archlinux/iso/latest/archlinux-x86_64.iso.sig
 ```
 
 http://ftp.tu-chemnitz.de/pub/linux/archlinux/iso/latest/ has also a tarred iso if you have bad internet connection
