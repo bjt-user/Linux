@@ -16,6 +16,7 @@ sudo apt install ./<file>.deb
 ```
 Error in file "/usr/share/applications/org.kde.kdeconnect_open.desktop": "*/*" is an invalid MIME type ("*" is an unregistered media type)
 ```
+=> but it still seems to work, open with `vscode` from app menu or `code` from cli.
 
 ***
 
