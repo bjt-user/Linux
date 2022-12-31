@@ -9,6 +9,10 @@ and signing key to enable auto-updating using the system's package manager.
 
 https://code.visualstudio.com/Download
 
+```
+sudo apt install ./<file>.deb
+```
+
 ***
 
 #### settings config file
