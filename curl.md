@@ -42,5 +42,9 @@ curl wttr.in/Berlin
 
 get your public ip address:
 ```
+curl ipinfo.io/ip
+```
+this is probably your public ipv6:
+```
 curl ifconfig.co
 ```
