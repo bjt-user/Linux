@@ -7,6 +7,10 @@ https://code.visualstudio.com/docs/setup/linux
 > Installing the .deb package will automatically install the apt repository \
 and signing key to enable auto-updating using the system's package manager.
 
+https://code.visualstudio.com/Download
+
+***
+
 #### settings config file
 
 I found `settings.json` at:
