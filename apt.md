@@ -18,3 +18,14 @@ You can also try this after the package is already installed:
 ```
 dpkg -L fzf
 ```
+
+***
+
+#### repos
+
+This directory contains the repositories the user added to apt:
+```
+/etc/apt/sources.list.d
+```
+
+https://wiki.debian.org/SourcesList
