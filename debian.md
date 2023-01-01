@@ -8,7 +8,8 @@ https://d-i.debian.org/
 
 According to "distrotube" you can get the unofficial, unstable Branch (`sid`) here:\
 https://d-i.debian.org/daily-images/amd64/daily/netboot/mini.iso \
-(Debian is meant to be installed with the "stable" branch, so this is an unofficial release)
+(Debian is meant to be installed with the "stable" branch, so this is an unofficial release)\
+(this image is only 69M, so it seems to pull a lot of stuff from the internet)
 
 
 #### TODO: using the unstable branch

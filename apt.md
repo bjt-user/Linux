@@ -18,10 +18,20 @@ You can also try this after the package is already installed:
 ```
 dpkg -L fzf
 ```
+***
+
+#### show the source/repo of a package
+
+To see where for example the git repo of a software is:
+```
+sudo apt-get source fritzing
+```
+Note that this does not show the apt repo of that package.
+
 
 ***
 
-#### repos
+#### apt repos
 
 This directory contains the repositories the user added to apt:
 ```
