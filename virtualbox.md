@@ -17,4 +17,4 @@ You will not be able to start VMs until this problem is fixed.
 ```
 
 => try to install this package `virtualbox-dkms`
-
+=> this package seems to be only available on Ubuntu but not on Debian...
