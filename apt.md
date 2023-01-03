@@ -39,3 +39,15 @@ This directory contains the repositories the user added to apt:
 ```
 
 https://wiki.debian.org/SourcesList
+
+***
+
+#### updating packages
+
+usually you do `apt update` and `apt upgrade`.\
+But sometimes packages are held back (this happened when going from `Debian Bullseye` to `Debian Sid`).\
+Then you can do:
+```
+sudo apt dist-upgrade
+```
+***
