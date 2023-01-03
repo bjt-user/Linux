@@ -27,3 +27,5 @@ Or just use `Debian Sid/unstable`.
 
 https://wiki.debian.org/VirtualBox#Debian_Sid.2FUnstable
 
+=> with Debian Sid you cant install virtualbox at all because of unmet dependencies...
+
