@@ -68,7 +68,7 @@ sdb      8:16   1  57.7G  0 disk
 It looks better.
 
 Mounting the device first and unmounting it later might ensure data integrity.\
-(mount.md)
+[mount.md]
 
 ***
 
