@@ -31,6 +31,7 @@ gpg --keyserver-options auto-key-retrieve --verify archlinux-version-x86_64.iso.
 => it says `good signature` but also a warning that it is not a trusted signature, whatever, it seeems to be ok
 
 ***
+#### burn iso to usb stick
 
 Then the plan is to use `dd` to flash the USB-stick.
 
@@ -41,7 +42,7 @@ Then plugin USB stick to find out its device name.\
 It is called "sdb" (sdb1-3).
 
 ```
-sudo dd if=~/Downloads/archlinux-2022.05.01-x86_64.iso of=/dev/sdb
+sudo dd if=~/Downloads/archlinux-2022.05.01-x86_64.iso of=/dev/sdb status=progress
 ```
 
 After 2 minutes:
@@ -65,6 +66,16 @@ sdb      8:16   1  57.7G  0 disk
 └─sdb2   8:18   1    78M  0 part
 ```
 It looks better.
+
+Mounting the device first and unmounting it later might ensure data integrity.\
+Try this next time:\
+```
+mount /dev/sdb
+dd ...
+umount /dev/sdb
+```
+
+***
 
 #### installation
 
