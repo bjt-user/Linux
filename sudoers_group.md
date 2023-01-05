@@ -54,4 +54,4 @@ And add the line like this:
 ```
 (you don't need tabs, one space between words is enough)
 
-It might need a proper `reboot` for a group change and sudoers file change to properly take effect.
+Start a new terminal session for a group change and sudoers file change to properly take effect.
