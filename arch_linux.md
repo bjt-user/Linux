@@ -3,6 +3,10 @@
 subscribe to mailing list arch-general@lists.archlinux.org:\
 https://lists.archlinux.org/mailman3/lists/arch-general.lists.archlinux.org/
 
+You can unsubscribe or make adjustments to your options via email by
+sending a message to:
+
+  arch-general-request@lists.archlinux.org
 
 
 ***
