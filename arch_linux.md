@@ -776,8 +776,12 @@ If all fails you can put `loadkeys de-latin1` into ~/.bashrc
 #### ssh into arch
 
 ```
+pacman -S openssh
 systemctl enable --now sshd
 ```
 
-The you need the perfect `/etc/ssh/sshd_config` to get in...
-
+The you need the perfect `/etc/ssh/sshd_config` to get in...\
+You need this line (remove `#` in front and a add `yes` at the end):
+```
+PermitRootLogin yes
+```
