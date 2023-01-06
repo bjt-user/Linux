@@ -772,3 +772,12 @@ setting vconsole.keymap=de-latin1 did not work\
 maybe the keymap_toggle needs to be set too
 
 If all fails you can put `loadkeys de-latin1` into ~/.bashrc
+
+#### ssh into arch
+
+```
+systemctl enable --now sshd
+```
+
+The you need the perfect `/etc/ssh/sshd_config` to get in...
+
