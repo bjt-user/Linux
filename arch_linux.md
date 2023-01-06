@@ -759,6 +759,7 @@ Alternatively, you can use the parted tool by specifying parted as the partition
 archinstall -p parted
 ```
 
+***
 ## troubleshooting
 
 #### keyboard layout doesn't persist
@@ -772,6 +773,14 @@ setting vconsole.keymap=de-latin1 did not work\
 maybe the keymap_toggle needs to be set too
 
 If all fails you can put `loadkeys de-latin1` into ~/.bashrc
+
+You have to recreate the initrd:
+```
+mkinitcpio -p linux
+```
+=> issue solved
+
+(this occured probably because I wrote to `etc/vconsole.conf` after exiting the chroot environment)
 
 #### ssh into arch
 
