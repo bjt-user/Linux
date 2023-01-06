@@ -1,7 +1,9 @@
 #### mailing list, irc
 
-subscribe to mailing list:\
+subscribe to mailing list arch-general@lists.archlinux.org:\
 https://lists.archlinux.org/mailman3/lists/arch-general.lists.archlinux.org/
+
+
 
 ***
 
@@ -762,3 +764,5 @@ archinstall -p parted
 Maybe I can set a kernel parameter for the keyboard layout:
 >Note that the kernel command line options vconsole.keymap=, vconsole.keymap_toggle=, vconsole.font=, vconsole.font_map=, vconsole.font_unimap= may be used to override the console settings at boot.
 
+setting vconsole.keymap=de-latin1 did not work\
+maybe the keymap_toggle needs to be set too
