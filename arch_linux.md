@@ -745,3 +745,13 @@ Alternatively, you can use the parted tool by specifying parted as the partition
 ```
 archinstall -p parted
 ```
+
+## troubleshooting
+
+#### keyboard layout doesn't persist
+
+`/etc/vconsole.conf` does not persist the keyboard layout
+
+Maybe I can set a kernel parameter for the keyboard layout:
+>Note that the kernel command line options vconsole.keymap=, vconsole.keymap_toggle=, vconsole.font=, vconsole.font_map=, vconsole.font_unimap= may be used to override the console settings at boot.
+
