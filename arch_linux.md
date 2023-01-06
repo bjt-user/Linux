@@ -1,3 +1,10 @@
+#### mailing list, irc
+
+subscribe to mailing list:\
+https://lists.archlinux.org/mailman3/lists/arch-general.lists.archlinux.org/
+
+***
+
 https://archlinux.org/download/
 
 Took the mirror from "Uni Bayreuth".\
