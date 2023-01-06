@@ -770,3 +770,5 @@ Maybe I can set a kernel parameter for the keyboard layout:
 
 setting vconsole.keymap=de-latin1 did not work\
 maybe the keymap_toggle needs to be set too
+
+If all fails you can put `loadkeys de-latin1` into ~/.bashrc
