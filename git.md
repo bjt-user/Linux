@@ -14,8 +14,12 @@ FAIL: ~~git config --global user.name myusername~~
 ```
 git config --global credential.helper store
 ```
-
+this command puts these lines in `~/.gitignore`:
+```
+[credential]
+	helper = store
 then
+```
 
 ```
 git push
