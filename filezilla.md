@@ -7,3 +7,6 @@ You can copy files from other hosts via ssh (more exactly sftp (ssh ftp) protoco
 
 then rightclick a file/folder on the remote site and click `download` and it will be saved in the same position as on the remote site.
 
+when you have downloaded the wrong folder:\
+server -> cancel current operation (ctrl + .)
+
