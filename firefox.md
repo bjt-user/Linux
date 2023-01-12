@@ -4,6 +4,30 @@ Type `about:config` in the address bar.
 
 Type `browser.urlbar.trimURLs` in the search bar and toggle to `false`.
 
+#### disable firefox cache loading
+
+To not load sites from the cache anymore do this:
+
+```
+about:config
+```
+
+`browser.cache.check_doc_frequency` auf 1 setzen
+
+from stackexchange:
+
+For reference, valid values for browser.cache.check_doc_frequency are:
+
+    0 – Check for a new version of a page once per session (a session starts when the first application window opens and ends when the last application window closes).
+
+    1 - Check for a new version every time a page is loaded. ← This one
+
+    2 – Never check for a new version – always load the page from cache. (offline mode?)
+
+    3- Check for a new version when the page is out of date. (Default)
+
+Obviously this will affect your entire browsing experience, but it's this or CTRL + F5 a few times.
+
 ***
 
 ### view cookies
