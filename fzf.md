@@ -18,3 +18,11 @@ cd /
 fzf
 # now type `fzf` and search for a key-bindings file
 ```
+
+#### multiselect
+
+```
+ls | fzf -m
+```
+Select with <kbd>tab</kbd> \
+deselect with <kbd>shift</kbd> + <kbd>tab</kbd>
