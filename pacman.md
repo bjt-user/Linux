@@ -44,6 +44,13 @@ pacman -Su
 ```
  to upgrade all packages that are out-of-date.
 
+(but better combine this with the `-y` option which )
+```
+pacman -Syu
+```
+Update package list and upgrade all packages afterwards.
+
+
 #### repositories
 
 repositories can be configured in `/etc/pacman.conf`
