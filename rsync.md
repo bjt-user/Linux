@@ -1,5 +1,8 @@
 rsync [Quelle] [Ziel]
 
+https://wiki.archlinux.org/title/Rsync
+
+https://wiki.archlinux.org/title/Rsync#Full_system_backup
 
 "~" funktioniert nicht, man muss "/home/bf" nutzen
 
@@ -29,3 +32,8 @@ sudo apt install openssh-server
 
 try the `-h` flag to make it more human readable.\
 Should change bytes to MegaBytes at the end.
+
+#### less output
+
+Try `--quiet` flag to produce less output.
+
