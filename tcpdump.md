@@ -35,3 +35,12 @@ tcpdump dst [destination ip]
 You can also filter for source port or destination port.
 
 https://www.youtube.com/watch?v=1lDfCRM6dWk
+
+#### listen on a specific port
+
+get the interface with `ip -4 a` command
+
+```
+tcpdump -i ens192 port 61612
+```
+
