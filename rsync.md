@@ -40,4 +40,4 @@ Try `--quiet` flag to produce less output.
 https://wiki.archlinux.org/title/Rsync#Full_system_backup
 
 The huge "sparse" file `/var/log/lastlog` is a problem when doing an rsync of `/`.\
-You might want to exclude that dir as well.
+You might want to exclude that dir as well. Or `/var/log/*` if you dont want to backup your logfiles.
