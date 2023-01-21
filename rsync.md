@@ -2,8 +2,6 @@ rsync [Quelle] [Ziel]
 
 https://wiki.archlinux.org/title/Rsync
 
-https://wiki.archlinux.org/title/Rsync#Full_system_backup
-
 "~" funktioniert nicht, man muss "/home/bf" nutzen
 
 example to back up a folder on a second pc:
@@ -37,3 +35,9 @@ Should change bytes to MegaBytes at the end.
 
 Try `--quiet` flag to produce less output.
 
+#### full system full system backup
+
+https://wiki.archlinux.org/title/Rsync#Full_system_backup
+
+The huge "sparse" file `/var/log/lastlog` is a problem when doing an rsync of `/`.\
+You might want to exclude that dir as well.
