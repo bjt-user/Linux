@@ -35,7 +35,7 @@ Should change bytes to MegaBytes at the end.
 
 Try `--quiet` flag to produce less output.
 
-### full system full system backup
+### FAIL: full system full system backup
 
 https://wiki.archlinux.org/title/Rsync#Full_system_backup
 
@@ -49,8 +49,7 @@ sudo rm -rf /var/log/lastlog
 ```
 should speed up your rsync of `/`
 
-but it still did not work..it finished, but `/home` is empty on the remote side...\
-maybe because it was "in use" by me...
+but it still did not work..it finished, but `/home` is empty on the remote side...
 
 
 #### troubleshooting
