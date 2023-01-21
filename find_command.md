@@ -39,3 +39,10 @@ Sometimes you get `permission denied`, `Input/Output error`, or `invalid argumen
 - -r or -R is recursive,
 - -n is line number, and
 - -w stands for match the whole word.
+
+## find large files
+
+```
+sudo find . -xdev -type f -size +100M
+```
+
