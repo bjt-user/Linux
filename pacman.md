@@ -1,21 +1,23 @@
 https://wiki.archlinux.org/title/Pacman
 
+#### install a package
 ```
-pacman -S packagename
+sudo pacman -S packagename
 ```
-to install a package
 
+
+#### show installed packages
 ```
 pacman -Q | less
 ```
-shows installed packages
+
 
 ```
 pacman -Qe
 ```
 shows explicitly installed packages
 
-
+***
 ```
 pacman -Qi openssh
 ```
@@ -27,17 +29,20 @@ this is for packages that are not installed yet:
 pacman -Si postgresql
 ```
 
+#### search for packages
 ```
 pacman -Ss openssh
 ```
 searches for packages that contain the name "openssh" either in their name or description
 
+#### uninstall packages
 
 uninstall a package:
 ```
 sudo pacman -R inetutils
 ```
 
+#### upgrade all packages
 You can also use
 ```
 pacman -Su
