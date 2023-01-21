@@ -10,7 +10,11 @@ sudo pacman -S packagename
 ```
 pacman -Q | less
 ```
-
+or
+```
+pacman -Q packagename
+```
+to list a specific package (the argument must exactly match the installed package name)
 
 ```
 pacman -Qe
