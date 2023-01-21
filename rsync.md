@@ -47,7 +47,9 @@ and removing the bullshit file
 ```
 sudo rm -rf /var/log/lastlog
 ```
-will really speed up your rsync of `/`
+should speed up your rsync of `/`
+
+but it still did not work..it finished, but `/home` is empty on the remote side...
 
 
 #### troubleshooting
