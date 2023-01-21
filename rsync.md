@@ -39,6 +39,16 @@ Try `--quiet` flag to produce less output.
 
 https://wiki.archlinux.org/title/Rsync#Full_system_backup
 
+clearing your systemd logs
+```
+sudo journalctl --vacuum-time=2d
+```
+and removing the bullshit file
+```
+sudo rm -rf /var/log/lastlog
+```
+will really speed up your rsync of `/`
+
 
 #### troubleshooting
 The huge "sparse" file `/var/log/lastlog` is a problem when doing an rsync of `/`.\
