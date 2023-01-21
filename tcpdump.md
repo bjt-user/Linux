@@ -44,3 +44,7 @@ get the interface with `ip -4 a` command
 tcpdump -i ens192 port 61612
 ```
 
+or if unsure about interface
+```
+tcpdump -i any port 61612
+```
