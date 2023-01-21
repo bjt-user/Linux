@@ -49,7 +49,8 @@ sudo rm -rf /var/log/lastlog
 ```
 should speed up your rsync of `/`
 
-but it still did not work..it finished, but `/home` is empty on the remote side...
+but it still did not work..it finished, but `/home` is empty on the remote side...\
+maybe because it was "in use" by me...
 
 
 #### troubleshooting
