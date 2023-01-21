@@ -46,3 +46,11 @@ You might want to exclude that dir as well. Or `/var/log/*` if you dont want to 
 ==> does not work, --exclude of `/var/log/*`, rsync will still want to sync that file...\
 excluding `/var/*` also doesnt work\
 maybe because rsync already started syncing that file...
+
+I did
+```
+sudo rm -rf /var/log/lastlog
+```
+this should not cause issues, it will be recreated after reboot and is a binary file with information about last logins.
+
+
