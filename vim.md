@@ -364,6 +364,26 @@ nnoremap <C-p> :tabp<CR>
 ctrl + n/p is used for completion, but only in insert mode, and I want to switch tabs only in normal mode.\
 So this seems to work.
 
+#### buffers
+
+https://linuxhandbook.com/vim-buffers/
+
+> Technically speaking, a buffer is anything that is loaded into the memory which is going to be used in the immediate future. The green progress bar in YouTube videos is an excellent example of a buffer. Now, talking about buffers in context with Vim, it means any file that you have opened in Vim that is stored in the memory for editing.
+
+:e (or :edit) to open a file in the active buffer\
+you can tab complete and use relative paths
+
+:badd (or :bad) to open a file in the background
+
+:ls to list all files in the current buffer
+
+:b2 to switch to the buffer 2 in the list
+
+:bnext (or :bn) to switch to the next buffer
+
+:bprevious (or :bp) to switch to the previous buffer
+
+***
 #### Help
 
 ```
@@ -472,8 +492,6 @@ And you can even **follow links** with `gf`. (for local files)\
 netrw should open the link with the external handler (see :h netrw-gx)
 
 #### vim as hex editor
-
-
 
 You can use the xxd command to transform a file in Vim to hex representation, doing
 ```
