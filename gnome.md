@@ -62,9 +62,6 @@ to disable an extension:
 gnome-extensions disable [extension name]
 ```
 
-If you have enabled an extension you probably need to reboot to make it active.\
-=> nope that didnt work. maybe something has changed in gnome 43.
-
 #### installation of an extension
 
 You can install extensions via browser but that seems weird.\
@@ -85,6 +82,20 @@ Looks like you can just put a folder that is named like this: `multi-monitors-ad
 then you might need to enable it
 ```
 gnome-extensions enable multi-monitors-add-on@spin83
+```
+
+#### outdated extensions
+
+With the upgrade to Fedora 37 and Gnome 43 most gnome-extensions changed to status: out of date.
+```
+$ gnome-extensions show no-overview@fthx 
+no-overview@fthx
+  Name: No overview at start-up
+  Description: No overview at start-up. For GNOME Shell 40+.
+  Path: /home/bofo@cpbs.at/.local/share/gnome-shell/extensions/no-overview@fthx
+  URL: https://github.com/fthx/no-overview
+  Version: 11
+  State: OUT OF DATE
 ```
 
 #### gnome tweaks
