@@ -62,7 +62,8 @@ to disable an extension:
 gnome-extensions disable [extension name]
 ```
 
-If you have enabled an extension you probably need to reboot to make it active.
+If you have enabled an extension you probably need to reboot to make it active.\
+=> nope that didnt work. maybe something has changed in gnome 43.
 
 #### installation of an extension
 
