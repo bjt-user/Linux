@@ -1,6 +1,12 @@
 Also see this:\
 [gsettings.md](gsettings.md)
 
+#### dconf and gsettings
+
+GSettings is a high-level API for application settings, front end for dconf.
+
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/desktop_migration_and_administration_guide/browsing-gsettings-values-for-applications
+
 #### custom keyboard shortcuts
 
 press the down arrow at the right upper corner of the screen\
