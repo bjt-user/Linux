@@ -84,6 +84,8 @@ then you might need to enable it
 gnome-extensions enable multi-monitors-add-on@spin83
 ```
 
+Then log out and log in again.
+
 #### outdated extensions
 
 With the upgrade to Fedora 37 and Gnome 43 most gnome-extensions changed to status: out of date.
