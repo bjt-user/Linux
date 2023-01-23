@@ -10,3 +10,5 @@ then rightclick a file/folder on the remote site and click `download` and it wil
 when you have downloaded the wrong folder:\
 server -> cancel current operation (ctrl + .)
 
+The connection details for your servers are stored in:\
+`/home/*/.config/filezilla/sitemanager.xml`
