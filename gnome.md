@@ -14,7 +14,7 @@ full screen terminal\
 gnome-terminal --full-screen\
 super + enter
 
-#### TODO: changing keyboard shortcuts with gsettings
+#### changing window managers keyboard shortcuts with gsettings
 
 ```
 $ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>1']"
@@ -24,7 +24,16 @@ $ gsettings get org.gnome.desktop.wm.keybindings switch-to-workspace-1
 $ gsettings get org.gnome.desktop.wm.keybindings switch-to-workspace-2
 ['<Super>2']
 ```
-But it did not take effect.
+But it did not take effect.\
+Because <kbd>super</kbd>+<kbd>1</kbd> was now used for two things.
+
+Setting the switch-to-application-n to nothing:
+```
+$ gsettings set org.gnome.shell.keybindings switch-to-application-1 "['']"
+$ gsettings set org.gnome.shell.keybindings switch-to-application-2 "['']"
+```
+
+=> that worked
 
 #### window manager
 
