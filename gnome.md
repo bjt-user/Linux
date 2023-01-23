@@ -41,6 +41,13 @@ you can move a window to the next workspace with <kbd>super</kbd> + <kbd>shift</
 ***
 ### gnome extensions
 
+This gui tool really make managing (enabling/disabling) gnome extensions easier:
+```
+sudo dnf install gnome-extensions-app
+```
+
+This is how to do it on the cli:
+
 ```
 gnome-extensions list
 ```
