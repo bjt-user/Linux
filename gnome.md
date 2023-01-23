@@ -39,7 +39,7 @@ you can move a window to the next workspace with <kbd>super</kbd> + <kbd>shift</
 (click on it to make sure it is selected first)
 
 ***
-#### gnome extensions
+### gnome extensions
 
 ```
 gnome-extensions list
@@ -55,6 +55,10 @@ to disable an extension:
 ```
 gnome-extensions disable [extension name]
 ```
+
+If you have enabled an extension you probably need to reboot to make it active.
+
+#### installation of an extension
 
 You can install extensions via browser but that seems weird.\
 You can also download a `.zip` by selecting `shell version` and `extension version`.
