@@ -63,6 +63,10 @@ keyboard -> view and customize shortcuts -> system -> lock screen (default: <kbd
 ***
 #### workspaces
 
+Gnome does not want empty workspaces, so you cant create workspace 3 if there is nothing in workspace 2.
+
+These are the default keybindings: (I showed above how to change them with `dconf-editor` or `gsettings`)
+
 <kbd>super</kbd> + <kbd>page up/down</kbd> to switch to another workspace\
 => if there is no other workspace you get into an empty workspace\
 => once you open an application in that empty workspace it becomes a new workspace
