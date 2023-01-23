@@ -49,7 +49,13 @@ to see all installed gnome extensions
 ```
 gnome-extensions list --disabled
 ```
-to see all disabled extensions and `--enabled` to see all enabled extensions
+to see all disabled extensions
+
+and
+```
+--enabled
+```
+to see all enabled extensions
 
 to disable an extension:
 ```
