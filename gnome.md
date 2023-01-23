@@ -14,6 +14,18 @@ full screen terminal\
 gnome-terminal --full-screen\
 super + enter
 
+#### TODO: changing keyboard shortcuts with gsettings
+
+```
+$ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>1']"
+$ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Super>2']"
+$ gsettings get org.gnome.desktop.wm.keybindings switch-to-workspace-1
+['<Super>1']
+$ gsettings get org.gnome.desktop.wm.keybindings switch-to-workspace-2
+['<Super>2']
+```
+But it did not take effect.
+
 #### window manager
 
 the window manager is called `Mutter`.
