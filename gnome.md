@@ -53,7 +53,7 @@ to see all disabled extensions
 
 and
 ```
---enabled
+gnome-extensions list --enabled
 ```
 to see all enabled extensions
 
