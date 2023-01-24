@@ -151,3 +151,15 @@ But you can't configure on which screen/workspace they appear.
 They seem to appear where they were at shutdown time.
 
 ---
+
+#### notifications
+
+In Fedora 37 there was the tool `zenity` installed.
+
+```
+$ zenity --info --text="Backup completed!"
+```
+
+```
+$ zenity --notification --text="Backup completed!"
+```
