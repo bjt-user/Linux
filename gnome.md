@@ -163,3 +163,8 @@ $ zenity --info --text="Backup completed!"
 ```
 $ zenity --notification --text="Backup completed!"
 ```
+
+or this also works:
+```
+notify-send "job finished"
+```
