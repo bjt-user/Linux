@@ -23,7 +23,7 @@ crontab -e
 
 ### you have to escape %
 
-**escape `%` sings with `\`!
+**escape `%` sings with `\`!**
 ```
 0 20 * * * /home/bf/coding/scripts/backup_cron.sh "arch-celeron" > ${HOME}/logs/backup$(date +\%Y\%m\%d).log 2>&1
 ```
