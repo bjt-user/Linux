@@ -31,3 +31,8 @@ But you can get into the cli with:
 ```
 podman attach containername
 ```
+
+To start and go into the container run this:
+```
+podman start -ia containername
+```
