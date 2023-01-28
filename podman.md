@@ -12,3 +12,17 @@ podman run hello-world
 ***
 
 You can call your "Dockerfiles" `Containerfile`.
+
+Then do this inside the container:
+```
+podman build . -t myimagename
+```
+
+```
+podman run -it --name [givecontaineraname] [imagename]
+```
+
+But after exiting that initial instance I cant get back into the cli of the container with
+```
+podman start -i bindcontainer
+```
