@@ -26,3 +26,8 @@ But after exiting that initial instance I cant get back into the cli of the cont
 ```
 podman start -i bindcontainer
 ```
+
+But you can get into the cli with:
+```
+podman attach bindcontainer
+```
