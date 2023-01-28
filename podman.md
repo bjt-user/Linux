@@ -36,3 +36,15 @@ To start and go into the container run this:
 ```
 podman start -ia containername
 ```
+
+
+#### configuration
+
+to make <kbd>ctrl</kbd>+<kbd>p</kbd> work to go back in bash history:
+```
+sudo vim /usr/share/containers/containers.conf
+``` 
+replace
+`detach_keys = "ctrl-p,ctrl-q"`
+with
+`detach_keys = "ctrl-z,ctrl-z"`
