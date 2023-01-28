@@ -36,7 +36,8 @@ To start and go into the container run this:
 ```
 podman start -ia containername
 ```
-
+But when I exit out of that container, changes made inside the container do not persist.\
+When I detach the container with the configured detach keys, and then attach it again, the changes do persist.
 
 #### configuration
 
