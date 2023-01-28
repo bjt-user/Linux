@@ -24,10 +24,10 @@ podman run -it --name [givecontaineraname] [imagename]
 
 But after exiting that initial instance I cant get back into the cli of the container with
 ```
-podman start -i bindcontainer
+podman start -i containername
 ```
 
 But you can get into the cli with:
 ```
-podman attach bindcontainer
+podman attach containername
 ```
