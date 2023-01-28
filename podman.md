@@ -4,7 +4,7 @@ On Debian Sid it worked by just doing
 ```
 sudo apt install podman
 ```
-and then run
+and then test
 ```
 podman run hello-world
 ```
