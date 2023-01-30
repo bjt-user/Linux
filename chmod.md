@@ -66,3 +66,4 @@ $ chmod 666 .
 $ ls -la
 ls: cannot open directory '.': Permission denied
 ``` 
+which is weird because 666 should be read and write for everyone
