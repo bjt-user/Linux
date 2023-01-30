@@ -58,7 +58,7 @@ with
 Error: copying system image from manifest list: writing blob: adding layer with blob "sha256:8921db27df2831fa6eaa85321205a2470c669b855f3ec95d5a3c2b46de0442c9": processing tar file(potentially insufficient UIDs or GIDs available in user namespace (requested 0:42 for /etc/shadow): Check /etc/subuid and /etc/subgid if configured locally and run podman-system-migrate: lchown /etc/shadow: invalid argument): exit status 1
 ```
 
-Maybe my `uid` is too high?
+Maybe my `uid` is too high? (active directory user)
 ```
 $ echo $UID
 1808613262
