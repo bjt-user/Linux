@@ -69,3 +69,9 @@ ls: cannot open directory '.': Permission denied
 which is weird because 666 should be read and write for everyone
 
 you probably need to be able to execute the directory
+
+most directories seem to have `drwx------.`.\
+To achieve this you do:
+```
+sudo chmod 700 .
+```
