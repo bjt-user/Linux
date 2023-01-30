@@ -57,3 +57,12 @@ for example:
 chmod u+x file
 ```
 give user permission to execute the file
+
+#### directory permissions
+
+If you give the current folder 666 permissions you cant read it anymore
+```
+$ chmod 666 .
+$ ls -la
+ls: cannot open directory '.': Permission denied
+``` 
