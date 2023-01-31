@@ -39,6 +39,11 @@ podman start -ia containername
 But when I exit out of that container, changes made inside the container do not persist.\
 When I detach the container with the configured detach keys, and then attach it again, the changes do persist.
 
+see how an image was created: (in an ugly format)
+```
+podman history docker.io/ubuntu/bind9 --no-trunc
+```
+
 #### configuration
 
 to make <kbd>ctrl</kbd>+<kbd>p</kbd> work to go back in bash history:
