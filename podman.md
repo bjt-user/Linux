@@ -1,4 +1,4 @@
-#### installation
+## installation
 
 On Debian Sid it worked by just doing
 ```
@@ -10,6 +10,8 @@ podman run hello-world
 ```
 
 ***
+
+#### Containerfile
 
 You can call your "Dockerfiles" `Containerfile`.
 
@@ -44,6 +46,23 @@ see how an image was created: (in an ugly format)
 podman history docker.io/ubuntu/bind9 --no-trunc
 ```
 (probably not consistent because an image can be flattened)
+
+#### COPY in Containerfiles
+
+Works good to put a local folder in your container:
+```
+FROM alpine
+
+RUN apk add vim
+
+COPY ./activemq /opt/activemq
+
+# to build:
+# podman build . -t "amq-copy-image"
+# to run:
+# podman run -it --name amq-copy-container amq-copy-image
+```
+(the folder `activemq` is in the same dir as the `Containerfile`)
 
 #### configuration
 
