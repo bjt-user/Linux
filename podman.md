@@ -43,6 +43,7 @@ see how an image was created: (in an ugly format)
 ```
 podman history docker.io/ubuntu/bind9 --no-trunc
 ```
+(probably not consistent because an image can be flattened)
 
 #### configuration
 
