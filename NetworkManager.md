@@ -21,6 +21,11 @@ nmcli device show wlp2s0
 nmcli connection
 ```
 
+#### show specific connection
+```
+nmcli connection show tunsnx
+```
+
 #### TODO: change dns server in network manager
 
 change these and try to make them permanent and check if it will overwrite `/etc/resolv.conf`:
