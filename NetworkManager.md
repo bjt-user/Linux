@@ -21,6 +21,12 @@ nmcli device show wlp2s0
 nmcli connection
 ```
 
+#### show wifi password
+
+```
+nmcli device wifi show-password
+```
+
 #### show specific connection
 ```
 nmcli connection show tunsnx
