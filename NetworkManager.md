@@ -44,4 +44,6 @@ IP4.DNS[2]:
 
 #### what happens if you disable NetworkManager
 
+without NetworkManager vpn doesnt work
 
+the hostname I get without NetworkManager is "fedora"
