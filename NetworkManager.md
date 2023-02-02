@@ -21,16 +21,18 @@ nmcli device show wlp2s0
 nmcli connection
 ```
 
-#### show wifi password
-
-```
-nmcli device wifi show-password
-```
-
 #### show specific connection
 ```
 nmcli connection show tunsnx
 ```
+
+#### change network devices
+
+Changing a device with
+```
+nmcli d modify tunsnx ipv4.dns "10.100.1.11"
+```
+did not work permanently, after a reboot this setting was gone
 
 #### TODO: change dns server in network manager
 
