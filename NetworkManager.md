@@ -26,7 +26,7 @@ nmcli connection
 nmcli connection show tunsnx
 ```
 
-#### change network devices
+#### FAIL: change network devices
 
 Changing a device with
 ```
@@ -41,3 +41,7 @@ change these and try to make them permanent and check if it will overwrite `/etc
 IP4.DNS[1]: 
 IP4.DNS[2]:
 ```
+
+#### what happens if you disable NetworkManager
+
+
