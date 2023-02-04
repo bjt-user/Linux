@@ -29,6 +29,15 @@ According to stackoverflow this is because this website is only accessible via h
 https://stackoverflow.com/questions/17732137/curl-get-request-returns-no-output
 
 
+#### silent
+
+Sometimes there is a statusbar in curl.\
+That shows how much and how fast was downloaded.\
+In scripts I turn that off with the silent option:
+```
+curl -s https://www.bild.de
+```
+
 ***
 ***
 ***
