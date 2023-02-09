@@ -63,6 +63,30 @@ The update-grub command is just a script which runs the grub-mkconfig tool to ge
 # grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+#### start script from grub in debian
+
+1. Create the script file on the root file system of the system you want to boot.
+
+1. Edit the GRUB configuration file (usually located at /etc/default/grub) and add the following line to the end of the file:
+
+```
+GRUB_CMDLINE_LINUX="init=/path/to/script"
+```
+
+1. Replace "/path/to/script" with the full path to your script file.
+
+1. Run the following command to update the GRUB configuration:
+
+```
+sudo update-grub
+```
+1. Reboot the system. The script will be executed during the boot process and its output will be displayed on the console.
+
+maybe add a `clear` at the start of the script
+
+you cant seem to exit with ctrl + c but with ctrl alt delete
+
+
 ***
 #### troubleshooting
 
