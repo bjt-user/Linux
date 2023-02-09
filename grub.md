@@ -86,6 +86,8 @@ maybe add a `clear` at the start of the script
 
 you cant seem to exit with ctrl + c but with ctrl alt delete
 
+=> but you cant use this for webscraping scripts because grub does not seem to have internet access.\
+you probably need to be in the os to access the internet.
 
 ***
 #### troubleshooting
@@ -105,3 +107,5 @@ I did this:
 grub2-mkconfig -o /etc/grub2.cfg
 ```
 => that worked (the `GRUB_TIMEOUT=0` did the trick, not the `GRUB_DISABLE_OS_PROBER=true` part)
+
+
