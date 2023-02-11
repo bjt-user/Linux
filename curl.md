@@ -49,6 +49,10 @@ So reading from the mail server seemed to be successful, if nothing was cached.
 You can specify the folder like this in the URL: `imaps://imap.web.de/Klamotten`\
 If you add `--request 'FETCH 1:* (BODY[])'` at the end you will see IDs of all emails in that folder.
 
+I managed to successfully retrieve an email with this command:
+```
+curl "imaps://username:password@imap.web.de/INBOX/;MAILINDEX=1"
+```
 
 ***
 ***
