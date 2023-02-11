@@ -55,6 +55,9 @@ curl "imaps://username:password@imap.web.de/INBOX/;MAILINDEX=1"
 ```
 (and that seemed to be the oldest email in the inbox folder)
 
+Maybe you can get more hints here:\
+https://www.rfc-editor.org/rfc/rfc3501
+
 ***
 ***
 ***
