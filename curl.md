@@ -55,8 +55,13 @@ curl "imaps://username:password@imap.web.de/INBOX/;MAILINDEX=1"
 ```
 (and that seemed to be the oldest email in the inbox folder)
 
-Maybe you can get more hints here:\
+You can get more hints here:\
 https://www.rfc-editor.org/rfc/rfc3501
+
+This will retrieve all email subjects and dates in that folder:
+```
+curl --url 'imaps://imap.web.de/Klamotten' --user 'username:password' --request 'FETCH 1:* (ENVELOPE)'
+```
 
 ***
 ***
