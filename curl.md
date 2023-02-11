@@ -68,6 +68,11 @@ This will retrieve the uids/MAILINDEX which can be given as the mailindex parame
 curl --url 'imaps://imap.web.de/Klamotten' --user 'username:password' --request 'FETCH 1:* (UID)'
 ```
 
+this gives mailindex and date:
+```
+curl --url 'imaps://imap.web.de/Klamotten' --user 'username:password' --request 'FETCH 1:* (UID INTERNALDATE)'
+```
+
 ***
 ***
 ***
