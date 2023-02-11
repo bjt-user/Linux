@@ -63,6 +63,11 @@ This will retrieve all email subjects and dates in that folder:
 curl --url 'imaps://imap.web.de/Klamotten' --user 'username:password' --request 'FETCH 1:* (ENVELOPE)'
 ```
 
+This will retrieve the uids/MAILINDEX which can be given as the mailindex parameter as seen above:
+```
+curl --url 'imaps://imap.web.de/Klamotten' --user 'username:password' --request 'FETCH 1:* (UID)'
+```
+
 ***
 ***
 ***
