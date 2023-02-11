@@ -38,6 +38,14 @@ In scripts I turn that off with the silent option:
 curl -s https://www.bild.de
 ```
 
+#### read email
+
+I could list all my folder names with this command in `Debian Sid`:
+```
+curl --url 'imaps://imap.web.de/' --user 'username:password'
+```
+So reading from the mail server seemed to be successful, if nothing was cached.
+
 ***
 ***
 ***
