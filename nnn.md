@@ -29,3 +29,15 @@ type <kbd>2</kbd> for the second tab and select the folder there where you want 
 <kbd>p</kbd> - for "coPy here"\
 <kbd>v</kbd> - for "moVe here"
 
+#### bookmarks
+
+Go to the folder you want to bookmark and hit `B`.\
+Then type in the name for the bookmark and hit enter.
+
+To go to a bookmarked location hit `b`, select the bookmark and hit enter.
+
+It works with symlinks in `~/.config/nnn/bookmarks`.
+
+You can also set bookmarks in your `.bashrc` with a variable.
+
+***
