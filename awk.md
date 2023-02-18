@@ -18,3 +18,11 @@ print multiple columns:
 who -b | awk '{ print $3, $4 }'
 ```
 ***
+
+#### print rows
+
+Print the second column of the **second row**:
+```
+awk 'FNR == 2 {print $2}'
+```
+***
