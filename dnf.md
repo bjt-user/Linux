@@ -116,3 +116,17 @@ alias dnf search=dnf search -C
 ```
 
 The same for `dnf list` -> `dnf list -C "foo"`
+
+#### get the source code of a program
+
+```
+dnf download --source neofetch
+```
+this downloads a file named `neofetch-7.1.0-8.fc37.src.rpm` into the current directory
+
+
+Once the source code package has been downloaded, you can extract the contents using the rpm2cpio and cpio commands. Here's an example:
+```
+rpm2cpio package_name-version-release.src.rpm | cpio -idmv
+```
+turns out neofetch is a 10000 line bash script.
