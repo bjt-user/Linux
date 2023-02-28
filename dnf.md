@@ -130,3 +130,10 @@ Once the source code package has been downloaded, you can extract the contents u
 rpm2cpio package_name-version-release.src.rpm | cpio -idmv
 ```
 turns out neofetch is a 10000 line bash script.
+
+#### autoremove
+
+```
+sudo dnf autoremove
+```
+This seemed to have removed too many packages.
