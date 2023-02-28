@@ -136,4 +136,5 @@ turns out neofetch is a 10000 line bash script.
 ```
 sudo dnf autoremove
 ```
-This seemed to have removed too many packages.
+This seemed to have removed too many packages.\
+For example `pass` was removed.
