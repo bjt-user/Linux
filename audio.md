@@ -1,3 +1,18 @@
+#### how to figure out if you are using pulseaudio or pipewire?
+
+```
+$ ps -ef | grep -i "pipe"
+bf          2079    1856  0 19:09 ?        00:00:10 /usr/bin/pipewire
+bf          2082    1856  0 19:09 ?        00:00:13 /usr/bin/pipewire-pulse
+```
+
+pipewire doesnt seem to have a systemd unit
+
+But there seems to a compatibility layer involved since `pulseaudio volume control` (or pavucontrol) does change my audio output volume.
+
+***
+
+
 Puts the sound of a .mp4 Video into a .mp3 file:
 
 ffmpeg -i input.mp4 output.mp3
