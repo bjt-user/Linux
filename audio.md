@@ -31,8 +31,12 @@ pw-cat -r recordme
 
 
 ***
+## pulseaudio
+```
+pactl info
+```
 
-
+***
 Puts the sound of a .mp4 Video into a .mp3 file:
 
 ffmpeg -i input.mp4 output.mp3
