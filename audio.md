@@ -18,6 +18,9 @@ https://docs.pipewire.org/
 
 `/usr/share/pipewire/pipewire.conf`
 
+The program `qpwgraph` is supposed to be a gui help for pipewire.\
+Seems very chaotic though.
+
 #### pipewire - record audio
 
 If you use `pipewire` you can test your input device by recording like this:
