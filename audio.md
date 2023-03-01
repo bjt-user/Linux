@@ -12,6 +12,15 @@ But there seems to a compatibility layer involved since `pulseaudio volume contr
 
 ***
 
+#### pipewire - record audio
+
+If you use `pipewire` you can test your input device by recording like this:
+```
+pw-cat -r recordme
+```
+
+***
+
 
 Puts the sound of a .mp4 Video into a .mp3 file:
 
