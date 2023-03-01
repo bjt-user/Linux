@@ -34,9 +34,10 @@ Reducing the resolution of a video:
 
 ffmpeg -i <input> -vf scale=480x360,setdar=4:3 <output>
 
-########################################################################################
-Volume problem in movies
-########################################################################################
+
+***
+
+## Volume problem in movies
 
 In movies the volume is always unappropriate, shootings and music is very loud,
 quiet conversations you want to hear are unhearable silent.
