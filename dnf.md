@@ -138,3 +138,16 @@ sudo dnf autoremove
 ```
 This seemed to have removed too many packages.\
 For example `pass` was removed.
+
+#### other helpful options
+
+This might be helpful:
+```
+dnf [options] list --autoremove
+              List packages which will be removed by the dnf autoremove command.
+```
+
+```
+dnf [options] list --obsoletes [<package-file-spec>...]
+              List packages installed on the system that are obsoleted by packages in any known repository.
+```
