@@ -151,3 +151,11 @@ dnf [options] list --autoremove
 dnf [options] list --obsoletes [<package-file-spec>...]
               List packages installed on the system that are obsoleted by packages in any known repository.
 ```
+
+```
+dnf clean all
+```
+
+```
+dnf updateinfo
+```
