@@ -1,4 +1,4 @@
-#### how to figure out if you are using pulseaudio or pipewire?
+## how to figure out if you are using pulseaudio or pipewire?
 
 ```
 $ ps -ef | grep -i "pipe"
@@ -12,12 +12,20 @@ But there seems to a compatibility layer involved since `pulseaudio volume contr
 
 ***
 
+## pipewire
+
+https://docs.pipewire.org/
+
+`/usr/share/pipewire/pipewire.conf`
+
 #### pipewire - record audio
 
 If you use `pipewire` you can test your input device by recording like this:
 ```
 pw-cat -r recordme
 ```
+
+
 
 ***
 
