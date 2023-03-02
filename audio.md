@@ -155,3 +155,17 @@ sudo apt reinstall pulseaudio
 reboot
 ```
 And sound was working again.
+
+
+## troubleshooting
+
+### no audio input from headset
+
+I had no audio input from my headset.
+
+The solution was to go into `pulse audio volume control` or `pavucontrol`.\
+"Input devices" -> And set your headset as `fallback`
+
+With `pipewire` you can test it with `pw-cat -r myfile`, go into `nnn` and hit enter on the file.
+
+***
