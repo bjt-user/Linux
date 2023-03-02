@@ -1,3 +1,5 @@
+`pulseaudio` and `pipewire` are audio servers.
+
 ## how to figure out if you are using pulseaudio or pipewire?
 
 ```
