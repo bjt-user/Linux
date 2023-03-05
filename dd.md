@@ -69,3 +69,20 @@ output:
 
 #### todo
 try option `status=progress` to get some information printed to stdout while writing to disk
+
+#### using time
+
+```
+time sudo dd if=~/Downloads/archlinux-x86_64.iso of=/dev/sdb status=progress
+```
+
+```
+839909888 bytes (840 MB, 801 MiB) copied, 133 s, 6.3 MB/s
+1659544+0 records in
+1659544+0 records out
+849686528 bytes (850 MB, 810 MiB) copied, 144.571 s, 5.9 MB/s
+
+real	2m24.624s
+user	0m2.323s
+sys	0m7.504s
+```
