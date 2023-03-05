@@ -67,8 +67,9 @@ output:
 31708938240 bytes (32 GB, 30 GiB) copied, 3181.97 s, 10.0 MB/s
 ```
 
-#### todo
-try option `status=progress` to get some information printed to stdout while writing to disk
+#### status=progress
+
+Option `status=progress` is a nice more verbose option to get some information printed to stdout while writing to disk.
 
 #### using time
 
