@@ -13,3 +13,10 @@ That is a big difference:
                  o      sets argv[0] of the shell to '-' in order to make the shell a login shell
 ```
 ***
+
+#### run command as another user
+
+```
+su -c "touch /home/myuser/generated_through_script.txt" myuser
+```
+***
