@@ -20,3 +20,14 @@ That is a big difference:
 su -c "touch /home/myuser/generated_through_script.txt" myuser
 ```
 ***
+
+#### TODO: run command block as another user
+
+```
+su somebody <<'EOF'
+command1 -p 'parameter with "quotes" inline'
+command2 -p 'parameter with "quotes" inline'
+command3 -p 'parameter with "quotes" inline'
+EOF
+```
+***
