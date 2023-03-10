@@ -47,6 +47,14 @@ In scripts I turn that off with the silent option:
 curl -s https://www.bild.de
 ```
 
+#### verbose
+
+`-v` or `--verbose`.\
+This should show more detailed information like proxy settings used or information about ssl negotiation.
+```
+curl -vI https://www.google.com
+```
+
 #### read email
 
 I could list all my folder names with this command in `Debian Sid`:
