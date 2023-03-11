@@ -9,6 +9,24 @@ Execute this command and then unplug/plug in your device to get info about the d
 udevadm monitor --property
 ```
 
+#### get attributes of "device"
+
+```
+udevadm monitor
+```
+
+replug your device
+
+you will get a "path" (which is not a real path on your system)
+
+then run
+```
+udevadm info --attribute-walk --path /devices/pci0000:00/0000:00:02.0/drm/card1
+```
+
+You will see `ATTR`s which you might use for rules.
+
+***
 
 #### links
 
