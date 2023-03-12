@@ -2,7 +2,7 @@
 
 find your device or drive with
 ```
-watch lsblk
+watch -d lsblk
 ```
 then stick in the drive
 
