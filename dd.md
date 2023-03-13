@@ -87,3 +87,13 @@ real	2m24.624s
 user	0m2.323s
 sys	0m7.504s
 ```
+
+#### eject
+
+Not sure what this does...
+
+```
+sudo eject /dev/sdb
+```
+
+***
