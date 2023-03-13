@@ -19,3 +19,11 @@ Fail: But when I do a `su - bf` with the root user I cannot set a password with 
 ```
 id <username>
 ```
+
+#### add to multiple groups
+
+```
+useradd bf -m -c "my comment" -G mygroupone,wheel
+```
+
+***
