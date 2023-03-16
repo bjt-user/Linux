@@ -18,3 +18,8 @@ You have to escape a pipe inside the double quotes.
 ```
 cat /etc/os-release | grep -i "name\|version"
 ```
+
+#### ommit blank lines
+```
+cat LocalSettings.php | grep -v "^$"
+```
