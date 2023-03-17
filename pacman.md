@@ -22,16 +22,20 @@ pacman -Qe
 shows explicitly installed packages
 
 ***
-```
-pacman -Qi openssh
-```
-shows information about an **installed** package\
-only works if the package is installed...
+
+#### show information about a package
 
 this is for packages that are not installed yet:
 ```
 pacman -Si postgresql
 ```
+
+```
+pacman -Qi openssh
+```
+shows information about an **installed** package\
+only works if the package is installed...
+***
 
 #### search for packages
 ```
