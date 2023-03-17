@@ -5,6 +5,14 @@ To use the `man` command you need to install:
 sudo pacman -S man-pages man
 ```
 
+#### understanding manpages
+
+There is a manpage about manpages.
+
+```
+man man
+```
+
 #### sections
 
 The man pages are divided into numbered sections; for programmers, the most
