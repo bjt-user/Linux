@@ -58,12 +58,16 @@ If you're not sure which command or function you want, you can perform a keyword
 summary lines, using `man -k keyword`.
 
 ***
-#### Searching the man pages
-
+#### Searching in man pages
+```
 /pattern
-
+```
 After that type <kbd>n</kbd> to get to the next occurence of the word.
 
+searching for flags:
+```
+/^\s+--compress
+```
 
 Advanced:
 The command above is doing a forward search.
