@@ -26,11 +26,15 @@ udevadm info --attribute-walk --path /devices/pci0000:00/0000:00:02.0/drm/card1
 
 You will see `ATTR`s which you might use for rules.
 
-***
-chatgpt:
-> You can't do a notify-send in a udev rule.\
-Udev rules are used to set up device nodes in the /dev directory and to run programs when a device is added or removed from the system.\
-They are not designed to send notifications.
+You might need to do this to make the changes take effect:
+``` 
+ $ sudo udevadm control --reload-rules
+```
+
+You should be able to specify a script in a udev rule:
+```
+KERNEL=="sd*", SUBSYSTEM=="block", ACTION=="add", ENV{DEVTYPE}=="disk", ENV{ID_SERIAL_SHORT}=="<your_usb_device_serial_number>", RUN+="/path/to/your/command.sh"
+```
 
 #### links
 
