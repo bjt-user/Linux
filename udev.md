@@ -2,7 +2,9 @@ udev (userspace /dev) is a device manager for the Linux kernel. As the successor
 ```
 systemctl status systemd-udevd
 ```
-there are rules in `/etc/udev/rules.d/`
+there are rules in `/etc/udev/rules.d/`\
+Udev rules are defined into files with the `.rules` extension.\
+The files in which the rules are defined are conventionally named with a **number as prefix** (e.g 50-udev-default.rules) and are processed in lexical order independently of the directory they are in.
 
 Execute this command and then unplug/plug in your device to get info about the device:
 ```
