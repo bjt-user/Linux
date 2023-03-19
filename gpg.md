@@ -22,4 +22,6 @@ gpg --list-keys
 
 #### arch: prompt for passphrase is broken
 
-maybe reboot helps, but is there a way to change this aweful prompt?
+reboot helped, but is there a way to change this aweful prompt?
+
+The prompt seems to be done by gpg-agent
