@@ -1,3 +1,7 @@
+## resources
+
+https://wiki.archlinux.org/title/GnuPG
+
 ```
 man gpg
 ```
@@ -11,7 +15,10 @@ gpg - OpenPGP encryption and signing tool
 `--full-gen-key` : Generate a new key pair with dialogs for all options.
 
 
-There should be a way so that you automatically login into gpg when you log into your computer.
+There should be a way so that you automatically login into gpg when you log into your computer.\
+Gnome-keyring seems to accomplish this.
+
+***
 
 #### show public keys
 
@@ -61,7 +68,18 @@ man gpg-preset-passphrase
 
 TODO: figure out how to get the `cache-id`
 
+#### pinentry
 
+To type in your passphrase `gpg` uses the pinentry program.\
+pinentry has different interface. You can list those with:
+```
+pacman -Ql pinentry | grep /usr/bin/
+```
+
+If you start those they all are the same though and dont look like the thing that starts with gpg...
+
+
+```
 ***
 ## troubleshooting
 
