@@ -78,6 +78,18 @@ pacman -Ql pinentry | grep /usr/bin/
 
 If you start those they all are the same though and dont look like the thing that starts with gpg...
 
+#### reload agent
+
+```
+gpg-connect-agent reloadagent /bye
+```
+
+#### edit keys
+
+```
+gpg --edit-key mykey
+```
+
 
 ```
 ***
