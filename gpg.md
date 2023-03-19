@@ -13,3 +13,9 @@ List public keys (yours and other people's keys)
 ```
 gpg --list-keys
 ```
+
+## troubleshooting
+
+#### arch: prompt for passphrase is broken
+
+maybe reboot helps, but is there a way to change this aweful prompt?
