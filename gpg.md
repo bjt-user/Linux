@@ -9,6 +9,7 @@ gpg - OpenPGP encryption and signing tool
 
 There should be a way so that you automatically login into gpg when you log into your computer.
 
+List public keys (yours and other people's keys)
 ```
 gpg --list-keys
 ```
