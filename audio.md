@@ -51,6 +51,15 @@ Reducing the resolution of a video:
 
 ffmpeg -i <input> -vf scale=480x360,setdar=4:3 <output>
 
+***
+
+#### play sounds on the command line
+
+Make sure "system sounds" are almost as high as the other sounds in `pulse audio volume control`.
+
+```
+mpg123 -q /path/to/myfile.mp3
+```
 
 ***
 
