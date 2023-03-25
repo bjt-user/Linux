@@ -39,18 +39,21 @@ pactl info
 ```
 
 ***
-Puts the sound of a .mp4 Video into a .mp3 file:
 
+#### ffmpeg
+
+Puts the audio of a .mp4 Video into a .mp3 file:
+```
 ffmpeg -i input.mp4 output.mp3
-
+```
 Converting to .webm works the same way:
-
+```
 ffmpeg -i input.mp4 output.webm
-
+```
 Reducing the resolution of a video:
-
+```
 ffmpeg -i <input> -vf scale=480x360,setdar=4:3 <output>
-
+```
 ***
 
 #### play sounds on the command line
