@@ -18,3 +18,17 @@ Use "html" instead of "plain text" as editing mode.
 
 From archwiki:
 > Evolution relies on GNOME Keyring for storing account passwords, so to use Evolution outside of GNOME, see GNOME/Keyring#Using the keyring and make sure a password keyring with the name login exists. 
+
+```
+sudo pacman -S gnome-keyring seahorse
+```
+
+Open `seahorse` -> `+` -> "Password keyring" -> name of the keyring: "login"\
+Then choose your password.
+
+Then you need to rightclick the keyring and "set as default"!
+
+Then start evolution, type in your email password and tick the box "add to keyring".\
+And it should remember it.
+
+***
