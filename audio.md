@@ -26,6 +26,15 @@ This will produce some noise on the default playback device for 10 seconds\
 and print some info about it on the screen.\
 See `man speaker-test` for more.
 
+Also useful:
+```
+amixer
+``` 
+
+```
+amixer info
+```
+
 There is also the package `alsa-topology-utils` which provides the command `alsatplg`.
 
 #### configuration
