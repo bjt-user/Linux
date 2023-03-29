@@ -34,6 +34,11 @@ amixer
 ```
 amixer info
 ```
+You can also specify the device
+```
+amixer -D default
+```
+(and you can also specify the card with `-c`)
 
 There is also the package `alsa-topology-utils` which provides the command `alsatplg`.
 
