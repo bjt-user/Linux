@@ -43,6 +43,12 @@ ctl.hw {
 }
 ```
 
+And there  is stuff here:
+```
+/etc/alsa/conf.d $ ls
+50-pipewire.conf  99-pipewire-default.conf
+```
+
 ***
 
 #### audioservers
