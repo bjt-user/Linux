@@ -1,4 +1,4 @@
-#### alsa
+## alsa
 
 ALSA is part of the kernel.
 
@@ -14,6 +14,36 @@ aplay -L
 -L, --list-pcms\
 List all PCMs defined\
 (there is also `default`)
+
+speaker-test is another useful binary from `alsa-utils`:
+```
+speaker-test -l 1
+```
+This will produce some noise on the default playback device for 10 seconds\
+and print some info about it on the screen.\
+See `man speaker-test` for more.
+
+#### configuration
+
+```
+$ cat /etc/alsa/alsactl.conf 
+#
+# ALSA library configuration file for alsactl tool
+# (/usr/share/alsa tree is not necessary for alsactl)
+#
+
+ctl.hw {
+	@args [ CARD ]
+	@args.CARD {
+		type string
+		default "0"
+	}
+	type hw
+	card $CARD
+}
+```
+
+***
 
 #### audioservers
 
