@@ -23,7 +23,7 @@ This will produce some noise on the default playback device for 10 seconds\
 and print some info about it on the screen.\
 See `man speaker-test` for more.
 
-There is also the package `alsa-topology-utils` which might be helpful somehow.
+There is also the package `alsa-topology-utils` which provides the command `alsatplg`.
 
 #### configuration
 
