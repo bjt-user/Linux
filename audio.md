@@ -2,6 +2,9 @@
 
 ALSA is part of the kernel.
 
+What is PCM or a PCM device?\
+https://en.wikipedia.org/wiki/Pulse-code_modulation
+
 `aplay` is part of the package `alsa-utils` on Fedora.
 ```
 aplay -l
