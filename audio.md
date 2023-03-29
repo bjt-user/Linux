@@ -8,6 +8,13 @@ aplay -l
 ```
 List all soundcards and digital audio devices.
 
+```
+aplay -L
+```
+-L, --list-pcms\
+List all PCMs defined\
+(there is also `default`)
+
 #### audioservers
 
 `pulseaudio` and `pipewire` are audio servers.\
