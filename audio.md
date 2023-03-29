@@ -40,6 +40,10 @@ amixer -D default
 ```
 (and you can also specify the card with `-c`)
 
+```
+amixer controls
+```
+
 There is also the package `alsa-topology-utils` which provides the command `alsatplg`.
 
 #### configuration
