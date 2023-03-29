@@ -2,6 +2,7 @@
 
 ALSA is part of the kernel.
 
+`aplay` is part of the package `alsa-utils` on Fedora.
 ```
 aplay -l
 ```
