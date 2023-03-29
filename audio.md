@@ -72,11 +72,12 @@ And there  is stuff here:
 50-pipewire.conf  99-pipewire-default.conf
 ```
 
-#### TODO: select default soundcard and/or pcm device
-
-https://askubuntu.com/questions/150851/how-do-i-select-a-default-sound-card-with-alsa
+#### select default soundcard and/or pcm device
 
 https://www.alsa-project.org/wiki/Setting_the_default_device
+
+=> that works
+you can test with `speaker-test -l 1` or with the minimal pcm example code
 
 ***
 
