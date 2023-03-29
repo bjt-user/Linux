@@ -1,4 +1,16 @@
-`pulseaudio` and `pipewire` are audio servers.
+#### alsa
+
+ALSA is part of the kernel.
+
+```
+aplay -l
+```
+List all soundcards and digital audio devices.
+
+#### audioservers
+
+`pulseaudio` and `pipewire` are audio servers.\
+They are on top of alsa.
 
 ## how to figure out if you are using pulseaudio or pipewire?
 
