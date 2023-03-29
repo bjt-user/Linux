@@ -76,6 +76,8 @@ And there  is stuff here:
 
 https://askubuntu.com/questions/150851/how-do-i-select-a-default-sound-card-with-alsa
 
+https://www.alsa-project.org/wiki/Setting_the_default_device
+
 ***
 
 #### audioservers
