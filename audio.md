@@ -72,6 +72,10 @@ And there  is stuff here:
 50-pipewire.conf  99-pipewire-default.conf
 ```
 
+#### TODO: select default soundcard and/or pcm device
+
+https://askubuntu.com/questions/150851/how-do-i-select-a-default-sound-card-with-alsa
+
 ***
 
 #### audioservers
