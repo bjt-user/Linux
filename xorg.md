@@ -1,7 +1,9 @@
 #### log file
 
-`/var/log/Xorg.0.log` is the log file for the last xorg startup.
+On Arch Linux `/var/log/Xorg.0.log` is the log file for the last xorg startup.
 
 You can for example search for `pci` to look for when your graphics driver is loaded.
+
+On Fedora the log file is not there.
 
 ***
