@@ -1,3 +1,7 @@
+#### resources
+
+https://magcius.github.io/xplain/article/index.html
+
 #### log file
 
 On Arch Linux `/var/log/Xorg.0.log` is the log file for the last xorg startup.
