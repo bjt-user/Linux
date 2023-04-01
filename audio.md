@@ -5,6 +5,8 @@ ALSA is part of the kernel.
 What is PCM or a PCM device?\
 https://en.wikipedia.org/wiki/Pulse-code_modulation
 
+#### aplay
+
 `aplay` is part of the package `alsa-utils` on Fedora.
 ```
 aplay -l
@@ -18,6 +20,14 @@ aplay -L
 List all PCMs defined\
 (there is also `default`)
 
+You can use `aplay` to play audio files.\
+Without argument it works on wav/raw files:
+```
+aplay example.wav
+```
+With `-f` there are different formats available, but you would need to be an audio expert to understand what these mean.
+
+***
 speaker-test is another useful binary from `alsa-utils`:
 ```
 speaker-test -l 1
