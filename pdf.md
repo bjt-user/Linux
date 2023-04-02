@@ -10,7 +10,8 @@ You can read pdfs in Firefox
 zathura debugging_with_gdb.pdf
 ```
 <kbd>j/k</kbd> to scroll\
-<kbd>J/K</kbd> next page/previous page
+<kbd>J/K</kbd> next page/previous page\
+<kbd>+/-</kbd> zoom in/out
 
 `:500` - go to page 500\
 `:bmark mystring` - set a bookmark for the current page with the label `mystring`\
