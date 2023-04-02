@@ -102,6 +102,8 @@ Replace "1" with number of your card determined above.
 
 you can test with `speaker-test -l 1` or with the minimal pcm example code
 
+**Note: The problem is, that your USB headset might be card 0 one time and when you replug it another time it might be card 1.**
+
 ***
 
 #### audioservers
