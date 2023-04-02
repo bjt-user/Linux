@@ -1,3 +1,22 @@
+## reading pdf
+
+#### browser
+
+You can read pdfs in Firefox
+
+#### zathura
+
+```
+zathura debugging_with_gdb.pdf
+```
+<kbd>j/k</kbd> to scroll\
+<kbd>J/K</kbd> next page/previous page
+
+`:500` - go to page 500\
+`:bmark mystring` - set a bookmark for the current page with the label `mystring`\
+`:blist` - list all bookmarks\
+`:bdelete mystring` - delete bookmar named `mystring`
+
 #### Merge PDFs
 
 pdfunite example1.pdf example2.pdf example3.pdf output.pdf
