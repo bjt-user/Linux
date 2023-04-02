@@ -87,6 +87,19 @@ And there  is stuff here:
 https://www.alsa-project.org/wiki/Setting_the_default_device
 
 => that works
+
+Find your desired card with:
+```
+cat /proc/asound/cards
+```
+
+and then create /etc/asound.conf with following:
+```
+defaults.pcm.card 1
+defaults.ctl.card 1
+```
+Replace "1" with number of your card determined above. 
+
 you can test with `speaker-test -l 1` or with the minimal pcm example code
 
 ***
