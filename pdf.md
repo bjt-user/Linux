@@ -40,4 +40,11 @@ pdfcrop --margins "-600 -450 0 0" input.pdf output.pdf
 (see `pdfcrop --help`)
 (`--margins "<left> <top> <right> <bottom>"                    (0 0 0 0)`)
 
+#### converting image to pdf
+
+```
+convert myimage.jpg myimage.pdf
+```
+
+***
 TODO: Play around with python pdf libs.
