@@ -96,6 +96,21 @@ user	96m2.161s
 sys	10m56.667s
 ```
 
+```
+sudo cp -v arch/x86/boot/bzImage /boot/vmlinuz-linux-6.2-bf
+```
+
+set `GRUB_TIMEOUT` to 5 seconds in `/etc/default/grub`
+
+then:
+```
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+```
+sudo reboot
+```
+Maybe you can choose the kernel in grub?
 
 ***
 #### try: building a kernel
