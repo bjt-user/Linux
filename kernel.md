@@ -8,6 +8,8 @@ In that book is explained how to build and install a kernel.
 
 There is nothing about building a kernel here: https://doc.lagout.org/operating%20system%20/linux/Linux%20in%20a%20Nutshell,%206th%20Ed.pdf
 
+This is it: http://www.kroah.com/lkn/
+
 ***
 
 #### kernel configuration
