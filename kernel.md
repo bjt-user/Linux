@@ -4,7 +4,9 @@ https://kernelnewbies.org/KernelBuild
 
 There is a book called "linux in a nutshell" from Greg Kroah-Hartman.\
 It should be a free ebook that you can get online somewhere.\
-In that book is explained how to build and install a kernel. 
+In that book is explained how to build and install a kernel.
+
+There is nothing about building a kernel here: https://doc.lagout.org/operating%20system%20/linux/Linux%20in%20a%20Nutshell,%206th%20Ed.pdf
 
 ***
 
