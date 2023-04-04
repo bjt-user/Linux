@@ -110,7 +110,11 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 sudo reboot
 ```
-Maybe you can choose the kernel in grub?
+
+=> over advanced options in grub I could boot into the compiled kernel\
+but no internet, so probably the wifi module was not loaded
+
+I might also need to compile and include the kernel modules somehow.
 
 ***
 #### try: building a kernel
