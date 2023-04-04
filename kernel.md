@@ -81,7 +81,17 @@ sudo pacman -S bc
 ```
 time make
 ```
-to be continued...
+
+```
+...
+Kernel: arch/x86/boot/bzImage is ready  (#1)
+...
+
+real	109m12.873s
+user	96m2.161s
+sys	10m56.667s
+```
+
 
 ***
 #### try: building a kernel
