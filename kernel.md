@@ -19,5 +19,27 @@ kernel/git/torvalds/linux.git	Linux kernel source tree	Linus Torvalds	12 hours	s
 ```
 git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
 ```
+and it is 4.3G big.
+
+It's probably not a stable kernel though.
+
+You can also download tarballs from here:\
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/
+
+```
+$ time wget https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/snapshot/linux-6.2.tar.gz
+...
+real	1m20.510s
+```
+
+```
+$ time tar -xf linux-6.2.tar.gz 
+
+real	0m17.738s
+user	0m10.462s
+sys	0m12.495s
+```
+
+This was way faster than doing a git clone...
 
 ***
