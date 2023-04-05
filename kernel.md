@@ -140,6 +140,10 @@ sys	0m0.355s
 
 Then I try to reboot into the kernel again.
 
+Still nothing, `lsmod` with no output.
+
+next try: `depmod -a`
+
 ***
 #### try: building a kernel
 
