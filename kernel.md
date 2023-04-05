@@ -120,6 +120,26 @@ but no internet, so probably the wifi module was not loaded
 
 I might also need to compile and include the kernel modules somehow.
 
+```
+$ time sudo make modules_install
+  INSTALL /lib/modules/6.2.0/kernel/fs/efivarfs/efivarfs.ko
+  INSTALL /lib/modules/6.2.0/kernel/drivers/thermal/intel/x86_pkg_temp_thermal.ko
+  INSTALL /lib/modules/6.2.0/kernel/net/netfilter/nf_log_syslog.ko
+  INSTALL /lib/modules/6.2.0/kernel/net/netfilter/xt_mark.ko
+  INSTALL /lib/modules/6.2.0/kernel/net/netfilter/xt_nat.ko
+  INSTALL /lib/modules/6.2.0/kernel/net/netfilter/xt_LOG.ko
+  INSTALL /lib/modules/6.2.0/kernel/net/netfilter/xt_MASQUERADE.ko
+  INSTALL /lib/modules/6.2.0/kernel/net/netfilter/xt_addrtype.ko
+  INSTALL /lib/modules/6.2.0/kernel/net/ipv4/netfilter/iptable_nat.ko
+  DEPMOD  /lib/modules/6.2.0
+
+real	0m0.950s
+user	0m0.554s
+sys	0m0.355s
+```
+
+Then I try to reboot into the kernel again.
+
 ***
 #### try: building a kernel
 
