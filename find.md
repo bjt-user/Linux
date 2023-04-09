@@ -46,3 +46,21 @@ Sometimes you get `permission denied`, `Input/Output error`, or `invalid argumen
 sudo find . -xdev -type f -size +100M
 ```
 
+## find directories
+
+find all directories in the current directory:
+```
+find . -type d
+```
+
+search for dirs starting with an `m` in the current dir:
+```
+$ find . -type d -name "m*"
+./man
+./m
+./misc
+./menu
+./doc/html/man
+```
+
+***
