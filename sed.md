@@ -106,3 +106,11 @@ print line 5,6, and 7:
 ```
 sed -n '5,7p' myfile.txt
 ```
+
+#### change Windows line endings to Linux line endings
+
+```
+sed -i -e 's/\r$//' myscript.sh
+```
+
+***
