@@ -24,3 +24,13 @@ strace -c openssl s_client -connect google.com:443
 ```
 
 ***
+
+#### filtering the output
+
+For some reason `strace` writes all its output to stderr.\
+So you need to redirect to grep:
+```
+strace openssl s_client -connect google.com:443 2>&1 | grep -i "^connect"
+```
+
+***
