@@ -1,5 +1,22 @@
+#### resources
+
 https://neomutt.org/guide/intro
 
+***
+
+#### configuration
+
+https://neomutt.org/guide/configuration
+
+NeoMutt will search for a system config file in a neomutt directory in several places.\
+First it searches the locations specified in the XDG_CONFIG_DIRS environment variable, which defaults to /etc/xdg.\
+Next, it looks in /etc. Finally, it tries /usr/share.
+
+There is `/etc/neomuttrc.d`. But the main config file is not inthere.
+
+There is a `~/.config/mutt/.muttrc`.
+
+***
 ```
 $ apt list neomutt
 Listing... Done
