@@ -87,6 +87,7 @@ but the `./configure` will fail
 <bf> Are there email providers that work better with neomutt?
 <vuori> fastmail
 ```
+https://www.fastmail.com/
 
 ## troubleshooting
 
