@@ -73,7 +73,13 @@ sudo git clone https://github.com/neomutt/neomutt.git /opt/neomutt
 but the `./configure` will fail
 
 
-#### fails
+## troubleshooting
 
 Debian says `gnutls_handshake: An unexpected TLS packet was received`.\
 Arch Linux Container says: `login failed`.
+
+#### invalid credentials
+
+I get `invalid credentials` even though the credentials are correct.
+
+***
