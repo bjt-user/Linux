@@ -85,7 +85,6 @@ but the `./configure` will fail
 
 ```
 <bf> Are there email providers that work better with neomutt?
-* weirdsmiley (~weirdsmil@103.25.231.102) has joined
 <vuori> fastmail
 ```
 
