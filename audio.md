@@ -141,7 +141,11 @@ If you use `pipewire` you can test your input device by recording like this:
 pw-cat -r recordme
 ```
 
+#### pipe audio to pipewire
 
+```
+cat Hitman_Budapest_Bath_Hotel.mp3 | paplay
+```
 
 ***
 ## pulseaudio
