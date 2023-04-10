@@ -14,7 +14,18 @@ Next, it looks in /etc. Finally, it tries /usr/share.
 
 There is `/etc/neomuttrc.d`. But the main config file is not inthere.
 
-There is a `~/.config/mutt/.muttrc`.
+There is a `~/.config/mutt/.muttrc` and a `~/.muttrc`.
+
+This didnt work:
+```
+set spoolfile = "+INBOX"
+```
+
+When I comment it out:
+```
+#set spoolfile = "+INBOX"
+```
+the mailbox is set to /var/mail/bf and there is debian stuff in there release notes...
 
 ***
 ```
