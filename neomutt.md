@@ -2,6 +2,8 @@
 
 https://neomutt.org/guide/intro
 
+IRC: libera.chat #neomutt
+
 ***
 
 #### configuration
@@ -79,6 +81,13 @@ sudo git clone https://github.com/neomutt/neomutt.git /opt/neomutt
 
 but the `./configure` will fail
 
+#### email providers
+
+```
+<bf> Are there email providers that work better with neomutt?
+* weirdsmiley (~weirdsmil@103.25.231.102) has joined
+<vuori> fastmail
+```
 
 ## troubleshooting
 
