@@ -89,6 +89,10 @@ but the `./configure` will fail
 ```
 https://www.fastmail.com/
 
+```
+<vuori> fastmail has very nice and granular app password support which also makes setting up mbsync and outbound smtp easy
+```
+
 ## troubleshooting
 
 Debian says `gnutls_handshake: An unexpected TLS packet was received`.\
