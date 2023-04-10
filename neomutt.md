@@ -61,6 +61,13 @@ But there is still the unsolveable barrier of this error:
 gnutls_handshake: An unexpected TLS packet was received
 ```
 
+#### gmail
+
+https://github.com/neomutt/neomutt/issues/3453
+
+It says you can create "app passwords" but only if you have 2fa enabled...
+
+Even with 2fa I didnt find a link for this...
 
 #### todo: install from source
 
