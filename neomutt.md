@@ -27,6 +27,26 @@ When I comment it out:
 ```
 the mailbox is set to /var/mail/bf and there is debian stuff in there release notes...
 
+This site https://neomutt.org/test-doc/bestpractice/nativimap says to set the spool file\
+to your imap server like this:
+```
+set spoolfile="imaps://imap.domain.tld/"
+```
+But I get `login failed` and `SASL authentication failed`.
+
+***
+#### debugging
+
+`-d level`\
+Log debugging output to a file (default is "~/.neomuttdebug0"). The level can range from 1–5 and affects verbosity (a value of 2 is recommended)
+
+Using this option along with -l is useful to log the early startup process (before reading any configuration and hence $debug_level and $debug_file) 
+
+```
+$ neomutt -d 5
+```
+will write the logfile `~/.neomuttdebug0`.
+
 ***
 ```
 $ apt list neomutt
