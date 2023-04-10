@@ -85,13 +85,15 @@ but the `./configure` will fail
 
 ```
 <bf> Are there email providers that work better with neomutt?
-<vuori> fastmail
+<...> fastmail
 ```
 https://www.fastmail.com/
 
 ```
-<vuori> fastmail has very nice and granular app password support which also makes setting up mbsync and outbound smtp easy
+<...> fastmail has very nice and granular app password support which also makes setting up mbsync and outbound smtp easy
 ```
+=> when I try to register there it says "30-day trial" ...\
+=> I wont use it.
 
 ## troubleshooting
 
