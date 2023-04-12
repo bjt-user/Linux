@@ -1,0 +1,7 @@
+#### xorg
+
+```
+setxkbmap de
+```
+
+***
