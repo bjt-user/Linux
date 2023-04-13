@@ -29,12 +29,30 @@ For reference, valid values for browser.cache.check_doc_frequency are:
 Obviously this will affect your entire browsing experience, but it's this or CTRL + F5 a few times.
 
 ***
-#### backup bookmarks
+#### TODO: backup bookmarks
 
 https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data?redirectslug=Profiles&redirectlocale=en-US
 
 three lines -> help -> more troubleshooting information\
 -> application basics -> profile directory
+
+```
+~/.mozilla/firefox/4x2i7rym.default-release $ sqlite3 places.sqlite
+SQLite version 3.40.0 2022-11-16 12:10:08
+Enter ".help" for usage hints.
+sqlite> .tables
+moz_anno_attributes                 moz_keywords                      
+moz_annos                           moz_meta                          
+moz_bookmarks                       moz_origins                       
+moz_bookmarks_deleted               moz_places                        
+moz_historyvisits                   moz_places_metadata               
+moz_inputhistory                    moz_places_metadata_search_queries
+moz_items_annos                     moz_previews_tombstones
+```
+
+
+
+***
 
 ### view cookies
 #### method 1
