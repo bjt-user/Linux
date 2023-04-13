@@ -29,7 +29,7 @@ For reference, valid values for browser.cache.check_doc_frequency are:
 Obviously this will affect your entire browsing experience, but it's this or CTRL + F5 a few times.
 
 ***
-#### TODO: backup bookmarks
+#### backup bookmarks
 
 https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data?redirectslug=Profiles&redirectlocale=en-US
 
@@ -56,7 +56,12 @@ select * from moz_bookmarks;
 ```
 But you dont see the corresponding URLs in clear text. Might be encrypted.
 
-Just copying `places.sqlite` over to another users folders does not work though...
+You can copy over `places.sqlite` to another users profile.\
+But you have to make sure that the permissions are correct.
+
+```
+sudo chown myuser:myuser places.sqlite
+```
 
 ***
 
@@ -88,3 +93,10 @@ expand it by clicking on the arrow and click on the hostname
 ## troubleshooting
 
 https://support.mozilla.org/en-US/kb/fix-bookmarks-and-history-will-not-be-functional
+
+=> do a
+```
+sudo chown myuser:myuser places.sqlite
+```
+
+***
