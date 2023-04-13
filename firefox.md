@@ -29,6 +29,12 @@ For reference, valid values for browser.cache.check_doc_frequency are:
 Obviously this will affect your entire browsing experience, but it's this or CTRL + F5 a few times.
 
 ***
+#### backup bookmarks
+
+https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data?redirectslug=Profiles&redirectlocale=en-US
+
+three lines -> help -> more troubleshooting information\
+-> application basics -> profile directory
 
 ### view cookies
 #### method 1
