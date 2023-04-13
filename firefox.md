@@ -50,7 +50,11 @@ moz_inputhistory                    moz_places_metadata_search_queries
 moz_items_annos                     moz_previews_tombstones
 ```
 
-
+You can see the labels of your bookmarks:
+```
+select * from moz_bookmarks;
+```
+But you dont see the corresponding URLs in clear text. Might be encrypted.
 
 ***
 
