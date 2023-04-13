@@ -83,3 +83,8 @@ or click on the three lines at the upper right corner -> more tools -> Web Devel
 
 click on the `storage` ribbon and click on `cookies` at the left hand side\
 expand it by clicking on the arrow and click on the hostname
+
+
+## troubleshooting
+
+https://support.mozilla.org/en-US/kb/fix-bookmarks-and-history-will-not-be-functional
