@@ -56,6 +56,8 @@ select * from moz_bookmarks;
 ```
 But you dont see the corresponding URLs in clear text. Might be encrypted.
 
+Just copying `places.sqlite` over to another users folders does not work though...
+
 ***
 
 ### view cookies
