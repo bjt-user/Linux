@@ -149,6 +149,17 @@ cat Hitman_Budapest_Bath_Hotel.mp3 | paplay
 
 ***
 ## pulseaudio
+
+#### installation
+
+```
+sudo pacman -S pulseaudio
+sudo pacman -S pavucontrol
+sudo reboot
+```
+
+#### pulseaudio commands
+
 ```
 pactl info
 ```
