@@ -24,3 +24,7 @@ After installing this:
 sudo pacman -S xorg-xinit
 ```
 I could use `startx` but it did not launch into i3.
+
+Maybe install a graphics driver first?
+
+***
