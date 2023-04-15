@@ -62,6 +62,8 @@ there is no `autojump` package in pacman...
 There is an AUR though:\
 https://aur.archlinux.org/packages/autojump
 
+=> that worked
+
 #### manual install fail
 
 ```
