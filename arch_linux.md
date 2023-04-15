@@ -776,11 +776,9 @@ If all fails you can put `loadkeys de-latin1` into ~/.bashrc
 
 You have to recreate the initrd:
 ```
-mkinitcpio -p linux
+sudo mkinitcpio -p linux
 ```
 => issue solved
-
-(this occured probably because I wrote to `etc/vconsole.conf` after exiting the chroot environment)
 
 #### ssh into arch
 
