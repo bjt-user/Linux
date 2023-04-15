@@ -55,6 +55,13 @@ put this in your bashrc:
 source /usr/share/autojump/autojump.bash
 ```
 
+#### arch linux
+
+there is no `autojump` package in pacman...
+
+There is an AUR though:\
+https://aur.archlinux.org/packages/autojump
+
 #### manual install fail
 
 ```
