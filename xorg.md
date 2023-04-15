@@ -25,6 +25,25 @@ sudo pacman -S xorg-xinit
 ```
 I could use `startx` but it did not launch into i3.
 
-Maybe install a graphics driver first?
+You need to do this first:
+```
+cp /etc/X11/xinit/xinitrc /home/bf/.xinitrc
+```
+Then edit it:
+``` 
+vim ~/.xinitrc
+```
+
+delete the last 5 lines after `fi`.\
+Then insert this at the last line:
+```
+exec i3
+```
+
+reboot, login as a normal user and do:
+```
+startx
+```
+=> and `i3` was started!
 
 ***
