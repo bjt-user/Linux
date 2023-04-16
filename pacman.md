@@ -50,6 +50,33 @@ uninstall a package:
 sudo pacman -R inetutils
 ```
 
+But this doesnt seem to remove dependencies.
+
+#### TODO: uninstall package and remove dependencies
+
+```
+sudo pacman -Rcns <package>
+```
+
+`-R`: remove
+
+`-c`: cascade (I always check what will get removed)
+
+`-n`: no save (when I remove something I really want it gone)
+
+`-s`: remove dependencies ( mostly for cleanup)
+
+If I see potential problems with -c
+
+I cancel and do
+
+sudo pacman -Runs <package>
+
+-u: avoid removing packages if other packages depend on it.
+
+And I use btrfs and snapper creating snapshots after every install or remove in case I mess something u
+
+
 #### upgrade all packages
 You can also use
 ```
