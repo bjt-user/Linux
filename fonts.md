@@ -1,3 +1,9 @@
+#### resources
+
+xorg: https://wiki.archlinux.org/title/Font_configuration
+
+https://wiki.archlinux.org/title/Fonts
+
 #### monospace fonts
 
 It is important to use a font with a fixed width also called monospaced fonts.\
