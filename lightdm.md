@@ -1,4 +1,6 @@
-LightDM is a cross-desktop display manager
+"LightDM is a cross-desktop display manager"
+
+You can comfortably login to your X11 session without typing `startx`.
 
 #### resources
 
