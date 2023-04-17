@@ -41,6 +41,12 @@ sudo apt install -y fonts-inconsolata fonts-hack
 
 (this does not work on `Fedora 36` with `dnf`)
 
+This instantly changed my font in terminator and i3status bar:
+```
+sudo pacman -S ttf-inconsolata
+```
+But how do I set the font size?
+
 #### good colors
 
 For the terminal emulators I like:
