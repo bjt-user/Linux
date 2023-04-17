@@ -45,7 +45,7 @@ This instantly changed my font in terminator and i3status bar:
 ```
 sudo pacman -S ttf-inconsolata
 ```
-But how do I set the font size?
+Font size can be set in `~/.config/i3/config` and `~/.config/terminator/config`
 
 #### good colors
 
