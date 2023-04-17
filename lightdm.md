@@ -12,7 +12,7 @@ sudo pacman -S lightdm-gtk-greeter
 ```
 
 ```
-sudo systemctl enable lightdm
+sudo systemctl enable --now lightdm
 sudo reboot
 ```
 
