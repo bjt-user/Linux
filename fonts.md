@@ -47,6 +47,28 @@ sudo pacman -S ttf-inconsolata
 ```
 Font size can be set in `~/.config/i3/config` and `~/.config/terminator/config`
 
+=> I think the reason why this pacman command sets up the font is the creation of this file\
+during installation:
+```
+/usr/share/fontconfig/conf.avail $ cat 75-ttf-inconsolata.conf 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fontconfig SYSTEM "../fonts.dtd">
+<fontconfig>
+  <alias>
+    <family>monospace</family>
+    <prefer>
+      <family>Inconsolata</family>
+    </prefer>
+  </alias>
+  <alias>
+    <family>Inconsolata</family>
+    <default>
+      <family>monospace</family>
+    </default>
+  </alias>
+</fontconfig>
+```
+
 #### good colors
 
 For the terminal emulators I like:
