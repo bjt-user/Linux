@@ -1,13 +1,29 @@
-#### installation
+#### resources
+
+https://wiki.archlinux.org/title/Cron
+
+You can also use systemd as a replacement for cron:\
+https://wiki.archlinux.org/title/Systemd/Timers
+
+## installation
+
+#### fedora
 
 Unter `Fedora` muss erst das Paket `cronie` installiert werden.
 
-#### usage
 
 ```
 systemctl enable --now crond
 ```
 
+#### arch
+
+```
+sudo pacman -S cronie
+sudo systemctl enable --now cronie
+```
+
+#### usage
 
 view crontab of the current user:
 ```
