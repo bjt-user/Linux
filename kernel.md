@@ -194,3 +194,13 @@ sys	0m12.495s
 This was way faster than doing a git clone...
 
 ***
+
+#### delete boot option
+
+If you don't want to boot into a kernel anymore you can delete it in `/boot`, but you need to run
+```
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+after that to get rid of the boot option.
+
+***
