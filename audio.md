@@ -164,6 +164,10 @@ sudo reboot
 pactl info
 ```
 
+```
+paplay <audiofile>
+```
+
 ***
 
 #### ffmpeg
@@ -299,16 +303,17 @@ And sound was working again.
 chatgpt:\
 The location of sound files used by a Linux application can vary depending on the application and the specific Linux distribution being used. However, there are a few common locations where sound files are typically stored:
 
-    /usr/share/sounds: This directory contains system sounds that are used by many Linux applications, such as notifications and alerts.
+1. /usr/share/sounds: This directory contains system sounds that are used by many Linux applications, such as notifications and alerts.
 
-    /usr/share/sounds/{application-name}: Some applications may have their own subdirectory within /usr/share/sounds where they store their sound files.
+1. /usr/share/sounds/{application-name}: Some applications may have their own subdirectory within /usr/share/sounds where they store their sound files.
 
-    ~/.local/share/sounds: This directory contains sound files for user-specific applications, such as media players or games.
+1. ~/.local/share/sounds: This directory contains sound files for user-specific applications, such as media players or games.
 
-    /usr/lib/x86_64-linux-gnu/pulseaudio: This directory contains system sounds for the PulseAudio sound server, which is used by many Linux distributions.
+1. /usr/lib/x86_64-linux-gnu/pulseaudio: This directory contains system sounds for the PulseAudio sound server, which is used by many Linux distributions.
 
-    /usr/lib/x86_64-linux-gnu/gstreamer-1.0: This directory contains sound files used by GStreamer, a popular multimedia framework used by many Linux applications.
+1. /usr/lib/x86_64-linux-gnu/gstreamer-1.0: This directory contains sound files used by GStreamer, a popular multimedia framework used by many Linux applications.
 
+For example this file existed both on Arch Linux and on Fedora:
 ```
 /usr/share/sounds/freedesktop/stereo $ paplay alarm-clock-elapsed.oga
 ```
