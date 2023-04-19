@@ -309,6 +309,9 @@ The location of sound files used by a Linux application can vary depending on th
 
     /usr/lib/x86_64-linux-gnu/gstreamer-1.0: This directory contains sound files used by GStreamer, a popular multimedia framework used by many Linux applications.
 
+```
+/usr/share/sounds/freedesktop/stereo $ paplay alarm-clock-elapsed.oga
+```
 
 ## troubleshooting
 
