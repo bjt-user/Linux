@@ -19,3 +19,15 @@ PermitRootLogin yes
 ```
 systemctl restart sshd
 ```
+
+## troubleshooting
+
+#### permissions of private key
+
+Sometimes a connect does not work because of bad permissions of the private key.\
+Fix it like this:
+```
+chmod 600 id_rsa
+```
+
+***
