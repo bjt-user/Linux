@@ -88,3 +88,13 @@ Maybe my `uid` is too high? (active directory user)
 $ echo $UID
 1808613262
 ```
+
+### shortname "archlinux" not found
+
+You can configure short names as seen here: https://wiki.archlinux.org/title/Podman\
+or just use the full path to the image:
+```
+FROM docker.io/archlinux/archlinux
+```
+
+***
