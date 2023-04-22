@@ -194,6 +194,11 @@ Make sure "system sounds" are almost as high as the other sounds in `pulse audio
 mpg123 -q /path/to/myfile.mp3
 ```
 
+or directly with pulseaudio:
+```
+paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
+```
+
 ***
 
 ## Volume problem in movies
