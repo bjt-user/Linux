@@ -18,6 +18,13 @@ You can also try this after the package is already installed:
 ```
 dpkg -L fzf
 ```
+
+search for files:
+```
+$ sudo apt-file search alarm-clock-elapsed
+sound-theme-freedesktop: /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
+```
+
 ***
 
 #### show the source/repo of a package
