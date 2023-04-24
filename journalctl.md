@@ -1,3 +1,5 @@
+#### general
+
 A tool that manages logfiles of `systemd`.
 
 To delete all logs except those that were written in the last 10 hours:
@@ -42,6 +44,20 @@ Note that --output=short-full prints timestamps that follow precisely this forma
 ```
 
 ***
+#### check out what happened last session
+
+By default journalctl will only show what happened since the last boot.\
+But you can also show what happened at past sessions.
+
+```
+journalctl -rb -1
+```
+
+This can be useful to find out why the shutdown took so long:\
+https://itsfoss.com/long-shutdown-linux/
+
+With options `-b -1` you filter the logs for the last boot session. 
+
 #### /var/log/messages
 Another way to view logfiles:
 ```
