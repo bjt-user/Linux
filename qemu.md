@@ -28,11 +28,13 @@ sudo systemctl enable --now libvirtd
 You have to start `virt-manager` as root.\
 Otherwise on Ubuntu the connection to `QEMU/kvm` will fail.
 
-#### usage
+## usage
 
 looks like you can create virtual machines by using the `virt-manager` program.
 
-<kbd>ctrl (left) + alt (left)</kbd> - grab keyboard from or to vm
+#### keyboard shortcuts
+
+<kbd>ctrl (left)</kbd> + <kbd>alt (left)</kbd> - grab keyboard from or to vm
 
 ***
 
