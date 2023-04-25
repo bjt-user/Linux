@@ -26,8 +26,8 @@ myuser  ALL=(ALL)       ALL
 
 #### wheel group
 
-A more modern way seems to be to just add a user to the `wheel` group.\
-But this seems to be more a Fedora way, Ubuntu has `adm` and `sudo` group.
+On RedHat machines you can just add a user to the `wheel` group.\
+Ubuntu has `adm` and `sudo` group.
 
 ```
 usermod -aG wheel <myuser>
