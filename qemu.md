@@ -146,3 +146,13 @@ sudo virsh net-autostart default
 ```
 
 ***
+
+#### No active connection to Installed on
+
+error message `no active connection to install on` when trying to create a vm, can be solved \
+by adding the user to the `libvirt` group:
+```
+sudo usermod -aG libvirt bf
+```
+
+***
