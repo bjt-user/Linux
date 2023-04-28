@@ -108,14 +108,15 @@ I get `invalid credentials` even though the credentials are correct.
 
 #### text/html is unsupported
 
-I can use <kbd>v</kbd> and then <kbd>enter</kbd> to see the emails in the browser.\
-Is there another way?
+I can use <kbd>v</kbd> and then <kbd>enter</kbd> to see the emails in the browser,\
+and then the html is rendered correctly but that is unconvenient.
 
-put this in your `.muttrc`:
+Put this in your `.muttrc`:
 ```
 # Set preffered view modes
 auto_view text/html text/calendar application/ics # view html automatically
 alternative_order text/html text/plain text/enriched text/*
 ```
+And then I could still do <kbd>v</kbd> and <kbd>enter</kbd> to render the html in the browser.
 
 ***
