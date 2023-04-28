@@ -90,6 +90,26 @@ this gives mailindex and date:
 curl --url 'imaps://imap.web.de/Klamotten' --user 'username:password' --request 'FETCH 1:* (UID INTERNALDATE)'
 ```
 
+#### send email (SUCCESS)
+
+This actually worked: (from web.de account to gmail account)
+```
+curl -v --ssl-reqd --url 'smtps://smtp.web.de:465' --user 'my.name@web.de:password' --mail-from 'my.name@web.de' --mail-rcpt 'receiver@gmail.com' --upload-file email.txt
+```
+You need an email file that is formatted like this:
+```
+From: "My Name" <my.name@web.de>
+To: "Receiver" <receiver@gmail.com>
+Subject: an example.com example email
+
+Dear Joe,
+Welcome to this example email. What a lovely day.
+```
+
+Do **NOT** include the `Date: ` field as shown on the curl website, as that will lead to 554 error.
+
+It worked with Linux line endings as well as with Windows line endings.
+
 ***
 ***
 ***
