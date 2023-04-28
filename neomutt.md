@@ -38,6 +38,17 @@ set spoolfile="imaps://imap.domain.tld/"
 ```
 But I get `login failed` and `SASL authentication failed`.
 
+This config worked for "web.de":
+```
+set imap_user = "user.name"
+set imap_pass = "password"
+set spoolfile="imaps://imap.web.de/"
+set folder = "imaps://imap.web.de:993"
+set smtp_url = "smtps://user.name@smtp.web.de:465"
+set smtp_pass = "password"
+set ssl_starttls=yes
+```
+
 ***
 #### debugging
 
