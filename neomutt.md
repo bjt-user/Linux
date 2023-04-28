@@ -83,6 +83,8 @@ but the `./configure` will fail
 
 #### email providers
 
+I managed to read my email with a "web.de" mail account.
+
 ```
 <bf> Are there email providers that work better with neomutt?
 <...> fastmail
@@ -103,5 +105,10 @@ Arch Linux Container says: `login failed`.
 #### invalid credentials
 
 I get `invalid credentials` even though the credentials are correct.
+
+#### text/html is unsupported
+
+I can use <kbd>v</kbd> and then <kbd>enter</kbd> to see the emails in the browser.\
+Is there another way?
 
 ***
