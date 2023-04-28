@@ -110,6 +110,12 @@ Do **NOT** include the `Date: ` field as shown on the curl website, as that will
 
 It worked with Linux line endings as well as with Windows line endings.
 
+From gmail to web.de you need an app password:
+```
+534-5.7.9 Application-specific password required. Learn more at
+< 534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor
+```
+
 ***
 ***
 ***
