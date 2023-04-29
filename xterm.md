@@ -19,3 +19,14 @@ xrdb ~/.Xresources
 ```
 
 #### TODO: configure the font
+
+see available fonts:
+```
+xlsfonts | less
+```
+set font temporarily:
+``` 
+xterm -fn r16
+```
+
+How to isntall new font for xterm?
