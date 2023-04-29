@@ -18,3 +18,10 @@ I still cant get past the cookie page...
 https://stackoverflow.com/questions/9353519/lynx-with-javascript
 
 > I'd strongly recommend you look at using Selenium or another browser automation package.
+
+#### testing web apps
+
+lynx can be useful to test web applications and render html in the cli:
+```
+lynx -dump http://192.168.49.2:32448
+```
