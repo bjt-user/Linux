@@ -384,6 +384,18 @@ you can tab complete and use relative paths
 :bprevious (or :bp) to switch to the previous buffer
 
 ***
+
+#### put vim in the background
+
+like any other cli program you can put vim in the background with:\
+<kbd>ctrl</kbd> + <kbd>z</kbd>
+
+then you can do stuff like compile your program or something and do:
+```
+fg
+```
+to put it back in the foreground
+
 #### Help
 
 ```
