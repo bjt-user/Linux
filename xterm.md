@@ -17,6 +17,10 @@ then
 ```
 xrdb ~/.Xresources
 ```
+or
+```
+XTerm.vt100.reverseVideo: true
+```
 
 #### TODO: configure the font
 
