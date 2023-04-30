@@ -41,3 +41,11 @@ xterm -fn "$(xlsfonts | fzf)"
 How to install new font for xterm?
 
 There is a config file at `/etc/X11/app-defaults/XTerm`
+
+I don't know why, but this looked good:
+```
+xterm*faceName: DejaVu Sans Mono
+xterm*faceSize: 16
+
+XTerm.vt100.reverseVideo: true
+```
