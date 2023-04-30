@@ -16,6 +16,12 @@ It will show all system calls that will be executed in the first column.\
 There is a man page for every system call.\
 For example `man execve`.
 
+#### follow child processes
+
+```
+strace -f ./a.out &>> a-strace.log
+```
+
 #### generate report
 
 To get an overview of the syscalls executed and how many times they were executed:
