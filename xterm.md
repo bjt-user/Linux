@@ -30,3 +30,5 @@ xterm -fn r16
 ```
 
 How to isntall new font for xterm?
+
+There is a config file at `/etc/X11/app-defaults/XTerm`
