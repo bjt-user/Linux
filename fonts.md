@@ -80,6 +80,11 @@ during installation:
 </fontconfig>
 ```
 
+You might also put a .ttf or .otf file into /usr/share/fonts and then do:
+```
+sudo fc-cache -v -f
+```
+
 #### good colors
 
 For the terminal emulators I like:
