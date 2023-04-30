@@ -49,3 +49,9 @@ xterm*faceSize: 16
 
 XTerm.vt100.reverseVideo: true
 ```
+
+you can also do
+```
+xterm*faceName: Inconsolata
+```
+but `DejaVu Sans Mono` looks better.
