@@ -4,6 +4,8 @@ https://wiki.archlinux.org/title/Xterm
 
 type `xterm` to start a fast terminal emulator
 
+https://www.youtube.com/watch?v=mAUQsNUnk9I
+
 #### configure background color and font size
 
 ```
