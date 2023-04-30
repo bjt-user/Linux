@@ -29,6 +29,11 @@ set font temporarily:
 xterm -fn r16
 ```
 
-How to isntall new font for xterm?
+to test some fonts:
+```
+xterm -fn "$(xlsfonts | fzf)"
+```
+
+How to install new font for xterm?
 
 There is a config file at `/etc/X11/app-defaults/XTerm`
