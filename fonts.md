@@ -31,6 +31,17 @@ You have to be very careful when using this kind of fonts.
 viewing fonts that are installed on your system:\
 https://flathub.org/apps/details/org.gnome.font-viewer
 
+```
+fc-list
+```
+
+```
+$ fc-list | grep -i "inconsolata"
+/usr/share/fonts/truetype/inconsolata/Inconsolata.otf: Inconsolata:style=Medium
+$ file /usr/share/fonts/truetype/inconsolata/Inconsolata.otf
+/usr/share/fonts/truetype/inconsolata/Inconsolata.otf: OpenType font data
+```
+
 #### install fonts
 ```
 apt list fonts-*
