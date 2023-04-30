@@ -58,8 +58,14 @@ but `DejaVu Sans Mono` looks better.
 
 #### copy and paste from and to clipboard
 
+This will make ctrl + shift + c/v work.\
+And also anything you select with your mouse will automatically put in your clipboard.\
+You can also paste in with your middle mouse button.
 ```
 xterm.vt100.translations: #override \n\
   Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
-  Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+  Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+  <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0) \n\
+  <Btn2Up>: insert-selection(PRIMARY)
 ```
+
