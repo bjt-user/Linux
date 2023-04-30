@@ -22,7 +22,7 @@ or
 XTerm.vt100.reverseVideo: true
 ```
 
-#### TODO: configure the font
+#### configure the font
 
 see available fonts:
 ```
@@ -55,3 +55,11 @@ you can also do
 xterm*faceName: Inconsolata
 ```
 but `DejaVu Sans Mono` looks better.
+
+#### copy and paste from and to clipboard
+
+```
+xterm.vt100.translations: #override \n\
+  Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+  Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+```
