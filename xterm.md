@@ -6,6 +6,13 @@ type `xterm` to start a fast terminal emulator
 
 https://www.youtube.com/watch?v=mAUQsNUnk9I
 
+have a file `~/.Xresources` and\
+put
+```
+xrdb ~/.Xresources
+```
+in your `.bashrc`
+
 #### configure background color and font size
 
 ```
