@@ -13,6 +13,9 @@ xrdb ~/.Xresources
 ```
 in your `.bashrc`
 
+There is a config file at `/etc/X11/app-defaults/XTerm`\
+but not sure if you need it.
+
 #### configure background color and font size
 
 ```
@@ -33,6 +36,8 @@ XTerm.vt100.reverseVideo: true
 
 #### configure the font
 
+(the first section is not good advice)
+
 see available fonts:
 ```
 xlsfonts | less
@@ -49,7 +54,7 @@ xterm -fn "$(xlsfonts | fzf)"
 
 How to install new font for xterm?
 
-There is a config file at `/etc/X11/app-defaults/XTerm`
+
 
 I don't know why, but this looked good:
 ```
