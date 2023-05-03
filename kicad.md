@@ -200,6 +200,13 @@ you can form coils and transformer windings with the `add arcs arcs to symbol bo
 you can add a **footprint** to the symbol with `edit` -> `properties`\
 => after that when you add that symbol to your schematic it will automatically have that footprint in it
 
+#### make simple pad on the surface without hole
+
+I made a new footprint, clicked on `add a pad`.\
+Then chose `edge connector`.\
+And then in the 3d viewer it looks like a copper pad just on the front side.\
+See how it turns out when it comes from jlcpcb.
+
 ***
 ## export gerber files
 
