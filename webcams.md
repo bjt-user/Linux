@@ -47,6 +47,16 @@ sudo apt install vlc
 vlc output.mp4
 ```
 
+#### use vlc to test the webcam
+
+```
+vlc
+```
+`media` -> `open capture device`\
+`capture device` -> `video device name` -> /dev/video0 (or whatever your webcam is)\
+`play`
+
+
 #### cheese
 
 Usually webcams can be tested with `cheese`.\
