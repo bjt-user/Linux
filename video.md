@@ -1,3 +1,8 @@
+#### metainformation about video files
+
+The program `mediainfo` can be used to retrieve information about video files.\
+Like `format`, `bitrate`, `frame rate`, etc.
+
 #### converting avi to mp4
 
 Some `.avi` files did not work in `vlc media player`.
