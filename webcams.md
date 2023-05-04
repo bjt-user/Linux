@@ -2,6 +2,23 @@
 
 https://wiki.ubuntuusers.de/Webcam/Treiber/
 
+#### ffmpeg
+
+This will record video from the webcam:
+```
+ffmpeg -f v4l2 -framerate 25 -video_size 640x480 -i /dev/video0 output.mp4
+```
+Then abort with ctrl + c
+
+Even though the vlc command was there I had to install `vlc`to view the video:
+```
+sudo apt install vlc
+```
+
+```
+vlc output.mp4
+```
+
 #### cheese
 
 Usually webcams can be tested with `cheese`.\
