@@ -11,12 +11,32 @@ ls /dev/video*
 ```
 (there might be multiple that you have to try)
 
-This will record video from the webcam (worked for Ubuntu with internal and external webcam):
+or
+```
+v4l2-ctl --list-devices
+```
+
+This will record video from the webcam (worked for **Ubuntu** with internal and external webcam):
 ```
 ffmpeg -f v4l2 -framerate 25 -video_size 640x480 -i /dev/video0 output.mp4
 ```
 (replace with your device file)\
 Then abort with ctrl + c
+
+**Arch linux** was more work:
+```
+sudo pacman -Syu
+sudo pacman -S linux-headers
+sudo pacman -S v4l-utils
+sudo reboot
+```
+You need to make sure, that your kernel (`uname -r`) matches the linux-headers (`sudo pacman -Ss linux-headers`)\
+(the kernel needs a reboot after a pacman update to update)
+
+If the kernel module is not loaded automatically you try to load it manually:
+```
+sudo modprobe uvcvideo
+```
 
 Even though the vlc command was there I had to install `vlc`to view the video:
 ```
