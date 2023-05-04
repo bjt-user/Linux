@@ -4,10 +4,18 @@ https://wiki.ubuntuusers.de/Webcam/Treiber/
 
 #### ffmpeg
 
-This will record video from the webcam (worked for Ubuntu with the internal webcam):
+First you have to find the webcam device.\
+In Ubuntu its
+```
+ls /dev/video*
+```
+(there might be multiple that you have to try)
+
+This will record video from the webcam (worked for Ubuntu with internal and external webcam):
 ```
 ffmpeg -f v4l2 -framerate 25 -video_size 640x480 -i /dev/video0 output.mp4
 ```
+(replace with your device file)\
 Then abort with ctrl + c
 
 Even though the vlc command was there I had to install `vlc`to view the video:
