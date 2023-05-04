@@ -1,5 +1,8 @@
 #### cheese
 
+Usually webcams can be tested with `cheese`.\
+But how to debug cheese errors?
+
 This internal webcam used to work with cheese:
 ```
 Bus 002 Device 002: ID 04f2:b469 Chicony Electronics Co., Ltd HD WebCam
