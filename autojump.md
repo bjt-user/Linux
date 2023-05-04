@@ -99,6 +99,8 @@ to jump into a frequently used folder in `~/Coding/scripts`
 
 ## troubleshooting
 
+#### no module named 'autojump_argparse'
+
 ```
 $ autojump -s
 Traceback (most recent call last):
@@ -106,3 +108,19 @@ Traceback (most recent call last):
     from autojump_argparse import ArgumentParser
 ModuleNotFoundError: No module named 'autojump_argparse'
 ```
+
+The problem was that I was using
+```
+$ python --version
+Python 3.11.3
+```
+but the packages for autojump were in this directory:
+```
+autojump /usr/lib/python3.10/site-packages/autojump_argparse.py
+autojump /usr/lib/python3.10/site-packages/autojump_data.py
+autojump /usr/lib/python3.10/site-packages/autojump_match.py
+autojump /usr/lib/python3.10/site-packages/autojump_utils.py
+```
+
+So I copied these 4 files over to `/usr/lib/python3.11/site-packages/`.\
+This fixed the problem.
