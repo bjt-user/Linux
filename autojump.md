@@ -96,3 +96,13 @@ autojump -s
 j scr
 ```
 to jump into a frequently used folder in `~/Coding/scripts`
+
+## troubleshooting
+
+```
+$ autojump -s
+Traceback (most recent call last):
+  File "/usr/bin/autojump", line 39, in <module>
+    from autojump_argparse import ArgumentParser
+ModuleNotFoundError: No module named 'autojump_argparse'
+```
