@@ -4,7 +4,7 @@ https://wiki.ubuntuusers.de/Webcam/Treiber/
 
 #### ffmpeg
 
-This will record video from the webcam:
+This will record video from the webcam (worked for Ubuntu with the internal webcam):
 ```
 ffmpeg -f v4l2 -framerate 25 -video_size 640x480 -i /dev/video0 output.mp4
 ```
