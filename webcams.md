@@ -7,7 +7,9 @@ This internal webcam used to work with cheese:
 ```
 Bus 002 Device 002: ID 04f2:b469 Chicony Electronics Co., Ltd HD WebCam
 ```
-
+But after a new Ubuntu install it didnt work anymore.\
+Maybe because of no proprietary drivers.\
+But for proprietary drivers you need secure boot enabled...
 
 ```
 (cheese:3978): Gdk-WARNING **: 11:23:53.590: Native Windows taller than 65535 pixels are not supported
