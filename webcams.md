@@ -1,3 +1,7 @@
+#### resources
+
+https://wiki.ubuntuusers.de/Webcam/Treiber/
+
 #### cheese
 
 Usually webcams can be tested with `cheese`.\
