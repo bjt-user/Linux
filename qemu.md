@@ -156,6 +156,10 @@ sudo virsh net-autostart default
 
 On Arch Linux cant start the default network.
 
+```
+sudo pacman -S dnsmasq
+```
+
 ***
 
 #### No active connection to Installed on
