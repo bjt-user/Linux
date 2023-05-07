@@ -3,14 +3,6 @@ QEMU means quick emulator.
 `qemu` uses `kvm` on Linux hosts.\
 https://de.wikipedia.org/wiki/Kernel-based_Virtual_Machine
 
-I think qemu should work even if your CPU doesnt support kvm.
-
-to find out if your CPU supports virtualization (most modern cpus should support it):
-```
-cat /proc/cpuinfo | grep -i "vmx"
-```
-If the `vmx` flag is present, then it supports virtualization.
-
 #### installation
 
 You have to install the packages `qemu-system-x86`, `virt-manager`, and depending on the distribution you also need `libvirt` or `libvirt-client`.
@@ -32,6 +24,21 @@ sudo systemctl enable --now libvirtd
 
 You have to start `virt-manager` as root.\
 Otherwise on Ubuntu the connection to `QEMU/kvm` will fail.
+
+#### cpu virtualization support
+
+If your cpu does not have virtualization support enabled, the VMs will be extremely slow and\
+might even crash your system.
+```
+cat /proc/cpuinfo | grep -i "vmx"
+```
+If the `vmx` flag is present, then it supports virtualization.
+
+If the flag is not there you have to enable it in BIOS.
+
+Lenovo Thinkcentre: F1 on booting
+
+enable "Intel Virtualization Support"
 
 ## usage
 
