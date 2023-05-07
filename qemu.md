@@ -74,6 +74,18 @@ right now using `virt-manager` is clunky because I have to click it so it caches
 
 ***
 
+#### ssh into vm
+
+You can ssh into a qemu vm.\
+Just install `openssh-server` in the guest.\
+Get the ip with `ip -4 a`. (the VM has a different IP than the host system)
+
+Resolving the hostname of the VM does not work.\
+At least not out of the box, maybe there is a way.
+
+
+***
+
 #### todo: launch VM in a terminal emulator
 
 1. create a virtual image
