@@ -84,6 +84,8 @@ Get the ip with `ip -4 a`. (the VM has a different IP than the host system)\
 Resolving the hostname of the VM does not work.\
 At least not out of the box, maybe there is a way.
 
+And I can only ssh into the VM from the host machine, not from within the entire network.
+
 
 ***
 
