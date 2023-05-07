@@ -20,6 +20,11 @@ Fedora-Install:
 sudo dnf install qemu-system-x86 virt-manager libvirt-client
 ```
 
+Arch-Install:
+```
+sudo pacman -S qemu-system-x86 virt-manager
+```
+
 You have to enable (and start) `libvirtd` (on some distributions, like Fedora):
 ```
 sudo systemctl enable --now libvirtd
