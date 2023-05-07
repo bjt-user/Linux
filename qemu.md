@@ -86,8 +86,30 @@ At least not out of the box, maybe there is a way.
 
 And I can only ssh into the VM from the host machine, not from within the entire network.
 
-
 ***
+
+#### virsh
+
+https://www.libvirt.org/manpages/virsh.html
+
+You have to execute `virsh` with **sudo** (!!!) to list VMs that were created with `virt-manager`:
+```
+sudo virsh list --all
+```
+generate an xml from a VM:
+```
+sudo virsh dumpxml ubuntu22.04 > ~/Downloads/ubuntu.xml
+```
+
+TODO: You should be able to create a new VM with that xml but you will have to change the UUID and maybe some other stuff.
+
+```
+sudo virsh start ubuntu22.04
+```
+
+```
+sudo virsh shutdown ubuntu22.04
+```
 
 #### todo: launch VM in a terminal emulator
 
