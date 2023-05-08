@@ -113,7 +113,7 @@ sudo virsh start ubuntu22.04
 sudo virsh shutdown ubuntu22.04
 ```
 
-#### todo: launch VM in a terminal emulator
+#### failed: launch VM in a terminal emulator
 
 1. create a virtual image
 
@@ -164,6 +164,34 @@ qemu-system-x86_64 -enable-kvm -cdrom archlinux-2022.09.03-x86_64.iso -boot menu
 ```
 qemu-system-x86_64: -append only allowed with -kernel option
 
+I think this way of using qemu is only meant to work with kernel images.\
+To test kernels fast. But not for installing a distribution iso.
+
+***
+
+#### create vm from command line
+
+First create a disk:
+```
+$ qemu-img create -f qcow2 myimage.img 10G
+Formatting 'myimage.img', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=10737418240 lazy_refcounts=off refcount_bits=16
+$ file myimage.img 
+myimage.img: QEMU QCOW Image (v3), 10737418240 bytes (v3), 10737418240 bytes
+```
+
+create the VM:
+```
+qemu-system-x86_64 --enable-kvm -cdrom archlinux-x86_64.iso -hda myimage.img -m 2G
+```
+
+And then launch `tigervnc` on another window on port 5900.
+
+Install Arch Linux. And then shutdown the VM instead of reboot.
+
+Start the VM:
+```
+qemu-system-x86_64 --enable-kvm -hda myimage.img -m 2G
+```
 
 #### snapshots
 
