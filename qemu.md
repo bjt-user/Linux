@@ -169,7 +169,7 @@ To test kernels fast. But not for installing a distribution iso.
 
 ***
 
-#### create vm from command line
+#### TODO: create vm from command line
 
 First create a disk:
 ```
@@ -192,6 +192,10 @@ Start the VM:
 ```
 qemu-system-x86_64 --enable-kvm -hda myimage.img -m 2G
 ```
+
+But **no internet**!
+
+Just copying the file into `/var/lib/libvirt/images` where virtualmanager images are doesnt make it available there...
 
 #### snapshots
 
