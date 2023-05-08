@@ -3,6 +3,8 @@ QEMU means quick emulator.
 `qemu` uses `kvm` on Linux hosts.\
 https://de.wikipedia.org/wiki/Kernel-based_Virtual_Machine
 
+documentation: https://www.qemu.org/docs/master/
+
 #### installation
 
 You have to install the packages `qemu-system-x86`, `virt-manager`, and depending on the distribution you also need `libvirt` or `libvirt-client`.
