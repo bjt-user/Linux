@@ -1,8 +1,12 @@
-#### resources
+## reading pdf
+
+#### browser
+
+You can read pdfs in Firefox
+
+#### zathura
 
 https://wiki.archlinux.org/title/Zathura
-
-## installation
 
 ```
 sudo pacman -S zathura
@@ -12,14 +16,6 @@ But you also need to install a plugin to read pdfs.
 ```
 sudo pacman -S zathura-pdf-mupdf
 ```
-
-## reading pdf
-
-#### browser
-
-You can read pdfs in Firefox
-
-#### zathura
 
 ```
 zathura debugging_with_gdb.pdf
