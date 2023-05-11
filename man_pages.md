@@ -75,3 +75,12 @@ searching for flags:
 ```
 /^\s+--compress
 ```
+
+## troubleshooting
+
+#### TODO: missing manpages
+
+wsl with arch linux:\
+you get `no man pages for xy` no matter what you type.
+
+try this: https://askubuntu.com/a/927041
