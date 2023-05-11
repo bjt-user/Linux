@@ -78,9 +78,19 @@ searching for flags:
 
 ## troubleshooting
 
-#### TODO: missing manpages
+#### missing manpages
 
 wsl with arch linux:\
 you get `no man pages for xy` no matter what you type.
 
-try this: https://askubuntu.com/a/927041
+`/etc/pacman.conf` has this line in it:
+```
+NoExtract  = usr/share/man/* usr/share/info/*
+```
+
+then do
+```
+pacman -S man-db man-pages
+```
+
+=> and man-pages work again!
