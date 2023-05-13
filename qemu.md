@@ -197,6 +197,30 @@ But **no internet**!
 
 Just copying the file into `/var/lib/libvirt/images` where virtualmanager images are doesnt make it available there...
 
+#### TODO: network bridge
+
+The goal is to be able to ssh into VM from anywhere in the network, currently I am only able to ssh into local VMs.
+
+https://wiki.archlinux.org/title/Network_bridge
+```
+sudo ip link add name my_qemu_bridge type bridge
+```
+You can see this bridge with `ip a` now.
+
+```
+ip link set dev my_qemu_bridge up
+```
+But it still shows as `DOWN`.
+
+`wlp2s0` is already `UP`.
+
+This should make the bridge the master of the wireless device:
+```
+ip link set wlp2s0 master my_qemu_bridge
+Error: Device does not allow enslaving to a bridge.
+```
+
+
 #### snapshots
 
 ## troubleshooting
