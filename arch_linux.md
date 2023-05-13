@@ -704,6 +704,63 @@ w
 ```
 mkfs.ext4 /dev/sda1
 ```
+```
+mount /dev/sda1 /mnt
+```
+```
+pacstrap /mnt base linux linux-firmware
+```
+```
+genfstab -U /mnt >> /mnt/etc/fstab
+```
+```
+arch-chroot /mnt
+```
+```
+hwclock --systohc
+```
+```
+pacman -S vim
+```
+```
+vim /etc/vconsole.conf
+```
+put `KEYMAP=de` in it.
+```
+vim /etc/hostname
+```
+choose a hostname
+```
+vim /etc/hosts
+```
+put this in it
+```
+127.0.0.1        localhost
+::1              localhost
+127.0.1.1        [myhostname]
+```
+```
+passwd
+```
+choose a root password
+```
+pacman -S grub networkmanager dosfstools mtools linux-headers base-devel
+```
+```
+grub-install --target=i386-pc /dev/sda
+```
+```
+grub-mkconfig -o /boot/grub/grub.cfg
+```
+```
+exit
+```
+```
+umount -a
+```
+```
+shutdown now
+```
 
 ***
 #### if you want to configure the locale
