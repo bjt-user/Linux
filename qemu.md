@@ -19,6 +19,12 @@ Arch-Install:
 sudo pacman -S qemu-system-x86 virt-manager qemu-img
 ```
 
+Raspbian:
+```
+sudo apt install qemu-system-x86 libvirt-clients
+```
+(`libvirt-clients` install the `virsh` command among other stuff)
+
 You have to enable (and start) `libvirtd` (on some distributions, like Fedora):
 ```
 sudo systemctl enable --now libvirtd
