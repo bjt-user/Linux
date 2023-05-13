@@ -768,7 +768,15 @@ qemu-system-x86_64 --enable-kvm -hda myimage.img -m 2G
 ```
 start `tigervnc` on port 5900
 
-logged into root and I have a working Arch machine **without networking**
+```
+systemctl enable --now NetworkManager
+```
+(case sensitive)\
+=> now `curl -I https://google.com` works!
+
+I have a working Arch VM.\
+But can I ssh into it?\
+=> No.
 
 ***
 #### if you want to configure the locale
