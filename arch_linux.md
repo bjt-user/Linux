@@ -674,7 +674,7 @@ Then select your router hit enter and enter the password.
 => I have a working Arch Linux machine
 
 ***
-#### TODO: qemu installation
+#### qemu installation
 
 create disk:
 ```
