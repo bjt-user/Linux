@@ -762,6 +762,14 @@ umount -a
 shutdown now
 ```
 
+start the VM without the iso image:
+```
+qemu-system-x86_64 --enable-kvm -hda myimage.img -m 2G
+```
+start `tigervnc` on port 5900
+
+logged into root and I have a working Arch machine **without networking**
+
 ***
 #### if you want to configure the locale
 
