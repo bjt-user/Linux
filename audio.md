@@ -168,6 +168,16 @@ pactl info
 paplay <audiofile>
 ```
 
+#### testing pulseaudio
+
+```
+pactl load-module module-sine frequency=440
+```
+stop the sound with
+```
+pactl unload-module module-sine
+```
+
 ***
 
 #### ffmpeg
@@ -207,7 +217,7 @@ In movies the volume is always unappropriate, shootings and music is very loud,
 quiet conversations you want to hear are unhearable silent.
 In my experience while using headphones this problem is less dominant but still exists.
 
-----------------------------------------------------------------------------------------
+***
 
 Using OpenShot:
 Imported movie, separate audio command took forever so I quit.
@@ -235,7 +245,7 @@ The video is squished together and the black frames on bottom and top are bigger
 even though I selected the same resolution.
 Außerdem Audiotrack verschoben...
 
-----------------------------------------------------------------------------------------
+***
 
 VLC Media Player:
 
@@ -286,22 +296,7 @@ Keep everything but the selected: select a range with the mouse and go to `edit 
 Then put it on the beginning of the track with `tracks -> align tracks -> start to zero`
 
 
-#### no sound issue
 
-I had the issue that no sound was working on Ubuntu anymore because of various system problems.
-
-Then I did
-
-```
-sudo apt reinstall alsa-base
-```
-```
-sudo apt reinstall pulseaudio
-```
-```
-reboot
-```
-And sound was working again.
 
 #### location of sound files that applications use
 
@@ -320,12 +315,12 @@ The location of sound files used by a Linux application can vary depending on th
 
 For example this file existed both on Arch Linux and on Fedora:
 ```
-/usr/share/sounds/freedesktop/stereo $ paplay alarm-clock-elapsed.oga
+$ paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
 ```
 
 ## troubleshooting
 
-### no audio input from headset
+#### no audio input from headset
 
 I had no audio input from my headset.
 
@@ -335,3 +330,20 @@ The solution was to go into `pulse audio volume control` or `pavucontrol`.\
 With `pipewire` you can test it with `pw-cat -r myfile`, go into `nnn` and hit enter on the file.
 
 ***
+
+#### no sound issue on Ubuntu
+
+I had the issue that no sound was working on Ubuntu anymore because of various system problems.
+
+Then I did
+
+```
+sudo apt reinstall alsa-base
+```
+```
+sudo apt reinstall pulseaudio
+```
+```
+reboot
+```
+And sound was working again.
