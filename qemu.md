@@ -210,7 +210,6 @@ You can see this bridge with `ip a` now.
 ```
 ip link set dev my_qemu_bridge up
 ```
-But it still shows as `DOWN`.
 
 `wlp2s0` is already `UP`.
 
@@ -220,6 +219,9 @@ ip link set wlp2s0 master my_qemu_bridge
 Error: Device does not allow enslaving to a bridge.
 ```
 
+ChatGPT knows:
+> Some types of interfaces, such as Wi-Fi or virtual interfaces, may not support bridging.\
+Only physical Ethernet interfaces typically allow bridging. 
 
 #### snapshots
 
