@@ -4,6 +4,8 @@
 
 ***
 
+#### basic usage (most use cases)
+
 ```
 ip a
 ```
