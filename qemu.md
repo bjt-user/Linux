@@ -235,6 +235,9 @@ sudo ip link set my_qemu_bridge down
 sudo ip link delete my_qemu_bridge type bridge
 ```
 
+this might help:\
+https://www.youtube.com/watch?v=VCAqkyVd7dM
+
 #### snapshots
 
 ## troubleshooting
