@@ -775,7 +775,7 @@ systemctl enable --now NetworkManager
 => now `curl -I https://google.com` works!
 
 I have a working Arch VM.\
-But can I ssh into it?\
+But can I ssh into it, after installing `openssh`, enabling `sshd` and changing `/etc/ssh/sshd_config`\
 => No.
 
 ***
