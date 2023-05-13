@@ -676,9 +676,34 @@ Then select your router hit enter and enter the password.
 ***
 #### TODO: qemu installation
 
-You cant shut down the virtual machine until installation is finished.\
-You can close the window though and leave the VM running.\
-(but that will block the RAM that it uses)
+create disk:
+```
+qemu-img create -f qcow2 myimage.img 10G
+```
+create vm
+```
+qemu-system-x86_64 --enable-kvm -cdrom ~/Downloads/archlinux-x86_64.iso -hda myimage.img -m 2G
+```
+
+```
+loadkeys de
+```
+```
+fdisk /dev/sda
+```
+```
+o
+```
+```
+n
+```
+<kbd>enter</kbd>, <kbd>enter</kbd>, <kbd>enter</kbd>, <kbd>enter</kbd>
+```
+w
+```
+```
+mkfs.ext4 /dev/sda1
+```
 
 ***
 #### if you want to configure the locale
