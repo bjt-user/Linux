@@ -178,6 +178,11 @@ stop the sound with
 pactl unload-module module-sine
 ```
 
+btw, to see all loaded modules:
+```
+pactl list modules
+```
+
 ***
 
 #### ffmpeg
