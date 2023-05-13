@@ -221,7 +221,13 @@ Error: Device does not allow enslaving to a bridge.
 
 ChatGPT knows:
 > Some types of interfaces, such as Wi-Fi or virtual interfaces, may not support bridging.\
-Only physical Ethernet interfaces typically allow bridging. 
+Only physical Ethernet interfaces typically allow bridging.
+
+So I delete it again
+```
+sudo ip link set my_qemu_bridge down
+sudo ip link delete my_qemu_bridge type bridge
+```
 
 #### snapshots
 
