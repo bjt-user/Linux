@@ -104,3 +104,6 @@ sudo dmesg -T | less -N
 864 [Sun May 14 08:54:52 2023] usb 3-7: 3:1: cannot get freq at ep 0x84
 865 [Sun May 14 08:54:52 2023] usb 3-7: 3:1: cannot get freq at ep 0x84
 ```
+
+When testing with `vlc` it has only 1-2 fps.\
+But when testing with the `ffmpeg` command and using `-framerate 30` option, it works great.
