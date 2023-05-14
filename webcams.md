@@ -106,4 +106,7 @@ sudo dmesg -T | less -N
 ```
 
 When testing with `vlc` it has only 1-2 fps.\
-But when testing with the `ffmpeg` command and using `-framerate 30` option, it works great.
+But when testing with the `ffmpeg` command and using `-framerate 30` option, it works great.\
+With `-framerate 20` it also works good.
+
+***
