@@ -778,6 +778,23 @@ I have a working Arch VM.\
 But can I ssh into it, after installing `openssh`, enabling `sshd` and changing `/etc/ssh/sshd_config`\
 => No.
 
+I got it working with port forwarding (using a tap device would be better, but that is way more complicated)
+
+```
+qemu-system-x86_64 -enable-kvm -hda myimage.img -m 2G -device e1000,netdev=net0 -netdev user,id=net0,hostfwd=tcp::5555-:22
+```
+Then you can connect with (on the local machine)
+```
+ssh root@localhost -p 5555
+```
+
+or on a remote machine with
+```
+ssh root@ipofvmhost -p 5555
+```
+Then you can configure your VM in `.ssh/config`\
+and set the port in the ssh config so you dont have to remember the port!
+
 ***
 #### if you want to configure the locale
 
