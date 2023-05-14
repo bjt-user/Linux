@@ -79,3 +79,28 @@ streaming stopped, reason not-negotiated (-4)
 
 (cheese:3978): Clutter-CRITICAL **: 11:23:56.736: Unable to create dummy onscreen: No foreign surface, and wl_shell unsupported by the compositor
 ```
+
+***
+## hardware
+
+#### Logitech C270
+
+plug in the usb and check kernel messages:
+```
+sudo dmesg -T | less -N
+```
+```
+853 [Sun May 14 08:54:52 2023] usb 3-7: new high-speed USB device number 6 using xhci_hcd
+854 [Sun May 14 08:54:52 2023] usb 3-7: New USB device found, idVendor=046d, idProduct=0825, bcdDevice= 1.00
+855 [Sun May 14 08:54:52 2023] usb 3-7: New USB device strings: Mfr=2, Product=1, SerialNumber=0
+856 [Sun May 14 08:54:52 2023] usb 3-7: Product: HD Webcam C270
+857 [Sun May 14 08:54:52 2023] usb 3-7: Manufacturer: HD Webcam C270
+858 [Sun May 14 08:54:52 2023] usb 3-7: 3:1: cannot get freq at ep 0x84
+859 [Sun May 14 08:54:52 2023] usb 3-7: set resolution quirk: cval->res = 384
+860 [Sun May 14 08:54:52 2023] videodev: Linux video capture interface: v2.00
+861 [Sun May 14 08:54:52 2023] usb 3-7: Found UVC 1.00 device HD Webcam C270 (046d:0825)
+862 [Sun May 14 08:54:52 2023] usb 3-7: Failed to query (GET_INFO) UVC control 10 on unit 1: 0 (exp. 1).
+863 [Sun May 14 08:54:52 2023] usbcore: registered new interface driver uvcvideo
+864 [Sun May 14 08:54:52 2023] usb 3-7: 3:1: cannot get freq at ep 0x84
+865 [Sun May 14 08:54:52 2023] usb 3-7: 3:1: cannot get freq at ep 0x84
+```
