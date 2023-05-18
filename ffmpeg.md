@@ -43,6 +43,13 @@ ffmpeg -ss 00:00:30 -i inputfile.mp4 -acodec copy outputfile.mp4
 ```
 => nope that still takes very long (because of wrong option)
 
+#### cut audio file precisely
+
+This will cut from second 55.5 to second 56.8 of an audio file without reencoding:
+```
+ffmpeg -i output.wav -ss 55.5 -to 56.8 -c copy ingenieur3.wav
+```
+
 #### record audio that is being played (to pulseaudio)
 
 Get the index of the audio device that the audio is currently being played to:
