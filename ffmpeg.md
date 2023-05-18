@@ -42,3 +42,17 @@ Try this command:
 ffmpeg -ss 00:00:30 -i inputfile.mp4 -acodec copy outputfile.mp4
 ```
 => nope that still takes very long (because of wrong option)
+
+#### record audio that is being played (to pulseaudio)
+
+Get the index of the audio device that the audio is currently being played to:
+```
+pacmd list-sources | grep -e 'index:' -e device.string -e 'name:'
+```
+
+If the output device is your headphones, and headphones are index 5 do this:
+```
+ffmpeg -f pulse -i 5 output.wav
+```
+
+***
