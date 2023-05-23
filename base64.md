@@ -36,3 +36,6 @@ dGVzdCEK
 $ echo "dGVzdCEK" | base64 --decode
 test!
 ```
+
+But `set +H`  disables the `!` commands completely,\
+so you have to enable it again with `set -H` afterwards.
