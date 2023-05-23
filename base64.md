@@ -18,13 +18,21 @@ test
 
 #### special character !
 
-The `!` character can be problematic in bash:
+The `!` character can be problematic on some machines:
 ```
 $ echo "test!" | base64
 -bash: !": event not found
-$ echo test! | base64
+```
+
+this helps:
+```
+set +H
+```
+
+On most machines it works out of the box though:
+```
+$ echo "test!" | base64
 dGVzdCEK
-$ echo dGVzdCEK | base64 --decode
+$ echo "dGVzdCEK" | base64 --decode
 test!
 ```
-So you dont use the double quotes when echoing into `base64`.
