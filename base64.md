@@ -18,7 +18,7 @@ test
 
 #### special character !
 
-The `!` character can be problematic on some machines:
+The `!` character can be problematic on some machines: (probably only ones with old bash versions)
 ```
 $ echo "test!" | base64
 -bash: !": event not found
