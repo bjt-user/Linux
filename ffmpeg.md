@@ -63,3 +63,10 @@ ffmpeg -f pulse -i 5 output.wav
 ```
 
 ***
+
+#### record screen and audio (and microphone)
+
+```
+ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -i :0.0+0,0 -f alsa -ac 2 -i pulse -acodec aac -strict experimental output.flv
+```
+**WARNING: this also recorded the internal laptop microphone!**
