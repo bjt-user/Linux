@@ -119,6 +119,13 @@ sudo virsh start ubuntu22.04
 sudo virsh shutdown ubuntu22.04
 ```
 
+#### expose VM to local network and access through port forwarding
+
+This made the VM accessible from another computer in the same network on port 5555:
+```
+qemu-system-x86_64 -enable-kvm -hda myimage.img -m 2G -device e1000,netdev=net0 -netdev user,id=net0,hostfwd=tcp::5555-:22
+```
+
 #### failed: launch VM in a terminal emulator
 
 1. create a virtual image
