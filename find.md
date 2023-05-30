@@ -13,10 +13,8 @@ find . -iname *na*
 `-i` is for ignoring case
 
 
-There are problems with this utility though, it shows folders with permission denied...
-
-Try this:
 ## redirect error spam message to /dev/null ##
+
 ```
 find where-to-look criteria action 2>/dev/null
 ```
@@ -64,3 +62,12 @@ $ find . -type d -name "m*"
 ```
 
 ***
+
+## troubleshooting
+
+#### a lot of permission denied errors when not using root
+
+Instead of redirecting the errors it might help to restrict the find to files:
+```
+find . -type f -name myfilename.csv
+```
