@@ -63,11 +63,8 @@ $ find . -type d -name "m*"
 
 ***
 
-## troubleshooting
+#### only search for files
 
-#### a lot of permission denied errors when not using root
-
-Instead of redirecting the errors it might help to restrict the find to files:
 ```
 find . -type f -name myfilename.csv
 ```
