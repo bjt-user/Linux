@@ -30,6 +30,13 @@ or even more verbose:
 ```
 ssh -vvv user@myserver
 ```
+
+#### generating ssh keys
+
+to use a different encryption than rsa: (see `ssh-keygen --help` for available encryptions)
+```
+ssh-keygen -t dsa
+```
 ## troubleshooting
 
 #### permissions of private key
