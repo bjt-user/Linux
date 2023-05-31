@@ -26,7 +26,10 @@ verbose output will help troubleshooting:
 ```
 ssh -v user@myserver
 ```
-
+or even more verbose:
+```
+ssh -vvv user@myserver
+```
 ## troubleshooting
 
 #### permissions of private key
