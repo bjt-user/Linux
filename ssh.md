@@ -20,6 +20,13 @@ PermitRootLogin yes
 systemctl restart sshd
 ```
 
+#### verbose output
+
+verbose output will help troubleshooting:
+```
+ssh -v user@myserver
+```
+
 ## troubleshooting
 
 #### permissions of private key
