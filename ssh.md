@@ -37,6 +37,11 @@ to use a different encryption than rsa: (see `ssh-keygen --help` for available e
 ```
 ssh-keygen -t dsa
 ```
+
+ed25519 produces very short private and public keys:
+```
+ssh-keygen -t ed25519
+```
 ## troubleshooting
 
 #### permissions of private key
