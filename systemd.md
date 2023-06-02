@@ -6,6 +6,14 @@ You can see the location of a systemd unit file with the `systemctl status <unit
 
 `/lib/systemd/system` contains a lot of unit files
 
+### setting environment variables
+
+You can set them inside the unit file or use an environment file.
+
+#### setting environment variables in the unit file itself
+```
+Environment=JAVA_HOME=/usr/java/openjdk-11.0.2
+```
 
 #### environment file
 
