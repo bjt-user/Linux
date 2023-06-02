@@ -69,9 +69,14 @@ You can also delete messages in vim: `sudo vim /var/log/messages`
 
 #### truncated output
 
-sometimes the lines are not wrapped and truncated at the end
+sometimes the lines are not wrapped and truncated at the end.\
+this prevents it:
+```
+journalctl -u wildfly --since=today | less -N
+```
 
-quick and dirty fix would be to redirect to a log file:
+or redirect to a log file:
 ```
 journalctl -u wildfly --since=today > /tmp/journal_$(date +%Y%m%d).log
 ```
+
