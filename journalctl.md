@@ -64,3 +64,14 @@ Another way to view logfiles:
 sudo less /var/log/messages
 ```
 You can also delete messages in vim: `sudo vim /var/log/messages`
+
+## troubleshooting
+
+#### truncated output
+
+sometimes the lines are not wrapped and truncated at the end
+
+quick and dirty fix would be to redirect to a log file:
+```
+journalctl -u wildfly --since=today > /tmp/journal_$(date +%Y%m%d).log
+```
