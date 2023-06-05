@@ -11,6 +11,12 @@ ls -d */
 
 #### How to adjust the colors of ls
 
+First of all there is the
+```
+dircolors
+```
+command.
+
 ```
 LS_COLORS='di=0;31'; export LS_COLORS
 ```
