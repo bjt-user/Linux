@@ -18,6 +18,27 @@ dircolors
 command.
 
 ```
+dircolors --print-database > ~/.dir_colors
+```
+
+change the colors inside that file\
+apply the changes:
+
+```
+eval $(dircolors ~/.dir_colors)
+```
+
+for persistent use put this in bashrc:
+```
+if [ -f ${HOME}/.dir_colors ]; then
+  eval $(dircolors ~/.dir_colors)
+fi
+```
+
+***
+
+manually setting certain colors:
+```
 LS_COLORS='di=0;31'; export LS_COLORS
 ```
 The di=1;31 bit tells ls that directories (di) are bold (1;) red (31).
