@@ -52,4 +52,15 @@ Fix it like this:
 chmod 600 id_rsa
 ```
 
+#### permissions of remote .ssh folder and authorized_keys
+
+I could not connect via ssh keys to a remote system.
+
+Solution on the remote host:
+```
+cd ~/.ssh
+chmod 755 .
+chmod 644 authorized_keys
+```
+
 ***
