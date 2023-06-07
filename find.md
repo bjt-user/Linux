@@ -68,3 +68,9 @@ $ find . -type d -name "m*"
 ```
 find . -type f -name myfilename.csv
 ```
+
+#### find files that were moved or modified in the last xx days
+
+```
+find . -type f -mtime -14
+```
