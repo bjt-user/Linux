@@ -37,3 +37,23 @@ The environment file may not contain `export` statements:
 JAVA_HOME=/usr/java/openjdk-11.0.2
 JAVA_OPTS="-Dcpbs.config.path=/path/to/a/config/dir"
 ```
+
+#### TODO: limit number of restart tries
+
+You might not want a service to try to restart over and over again if it will always fail.\
+Because that will fill up your logs and it might be harder to find the reason of failure.
+
+>To allow a maximum of 5 retries separated by 30 seconds use the following options in the relevant systemd service file.
+
+```
+[Unit]
+StartLimitInterval=200
+StartLimitBurst=5
+
+[Service]
+Restart=always
+RestartSec=30
+```
+
+>Note that StartLimitInterval must be greater than RestartSec * StartLimitBurst otherwise the service will be restarted indefinitely.\
+The service is considered failed when restarted StartLimitBurst times within StartLimitInterval.
