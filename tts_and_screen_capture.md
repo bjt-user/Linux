@@ -1,4 +1,21 @@
-**gTTS (Google Text To Speech)** (better quality than festival, female voice)
+#### espeak
+```
+sudo apt install espeak
+```
+
+read a text file:
+```
+espeak -f tts.txt
+```
+
+change the speed (default is 175):
+```
+espeak -f tts.txt -s 150
+```
+
+***
+
+#### gTTS (Google Text To Speech) (better quality than festival, female voice)
 ```
 sudo pip3 install gtts
 ```
