@@ -28,7 +28,7 @@ gtts-cli -f test.txt -o output.mp3
 
 #### festival
 
-Text To Speech Software: (with crappy quality)
+Text To Speech Software.
 ```
 sudo apt install festival
 text2wave exampletext.txt -o output.wav
@@ -36,7 +36,7 @@ text2wave exampletext.txt -o output.wav
 
 - - -
 
-#### Record your screen** (wayland fails)
+#### Record your screen (wayland fails)
 
 ```
 sudo apt install simplescreenrecorder
