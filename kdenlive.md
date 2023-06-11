@@ -3,7 +3,8 @@ sudo apt install kdenlive
 ```
 
 #### add video to project
-Project -> Add clip or folder
+Project -> Add clip or folder\
+(you can right click on it to setup a custom keyboard shortcut)
 
 Then it appears in the left box and from there you can move it in the bottom in the working area.
 
