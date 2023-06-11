@@ -47,6 +47,8 @@ ctrl + pos1 - go to beginning of the timeline \
 ctrl + enter - render project\
 shift + drag a rectangle with left mouse - to select multiple clips
 
+You can rightclick on menu items to create custom shortcuts.
+
 #### enable proxy clips
 
 enable proxy clips if you dont have powerful hardware.\
