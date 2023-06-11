@@ -13,6 +13,11 @@ change the speed (default is 175):
 espeak -f tts.txt -s 150
 ```
 
+save output to a wav file:
+```
+espeak -f tts.txt -s 150 -w festival-output.wav
+```
+
 ***
 
 #### gTTS (Google Text To Speech) (better quality than festival, female voice)
