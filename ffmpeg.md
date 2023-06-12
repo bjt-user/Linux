@@ -70,3 +70,11 @@ ffmpeg -f pulse -i 5 output.wav
 ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -i :0.0+0,0 -f alsa -ac 2 -i pulse -acodec aac -strict experimental output.flv
 ```
 **WARNING: this also recorded the internal laptop microphone!**
+
+***
+
+#### TODO: volume stuff
+
+```
+ffmpeg -i test.webm -af  "volume=10dB"  -c:v libvpx-vp9 -crf 30   -b:v output.webm
+```
