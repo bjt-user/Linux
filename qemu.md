@@ -314,6 +314,7 @@ ps -ef | grep -i "dnsmasq"
 
 There were two processes running. I killed them.
 
-=> then `virt-manager` and `virsh` worked again...
+=> then `virt-manager` and `virsh` worked again...\
+but without networking.
 
 ***
