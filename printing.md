@@ -1,8 +1,12 @@
 Standard **port** for most printers seems to be `9100`.
 
 To initialize a printer you first have to use "CUPS".
-(there are youtube tutorials how to do it)
-Type 
+
+if the cups service is active
+```
+systemctl status cups
+```
+you should be able to access 
 ```
 http://localhost:631/
 ```
