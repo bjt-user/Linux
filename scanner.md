@@ -12,3 +12,5 @@ scanimage -L
 says no device found...
 
 https://developers.hp.com/hp-linux-imaging-and-printing/
+
+=> it gives you a shell script that you have to execute and it seems to only work for specific distros
