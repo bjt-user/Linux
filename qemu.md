@@ -317,4 +317,6 @@ There were two processes running. I killed them.
 => then `virt-manager` and `virsh` worked again...\
 but without networking.
 
+rebooted the host and the VM was working again with networking (NAT)
+
 ***
