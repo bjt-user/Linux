@@ -302,4 +302,18 @@ sudo usermod -aG libvirt bf
 
 seems like a `pacman -Syu` broke it at some point...
 
+#### left-over process dnsmasq
+
+```
+Found left-over process 437 (dnsmasq) in control group while starting unit. Ignoring.
+```
+then I did
+```
+ps -ef | grep -i "dnsmasq"
+```
+
+There were two processes running. I killed them.
+
+=> then `virt-manager` and `virsh` worked again...
+
 ***
