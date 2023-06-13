@@ -10,3 +10,5 @@ but
 scanimage -L
 ```
 says no device found...
+
+https://developers.hp.com/hp-linux-imaging-and-printing/
