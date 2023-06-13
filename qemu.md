@@ -300,7 +300,7 @@ sudo usermod -aG libvirt bf
 
 2. it might still occur that you can't connect with `virt-manager` or `virsh` even though your user is in libvirt group
 
-seems like a `pacman -Syu` broke it at some point...
+=> reason were dnsmasq processes that were running
 
 #### left-over process dnsmasq
 
