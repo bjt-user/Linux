@@ -22,9 +22,10 @@ Got my scanner working in a qemu VM with Ubuntu 22.04 by just installing `simple
 
 So what is the difference between the Ubuntu 22.04 VM and the Arch Linux system?
 
-TODO: try this package:
 ```
-$ sudo pacman -Ss hplip
+$ sudo pacman -S hplip
 extra/hplip 1:3.23.5-1
     Drivers for HP DeskJet, OfficeJet, Photosmart, Business Inkjet and some LaserJet
 ```
+
+=> then it also works on Arch!
