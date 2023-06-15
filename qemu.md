@@ -126,6 +126,23 @@ This made the VM accessible from another computer in the same network on port 55
 qemu-system-x86_64 -enable-kvm -hda myimage.img -m 2G -device e1000,netdev=net0 -netdev user,id=net0,hostfwd=tcp::5555-:22
 ```
 
+#### use usb host device
+
+If you want to use a usb device from the host operating system, like a scanner for example,\
+you have to install an additional package:
+```
+sudo pacman -S qemu-hw-usb-host
+```
+```
+sudo systemctl restart libvirtd
+```
+Then go into the "details" of your VM in `virt-manager`:
+`add hardware` -> `usb host device` -> choose your device
+
+Shutdown your VM! (reboot might not be enough)
+
+Launch your VM! (and it worked for an Ubuntu VM)
+
 #### failed: launch VM in a terminal emulator
 
 1. create a virtual image
