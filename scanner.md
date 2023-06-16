@@ -1,5 +1,7 @@
 https://wiki.archlinux.org/title/SANE
 
+https://wiki.archlinux.org/title/SANE/Scanner-specific_problems
+
 plug in your scanner and turn it on
 ```
 sudo sane-find-scanner
@@ -15,6 +17,12 @@ https://developers.hp.com/hp-linux-imaging-and-printing/
 
 => it gives you a shell script that you have to execute and it seems to only work for specific distros\
 => maybe install a listed distro in a VM
+
+#### hp scanners
+
+```
+sudo pacman -S hplip
+```
 
 #### works in ubuntu vm but not in arch linux
 
