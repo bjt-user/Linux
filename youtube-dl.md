@@ -1,10 +1,15 @@
-**Old packages on Debian or Ubuntu might not work.**
+https://github.com/yt-dlp/yt-dlp
+
+=> using the linux standalone binary works
 
 #### installation
 
-https://github.com/ytdl-org/youtube-dl
+https://github.com/ytdl-org/youtube-dl \
+=> doesnt work anymore
 
-
+```
+yt-dlp -f m4a https://www.youtube.com/watch?v=9a6hd41wyUc
+```
 
 Put the youtube link in quotes so that characters like `&` will not destroy the command.
 
@@ -27,6 +32,11 @@ it takes very long but it downloads one video after the other
 ***
 
 #### downloading audio
+
+```
+yt-dlp -f m4a https://www.youtube.com/watch?v=9a6hd41wyUc
+```
+
 
 `-x` for extract audio
 
