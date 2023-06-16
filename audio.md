@@ -216,6 +216,14 @@ paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
 
 ***
 
+#### test microphone
+
+The `pulseaudio-utils` package has the `parec` command:
+```
+parec --format=s16le --channels=2 --rate=44100 | pacat
+```
+This will record from your microphone and output it a couple of seconds later.
+
 ## Volume problem in movies
 
 In movies the volume is always unappropriate, shootings and music is very loud,
