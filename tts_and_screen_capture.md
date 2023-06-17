@@ -3,6 +3,10 @@
 sudo apt install espeak
 ```
 
+```
+sudo pacman -S espeak-ng
+```
+
 read a text file:
 ```
 espeak -f tts.txt
