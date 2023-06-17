@@ -218,6 +218,18 @@ paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
 
 #### test microphone
 
+part of the `libpulse` package:
+```
+parecord file.mp3
+```
+
+```
+pacman -F parecord
+extra/libpulse 16.1-6 [installed]
+    usr/bin/parecord
+    usr/share/bash-completion/completions/parecord
+```
+
 The `pulseaudio-utils` package has the `parec` command:
 ```
 parec --format=s16le --channels=2 --rate=44100 | pacat
