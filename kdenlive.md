@@ -1,3 +1,5 @@
+#### installation
+
 ```
 sudo apt install kdenlive
 ```
@@ -33,6 +35,10 @@ switch to `selection tool` and left click the part you want to remove and hit <k
 
 Another way is to set the "selection line" to the right time, then select the clip you want to cut.\
 And then hit <kbd>shift + r</kbd>.
+
+#### select multiple clips in the working area
+
+Hold <kbd>shift</kbd> and the left mouse button and drag to select multiple clips.
 
 ***
 
