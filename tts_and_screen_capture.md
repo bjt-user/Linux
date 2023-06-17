@@ -6,6 +6,7 @@ sudo apt install espeak
 ```
 sudo pacman -S espeak-ng
 ```
+(where `ng` seems to stand for "next generation")
 
 read a text file:
 ```
