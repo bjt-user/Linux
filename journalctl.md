@@ -43,6 +43,9 @@ Finally, relative times may be specified, prefixed with "-" or "+", referring to
 Note that --output=short-full prints timestamps that follow precisely this format.
 ```
 
+```
+journalctl -u libvirtd -S 2022-01-01
+
 ***
 #### check out what happened last session
 
