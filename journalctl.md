@@ -45,6 +45,7 @@ Note that --output=short-full prints timestamps that follow precisely this forma
 
 ```
 journalctl -u libvirtd -S 2022-01-01
+```
 
 ***
 #### check out what happened last session
