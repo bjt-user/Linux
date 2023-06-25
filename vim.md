@@ -1,5 +1,12 @@
 ### vim usage
 
+#### open file
+
+open a file and put the cursor in line 25:
+```
+vim myfile.c +25
+```
+
 #### Navigation (in the file)
 
 In normal mode:\
