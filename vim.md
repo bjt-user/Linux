@@ -2,6 +2,8 @@
 
 #### open file
 
+With `vim myfile +command` you can execute a command in vim at startup.
+
 open a file and put the cursor in line 25:
 ```
 vim myfile.c +25
