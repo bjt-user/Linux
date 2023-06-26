@@ -139,6 +139,11 @@ sudo dnf autoremove
 This seemed to have removed too many packages.\
 For example `pass` was removed.
 
+#### list all versions of a package
+```
+dnf --showduplicates list php
+```
+
 #### other helpful options
 
 This might be helpful:
