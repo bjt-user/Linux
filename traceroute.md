@@ -1,9 +1,4 @@
-----
 
-- TOC
-{:toc}
-
-----
 
 This seems to be the source code:
 
@@ -12,7 +7,7 @@ https://github.com/openbsd/src/tree/master/usr.sbin/traceroute
 2 files with 1000 lines each, seems easy to compile
 
 #### installation with package manager
-
+{:toc}
 ```
 sudo pacman -S traceroute
 ```
@@ -20,6 +15,7 @@ sudo pacman -S traceroute
 ***
 
 #### basic usage
+{:toc}
 ```
 traceroute google.com
 ```
