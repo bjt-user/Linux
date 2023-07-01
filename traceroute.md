@@ -1,4 +1,8 @@
+----
+
 {:toc}
+
+----
 
 This seems to be the source code:
 
