@@ -1,3 +1,5 @@
+{:toc}
+
 This seems to be the source code:
 
 https://github.com/openbsd/src/tree/master/usr.sbin/traceroute
