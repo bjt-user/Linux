@@ -20,6 +20,7 @@ an easy and fast way to test the webcam: (you might have to change the number be
 ```
 ffplay -window_title Webcam -fast /dev/video0
 ```
+(`-window_title` is optional)
 
 This will record video from the webcam and save it in a file (worked for **Ubuntu** with internal and external webcam):
 ```
