@@ -140,6 +140,8 @@ You can look what headers Firefox sends in the web developer tools (<kbd>ctrl</k
 network tab -> (refresh site again if not all GET requests are shown) -> click on a row and look at the "header section" on the right\
 at the bottom you see "user agent"
 
+But in this case it does not help much because you need to execute client side javascript to get useful data, which is not possible with curl.
+
 ***
 ***
 ***
