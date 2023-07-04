@@ -6,7 +6,15 @@ https://github.com/openbsd/src/tree/master/usr.sbin/traceroute
 => its a weird Makefile, will probably only compile on OpenBSD.\
 Doesnt work on Linux.
 
-Maybe write a custom Makefile for Linux.
+Seems to use header files that don't exist on Linux:
+```
+traceroute.c:252:19: fatal error: event.h: No such file or directory
+ #include <event.h>
+                   ^
+compilation terminated.
+worker.c:80:17: fatal error: asr.h: No such file or directory
+ #include <asr.h>
+```
 
 #### installation with package manager
 
