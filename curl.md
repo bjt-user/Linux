@@ -116,6 +116,30 @@ From gmail to web.de you need an app password:
 < 534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor
 ```
 
+## set headers with your request
+
+Some sites will not let you curl them without a "user agent" header:
+```
+$ curl https://www.nasdaq.com/market-activity/stocks/msft
+<HTML><HEAD>
+<TITLE>Access Denied</TITLE>
+</HEAD><BODY>
+<H1>Access Denied</H1>
+ 
+You don't have permission to access "http&#58;&#47;&#47;www&#46;nasdaq&#46;com&#47;market&#45;activity&#47;stocks&#47;msft" on this server.<P>
+Reference&#32;&#35;18&#46;ecc4dd58&#46;1688493270&#46;1774b026
+</BODY>
+</HTML>
+```
+
+this worked:
+```
+curl -H "User-Agent: Mozilla/5.0 Firefox/115.0" https://www.nasdaq.com/market-activity/stocks/msft
+```
+You can look what headers Firefox sends in the web developer tools (<kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>i</kbd>)\
+network tab -> (refresh site again if not all GET requests are shown) -> click on a row and look at the "header section" on the right\
+at the bottom you see "user agent"
+
 ***
 ***
 ***
