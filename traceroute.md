@@ -1,9 +1,12 @@
-
 This seems to be the source code:
 
 https://github.com/openbsd/src/tree/master/usr.sbin/traceroute
 
-2 files with 1000 lines each, seems easy to compile
+2 files with 1000 lines each, seems easy to compile\
+=> its a weird Makefile, will probably only compile on OpenBSD.\
+Doesnt work on Linux.
+
+Maybe write a custom Makefile for Linux.
 
 #### installation with package manager
 
