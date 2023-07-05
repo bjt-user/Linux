@@ -24,6 +24,9 @@ build:
 
 run:
         podman run -d -p 8080:80 --name mediawiki-1.40.0-container mediawiki-1.40.0
+
+clean:
+        podman rmi -f mediawiki-1.40.0
 ```
 
-Then you can build your container with `make build` and run it with `make run`.
+Then you can build your container with `make build`, run it with `make run`, and remove the containers with `make clean`.
