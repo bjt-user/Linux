@@ -160,3 +160,27 @@ search for a specific file/command you want
 pacman -F hostname
 ```
 => this shows me that I can get the hostname command with the `inetutils` package
+
+## troubleshooting
+
+#### gpg keys
+
+Sometimes there are problems getting the gpg keys.
+```
+man 5 pacman.conf
+```
+The SigLevel directive is valid in both the options and repository sections.\
+If used in options, it sets a default value for any repository that does not provide the setting.
+
+•   If set to Never, no signature checking will take place.
+•   If set to Optional , signatures will be checked when present, but unsigned databases and packages will also be accepted.
+•   If set to Required, signatures will be required on all packages and databases.
+
+```
+$ cat /etc/pacman.conf | grep -ni "sig"
+43:SigLevel    = Never
+44:LocalFileSigLevel = Never
+45:RemoteFileSigLevel = Never
+```
+
+Then a `sudo pacman -Syu` will work again.
