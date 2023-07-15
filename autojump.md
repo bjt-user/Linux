@@ -64,7 +64,7 @@ https://aur.archlinux.org/packages/autojump
 
 => that worked
 
-#### manual install fail
+#### install.py fail
 
 ```
 sudo -i
@@ -84,6 +84,26 @@ Please manually add the following line(s) to ~/.bashrc:
 Restarted terminal and still `j: command not found`....
 
 Maybe this is because I installed it as `root`....
+
+#### manual install 2
+
+```
+sudo pacman -S python3
+```
+
+```
+sudo git clone https://github.com/wting/autojump.git /opt/autojump
+```
+
+```
+cd /opt/autojump/bin
+sudo cp autojump autojump_argparse.py autojump_data.py autojump_match.py autojump_utils.py /usr/local/bin/.
+```
+
+The file you need to source in your bashrc is `/opt/autojump/bin/autojump.bash`.\
+=> Ive put this into my dotfiles
+
+=> works
 
 #### usage
 
