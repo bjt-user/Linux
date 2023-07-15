@@ -15,6 +15,22 @@ On Fedora the log file is `/home/bf/.local/share/xorg/Xorg.0.log`.\
 
 ***
 
+#### installation
+
+```
+sudo pacman -S xorg
+```
+```
+sudo pacman -S xorg-xinit xterm
+```
+
+then you can do a 
+```
+startx
+```
+=> which gets you multiple xterms, but weirdly arranged\
+=> also gives you a mouse
+
 ## troubleshooting
 
 #### startx: command not found
