@@ -19,3 +19,12 @@ sudo reboot
 ```
 
 ***
+
+## troubleshooting
+
+#### switch back to linux terminal
+
+If you `lightdm` is started up, but you forgot to install stuff, you can go back to the terminal with:\
+<kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F1</kbd>\
+then:\
+<kbd>alt</kbd> + <kbd>F3</kbd>
