@@ -15,7 +15,7 @@ On Fedora the log file is `/home/bf/.local/share/xorg/Xorg.0.log`.\
 
 ***
 
-#### installation
+#### installation (without a window manager)
 
 ```
 sudo pacman -S xorg
@@ -30,6 +30,8 @@ startx
 ```
 => which gets you multiple xterms, but weirdly arranged\
 => also gives you a mouse
+
+to end xorg <kbd>ctrol</kbd> + <kbd>d</kbd> worked
 
 ## troubleshooting
 
