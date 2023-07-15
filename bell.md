@@ -21,3 +21,5 @@ then do
 sudo rmmod pcspkr
 sudo rmmod snd_pcsp
 ```
+
+=> that seemed to work globally!
