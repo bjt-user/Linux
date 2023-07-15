@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 function confirmation() {
   read -p "Do you really want to continue? [y|n] "
@@ -23,6 +23,7 @@ function ensure_package() {
     else
       printf "Installation of %s FAILED!!!" "$package"
       exit 1
+    fi
   else
     printf "%s is already installed.\n" "$package"
   fi
