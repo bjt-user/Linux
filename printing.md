@@ -2,6 +2,10 @@ Standard **port** for most printers seems to be `9100`.
 
 To initialize a printer you first have to use "CUPS".
 
+```
+sudo pacman -S cups
+```
+
 if the cups service is active
 ```
 systemctl status cups
