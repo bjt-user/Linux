@@ -35,6 +35,19 @@ Just using `lp` doesnt seem to work because you need to setup that printer first
 
 ***
 
+#### system-config-printer
+
+```
+sudo pacman -S system-config-printer
+```
+You can print a test page with that program.
+
+#### printing pdfs
+
+Did NOT work with `zathura`.
+
+But it DID work with `evince`.
+
 #### printing mbox html emails
 
 I encountered problems when printing emails from Evolution in a `.mbox` format.\
