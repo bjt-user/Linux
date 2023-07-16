@@ -31,6 +31,8 @@ Various commands that might help, when printing doesn't work:
 Some printers have the function where you can print a network configuration page.\
 There you can see the **IP**, MAC address, network name of the printer among other information.
 
+Just using `lp` doesnt seem to work because you need to setup that printer first.
+
 ***
 
 #### printing mbox html emails
