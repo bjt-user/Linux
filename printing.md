@@ -26,6 +26,13 @@ Various commands that might help, when printing doesn't work:
 `cancel yourprinter-14`       - cancels a print jobs that is shown in "lpstat" (where "yourprinter-14" is in the first column of a lpstat prompt)
 
 ***
+#### printers connected in the network
+
+Some printers have the function where you can print a network configuration page.\
+There you can see the **IP**, MAC address, network name of the printer among other information.
+
+***
+
 #### printing mbox html emails
 
 I encountered problems when printing emails from Evolution in a `.mbox` format.\
