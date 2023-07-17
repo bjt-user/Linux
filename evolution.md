@@ -34,3 +34,9 @@ And it should remember it.
 BUT: evolution doesnt ask me for a password.
 
 ***
+
+#### calendar
+
+Calendar data is stored in the popular `.ics` format:\
+`~/.local/share/evolution/calendar/system/calendar.ics`
+
