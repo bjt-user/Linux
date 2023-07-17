@@ -40,3 +40,7 @@ BUT: evolution doesnt ask me for a password.
 Calendar data is stored in the popular `.ics` format:\
 `~/.local/share/evolution/calendar/system/calendar.ics`
 
+To delete old entries from that calendar (maybe via script in the future):\
+search for the "summary" you gave for your appointment\
+then you see `BEGIN:VEVENT`, and you can delete until `END:VEVENT`.\
+The entries are chronological, so you search for the first `BEGIN:VEVENT` in the file and start deleting from that until a `END:VEVENT` that is still in the past and not an upcoming event.
