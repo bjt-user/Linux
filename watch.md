@@ -15,3 +15,17 @@ For example you can run simple c programs with this
 watch 'gcc hw.c && ./a.out'
 ```
 and change the source in a second window
+
+## bugs
+
+#### ps output
+
+I noticed that some processes were missing when doing a
+```
+watch 'ps -ef | grep -i "myprocess"'
+```
+that were always present in a normal
+```
+ps -ef | grep -i "myprocess"
+```
+output.
