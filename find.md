@@ -74,3 +74,11 @@ find . -type f -name myfilename.csv
 ```
 find . -type f -mtime -14
 ```
+
+#### deleting old files (dumps, logs)
+
+deleting logs who were not modified in the last 90 days
+```
+find /var/log/my_application/ -type f -mtime +90 -exec rm -f {} \; >/dev/null 2>&1
+```
+You might want to put something like this in your crontab.
