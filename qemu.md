@@ -312,7 +312,10 @@ sudo pacman -S dnsmasq
 error message `no active connection to install on` when trying to create a vm, can be solved \
 by adding the user to the `libvirt` group:
 ```
-sudo usermod -aG libvirt bf
+sudo usermod -aG libvirt ${USER}
+```
+```
+sudo reboot
 ```
 
 2. it might still occur that you can't connect with `virt-manager` or `virsh` even though your user is in libvirt group
