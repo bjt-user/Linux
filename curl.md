@@ -142,6 +142,22 @@ at the bottom you see "user agent"
 
 But in this case it does not help much because you need to execute client side javascript to get useful data, which is not possible with curl.
 
+#### -k / --insecure | trust unsecure https connections
+
+To resolve this error:
+```
+curl: (60) SSL certificate problem: self signed certificate in certificate chain
+More details here: https://curl.haxx.se/docs/sslcerts.html
+
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
+```
+
+```
+curl -k -L --noproxy '*' https://my-local-site.lo
+```
+
 ***
 ***
 ***
