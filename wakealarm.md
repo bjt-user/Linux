@@ -2,7 +2,7 @@ You can boot up your pc at a specific time.\
 
 Put the RTC alarm option in your BIOS to `handled by OS`.
 
-Put this script in `/usr/sbin/shutwake.sh
+Put this script in `/usr/local/sbin/shutwake.sh
 ```
 #!/bin/bash 
 sh -c "echo 0 > /sys/class/rtc/rtc0/wakealarm" 
