@@ -6,7 +6,7 @@ Put this script in `/usr/local/sbin/shutwake.sh
 ```
 #!/bin/bash 
 sh -c "echo 0 > /sys/class/rtc/rtc0/wakealarm" 
-sh -c "echo `date '+%s' -d 'tomorrow 18:00:00'` > /sys/class/rtc/rtc0/wakealarm" 
+sh -c "echo $(date '+%s' -d 'tomorrow 18:00:00') > /sys/class/rtc/rtc0/wakealarm" 
 shutdown now
 ```
 
@@ -14,7 +14,7 @@ or
 ```
 #!/bin/bash 
 sh -c "echo 0 > /sys/class/rtc/rtc0/wakealarm" 
-sh -c "echo `date '+%s' -d '+ 420 minutes'` > /sys/class/rtc/rtc0/wakealarm" 
+sh -c "echo $(date '+%s' -d '+ 420 minutes') > /sys/class/rtc/rtc0/wakealarm" 
 shutdown now
 ```
 
