@@ -28,10 +28,9 @@ Then choose your password.
 
 Then you need to rightclick the keyring and "set as default"!
 
+Then reboot.\
 Then start evolution, type in your email password and tick the box "add to keyring".\
 And it should remember it.
-
-BUT: evolution doesnt ask me for a password.
 
 ***
 
