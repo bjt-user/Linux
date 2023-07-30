@@ -12,9 +12,14 @@ OR:
 
 Use "html" instead of "plain text" as editing mode.
 
--------------------------------------------------------
+***
 
 #### evolution outside of gnome
+
+Without a keyring you have to type in your email password once every login.\
+Then you should be able to open evolution without typing in your pw for the duration of the login session.
+
+But you can also use gnome-keyring to unlock your password after logging in at lightdm.
 
 From archwiki:
 > Evolution relies on GNOME Keyring for storing account passwords, so to use Evolution outside of GNOME, see GNOME/Keyring#Using the keyring and make sure a password keyring with the name login exists. 
@@ -29,8 +34,10 @@ Then choose your password.
 Then you need to rightclick the keyring and "set as default"!
 
 Then reboot.\
+The the keyring was "locked", I had to unlock it with the password and tick "unlock at login".\
+Reboot again.\
 Then start evolution, type in your email password and tick the box "add to keyring".\
-And it should remember it.
+And it will remember it after your next login.
 
 ***
 
