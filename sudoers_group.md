@@ -43,7 +43,7 @@ to see in which groups you are.
 #### sudo without typing the password
 
 ```
-sudo visudo
+sudo EDITOR=vim visudo
 ```
 
 Then comment out the line for the `sudo` group.\
