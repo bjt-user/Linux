@@ -55,3 +55,11 @@ And add the line like this:
 (you don't need tabs, one space between words is enough)
 
 Start a new terminal session for a group change and sudoers file change to properly take effect.
+
+#### sudoedit
+
+to use sudoedit you need this:
+```
+# resolve sudoedit error
+Defaults    !sudoedit_checkdir
+```
