@@ -24,7 +24,12 @@ In normal mode:\
 #### Navigation (in the filesystem)
 
 ```
-:Explore
+:E(xplore)
+```
+
+go back to your file
+```
+:Re(xplore)
 ```
 
 This way you can choose another file to open.\
