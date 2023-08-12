@@ -37,3 +37,12 @@ extra/hplip 1:3.23.5-1
 ```
 
 => then it also works on Arch!
+
+#### scanner in the network
+
+```
+sudoedit /etc/sane.d/net.conf
+```
+just put in the IP of the scanner in one line `192.168.2.xxx`
+
+Then when you do a `sudo scanimage -L` it actually finds the network scanner.
