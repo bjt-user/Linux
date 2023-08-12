@@ -15,7 +15,8 @@ you should be able to access
 http://localhost:631/
 ```
 in a browser.\
-Administration => Manage Printers   - shows all your printers that you have configured
+Administration => Manage Printers   - shows all your printers that you have configured\
+"Administration needs the credentials of your user" (not sure if your user needs to be in wheel group)
 
 Various commands that might help, when printing doesn't work:
 `lpq`       - seems to show the printing schedule of the default printer\
