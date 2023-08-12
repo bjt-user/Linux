@@ -46,3 +46,6 @@ sudoedit /etc/sane.d/net.conf
 just put in the IP of the scanner in one line `192.168.2.xxx`
 
 Then when you do a `sudo scanimage -L` it actually finds the network scanner.
+
+Then even `simple-scan` will find it!\
+(but dont hit the search button a second time after launching the program then it will not find it again)
