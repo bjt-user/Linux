@@ -68,6 +68,10 @@ effects->audio corrections->volume (keyframeable) and drag that into the clip
 
 then leftclick the clip and you can adjust the `gain` (set it to -30 to have a big effect)
 
+or (simpler):\
+effects->volume and dynamics->gain (drag it onto the audio clip)\
+Then simply use a 10% gain on that clip and it will be very quiet.
+
 ***
 #### transitions
 
