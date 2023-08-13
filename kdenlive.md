@@ -76,8 +76,8 @@ Then simply use a 10% gain on that clip and it will be very quiet.
 #### transitions
 
 Add a transition of two video clips.\
-Put one video clip over the other one.\
-Then click on the small dot on the upper video clip and there will be a "wipe" transition added".
+Put one video clip over the other one by using two audio and two video tracks.\
+Then click on the small dot on the bottom of the upper video clip and there will be a "wipe" transition added".
 
 With audio it does not work like that, it will just fade in and out for some time if you click this dot at the corner of the audio clips.
 
