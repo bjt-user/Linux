@@ -85,3 +85,5 @@ install: a.out
 
 Usually all "recipes"/commands will be printed to stdout before executing them.\
 Put a `@` infront of a "recipe"/command, so that the command will run but not be displayed on the cli.
+
+Useful if you put `echo` commands in your recipes.
