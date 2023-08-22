@@ -79,6 +79,21 @@ install: a.out
 	cp a.out /usr/local/bin/ics_analyzer
 ```
 
+#### makefile for bigger projects
+
+How to construct a "proper" makefile with first creating all the object files and then linking everything to a binary?
+
+Having a makefile above your `src/` dir makes writing the makefile too stressful, because you have to include the path all the time.\
+I think its better to have the makefile in the `src` directory with all the source files and then maybe have a second makefile in the top level directory that builds or includes the other makefile.
+
+You should definatelly create a variable for your object files like this:\
+https://www.gnu.org/software/make/manual/make.html#Variables-Simplify
+
+Use tips from chatgpt:
+> Auto-Generating Object Files: Instead of explicitly listing each object file, you can automatically generate them using substitution functions. For instance: OBJECTS := $(SOURCES:.c=.o).
+> Automate Source Discovery: You can use wildcard patterns to automatically discover source files in your project directory. For example: SOURCES := $(wildcard src/*.c).
+> Use Build Systems: Consider using build system tools like CMake or Meson. They abstract away much of the complexity of writing Makefiles and can generate them for you based on a configuration file.
+
 ## syntax
 
 #### @ symbol
