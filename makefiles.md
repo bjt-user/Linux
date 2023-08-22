@@ -79,7 +79,7 @@ install: a.out
 	cp a.out /usr/local/bin/ics_analyzer
 ```
 
-#### makefile for bigger projects
+#### TODO: makefile for bigger projects
 
 How to construct a "proper" makefile with first creating all the object files and then linking everything to a binary?
 
