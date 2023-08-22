@@ -86,7 +86,7 @@ How to construct a "proper" makefile with first creating all the object files an
 Having a makefile above your `src/` dir makes writing the makefile too stressful, because you have to include the path all the time.\
 I think its better to have the makefile in the `src` directory with all the source files and then maybe have a second makefile in the top level directory that builds or includes the other makefile.
 
-You should definatelly create a variable for your object files like this:\
+creating a variable for the object files will not work, because they dont exist at the time you run make:\
 https://www.gnu.org/software/make/manual/make.html#Variables-Simplify
 
 Use tips from chatgpt:
