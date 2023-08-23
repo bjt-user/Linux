@@ -89,7 +89,7 @@ install: a.out
 
 #### implicit rules
 
-If there is no rule for a prerequisite, make will look for an implicit rule.
+If there is no rule and/or recipe for a prerequisite, make will look for an implicit rule.
 
 This will work and make will compile the source files `main.c` and `print_test.c` to .o files implicitly:
 ```
@@ -100,6 +100,10 @@ executable: main.o print_test.o
         $(CC) $(CFLAGS) -o executable main.o print_test.o
 ```
 Doesnt seem to work for the linking process though.
+
+And it doesnt detect changes in header files.\
+So you would need to write a custom rule and include the header files in the prerequisites.\
+But at least you can ommit the recipe.
 
 #### TODO: makefile for bigger projects
 
