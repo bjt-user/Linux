@@ -114,6 +114,22 @@ main: main.o print_test.o
 
 But still you have the problem with the header files.
 
+A structure like this works even for changes of the header files:
+```
+CC = gcc
+CFLAGS = -Wall
+
+main: main.o print_test.o
+
+main.o: main.c
+
+print_test.o: print_test.c print_test.h
+
+.PHONY: clean
+clean:
+        -rm *.o executable
+```
+
 #### TODO: makefile for bigger projects
 
 How to construct a "proper" makefile with first creating all the object files and then linking everything to a binary?
