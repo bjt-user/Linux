@@ -1,3 +1,11 @@
+#### resources
+ascii version:\
+https://www.gnu.org/software/make/manual/make.txt
+
+the pdf version seems ok:\
+https://www.gnu.org/software/make/manual/make.pdf
+
+the html version is unwieldy:\
 https://www.gnu.org/software/make/manual/make.html
 
 A Makefile is a unix tool to compile software projects.
