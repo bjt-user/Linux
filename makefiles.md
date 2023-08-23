@@ -99,11 +99,20 @@ CFLAGS = -Wall
 executable: main.o print_test.o
         $(CC) $(CFLAGS) -o executable main.o print_test.o
 ```
-Doesnt seem to work for the linking process though.
-
-And it doesnt detect changes in header files.\
+It doesnt detect changes in header files.\
 So you would need to write a custom rule and include the header files in the prerequisites.\
 But at least you can ommit the recipe.
+
+For linking it will only work if the name of the executable is the same as one of the object files.\
+For example `main`:
+```
+CC = gcc
+CFLAGS = -Wall
+
+main: main.o print_test.o
+```
+
+But still you have the problem with the header files.
 
 #### TODO: makefile for bigger projects
 
@@ -146,7 +155,7 @@ uninstall:
 
 .PHONY: clean
 clean:
-	rm *.o countdown
+	-rm *.o countdown
 ```
 
 #### example with wildcards
@@ -193,3 +202,12 @@ Usually all "recipes"/commands will be printed to stdout before executing them.\
 Put a `@` infront of a "recipe"/command, so that the command will run but not be displayed on the cli.
 
 Useful if you put `echo` commands in your recipes.
+
+#### - symbol
+
+In a recipe:
+```
+- rm *.o
+```
+the `-` will make sure, that the makefile continues even if the command failed \
+(for example when there are not object files to delete).
