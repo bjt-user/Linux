@@ -26,3 +26,8 @@ ls | fzf -m
 ```
 Select with <kbd>tab</kbd> \
 deselect with <kbd>shift</kbd> + <kbd>tab</kbd>
+
+It is easier to select if you use `--reverse`. Then you can just hit tab repeatedly:
+```
+fzf -m --reverse
+```
