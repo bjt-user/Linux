@@ -51,9 +51,14 @@ clean:
 
 Then you can build your container with `make build`, run it with `make run`, and remove the containers with `make clean`.
 
-#### make
+#### usage
 
 If you just run the command `make` it will execute the first "target" in the file.
+
+For a noop:
+```
+make -n
+```
 
 #### phony targets
 
