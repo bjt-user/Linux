@@ -121,6 +121,24 @@ clean:
 	rm *.o countdown
 ```
 
+#### example with wildcards
+
+This way you don't have to list every source file manually:
+```
+# List of all source files (assuming they're all in the same directory)
+SRC_FILES = $(wildcard *.c)
+
+# Generate a list of object files by replacing the .c extension with .o
+OBJ_FILES = $(SRC_FILES:.c=.o)
+
+ics_analyzer: $(OBJ_FILES)
+	gcc -Wall $(OBJ_FILES) -o ics_analyzer
+
+$(OBJ_FILES): $(SRC_FILES)
+	gcc -Wall -c $(SRC_FILES)
+```
+But this will recompile all source files even if just one source file changed.
+
 ## syntax
 
 #### @ symbol
