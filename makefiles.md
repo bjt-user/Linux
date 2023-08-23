@@ -94,6 +94,33 @@ Use tips from chatgpt:
 > Automate Source Discovery: You can use wildcard patterns to automatically discover source files in your project directory. For example: SOURCES := $(wildcard src/*.c).
 > Use Build Systems: Consider using build system tools like CMake or Meson. They abstract away much of the complexity of writing Makefiles and can generate them for you based on a configuration file.
 
+## examples
+
+#### simple example with two source files
+
+```
+countdown: main.o play_raw_audio.o
+	gcc main.o play_raw_audio.o -o countdown -lpulse-simple
+
+main.o: main.c
+	gcc -Wall -c main.c
+
+play_raw_audio.o: play_raw_audio.c
+	gcc -Wall -c play_raw_audio.c
+
+.PHONY:install
+install:
+	cp a.out /usr/local/bin/countdown
+
+.PHONY:uninstall
+uninstall:
+	rm /usr/local/bin/countdown
+
+.PHONY: clean
+clean:
+	rm *.o countdown
+```
+
 ## syntax
 
 #### @ symbol
