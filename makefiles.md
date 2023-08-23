@@ -87,6 +87,20 @@ install: a.out
 	cp a.out /usr/local/bin/ics_analyzer
 ```
 
+#### implicit rules
+
+If there is no rule for a prerequisite, make will look for an implicit rule.
+
+This will work and make will compile the source files `main.c` and `print_test.c` to .o files implicitly:
+```
+CC = gcc
+CFLAGS = -Wall
+
+executable: main.o print_test.o
+        $(CC) $(CFLAGS) -o executable main.o print_test.o
+```
+Doesnt seem to work for the linking process though.
+
 #### TODO: makefile for bigger projects
 
 How to construct a "proper" makefile with first creating all the object files and then linking everything to a binary?
