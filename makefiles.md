@@ -98,6 +98,7 @@ Use tips from chatgpt:
 
 #### simple example with two source files
 
+This will only recompile source files that have actually changed:
 ```
 countdown: main.o play_raw_audio.o
 	gcc main.o play_raw_audio.o -o countdown -lpulse-simple
