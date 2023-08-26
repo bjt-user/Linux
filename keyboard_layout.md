@@ -43,3 +43,26 @@ Section "InputClass"
 	Option "XkbModel" "pc105" #means there are 105 keys on your keyboard
 EndSection
 ```
+
+```
+$ localectl list-x11-keymap-variants de
+T3
+deadacute
+deadgraveacute
+deadtilde
+dsb
+dsb_qwertz
+dvorak
+e1
+e2
+mac
+mac_nodeadkeys
+neo
+nodeadkeys
+qwerty
+ro
+ro_nodeadkeys
+ru
+tr
+us
+```
