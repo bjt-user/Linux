@@ -28,4 +28,5 @@ Section "InputClass"
         Option "XkbModel" "pc105"
 EndSection
 ```
-now reboot
+now reboot\
+=> now it is us-layout, but no Umlauts are possible
