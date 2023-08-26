@@ -1,3 +1,5 @@
+https://wiki.archlinux.org/title/Xorg/Keyboard_configuration#Setting_keyboard_layout
+
 #### xorg
 
 ```
@@ -30,3 +32,14 @@ EndSection
 ```
 now reboot\
 => now it is us-layout, but no Umlauts are possible
+
+try this and reboot:
+```
+Section "InputClass"
+	Identifier "system-keyboard"
+	MatchIsKeyboard "on"
+	Option "XkbLayout" "us,de"
+	Option "XkbVariant" "altgr-intl,nodeadkeys"
+	Option "XkbModel" "pc105" #means there are 105 keys on your keyboard
+EndSection
+```
