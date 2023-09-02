@@ -65,6 +65,7 @@ useful for debugging
 ```
 make CFLAGS="-Wall -g"
 ```
+but you need to clean your directory first (remove object files)
 
 #### phony targets
 
