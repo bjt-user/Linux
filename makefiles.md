@@ -60,6 +60,12 @@ For a noop:
 make -n
 ```
 
+#### run make with different CFLAGS
+useful for debugging
+```
+make CFLAGS="-Wall -g"
+```
+
 #### phony targets
 
 When you have a makefile without strings behind the colons like above, it will work,\
