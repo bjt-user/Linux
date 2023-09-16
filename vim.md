@@ -306,6 +306,8 @@ ctrl + w + l (nach rechts wechseln)
 to close every window except the current one:
 :only
 
+<kbd>ctrl</kbd> + <kbd>w</kbd> <kbd>r</kbd> - will put the window on the left to the right and vice versa (or the window at the bottom to the top)
+
 to close all windows:
 :qa
 or
