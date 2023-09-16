@@ -302,3 +302,15 @@ then use wget:
 ```
 wget https://gitlab.com/bjt-user/Linux/-/raw/master/vimrc
 ```
+
+#### git diff
+
+You can show the diff of the file of the current branch to the same file in the master branch like this:
+```
+git diff master -- ics_format.txt
+```
+
+or to view it in `vimdiff`:
+```
+git difftool --tool=vimdiff master -- ics_format.txt
+```
