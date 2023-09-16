@@ -315,3 +315,20 @@ or to view it in `vimdiff`:
 git difftool -R --tool=vimdiff master -- ics_format.txt
 ```
 But when you cant change the file because it is readonly...
+
+Using this in your `~/.gitconfig` helps:
+```
+[diff]
+	tool = vimdiff
+
+[difftool]
+	prompt = false
+
+[difftool "vimdiff"]
+	cmd = vimdiff "$REMOTE" "$LOCAL"
+```
+
+Now you can just do
+```
+git difftool master -- my_file.txt
+```
