@@ -312,5 +312,6 @@ git diff master -- ics_format.txt
 
 or to view it in `vimdiff`:
 ```
-git difftool --tool=vimdiff master -- ics_format.txt
+git difftool -R --tool=vimdiff master -- ics_format.txt
 ```
+But when you cant change the file because it is readonly...
