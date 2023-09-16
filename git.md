@@ -332,3 +332,13 @@ Now you can just do
 ```
 git difftool master -- my_file.txt
 ```
+
+#### overwrite a file with the version from another branch
+
+First do a `git branch` to see in which branch you currently are.
+
+If you are in `master` branch, then this command will overwrite the `.gitignore` file in `master` branch \
+with the `.gitignore` file from the "fix-location-field-bug" Branch:
+```
+git checkout fix-location-field-bug -- .gitignore
+```
