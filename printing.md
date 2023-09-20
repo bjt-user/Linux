@@ -26,6 +26,20 @@ Various commands that might help, when printing doesn't work:
 => this did not work for a `.mbox` file\
 `cancel yourprinter-14`       - cancels a print jobs that is shown in "lpstat" (where "yourprinter-14" is in the first column of a lpstat prompt)
 
+#### lp
+
+first you need to configure your printer in cups
+
+see your printer:
+```
+$ lpstat -a
+HP_Deskjet_F2200_series accepting requests since Wed Sep 20 18:41:26 2023
+```
+configure your default printer:
+```
+lpoptions -d HP_Deskjet_F2200_series
+```
+
 ***
 #### printers connected in the network
 
