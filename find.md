@@ -61,6 +61,11 @@ $ find . -type d -name "m*"
 ./doc/html/man
 ```
 
+To exclude subdirectories you can use `-maxdepth 1`:
+```
+find . -maxdepth 1 -type d
+```
+
 ***
 
 #### only search for files
