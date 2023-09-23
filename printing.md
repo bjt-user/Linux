@@ -63,6 +63,12 @@ Did NOT work with `zathura`.
 
 But it DID work with `evince`.
 
+#### logs
+
+```
+cat /var/log/cups/*
+```
+
 #### printing mbox html emails
 
 I encountered problems when printing emails from Evolution in a `.mbox` format.\
