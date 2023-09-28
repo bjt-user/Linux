@@ -185,7 +185,8 @@ And it took me to the function declaration.
 
 #### delete until character
 
-type `dt"` to delete everything until the next `"` character appears.
+Type `dt"` to delete everything until the next `"` character appears.\
+Type `dTf` to delete from the current character backwards until an `f`.
 
 #### Vimdiff ohne Farbcodierung:
 
