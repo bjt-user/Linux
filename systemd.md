@@ -38,6 +38,11 @@ JAVA_HOME=/usr/java/openjdk-11.0.2
 JAVA_OPTS="-Dcpbs.config.path=/path/to/a/config/dir"
 ```
 
+When using spaces in environment variable you need to use double or single quotes:
+```
+Environment='JAVA_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,address=*:12346,server=y,suspend=n'
+```
+
 #### TODO: limit number of restart tries
 
 You might not want a service to try to restart over and over again if it will always fail.\
