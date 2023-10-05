@@ -6,6 +6,11 @@ You can see the location of a systemd unit file with the `systemctl status <unit
 
 `/lib/systemd/system` contains a lot of unit files
 
+to open a specific unit file with your `$EDITOR` you can also just do:
+```
+systemctl edit --full tomcat-n26.service
+```
+
 ### setting environment variables
 
 You can set them inside the unit file or use an environment file.
