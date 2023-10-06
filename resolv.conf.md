@@ -17,7 +17,7 @@ systemctl reload NetworkManager
 
 #### search keyword
 
-You can put the suffix of a fully qualified domain name into `/etc/resolv.con`:
+You can put the suffix of a fully qualified domain name into `/etc/resolv.conf`:
 
 ```
 search exampledomain.com
