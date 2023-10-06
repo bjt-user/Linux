@@ -1,4 +1,1 @@
-Sort after the second column:
-```
-cat myfile.txt | sort -k 2
-```
+How to sort after the second column?
