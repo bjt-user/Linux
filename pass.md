@@ -34,5 +34,5 @@ Error: Could not copy data to the clipboard
 ```
 Fix:
 ```
-$ sudo pacman -S wl-clipboard
+sudo pacman -S wl-clipboard
 ```
