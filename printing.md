@@ -30,7 +30,7 @@ Various commands that might help, when printing doesn't work:
 
 first you need to configure your printer in cups
 
-see your printer:
+see your default printer:
 ```
 $ lpstat -a
 HP_Deskjet_F2200_series accepting requests since Wed Sep 20 18:41:26 2023
