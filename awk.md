@@ -26,3 +26,10 @@ Print the second column of the **second row**:
 awk 'FNR == 2 {print $2}'
 ```
 ***
+
+#### use awk on csvs
+
+You need to specify a different separator:
+```
+cat list.csv | awk -F ',' {' print $6 '}
+```
