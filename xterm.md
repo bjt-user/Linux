@@ -100,3 +100,6 @@ xterm.vt100.translations: #override \n\
   <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0) \n\
   <Btn2Up>: insert-selection(PRIMARY)
 ```
+
+Issues:\
+<kbd>alt + b</kbd> and <kbd>alt + f</kbd> does not move the cursor
