@@ -83,3 +83,20 @@ xterm.vt100.translations: #override \n\
   <Btn2Up>: insert-selection(PRIMARY)
 ```
 
+#### config that works
+
+```
+XTerm*Background: black
+XTerm*Foreground: white
+
+xterm*faceName: DejaVu Sans Mono
+xterm*faceSize: 16
+
+XTerm.vt100.reverseVideo: true
+
+xterm.vt100.translations: #override \n\
+  Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+  Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+  <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0) \n\
+  <Btn2Up>: insert-selection(PRIMARY)
+```
