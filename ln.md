@@ -28,6 +28,9 @@ Note that you can't seem to make an existing folder into a symlink even when it 
 
 #### replacing an existing symlinked dir
 
+`-f` for "force"\
+`-v` for "verbose"\
+`-T` to not treat the last argument as a directory
 ```
 ln -sfvT /path/to/source/dir linkdir
 ```
