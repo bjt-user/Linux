@@ -25,3 +25,11 @@ This creates the folder `newlinkfolder` in the current working directory that al
 ln -s /home/bf/scripts newlinkfolder
 ```
 Note that you can't seem to make an existing folder into a symlink even when it is empty.
+
+#### replacing an existing symlinked dir
+
+```
+ln -sfvT /path/to/source/dir linkdir
+```
+
+***
