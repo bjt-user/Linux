@@ -77,3 +77,8 @@ Usually you want to compare recursively with `-r` to compare all subdirectories 
 ```
 diff -rq dir1 dir2
 ```
+
+This will also show if a file only exists in one directory:
+```
+Only in dir1: myscript.sh
+```
