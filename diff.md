@@ -1,4 +1,12 @@
-You can compare files with the `diff` command. (`diff file1 file2`)
+You can compare files or entire directories with the `diff` command.
+```
+diff file1 file2
+```
+
+or recursively compare two directories:
+```
+diff -r dir1 dir2
+```
 
 #### But What Does The Output Mean Exactly?
 
@@ -60,3 +68,12 @@ $ diff -u comparefiles1.txt comparefiles2.txt
 #### colored output
 
 use the option `--color` for colored output
+
+## comparing directories
+
+Usually you want to compare recursively with `-r` to compare all subdirectories as well.
+
+#### only show if files differ
+```
+diff -rq dir1 dir2
+```
