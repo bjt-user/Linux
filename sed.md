@@ -17,7 +17,8 @@ DESCRIPTION
     edit files in place (makes backup if SUFFIX supplied)
 ```
 
-`sed` works line by line so you can't apply regex logic across multiple lines.
+`sed` works line by line by default.\
+If you want to apply regex logic across multiple lines you have to use more complicated syntax.
 
 ---
 #### delete lines of a file
