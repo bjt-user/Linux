@@ -320,6 +320,17 @@ Outside of vim (for vertical split):
 vim -O file1 file2
 ```
 
+You can then go into each window and type
+```
+:set scrollbind
+```
+on both sides. Then you will scroll down both sides at the same time.
+
+to disable:
+```
+:set noscrollbind
+```
+
 ***
 
 #### multiline edit
