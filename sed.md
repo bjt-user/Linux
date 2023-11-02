@@ -123,7 +123,7 @@ sed -i -e 's/\r$//' myscript.sh
 
 ***
 
-#### remove all new lines from a file
+#### remove all blank lines from a file
 
 ```
 sed '/^$/D' shfmt_test.sh
