@@ -20,3 +20,9 @@ tar -tf mytar.tar
 tar tzvf filename
 ```
 lists the files in the archive without actually unpacking them.
+
+#### create tar file from directory
+
+```
+tar -cvf oracle-skripte.tar oracle-skripte
+```
