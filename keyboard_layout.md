@@ -2,6 +2,16 @@ https://wiki.archlinux.org/title/Xorg/Keyboard_configuration#Setting_keyboard_la
 
 #### xorg
 
+see your currently used configuration:
+```
+$ setxkbmap -query
+rules:      evdev
+model:      pc105
+layout:     de,de,us
+variant:    us,nodeadkeys,
+```
+
+set the layout to german:
 ```
 setxkbmap de
 ```
