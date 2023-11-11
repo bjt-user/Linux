@@ -65,6 +65,19 @@ Section "InputClass"
 EndSection
 ```
 reboot/
-=> and it works
+=> and it works (might not work when `gnome` is installed, see below)
 
 the `pc105` you need to adjust so that it fits your current keyboard
+
+#### gnome
+
+Even when you are not using `gnome`, but `gnome` is installed\
+`dconf` will mess with your keyboard layout.
+
+So to just use your X11 settings you have to set this value:
+```
+dconf read /desktop/ibus/general/use-system-keyboard-layout
+true
+```
+
+---
