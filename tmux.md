@@ -1,4 +1,6 @@
-`tmux` allows you to have multiple terminals inside one terminal session.
+`tmux` allows you to have multiple terminals inside one terminal session.\
+It also saves your terminal session on the server side which might be helpful in case \
+of disconnects.
 
 type `tmux` to open a terminal session.\
 If you type `exit` inside that terminal session, you close the session again.
@@ -8,6 +10,8 @@ If you type `exit` inside that terminal session, you close the session again.
 default `prefix key` is `ctrl + b`\
 (you can change that)
 
+`prefix` and then `$`   to rename the current session\
+`prefix` and then `d`   to close the current session\
 `ctrl + b` and then type `"` to split terminal windows horizontically.\
 `prefix` and then `%`   splits terminals vertically\
 `prefix` and then `!`   popout pane (make current pane into a window) \
@@ -16,14 +20,12 @@ default `prefix key` is `ctrl + b`\
 `prefix` and then `n`   to go to the next terminal window\
 `prefix` and then `&`   to kill the current window (after confirmation with `y`)\
 `prefix` and then `,`   to rename the current window\
-`prefix` and then `d`   to close the current session\
-`prefix` and then `$`   to rename the current session\
 `prefix` and then `s`   to switch between sessions\
 `prefix` and keep holding `ctrl` then use arrowkeys     to resize the pane
 
 `tmux attach` (or `tmux a`)  to go back into the tmux session\
-`tmux a -t 1`   to go to tmux session 1 (you can see the session number with `tmux ls`)\
-`tmux new -s "monitor"`  to create a new session and give it the new "monitor"\
+`tmux a -t 1`   to go to tmux session named '1' (you can see the session name with `tmux ls`)\
+`tmux new -s "monitor"`  to create a new session and give it the name "monitor"\
 `tmux kill-server`    to kill all sessions
 
 #### customize tmux
