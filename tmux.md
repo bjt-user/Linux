@@ -24,8 +24,10 @@ default `prefix key` is `ctrl + b`\
 `prefix` and keep holding `ctrl` then use arrowkeys     to resize the pane
 
 `tmux attach` (or `tmux a`)  to go back into the tmux session\
-`tmux a -t 1`   to go to tmux session named '1' (you can see the session name with `tmux ls`)\
+`tmux a -t 1`   to go to tmux session which name starts with '1' (you can see the session name with `tmux ls`)\
+(you just have to type the first letters of a session name)\
 `tmux new -s "monitor"`  to create a new session and give it the name "monitor"\
+`tmux kill-session -t foo`	to kill the session named `foo`\
 `tmux kill-server`    to kill all sessions
 
 #### customize tmux
