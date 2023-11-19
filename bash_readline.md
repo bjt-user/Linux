@@ -49,5 +49,14 @@ to go back and forth in history (without using arrowkeys):\
 the equivalent to <enter> (executes a command):\
 <kbd>ctrl</kbd> + <kbd>m</kbd>
 
-***
+---
 
+#### configuration
+
+https://www.gnu.org/software/bash/manual/bash.html#Readline-Init-File
+
+You can use a `~/.inputrc` file or set an environment variable that points to the location of
+the config file.\
+If that file does not exist or cannot be read, the ultimate default is `/etc/inputrc`.
+
+---
