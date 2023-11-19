@@ -1,5 +1,9 @@
 #### Useful shortcuts and tricks while entering commands in a terminal
 
+These key bindings seem to be based on bashs readline program:\
+https://www.gnu.org/software/bash/manual/bash.html#Readline-Movement-Commands
+
+So this does not really have anything to do with your terminal.
 
 *these work in Debian and seem to work in a Arch Linux console*
 
@@ -14,6 +18,8 @@ or\
 
 Go to the beginning of the line:\
 <kbd>ctrl</kbd> + <kbd>a</kbd>
+Go to the end of the line:\
+<kbd>ctrl</kbd> + <kbd>e</kbd>
 
 To delete from the cursor position to the end of the line:\
 <kbd>ctrl</kbd> + <kbd>k</kbd>
