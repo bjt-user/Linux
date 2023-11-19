@@ -60,3 +60,20 @@ the config file.\
 If that file does not exist or cannot be read, the ultimate default is `/etc/inputrc`.
 
 ---
+
+#### readline vi mode
+
+https://www.gnu.org/software/bash/manual/bash.html#Readline-vi-Mode
+
+The default editing mode is `emacs`.
+
+Change to vi mode:
+```
+set -o vi
+```
+When you enter a line in vi mode, you are already placed in ‘insertion’ mode, as if you had typed an ‘i’.
+Pressing ESC switches you into ‘command’ mode, where you can edit the text of the line with the standard vi movement keys, move to previous history lines with ‘k’ and subsequent lines with ‘j’, and so forth.
+
+`vi` mode is really great, unfortunatelly it is not the default.
+
+---
