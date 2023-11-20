@@ -7,3 +7,15 @@ show line numbers:
 ```
 less -N myfile.txt
 ```
+
+#### searching
+
+forward search
+```
+/pattern
+```
+
+backwards search
+```
+?pattern
+```
