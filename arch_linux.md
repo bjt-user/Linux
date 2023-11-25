@@ -494,12 +494,16 @@ https://wiki.archlinux.org/title/Partitioning
 
 Also for the boot partition I should **not** use `EFI`. I should use `FAT32` but still mount to `/boot/efi`.
 
-#### second try
+## successful second try (correct partitioning)
 
 I booted from USB again, had to do everything again until the partitioning section.\
 But the partitions seem to be already created.
 
-When I am in `fdisk -l` command prompt and type `i` and then `1` or `2` I can see the partitions.\
+```
+fdisk /dev/sda
+```
+
+When I am in `fdisk` cli and type `i` and then `1` or `2` I can see the partitions.\
 I could try to delete them or just create a new label.\
 Trying to create an `MBR` (`DOS`) partition table:
 ```
@@ -573,8 +577,6 @@ hwclock --systohc
 pacman -S vim
 ```
 
-
-
 If you set the console keyboard layout, make the changes persistent in vconsole.conf(5):
 ```
 /etc/vconsole.conf
@@ -603,7 +605,7 @@ passwd
 ```
 to set a pw for root (**mandatory - otherwise you cant login anymore**)
 
-***
+---
 creating a user is **optional**:
 ``` 
 useradd -m bf -s /bin/bash
@@ -623,7 +625,7 @@ and above the line that starts with root I enter
 ```
 bf ALL=(ALL:ALL) ALL
 ```
-***
+---
 
 ```
 pacman -S grub networkmanager network-manager-applet dialog dosfstools os-prober mtools linux-headers base-devel wpa_supplicant wireless_tools
@@ -671,7 +673,10 @@ Then select your router hit enter and enter the password.
 
 => everything seems to work fine now (scp works, pacman works, git clone works)
 
-=> I have a working Arch Linux machine
+=> I had a working Arch Linux machine
+
+Did not work for a new ASRock motherboard.
+Maybe I need GPT or EFI for the boot partition?
 
 ***
 #### qemu installation
@@ -907,3 +912,10 @@ You need this line (remove `#` in front and a add `yes` at the end):
 ```
 PermitRootLogin yes
 ```
+
+#### computer does not boot into operating system
+
+Maybe newer UEFI motherboards do not work with dos bootlabel or mbr?
+
+Maybe I need GPT or EFI for the boot partition?
+---
