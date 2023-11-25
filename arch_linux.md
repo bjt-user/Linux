@@ -9,7 +9,7 @@ sending a message to:
   arch-general-request@lists.archlinux.org
 
 
-***
+---
 
 https://archlinux.org/download/
 
@@ -675,8 +675,7 @@ Then select your router hit enter and enter the password.
 
 => I had a working Arch Linux machine
 
-Did not work for a new ASRock motherboard.
-Maybe I need GPT or EFI for the boot partition?
+**This will only work if CSM is enabled in UEFI!**
 
 ***
 #### qemu installation
@@ -915,7 +914,9 @@ PermitRootLogin yes
 
 #### computer does not boot into operating system
 
-Maybe newer UEFI motherboards do not work with dos bootlabel or mbr?
+If your computer does not boot into the OS and only boots into UEFI, \
+then it might be possible that **CSM** (compatibility support module)[https://en.wikipedia.org/wiki/UEFI#CSMBOOT] \
+is not enabled in your UEFI.
 
-Maybe I need GPT or EFI for the boot partition?
+Or you have to use an EFI partition, but that is more complicated to setup.
 ---
