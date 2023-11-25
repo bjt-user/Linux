@@ -2,7 +2,7 @@
 
 `ip` command is part of the `ip-route2` package and is usually preinstalled on Linux distros.
 
-***
+---
 
 #### basic usage (most use cases)
 

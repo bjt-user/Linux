@@ -31,8 +31,10 @@ Because you did not use `sudo`
 ```
 sudo nmcli d wifi connect [SSID] --ask
 ```
-This works if you enter the right password.
-***
+This works if you enter the right password.\
+Also worked once without `sudo`.
+
+---
 
 ```
 nmcli general status

@@ -628,7 +628,7 @@ bf ALL=(ALL:ALL) ALL
 ---
 
 ```
-pacman -S grub networkmanager network-manager-applet dialog dosfstools os-prober mtools linux-headers base-devel wpa_supplicant wireless_tools
+pacman -S grub networkmanager network-manager-applet dialog dosfstools os-prober mtools linux-headers base-devel wpa_supplicant wireless_tools iwd man
 ```
 Hit enter twice to confirm the default and proceed with installation.
 
@@ -670,6 +670,13 @@ nmtui
 ```
 => activate a connection (it is in german now...)\
 Then select your router hit enter and enter the password.
+
+=> this does not always work so you might need to do this:
+```
+nmcli d wifi connect [SSID] --ask
+```
+
+Or maybe install `iwd` before then you can do it like described in the beginning.
 
 => everything seems to work fine now (scp works, pacman works, git clone works)
 
