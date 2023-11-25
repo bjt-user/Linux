@@ -43,7 +43,7 @@ gpg --keyserver-options auto-key-retrieve --verify archlinux-version-x86_64.iso.
 (the `.sig` file needs to have the same file name as the `.iso` file but then end with `.sig`) \
 => it says `good signature` but also a warning that it is not a trusted signature, whatever, it seeems to be ok
 
-***
+---
 #### burn iso to usb stick
 
 Then the plan is to use `dd` to flash the USB-stick.
@@ -83,7 +83,7 @@ It looks better.
 Mounting the device first and unmounting it later might ensure data integrity.\
 [mount.md](mount.md)
 
-***
+---
 
 #### installation
 
@@ -179,7 +179,7 @@ I get into a `less`ed output and scroll down with `j`.\
 ```
 timedatectl set-timezone Europe/Berlin
 ```
-***
+---
 #### partitioning the disk
 
 When recognized by the live system, disks are assigned to a block device such as /dev/sda, /dev/nvme0n1 or /dev/mmcblk0. To identify these devices, use `lsblk` or `fdisk`.
@@ -677,7 +677,7 @@ Then select your router hit enter and enter the password.
 
 **This will only work if CSM is enabled in UEFI!**
 
-***
+---
 #### qemu installation
 
 create disk:
@@ -799,7 +799,7 @@ ssh root@ipofvmhost -p 5555
 Then you can configure your VM in `.ssh/config`\
 and set the port in the ssh config so you dont have to remember the port!
 
-***
+---
 #### if you want to configure the locale
 
 ```
@@ -835,7 +835,7 @@ locale-gen
 The command `locale` still shows an error.
 Then I did `sudo reboot` and it seemed to have worked.
 
-***
+---
 
 #### useful pacman packages
 
@@ -878,7 +878,7 @@ Alternatively, you can use the parted tool by specifying parted as the partition
 archinstall -p parted
 ```
 
-***
+---
 ## troubleshooting
 
 #### keyboard layout doesn't persist
