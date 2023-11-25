@@ -13,7 +13,7 @@ You can for example search for `pci` to look for when your graphics driver is lo
 On Fedora the log file is `/home/bf/.local/share/xorg/Xorg.0.log`.\
 (found it by doing a `lsof -p` on the `pid` of `xorg`)
 
-***
+---
 
 #### installation (without a window manager)
 
@@ -31,7 +31,7 @@ startx
 => which gets you multiple xterms, but weirdly arranged\
 => also gives you a mouse
 
-to end xorg <kbd>ctrol</kbd> + <kbd>d</kbd> worked
+to end xorg <kbd>ctrl</kbd> + <kbd>d</kbd> on all xterms worked
 
 ## troubleshooting
 
@@ -64,4 +64,4 @@ startx
 ```
 => and `i3` was started!
 
-***
+---
