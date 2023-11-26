@@ -23,3 +23,14 @@ cat /etc/os-release | grep -i "name\|version"
 ```
 cat LocalSettings.php | grep -v "^$"
 ```
+
+#### pgrep
+
+You have to escape curly brackets.
+```
+pgrep -af "/usr/lib/firefox/firefox -contentproc -parentBuildID 20231116134553 -prefsLen 34000 -prefMapSize 235650 -appDir /usr/lib/firefox/browser \{4f14bb5b-9b52-429a-8276-940e83ee16e8\} 2475 true socket"
+2574 /usr/lib/firefox/firefox -contentproc -parentBuildID 20231116134553 -prefsLen 34000 -prefMapSize 235650 -appDir /usr/lib/firefox/browser {4f14bb5b-9b52-429a-8276-940e83ee16e8} 2475 true socket
+```
+
+RC 0 if process exists.\
+RC 1 if process does not exist.
