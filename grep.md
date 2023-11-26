@@ -39,6 +39,14 @@ $ pgrep 'fi'
 9765
 ```
 
+You can search for the full command with the `-f` flag.\
+The `-a` flag shows the command in addition to the pid.
+```
+$ pgrep -af '/bin/bash'
+8298 /bin/bash
+9789 /bin/bash
+```
+
 You have to escape curly brackets.
 ```
 $ pgrep -af "/usr/lib/firefox/firefox -contentproc -parentBuildID 20231116134553 -prefsLen 34000 -prefMapSize 235650 -appDir /usr/lib/firefox/browser \{4f14bb5b-9b52-429a-8276-940e83ee16e8\} 2475 true socket"
