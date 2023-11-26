@@ -24,11 +24,24 @@ cat /etc/os-release | grep -i "name\|version"
 cat LocalSettings.php | grep -v "^$"
 ```
 
-#### pgrep
+#### pgrep - grepping for processes
+
+this will just output the corresponding PID:
+```
+pgrep 'string'
+```
+
+I think it only searches for the basename of the binary of the command:
+```
+$ pgrep 'fi'
+549
+2475
+9765
+```
 
 You have to escape curly brackets.
 ```
-pgrep -af "/usr/lib/firefox/firefox -contentproc -parentBuildID 20231116134553 -prefsLen 34000 -prefMapSize 235650 -appDir /usr/lib/firefox/browser \{4f14bb5b-9b52-429a-8276-940e83ee16e8\} 2475 true socket"
+$ pgrep -af "/usr/lib/firefox/firefox -contentproc -parentBuildID 20231116134553 -prefsLen 34000 -prefMapSize 235650 -appDir /usr/lib/firefox/browser \{4f14bb5b-9b52-429a-8276-940e83ee16e8\} 2475 true socket"
 2574 /usr/lib/firefox/firefox -contentproc -parentBuildID 20231116134553 -prefsLen 34000 -prefMapSize 235650 -appDir /usr/lib/firefox/browser {4f14bb5b-9b52-429a-8276-940e83ee16e8} 2475 true socket
 ```
 
