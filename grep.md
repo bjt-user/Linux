@@ -55,3 +55,8 @@ $ pgrep -af "/usr/lib/firefox/firefox -contentproc -parentBuildID 20231116134553
 
 RC 0 if process exists.\
 RC 1 if process does not exist.
+
+check for processes by the user who owns the process:
+```
+# pgrep -afu postgres
+```
