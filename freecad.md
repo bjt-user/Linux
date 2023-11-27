@@ -1,11 +1,11 @@
-Wie positioniert man Kreise in einem Rechteck? (Löcher positionieren)
+#### Wie positioniert man Kreise in einem Rechteck? (Löcher positionieren)
 
 1. Den Kreis auf das Rechteck irgendwo hinmachen
-2. Den Mittelpunkt des Kreises und den Mittelpunkt des Rechtecks auswählen
-3. ctrl + h (horizontales Constraint)
-4. Constraint einstellen (z.B. 2mm horizontaler Abstand vom Mittelpunkt des Rechtecks)
-5. ctrl + v (vertikales Constraint)
-6. Constraint einstellen (z.B. 2mm vertikaler Abstand vom Mittelpunkt des Rechtecks)
+1. Den Mittelpunkt des Kreises und den Mittelpunkt des Rechtecks auswählen
+1. ctrl + h (horizontales Constraint)
+1. Constraint einstellen (z.B. 2mm horizontaler Abstand vom Mittelpunkt des Rechtecks)
+1. ctrl + v (vertikales Constraint)
+1. Constraint einstellen (z.B. 2mm vertikaler Abstand vom Mittelpunkt des Rechtecks)
 
 Durch Doppelklick auf die 2mm kann man das Constraint jederzeit verändern.
 
