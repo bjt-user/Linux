@@ -12,6 +12,14 @@ sudo dnf install dconf-editor
 ```
 => helpful tool
 
+You can also use the `dconf` command:
+```
+dconf list /apps/seahorse/
+```
+But it is not clear what the "schema" is.\
+The dconf dir is something else.\
+And I dont know where in the system it is.
+
 #### custom keyboard shortcuts
 
 press the down arrow at the right upper corner of the screen\
