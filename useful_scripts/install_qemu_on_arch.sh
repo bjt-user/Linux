@@ -32,6 +32,8 @@ declare -a desired_packages
 desired_packages+=(qemu-system-x86)
 desired_packages+=(virt-manager)
 desired_packages+=(qemu-img)
+# dnsmasq is needed to start the default network
+desired_packages+=(dnsmasq)
 
 echo "This will install qemu and perform a REBOOT!"
 
