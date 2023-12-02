@@ -34,9 +34,11 @@ EMPTY DISK LABEL
 echo 'label: gpt' | sfdisk /dev/vda
 ```
 
-#### create boot partition
+#### TODO: create EFI boot partition
 
 This will create a boot partition (type Linux):
 ```
 echo 'start=2048, size=200M, bootable' | sfdisk /dev/vda
 ```
+
+But I was not able to create a type EFI boot partition!
