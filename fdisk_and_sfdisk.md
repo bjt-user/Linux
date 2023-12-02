@@ -16,6 +16,7 @@ sfdisk --delete /dev/vda
 
 #### disk label
 
+from man page:
 ```
 EMPTY DISK LABEL
        sfdisk does not create partition table without partitions by default.
@@ -27,4 +28,15 @@ EMPTY DISK LABEL
           echo 'label: gpt' | sfdisk /dev/sdb
 
        creates empty GPT partition table. Note that the --append disables this feature.
+```
+
+```
+echo 'label: gpt' | sfdisk /dev/vda
+```
+
+#### create boot partition
+
+This will create a boot partition (type Linux):
+```
+echo 'start=2048, size=200M, bootable' | sfdisk /dev/vda
 ```
