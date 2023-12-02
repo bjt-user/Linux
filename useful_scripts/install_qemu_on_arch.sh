@@ -50,6 +50,8 @@ fi
 
 sudo usermod -aG libvirt ${USER}
 
+sudo virsh net-autostart default
+
 sudo reboot
 
 exit 0
