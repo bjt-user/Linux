@@ -886,6 +886,11 @@ Alternatively, you can use the parted tool by specifying parted as the partition
 archinstall -p parted
 ```
 
+#### TODO: EFI partitioning
+
+try this:\
+https://www.youtube.com/watch?v=CX67oR5GjRc
+
 ---
 ## troubleshooting
 
