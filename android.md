@@ -1,8 +1,9 @@
-#### FAIL: android-file-transfer
+#### android-file-transfer
 
 ```
 sudo pacman -S android-file-transfer
 ```
 
-It looked like it worked.\
-But the audio file was in the wrong folder and could not correctly be played.
+You have to be careful about the type of file and the file extension you are uploading.\
+.mp3 will be uploaded to music folder, .mp4 will be uploaded to video.\
+If you upload a .mp4 to audio, an audio dir will be created inside the video dir.
