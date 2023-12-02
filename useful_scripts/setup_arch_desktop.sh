@@ -32,6 +32,7 @@ function ensure_package() {
 declare -a desired_packages
 desired_packages+=(fzf)
 desired_packages+=(task)
+desired_packages+=(vlc)
 
 for desired_package in "${desired_packages[@]}"
 do
