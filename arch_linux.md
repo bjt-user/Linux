@@ -440,6 +440,7 @@ ERROR:
 ```
 EFI variables are not supported on this system.
 ```
+(solution here might be to use `--removable` as an additional flag)
 
 trying to resolve this error by exiting out of `chroot`
 ```
