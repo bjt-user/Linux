@@ -13,3 +13,18 @@ delete all partitions:
 ```
 sfdisk --delete /dev/vda
 ```
+
+#### disk label
+
+```
+EMPTY DISK LABEL
+       sfdisk does not create partition table without partitions by default.
+	   The lines with partitions are expected in the
+       script by default.
+	   The empty partition table has to be explicitly requested by "label: <name>" script header line
+       without any partitions lines. For example:
+
+          echo 'label: gpt' | sfdisk /dev/sdb
+
+       creates empty GPT partition table. Note that the --append disables this feature.
+```
