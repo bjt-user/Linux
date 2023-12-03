@@ -51,10 +51,21 @@ This will create a boot partition (type Linux):
 echo 'start=2048, size=200M, bootable' | sfdisk /dev/vda
 ```
 
-Make it type "EFI": (U is an alias)
+Make it type "EFI": (U is an alias for `uefi`)
 ```
 echo -e 'type=U' | sfdisk -N 1 /dev/vda
 ```
+
+#### create new partition
+
+this created a first partition starting at 2048:
+```
+echo -e 'type=uefi, size=200M' | sfdisk -N 1 /dev/vda
+```
+
+#### TODO: create main partition
+
+How to create the second partition that just fills out the remaining space without specifying a size?
 
 ## troubleshooting
 
