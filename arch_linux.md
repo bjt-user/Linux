@@ -886,10 +886,92 @@ Alternatively, you can use the parted tool by specifying parted as the partition
 archinstall -p parted
 ```
 
-#### TODO: EFI partitioning
+#### FAIL: EFI partitioning
 
-try this:\
+followed this trash video:\
 https://www.youtube.com/watch?v=CX67oR5GjRc
+
+I created the partitions with `sfdisk`.\
+They looked like this:
+```
+# fdisk -l /dev/vda
+Disk /dev/vda: 20 GiB, 21474836480 bytes, 41943040 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: F724A307-757C-4188-9778-B0D7D733D081
+
+Device      Start      End  Sectors  Size Type
+/dev/vda1    2048   411647   409600  200M EFI System
+/dev/vda2  411648 41940991 41529344 19.8G Linux filesystem
+```
+
+```
+mkfs.fat -F32 /dev/vda1
+```
+```
+mkfs.ext4 /dev/vda2
+```
+
+```
+mount /dev/vda2 /mnt
+```
+```
+mkdir /mnt/boot
+```
+```
+mount /dev/vda1 /mnt/boot
+```
+Make sure that both partitions are mounted like this with `lsblk`:
+```
+# lsblk
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0    7:0    0 748.3M  1 loop /run/archiso/airootfs
+sr0     11:0    1 872.3M  0 rom  /run/archiso/bootmnt
+vda    254:0    0    20G  0 disk
+├─vda1 254:1    0   200M  0 part /mnt/boot
+└─vda2 254:2    0  19.8G  0 part /mnt
+```
+
+```
+pacstrap /mnt base linux linux-firmware vim
+```
+
+```
+genfstab -U /mnt >> /mnt/etc/fstab
+```
+
+But the boot partition does NOT show up in /mnt/etc/fstab:
+```
+# cat /mnt/etc/fstab
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/vda2
+UUID=3c95c366-4aea-4fdd-97e1-b677c9344d98	/         	ext4      	rw,relatime	0 1
+```
+
+```
+arch-chroot /mnt
+```
+
+And of course it fails at this step:
+```
+# grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+Installing for x86_64-efi platform.
+grub-install: error: /boot doesn't look like an EFI partition.
+```
+mit `blkid` mache ich manuell den `/etc/fstab` Eintrag:
+```
+UUID=D2FD-EC33	/boot	vfat	rw,relatime	0 1
+```
+
+Nur dann kommt wieder der Dreck mit den EFIVariablen:
+```
+EFI variables are not supported on this system.
+```
 
 ---
 ## troubleshooting
