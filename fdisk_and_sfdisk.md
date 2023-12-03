@@ -41,7 +41,10 @@ This will create a boot partition (type Linux):
 echo 'start=2048, size=200M, bootable' | sfdisk /dev/vda
 ```
 
-But I was not able to create a type EFI boot partition!
+Make it type "EFI": (U is an alias)
+```
+echo -e 'type=U' | sfdisk -N 1 /dev/vda
+```
 
 ## troubleshooting
 
