@@ -34,7 +34,17 @@ EMPTY DISK LABEL
 echo 'label: gpt' | sfdisk /dev/vda
 ```
 
-#### TODO: create EFI boot partition
+#### create EFI boot partition
+
+start off clean (delete old partition tables):
+```
+dd if=/dev/zero of=/dev/vda bs=2048 count=1 status=progress
+```
+
+create empty gpt disk label:
+```
+echo 'label: gpt' | sfdisk /dev/vda
+```
 
 This will create a boot partition (type Linux):
 ```
