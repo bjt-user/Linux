@@ -42,3 +42,26 @@ echo 'start=2048, size=200M, bootable' | sfdisk /dev/vda
 ```
 
 But I was not able to create a type EFI boot partition!
+
+## troubleshooting
+
+#### contains vfat signature
+
+There can arrive a message:
+```
+Partition #1 contains a vfat signature.
+
+Do you want to remove the signature? [Y]es/[N]o:
+```
+
+This will make it hard to script `fdisk`!\
+Wiping the entire disk made this message disappear:
+```
+dd if=/dev/zero of=/dev/vda bs=1M status=progress
+```
+but MAYBE zeroing only the first bytes might be enough:
+```
+dd if=/dev/zero of=/dev/vda bs=2048 count=1 status=progress
+```
+
+using `wipefs --all --force /dev/vda` does NOT work!
