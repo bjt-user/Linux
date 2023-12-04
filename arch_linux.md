@@ -973,6 +973,15 @@ Nur dann kommt wieder der Dreck mit den EFIVariablen:
 EFI variables are not supported on this system.
 ```
 
+The problem was that the VM was in 'BIOS' mode.\
+Open `virt-manager` open the VM and go in the `details` section. (`view` -> `details`) \
+In the first section `overview` under `hypervisor details` you can see:
+```
+Firmware: BIOS
+```
+
+=> And that means you can only use MBR!
+
 ---
 ## troubleshooting
 
@@ -1014,4 +1023,5 @@ then it might be possible that **CSM** (compatibility support module)[https://en
 is not enabled in your UEFI.
 
 Or you have to use an EFI partition, but that is more complicated to setup.
+
 ---
