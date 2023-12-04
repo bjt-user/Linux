@@ -50,13 +50,21 @@ enable "Intel Virtualization Support"
 
 ## usage
 
-looks like you can create virtual machines by using the `virt-manager` program.
+You can create virtual machines by using the `virt-manager` program.
 
 #### keyboard shortcuts
 
 <kbd>ctrl (left)</kbd> + <kbd>alt (left)</kbd> - grab keyboard from or to vm
 
-***
+---
+
+#### firmware (BIOS or UEFI)
+
+In `virt-manager` -> `edit` -> `preferences` -> `new VM` -> `x86 firmware` \
+You can choose between `UEFI` and `system default`
+(my system default was probably legacy bios because that was how I installed my host OS)
+
+You can also see it in the `details` view in the first page.
 
 #### first try using virt-manager
 
