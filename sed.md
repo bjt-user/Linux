@@ -39,6 +39,9 @@ sed --in-place "${delete_from},${delete_to}d" ${FILE_PATH}
 ```
 sed -i 's/foo/bar/' replace_lines.txt
 ```
+
+#### TODO: how to replace a string that contains whitespace?
+
 #### replace only at a specific line
 
 With this command the string `foo` will be replaced by the string `bar`, but only in line 2 of the file `replace_lines.txt`.
@@ -130,4 +133,12 @@ sed -i -e 's/\r$//' myscript.sh
 
 ```
 sed '/^$/D' shfmt_test.sh
+```
+
+#### search for a string in a file (grep equivalent)
+
+```
+sed -n '/shellcheck/p' pacman.log
+[2023-12-04T08:09:33+0100] [PACMAN] Running 'pacman -S shellcheck'
+[2023-12-04T08:09:47+0100] [ALPM] installed shellcheck (0.9.0-68)
 ```
