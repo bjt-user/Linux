@@ -40,7 +40,7 @@ sed --in-place "${delete_from},${delete_to}d" ${FILE_PATH}
 sed -i 's/foo/bar/' replace_lines.txt
 ```
 
-#### replace a string that contains whitespace
+#### replace a string that contains spaces
 
 That worked:
 ```
