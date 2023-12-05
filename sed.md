@@ -40,7 +40,12 @@ sed --in-place "${delete_from},${delete_to}d" ${FILE_PATH}
 sed -i 's/foo/bar/' replace_lines.txt
 ```
 
-#### TODO: how to replace a string that contains whitespace?
+#### replace a string that contains whitespace
+
+That worked:
+```
+sed 's/installed shellcheck/test/' pacman.log
+```
 
 #### replace only at a specific line
 
