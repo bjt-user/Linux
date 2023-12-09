@@ -72,3 +72,12 @@ You can mount a remote server with `sshfs`:
 sshfs myuser@raspberrypi:/home/myuser /raspberrypi_home
 ```
 (the mountpoint `/raspberrypi_home` has to exist and the user needs write permissions)
+
+view the mount point:
+```
+mount -l | grep 'sshfs'
+```
+unmount the file system:
+```
+umount /raspberrypi_home
+```
