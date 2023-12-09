@@ -556,3 +556,13 @@ And rembember you can also use syntax highlighting for hex editing in vim with t
 :set ft=xxd
 ```
 
+#### open remote file via scp
+
+```
+vim scp://bf@raspberrypi:22//home/bf/.profile
+```
+
+Port is optional, so this works too
+```
+vim scp://myuser@raspberrypi//home/myuser/.profile
+```
