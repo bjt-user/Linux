@@ -44,7 +44,7 @@ Sometimes you get `permission denied`, `Input/Output error`, or `invalid argumen
 sudo find . -xdev -type f -size +100M
 ```
 
-## find directories
+#### find directories
 
 find all directories in the current directory:
 ```
@@ -93,4 +93,10 @@ You might want to put something like this in your crontab.
 Find all files in a directory and all its subdirectories:
 ```
 find . -type f | wc -l
+```
+
+#### find files that are owned by a specific user
+
+```
+find . -type f -user root
 ```
