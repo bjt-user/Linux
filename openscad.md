@@ -1,5 +1,17 @@
 https://openscad.org/cheatsheet/
 
+#### using external editor
+
+https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Using_an_external_Editor_with_OpenSCAD
+
+Make sure the following two settings are enabled:
+
+Design->Automatic Reload and Preview
+
+View->Hide editor
+
+---
+
 Variablen deklarieren:
 my_variable = 120;
 
