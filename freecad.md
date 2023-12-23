@@ -137,3 +137,13 @@ Auf den Reiter "Model" klicken.
 Jetzt auf das zweite Gear klicken. (kurz warten, kann 2-3 Sekunden dauern)
 Nun wird das konische Zahnrad erzeugt.
 Jetzt nochmal auf den Reiter "Tasks" und mit "Ok" bestätigen.
+
+---
+
+#### arrays of body parts
+
+In "part design" select your body part.\
+And click "create a linear pattern feature".\
+You might need to change the axis.\
+Then you can select how many times you want your part to be multiplied\
+and in which maximum length the array expands.
