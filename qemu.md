@@ -282,6 +282,9 @@ in the first window.
 
 But when booting an alpine aarch64 .iso I landed in EFI shell...
 
+You can also choose a `machine type` in virt-manager.\
+Maybe `virt` was the wrong choice...
+
 ## troubleshooting
 
 It looks like `qemu` only starts from the iso file the first time and when you don't install the operating system right after the first boot you cant boot from the iso file anymore, which is weird.\
