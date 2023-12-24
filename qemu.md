@@ -272,6 +272,14 @@ https://www.youtube.com/watch?v=VCAqkyVd7dM
 
 #### snapshots
 
+#### arm
+
+```
+sudo apt install qemu-system-arm
+```
+When you now create a new VM in `virt-manager` you will have architecture options \
+in the first window.
+
 ## troubleshooting
 
 It looks like `qemu` only starts from the iso file the first time and when you don't install the operating system right after the first boot you cant boot from the iso file anymore, which is weird.\
