@@ -272,13 +272,15 @@ https://www.youtube.com/watch?v=VCAqkyVd7dM
 
 #### snapshots
 
-#### arm
+#### TODO: arm
 
 ```
 sudo apt install qemu-system-arm
 ```
 When you now create a new VM in `virt-manager` you will have architecture options \
 in the first window.
+
+But when booting an alpine aarch64 .iso I landed in EFI shell...
 
 ## troubleshooting
 
