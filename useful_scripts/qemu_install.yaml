@@ -1,0 +1,37 @@
+# ansible playbook to install qemu
+# worked on Ubuntu, may not work on distros where the package names differ
+# should work also on Arch
+
+- name: install qemu and virt-manager
+  hosts: all
+  become: True
+
+  tasks:
+  - name: install qemu package
+    ansible.builtin.package:
+      name: "qemu"
+      state: "present"
+
+  - name: install virt-manager
+    ansible.builtin.package:
+      name: "virt-manager"
+      state: "present"
+
+  - name: install dnsmasq
+    ansible.builtin.package:
+      name: "dnsmasq"
+      state: "present"
+
+  - name: add user to libvirt group
+    ansible.builtin.user:
+      name: "{{ lookup('env', 'USER') }}"
+      append: True
+      groups: libvirt
+
+  - name: autostart the default network with virsh
+    ansible.builtin.shell:
+      virsh net-autostart default
+
+  - name: reboot the system
+    ansible.builtin.reboot:
+
