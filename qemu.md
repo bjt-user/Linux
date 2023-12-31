@@ -88,7 +88,7 @@ worked well at was easy to set up
 but id like to have the VM inside my `terminator` \
 right now using `virt-manager` is clunky because I have to click it so it caches my keyboard.
 
-***
+---
 
 #### ssh into vm
 
@@ -102,7 +102,13 @@ At least not out of the box, maybe there is a way.
 
 And I can only ssh into the VM from the host machine, not from within the entire network.
 
-***
+Does not seem to always work though:
+```
+debug1: connect to address 10.0.2.15 port 22: Network is unreachable
+ssh: connect to host 10.0.2.15 port 22: Network is unreachable
+```
+
+---
 
 #### virsh
 
