@@ -102,11 +102,15 @@ At least not out of the box, maybe there is a way.
 
 And I can only ssh into the VM from the host machine, not from within the entire network.
 
-Does not seem to always work though:
+This did not work for VMs created manually on the cli:
 ```
 debug1: connect to address 10.0.2.15 port 22: Network is unreachable
 ssh: connect to host 10.0.2.15 port 22: Network is unreachable
 ```
+But it works for VMs created in `virt-manager`.
+
+`virt-manager` gives the VMs a 192.168.xxx.xxx IPv4.\
+While the VMs I created on the cli had a 10.0.2.xx IPv4.
 
 ---
 
@@ -191,6 +195,8 @@ this also kind of works to start the vm inside the terminal:
 qemu-system-x86_64 -enable-kvm -hda myimage.img -m 2G -M pc -nographic
 ```
 (boot messages are ugly and not really visible though)
+
+And I was not able to ssh into the VM. Even when running it on port 5555.
 
 #### failed: launch VM in a terminal emulator
 
