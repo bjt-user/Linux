@@ -180,6 +180,12 @@ https://en.wikibooks.org/wiki/QEMU/Networking
 
 > If no network options are specified, QEMU will default to emulating a single Intel e1000 PCI card with a user-mode network stack that bridges to the host's network.
 
+this also kind of works to start the vm inside the terminal:
+```
+qemu-system-x86_64 -enable-kvm -hda myimage.img -m 2G -M pc -nographic
+```
+(boot messages are ugly and not really visible though)
+
 #### failed: launch VM in a terminal emulator
 
 1. create a virtual image
