@@ -151,6 +151,27 @@ Shutdown your VM! (reboot might not be enough)
 
 Launch your VM! (and it worked for an Ubuntu VM)
 
+#### create vm from command line
+
+First create a disk:
+```
+qemu-img create -f qcow2 mydisk.img 10G
+```
+
+This worked for an x86 alpine VM with working internet (NAT).
+```
+qemu-system-x86_64 -enable-kvm -cdrom alpine-standard-3.19.0-x86_64.iso -hda mydisk.img -m 2G -device e1000,netdev=net0 -netdev user,id=net0
+```
+A `qemu` (terminal) window opened.\
+To install alpine you have to type `setup-alpine` or something.
+
+After closing the qemu window how do I go into the VM again?
+
+This worked (but closing the `qemu` window shutdown the VM and it had to boot up again):
+```
+qemu-system-x86_64 -enable-kvm -hda mydisk.img -M 2G -device e1000,netdev=net0 -netdev user,id=net0 -M pc
+```
+
 #### failed: launch VM in a terminal emulator
 
 1. create a virtual image
