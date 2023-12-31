@@ -169,8 +169,16 @@ After closing the qemu window how do I go into the VM again?
 
 This worked (but closing the `qemu` window shutdown the VM and it had to boot up again):
 ```
-qemu-system-x86_64 -enable-kvm -hda mydisk.img -M 2G -device e1000,netdev=net0 -netdev user,id=net0 -M pc
+qemu-system-x86_64 -enable-kvm -hda mydisk.img -m 2G -device e1000,netdev=net0 -netdev user,id=net0 -M pc
 ```
+
+This also works:
+```
+qemu-system-x86_64 -enable-kvm -hda myimage.img -m 2G -M pc
+```
+https://en.wikibooks.org/wiki/QEMU/Networking
+
+> If no network options are specified, QEMU will default to emulating a single Intel e1000 PCI card with a user-mode network stack that bridges to the host's network.
 
 #### failed: launch VM in a terminal emulator
 
