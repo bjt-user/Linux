@@ -285,6 +285,14 @@ But when booting an alpine aarch64 .iso I landed in EFI shell...
 You can also choose a `machine type` in virt-manager.\
 Maybe `virt` was the wrong choice...
 
+https://wiki.qemu.org/Documentation/Platforms/ARM#QEMU_ARM_guest_support
+
+> ARM CPUs are generally built into "system-on-chip" (SoC) designs created by many different companies with different devices, and these SoCs are then built into machines which can vary still further even if they use the same SoC.
+Even with fifty boards QEMU does not cover more than a small fraction of the ARM hardware ecosystem.
+
+> Because ARM systems differ so much and in fundamental ways, typically operating system or firmware images intended to run on one machine will not run at all on any other.
+This is often surprising for new users who are used to the x86 world where every system looks like a standard PC. (Once the kernel has booted, most userspace software cares much less about the detail of the hardware.)
+
 ## troubleshooting
 
 It looks like `qemu` only starts from the iso file the first time and when you don't install the operating system right after the first boot you cant boot from the iso file anymore, which is weird.\
