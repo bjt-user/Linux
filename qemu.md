@@ -293,6 +293,12 @@ Even with fifty boards QEMU does not cover more than a small fraction of the ARM
 > Because ARM systems differ so much and in fundamental ways, typically operating system or firmware images intended to run on one machine will not run at all on any other.
 This is often surprising for new users who are used to the x86 world where every system looks like a standard PC. (Once the kernel has booted, most userspace software cares much less about the detail of the hardware.)
 
+> If you don't care about reproducing the idiosyncrasies of a particular bit of hardware, such as small amount of RAM, no PCI or other hard disk, etc., and just want to run Linux, the best option is to use:
+```
+-M virt
+```
+
+
 ## troubleshooting
 
 It looks like `qemu` only starts from the iso file the first time and when you don't install the operating system right after the first boot you cant boot from the iso file anymore, which is weird.\
