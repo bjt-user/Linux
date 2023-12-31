@@ -127,6 +127,11 @@ generate an xml from a VM:
 sudo virsh dumpxml ubuntu22.04 > ~/Downloads/ubuntu.xml
 ```
 
+get information about the "default" network:
+```
+sudo virsh net-dumpxml default
+```
+
 TODO: You should be able to create a new VM with that xml but you will have to change the UUID and maybe some other stuff.
 
 ```
