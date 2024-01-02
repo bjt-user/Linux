@@ -194,3 +194,6 @@ on Arch-WSL:
 $ sudo pacman -S asp
 error: target not found: asp
 ```
+
+read/try this:\
+https://wiki.archlinux.org/title/Arch_build_system
