@@ -184,3 +184,7 @@ $ cat /etc/pacman.conf | grep -ni "sig"
 ```
 
 Then a `sudo pacman -Syu` will work again.
+
+#### TODO: download source code of a package
+
+https://stackoverflow.com/questions/4468447/how-to-download-source-code-with-pacman-on-arch-linux
