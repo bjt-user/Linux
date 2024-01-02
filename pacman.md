@@ -197,3 +197,12 @@ error: target not found: asp
 
 read/try this:\
 https://wiki.archlinux.org/title/Arch_build_system
+
+This link does not contain the source code, but it contains a .SRCINFO file \
+with a "source" and a "url" field:\
+https://gitlab.archlinux.org/archlinux/packaging/packages?page=1
+
+With a `wget` on the "source" field I got the source code of the `coreutils` package.
+```
+wget https://ftp.gnu.org/gnu/coreutils/coreutils-9.4.tar.xz
+```
