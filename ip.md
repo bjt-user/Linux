@@ -53,3 +53,16 @@ $ ip a | grep "wlp1s0"
 3: wlp1s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
     inet 192.168.2.222/24 brd 192.168.2.255 scope global dynamic noprefixroute wlp1s0
 ```
+
+#### change ip address
+
+This worked in a VM, but will not persist after reboot:
+```
+ip a change [newip] dev eth0
+```
+
+```
+ip a delete [oldip] dev eth0
+```
+
+Then I could ssh into it using the new IP.
