@@ -99,6 +99,14 @@ curl --url 'imaps://imap.web.de/' --user 'username:password' --request 'SELECT I
 
 (https://www.rfc-editor.org/rfc/rfc3501#section-6.3.1)
 
+#### IMAP EXAMINE
+
+> The EXAMINE command is identical to SELECT and returns the same
+output; however, the selected mailbox is identified as read-only.
+No changes to the permanent state of the mailbox, including
+per-user state, are permitted; in particular, EXAMINE MUST NOT
+cause messages to lose the \Recent flag.
+
 #### send email (SUCCESS)
 
 This actually worked: (from web.de account to gmail account)
