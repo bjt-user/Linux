@@ -161,6 +161,16 @@ pacman -F hostname
 ```
 => this shows me that I can get the hostname command with the `inetutils` package
 
+#### mirror speed
+
+```
+sudo pacman -S pacman-contrib
+```
+
+```
+rankmirrors /etc/pacman.d/mirrorlist
+```
+
 ## troubleshooting
 
 #### gpg keys
