@@ -107,6 +107,15 @@ No changes to the permanent state of the mailbox, including
 per-user state, are permitted; in particular, EXAMINE MUST NOT
 cause messages to lose the \Recent flag.
 
+#### IMAP STATUS
+number of messages in INBOX:
+```
+curl --url 'imaps://imap.web.de/' --user 'firstname.lastname:password' --request 'STATUS INBOX (MESSAGES)'
+* STATUS INBOX (MESSAGES 189)
+```
+
+number of unseen messages: `--request 'STATUS INBOX (UNSEEN)'`
+
 #### send email (SUCCESS)
 
 This actually worked: (from web.de account to gmail account)
