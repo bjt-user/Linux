@@ -97,6 +97,8 @@ show the number of messages in the folder `INBOX`:
 curl --url 'imaps://imap.web.de/' --user 'username:password' --request 'SELECT INBOX'
 ```
 
+(https://www.rfc-editor.org/rfc/rfc3501#section-6.3.1)
+
 #### send email (SUCCESS)
 
 This actually worked: (from web.de account to gmail account)
