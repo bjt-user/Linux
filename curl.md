@@ -55,7 +55,7 @@ This should show more detailed information like proxy settings used or informati
 curl -vI https://www.google.com
 ```
 
-#### read email
+## read email
 
 I could list all my folder names with this command in `Debian Sid`:
 ```
@@ -88,6 +88,13 @@ curl --url 'imaps://imap.web.de/my_folder' --user 'username:password' --request 
 this gives mailindex and date:
 ```
 curl --url 'imaps://imap.web.de/my_folder' --user 'username:password' --request 'FETCH 1:* (UID INTERNALDATE)'
+```
+
+#### IMAP SELECT
+
+show the number of messages in the folder `INBOX`:
+```
+curl --url 'imaps://imap.web.de/' --user 'username:password' --request 'SELECT INBOX'
 ```
 
 #### send email (SUCCESS)
