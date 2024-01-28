@@ -502,6 +502,12 @@ set laststatus=2
 " }}}
 ```
 
+#### order of vimscripts that are loaded
+
+```
+:set runtimepath?
+```
+
 #### INSTALLING PLUGINS
 
 To find out which files Vim has actually loaded, execute
