@@ -77,17 +77,17 @@ https://www.rfc-editor.org/rfc/rfc3501
 
 This will retrieve all email subjects and dates in that folder:
 ```
-curl --url 'imaps://imap.web.de/Klamotten' --user 'username:password' --request 'FETCH 1:* (ENVELOPE)'
+curl --url 'imaps://imap.web.de/my_folder' --user 'username:password' --request 'FETCH 1:* (ENVELOPE)'
 ```
 
 This will retrieve the uids/MAILINDEX which can be given as the mailindex parameter as seen above:
 ```
-curl --url 'imaps://imap.web.de/Klamotten' --user 'username:password' --request 'FETCH 1:* (UID)'
+curl --url 'imaps://imap.web.de/my_folder' --user 'username:password' --request 'FETCH 1:* (UID)'
 ```
 
 this gives mailindex and date:
 ```
-curl --url 'imaps://imap.web.de/Klamotten' --user 'username:password' --request 'FETCH 1:* (UID INTERNALDATE)'
+curl --url 'imaps://imap.web.de/my_folder' --user 'username:password' --request 'FETCH 1:* (UID INTERNALDATE)'
 ```
 
 #### send email (SUCCESS)
