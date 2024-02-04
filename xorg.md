@@ -49,6 +49,12 @@ default timeout seems to be 600 seconds (10 minutes)
 xset -q
 ```
 
+turn off screensaver:
+```
+xset -dpms
+xset s off
+```
+
 ## troubleshooting
 
 #### startx: command not found
