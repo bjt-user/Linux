@@ -33,6 +33,22 @@ startx
 
 to end xorg <kbd>ctrl</kbd> + <kbd>d</kbd> on all xterms worked
 
+#### xset
+
+This program is used to set various user preference options of the display.
+
+Show current configurations:
+```
+xset q
+```
+
+#### screensaver
+
+default timeout seems to be 600 seconds (10 minutes)
+```
+xset -q
+```
+
 ## troubleshooting
 
 #### startx: command not found
