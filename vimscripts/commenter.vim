@@ -1,14 +1,7 @@
 "put this in your .vimrc:
 "let mapleader=","
-"nmap <unique> <Leader>c :call Comment_normal() <CR>
-"vmap <unique> <Leader>c :call Comment_visual() <CR>
-"then you can comment/uncomment bash lines by hitting , then c
-"it also works for multiple lines. type <3> <,> <c>
-
-"put this in your .vimrc:
-"let mapleader=","
-nmap <unique> <Leader>c :call Comment_normal() <CR>
-vmap <unique> <Leader>c :call Comment_visual() <CR>
+nmap <Leader>c :call Comment_normal() <CR>
+vmap <Leader>c :call Comment_visual() <CR>
 "then you can comment/uncomment bash lines by hitting , then c
 "it also works for multiple lines. type <3> <,> <c>
 
