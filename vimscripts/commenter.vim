@@ -1,3 +1,5 @@
+"TODO: make it work with visual mode!
+
 "put this in your .vimrc:
 "let mapleader=","
 "map <unique> <Leader>c :call Commenter() <CR>
