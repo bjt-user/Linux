@@ -1,12 +1,18 @@
-"TODO: make it work with visual mode!
-
 "put this in your .vimrc:
 "let mapleader=","
-"map <unique> <Leader>c :call Commenter() <CR>
+"nmap <unique> <Leader>c :call Comment_normal() <CR>
+"vmap <unique> <Leader>c :call Comment_visual() <CR>
 "then you can comment/uncomment bash lines by hitting , then c
 "it also works for multiple lines. type <3> <,> <c>
 
-function Commenter ()
+"put this in your .vimrc:
+"let mapleader=","
+nmap <unique> <Leader>c :call Comment_normal() <CR>
+vmap <unique> <Leader>c :call Comment_visual() <CR>
+"then you can comment/uncomment bash lines by hitting , then c
+"it also works for multiple lines. type <3> <,> <c>
+
+function Comment_normal ()
   "get the content of the current line:
   let curline=getline('.')
   "get the column position of the cursor:
@@ -25,4 +31,21 @@ function Commenter ()
     execute "normal i#\<Esc>"
   endif
   call cursor(curlineno,curcol)
+endfunction
+
+function Comment_visual()
+	" save the default register to a variable to not overwrite
+	let saved_register = @@
+
+	let curline=getline('.')
+
+	let firstpart=strpart(curline, 0, 1)
+
+	if firstpart != "#"
+		s/^/#
+	else
+		normal! 0x
+	endif
+
+	let @@ = saved_register
 endfunction
