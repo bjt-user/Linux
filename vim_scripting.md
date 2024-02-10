@@ -106,4 +106,4 @@ But most of the time this will have negative effects and you will have to redraw
 :redraw!
 ```
 
-And event that does not seem to work in all situations.
+And even that does not seem to work in all situations.
