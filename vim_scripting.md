@@ -108,7 +108,7 @@ But most of the time this will have negative effects and you will have to redraw
 
 And even that does not seem to work in all situations.
 
-#### vimscript9
+## vimscript9
 
 https://vimhelp.org/vim9.txt.html
 
@@ -119,7 +119,7 @@ The Vim9 script syntax and semantics are used in:
 - an autocommand defined in the context of the above
 - a command prefixed with the vim9cmd command modifier
 
-So by default you still have to old vimscript active.
+So by default you still have the old vimscript active.
 
 #### line continuation in vim9script
 
@@ -132,3 +132,4 @@ def Long_echo()
 	\hoe'
 enddef
 ```
+These four lines will be executed as one external command.
