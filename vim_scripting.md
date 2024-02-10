@@ -94,3 +94,16 @@ When you scroll down you see help files you can go into by placing the cursor on
 ```
 "this is a comment in vimscript
 ```
+
+#### silencing
+
+You can silence a command so that no output is shown like this:
+```
+silent !shfmt -w %
+```
+But most of the time this will have negative effects and you will have to redraw the screen like this afterwards:
+```
+:redraw!
+```
+
+And event that does not seem to work in all situations.
