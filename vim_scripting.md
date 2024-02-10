@@ -107,3 +107,14 @@ But most of the time this will have negative effects and you will have to redraw
 ```
 
 And even that does not seem to work in all situations.
+
+#### vimscript9
+
+From `:help vim9`:\
+The Vim9 script syntax and semantics are used in:
+- a function defined with the :def command
+- a script file where the first command is vim9script
+- an autocommand defined in the context of the above
+- a command prefixed with the vim9cmd command modifier
+
+So by default you still have to old vimscript active.
