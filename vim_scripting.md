@@ -120,3 +120,15 @@ The Vim9 script syntax and semantics are used in:
 - a command prefixed with the vim9cmd command modifier
 
 So by default you still have to old vimscript active.
+
+#### line continuation in vim9script
+
+Note that this is vim9script syntax:
+```
+def Long_echo()
+	!clear;
+	\echo 'hello
+	\hoe
+	\hoe'
+enddef
+```
