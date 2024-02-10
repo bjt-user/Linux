@@ -110,6 +110,8 @@ And even that does not seem to work in all situations.
 
 #### vimscript9
 
+https://vimhelp.org/vim9.txt.html
+
 From `:help vim9`:\
 The Vim9 script syntax and semantics are used in:
 - a function defined with the :def command
