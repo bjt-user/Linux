@@ -6,7 +6,7 @@ If you put your example.vim file into `~/.vim/plugin` it gets executed everytime
 There is also the folder `~/.vim/ftplugin` for plugins that are for specific filetypes, but for a start thats too complicated.
 
 see functions you can use with argument explanation:
-:help functions
+`:help functions`
 
 https://devhints.io/vimscript-functions
 
@@ -18,14 +18,14 @@ And at the same time not overwriting any registers.
 To go into insert mode and insert the text "new text" do this:
 execute "normal Inew text \<Esc>
 
----------------------------------
+---
 simple vimscript:
 ```
 let name = "John"
 
 echo "Hello, " . name
 ```
----------------------------------
+---
 
 getting the cursor position:
 ```
@@ -94,6 +94,7 @@ When you scroll down you see help files you can go into by placing the cursor on
 ```
 "this is a comment in vimscript
 ```
+in vim9script you can use `#`
 
 #### silencing
 
@@ -107,6 +108,15 @@ But most of the time this will have negative effects and you will have to redraw
 ```
 
 And even that does not seem to work in all situations.
+
+#### operate on the current buffer (with external program)
+
+`:%!indent -linux`
+
+This works well and you don't have to save the file.\
+The downside is that when the external program fails \
+it writes the error into the current buffer.\
+You can always undo and go to the previous buffer with `u`.
 
 ## vimscript9
 
