@@ -1,3 +1,5 @@
+## general
+
 Vim scripts have the .vim ending.
 To execute a vimscript type `:source %`
 (or `:so %`)
@@ -9,6 +11,14 @@ see functions you can use with argument explanation:
 `:help functions`
 
 https://devhints.io/vimscript-functions
+
+#### documentation
+
+https://vimhelp.org/
+
+https://vimhelp.org/usr_41.txt.html#usr_41.txt
+
+https://vimhelp.org/usr_50.txt.html#usr_50.txt
 
 I am trying to build a function that comments the line if it is not commented
 or uncomment if it is commented no matter in which column the cursor is.\
