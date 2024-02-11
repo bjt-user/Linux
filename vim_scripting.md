@@ -96,6 +96,8 @@ When you scroll down you see help files you can go into by placing the cursor on
 ```
 in vim9script you can use `#`
 
+## ex(ternal) commands
+
 #### silencing
 
 You can silence a command so that no output is shown like this:
@@ -117,6 +119,15 @@ This works well and you don't have to save the file.\
 The downside is that when the external program fails \
 it writes the error into the current buffer.\
 You can always undo and go to the previous buffer with `u`.
+
+#### return code of ex commands
+
+After an ex command the variable `v:shell_error` is set.
+
+```
+:!echo '
+:echo v:shell_error
+```
 
 ## vimscript9
 
