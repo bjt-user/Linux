@@ -19,11 +19,20 @@ To go into insert mode and insert the text "new text" do this:
 execute "normal Inew text \<Esc>
 
 ---
-simple vimscript:
+#### initialize variables
+
 ```
 let name = "John"
 
 echo "Hello, " . name
+```
+
+in vim9script this works:
+```
+def Format()
+    var message = 'oh hi mark'
+    echomsg message
+enddef
 ```
 ---
 
