@@ -28,6 +28,13 @@ And at the same time not overwriting any registers.
 To go into insert mode and insert the text "new text" do this:
 execute "normal Inew text \<Esc>
 
+#### test vimscripts
+
+Create a file named `foo.vim`.\
+After opening the file and putting some vimscript in it\
+you can execute the script with:\
+`:%so`
+
 ---
 #### initialize variables
 
@@ -60,8 +67,7 @@ echo linepos
 ```
 
 
-functions
----------
+#### functions
 
 It looks like function names have to start with an upper case character otherwise you get an error.\
 Use `function!` so you don't get errors when opening multiple files. (i.e. `vim -O file1 file2`)
@@ -114,6 +120,18 @@ When you scroll down you see help files you can go into by placing the cursor on
 "this is a comment in vimscript
 ```
 in vim9script you can use `#`
+
+## builtin function
+
+TODO: how to get a list of all builtin functions
+
+#### expand
+
+You might need this here and there to expand the current file to a string or something else.\
+`:h expand`
+```
+echo expand('%')
+```
 
 ## ex(ternal) commands
 
