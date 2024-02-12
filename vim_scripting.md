@@ -184,6 +184,9 @@ sleep 5
 echo 'I woke up'
 ```
 
+Use `sleep!` to hide the cursor while sleeping which is sometimes cleaner,\
+for example when the cursor is inside the vim status line.
+
 #### autocommands
 
 This is a great explanations of how autocommands work:\
