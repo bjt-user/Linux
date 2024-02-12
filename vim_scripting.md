@@ -189,6 +189,21 @@ echo 'I woke up'
 This is a great explanations of how autocommands work:\
 https://learnvimscriptthehardway.stevelosh.com/chapters/12.html
 
+### string functions
+
+#### trim
+
+remove leading and trailing whitespace
+```
+vim9script
+
+var my_string = '  varokvarok   '
+
+my_string = trim(my_string)
+
+echo my_string .. 'ENDOFLINE'
+```
+
 ## buffers
 
 #### replace buffer with a variable
