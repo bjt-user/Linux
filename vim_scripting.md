@@ -158,6 +158,11 @@ sleep 5
 echo 'I woke up'
 ```
 
+#### autocommands
+
+This is a great explanations of how autocommands work:\
+https://learnvimscriptthehardway.stevelosh.com/chapters/12.html
+
 ## buffers
 
 #### replace buffer with a variable
