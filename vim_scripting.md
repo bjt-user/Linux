@@ -121,7 +121,7 @@ When you scroll down you see help files you can go into by placing the cursor on
 ```
 in vim9script you can use `#`
 
-## builtin function
+## builtin functions
 
 TODO: how to get a list of all builtin functions
 
@@ -142,6 +142,19 @@ vim9script
 var shell_result = system('wc -l ' .. expand('%:p'))
 
 echo shell_result
+```
+
+## buffers
+
+#### replace buffer with a variable
+
+delete the current buffer with `:%d` and put the variable foo in the second line:
+```
+vim9script
+
+var foo = 'bar'
+:%d
+:put =foo
 ```
 
 ## ex(ternal) commands
