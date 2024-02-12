@@ -178,7 +178,18 @@ var shell_result = system('wc -l ' .. expand('%:p'))
 echo shell_result
 ```
 
-TODO: operate on the current buffer inside a system command
+operate on the current buffer inside a system command
+
+this works:
+```
+vim9script
+
+var current_buffer = join(getline(1, '$'), "\n")
+
+var myvar = system('wc -l', current_buffer)
+
+echo myvar
+```
 
 #### sleep
 
@@ -253,6 +264,8 @@ var current_buffer = @"
 
 echo current_buffer
 ```
+It has the downside that you overwrite the default register.\
+Maybe use another register for this.
 
 ## ex(ternal) commands
 
