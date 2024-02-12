@@ -98,8 +98,7 @@ echo linepos
 It looks like function names have to start with an upper case character otherwise you get an error.\
 Use `function!` so you don't get errors when opening multiple files. (i.e. `vim -O file1 file2`)
 
-filetype plugins
-----------------
+#### filetype plugins
 
 Put a file named `sh_something.vim` into `~/.vim/ftplugin/`
 write
@@ -111,7 +110,6 @@ and it will be executed everytime you open a file with filename *.sh with vim
 It is also recognized as shell script when you have a `#!/bin/bash` in the first line
 and a different fileending.
 
--------------------------------------------------------------------------------------------------------
 
 ```
 function Commenter ()
