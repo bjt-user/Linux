@@ -134,6 +134,16 @@ Put this in a file in `.vim/plugin/filename.vim`
 
 Then you can execute this function in vim with `:call Commenter()`
 
+#### operating on the current file
+
+`%` is used here.\
+But sometimes you have to use additional modifiers like `p` for the absolute path.
+```
+vim9script
+
+echo expand('%:p')
+```
+see `:h expand` under `modifiers`
 
 #### vim manual
 
