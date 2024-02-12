@@ -191,3 +191,14 @@ def Long_echo()
 enddef
 ```
 These four lines will be executed as one external command.
+
+#### string concatenation
+
+In vim9script the `.` does not work anymore.\
+You have to use `..`:
+```
+vim9script
+
+var mystring = "this is the file " .. "foo"
+echo mystring
+```
