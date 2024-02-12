@@ -133,6 +133,17 @@ You might need this here and there to expand the current file to a string or som
 echo expand('%')
 ```
 
+#### system
+
+example: (get the number of lines of the current file)
+```
+vim9script
+
+var date_result = system('wc -l ' .. expand('%:p'))
+
+echo date_result
+```
+
 ## ex(ternal) commands
 
 #### silencing
