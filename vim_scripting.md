@@ -230,6 +230,20 @@ var foo = 'bar'
 :put =foo
 ```
 
+#### put buffer inside a variable
+
+This works but does not seem that elegant
+```
+vim9script
+
+var current_buffer = join(getline(1, '$'), "\n")
+
+echo myvar
+```
+
+Maybe you can also just use `:%y` and then it should be in the default register \
+and you can paste it with `p`.
+
 ## ex(ternal) commands
 
 #### silencing
