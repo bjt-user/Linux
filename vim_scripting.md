@@ -70,10 +70,10 @@ def Format()
                 silent undo
                 var shfmt_error = system('shfmt ' .. expand('%'))
                 echo shfmt_error
-                winrestview(current_view)
         else
                 :redraw!
         endif
+        winrestview(current_view)
 enddef
 ```
 
