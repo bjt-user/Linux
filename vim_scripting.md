@@ -139,9 +139,9 @@ example: (get the number of lines of the current file)
 ```
 vim9script
 
-var date_result = system('wc -l ' .. expand('%:p'))
+var shell_result = system('wc -l ' .. expand('%:p'))
 
-echo date_result
+echo shell_result
 ```
 
 ## ex(ternal) commands
