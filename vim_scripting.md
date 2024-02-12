@@ -244,6 +244,16 @@ echo myvar
 Maybe you can also just use `:%y` and then it should be in the default register \
 and you can paste it with `p`.
 
+This works:
+```
+vim9script
+
+silent :%y
+var current_buffer = @"
+
+echo current_buffer
+```
+
 ## ex(ternal) commands
 
 #### silencing
