@@ -144,6 +144,20 @@ var shell_result = system('wc -l ' .. expand('%:p'))
 echo shell_result
 ```
 
+#### sleep
+
+`sleep 2` - sleep for 2 seconds\
+`sleep 10m` - sleep for 10 milliseconds
+
+example: (sleep for 5 seconds)
+```
+vim9script
+
+echo 'I need sleep'
+sleep 5
+echo 'I woke up'
+```
+
 ## buffers
 
 #### replace buffer with a variable
