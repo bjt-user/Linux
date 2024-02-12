@@ -178,6 +178,8 @@ var shell_result = system('wc -l ' .. expand('%:p'))
 echo shell_result
 ```
 
+TODO: operate on the current buffer inside a system command
+
 #### sleep
 
 `sleep 2` - sleep for 2 seconds\
