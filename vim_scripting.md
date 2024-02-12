@@ -53,6 +53,32 @@ enddef
 ```
 ---
 
+#### restoring the view
+
+After executing vimscript functions you usually want your cursor to be at \
+the same position it was before calling the function and your screen to show the same \
+range of lines it showed before.
+
+The easiest way to achieve this is probably to use `winsaveview()` and `winrestview()`.
+
+Example:
+```
+def Format()
+        var current_view = winsaveview()
+        silent :%!shfmt
+        if v:shell_error
+                silent undo
+                var shfmt_error = system('shfmt ' .. expand('%'))
+                echo shfmt_error
+                winrestview(current_view)
+        else
+                :redraw!
+        endif
+enddef
+```
+
+Using the cursor position and current line number also works.
+
 getting the cursor position:
 ```
 let colpos=col('.')
