@@ -361,6 +361,14 @@ else
 endif
 ```
 
+#### scopes
+
+`vim9` changed the default scopes of functions.
+
+see `:h vim9-scopes`
+
+They are local to the script by default, you have to make them global with `g:`.
+
 ## troubleshooting
 
 #### function and mappings in vim9script
@@ -389,6 +397,22 @@ nmap <F5> :w <bar> !clear;make <CR>
 nmap <F9> :call Format() <CR>
 
 def Format()
+        :w
+        silent !indent -i8 -pal -npsl -brf -br % -o %
+        :redraw!
+enddef
+```
+
+this will work (see `:h vim9-scopes`)
+```
+vim9script
+
+set autoread
+
+nmap <F5> :w <bar> !clear;make <CR>
+nmap <F9> :call Format() <CR>
+
+def g:Format()
         :w
         silent !indent -i8 -pal -npsl -brf -br % -o %
         :redraw!
