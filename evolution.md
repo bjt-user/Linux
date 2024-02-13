@@ -50,3 +50,13 @@ To delete old entries from that calendar (maybe via script in the future):\
 search for the "summary" you gave for your appointment\
 then you see `BEGIN:VEVENT`, and you can delete until `END:VEVENT`.\
 The entries are chronological, so you search for the first `BEGIN:VEVENT` in the file and start deleting from that until a `END:VEVENT` that is still in the past and not an upcoming event.
+
+## troubleshooting
+
+#### keyring / evolution keeps asking for password
+
+open `seahorse`\
+right click on the "login" password\
+"change password"\
+enter the old password\
+leave the new password empty
