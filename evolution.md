@@ -58,5 +58,7 @@ The entries are chronological, so you search for the first `BEGIN:VEVENT` in the
 open `seahorse`\
 right click on the "login" password\
 "change password"\
-enter the old password\
+enter the old password (this should be the os password for the user)\
 leave the new password empty
+
+=> that worked
