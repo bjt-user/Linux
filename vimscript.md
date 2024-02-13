@@ -371,6 +371,11 @@ see `:h vim9-scopes`
 They are local to the script by default, you have to make them global with `g:`.\
 Otherwise even a mapping in the same script will not find the function...
 
+TODO: understand this:
+```
+:h ScriptCmd
+```
+
 ## troubleshooting
 
 #### function and mappings in vim9script
