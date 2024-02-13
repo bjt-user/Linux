@@ -368,8 +368,7 @@ endif
 In vim9script functions cannot be found when you try to map them to a key:
 ```
 vim9script
-# autoread: When a file has been detected to have been changed outside of Vim and
-# it has not been changed inside of Vim, automatically read it again.
+
 set autoread
 
 nmap <F5> :w <bar> !clear;make <CR>
@@ -384,8 +383,6 @@ enddef
 
 If you use legacy vimscript and vim9 functions it works:
 ```
-" autoread: When a file has been detected to have been changed outside of Vim and
-" it has not been changed inside of Vim, automatically read it again.
 set autoread
 
 nmap <F5> :w <bar> !clear;make <CR>
