@@ -363,11 +363,13 @@ endif
 
 #### scopes
 
-`vim9` changed the default scopes of functions.
+`vim9` changed the default scopes of functions.\
+And key `map`s to function seem to only work with global functions.
 
 see `:h vim9-scopes`
 
-They are local to the script by default, you have to make them global with `g:`.
+They are local to the script by default, you have to make them global with `g:`.\
+Otherwise even a mapping in the same script will not find the function...
 
 ## troubleshooting
 
