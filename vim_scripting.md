@@ -336,3 +336,27 @@ vim9script
 var mystring = "this is the file " .. "foo"
 echo mystring
 ```
+
+#### using number as bool
+
+This can lead to problems when the number is a `2`:
+```
+vim9script
+
+var myvar = 2
+
+if myvar
+        echo 'test'
+else
+        echo 'fail'
+endif
+```
+
+This is the more stable implementation:
+```
+if v:shell_error != 0
+  echo check_result
+else
+  echo 'bash -n succeeded.'
+endif
+```
