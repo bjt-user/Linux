@@ -305,14 +305,17 @@ The downside is that when the external program fails \
 it writes the error into the current buffer.\
 You can always undo and go to the previous buffer with `u`.
 
-#### return code of ex commands
+#### return code of shell commands
 
-After an ex command the variable `v:shell_error` is set.
+After a shell command the variable `v:shell_error` is set.
 
 ```
 :!echo '
 :echo v:shell_error
 ```
+
+When using the `indent` program this did not work correctly.\
+`v:shell_error` was 0 when indent should have a 2 rc...
 
 ## vim9script
 
