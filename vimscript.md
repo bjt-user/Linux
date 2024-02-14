@@ -222,6 +222,8 @@ vim9script
 setline(2, "#hi")
 ```
 
+arg2 can also be a variable.
+
 ### string functions
 
 #### trim
