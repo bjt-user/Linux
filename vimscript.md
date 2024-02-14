@@ -222,7 +222,8 @@ vim9script
 setline(2, "#hi")
 ```
 
-arg2 can also be a variable.
+arg2 can also be a variable.\
+But if the variable contains newlines those will be shown as "\n", and will not start new lines.
 
 ### string functions
 
@@ -251,6 +252,8 @@ var foo = 'bar'
 :%d
 :put =foo
 ```
+
+But if the variable contains newlines those will be shown as "\n", and will not start new lines.
 
 #### put buffer inside a variable
 
