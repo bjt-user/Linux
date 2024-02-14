@@ -35,7 +35,6 @@ After opening the file and putting some vimscript in it\
 you can execute the script with:\
 `:%so`
 
----
 #### initialize variables
 
 ```
@@ -51,7 +50,6 @@ def Format()
     echomsg message
 enddef
 ```
----
 
 #### restoring the view
 
@@ -132,6 +130,18 @@ Put this in a file in `.vim/plugin/filename.vim`
 
 Then you can execute this function in vim with `:call Commenter()`
 
+#### key mappings
+
+If you are mapping a key stroke to a function you can use `<silent>` to surpress the \
+`:call MyFunction()` in the status line.
+
+example:
+```
+nmap <silent> <F9> :call Format() <CR>
+```
+
+The output of the function (e.g. if you have echos in your function) will still be displayed.
+
 #### operating on the current file
 
 `%` is used here.\
@@ -190,8 +200,7 @@ var myvar = system('wc -l', current_buffer)
 
 echo myvar
 ```
-
-I could not catch stderr output though...
+The code above is like a `cat` on the current buffer piped into the command at arg1.
 
 #### sleep
 
@@ -315,9 +324,6 @@ After a shell command the variable `v:shell_error` is set.
 :!echo '
 :echo v:shell_error
 ```
-
-When using the `indent` program this did not work correctly.\
-`v:shell_error` was 0 when indent should have a 2 rc...
 
 ## vim9script
 
