@@ -191,6 +191,8 @@ var myvar = system('wc -l', current_buffer)
 echo myvar
 ```
 
+I could not catch stderr output though...
+
 #### sleep
 
 `sleep 2` - sleep for 2 seconds\
