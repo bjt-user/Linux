@@ -202,8 +202,6 @@ echo myvar
 ```
 The code above is like a `cat` on the current buffer piped into the command at arg1.
 
-WARNING: If you use '\n' instead of "\n" here you will get unexpected behaviour that is hard to debug!
-
 #### sleep
 
 `sleep 2` - sleep for 2 seconds\
@@ -270,7 +268,6 @@ But if the variable contains newlines those will be shown as "\n", and will not 
 
 #### put buffer inside a variable
 
-This works but does not seem that elegant
 ```
 vim9script
 
@@ -278,6 +275,7 @@ var current_buffer = join(getline(1, '$'), "\n")
 
 echo myvar
 ```
+WARNING: If you use '\n' instead of "\n" here you will get unexpected behaviour that is hard to debug!
 
 Maybe you can also just use `:%y` and then it should be in the default register \
 and you can paste it with `p`.
@@ -292,7 +290,7 @@ var current_buffer = @"
 echo current_buffer
 ```
 It has the downside that you overwrite the default register.\
-Maybe use another register for this.
+Maybe save the default register first and then write it back.
 
 ## external commands
 
