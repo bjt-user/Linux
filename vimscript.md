@@ -202,6 +202,8 @@ echo myvar
 ```
 The code above is like a `cat` on the current buffer piped into the command at arg1.
 
+WARNING: If you use '\n' instead of "\n" here you will get unexpected behaviour that is hard to debug!
+
 #### sleep
 
 `sleep 2` - sleep for 2 seconds\
