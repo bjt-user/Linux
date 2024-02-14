@@ -213,6 +213,15 @@ for example when the cursor is inside the vim status line.
 This is a great explanations of how autocommands work:\
 https://learnvimscriptthehardway.stevelosh.com/chapters/12.html
 
+#### setline
+
+`setline` will overwrite line number arg1 with arg2.
+```
+vim9script
+#hi
+setline(2, "#hi")
+```
+
 ### string functions
 
 #### trim
@@ -267,7 +276,7 @@ echo current_buffer
 It has the downside that you overwrite the default register.\
 Maybe use another register for this.
 
-## ex(ternal) commands
+## external commands
 
 #### silencing
 
