@@ -266,7 +266,7 @@ var foo = 'bar'
 
 But if the variable contains newlines those will be shown as "\n", and will not start new lines.
 
-#### put buffer inside a variable
+#### put buffer inside a variable (getline)
 
 ```
 vim9script
@@ -291,6 +291,19 @@ echo current_buffer
 ```
 It has the downside that you overwrite the default register.\
 Maybe save the default register first and then write it back.
+
+#### put
+
+with `put` you can place the entire content of a buffer into the current line (where the cursor is)\
+and the following lines:
+```
+vim9script
+
+var foo = join(getline(1, '$'), "\n")
+:put =foo
+```
+
+A capital `P` is for before the cursor.
 
 ## external commands
 
