@@ -311,7 +311,7 @@ After an ex command the variable `v:shell_error` is set.
 :echo v:shell_error
 ```
 
-## vimscript9
+## vim9script
 
 https://vimhelp.org/vim9.txt.html
 
