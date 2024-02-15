@@ -188,9 +188,13 @@ var shell_result = system('wc -l ' .. expand('%:p'))
 echo shell_result
 ```
 
-operate on the current buffer inside a system command
+operate on the current buffer inside a system command\
+(using the current buffer id as arg2):
+```
+var wcl_stdout = system('wc -l', bufnr(bufname()))
+```
 
-this works:
+this also works (but is longer and less elegant):
 ```
 vim9script
 
