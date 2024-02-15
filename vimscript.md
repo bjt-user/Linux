@@ -253,6 +253,29 @@ echo my_string .. 'ENDOFLINE'
 
 ## buffers
 
+#### bufname
+
+if `bufname` is used without argument, then the name of the current buffer \
+is return. (as shown by `:ls`)
+```
+vim9script
+
+var mybuf = bufname()
+
+echo mybufnr
+```
+
+#### bufnr
+
+get the number/id of the current buffer:
+```
+vim9script
+
+var mybufnr = bufnr(bufname())
+
+echo mybuf
+```
+
 #### replace buffer with a variable
 
 delete the current buffer with `:%d` and put the variable foo in the second line:
