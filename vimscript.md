@@ -352,7 +352,7 @@ The downside is that when the external program fails \
 it writes the error into the current buffer.\
 You can always undo and go to the previous buffer with `u`.
 
-#### return code of shell commands
+#### return code of shell commands (v:shell_error)
 
 After a shell command the variable `v:shell_error` is set.
 
@@ -360,6 +360,11 @@ After a shell command the variable `v:shell_error` is set.
 :!echo '
 :echo v:shell_error
 ```
+
+Does not always seem to work though.
+
+From vim help:\
+> This only works when the shell returns the error code to Vim.
 
 ## vim9script
 
