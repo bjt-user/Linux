@@ -24,4 +24,6 @@ keine_umlaute.txt: text/plain; charset=us-ascii
 #### iconv
 
 Converting from one encoding to another might sometimes work with `iconv`.\
-Does not seem to be possible to convert from any encoding to another.
+Does not seem to be possible to convert from any encoding to another.\
+Or `file -i` will only show the new encoding if it has special characters in it.\
+Otherwise it probably will show `us-ascii`.
