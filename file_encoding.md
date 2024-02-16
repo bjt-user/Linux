@@ -20,3 +20,8 @@ just some english text without special characters
 $ file -i keine_umlaute.txt 
 keine_umlaute.txt: text/plain; charset=us-ascii
 ```
+
+#### iconv
+
+Converting from one encoding to another might sometimes work with `iconv`.\
+Does not seem to be possible to convert from any encoding to another.
