@@ -206,6 +206,10 @@ echo myvar
 ```
 The code above is like a `cat` on the current buffer piped into the command at arg1.
 
+WARNING: Using the current buffer as an input for `system` will NOT work\
+if there are **problems with encoding**.\
+(e.g. you have an ISO-8859-1 file and vim tries to use utf-8)
+
 #### sleep
 
 `sleep 2` - sleep for 2 seconds\
