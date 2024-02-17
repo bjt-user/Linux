@@ -103,7 +103,7 @@ write
 ```
 echo "this is a shell script!!!"
 ```
-and it will be executed everytime you open a file with filename *.sh with vim
+and it will be executed everytime you open a file with filename `*.sh` with vim
 
 It is also recognized as shell script when you have a `#!/bin/bash` in the first line
 and a different fileending.
@@ -164,6 +164,16 @@ When you scroll down you see help files you can go into by placing the cursor on
 "this is a comment in vimscript
 ```
 in vim9script you can use `#`
+
+#### extending autocomplete
+
+to extend the ctrl n and ctrl p autocompletion put this in your vimrc or lang specific files
+```
+set dictionary+=/tmp/foo.dict
+set complete+=k
+```
+and create a file `/tmp/foo.dict` with your words (separated by new line)
+
 
 ## builtin functions
 
