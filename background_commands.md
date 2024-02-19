@@ -1,5 +1,4 @@
-How to run a command in the background
---------------------------------------
+#### How to run a command in the background
 
 Add the ampersand symbol `&` at the end of the command:
 ```
@@ -10,7 +9,14 @@ Then press `<enter>` to get back to the command prompt.
 => this only works well for processes that don't produce any output to the terminal.\
 A process that prints to terminal will still print that to the terminal and interrupt your session.
 
-You need to use this
+
+If you redirect to a log file your session should not be interrupted.\
+So you shouldnt need a `nohup` which is used later.
+```
+./sleep_and_echo.sh &>> mylog &
+```
+
+You can also use this
 ```
 nohup ./whileecho.sh &
 ```
