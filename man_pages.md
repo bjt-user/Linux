@@ -75,6 +75,11 @@ searching for flags:
 ```
 /^\s+--compress
 ```
+or
+```
+/^\s*-d
+```
+(`\s` for whitespace)
 
 ## troubleshooting
 
