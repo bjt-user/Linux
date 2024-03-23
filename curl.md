@@ -188,6 +188,13 @@ curl -k -L --noproxy '*' https://my-local-site.lo
 ***
 ***
 
+#### mattermost webhook
+
+this worked:
+```
+curl -i -X POST -H 'Content-Type: application/json' -d '{"text": "Hello, this is some text\nThis is more text."}' https://your-mattermost-server.com/hooks/xxx-generatedkey-xxx
+```
+
 #### good websites to curl
 
 get weather information:
