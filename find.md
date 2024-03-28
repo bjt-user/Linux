@@ -38,7 +38,7 @@ Sometimes you get `permission denied`, `Input/Output error`, or `invalid argumen
 - -n is line number, and
 - -w stands for match the whole word.
 
-#### sort the output of find
+## sort the output of find
 
 this seems to sort by creation or modification timestamp:
 ```
