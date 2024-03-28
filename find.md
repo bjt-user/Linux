@@ -38,6 +38,13 @@ Sometimes you get `permission denied`, `Input/Output error`, or `invalid argumen
 - -n is line number, and
 - -w stands for match the whole word.
 
+#### sort the output of find
+
+this seems to sort by creation or modification timestamp:
+```
+find /archive -iname "*Gts_automatic_correction_statement_*" -printf "%T+ %p\n" | sort
+```
+
 ## find large files
 
 ```
