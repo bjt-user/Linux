@@ -9,6 +9,13 @@ But you can use any separator like this:
 cut -d':' -f2 /etc/passwd | tail -n 5
 ```
 
+#### select multiple fields
+
+```
+$ echo "192.168.2.1#53" | cut -d'.' -f2-3
+168.2
+```
+
 ---
 
 #### cut on variables
