@@ -254,6 +254,20 @@ setline(2, "#hi")
 arg2 can also be a variable.\
 But if the variable contains newlines those will be shown as "\n", and will not start new lines.
 
+#### matchstr - get first non whitespace character of a line
+
+```
+vim9script
+
+var first_non_whitespace_char = matchstr(getline('.'), '\S')
+
+echo first_non_whitespace_char
+
+if first_non_whitespace_char == 'e'
+	echo 'you have e'
+endif
+```
+
 ### string functions
 
 #### trim
@@ -460,19 +474,6 @@ TODO: understand this:
 :h ScriptCmd
 ```
 
-#### matchstr - get first non whitespace character of a line
-
-```
-vim9script
-
-var first_non_whitespace_char = matchstr(getline('.'), '\S')
-
-echo first_non_whitespace_char
-
-if first_non_whitespace_char == 'e'
-	echo 'you have e'
-endif
-```
 
 ## troubleshooting
 
