@@ -460,6 +460,20 @@ TODO: understand this:
 :h ScriptCmd
 ```
 
+#### matchstr - get first non whitespace character of a line
+
+```
+vim9script
+
+var first_non_whitespace_char = matchstr(getline('.'), '\S')
+
+echo first_non_whitespace_char
+
+if first_non_whitespace_char == 'e'
+	echo 'you have e'
+endif
+```
+
 ## troubleshooting
 
 #### function and mappings in vim9script
