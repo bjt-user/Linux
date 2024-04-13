@@ -183,7 +183,7 @@ btw, to see all loaded modules:
 pactl list modules
 ```
 
-***
+---
 
 #### ffmpeg
 
@@ -199,7 +199,7 @@ Reducing the resolution of a video:
 ```
 ffmpeg -i <input> -vf scale=480x360,setdar=4:3 <output>
 ```
-***
+---
 
 #### play sounds on the command line
 
@@ -214,7 +214,7 @@ or directly with pulseaudio:
 paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
 ```
 
-***
+---
 
 #### test microphone
 
@@ -238,7 +238,7 @@ This will record from your microphone and output it a couple of seconds later.
 
 ## Volume problem in movies
 
-In movies the volume is always unappropriate, shootings and music is very loud,
+In movies the volume is always inappropriate, shootings and music is very loud,
 quiet conversations you want to hear are unhearable silent.
 In my experience while using headphones this problem is less dominant but still exists.
 
