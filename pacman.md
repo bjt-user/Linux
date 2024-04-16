@@ -29,6 +29,11 @@ this is for packages that are not installed yet:
 ```
 pacman -Si postgresql
 ```
+to also show which packages your package is required by:
+```
+sudo pacman -Sii portaudio
+```
+(`Required By` field)
 
 ```
 pacman -Qi openssh
