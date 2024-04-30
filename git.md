@@ -342,3 +342,16 @@ with the `.gitignore` file from the "fix-location-field-bug" Branch:
 ```
 git checkout fix-location-field-bug -- .gitignore
 ```
+
+#### merge branches
+
+```
+$ git switch master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+```
+
+this will merge the branch named `my-dev-branch` into the current branch (master):
+```
+~/workspace/git/mdtoc (master) $ git merge my-dev-branch
+```
