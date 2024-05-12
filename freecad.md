@@ -110,10 +110,17 @@ use a font like\
 hit "reset point" \
 hit "ok"
 
+Extrudion:\
 To extrude you might have to pull the shapestring to "body" to add it to the active body.
 
-engravings: (did not always work)
+Engravings:\
+Make sure the shapestring is inside the active body. (otherwise pull it in)\
+In the tree view select the shapestring and position it through the "placement" values \
+so that it lies right on top of the face you want to do the engraving.\
+Click "pocket", select a "length" that is smaller than the extruded object you are on.\
+Click on the 3d view to update the view. Then hit "ok".
 
+When pocketing shapestrings does not work:\
 Den Shapestring mit Part -> Extrude aufpolstern. (so groß, dass er das komplette vorige Objekt durchlöchert)
 Dann den extrudierten Shapestring in das Objekt positionieren. (Über das Register Data -> Position)
 Jetzt erst das vorige Gesamtobjekt auswählen, dann mit strg + Klick das Extrudierte Objekt auswählen.
