@@ -98,7 +98,21 @@ Es muss ein zusammenhängendes Objekt geschaffen werden.
 
 ---------------------------------------------------------------------------------------------------
 
-Text ausfräsen: (Shapestrings pocketen scheint nicht immer zu funktionieren)
+#### shapestrings
+
+https://wiki.freecad.org/Draft_ShapeString_tutorial
+
+Draft -> ShapeString
+
+type in a string, select a height\
+use a font like\
+"/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf" \
+hit "reset point" \
+hit "ok"
+
+To extrude you might have to pull the shapestring to "body" to add it to the active body.
+
+engravings: (did not always work)
 
 Den Shapestring mit Part -> Extrude aufpolstern. (so groß, dass er das komplette vorige Objekt durchlöchert)
 Dann den extrudierten Shapestring in das Objekt positionieren. (Über das Register Data -> Position)
