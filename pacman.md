@@ -221,3 +221,15 @@ With a `wget` on the "source" field I got the source code of the `coreutils` pac
 ```
 wget https://ftp.gnu.org/gnu/coreutils/coreutils-9.4.tar.xz
 ```
+
+#### downgrading a package
+
+`pacman` seems to save old packages in
+```
+/var/cache/pacman/pkg
+```
+
+Downgrading works like this:
+```
+sudo pacman -U file:///var/cache/pacman/pkg/ansible-core-2.16.6-3-any.pkg.tar.zst
+```
