@@ -48,6 +48,15 @@ There you can see the **IP**, MAC address, network name of the printer among oth
 
 Just using `lp` doesnt seem to work because you need to setup that printer first.
 
+http://localhost:631/admin
+
+Enter your sudo user and password or root will probably work.
+
+Printers->Find new printers
+
+Then you have to select the printer, select the manufacturer of the printer.\
+Then select a driver.
+
 ***
 
 #### system-config-printer
