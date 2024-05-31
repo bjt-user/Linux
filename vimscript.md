@@ -242,6 +242,11 @@ for example when the cursor is inside the vim status line.
 This is a great explanations of how autocommands work:\
 https://learnvimscriptthehardway.stevelosh.com/chapters/12.html
 
+Format openscad files on save:
+```
+autocmd BufWritePre *.scad :normal gg=G
+```
+
 #### setline
 
 `setline` will overwrite line number arg1 with arg2.
