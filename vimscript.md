@@ -239,6 +239,10 @@ for example when the cursor is inside the vim status line.
 
 #### autocommands
 
+```
+:h autocommand
+```
+
 This is a great explanations of how autocommands work:\
 https://learnvimscriptthehardway.stevelosh.com/chapters/12.html
 
