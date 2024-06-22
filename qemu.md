@@ -18,6 +18,10 @@ Arch-Install:
 ```
 sudo pacman -S qemu-system-x86 virt-manager qemu-img
 ```
+You also need this package if you want to use `qemu` without `virt-manager`:
+```
+sudo pacman -S qemu-ui-gtk
+```
 
 Raspbian:
 ```
@@ -48,15 +52,15 @@ Lenovo Thinkcentre: F1 on booting
 
 enable "Intel Virtualization Support"
 
-## usage
-
-You can create virtual machines by using the `virt-manager` program.
-
-#### keyboard shortcuts
+#### virt-manager: keyboard shortcuts
 
 <kbd>ctrl (left)</kbd> + <kbd>alt (left)</kbd> - grab keyboard from or to vm
 
----
+#### creating a virtual hard drive
+
+```
+qemu-img create -f qcow2 mydisk.img 10G
+```
 
 #### firmware (BIOS or UEFI)
 
@@ -65,6 +69,27 @@ You can choose between `UEFI` and `system default`
 (my system default was probably legacy bios because that was how I installed my host OS)
 
 You can also see it in the `details` view in the first page.
+
+#### qemu - creating alpine vm
+
+1. create disk:
+```
+qemu-img create -f qcow2 mydisk.img 10G
+```
+2. initial start by booting from the iso:
+```
+qemu-system-x86_64 -enable-kvm \
+-hda mydisk.img -m 2G -M pc \
+-cdrom alpine-standard-3.19.0-x86_64.iso
+```
+3. install the alpine operating system \
+type `setup-alpine` and follow the installer.\
+(format the disk by selecting `sys`)
+
+4. boot from the hard drive
+```
+qemu-system-x86_64 -enable-kvm -hda mydisk.img -m 2G -M pc
+```
 
 #### first try using virt-manager
 
