@@ -91,6 +91,10 @@ type `setup-alpine` and follow the installer.\
 qemu-system-x86_64 -enable-kvm -hda mydisk.img -m 2G -M pc
 ```
 
+Even internet access works, I dont know why though.
+
+Enabling clipboard to paste stuff into the vm might be another task.
+
 #### first try using virt-manager
 
 ```
