@@ -91,3 +91,10 @@ For the terminal emulators I like:
 - `fira code regular` (`sudo apt install fonts-firacode`) \
 (`sudo dnf install fira-code-fonts`)
 - `sudo dnf install levien-inconsolata-fonts` (for terminator config: `font = Inconsolata Medium 14`)
+
+#### font families
+
+View installed font families:
+```
+fc-list : family | sort
+```
