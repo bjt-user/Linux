@@ -59,3 +59,36 @@ convert myimage.jpg myimage.pdf
 
 ***
 TODO: Play around with python pdf libs.
+
+## ghostscript
+
+#### view pdf file
+
+```
+gs -dSAFER -dBATCH  Anschreiben_Bjoern_Foersterling.html.pdf
+```
+
+#### render postscript file to pdf
+
+```
+ps2pdf helloworld.ps
+```
+
+#### postscript hello world file
+
+```
+$ cat helloworld.ps
+%!PS
+/Palatino-Roman 20 selectfont
+300 400 moveto
+(Hello, World!) show
+showpage
+```
+
+#### convert pdf file to postscript
+
+```
+pdf2ps myfile.pdf
+```
+
+That produced a `.ps` file with over 10000 lines.
