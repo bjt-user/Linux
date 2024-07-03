@@ -51,6 +51,12 @@ pdfcrop --margins "-600 -450 0 0" input.pdf output.pdf
 (see `pdfcrop --help`)
 (`--margins "<left> <top> <right> <bottom>"                    (0 0 0 0)`)
 
+or with `pdfarranger`:
+```
+sudo pacman -S pdfarranger
+```
+This is a graphical tool that is able to crop pdfs.
+
 #### converting image to pdf
 
 ```
