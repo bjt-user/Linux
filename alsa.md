@@ -39,3 +39,10 @@ alsa-utils usr/share/sounds/alsa/Side_Left.wav
 alsa-utils usr/share/sounds/alsa/Side_Right.wav
 ...
 ```
+
+#### alsamixer
+
+CLI tool that helps to solve simple issues.\
+Adjust output/input volume, select soundcard.
+
+For more complex issues you might need to use tools like `pavucontrol`.
