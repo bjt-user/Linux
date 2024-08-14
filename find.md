@@ -107,3 +107,9 @@ find . -type f | wc -l
 ```
 find . -type f -user root
 ```
+
+#### find files that are NOT owned by a specific user
+
+```
+find . ! -user tomcat
+```
