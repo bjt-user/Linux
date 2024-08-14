@@ -28,6 +28,11 @@ LLMNR=no
 Cache=no-negative
 ```
 
+You need to restart this service after any changes:
+```
+sudo systemctl restart systemd-resolved.service
+```
+
 #### keep NetworkManager away from /etc/resolv.conf
 
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/manually-configuring-the-etc-resolv-conf-file_configuring-and-managing-networking
