@@ -81,3 +81,10 @@ unmount the file system:
 ```
 umount /raspberrypi_home
 ```
+
+#### ssh without host key checking
+
+This will not create a prompt and append the host key to the `~/.ssh/known_hosts` file:
+```
+ssh -o "StrictHostKeyChecking no" myuser@myserver
+```
