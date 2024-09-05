@@ -33,3 +33,26 @@ then hit `enter`.
 `>` for right aligned string.
 
 Hitting `"` does not work...which should create centered string
+
+#### enter formulas
+
+Hit `=` in command mode.\
+Enter `A1+A2` to add cells.\
+Hit `enter`.
+
+Sum of a range of cells:
+`@sum(B1:B3)`
+
+#### save file
+
+`P` then enter the file name and hit `enter`.
+
+#### quit
+
+`q`
+
+#### save and quit
+
+`ZZ`
+
+#### TODO: do not write a backup file myfile.sc~
