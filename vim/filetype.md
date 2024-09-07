@@ -17,6 +17,10 @@ Or it seems that you can use the path of a file to determine its filetype.
 ```
 :set filetype?
 ```
+or shorthand:
+```
+:set ft?
+```
 
 #### example from ansible-vim
 
