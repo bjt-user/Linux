@@ -12,6 +12,11 @@ This is the simplest logic to detect the filetype.\
 Another way is to use the shebang.\
 Or it seems that you can use the path of a file to determine its filetype.
 
+#### show the filetype of the current buffer
+
+```
+:set filetype?
+```
 
 #### example from ansible-vim
 
