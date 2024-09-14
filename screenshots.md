@@ -6,7 +6,7 @@ gnome-screenshot -a
 ```
 Then a crosshair on the mouse appears and you can select the area.
 
-#### shotgun
+## shotgun
 
 This will create an image with a width of 600 pixels, and a height of 200 and start from the left upper corner of the screen.
 ```
@@ -23,7 +23,14 @@ feh 1686849738.png
 shotgun -g 600x200+0+20
 ```
 
+#### capture entire screen
+
 capture the entire screen:
 ```
 shotgun -s
 ```
+
+You can enter this in `dmenu` to capture the entire screen \
+and a screenshot will be saved in `${HOME}`.
+
+Might make sense to create an `i3` shortcut.
