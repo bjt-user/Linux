@@ -23,3 +23,7 @@ feh 1686849738.png
 shotgun -g 600x200+0+20
 ```
 
+capture the entire screen:
+```
+shotgun -s
+```
