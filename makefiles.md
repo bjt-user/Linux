@@ -1,4 +1,5 @@
 #### resources
+
 ascii version:\
 https://www.gnu.org/software/make/manual/make.txt
 
@@ -58,6 +59,13 @@ If you just run the command `make` it will execute the first "target" in the fil
 For a noop:
 ```
 make -n
+```
+
+#### list all targets
+
+You probably need `bash-completion` installed:
+```
+make <tab><tab>
 ```
 
 #### run make with different CFLAGS
