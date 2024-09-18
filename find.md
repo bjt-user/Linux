@@ -13,7 +13,7 @@ find . -iname *na*
 `-i` is for ignoring case
 
 
-## redirect error spam message to /dev/null ##
+#### redirect error spam message to /dev/null ##
 
 ```
 find where-to-look criteria action 2>/dev/null
@@ -22,7 +22,7 @@ find where-to-look criteria action 2>/dev/null
 find . -iname "data*.txt" -print 2>/dev/null
 ```
 
-## search through file contents
+#### search through file contents
 
 https://stackoverflow.com/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux#16957078
 
@@ -38,14 +38,14 @@ Sometimes you get `permission denied`, `Input/Output error`, or `invalid argumen
 - -n is line number, and
 - -w stands for match the whole word.
 
-## sort the output of find
+#### sort the output of find
 
 this seems to sort by creation or modification timestamp:
 ```
 find /archive -iname "*Gts_automatic_correction_statement_*" -printf "%T+ %p\n" | sort
 ```
 
-## find large files
+#### find large files
 
 ```
 sudo find . -xdev -type f -size +100M
@@ -113,3 +113,11 @@ find . -type f -user root
 ```
 find . ! -user tomcat
 ```
+
+#### exclude files with specific name
+
+```
+sudo find ~ -type d -name "*vim*" ! -name "neo*"
+```
+
+This will only exclude `neo*` in the basename of files, not inside the path.
