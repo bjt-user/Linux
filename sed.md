@@ -140,6 +140,13 @@ sed -i -e 's/\r$//' myscript.sh
 sed '/^$/D' shfmt_test.sh
 ```
 
+#### delete lines from multiple files
+
+Delete all lines that start with `VIRTUALIZATION_PLATFORM` from yaml files:
+```
+sed -i '/^VIRTUALIZATION_PLATFORM/D' *.yaml
+```
+
 #### search for a string in a file (grep equivalent)
 
 ```
