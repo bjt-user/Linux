@@ -20,4 +20,4 @@ or
 sudo timedatectl set-timezone Europe/Berlin
 ```
 
-But why does `date` not show 24 hour clock?
+But why does `date` not show 24 hour clock in Rocky Linux?
