@@ -88,3 +88,9 @@ This will not create a prompt and append the host key to the `~/.ssh/known_hosts
 ```
 ssh -o "StrictHostKeyChecking no" myuser@myserver
 ```
+
+#### force password auth
+
+```
+ssh -vvv -o PreferredAuthentications=password -o PubkeyAuthentication=no tsec-gbi-ftp@tsec-gbi
+```
