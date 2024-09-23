@@ -92,5 +92,5 @@ ssh -o "StrictHostKeyChecking no" myuser@myserver
 #### force password auth
 
 ```
-ssh -vvv -o PreferredAuthentications=password -o PubkeyAuthentication=no tsec-gbi-ftp@tsec-gbi
+ssh -vvv -o PreferredAuthentications=password -o PubkeyAuthentication=no myuser@myserver
 ```
