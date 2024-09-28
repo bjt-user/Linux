@@ -17,3 +17,8 @@ sudo make install
 ```
 
 => you can use `st` now, but it is not found by `dmenu`
+
+
+#### no scrollbar
+
+It does not seem to have a scrollbar.
