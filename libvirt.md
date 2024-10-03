@@ -32,6 +32,13 @@ sudo pacman -S virt-viewer
 virt-install --cdrom alpine-standard-3.20.1-x86_64.iso --name virt-install-try-3
 ```
 
+Once I have manually installed the alpine os, I could connect to the machine like this:
+```
+virt-viewer virt-install-try-3
+```
+Of course this only works if the machine is in a `running` state.\
+You can `start/suspend` the machine with `virsh`.
+
 ## virsh
 
 #### virsh list
