@@ -22,11 +22,30 @@ To destroy your instance (or "domain"):
 virsh destroy 1
 ```
 
-#### virsh
+## virsh
+
+#### virsh list
+
+show all VMs (domains):
+```
+virsh list --all
+```
+
+#### virsh start
+
+```
+virsh start [domain_name]
+```
+
+#### virsh console
 
 Connect to a text console
 ```
 virsh console virt-install-try-2
+```
+or use the id
+```
+virsh console 3
 ```
 
 You have to exit this console with control + `]`.
