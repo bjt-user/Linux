@@ -39,6 +39,16 @@ virt-viewer virt-install-try-3
 Of course this only works if the machine is in a `running` state.\
 You can `start/suspend` the machine with `virsh`.
 
+Using the id also works:
+```
+$ virsh list --all
+ Id   Name                 State
+------------------------------------
+ 3    virt-install-try-3   running
+
+$ virt-viewer 3
+```
+
 ## virsh
 
 #### virsh list
