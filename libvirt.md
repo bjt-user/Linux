@@ -49,3 +49,21 @@ virsh console 3
 ```
 
 You have to exit this console with control + `]`.
+
+#### virsh undefine
+
+```
+virsh # list --all
+ Id   Name                 State
+-------------------------------------
+ -    virt-install-test    shut off
+ -    virt-install-try-2   shut off
+
+virsh # undefine virt-install-test
+Domain 'virt-install-test' has been undefined
+
+virsh # list --all
+ Id   Name                 State
+-------------------------------------
+ -    virt-install-try-2   shut off
+```
