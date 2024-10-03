@@ -22,6 +22,16 @@ To destroy your instance (or "domain"):
 virsh destroy 1
 ```
 
+But `virt-viewer` is better because the text console does not show everything (boot messages).
+
+```
+sudo pacman -S virt-viewer
+```
+
+```
+virt-install --cdrom alpine-standard-3.20.1-x86_64.iso --name virt-install-try-3
+```
+
 ## virsh
 
 #### virsh list
