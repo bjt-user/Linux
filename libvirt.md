@@ -49,6 +49,23 @@ $ virsh list --all
 $ virt-viewer 3
 ```
 
+## virt-viewer
+
+virt-viewer seems to use `libvirt` domain names and ids.
+
+```
+$ virsh list --all
+ Id   Name                 State
+------------------------------------
+ 3    virt-install-try-3   running
+
+$ virt-viewer 3
+```
+or
+```
+virt-viewer virt-install-try-3
+```
+
 ## virsh
 
 #### virsh list
