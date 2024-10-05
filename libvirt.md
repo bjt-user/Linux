@@ -1,8 +1,17 @@
 #### libvirt
 
+https://libvirt.org/
+
 libvirt is a collection of programs that helps with the management of virtual machines.
 
-#### virt-install
+The libvirt project:
+- is a toolkit to manage virtualization platforms
+- is accessible from C, Python, Perl, Go and more
+- is licensed under open source licenses
+- supports KVM, Hypervisor.framework, QEMU, Xen, Virtuozzo, VMWare ESX, LXC, BHyve and more
+- targets Linux, FreeBSD, Windows and macOS
+
+## virt-install
 
 This created an instance named `virt-install-test`:
 ```
@@ -47,6 +56,13 @@ $ virsh list --all
  3    virt-install-try-3   running
 
 $ virt-viewer 3
+```
+
+#### specify RAM and number of CPUs
+
+4GB RAM and 2 CPUs:
+```
+virt-install --cdrom alpine-standard-3.20.1-x86_64.iso --name virt-install-try-4 --noautoconsole --memory 4096 --vcpus 2
 ```
 
 ## virt-viewer
