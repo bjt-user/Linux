@@ -127,3 +127,40 @@ virsh # list --all
 -------------------------------------
  -    virt-install-try-2   shut off
 ```
+
+#### storage pools
+
+```
+virsh pool-list
+```
+
+```
+virsh # pool-list
+ Name        State    Autostart
+---------------------------------
+ default     active   yes
+ Downloads   active   yes
+ libvirt     active   yes
+```
+
+This will show the "target path" of a storage pool:
+```
+virsh # pool-dumpxml default
+<pool type='dir'>
+  <name>default</name>
+  <uuid>c70b93dc-5b04-4958-83da-5654bd12a1da</uuid>
+  <capacity unit='bytes'>125425360896</capacity>
+  <allocation unit='bytes'>63066734592</allocation>
+  <available unit='bytes'>62358626304</available>
+  <source>
+  </source>
+  <target>
+    <path>/home/myuser/.local/share/libvirt/images</path>
+    <permissions>
+      <mode>0711</mode>
+      <owner>1000</owner>
+      <group>998</group>
+    </permissions>
+  </target>
+</pool>
+```
