@@ -1,3 +1,8 @@
+https://en.wikipedia.org/wiki/Initial_ramdisk
+
+> In Linux systems, initrd (initial ramdisk) is a scheme for loading a temporary root file system into memory, to be used as part of the Linux startup process.
+initrd and initramfs (from INITial RAM File System) refer to two different methods of achieving this.
+
 https://developer.ibm.com/articles/l-initrd/
 
 > The initial RAM disk (initrd) is an initial root file system that is mounted prior to when the real root file system is available.
