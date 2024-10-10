@@ -153,3 +153,26 @@ container.iso: ISO 9660 CD-ROM filesystem data 'container_iso'
 ```
 
 Now test if you can boot from the iso in qemu or libvirt.
+
+```
+$ virt-install --cdrom container.iso --name container-iso-try
+ERROR
+--os-variant/--osinfo OS name is required, but no value was
+set or detected.
+
+This is now a fatal error. Specifying an OS name is required
+for modern, performant, and secure virtual machine defaults.
+```
+
+```
+virt-install --cdrom container.iso --name container-iso-try --osinfo "alpinelinux3.20"
+```
+Now `virt-viewer` opened, but the iso does not seem to be bootable.
+
+I might need this flag: (and get a boot image from somewhere)
+```
+-G generic_boot_image
+Specifies the path and filename of the generic boot image to be used when making a generic bootable CD.  The generic_boot_image will be  placed
+on  the  first  16  sectors of the CD. The first 16 sectors are the sectors that are located before the ISO-9660 primary volume descriptor.  If
+this option is used together with the -sparc-boot option, the Sun disk label will overlay the first 512 bytes of the generic boot image.
+```
