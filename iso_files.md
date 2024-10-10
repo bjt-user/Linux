@@ -98,3 +98,58 @@ mkisofs -o /path/to/output/container.iso -V "Container_Image" -R /path/to/extrac
 -o: Output file for the ISO image.\
 -V: Volume label for the ISO.\
 -R: Use the Rock Ridge extensions, which preserve Unix file permissions and symlinks.
+
+
+`Dockerfile`:
+```
+FROM alpine:latest
+
+RUN apk update
+RUN apk add vim
+```
+
+```
+docker buildx build . -t alpine-vim
+```
+
+```
+docker run -td --name alpine-vim-container alpine-vim
+```
+
+Now I have a running container:
+```
+$ docker ps
+CONTAINER ID   IMAGE        COMMAND     CREATED         STATUS         PORTS     NAMES
+60850d7411d3   alpine-vim   "/bin/sh"   4 minutes ago   Up 4 minutes             alpine-vim-container
+```
+
+```
+docker export alpine-vim-container -o alpine-vim-container.tar
+```
+
+extract tarball:
+```
+mkdir rootfs
+tar -xvf alpine-vim-container.tar -C rootfs
+```
+
+create iso: (FAIL)
+```
+$ mkisofs -V "container_iso" -R rootfs/ -o container.iso
+Setting input-charset to 'UTF-8' from locale.
+mkisofs: No such file or directory. Invalid node - '-o'.
+```
+
+Wrong order of flags! `-o` needs to come first!
+
+```
+mkisofs -o container.iso -V "container_iso" -R rootfs/
+```
+
+Now I have an ISO file:
+```
+$ file container.iso
+container.iso: ISO 9660 CD-ROM filesystem data 'container_iso'
+```
+
+Now test if you can boot from the iso in qemu or libvirt.
