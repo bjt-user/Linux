@@ -1,3 +1,17 @@
+## configuration
+
+#### client side configuration
+
+`/etc/ssh/ssh_config`
+
+and user specific: `~/.ssh/config`
+
+#### server side configuration
+
+`/etc/ssh/sshd_config`
+
+## usage
+
 #### remote command
 
 to just execute a remote command and then return instantly back to the current host:
