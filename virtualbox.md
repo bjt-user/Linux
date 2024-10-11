@@ -19,7 +19,7 @@ license: GPL3 except expansion packs
 ## installation
 
 ```
-sudo pacman -S virtualbox
+sudo pacman -S virtualbox virtualbox-host-modules-arch
 ```
 
 Probably because `virtualbox` does not use `kvm` you need to install and load kernel modules.
@@ -49,7 +49,7 @@ You can also try this command: (should show the location of the modules)
 modinfo vboxdrv
 ```
 
-#### try 2024-10-11
+#### successful try 2024-10-11
 
 after installing
 ```
@@ -68,6 +68,12 @@ vboxdrv               667648  2 vboxnetadp,vboxnetflt
 ```
 
 But now virtualbox complains that it detected an i386 cpu and not x86_64...
+
+I had to delete an existing VM from a previous install.
+
+Created a new alpine VM from iso file.\
+Started it. Installed alpine.\
+And everything worked.
 
 ## troubleshooting
 
