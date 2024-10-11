@@ -1,6 +1,20 @@
-For command line only operating systems I like to use `qemu`.
+#### documentation
 
-But for testing programs with a GUI, `virtualbox` is an option.
+https://wiki.archlinux.org/title/VirtualBox
+
+#### alternatives
+
+`qemu`
+
+#### installation
+
+```
+sudo pacman -S virtualbox
+```
+
+> You will also need to choose a package to provide host modules.
+
+But not sure which kernel to choose.
 
 ## troubleshooting
 
