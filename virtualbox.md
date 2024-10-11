@@ -18,9 +18,16 @@ license: GPL3 except expansion packs
 
 ## installation
 
+#### TLDR
 ```
 sudo pacman -S virtualbox virtualbox-host-modules-arch
 ```
+
+```
+sudo reboot
+```
+
+#### details and explanation
 
 Probably because `virtualbox` does not use `kvm` you need to install and load kernel modules.
 
