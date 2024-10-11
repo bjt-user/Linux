@@ -2,6 +2,14 @@
 
 https://wiki.archlinux.org/title/VirtualBox
 
+https://en.wikipedia.org/wiki/VirtualBox
+
+> Oracle VirtualBox (formerly Sun VirtualBox, Sun xVM VirtualBox and InnoTek VirtualBox) is a hosted hypervisor for x86 virtualization developed by Oracle Corporation.
+
+license: GPL3 except expansion packs
+
+> A supplementary package, under a proprietary license, adds support for USB 2.0 and 3.0 devices, Remote Desktop Protocol (RDP), disk encryption, NVMe, and Preboot Execution Environment (PXE). This package is called "VirtualBox Oracle VM VirtualBox extension pack".
+
 #### alternatives
 
 `qemu`
@@ -11,6 +19,8 @@ https://wiki.archlinux.org/title/VirtualBox
 ```
 sudo pacman -S virtualbox
 ```
+
+Probably because `virtualbox` does not use `kvm` you need to install and load kernel modules.
 
 > You will also need to choose a package to provide host modules.
 
@@ -26,6 +36,16 @@ For the modules to be loaded after installation, either reboot or load the modul
 sudo modprobe vboxdrv
 ```
 (how to make sure this module is loaded automatically at boot?)
+
+to see the currently loaded modules:
+```
+lsmod
+```
+
+You can also try this command: (should show the location of the modules)
+```
+modinfo vboxdrv
+```
 
 ## troubleshooting
 
