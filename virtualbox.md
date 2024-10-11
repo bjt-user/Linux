@@ -16,6 +16,17 @@ sudo pacman -S virtualbox
 
 But not sure which kernel to choose.
 
+> virtualbox-host-modules-arch and virtualbox-host-dkms use systemd-modules-load.service to load VirtualBox modules automatically at boot time.\
+For the modules to be loaded after installation, either reboot or load the modules once manually.
+
+> Among the kernel modules VirtualBox uses, there is a mandatory module named vboxdrv, which must be loaded before any virtual machines can run.
+
+> To load the module manually, run:
+```
+sudo modprobe vboxdrv
+```
+(how to make sure this module is loaded automatically at boot?)
+
 ## troubleshooting
 
 #### debian error
