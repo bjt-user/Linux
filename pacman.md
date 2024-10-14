@@ -145,8 +145,18 @@ sudo pacman -S inetutils
 
 Looks like I have to get my IP from the `ip address` command in the future.
 
-***
-#### files
+#### mirror speed
+
+```
+sudo pacman -S pacman-contrib
+```
+
+```
+rankmirrors /etc/pacman.d/mirrorlist
+```
+
+
+## files
 
 To retrieve a list of the files installed by a package:
 
@@ -166,14 +176,11 @@ pacman -F hostname
 ```
 => this shows me that I can get the hostname command with the `inetutils` package
 
-#### mirror speed
+#### find out if a file comes out of a package
 
 ```
-sudo pacman -S pacman-contrib
-```
-
-```
-rankmirrors /etc/pacman.d/mirrorlist
+$ sudo pacman -Qo /usr/bin/bash
+/usr/bin/bash is owned by bash 5.2.037-1
 ```
 
 ## troubleshooting
