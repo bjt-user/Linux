@@ -4,5 +4,3 @@ It destroys Debian.\
 
 It causes errors on Ubuntu, but Ubuntu itself remains stable.\
 (maybe it was because I used `wayland` on Debian)
-
-If you want a stable Linux install you do Linux from scratch and install everything from source and don't use paket managers.
