@@ -1,4 +1,4 @@
-#### Useful shortcuts and tricks while entering commands in a terminal
+#### keyboard shortcuts in a terminal (bash readline)
 
 These key bindings seem to be based on bashs readline program:\
 https://www.gnu.org/software/bash/manual/bash.html#Readline-Movement-Commands
