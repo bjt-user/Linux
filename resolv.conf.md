@@ -1,6 +1,6 @@
-#### resolve.conf
+#### resolve.conf on RedHat
 
-`/etc/resolve.conf` is managed by systemd these days:
+`/etc/resolve.conf` is managed by systemd on Red Hat systems:
 ```
 $ realpath /etc/resolv.conf
 /run/systemd/resolve/stub-resolv.conf
