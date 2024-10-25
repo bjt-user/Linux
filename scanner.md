@@ -49,3 +49,7 @@ Then when you do a `sudo scanimage -L` it actually finds the network scanner.
 
 Then even `simple-scan` will find it!\
 (but dont hit the search button a second time after launching the program then it will not find it again)
+
+#### simple-scan
+
+You usually have to "refresh the device list" twice to find the scanner.
