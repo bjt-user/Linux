@@ -185,6 +185,10 @@ $ sudo pacman -Qo /usr/bin/bash
 
 #### dependency tree
 
+```
+sudo pacman -S pacman-contrib
+```
+
 Show the dependency tree of a package:
 ```
 pactree curl
