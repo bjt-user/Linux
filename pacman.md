@@ -183,6 +183,17 @@ $ sudo pacman -Qo /usr/bin/bash
 /usr/bin/bash is owned by bash 5.2.037-1
 ```
 
+#### dependency tree
+
+```
+sudo pacman -S pacman-contrib
+```
+
+Show the dependency tree of a package:
+```
+pactree curl
+```
+
 ## troubleshooting
 
 #### gpg keys

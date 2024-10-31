@@ -18,7 +18,7 @@ Error in file "/usr/share/applications/org.kde.kdeconnect_open.desktop": "*/*" i
 ```
 => but it still seems to work, open with `vscode` from app menu or `code` from cli.
 
-***
+## usage
 
 #### settings config file
 
