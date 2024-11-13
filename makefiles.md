@@ -230,6 +230,18 @@ ics_analyzer: $(OBJ_FILES)
 ```
 It uses special variables of make.
 
+#### cli args for Makefiles
+
+This worked.
+```
+make myvar="foooo"
+```
+
+```
+all:
+	echo "${myvar}"
+```
+
 ## syntax
 
 #### @ symbol
