@@ -61,6 +61,15 @@ sed -i "${line_number}s/${section_number}/${section_counter}/" ${LIST_PATH}
 Use double quotes around the command part of sed and curly brackets to enclose variables.\
 With single quotes I got an error.
 
+#### inserting a line after a matched line
+
+This will insert the line `proxy=http://foo:8888` after the line `[main]`:
+```
+sed '/[main]/a proxy=http://foo:8888' /etc/dnf/dnf.conf
+```
+
+(to actually insert you will need `-i` and `sudo`)
+
 #### inserting a line at a specific line
 Inserting the line `This is the new line` at line 2 of file `replace_lines.txt`:
 ```
