@@ -28,7 +28,8 @@ Various commands that might help, when printing doesn't work:
 
 #### lp
 
-first you need to configure your printer in cups
+First you need to configure your printer in cups.\
+(=> Administration Area => Find Printers => Use HP and select correct driver)
 
 see your default printer:
 ```
@@ -38,6 +39,11 @@ HP_Deskjet_F2200_series accepting requests since Wed Sep 20 18:41:26 2023
 configure your default printer:
 ```
 lpoptions -d HP_Deskjet_F2200_series
+```
+
+or always give the destination:
+```
+lp -d OfficeJet_Pro_7740_Wide_Format_All-in-One print_me.txt
 ```
 
 ***
