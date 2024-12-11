@@ -9,6 +9,16 @@ sudo pacman -S gnome
 A `sudo startx` did not bring me into `gnome`...\
 A reboot did not do that either...
 
+```
+sudo systemctl enable gdm
+```
+
+```
+sudo reboot
+```
+
+Then you will boot into gnome.
+
 ## configuration
 
 Also see this:\
