@@ -1,3 +1,16 @@
+## installation
+
+First install `xorg`.
+
+```
+sudo pacman -S gnome
+```
+
+A `sudo startx` did not bring me into `gnome`...\
+A reboot did not do that either...
+
+## configuration
+
 Also see this:\
 [gsettings.md](gsettings.md)
 
