@@ -1,6 +1,8 @@
 ## installation
 
-First install `xorg`.
+First I installed `xorg`. (not sure if it is necessary)
+
+The `gnome` package from `pacman` automatically installed `pulseaudio`.
 
 ```
 sudo pacman -S gnome
