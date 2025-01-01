@@ -29,6 +29,11 @@ ffmpeg -f v4l2 -framerate 25 -video_size 640x480 -i /dev/video0 output.mp4
 (replace with your device file)\
 Then abort with ctrl + c
 
+one picture only:
+```
+ffmpeg -f video4linux2 -i /dev/video0 -vframes 1  -video_size 640x480 test.jpeg
+```
+
 **Arch linux** was more work:
 ```
 sudo pacman -Syu
@@ -61,6 +66,8 @@ vlc
 `media` -> `open capture device`\
 `capture device` -> `video device name` -> /dev/video0 (or whatever your webcam is)\
 `play`
+
+In newer version of `vlc` there is no `video device name` field anymore.
 
 
 #### cheese
