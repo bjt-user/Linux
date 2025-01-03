@@ -1,6 +1,12 @@
-grep -ni word file1.txt       prints all lines that contain the word "word" from the file "file1.txt"
+#### basic usage
+```
+grep -ni word file1.txt
+```
+prints all lines that contain the word "word" from the file "file1.txt"
 (option i for "ignore case" (not case sensitive))
 (option n to show the line numbers)
+
+#### print lines after and before (-A, -B)
 
 Show the 6 lines AFTER the search patterns:
 ```
