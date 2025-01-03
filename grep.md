@@ -24,6 +24,14 @@ cat /etc/os-release | grep -i "name\|version"
 cat LocalSettings.php | grep -v "^$"
 ```
 
+#### grep -o
+
+Extract parts of a line by matching a regex:
+```
+$ echo "apache-tomcat-9.0.98" | grep -o "[0-9.].*"
+9.0.98
+```
+
 #### pgrep - grepping for processes
 
 this will just output the corresponding PID:
