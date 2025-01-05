@@ -1,3 +1,5 @@
+## basic information
+
 #### installation
 
 ```
@@ -21,6 +23,8 @@ With the `rectangle tool` or the `circle tool` you create "objects".
 
 You can select an "object" and click path->object to path and then you can double click the object (that is now a path).\
 And then you can change/move the "points"/corners of that path and change the shape of that object.
+
+## usage
 
 #### view
 
@@ -87,7 +91,6 @@ select the object, right click -> move to layer\
 or drag and drop in the layer view
 
 
-
 #### document properties
 
 file -> document properties
@@ -109,6 +112,30 @@ If you select a rectangle object and hold <kbd>shift</kbd> and then click on a c
 
 **No stroke**: If you go to the `fill and stroke menu` with <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>f</kbd> and select the `stroke` pane\
 you can click on the X-symbol (`no paint`) to not use any stroke at all.
+
+#### text box
+
+Hit <kbd>t</kbd> or click on the "text tool" symbol on the left panel.
+
+Draw a rectange with the left mouse button.\
+Insert your text.\
+Then hit <kbd>Enter</kbd> (maybe twice) to leave the "text tool".
+
+Adjust font size:\
+Right click -> "text and font"
+
+#### snapping
+
+In the upper right corner there is a button called "snapping".
+
+Click it to activate snapping objects to the grid.
+
+#### center object
+
+Select your object with left mouse.
+
+Object -> Align and Distribute (or ctrl + shift + a) \
+Under "Align" you can center your object in different ways.
 
 #### export to png
 
