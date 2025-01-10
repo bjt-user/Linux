@@ -124,6 +124,12 @@ Then hit <kbd>Enter</kbd> (maybe twice) to leave the "text tool".
 Adjust font size:\
 Right click -> "text and font"
 
+#### unicode in text boxes
+
+<kbd>ctrl</kbd> + <kbd>u</kbd>\
+<kbd>2716</kbd>\
+<kbd>enter</kbd>
+
 #### snapping
 
 In the upper right corner there is a button called "snapping".
