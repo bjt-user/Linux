@@ -47,6 +47,10 @@ But how to I make that line **straight**?\
 hit <kbd>b</kbd> leftclick on the screen\
 and then hold <kbd>ctrl</kbd> while drawing the line to make it straight
 
+#### create arrows
+
+https://logosbynick.com/create-arrows-in-inkscape/
+
 #### moving objects
 
 you can select them with the select tool (<kbd>s</kbd>)
