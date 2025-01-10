@@ -127,7 +127,7 @@ Right click -> "text and font"
 #### unicode in text boxes
 
 <kbd>ctrl</kbd> + <kbd>u</kbd>\
-<kbd>2716</kbd>\
+type 4 digit code (for example: 2716)\
 <kbd>enter</kbd>
 
 #### snapping
