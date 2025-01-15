@@ -73,7 +73,7 @@ To exclude subdirectories you can use `-maxdepth 1`:
 find . -maxdepth 1 -type d
 ```
 
-***
+To exclude the dir in which to search itself: `-mindepth 1`
 
 #### only search for files
 
