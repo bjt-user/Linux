@@ -61,6 +61,12 @@ sed -i "${line_number}s/${section_number}/${section_counter}/" ${LIST_PATH}
 Use double quotes around the command part of sed and curly brackets to enclose variables.\
 With single quotes I got an error.
 
+#### replace recursively in multiple files
+
+```
+find . -type f -iname "*.yaml" -exec sed -i 's/replace_me/new_string/' {} \;
+```
+
 #### inserting a line after a matched line
 
 This will insert the line `proxy=http://foo:8888` after the line `[main]`:
