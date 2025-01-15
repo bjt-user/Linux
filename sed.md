@@ -63,9 +63,12 @@ With single quotes I got an error.
 
 #### replace recursively in multiple files
 
+This will only replace one string per line:
 ```
 find . -type f -iname "*.yaml" -exec sed -i 's/replace_me/new_string/' {} \;
 ```
+
+You probably need `g` flag after the last slash.
 
 #### inserting a line after a matched line
 
