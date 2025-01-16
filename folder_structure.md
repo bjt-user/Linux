@@ -4,8 +4,7 @@ man hier
 
 https://wiki.ubuntuusers.de/Verzeichnisstruktur/
 
-Understanding the Linux folder structure
-----------------------------------------
+#### Understanding the Linux folder structure
 
 `/etc` folder is a central location for all your configuration files
 
