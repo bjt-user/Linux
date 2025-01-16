@@ -4,7 +4,6 @@ Up to this point I was not able to send/receive emails in a terminal.
 
 **WARNING: NEVER INSTALL THE PACKAGE "QMAIL"**
 
-***
 #### email providers
 
 **Gmail/Google Mail** will not allow you to sign in with an app you wrote or with neomutt etc anymore:\
