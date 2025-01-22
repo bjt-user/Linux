@@ -67,3 +67,21 @@ RestartSec=30
 
 >Note that StartLimitInterval must be greater than RestartSec * StartLimitBurst otherwise the service will be restarted indefinitely.\
 The service is considered failed when restarted StartLimitBurst times within StartLimitInterval.
+
+#### removing units
+
+To remove service `foo`:
+
+```
+rm -fv /etc/systemd/system/multi-user.target.wants/foo.service
+rm -fv /etc/systemd/system/foo.service
+```
+
+```
+sudo systemctl daemon-reload
+```
+
+Now they should not show up anymore:
+```
+systemctl list-units --all | grep "foo"
+```
