@@ -1,3 +1,9 @@
+#### documentation
+
+https://graphviz.org
+
+examples: https://graphviz.org/gallery/
+
 #### installation
 
 ```
