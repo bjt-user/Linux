@@ -4,6 +4,10 @@ https://graphviz.org
 
 examples: https://graphviz.org/gallery/
 
+#### syntax and tutorials
+
+Really high learning curve, no good tutorials available.
+
 #### installation
 
 ```
