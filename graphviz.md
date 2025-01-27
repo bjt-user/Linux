@@ -72,3 +72,9 @@ subgraph cluster_group_1 {
         "Item 2";
 }
 ```
+
+#### node size
+
+```
+"Item 1" [width=5] [height=2];
+```
