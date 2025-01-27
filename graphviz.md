@@ -59,3 +59,16 @@ digraph {
         }
 }
 ```
+
+#### colors
+
+Use `color` and `bgcolor` to add color to a cluster:
+```
+subgraph cluster_group_1 {
+        label="Group 1";
+        color="red";
+        bgcolor="grey";
+        "Item 1";
+        "Item 2":"Port 2";
+}
+```
