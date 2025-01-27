@@ -14,7 +14,9 @@ Really high learning curve, no good tutorials available.
 sudo pacman -S graphviz
 ```
 
-#### usage
+## usage
+
+#### gvedit
 
 ```
 gvedit
@@ -30,3 +32,9 @@ foo -> bar
 ```
 
 `F5` to render
+
+#### dot
+
+```
+dot -Tsvg firsttry.gv > output.svg
+```
