@@ -38,3 +38,19 @@ foo -> bar
 ```
 dot -Tsvg firsttry.gv > output.svg
 ```
+
+## syntax
+
+#### clusters (`subgraph cluster_`)
+
+Subgraphs that start with `cluster_` can build a group around nodes.\
+Those nodes are then surrounded by a rectangle.
+```
+digraph {
+        subgraph cluster_group_1 {
+                label="Group 1";
+                "Item 1";
+                "Item 2";
+        }
+}
+```
