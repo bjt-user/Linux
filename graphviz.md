@@ -35,6 +35,11 @@ foo -> bar
 
 #### dot
 
+If you have `feh` installed:
+```
+dot -Tsvg firsttry.gv | feh -
+```
+
 ```
 dot -Tsvg firsttry.gv > output.svg
 ```
