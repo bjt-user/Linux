@@ -37,6 +37,8 @@ sed --in-place "${delete_from},${delete_to}d" ${FILE_PATH}
 
 #### delete all lines until a specific line by regex
 
+(This is great for shrinking huge log files.)
+
 Delete from the first line to the first line that is exactly `is`:
 ```
 sed '0,/^is$/d' foobar.txt
