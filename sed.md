@@ -34,7 +34,31 @@ to use that in a `bash` script with variables:
 ```
 sed --in-place "${delete_from},${delete_to}d" ${FILE_PATH}
 ```
-***
+
+#### delete all lines until a specific line by regex
+
+Delete from the first line to a line that is exactly `is`:
+```
+sed '0,/^is$/d' foobar.txt
+```
+
+```
+What in
+the
+hell
+is really
+is
+up
+with
+sed?
+```
+=>
+```
+up
+with
+sed?
+```
+
 #### replace a string everywhere in a file
 ```
 sed -i 's/foo/bar/' replace_lines.txt
