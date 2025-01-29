@@ -46,6 +46,8 @@ dot -Tsvg firsttry.gv > output.svg
 
 ## syntax
 
+## digraph
+
 #### clusters (`subgraph cluster_`)
 
 Subgraphs that start with `cluster_` can build a group around nodes.\
@@ -106,3 +108,10 @@ You can point from and to other nodes by accessing the fields as "ports":
 pointer1:f1 -> pointer2:f0:e
 ```
 (you can still add a compass like `portPos` as above "east")
+
+#### connect nodes without arrows
+
+In a `graph` you can use `--`, but in a directed graph you need to use this:
+```
+key->value [dir=none];
+```
