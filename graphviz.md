@@ -109,6 +109,19 @@ pointer1:f1 -> pointer2:f0:e
 ```
 (you can still add a compass like `portPos` as above "east")
 
+#### record fields arranging
+
+You can arrange the fields of a record differently by surrounding everything with `{`.\
+Default is from side by side from left to right, if you surround everything with `{` \
+then it is from top to bottom.\
+Inside a `{` surrounded part you can again have another `{` to arrange the nested part differently:
+```
+shell_script [
+    shape=record
+    label="{{<f0>header|<f1>author: me}|<f2>topic: foo}"
+];
+```
+
 #### connect nodes without arrows
 
 In a `graph` you can use `--`, but in a directed graph you need to use this:
