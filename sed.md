@@ -87,6 +87,12 @@ sed -i "${line_number}s/${section_number}/${section_counter}/" ${LIST_PATH}
 Use double quotes around the command part of sed and curly brackets to enclose variables.\
 With single quotes I got an error.
 
+#### replace a string in all *.go files in the current dir
+
+```
+sed -i "s/before/after/g" *.go
+```
+
 #### replace recursively in multiple files
 
 This will only replace one string per line:
