@@ -56,3 +56,10 @@ Sum of a range of cells:
 `ZZ`
 
 #### TODO: do not write a backup file myfile.sc~
+
+https://github.com/n-t-roff/sc?tab=readme-ov-file#sc-spreadsheet-calculator:
+> By default sc made a backup of the database file before overwriting it.\
+This could only be changed at compile time. There are now options backup and !backup to control this.
+
+> Configured at compile time, sc always did update the history file ~/.sc_history.\
+It is now possible to change this filename with the .scrc command histfile or save no history at all with an empty command argument.
