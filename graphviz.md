@@ -81,6 +81,13 @@ subgraph cluster_group_1 {
 "Item 1" [width=5] [height=2];
 ```
 
+#### set nodes on the same height
+
+```
+// Force my_node1 and my_node2 to be at the same height (same rank)
+{ rank=same; my_node1; my_node2 }
+```
+
 #### arrows positions
 
 https://graphviz.gitlab.io/docs/attr-types/portPos/
