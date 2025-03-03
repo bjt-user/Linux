@@ -4,6 +4,10 @@ https://graphviz.org
 
 examples: https://graphviz.org/gallery/
 
+#### graph theory (mathematics)
+
+https://en.wikipedia.org/wiki/Directed_graph
+
 #### syntax and tutorials
 
 Really high learning curve, no good tutorials available.
