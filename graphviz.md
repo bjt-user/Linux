@@ -139,3 +139,14 @@ In a `graph` you can use `--`, but in a directed graph you need to use this:
 ```
 key->value [dir=none];
 ```
+
+#### rank
+
+https://graphviz.org/docs/attrs/rank/
+
+In a subgraph this worked to put the `go_mod` node to the top \
+and the `packages` node to the bottom:
+```
+{ rank = source; go_mod };
+{ rank = sink; packages};
+```
