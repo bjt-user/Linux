@@ -26,4 +26,8 @@ id <username>
 useradd bf -m -c "my comment" -G mygroupone,wheel
 ```
 
-***
+#### set the user id
+
+```
+useradd -m -u 5000 myuser
+```
