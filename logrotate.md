@@ -102,6 +102,8 @@ olddir directory
 
 #### TODO: how to remove old log files
 
+#### TODO: how to split up large log files into multiple files
+
 #### debugging logrotate
 
 ```
