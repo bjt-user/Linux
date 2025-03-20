@@ -67,6 +67,21 @@ myuser@arch-bcity:~/logs $ systemctl status logrotate.timer
 Apr 29 12:26:49 arch-bcity systemd[1]: Started Daily rotation of log files.
 ```
 
+The systemd file looks by default like this:
+```
+[Unit]
+Description=Daily rotation of log files
+Documentation=man:logrotate(8) man:logrotate.conf(5)
+
+[Timer]
+OnCalendar=daily
+RandomizedDelaySec=1h
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+```
+
 #### configuration file directives
 
 search the manpage for "CONFIGURATION FILE DIRECTIVES":
