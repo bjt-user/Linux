@@ -43,7 +43,7 @@ drwx--x---+ 39 myuser wheel  4096 Mar 20 19:14 ..
 
 #### systemd
 
-logrotate is a systemd unit that is triggered by a systemd timer
+logrotate is a systemd service unit that is triggered by a systemd timer
 ```
 $ systemctl status logrotate
 ○ logrotate.service - Rotate log files
@@ -52,6 +52,9 @@ $ systemctl status logrotate
 TriggeredBy: ● logrotate.timer
        Docs: man:logrotate(8)
              man:logrotate.conf(5)
+```
+
+```
 myuser@arch-bcity:~/logs $ systemctl status logrotate.timer
 ● logrotate.timer - Daily rotation of log files
      Loaded: loaded (/usr/lib/systemd/system/logrotate.timer; disabled; preset: disabled)
