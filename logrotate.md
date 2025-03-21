@@ -41,6 +41,18 @@ drwx--x---+ 39 myuser wheel  4096 Mar 20 19:14 ..
 
 => observe if, what and when something happens in the next days
 
+nothing happened:
+```
+$ ls -la
+total 60
+drwxr-xr-x   2 myuser wheel 36864 Mar 20 20:00 .
+drwx--x---+ 39 myuser wheel  4096 Mar 21 17:50 ..
+-rw-r--r--   1 myuser wheel  2188 Mar 16 20:00 backup_20250316_200000.log
+-rw-r--r--   1 myuser wheel  2452 Mar 17 20:00 backup_20250317_200000.log
+-rw-r--r--   1 myuser wheel  2978 Mar 19 20:00 backup_20250319_200000.log
+-rw-r--r--   1 myuser wheel  2240 Mar 20 20:00 backup_20250320_200000.log
+```
+
 #### systemd
 
 logrotate is a systemd service unit that is triggered by a systemd timer
