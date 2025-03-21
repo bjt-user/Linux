@@ -18,7 +18,16 @@ sudo pacman -S logrotate
 
 ## usage
 
-#### try 2025-03-20
+#### try: 2025-03-21
+
+```
+/home/myuser/logs/*.log {
+	rotate -1
+	compress
+}
+```
+
+#### FAIL: 2025-03-20
 
 Trying a simple config that should not delete any logs:
 ```
@@ -41,7 +50,7 @@ drwx--x---+ 39 myuser wheel  4096 Mar 20 19:14 ..
 
 => observe if, what and when something happens in the next days
 
-nothing happened:
+2025-03-21 nothing happened:
 ```
 $ ls -la
 total 60
