@@ -25,9 +25,9 @@ $ tree --charset=ascii
 
 `-C` will print colors
 
-#### html output
+#### xml output
 
-`-X` will print html
+`-X` will print xml
 
 #### json output
 
