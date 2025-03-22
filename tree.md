@@ -24,3 +24,11 @@ $ tree --charset=ascii
 #### colors
 
 `-C` will print colors
+
+#### html output
+
+`-X` will print html
+
+#### json output
+
+`-J` will print json
