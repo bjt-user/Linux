@@ -20,3 +20,7 @@ $ tree --charset=ascii
     |-- main
     `-- main.rs
 ```
+
+#### colors
+
+`-C` will print colors
