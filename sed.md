@@ -20,8 +20,8 @@ DESCRIPTION
 `sed` works line by line by default.\
 If you want to apply regex logic across multiple lines you have to use more complicated syntax.
 
----
-#### delete lines of a file
+## delete lines of a file
+
 this deletes the 2nd line of the file `shoppinglist.txt`
 ```
 sed --in-place '2d' shoppinglist.txt
@@ -33,6 +33,12 @@ sed --in-place '4,8d' shoppinglist.txt
 to use that in a `bash` script with variables:
 ```
 sed --in-place "${delete_from},${delete_to}d" ${FILE_PATH}
+```
+
+#### delete lines that match a specific regex
+
+```
+sed -i '/^my_search_string.*/d' *.yaml
 ```
 
 #### delete all lines until a specific line by regex
