@@ -16,7 +16,7 @@ Search for `CONFIGURATION FILE DIRECTIVES`.
 sudo pacman -S logrotate
 ```
 
-## usage
+## experiments
 
 #### try: 2025-03-27
 
@@ -121,6 +121,8 @@ drwx--x---+ 39 myuser wheel  4096 Mar 21 17:50 ..
 -rw-r--r--   1 myuser wheel  2978 Mar 19 20:00 backup_20250319_200000.log
 -rw-r--r--   1 myuser wheel  2240 Mar 20 20:00 backup_20250320_200000.log
 ```
+
+## operating principal
 
 #### systemd
 
