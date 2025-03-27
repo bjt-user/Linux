@@ -18,6 +18,18 @@ sudo pacman -S logrotate
 
 ## usage
 
+#### try: 2025-03-27
+
+```
+/home/myuser/logs/*.log {
+    daily
+	rotate -1
+	compress
+	olddir /home/myuser/logs/archive
+    createolddir 755 myuser wheel
+}
+```
+
 #### FAIL: 2025-03-21
 
 ```
@@ -151,9 +163,21 @@ Persistent=true
 WantedBy=timers.target
 ```
 
-#### configuration file directives
+#### wildcards
 
-search the manpage for "CONFIGURATION FILE DIRECTIVES":
+From the manpage:
+> Please use wildcards with caution.\
+If you specify `*`, logrotate will rotate all files, including previously rotated ones.\
+A way around this is to use the olddir directive or a more exact wildcard (such as `*.log`).
+
+## configuration file directives
+
+search the manpage for "CONFIGURATION FILE DIRECTIVES".
+
+### rotation
+
+#### rotate
+
 ```
 rotate count
   Log files are rotated count times before being removed or mailed to the address specified in a mail directive.
@@ -161,13 +185,34 @@ rotate count
   If count is -1, old logs are not removed at all, except they are affected by maxage (use with caution, may  waste
   performance and disk space).
   Default is 0.
+```
 
+#### olddir
+
+Seems to be necessary when using wildcards (`*`).\
+Otherwise files that have already been rotated will be rotated again.
+
+```
 olddir directory
   Logs  are  moved  into  directory  for rotation.  The directory must be on the same physical device as the log file being rotated, unless copy,
   copytruncate or renamecopy option is used.  The directory is assumed to be relative to the directory holding the log file  unless  an  absolute
   path name is specified.  When this option is used all old versions of the log end up in directory.  This option may be overridden by the noold‐
   dir option.
 ```
+example: `olddir /home/myuser/logs/archive`
+
+### files and folders
+
+#### createolddir
+
+example: `createolddir 755 myuser mygroup`
+
+### frequency
+
+Time directives and `size` are mutually exclusive.
+
+
+## misc
 
 #### TODO: how to remove old log files
 
