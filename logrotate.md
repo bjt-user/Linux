@@ -30,6 +30,24 @@ sudo pacman -S logrotate
 }
 ```
 
+```
+myuser@myhost:~/logs $ ls -la
+total 48
+drwxr-xr-x   3 myuser wheel 36864 Mar 28 15:58 .
+drwx--x---+ 39 myuser wheel  4096 Mar 28 19:39 ..
+drwxr-xr-x   2 myuser wheel  4096 Mar 28 15:58 archive
+-rw-r--r--   1 myuser wheel     0 Mar 28 15:58 backup_20250327_200001.log
+myuser@myhost:~/logs $ cd archive/
+myuser@myhost:~/logs/archive $ ls -la
+total 48
+drwxr-xr-x 2 myuser wheel  4096 Mar 28 15:58 .
+drwxr-xr-x 3 myuser wheel 36864 Mar 28 15:58 ..
+-rw-r--r-- 1 myuser wheel   489 Mar 27 20:00 backup_20250327_200001.log.1.gz
+```
+
+Das urspruengliche Logfile ist leer.\
+Der Inhalt ist im "olddir" und zwar gezippt in einer gleichnamigen Datei mit einer 1 hintendran.
+
 #### FAIL: 2025-03-21
 
 ```
