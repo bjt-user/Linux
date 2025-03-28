@@ -1,8 +1,8 @@
-#### resources
+## resources
 
 https://wiki.ubuntuusers.de/Webcam/Treiber/
 
-#### ffmpeg
+## ffmpeg
 
 First you have to find the webcam device.\
 In Ubuntu its
@@ -16,11 +16,15 @@ or
 v4l2-ctl --list-devices
 ```
 
+#### testing webcam
+
 an easy and fast way to test the webcam: (you might have to change the number behind `/dev/video`)
 ```
 ffplay -window_title Webcam -fast /dev/video0
 ```
 (`-window_title` is optional)
+
+#### save webcam input to a file
 
 This will record video from the webcam and save it in a file (worked for **Ubuntu** with internal and external webcam):
 ```
@@ -29,10 +33,13 @@ ffmpeg -f v4l2 -framerate 25 -video_size 640x480 -i /dev/video0 output.mp4
 (replace with your device file)\
 Then abort with ctrl + c
 
-one picture only:
+#### make one picture only
+
 ```
 ffmpeg -f video4linux2 -i /dev/video0 -vframes 1  -video_size 640x480 test.jpeg
 ```
+
+## vlc
 
 **Arch linux** was more work:
 ```
