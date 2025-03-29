@@ -96,63 +96,6 @@ drwxr-xr-x 2 myuser wheel  4096 Mar 29 18:06 .
 drwxr-xr-x 3 myuser wheel 36864 Mar 29 18:06 ..
 ```
 
-#### FAIL: 2025-03-21
-
-```
-/home/myuser/logs/*.log {
-	rotate -1
-	compress
-}
-```
-
-Very weird things happen:
-```
-$ ls -la
-total 172
-drwxr-xr-x   2 myuser wheel 36864 Mar 26 20:00 .
-drwx--x---+ 39 myuser wheel  4096 Mar 27 18:50 ..
--rw-r--r--   1 myuser wheel     0 Mar 26 06:42 backup_20250316_200000.log
--rw-r--r--   1 myuser wheel    20 Mar 25 19:10 backup_20250316_200000.log.1.gz
--rw-r--r--   1 myuser wheel    20 Mar 24 18:57 backup_20250316_200000.log.2.gz
--rw-r--r--   1 myuser wheel    20 Mar 23 08:25 backup_20250316_200000.log.3.gz
--rw-r--r--   1 myuser wheel    20 Mar 22 05:19 backup_20250316_200000.log.4.gz
--rw-r--r--   1 myuser wheel   672 Mar 16 20:00 backup_20250316_200000.log.5.gz
--rw-r--r--   1 myuser wheel     0 Mar 26 06:42 backup_20250317_200000.log
--rw-r--r--   1 myuser wheel    20 Mar 25 19:10 backup_20250317_200000.log.1.gz
--rw-r--r--   1 myuser wheel    20 Mar 24 18:57 backup_20250317_200000.log.2.gz
--rw-r--r--   1 myuser wheel    20 Mar 23 08:25 backup_20250317_200000.log.3.gz
--rw-r--r--   1 myuser wheel    20 Mar 22 05:19 backup_20250317_200000.log.4.gz
--rw-r--r--   1 myuser wheel   651 Mar 17 20:00 backup_20250317_200000.log.5.gz
--rw-r--r--   1 myuser wheel     0 Mar 26 06:42 backup_20250319_200000.log
--rw-r--r--   1 myuser wheel    20 Mar 25 19:10 backup_20250319_200000.log.1.gz
--rw-r--r--   1 myuser wheel    20 Mar 24 18:57 backup_20250319_200000.log.2.gz
--rw-r--r--   1 myuser wheel    20 Mar 23 08:25 backup_20250319_200000.log.3.gz
--rw-r--r--   1 myuser wheel    20 Mar 22 05:19 backup_20250319_200000.log.4.gz
--rw-r--r--   1 myuser wheel   753 Mar 19 20:00 backup_20250319_200000.log.5.gz
--rw-r--r--   1 myuser wheel     0 Mar 26 06:42 backup_20250320_200000.log
--rw-r--r--   1 myuser wheel    20 Mar 25 19:10 backup_20250320_200000.log.1.gz
--rw-r--r--   1 myuser wheel    20 Mar 24 18:57 backup_20250320_200000.log.2.gz
--rw-r--r--   1 myuser wheel    20 Mar 23 08:25 backup_20250320_200000.log.3.gz
--rw-r--r--   1 myuser wheel    20 Mar 22 05:19 backup_20250320_200000.log.4.gz
--rw-r--r--   1 myuser wheel   644 Mar 20 20:00 backup_20250320_200000.log.5.gz
--rw-r--r--   1 myuser wheel     0 Mar 26 06:42 backup_20250321_200000.log
--rw-r--r--   1 myuser wheel    20 Mar 25 19:10 backup_20250321_200000.log.1.gz
--rw-r--r--   1 myuser wheel    20 Mar 24 18:57 backup_20250321_200000.log.2.gz
--rw-r--r--   1 myuser wheel    20 Mar 23 08:25 backup_20250321_200000.log.3.gz
--rw-r--r--   1 myuser wheel   514 Mar 21 20:00 backup_20250321_200000.log.4.gz
--rw-r--r--   1 myuser wheel     0 Mar 26 06:42 backup_20250322_200000.log
--rw-r--r--   1 myuser wheel    20 Mar 25 19:10 backup_20250322_200000.log.1.gz
--rw-r--r--   1 myuser wheel    20 Mar 24 18:57 backup_20250322_200000.log.2.gz
--rw-r--r--   1 myuser wheel   758 Mar 22 20:00 backup_20250322_200000.log.3.gz
--rw-r--r--   1 myuser wheel     0 Mar 26 06:42 backup_20250323_200000.log
--rw-r--r--   1 myuser wheel    20 Mar 25 19:10 backup_20250323_200000.log.1.gz
--rw-r--r--   1 myuser wheel   667 Mar 23 20:00 backup_20250323_200000.log.2.gz
--rw-r--r--   1 myuser wheel     0 Mar 26 06:42 backup_20250324_200000.log
--rw-r--r--   1 myuser wheel   699 Mar 24 20:00 backup_20250324_200000.log.1.gz
--rw-r--r--   1 myuser wheel  1223 Mar 25 20:00 backup_20250325_200000.log
--rw-r--r--   1 myuser wheel  1489 Mar 26 20:00 backup_20250326_200000.log
-```
-
 
 ## operating principal
 
@@ -300,4 +243,61 @@ drwx--x---+ 39 myuser wheel  4096 Mar 21 17:50 ..
 -rw-r--r--   1 myuser wheel  2452 Mar 17 20:00 backup_20250317_200000.log
 -rw-r--r--   1 myuser wheel  2978 Mar 19 20:00 backup_20250319_200000.log
 -rw-r--r--   1 myuser wheel  2240 Mar 20 20:00 backup_20250320_200000.log
+```
+
+#### FAIL: 2025-03-21
+
+```
+/home/myuser/logs/*.log {
+	rotate -1
+	compress
+}
+```
+
+Very weird things happen:
+```
+$ ls -la
+total 172
+drwxr-xr-x   2 myuser wheel 36864 Mar 26 20:00 .
+drwx--x---+ 39 myuser wheel  4096 Mar 27 18:50 ..
+-rw-r--r--   1 myuser wheel     0 Mar 26 06:42 backup_20250316_200000.log
+-rw-r--r--   1 myuser wheel    20 Mar 25 19:10 backup_20250316_200000.log.1.gz
+-rw-r--r--   1 myuser wheel    20 Mar 24 18:57 backup_20250316_200000.log.2.gz
+-rw-r--r--   1 myuser wheel    20 Mar 23 08:25 backup_20250316_200000.log.3.gz
+-rw-r--r--   1 myuser wheel    20 Mar 22 05:19 backup_20250316_200000.log.4.gz
+-rw-r--r--   1 myuser wheel   672 Mar 16 20:00 backup_20250316_200000.log.5.gz
+-rw-r--r--   1 myuser wheel     0 Mar 26 06:42 backup_20250317_200000.log
+-rw-r--r--   1 myuser wheel    20 Mar 25 19:10 backup_20250317_200000.log.1.gz
+-rw-r--r--   1 myuser wheel    20 Mar 24 18:57 backup_20250317_200000.log.2.gz
+-rw-r--r--   1 myuser wheel    20 Mar 23 08:25 backup_20250317_200000.log.3.gz
+-rw-r--r--   1 myuser wheel    20 Mar 22 05:19 backup_20250317_200000.log.4.gz
+-rw-r--r--   1 myuser wheel   651 Mar 17 20:00 backup_20250317_200000.log.5.gz
+-rw-r--r--   1 myuser wheel     0 Mar 26 06:42 backup_20250319_200000.log
+-rw-r--r--   1 myuser wheel    20 Mar 25 19:10 backup_20250319_200000.log.1.gz
+-rw-r--r--   1 myuser wheel    20 Mar 24 18:57 backup_20250319_200000.log.2.gz
+-rw-r--r--   1 myuser wheel    20 Mar 23 08:25 backup_20250319_200000.log.3.gz
+-rw-r--r--   1 myuser wheel    20 Mar 22 05:19 backup_20250319_200000.log.4.gz
+-rw-r--r--   1 myuser wheel   753 Mar 19 20:00 backup_20250319_200000.log.5.gz
+-rw-r--r--   1 myuser wheel     0 Mar 26 06:42 backup_20250320_200000.log
+-rw-r--r--   1 myuser wheel    20 Mar 25 19:10 backup_20250320_200000.log.1.gz
+-rw-r--r--   1 myuser wheel    20 Mar 24 18:57 backup_20250320_200000.log.2.gz
+-rw-r--r--   1 myuser wheel    20 Mar 23 08:25 backup_20250320_200000.log.3.gz
+-rw-r--r--   1 myuser wheel    20 Mar 22 05:19 backup_20250320_200000.log.4.gz
+-rw-r--r--   1 myuser wheel   644 Mar 20 20:00 backup_20250320_200000.log.5.gz
+-rw-r--r--   1 myuser wheel     0 Mar 26 06:42 backup_20250321_200000.log
+-rw-r--r--   1 myuser wheel    20 Mar 25 19:10 backup_20250321_200000.log.1.gz
+-rw-r--r--   1 myuser wheel    20 Mar 24 18:57 backup_20250321_200000.log.2.gz
+-rw-r--r--   1 myuser wheel    20 Mar 23 08:25 backup_20250321_200000.log.3.gz
+-rw-r--r--   1 myuser wheel   514 Mar 21 20:00 backup_20250321_200000.log.4.gz
+-rw-r--r--   1 myuser wheel     0 Mar 26 06:42 backup_20250322_200000.log
+-rw-r--r--   1 myuser wheel    20 Mar 25 19:10 backup_20250322_200000.log.1.gz
+-rw-r--r--   1 myuser wheel    20 Mar 24 18:57 backup_20250322_200000.log.2.gz
+-rw-r--r--   1 myuser wheel   758 Mar 22 20:00 backup_20250322_200000.log.3.gz
+-rw-r--r--   1 myuser wheel     0 Mar 26 06:42 backup_20250323_200000.log
+-rw-r--r--   1 myuser wheel    20 Mar 25 19:10 backup_20250323_200000.log.1.gz
+-rw-r--r--   1 myuser wheel   667 Mar 23 20:00 backup_20250323_200000.log.2.gz
+-rw-r--r--   1 myuser wheel     0 Mar 26 06:42 backup_20250324_200000.log
+-rw-r--r--   1 myuser wheel   699 Mar 24 20:00 backup_20250324_200000.log.1.gz
+-rw-r--r--   1 myuser wheel  1223 Mar 25 20:00 backup_20250325_200000.log
+-rw-r--r--   1 myuser wheel  1489 Mar 26 20:00 backup_20250326_200000.log
 ```
