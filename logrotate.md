@@ -48,6 +48,54 @@ drwxr-xr-x 3 myuser wheel 36864 Mar 28 15:58 ..
 Das urspruengliche Logfile ist leer.\
 Der Inhalt ist im "olddir" und zwar gezippt in einer gleichnamigen Datei mit einer 1 hintendran.
 
+2025-03-29:
+
+```
+$ ls -la
+total 52
+drwxr-xr-x   3 myuser wheel 36864 Mar 29 08:05 .
+drwx--x---+ 39 myuser wheel  4096 Mar 29 17:54 ..
+drwxr-xr-x   2 myuser wheel  4096 Mar 29 08:05 archive
+-rw-r--r--   1 myuser wheel     0 Mar 29 08:05 backup_20250327_200001.log
+-rw-r--r--   1 myuser wheel  1364 Mar 28 20:00 backup_20250328_200000.log
+myuser@myhost:~/logs $ ls -la archive/
+total 52
+drwxr-xr-x 2 myuser wheel  4096 Mar 29 08:05 .
+drwxr-xr-x 3 myuser wheel 36864 Mar 29 08:05 ..
+-rw-r--r-- 1 myuser wheel    20 Mar 28 15:58 backup_20250327_200001.log.1.gz
+-rw-r--r-- 1 myuser wheel   518 Mar 27 20:00 backup_20250327_200001.log.2.gz
+```
+The new file that is still named after the `backup_20250327_200001.log` is empty.
+
+So this is not what I want.
+
+So I add a `notifempty` directive, so that the empty `backup_20250327...` file will not be rotated anymore.
+
+```
+/home/myuser/logs/*.log {
+	daily
+	rotate -1
+	compress
+	olddir /home/myuser/logs/archive
+	createolddir 755 myuser wheel
+	notifempty
+}
+```
+
+And I cleaned up the log and archive dir:
+```
+$ ls -la
+total 52
+drwxr-xr-x   3 myuser wheel 36864 Mar 29 18:06 .
+drwx--x---+ 39 myuser wheel  4096 Mar 29 18:06 ..
+drwxr-xr-x   2 myuser wheel  4096 Mar 29 18:06 archive
+-rw-r--r--   1 myuser wheel  1364 Mar 28 20:00 backup_20250328_200000.log
+$ ls -la archive/
+total 44
+drwxr-xr-x 2 myuser wheel  4096 Mar 29 18:06 .
+drwxr-xr-x 3 myuser wheel 36864 Mar 29 18:06 ..
+```
+
 #### FAIL: 2025-03-21
 
 ```
@@ -105,40 +153,6 @@ drwx--x---+ 39 myuser wheel  4096 Mar 27 18:50 ..
 -rw-r--r--   1 myuser wheel  1489 Mar 26 20:00 backup_20250326_200000.log
 ```
 
-#### FAIL: 2025-03-20
-
-Trying a simple config that should not delete any logs:
-```
-$ cat /etc/logrotate.d/backup
-/home/myuser/logs/*.log {
-	rotate -1
-}
-```
-
-current situation is like this:
-```
-~/logs $ ls -la
-total 56
-drwxr-xr-x   2 myuser wheel 36864 Mar 20 19:00 .
-drwx--x---+ 39 myuser wheel  4096 Mar 20 19:14 ..
--rw-r--r--   1 myuser wheel  2188 Mar 16 20:00 backup_20250316_200000.log
--rw-r--r--   1 myuser wheel  2452 Mar 17 20:00 backup_20250317_200000.log
--rw-r--r--   1 myuser wheel  2978 Mar 19 20:00 backup_20250319_200000.log
-```
-
-=> observe if, what and when something happens in the next days
-
-2025-03-21 nothing happened:
-```
-$ ls -la
-total 60
-drwxr-xr-x   2 myuser wheel 36864 Mar 20 20:00 .
-drwx--x---+ 39 myuser wheel  4096 Mar 21 17:50 ..
--rw-r--r--   1 myuser wheel  2188 Mar 16 20:00 backup_20250316_200000.log
--rw-r--r--   1 myuser wheel  2452 Mar 17 20:00 backup_20250317_200000.log
--rw-r--r--   1 myuser wheel  2978 Mar 19 20:00 backup_20250319_200000.log
--rw-r--r--   1 myuser wheel  2240 Mar 20 20:00 backup_20250320_200000.log
-```
 
 ## operating principal
 
@@ -221,6 +235,13 @@ olddir directory
 ```
 example: `olddir /home/myuser/logs/archive`
 
+### file selection
+
+`notifempty` seems to be important.
+> Do not rotate the log if it is empty (this overrides the ifempty option).
+
+Otherwise empty files will be created.
+
 ### files and folders
 
 #### createolddir
@@ -242,4 +263,41 @@ Time directives and `size` are mutually exclusive.
 
 ```
 logrotate --debug /etc/logrotate.d/backup
+```
+
+## failed tries
+
+#### FAIL: 2025-03-20
+
+Trying a simple config that should not delete any logs:
+```
+$ cat /etc/logrotate.d/backup
+/home/myuser/logs/*.log {
+	rotate -1
+}
+```
+
+current situation is like this:
+```
+~/logs $ ls -la
+total 56
+drwxr-xr-x   2 myuser wheel 36864 Mar 20 19:00 .
+drwx--x---+ 39 myuser wheel  4096 Mar 20 19:14 ..
+-rw-r--r--   1 myuser wheel  2188 Mar 16 20:00 backup_20250316_200000.log
+-rw-r--r--   1 myuser wheel  2452 Mar 17 20:00 backup_20250317_200000.log
+-rw-r--r--   1 myuser wheel  2978 Mar 19 20:00 backup_20250319_200000.log
+```
+
+=> observe if, what and when something happens in the next days
+
+2025-03-21 nothing happened:
+```
+$ ls -la
+total 60
+drwxr-xr-x   2 myuser wheel 36864 Mar 20 20:00 .
+drwx--x---+ 39 myuser wheel  4096 Mar 21 17:50 ..
+-rw-r--r--   1 myuser wheel  2188 Mar 16 20:00 backup_20250316_200000.log
+-rw-r--r--   1 myuser wheel  2452 Mar 17 20:00 backup_20250317_200000.log
+-rw-r--r--   1 myuser wheel  2978 Mar 19 20:00 backup_20250319_200000.log
+-rw-r--r--   1 myuser wheel  2240 Mar 20 20:00 backup_20250320_200000.log
 ```
