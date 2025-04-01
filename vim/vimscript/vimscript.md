@@ -16,6 +16,8 @@ https://devhints.io/vimscript-functions
 
 https://vimhelp.org/
 
+https://vimhelp.org/builtin.txt.html#builtin-function-list
+
 https://vimhelp.org/usr_41.txt.html#usr_41.txt
 
 https://vimhelp.org/usr_50.txt.html#usr_50.txt
