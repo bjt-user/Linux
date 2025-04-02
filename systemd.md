@@ -123,3 +123,13 @@ systemctl list-units --all | grep "foo"
 ### useful specifiers
 
 `%N` for the unit name.
+
+## target files
+
+### get default target
+
+From what I have read this is the target that the system boots into:
+```
+$ systemctl get-default
+multi-user.target
+```
