@@ -1,3 +1,16 @@
+## general
+
+#### documentation
+
+```
+man 5 systemd.unit
+```
+
+search for this header:
+```
+[UNIT] SECTION OPTIONS
+```
+
 ## unit files
 
 You can see the location of a systemd unit file with the `systemctl status <unit>` command.
