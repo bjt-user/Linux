@@ -2,6 +2,11 @@
 
 #### documentation
 
+Useful manpages:
+- man 5 systemd.unit
+- man 5 systemd.service
+- man systemctl
+
 ```
 man 5 systemd.unit
 ```
