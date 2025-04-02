@@ -126,6 +126,9 @@ systemctl list-units --all | grep "foo"
 
 ## target files
 
+WARNING: custom targets are dangerous and can make your system not boot with \
+ssh anymore.
+
 ### get default target
 
 From what I have read this is the target that the system boots into:
