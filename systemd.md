@@ -118,3 +118,7 @@ Now they should not show up anymore:
 ```
 systemctl list-units --all | grep "foo"
 ```
+
+### useful specifiers
+
+`%N` for the unit name.
