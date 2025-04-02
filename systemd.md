@@ -6,9 +6,14 @@
 man 5 systemd.unit
 ```
 
-search for this header:
+Interesting sections:
+
 ```
 [UNIT] SECTION OPTIONS
+```
+
+```
+SPECIFIERS
 ```
 
 ## unit files
