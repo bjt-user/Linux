@@ -1,3 +1,5 @@
+## general
+
 #### resources
 
 ascii version:\
@@ -22,6 +24,8 @@ So not every file of the project has to be recompiled every time you make a chan
 sudo pacman -S make
 ```
 
+## usage and syntax
+
 #### general shape of a makefile
 
 A simple makefile consists of “rules” with the following shape:
@@ -31,6 +35,13 @@ target … : prerequisites …
         …
         …
 ```
+
+#### assignments
+
+https://www.gnu.org/software/make/manual/html_node/Setting.html
+
+> If you’d like a variable to be set to a value only if it’s not already set,\
+then you can use the shorthand operator ‘?=’ instead of ‘=’.
 
 #### makefile for podman containers
 
@@ -52,7 +63,7 @@ clean:
 
 Then you can build your container with `make build`, run it with `make run`, and remove the containers with `make clean`.
 
-#### usage
+#### make command
 
 If you just run the command `make` it will execute the first "target" in the file.
 
