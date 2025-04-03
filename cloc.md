@@ -17,3 +17,9 @@ sudo pacman -S cloc
 ```
 cloc --no-recurse .
 ```
+
+#### dont count files in .gitignore
+
+```
+cloc . --vcs=git
+```
