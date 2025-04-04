@@ -56,6 +56,26 @@ ed25519 produces very short private and public keys:
 ```
 ssh-keygen -t ed25519
 ```
+
+#### only try specific key
+
+```
+ssh -i id_ed25519.base64 -o IdentitiesOnly=yes cpb-eric
+```
+
+#### ssh without host key checking
+
+This will not create a prompt and append the host key to the `~/.ssh/known_hosts` file:
+```
+ssh -o "StrictHostKeyChecking no" myuser@myserver
+```
+
+#### force password auth
+
+```
+ssh -vvv -o PreferredAuthentications=password -o PubkeyAuthentication=no myuser@myserver
+```
+
 ## troubleshooting
 
 #### permissions of private key
@@ -94,17 +114,4 @@ mount -l | grep 'sshfs'
 unmount the file system:
 ```
 umount /raspberrypi_home
-```
-
-#### ssh without host key checking
-
-This will not create a prompt and append the host key to the `~/.ssh/known_hosts` file:
-```
-ssh -o "StrictHostKeyChecking no" myuser@myserver
-```
-
-#### force password auth
-
-```
-ssh -vvv -o PreferredAuthentications=password -o PubkeyAuthentication=no myuser@myserver
 ```
