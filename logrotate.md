@@ -185,6 +185,13 @@ example: `olddir /home/myuser/logs/archive`
 
 Otherwise empty files will be created.
 
+`maxage count`
+> Remove rotated logs older than <count> days.\
+The age is only checked if the logfile is to be rotated. rotate -1 does not hinder removal.\
+The files are mailed to the configured address if maillast and mail are configured.
+
+Will maxage remove the logfiles themselves or only the results in olddir?
+
 ### files and folders
 
 #### createolddir
