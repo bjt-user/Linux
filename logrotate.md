@@ -215,6 +215,11 @@ Time directives and `size` are mutually exclusive.
 logrotate --debug /etc/logrotate.d/backup
 ```
 
+You might need `-f` as well.
+
+> Tells logrotate to force the rotation, even if it doesn't think this is necessary.\
+Sometimes this is useful after  adding  new  entries  to  a logrotate config file, or if old log files have been removed by hand, as the new files will be created, and logging will continue correctly.
+
 ## failed tries
 
 #### FAIL: 2025-03-20
