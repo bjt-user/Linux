@@ -1,8 +1,12 @@
-#### confusion
+#### confusion!
 
 There is `resolv.conf` and `resolved.conf`!
 
 #### documentation
+
+```
+man systemd-resolved
+```
 
 ```
 man resolved.conf
@@ -26,4 +30,4 @@ sudo systemctl restart systemd-resolved
 resolvectl dns enp2s0 [ip]
 ```
 
-But in which config file is this writtin into?
+But in which config file is this writtin into???
