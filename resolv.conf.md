@@ -1,3 +1,26 @@
+#### keep NetworkManager away from /etc/resolv.conf
+
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/configuring_and_managing_networking/manually-configuring-the-etc-resolv-conf-file_configuring-and-managing-networking#manually-configuring-the-etc-resolv-conf-file_configuring-and-managing-networking
+
+```
+sudo -i
+```
+
+create this file:
+```
+touch /etc/NetworkManager/conf.d/90-dns-none.conf
+```
+
+put in:
+```
+[main]
+dns=none
+```
+
+```
+systemctl restart NetworkManager
+```
+
 #### resolve.conf on RedHat
 
 `/etc/resolve.conf` is managed by systemd on Red Hat systems:
@@ -31,27 +54,6 @@ Cache=no-negative
 You need to restart this service after any changes:
 ```
 sudo systemctl restart systemd-resolved.service
-```
-
-#### keep NetworkManager away from /etc/resolv.conf
-
-```
-sudo -i
-```
-
-create this file:
-```
-touch /etc/NetworkManager/conf.d/90-dns-none.conf
-```
-
-put in:
-```
-[main]
-dns=none
-```
-
-```
-systemctl restart NetworkManager
 ```
 
 #### search keyword
