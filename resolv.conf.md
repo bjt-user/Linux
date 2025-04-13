@@ -35,19 +35,23 @@ sudo systemctl restart systemd-resolved.service
 
 #### keep NetworkManager away from /etc/resolv.conf
 
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/manually-configuring-the-etc-resolv-conf-file_configuring-and-managing-networking
+```
+sudo -i
+```
 
+create this file:
 ```
-sudoedit /etc/resolv.conf
+touch /etc/NetworkManager/conf.d/90-dns-none.conf
 ```
-put this in it:
+
+put in:
 ```
 [main]
 dns=none
 ```
 
 ```
-systemctl reload NetworkManager
+systemctl restart NetworkManager
 ```
 
 #### search keyword
