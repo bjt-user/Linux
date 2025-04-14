@@ -150,3 +150,12 @@ and the `packages` node to the bottom:
 { rank = source; go_mod };
 { rank = sink; packages};
 ```
+
+## edges
+
+#### edge styles
+
+Make a dotted arrow:
+```
+node_1 -> node_2 [style=dotted];
+```
