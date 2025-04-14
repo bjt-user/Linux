@@ -159,3 +159,6 @@ Make a dotted arrow:
 ```
 node_1 -> node_2 [style=dotted];
 ```
+
+Other styles:
+- dashed
