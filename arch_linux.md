@@ -8,6 +8,8 @@ sending a message to:
 
   arch-general-request@lists.archlinux.org
 
+#### TODO: how to get out of the mailing list?
+
 
 ---
 
