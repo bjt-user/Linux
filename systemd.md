@@ -82,7 +82,7 @@ When using spaces in environment variable you need to use double or single quote
 Environment='JAVA_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,address=*:12346,server=y,suspend=n'
 ```
 
-#### TODO: limit number of restart tries
+#### limit number of restart tries (StartLimitBurst, StartLimitIntervalSec)
 
 `man 5 systemd.unit` (l. 660)
 
