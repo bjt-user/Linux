@@ -110,6 +110,32 @@ The service is considered failed when restarted StartLimitBurst times within Sta
 Configures the time to sleep before restarting a service (as configured with Restart=).\
 Takes a unit-less value in seconds, or a time span value such as "5min 20s". Defaults to 100ms.
 
+#### Restart
+
+`man 5 systemd.service` (l. 438):
+
+> Takes one of no, on-success, on-failure, on-abnormal, on-watchdog, on-abort, or always.
+
+> If set to no (the default), the service will not be restarted.
+
+> If set to on-failure, the service will be restarted when the process exits with a non-zero exit code,\
+is terminated by a signal (including on core dump, but excluding the aforementioned four signals),\
+when an operation (such as service reload) times out, and when the configured watchdog timeout is triggered.
+
+> If set to on-abnormal, the service will be restarted when the process is terminated by a signal\
+(including on core dump, excluding the aforementioned four signals), when an operation times out,\
+or when the watchdog timeout is triggered.
+
+> If set to on-abort, the service will be restarted only if the service process\
+exits due to an uncaught signal not specified as a clean exit status.
+
+> If set to on-watchdog, the service will be restarted only if the watchdog timeout for the service expires.
+
+> If set to always, the service will be restarted regardless of whether it exited cleanly or not,\
+got terminated abnormally by a signal, or hit a timeout.\
+Note that Type=oneshot services will never be restarted on a clean exit status,\
+i.e. always and on-success are rejected for them.
+
 #### removing units
 
 To remove service `foo`:
