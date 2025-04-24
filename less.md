@@ -19,3 +19,7 @@ backwards search
 ```
 ?pattern
 ```
+
+#### go to specific line number
+
+type `438g` to go to line 438.
