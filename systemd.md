@@ -102,6 +102,14 @@ RestartSec=30
 >Note that StartLimitInterval must be greater than RestartSec * StartLimitBurst otherwise the service will be restarted indefinitely.\
 The service is considered failed when restarted StartLimitBurst times within StartLimitInterval.
 
+#### RestartSec
+
+`man 5 systemd.service`:
+
+> RestartSec=
+Configures the time to sleep before restarting a service (as configured with Restart=).\
+Takes a unit-less value in seconds, or a time span value such as "5min 20s". Defaults to 100ms.
+
 #### removing units
 
 To remove service `foo`:
