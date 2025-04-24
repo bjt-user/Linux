@@ -84,6 +84,13 @@ Environment='JAVA_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,address=*:12346,ser
 
 #### TODO: limit number of restart tries
 
+`man 5 systemd.unit` (l. 660)
+
+> StartLimitIntervalSec=interval, StartLimitBurst=burst \
+Configure unit start rate limiting.\
+Units which are started more than burst times within an interval time span \
+are not permitted to start any more.
+
 You might not want a service to try to restart over and over again if it will always fail.\
 Because that will fill up your logs and it might be harder to find the reason of failure.
 
