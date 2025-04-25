@@ -198,6 +198,13 @@ Will maxage remove the logfiles themselves or only the results in olddir?
 
 example: `createolddir 755 myuser mygroup`
 
+#### nocreate
+
+> New log files are not created (this overrides the create option).
+
+This seems to be very useful when using wildcards!\
+Otherwise empty log files will be created.
+
 ### frequency
 
 Time directives and `size` are mutually exclusive.
