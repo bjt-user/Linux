@@ -40,6 +40,9 @@ You need to be in the root dir.
 ```
 mdbook serve
 ```
+Then open `firefox` and open `http://localhost:3000`.
+
+With left and right arrow keys you can navigate to the next/previous page.
 
 #### mdbook build
 
