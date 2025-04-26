@@ -34,6 +34,15 @@ Then you will have your markdown files in the `src` dir.
 
 The `SUMMARY.md` file is important as it lists all your files.
 
+#### how to create markdown files
+
+In the `src` dir you have all your markdown files.\
+The markdown files can also embed images.\
+It works the same way as it works in Gitlab or when using `pandoc`.\
+You may just have a subdir with your images that are embedded in markdown.
+
+You need to update `SUMMARY.md` when you create a new md file.
+
 #### open local webserver on port 3000
 
 You need to be in the root dir.
