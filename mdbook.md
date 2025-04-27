@@ -61,3 +61,14 @@ mdbook build
 
 In the `book` dir you will find the html files \
 that you can open with firefox.
+
+#### web view
+
+A very useful feature is that you can search through the entire "book" by hitting the search \
+button or pressing `s`.
+
+You can also choose between different color themes.
+
+You can print the entire book.
+
+You can toggle the toc on/off.
