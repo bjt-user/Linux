@@ -72,3 +72,25 @@ You can also choose between different color themes.
 You can print the entire book.
 
 You can toggle the toc on/off.
+
+#### footnotes
+
+https://rust-lang.github.io/mdBook/format/markdown.html?highlight=References#footnotes
+
+The syntax is `[^mylabel]` and the label in the text and the label on the bottom need to fit.\
+The footnotes are numbered automatically.
+
+Example:
+```
+> StartLimitIntervalSec=interval, StartLimitBurst=burst \
+(...)
+Units which are started more than burst times within an interval time span \
+are not permitted to start any more. [^noteone]
+
+Current Settings: [^notetwo]
+
+More text.
+
+[^noteone]: `man 5 systemd.unit` (l. 660)
+[^notetwo]: second footnote
+```
