@@ -43,6 +43,12 @@ You may just have a subdir with your images that are embedded in markdown.
 
 You need to update `SUMMARY.md` when you create a new md file.
 
+#### open book in browser
+
+```
+mdbook serve -o
+```
+
 #### open local webserver on port 3000
 
 You need to be in the root dir.
