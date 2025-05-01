@@ -11,3 +11,10 @@ Address: 2a00:1450:4016:80b::2004
 ```
 The first line `Server` is the IP of your local dns server.\
 The `#53` means port 53.
+
+#### specifying the nameserver
+
+When your nameserver is `192.168.2.1`:
+```
+nslookup [hosttosearch] 192.168.2.1
+```
