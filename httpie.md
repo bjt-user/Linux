@@ -38,6 +38,17 @@ By default only the response is shown.
 Also print any intermediary  requests/responses  (such as redirects).\
 For the second level and higher, print these as well as the response meta data.
 
+#### pass query parameters
+
+With `key==value` you can pass query parameters:
+```
+http GET "${CONFLUENCE_URL}/wiki/api/v2/pages/${id}" \
+        body-format==editor \
+        -a "${CONFLUENCE_USER}:${CONFLUENCE_API_TOKEN}" -v
+```
+
+Or you can just add them to the URL with a `?`.
+
 ## examples
 
 #### confluence get page by id
