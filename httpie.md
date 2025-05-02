@@ -1,3 +1,11 @@
+## documentation
+
+```
+man http
+```
+
+https://httpie.io/docs/cli/usage
+
 ## installation
 
 ```
