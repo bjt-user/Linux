@@ -27,3 +27,12 @@ http --help
 ```
 http Get example.com
 ```
+
+## examples
+
+#### confluence get page by id
+
+```
+http GET "${CONFLUENCE_URL}/wiki/api/v2/pages/${page_id}" \
+        -a "${CONFLUENCE_USER}:${CONFLUENCE_API_TOKEN}"
+```
