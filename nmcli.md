@@ -45,3 +45,10 @@ shows if you are connected or not
 nmcli connection show
 ```
 shows the current connection and an old connection
+
+#### autoconnect
+
+Show `autoconnect` property of connections:
+```
+nmcli -f name,autoconnect c
+```
