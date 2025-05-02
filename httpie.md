@@ -8,6 +8,12 @@ sudo pacman -S httpie
 
 ## usage
 
+#### help
+
+```
+http --help
+```
+
 #### simple get request
 
 ```
