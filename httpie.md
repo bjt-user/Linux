@@ -28,6 +28,16 @@ http --help
 http Get example.com
 ```
 
+#### show request as well (`-v`)
+
+`-v`
+
+By default only the response is shown.
+
+> (...) print the whole request as well as the response.\
+Also print any intermediary  requests/responses  (such as redirects).\
+For the second level and higher, print these as well as the response meta data.
+
 ## examples
 
 #### confluence get page by id
