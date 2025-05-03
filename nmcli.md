@@ -56,3 +56,15 @@ nmcli -f name,autoconnect c
 ```
 nmcli c modify [connection name] connection.autoconnect no
 ```
+
+#### delete connection
+
+For example if you want to delete an old wifi connection \
+that you dont use anymore:
+```
+nmcli c delete [connection name]
+```
+
+Every connection you have ever made seems to be saved.\
+And you usually have an autoconnect that will connect you \
+if you are inside the wifi range.
