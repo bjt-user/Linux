@@ -52,3 +52,7 @@ Show `autoconnect` property of connections:
 ```
 nmcli -f name,autoconnect c
 ```
+
+```
+nmcli c modify [connection name] connection.autoconnect no
+```
