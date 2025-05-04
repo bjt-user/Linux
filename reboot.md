@@ -10,9 +10,12 @@ lrwxrwxrwx 1 root root 9 Apr 18 22:42 /usr/bin/reboot -> systemctl
 lrwxrwxrwx 1 root root 9 Apr 18 22:42 /usr/bin/shutdown -> systemctl
 ```
 
-#### TODO: differences vs. reboot and poweroff/shutdown now
+#### differences vs. reboot and poweroff/shutdown now
 
 The NIC (network interface card) will probably not reset when rebooting.\
 It might still have cached information.
 
 It is hard to find information about that.
+
+When upgrading your system (and stuff like `NetworkManager`) it might make sense \
+to shutdown the PC for a few minutes, so that the NIC is cleared and can initialize cleanly.
