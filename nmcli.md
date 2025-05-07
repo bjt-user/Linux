@@ -68,3 +68,17 @@ nmcli c delete [connection name]
 Every connection you have ever made seems to be saved.\
 And you usually have an autoconnect that will connect you \
 if you are inside the wifi range.
+
+#### set dns ipv4 server
+
+To set the `IP4.DNS[1]` property of you device.
+
+If your ethernet device is called `enp2s0` you can do:
+```
+nmcli device modify enp2s0 ipv4.dns "192.168.2.1"
+```
+
+Then view the device with
+```
+nmcli device show enp2so
+```
