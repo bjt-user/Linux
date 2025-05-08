@@ -95,6 +95,11 @@ find /var/log/my_application/ -type f -mtime +90 -exec rm -f {} \; >/dev/null 2>
 ```
 You might want to put something like this in your crontab.
 
+Delete all files with a modify timestamp from 2024:
+```
+find . -type f -newermt 2024-01-01 ! -newermt 2025-01-01 -delete
+```
+
 #### count number of files in a directory recursively
 
 Find all files in a directory and all its subdirectories:
