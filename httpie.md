@@ -12,6 +12,10 @@ https://httpie.io/docs/cli/usage
 sudo pacman -S httpie
 ```
 
+```
+apk add httpie
+```
+
 > human-friendly CLI HTTP client for the API era
 
 ## usage
