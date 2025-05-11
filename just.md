@@ -62,3 +62,9 @@ test:
 lint:
   echo Linting…
 ```
+
+#### choose recipe
+
+```
+just --choose
+```
