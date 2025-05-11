@@ -89,3 +89,18 @@ foo
 ```
 
 > The `[doc]` attribute can be used to set or suppress a recipe’s doc comment.
+
+#### dryrun
+
+Use `-n` or `--dry-run`.
+
+#### timestamps
+
+```
+$ just --timestamp --timestamp-format "%Y-%m-%d_%H:%M:%S" foo
+[2025-05-11_15:42:12] echo 'foo'
+foo
+[2025-05-11_15:42:12] sleep 1
+[2025-05-11_15:42:13] echo 'bar'
+bar
+```
