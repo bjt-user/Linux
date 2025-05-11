@@ -94,6 +94,26 @@ foo
 
 Use `-n` or `--dry-run`.
 
+#### attributes
+
+https://just.systems/man/en/attributes.html
+
+#### builtin functions
+
+https://just.systems/man/en/functions.html
+
+example:
+```
+system-info:
+	@echo "This is an {{arch()}} machine".
+```
+
+#### TOOD: script recipes
+
+Probably one way to use another shell or `python`.
+
+https://just.systems/man/en/script-recipes.html
+
 #### timestamps
 
 ```
