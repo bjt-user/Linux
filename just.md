@@ -22,7 +22,11 @@ sudo pacman -S just
 
 #### justfile
 
-Create a file called `justfile`.
+```
+just --init
+```
+
+This will create a file called `justfile`.
 
 The syntax is simlar to `make`:
 ```
@@ -36,4 +40,25 @@ initial-setup:
 $ just -l
 Available recipes:
     initial-setup
+```
+
+#### default recipes
+
+https://just.systems/man/en/the-default-recipe.html?highlight=default#the-default-recipe
+
+#### dependencies
+
+You can also use dependencies to run multiple recipes by default:
+
+```
+default: lint build test
+
+build:
+  echo Building…
+
+test:
+  echo Testing…
+
+lint:
+  echo Linting…
 ```
