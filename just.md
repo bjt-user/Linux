@@ -68,3 +68,24 @@ lint:
 ```
 just --choose
 ```
+
+#### doc comments
+
+https://just.systems/man/en/documentation-comments.html#documentation-comments
+
+Just place a comment above the recipe:
+```
+# this one will foo around
+foo:
+	echo 'foo'
+```
+
+The comment will be printed when doing a `just -l` or `--explain`:
+```
+$ just --explain foo
+#### this one will foo around
+echo 'foo'
+foo
+```
+
+> The `[doc]` attribute can be used to set or suppress a recipe’s doc comment.
