@@ -145,3 +145,11 @@ foo
 [2025-05-11_15:42:13] echo 'bar'
 bar
 ```
+
+#### print justfile
+
+Might be more convenient to type than `cat justfile`:
+```
+just --dump
+```
+(only 11 characters instead of 12)
