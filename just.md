@@ -63,6 +63,27 @@ lint:
   echo Linting…
 ```
 
+#### subsequent dependencies
+
+You can have a recipe run after your recipe.
+
+In this example `bar` will always run after `foo`:
+```
+foo: && bar
+        echo "This is foo."
+
+bar:
+        echo "This is bar."
+```
+
+```
+$ just foo
+echo "This is foo."
+This is foo.
+echo "This is bar."
+This is bar.
+```
+
 #### choose recipe
 
 ```
