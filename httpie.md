@@ -53,6 +53,12 @@ http GET "${CONFLUENCE_URL}/wiki/api/v2/pages/${id}" \
 
 Or you can just add them to the URL with a `?`.
 
+#### send custom header
+
+```
+http GET example.com/api/v3 Accept:application/json -v
+```
+
 ## examples
 
 #### confluence get page by id
