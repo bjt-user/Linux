@@ -51,6 +51,15 @@ http GET "${CONFLUENCE_URL}/wiki/api/v2/pages/${id}" \
         -a "${CONFLUENCE_USER}:${CONFLUENCE_API_TOKEN}" -v
 ```
 
+This may be quoted (for better syntax highlighting in vim):
+```
+http GET \
+        "${CONFLUENCE_URL}/wiki/api/v2/pages/${page_id}/versions" \
+        -a "${CONFLUENCE_USER}:${CONFLUENCE_API_TOKEN}" \
+        "limit==1" \
+        Accept:application/json
+```
+
 Or you can just add them to the URL with a `?`.
 
 #### send custom header
