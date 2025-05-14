@@ -68,6 +68,39 @@ Or you can just add them to the URL with a `?`.
 http GET example.com/api/v3 Accept:application/json -v
 ```
 
+#### --print / -p
+
+from `man http`:
+```
+--print, -p WHAT
+
+String specifying what the output should contain:
+
+'H' request headers
+'B' request body
+'h' response headers
+'b' response body
+'m' response metadata
+
+The default behaviour is 'hb' (i.e., the response headers and body is printed), if standard output is  not  redirected.\
+If the output is piped to another program or to a file, then only the response body is printed by default.
+```
+
+For example to just get the response headers:
+```
+$ http -p h example.com
+HTTP/1.1 200 OK
+Accept-Ranges: none
+Cache-Control: max-age=3402
+Content-Encoding: gzip
+Content-Length: 648
+Content-Type: text/html
+Date: Fri, 02 May 2025 11:47:10 GMT
+ETag: "84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"
+Last-Modified: Mon, 13 Jan 2025 20:11:20 GMT
+Proxy-Connection: keep-alive
+```
+
 ## examples
 
 #### confluence get page by id
