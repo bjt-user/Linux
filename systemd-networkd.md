@@ -8,4 +8,4 @@ sudo systemctl stop NetworkManager
 sudo systemctl start systemd-networkd
 ```
 
-Worked without any configuration for a wired connection.
+At first it worked but when enabling and rebooting nothing works.
