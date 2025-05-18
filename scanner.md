@@ -1,6 +1,21 @@
+## general info
+
 https://wiki.archlinux.org/title/SANE
 
 https://wiki.archlinux.org/title/SANE/Scanner-specific_problems
+
+## usage
+
+#### email functions
+
+Some scanners have a functionality that can send documents via email.\
+This way you do not have to interact with your os at all.\
+Just put in the paper, send via email and you are done.
+
+This can be very helpful because scanning over the network especially using \
+wifi in Linux is a pain.
+
+#### first try
 
 plug in your scanner and turn it on
 ```
@@ -17,6 +32,7 @@ https://developers.hp.com/hp-linux-imaging-and-printing/
 
 => it gives you a shell script that you have to execute and it seems to only work for specific distros\
 => maybe install a listed distro in a VM
+
 
 #### hp scanners
 
