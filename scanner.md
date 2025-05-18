@@ -47,6 +47,12 @@ extra/hplip 1:3.23.5-1
 
 => then it also works on Arch!
 
+#### find network scanners
+
+```
+airscan-discover
+```
+
 #### scanner in the network
 
 ```
