@@ -24,6 +24,15 @@ https://developers.hp.com/hp-linux-imaging-and-printing/
 sudo pacman -S hplip
 ```
 
+#### necessary packages
+
+You will need the `sane` package.
+
+This is needed to detect wireless scanners:
+```
+sudo pacman -S sane-airscan
+```
+
 #### works in ubuntu vm but not in arch linux
 
 Got my scanner working in a qemu VM with Ubuntu 22.04 by just installing `simple-scan`.
