@@ -9,4 +9,13 @@ It can be used as a docker container or wsl distro.
 
 But it does not have `vi` or `vim` installed.
 
-How to install `vim` in stage 3???
+Before you can install packages in this container:
+```
+emerge --sync
+```
+
+This worked for installing `vim`:
+```
+emerge --ask --verbose vim
+```
+(took about 1-2 minutes)
