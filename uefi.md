@@ -1,3 +1,14 @@
+#### check if uefi or legacy bios
+
+> The easiest way is to check to see if /sys/firmware/efi exists.\
+It does not appear if you booted using traditional BIOS.
+
+```
+#!/bin/bash
+[ -d /sys/firmware/efi ] && echo UEFI || echo BIOS
+```
+(https://askubuntu.com/questions/162564/how-can-i-tell-if-my-system-was-booted-as-efi-uefi-or-bios)
+
 #### secure boot
 
 find out if secure boot is enabled:
