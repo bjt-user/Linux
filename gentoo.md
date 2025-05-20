@@ -23,6 +23,8 @@ emerge --ask --verbose vim
 
 #### uninstall package
 
+https://wiki.gentoo.org/wiki/Gentoo_Cheat_Sheet#Package_removal
+
 ```
 emerge --deselect vim
 ```
