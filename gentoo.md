@@ -13,12 +13,23 @@ Before you can install packages in this container:
 ```
 emerge --sync
 ```
+(took about 5 minutes)
 
 This worked for installing `vim`:
 ```
 emerge --ask --verbose vim
 ```
 (took about 1-2 minutes)
+
+#### uninstall package
+
+```
+emerge --deselect vim
+```
+
+```
+emerge -a --depclean
+```
 
 ## troubleshooting
 
