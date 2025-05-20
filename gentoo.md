@@ -19,3 +19,14 @@ This worked for installing `vim`:
 emerge --ask --verbose vim
 ```
 (took about 1-2 minutes)
+
+## troubleshooting
+
+#### firewalls
+
+If you are behind a firewall use this for syncing instead of `emerge --sync`:
+```
+emerge-webrsync
+```
+
+This will probably use `https` over 443 instead of `rsync` over port 22.
