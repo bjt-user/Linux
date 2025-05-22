@@ -9,6 +9,12 @@ echo "app-editors/vim -nls" >> /etc/portage/package.use/vim
 ```
 Then the use flag `nls` will not be used when building vim.
 
+#### temporarily set use flag
+
+```
+time USE="-nls" emerge gdb
+```
+
 ## flags that could be removed
 
 #### nls
