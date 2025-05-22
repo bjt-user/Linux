@@ -54,6 +54,11 @@ emerge --info vim
 
 #### search for packages
 
+Search with regex:
+```
+emerge -s '^vim$'
+```
+
 Search for all packages in a category:
 ```
 emerge -s '@app-vim'
