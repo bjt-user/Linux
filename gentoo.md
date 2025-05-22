@@ -1,3 +1,5 @@
+## general info
+
 #### stage3 files/containers
 
 https://wiki.gentoo.org/wiki/Stage_file
@@ -20,6 +22,24 @@ This worked for installing `vim`:
 emerge --ask --verbose vim
 ```
 (took about 1-2 minutes)
+
+## portage
+
+#### show info
+
+```
+emerge --info
+```
+
+even more info:
+```
+emerge --info --verbose
+```
+
+Info about a specific "atom":
+```
+emerge --info vim
+```
 
 #### uninstall package
 
