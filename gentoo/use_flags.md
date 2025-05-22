@@ -15,6 +15,8 @@ Then the use flag `nls` will not be used when building vim.
 time USE="-nls" emerge gdb
 ```
 
+But usually you want to configure those in a file.
+
 ## flags that could be removed
 
 #### nls
