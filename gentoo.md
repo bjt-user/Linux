@@ -59,6 +59,11 @@ Search with regex:
 emerge -s '^vim$'
 ```
 
+Also search in the description:
+```
+emerge --searchdesc 'nslookup'
+```
+
 Search for all packages in a category:
 ```
 emerge -s '@app-vim'
