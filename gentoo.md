@@ -52,6 +52,13 @@ Info about a specific "atom":
 emerge --info vim
 ```
 
+#### search for packages
+
+Search for all packages in a category:
+```
+emerge -s '@app-vim'
+```
+
 #### uninstall package
 
 https://wiki.gentoo.org/wiki/Gentoo_Cheat_Sheet#Package_removal
