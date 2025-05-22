@@ -62,6 +62,8 @@ To show dependencies in a primitive tree style:
 emerge -tp vim
 ```
 
+Use flags that start with a `-` are probably disabled.
+
 #### uninstall package
 
 This should be enough:
