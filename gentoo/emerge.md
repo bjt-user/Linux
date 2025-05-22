@@ -66,15 +66,6 @@ Use flags that start with a `-` are probably disabled.
 
 #### uninstall package
 
-This should be enough:
-```
-emerge --ask --verbose --depclean net-proxy/tinyproxy
-```
-
-You can also do it in 2 commands.
-
-https://wiki.gentoo.org/wiki/Gentoo_Cheat_Sheet#Package_removal
-
 ```
 emerge --deselect vim
 ```
