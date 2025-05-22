@@ -25,6 +25,17 @@ emerge --ask --verbose vim
 
 ## portage
 
+#### update repositories
+
+```
+emerge --sync
+```
+
+or if behind a firewall:
+```
+emerge-webrsync
+```
+
 #### show info
 
 ```
