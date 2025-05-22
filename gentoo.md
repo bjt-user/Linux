@@ -69,6 +69,18 @@ Search for all packages in a category:
 emerge -s '@app-vim'
 ```
 
+#### pretend (dry-run)
+
+This will show use flags and dependencies that would be installed:
+```
+emerge -p vim
+```
+
+To show dependencies in a primitive tree style:
+```
+emerge -tp vim
+```
+
 #### uninstall package
 
 This should be enough:
