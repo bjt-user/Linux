@@ -1,3 +1,5 @@
+## general info
+
 "LightDM is a cross-desktop display manager"
 
 You can comfortably login to your X11 session without typing `startx`.
@@ -17,6 +19,14 @@ sudo pacman -S lightdm-gtk-greeter
 sudo systemctl enable --now lightdm
 sudo reboot
 ```
+
+## usage
+
+#### booting into i3
+
+You might need to select `i3` in the upper right corner instead of `x`.
+
+Then this will become the default.
 
 ***
 
