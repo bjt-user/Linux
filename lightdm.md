@@ -24,7 +24,7 @@ sudo reboot
 
 #### booting into i3
 
-You might need to select `i3` in the upper right corner instead of `x`.
+You might need to select `i3` in the upper right corner instead of `XSession`.
 
 Then this will become the default.
 
