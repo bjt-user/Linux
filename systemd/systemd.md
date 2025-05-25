@@ -3,6 +3,7 @@
 #### documentation
 
 Useful manpages:
+- man systemd.directives
 - man 5 systemd.unit
 - man 5 systemd.service
 - man systemd.target
