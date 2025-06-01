@@ -1,4 +1,8 @@
+## general info
+
 https://wiki.archlinux.org/title/Pacman
+
+## usage
 
 #### install a package
 ```
@@ -155,6 +159,13 @@ sudo pacman -S pacman-contrib
 rankmirrors /etc/pacman.d/mirrorlist
 ```
 
+#### autoremove packages
+
+https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#Removing_unused_packages_(orphans)
+
+```
+sudo pacman -Qdtq | sudo pacman -Rns -
+```
 
 ## files
 
