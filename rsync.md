@@ -66,10 +66,11 @@ manpage says this:
 Be aware that it does not include preserving ACLs (-A), xattrs (-X), atimes (-U), crtimes (-N),\
 nor the finding and preserving of hardlinks (-H).
 
-#### human readable
+#### -h / --human-readable
 
-try the `-h` flag to make it more human readable.\
-Should change bytes to MegaBytes at the end.
+Should change bytes to MegaBytes/GB at the end.
+
+> output numbers in a human-readable format
 
 #### less output
 
