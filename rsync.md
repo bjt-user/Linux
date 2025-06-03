@@ -48,6 +48,13 @@ This tells rsync to delete extraneous files from the receiving side (ones that a
 but only for the directories  that are being synchronized.
 ```
 
+#### -r / --recursive
+
+```
+--recursive, -r
+This tells rsync to copy directories recursively.
+```
+
 #### -a / --archive
 
 manpage says this:
@@ -58,13 +65,6 @@ manpage says this:
 > It is a quick way of saying you want recursion and want to preserve almost everything.\
 Be aware that it does not include preserving ACLs (-A), xattrs (-X), atimes (-U), crtimes (-N),\
 nor the finding and preserving of hardlinks (-H).
-
-#### -r / --recursive
-
-```
---recursive, -r
-This tells rsync to copy directories recursively.
-```
 
 #### human readable
 
