@@ -55,6 +55,22 @@ but only for the directories  that are being synchronized.
 This tells rsync to copy directories recursively.
 ```
 
+#### --exclude
+
+```
+--exclude=PATTERN
+This option is a simplified form of the --filter option that specifies an exclude rule
+and does not allow the full rule-parsing syntax of  normal filter rules.
+This is equivalent to specifying -f'- PATTERN'.
+
+See the FILTER RULES section for detailed information on this option.
+```
+
+example:
+```
+--exclude "*/workspace/terraform"
+```
+
 #### -a / --archive
 
 manpage says this:
