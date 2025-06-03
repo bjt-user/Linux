@@ -32,6 +32,22 @@ sudo apt install openssh-server
 
 ## usage
 
+#### -v / --verbose
+
+Increase verbosity.
+
+#### --dry-run, -n
+
+Perform dryrun.
+
+#### --delete
+
+```
+--delete
+This tells rsync to delete extraneous files from the receiving side (ones that aren't on the sending side),
+but only for the directories  that are being synchronized.
+```
+
 #### -a / --archive
 
 manpage says this:
