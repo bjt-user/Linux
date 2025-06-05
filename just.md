@@ -12,6 +12,12 @@ execute project specific commands.
 
 https://just.systems/man/en/introduction.html
 
+#### advantages of just
+
+- can be executed in subdirectories even if the `justfile` is at the root
+of the project
+- all targets are phony, so no need for `.PHONY`
+
 #### installation
 
 ```
