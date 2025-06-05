@@ -20,6 +20,8 @@ Then you should be able to
 curl -I https://google.com
 ```
 
+(Not sure if `systemd-resolved` has to be active as well...)
+
 #### TODO: set static IP
 
 https://wiki.archlinux.org/title/Systemd-networkd#Wired_adapter_using_a_static_IP
