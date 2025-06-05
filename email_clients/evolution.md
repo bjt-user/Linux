@@ -1,5 +1,6 @@
+## usage
+
 #### prevent forced line breaks when composing email
--------------------------------------------------------
 
 Select "preformatted" paragraph style.
 

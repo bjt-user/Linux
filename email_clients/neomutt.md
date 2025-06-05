@@ -1,3 +1,5 @@
+## general info
+
 #### resources
 
 https://neomutt.org/guide/intro
@@ -6,7 +8,8 @@ IRC: libera.chat #neomutt
 
 https://wiki.archlinux.org/title/Mutt
 
-***
+
+## usage
 
 #### configuration
 
