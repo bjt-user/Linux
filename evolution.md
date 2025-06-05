@@ -62,3 +62,7 @@ enter the old password (this should be the os password for the user)\
 leave the new password empty
 
 => that worked
+
+#### TODO: cannot open evolution because keyring prompt freezes xorg
+
+Currently the only way to get out is to ctrl + alt + f3 and manually kill all evolution processes.
