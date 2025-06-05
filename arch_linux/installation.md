@@ -122,6 +122,8 @@ Then I am in a command prompt called `root@archiso`.
 UEFI or legacy BIOS?\
 BIOS mode might also be called CSM (compatibility support module)
 
+https://wiki.archlinux.org/title/Installation_guide#Verify_the_boot_mode
+
 #### keyboard layout
 First step will be to get rid of US keyboard layout.\
 `-` is at `ß`.\
