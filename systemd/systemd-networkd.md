@@ -1,4 +1,18 @@
+## general info
+
 https://wiki.archlinux.org/title/Systemd-networkd
+
+## usage
+
+#### networkctl
+
+```
+networkctl list
+```
+
+## troubleshooting
+
+#### first try
 
 ```
 sudo systemctl stop NetworkManager
