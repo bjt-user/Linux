@@ -10,6 +10,10 @@ https://wiki.archlinux.org/title/Systemd-networkd
 networkctl list
 ```
 
+```
+networkctl status
+```
+
 ## troubleshooting
 
 #### first try
