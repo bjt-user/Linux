@@ -19,3 +19,7 @@ Then you should be able to
 ```
 curl -I https://google.com
 ```
+
+#### TODO: set static IP
+
+https://wiki.archlinux.org/title/Systemd-networkd#Wired_adapter_using_a_static_IP
