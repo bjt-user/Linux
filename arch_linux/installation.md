@@ -438,6 +438,10 @@ In this example I had mounted `/dev/sda1` on `/boot`:
 ```
 grub-install --target=x86_64-efi --bootloader-id=grub_uefi --efi-directory=boot --recheck
 ```
+Then create the config:
+```
+grub-mkconfig -o /boot/grub/grub.cfg
+```
 
 A failed attempt:
 ```
