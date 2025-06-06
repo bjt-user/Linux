@@ -44,6 +44,21 @@ xset q
 
 #### screensaver
 
+Turn off screensaver permanently create these two files:
+```
+$ cat /etc/X11/xorg.conf.d/10-extensions.conf
+Section "Extensions"
+    Option "DPMS" "false"
+EndSection
+```
+```
+$ cat /etc/X11/xorg.conf.d/10-serverflags.conf
+Section "ServerFlags"
+    Option "BlankTime" "0"
+EndSection
+```
+(https://wiki.archlinux.org/title/Display_Power_Management_Signaling#Configuration)
+
 default timeout seems to be 600 seconds (10 minutes)
 ```
 xset -q
