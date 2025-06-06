@@ -37,6 +37,14 @@ Use `tab` to move to the next field.\
 It uses vim keybindings, go in insert mode, then save with `:x`.\
 Then send with `y`.
 
+#### viewing html only mails
+
+Some mails seem to be readable only in html mode.\
+You need to install `w3m` to read these messages:
+```
+sudo pacman -S w3m
+```
+
 #### selecting multiple messages
 
 To select multiple messages (to move/archive/delete them):\
