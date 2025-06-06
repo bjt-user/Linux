@@ -19,6 +19,23 @@ DHCP=yes
 Domains=speedport.ip
 ```
 
+#### static IP config for ethernet
+
+This worked:
+```
+[Match]
+Name=enp2s0
+
+[Link]
+RequiredForOnline=routable
+
+[Network]
+Address=192.168.2.199/24
+Gateway=192.168.2.1
+DNS=192.168.2.1
+Domains=speedport.ip
+```
+
 ## usage
 
 #### networkctl
@@ -60,3 +77,5 @@ Address=192.168.2.199/24
 DHCP=no
 Domains=speedport.ip
 ```
+
+=> `Gateway` and `DNS` are missing
