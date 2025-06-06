@@ -24,7 +24,10 @@ Email providers usually provide this information.
 shift + j/k to move between folders \
 ctrl + arrowkeys to move between folders \
 ctrl + n/p to move to next/previous tab \
-j/k or arrowkeys to move to next previous mail
+j/k or arrowkeys to move to next previous mail \
+gg to go to top \
+G to go to bottom \
+ctrl + f/b go up/down one page
 
 #### send mail
 
@@ -33,6 +36,11 @@ j/k or arrowkeys to move to next previous mail
 Use `tab` to move to the next field.\
 It uses vim keybindings, go in insert mode, then save with `:x`.\
 Then send with `y`.
+
+#### selecting multiple messages
+
+To select multiple messages (to move/archive/delete them):\
+`V`
 
 #### delete message
 
@@ -55,3 +63,18 @@ Just hit `a` then you can add an attachment.\
 :attach /tmp/myfile.txt
 ```
 (There is completion active.)
+
+#### move message to different folder
+
+Move the selected message to folder "TRASH":
+```
+:mv TRASH
+```
+
+#### archive
+
+Move the selected message to the `archive` dir:
+```
+:archive flat
+```
+or just hit `A`
