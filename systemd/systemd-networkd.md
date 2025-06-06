@@ -2,6 +2,23 @@
 
 https://wiki.archlinux.org/title/Systemd-networkd
 
+## configuration
+
+#### simple dhcp config for ethernet
+
+This worked:
+```
+[Match]
+Name=enp2s0
+
+[Link]
+RequiredForOnline=routable
+
+[Network]
+DHCP=yes
+Domains=speedport.ip
+```
+
 ## usage
 
 #### networkctl
