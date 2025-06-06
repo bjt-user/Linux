@@ -1,3 +1,15 @@
+## general info
+
+#### disadvantages
+
+- no configuration through text files possible
+
+#### advantages
+
+- ublock origin is available
+
+## configuration
+
 #### show full url (with `http://` or `https://`)
 
 Type `about:config` in the address bar.

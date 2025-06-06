@@ -4,6 +4,10 @@
 
 TODO.
 
+#### disadvantages
+
+- no decent adblocker
+
 ## usage
 
 #### open a website
