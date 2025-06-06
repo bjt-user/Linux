@@ -2,7 +2,7 @@
 
 #### documentation
 
-https://aerc-mail.org/
+TODO.
 
 ## usage
 
@@ -42,3 +42,12 @@ remove the current website from bookmarks:
 :bookmark-list
 ```
 or `Sq`
+
+#### adblocker
+
+It says it can use the python `adblock` library \
+but its a very primitive adblocker.
+
+Youtube ads will not be blocked.
+
+Ublock origin seems to be unavailable.
