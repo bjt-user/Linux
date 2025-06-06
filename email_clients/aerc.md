@@ -37,6 +37,10 @@ Use `tab` to move to the next field.\
 It uses vim keybindings, go in insert mode, then save with `:x`.\
 Then send with `y`.
 
+#### reply to a mail
+
+`rq` to reply to a mail with quoting the original mail.
+
 #### viewing html only mails
 
 Some mails seem to be readable only in html mode.\
