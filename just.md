@@ -52,6 +52,12 @@ Available recipes:
 
 https://just.systems/man/en/the-default-recipe.html?highlight=default#the-default-recipe
 
+#### initializing variables
+
+```
+EXECUTABLE := "my-program"
+```
+
 #### dependencies
 
 You can also use dependencies to run multiple recipes by default:
