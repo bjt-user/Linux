@@ -36,9 +36,23 @@ DNS=192.168.2.1
 Domains=speedport.ip
 ```
 
+#### wireless adapter with dhcp
+
+```
+[Match]
+Name=wlp1s0
+
+[Link]
+RequiredForOnline=routable
+
+[Network]
+DHCP=yes
+IgnoreCarrierLoss=3s
+```
+
 ## usage
 
-#### networkctl
+#### list and status
 
 ```
 networkctl list
@@ -46,6 +60,13 @@ networkctl list
 
 ```
 networkctl status
+```
+
+#### reload config
+
+You dont need to restart the service, just do:
+```
+networkctl reload
 ```
 
 ## troubleshooting
