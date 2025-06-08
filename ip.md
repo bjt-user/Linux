@@ -79,3 +79,6 @@ ip -s link show wlan0
 
 There is no indication on why these packages are dropped.\
 Maybe bad cable, maybe bad wifi connection, firewall?
+
+According to this article https://www.redhat.com/en/blog/beginners-guide-network-troubleshooting-linux \
+the `-s` can be used to detect problems in the physical layer (layer 1), like a bad cable.
