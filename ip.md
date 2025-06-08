@@ -1,8 +1,11 @@
+## general info
+
 #### installation
 
 `ip` command is part of the `ip-route2` package and is usually preinstalled on Linux distros.
 
----
+
+## usage
 
 #### basic usage (most use cases)
 
@@ -66,3 +69,13 @@ ip a delete [oldip] dev eth0
 ```
 
 Then I could ssh into it using the new IP.
+
+#### statistics (dropped packages)
+
+This might help to see if there are dropped packages:
+```
+ip -s link show wlan0
+```
+
+There is no indication on why these packages are dropped.\
+Maybe bad cable, maybe bad wifi connection, firewall?
