@@ -97,3 +97,9 @@ With ctrl + j/k you can switch between text and html.
 
 In html mode, put the cursor on the link and type `:open` \
 and the link will open in your default browser.
+
+#### search for unread messages
+
+```
+:search -u
+```
