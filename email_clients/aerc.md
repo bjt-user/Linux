@@ -90,3 +90,10 @@ Move the selected message to the `archive` dir:
 :archive flat
 ```
 or just hit `A`
+
+#### click links
+
+With ctrl + j/k you can switch between text and html.
+
+In html mode, put the cursor on the link and type `:open` \
+and the link will open in your default browser.
