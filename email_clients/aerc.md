@@ -41,6 +41,8 @@ Then send with `y`.
 
 `rq` to reply to a mail with quoting the original mail.
 
+Or `rr` to reply without quoting the mail you are replying to.
+
 #### viewing html only mails
 
 Some mails seem to be readable only in html mode.\
