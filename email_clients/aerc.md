@@ -105,3 +105,11 @@ In html mode, put the cursor on the link and type `:open` \
 ```
 :search -u
 ```
+
+#### save sent messages
+
+You need to set
+```
+copy-to = SENT
+```
+in `~/.config/aerc/accounts.conf`
