@@ -67,6 +67,7 @@ Or you can just add them to the URL with a `?`.
 ```
 http GET example.com/api/v3 Accept:application/json -v
 ```
+Note: The headers need to be positioned AFTER the url!
 
 #### --print / -p
 
