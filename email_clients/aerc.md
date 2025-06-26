@@ -112,6 +112,15 @@ In html mode, put the cursor on the link and type `:open` \
 
 Hit `n` for the next finding.
 
+But it is probably better to `:filter`.
+
+#### filter messages
+
+`\searchterm`
+
+Then you can select multiple mails with `V` \
+and `:mv folder`.
+
 #### save sent messages
 
 You need to set

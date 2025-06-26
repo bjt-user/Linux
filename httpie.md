@@ -102,6 +102,18 @@ Last-Modified: Mon, 13 Jan 2025 20:11:20 GMT
 Proxy-Connection: keep-alive
 ```
 
+#### download file
+
+```
+http -v GET --download [URL]
+```
+
+#### upload file
+
+```
+http -v PUT [URL] < myfile.txt
+```
+
 ## examples
 
 #### confluence get page by id
