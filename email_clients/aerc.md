@@ -106,6 +106,12 @@ In html mode, put the cursor on the link and type `:open` \
 :search -u
 ```
 
+#### search for strings in mail headers
+
+`/searchterm` `enter`
+
+Hit `n` for the next finding.
+
 #### save sent messages
 
 You need to set
