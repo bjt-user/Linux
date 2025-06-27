@@ -113,6 +113,18 @@ The `--verify=mysslcert.crt` must come before the http method.
     "JOB-TOKEN: ${CI_JOB_TOKEN}" < ${BINARY}
 ```
 
+#### download file
+
+```
+http -v GET --download [URL]
+```
+
+#### upload file
+
+```
+http -v PUT [URL] < myfile.txt
+```
+
 ## examples
 
 #### confluence get page by id
