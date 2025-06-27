@@ -102,6 +102,17 @@ Last-Modified: Mon, 13 Jan 2025 20:11:20 GMT
 Proxy-Connection: keep-alive
 ```
 
+#### use ssl cert file
+
+The `--verify=mysslcert.crt` must come before the http method.
+
+```
+- |
+  http --print=hbm --verify="$CI_SERVER_TLS_CA_FILE" PUT \
+    "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/${BINARY}/latest/${BINARY}" \
+    "JOB-TOKEN: ${CI_JOB_TOKEN}" < ${BINARY}
+```
+
 ## examples
 
 #### confluence get page by id
