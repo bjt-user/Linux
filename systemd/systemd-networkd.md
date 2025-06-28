@@ -4,6 +4,24 @@ https://wiki.archlinux.org/title/Systemd-networkd
 
 ## configuration
 
+#### match section
+
+Use `ip link show` to get the MAC address of the network adapter:
+```
+[Match]
+MACAddress=e5:b2:13:a2:bb:66
+```
+
+This might also work:
+```
+Name=*
+```
+
+Using the following works, but results in warnings about unpredictable interface names:
+```
+Name=wlan0
+```
+
 #### simple dhcp config for ethernet
 
 This worked:
