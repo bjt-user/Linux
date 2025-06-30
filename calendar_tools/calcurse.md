@@ -16,6 +16,9 @@ calcurse -i calendar.ics
 (does this work for single appointments as well \
 invitations that were sent via email?)
 
+If you import a file twice you will have every event in that file \
+twice in `calcurse`.
+
 #### export icalendar file
 
 ```
