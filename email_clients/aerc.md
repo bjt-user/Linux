@@ -128,3 +128,10 @@ You need to set
 copy-to = SENT
 ```
 in `~/.config/aerc/accounts.conf`
+
+#### import icalendar files
+
+You need to pipe the email to your own script to do this.
+
+Navigate to "text/calendar" with ctrl + j.\
+`:pipe tee myfile.ics`
