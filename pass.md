@@ -1,9 +1,31 @@
+## general info
+
 Passwords are stored in `~/.password-store`.
+
+## usage
+
+#### paste to clipboard
 
 To paste the password of a record into your clipboard for 45 seconds:
 
 ```
 pass -c examplewebsite.com
+```
+
+#### totp (time based one time password / 2 factor authentication)
+
+```
+pass otp insert service/username
+```
+
+You to insert a URI that looks like this:
+```
+otpauth://totp/myuser?secret=RH7ATYI5Y3H46LDTE74BB7PJ4YARGTK5&issuer=someissuer
+```
+
+Then you can get a one time password that lasts 30 seconds like this:
+```
+pass otp service/username
 ```
 
 ## troubleshooting
