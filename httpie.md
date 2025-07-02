@@ -115,6 +115,10 @@ The `--verify=mysslcert.crt` must come before the http method.
 
 #### download file
 
+WARNING: Always use `--output` with `--download`!\
+`httpie` tries to get the file name from the response headers \
+and if it can't find the right header it will fail!
+
 ```
 http -v GET --download [URL]
 ```
