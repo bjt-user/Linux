@@ -119,6 +119,13 @@ The `--verify=mysslcert.crt` must come before the http method.
 http -v GET --download [URL]
 ```
 
+```
+--download, -d
+Do not print the response body to stdout.
+Rather, download it and store it in a file.
+The filename is guessed unless specified with --output [filename]. This action is similar to the default behaviour of wget.
+```
+
 #### upload file
 
 ```
