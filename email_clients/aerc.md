@@ -6,6 +6,18 @@
 sudo pacman -S aerc
 ```
 
+## configuration
+
+#### custom key bindings
+
+In the `[view]` section put this:
+```
+ic = :pipe calcurse -i -
+```
+
+And then you can hit `ic` when viewing a `text/calendar` file \
+to import it in `calcurse`.
+
 ## usage
 
 #### help
