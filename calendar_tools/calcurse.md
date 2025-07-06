@@ -34,7 +34,15 @@ calcurse -x > test.ics
 When importing and then exporting ical, the information \
 `ORGANIZER` and `ATTENDEE` seem to get lost.
 
+#### change windows
+
+TAB to select another window!
+
+For example to switch to "appointments" from "calendar".
+
 #### insert appointment
+
+(In "calendar" window)
 
 navigate to the day you want to insert your appointment
 
@@ -42,3 +50,7 @@ ctrl + A
 
 1200 or 12:00 for the start time \
 similar for the end time
+
+(In "appointsments" view)
+
+Just hit `a`
