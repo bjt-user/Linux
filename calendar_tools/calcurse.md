@@ -31,6 +31,9 @@ twice in `calcurse`.
 calcurse -x > test.ics
 ```
 
+When importing and then exporting ical, the information \
+`ORGANIZER` and `ATTENDEE` seem to get lost.
+
 #### insert appointment
 
 navigate to the day you want to insert your appointment
