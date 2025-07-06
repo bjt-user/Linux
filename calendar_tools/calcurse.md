@@ -5,6 +5,12 @@ but you can import and export iCalendar files.
 
 Events are in a simpler format in `${HOME}/.local/share/calcurse/apts`
 
+## installation
+
+```
+sudo pacman -S calcurse
+```
+
 ## usage
 
 #### import icalendar file
