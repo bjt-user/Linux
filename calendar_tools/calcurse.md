@@ -11,6 +11,20 @@ Events are in a simpler format in `${HOME}/.local/share/calcurse/apts`
 sudo pacman -S calcurse
 ```
 
+## configuration
+
+`~/.config/calcurse/conf`
+
+#### date format
+
+```
+format.inputdate=4
+```
+
+```
+format.outputdate=%Y-%m-%d
+```
+
 ## usage
 
 #### import icalendar file
@@ -54,3 +68,10 @@ similar for the end time
 (In "appointsments" view)
 
 Just hit `a`
+
+#### show events in the next 14 days
+
+Without entering the ncurses menu:
+```
+calcurse -r14
+```
