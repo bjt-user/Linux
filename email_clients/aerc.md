@@ -135,3 +135,7 @@ You need to pipe the email to your own script to do this.
 
 Navigate to "text/calendar" with ctrl + j.\
 `:pipe tee myfile.ics`
+
+```
+:pipe calcurse -i -
+```
