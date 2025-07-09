@@ -70,6 +70,11 @@ similar for the end time
 
 Just hit `a`
 
+#### add or edit notes
+
+To add more information to an appointment hit `n` in \
+when in "appointments" window.
+
 #### show events in the next 14 days
 
 Without entering the ncurses menu:
