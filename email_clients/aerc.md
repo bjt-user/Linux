@@ -6,6 +6,18 @@
 sudo pacman -S aerc
 ```
 
+## configuration
+
+#### custom key bindings
+
+In the `[view]` section put this:
+```
+ic = :pipe calcurse -i -
+```
+
+And then you can hit `ic` when viewing a `text/calendar` file \
+to import it in `calcurse`.
+
 ## usage
 
 #### help
@@ -135,3 +147,7 @@ You need to pipe the email to your own script to do this.
 
 Navigate to "text/calendar" with ctrl + j.\
 `:pipe tee myfile.ics`
+
+```
+:pipe calcurse -i -
+```

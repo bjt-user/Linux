@@ -5,6 +5,26 @@ but you can import and export iCalendar files.
 
 Events are in a simpler format in `${HOME}/.local/share/calcurse/apts`
 
+## installation
+
+```
+sudo pacman -S calcurse
+```
+
+## configuration
+
+`~/.config/calcurse/conf`
+
+#### date format
+
+```
+format.inputdate=4
+```
+
+```
+format.outputdate=%Y-%m-%d
+```
+
 ## usage
 
 #### import icalendar file
@@ -25,7 +45,18 @@ twice in `calcurse`.
 calcurse -x > test.ics
 ```
 
+When importing and then exporting ical, the information \
+`ORGANIZER` and `ATTENDEE` seem to get lost.
+
+#### change windows
+
+TAB to select another window!
+
+For example to switch to "appointments" from "calendar".
+
 #### insert appointment
+
+(In "calendar" window)
 
 navigate to the day you want to insert your appointment
 
@@ -33,3 +64,14 @@ ctrl + A
 
 1200 or 12:00 for the start time \
 similar for the end time
+
+(In "appointsments" view)
+
+Just hit `a`
+
+#### show events in the next 14 days
+
+Without entering the ncurses menu:
+```
+calcurse -r14
+```
