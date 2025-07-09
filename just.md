@@ -141,6 +141,13 @@ system-info:
 	@echo "This is an {{arch()}} machine".
 ```
 
+#### shebang recipes
+
+For putting if conditions in your recipes you need \
+shebang recipes.
+
+https://just.systems/man/en/shebang-recipes.html
+
 #### TOOD: script recipes
 
 Probably one way to use another shell or `python`.
