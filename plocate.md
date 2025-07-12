@@ -21,9 +21,46 @@ Remember to set the committer email appropriately!
 sudo pacman -S plocate
 ```
 
+Installed executables:
+```
+plocate usr/bin/locate
+plocate usr/bin/mlocate
+plocate usr/bin/plocate
+plocate usr/bin/plocate-build
+plocate usr/bin/updatedb
+```
+(`locate` and `mlocate` are symlinks to `plocate`)
+
+Installed manpages:
+```
+plocate usr/share/man/man1/plocate.1.gz
+plocate usr/share/man/man5/updatedb.conf.5.gz
+plocate usr/share/man/man8/plocate-build.8.gz
+plocate usr/share/man/man8/updatedb.8.gz
+```
+
+Installed config files:
+```
+plocate etc/updatedb.conf
+```
+
+## usage
+
+#### updatedb
+
+```
+sudo updatedb
+```
+
+That will fill the db:
+```
+$ sudo wc -l /var/lib/plocate/plocate.db
+41284 /var/lib/plocate/plocate.db
+```
+
 ## troubleshooting
 
-#### TODO: no such file
+#### no such file
 
 directly after installing:
 ```
@@ -33,3 +70,12 @@ pread: No such file or directory
 
 Maybe because `/var/lib/plocate/plocate.db` is empty directly after installing \
 and `locate` can be used only after this db fills over night?
+
+Yes.
+
+A better error message would be nice.
+
+Solution:
+```
+sudo updatedb
+```
