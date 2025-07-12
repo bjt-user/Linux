@@ -8,7 +8,7 @@
 
 https://plocate.sesse.net/
 
-Gitrepo seems to be down:\
+Gitrepo is only accessible over IPv6:\
 https://git.sesse.net/?p=plocate
 
 > NOTE: These git repositories are only available over IPv6.\
