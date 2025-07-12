@@ -66,6 +66,14 @@ This will normally be done with a systemd timer.
 locate 'stdio.h'
 ```
 
+#### search the basename of a file with regex
+
+This will not search the string in the entire path,\
+but only in the basenames:
+```
+locate -b -r "^string\.h$"
+```
+
 ## troubleshooting
 
 #### no such file
