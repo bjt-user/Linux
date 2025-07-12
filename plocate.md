@@ -11,6 +11,10 @@ https://plocate.sesse.net/
 Gitrepo seems to be down:\
 https://git.sesse.net/?p=plocate
 
+> NOTE: These git repositories are only available over IPv6.\
+To send a patch to any of these projects, just do “git push”, and I will receive an email with your patch.\
+Remember to set the committer email appropriately!
+
 #### installation
 
 ```
