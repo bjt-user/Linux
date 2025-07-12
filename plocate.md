@@ -58,6 +58,14 @@ $ sudo wc -l /var/lib/plocate/plocate.db
 41284 /var/lib/plocate/plocate.db
 ```
 
+This will normally be done with a systemd timer.
+
+#### search for a file
+
+```
+locate 'stdio.h'
+```
+
 ## troubleshooting
 
 #### no such file
