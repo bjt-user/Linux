@@ -1,3 +1,5 @@
+## general info
+
 ```
 man strace
 ```
@@ -5,6 +7,8 @@ man strace
 ```
 strace - trace system calls and signals
 ```
+
+## usage
 
 #### how to use
 
@@ -31,12 +35,18 @@ strace -c openssl s_client -connect google.com:443
 
 ***
 
-#### filtering the output
+## filtering the output
+
+#### -e trace=syscall
+
+```
+strace -e trace=write locate 'stdio.h'
+```
+
+#### with grep
 
 For some reason `strace` writes all its output to stderr.\
 So you need to redirect to grep:
 ```
 strace openssl s_client -connect google.com:443 2>&1 | grep -i "^connect"
 ```
-
-***
