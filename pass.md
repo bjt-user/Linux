@@ -28,6 +28,13 @@ Then you can get a one time password that lasts 30 seconds like this:
 pass otp service/username
 ```
 
+#### pass generate
+
+Generate and insert a password for a new service:
+```
+pass generate fooservice.com/myemail@gmail.com
+```
+
 ## troubleshooting
 
 ### tab-completion does not work
