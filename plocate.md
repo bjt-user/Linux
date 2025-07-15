@@ -50,6 +50,27 @@ Installed config files:
 plocate etc/updatedb.conf
 ```
 
+#### building
+
+clang will also install a gcc c++ package:
+```
+sudo dnf install clang
+```
+
+```
+sudo dnf install libzstd-devel
+```
+
+Package `liburing` was already installed on my system.
+
+```
+meson setup builddir
+```
+
+```
+meson compile -C builddir
+```
+
 ## usage
 
 #### updatedb
