@@ -4,6 +4,8 @@
 
 > Alternative to locate, faster and compatible with mlocate's database.
 
+Written in C++.
+
 ##### documentation
 
 https://plocate.sesse.net/
