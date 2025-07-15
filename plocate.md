@@ -15,6 +15,10 @@ https://git.sesse.net/?p=plocate
 To send a patch to any of these projects, just do “git push”, and I will receive an email with your patch.\
 Remember to set the committer email appropriately!
 
+```
+git clone https://git.sesse.net/plocate
+```
+
 #### installation
 
 ```
