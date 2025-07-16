@@ -26,3 +26,11 @@ lists the files in the archive without actually unpacking them.
 ```
 tar -cvf oracle-skripte.tar oracle-skripte
 ```
+
+#### --remove-files - remove files after putting them into the archive
+
+This will create an archive for all files with the `.bar` ending \
+and then remove all those files in the dir outside the tarball:
+```
+tar -cvf bar.tar *.bar --remove-files
+```
