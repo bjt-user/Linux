@@ -162,3 +162,9 @@ node_1 -> node_2 [style=dotted];
 
 Other styles:
 - dashed
+
+## troubleshooting
+
+#### TODO: Fontconfig warning: using without calling FcInit()
+
+Maybe wait for a patch?
