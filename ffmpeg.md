@@ -50,6 +50,12 @@ This will cut from second 55.5 to second 56.8 of an audio file without reencodin
 ffmpeg -i output.wav -ss 55.5 -to 56.8 -c copy ingenieur3.wav
 ```
 
+#### remove first 10 seconds of a video
+
+```
+ffmpeg -i input.mp4 -ss 0:10 -c copy output.mp4
+```
+
 #### record audio that is being played (to pulseaudio)
 
 Get the index of the audio device that the audio is currently being played to:
