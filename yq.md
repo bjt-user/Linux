@@ -2,10 +2,10 @@
 
 WARNING: There are two popular tools named `yq`.
 
-Python: (in pacman extra):\
+Python: (extra/yq):\
 https://github.com/kislyuk/yq
 
-Go:\
+Go: (extra/go-yq)\
 https://github.com/mikefarah/yq
 
 ## usage (kislyuk)
