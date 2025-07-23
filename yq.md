@@ -67,3 +67,19 @@ user=tomcat
 group=tomcat
 ```
 It will not print the `tomcat_` prefix.
+
+#### convert shell to json (go-yq)
+
+```
+$ cat env.sh
+foo="bar"
+is_enabled="true"
+```
+
+```
+$ yq -p props . env.sh -o json
+{
+  "foo": "\"bar\"",
+  "is_enabled": "\"true\""
+}
+```
