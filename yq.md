@@ -83,3 +83,12 @@ $ yq -p props . env.sh -o json
   "is_enabled": "\"true\""
 }
 ```
+
+Using `toml` as input works better:
+```
+$ yq -p toml . env.sh -o json
+{
+  "foo": "bar",
+  "is_enabled": "true"
+}
+```
