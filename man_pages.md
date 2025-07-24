@@ -59,7 +59,6 @@ Each man page includes a one-line summary of the command or function.
 If you're not sure which command or function you want, you can perform a keyword search on the
 summary lines, using `man -k keyword`.
 
-***
 #### Searching in man pages
 ```
 /pattern
@@ -87,6 +86,15 @@ or
 
 ```
 zless /usr/share/man/man3/assert.3.gz
+```
+
+#### how to write manpages
+
+https://man7.org/linux/man-pages/man7/man.7.html
+
+or
+```
+man 7 man
 ```
 
 ## troubleshooting
