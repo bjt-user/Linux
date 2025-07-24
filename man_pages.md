@@ -1,3 +1,5 @@
+## general info
+
 #### installation
 
 To use the `man` command you need to install:
@@ -46,7 +48,7 @@ sleep (1)            - delay for a specified amount of time
 sleep (3)            - sleep for a specified number of seconds
 ```
 
-***
+## usage
 
 #### Searching for man pages
 
@@ -80,6 +82,12 @@ or
 /^\s*-d
 ```
 (`\s` for whitespace)
+
+#### reading raw manpages manual
+
+```
+zless /usr/share/man/man3/assert.3.gz
+```
 
 ## troubleshooting
 
