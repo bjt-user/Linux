@@ -2,6 +2,8 @@
 
 https://wiki.archlinux.org/title/Pacman
 
+https://gitlab.archlinux.org/archlinux/packaging/packages
+
 ## usage
 
 #### install a package
