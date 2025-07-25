@@ -136,6 +136,12 @@ The filename is guessed unless specified with --output [filename]. This action i
 http -v PUT [URL] < myfile.txt
 ```
 
+#### setting the user agent
+
+```
+http --print Hh GET https://www.nasdaq.com/market-activity/index/ndx User-Agent:"John Doe"
+```
+
 ## examples
 
 #### confluence get page by id
