@@ -21,11 +21,18 @@ instead use the backslashed versions `\?`, `\+`, `\{`, `\|`, `\(`, and `\)`.
 
 ## architecture
 
-#### character classes
+### character classes
 
 ```
 info grep 'character classes'
 ```
+
+#### alphanumeric characters
+
+https://en.wikipedia.org/wiki/Alphanumericals
+
+> The complete list of alphanumeric characters is \
+`ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789`
 
 ```
 ‘[:alnum:]’
