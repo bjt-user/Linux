@@ -5,6 +5,11 @@
 man 1 grep
 ```
 
+Full documentation:
+```
+info grep
+```
+
 #### regex flavors
 
 > grep understands three different versions of regular expression syntax:\
@@ -13,6 +18,26 @@ man 1 grep
 > Basic vs Extended Regular Expressions \
 In basic regular expressions the meta-characters `?`, `+`, `{`, `|`, `(`, and `)` lose their special meaning;\
 instead use the backslashed versions `\?`, `\+`, `\{`, `\|`, `\(`, and `\)`.
+
+## architecture
+
+#### character classes
+
+```
+info grep 'character classes'
+```
+
+```
+‘[:alnum:]’
+     Alphanumeric characters: ‘[:alpha:]’ and ‘[:digit:]’; in the ‘C’
+     locale and ASCII character encoding, this is the same as
+     ‘[0-9A-Za-z]’.
+```
+
+For example grep lines that start with alphanumeric characters:
+```
+grep "^[[:alnum:]]" main.s
+```
 
 ## usage
 
