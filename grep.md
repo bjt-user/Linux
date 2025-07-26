@@ -1,3 +1,21 @@
+## general info
+
+#### documentation
+```
+man 1 grep
+```
+
+#### regex flavors
+
+> grep understands three different versions of regular expression syntax:\
+“basic” (BRE), “extended” (ERE) and “perl” (PCRE).
+
+> Basic vs Extended Regular Expressions \
+In basic regular expressions the meta-characters `?`, `+`, `{`, `|`, `(`, and `)` lose their special meaning;\
+instead use the backslashed versions `\?`, `\+`, `\{`, `\|`, `\(`, and `\)`.
+
+## usage
+
 #### basic usage
 ```
 grep -ni word file1.txt
