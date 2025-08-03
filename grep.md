@@ -124,3 +124,10 @@ check for processes by the user who owns the process:
 ```
 # pgrep -afu postgres
 ```
+
+#### find trailing whitespace
+
+Very helpful to find trailing whitespace in files:
+```
+grep -n "[[:space:]]$" myfile.txt
+```
