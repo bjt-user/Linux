@@ -61,3 +61,10 @@ fd -e zip -x unzip
 ```
 fd -e yaml -X vim
 ```
+
+#### replace a string in all files
+
+Replace "1000" by "100" in all files in the current dir:
+```
+fd -tf -X sed -i 's/1000/100/g'
+```
