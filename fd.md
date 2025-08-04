@@ -16,7 +16,7 @@ sudo pacman -S fd
 fd [OPTIONS] [pattern] [path]
 ```
 
-#### find files in a dir that match a regex
+#### find files and dirs in a dir that match a regex
 
 The search pattern is treated as a regular expression.
 
@@ -29,6 +29,13 @@ fd sudo /etc
 
 ```
 fd -g sudo /etc
+```
+
+#### find all regular files in a dir
+
+This will only show regular files (except hidden and .gitignored files):
+```
+fd -tf
 ```
 
 #### find all files with a specific extension
