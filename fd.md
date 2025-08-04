@@ -1,5 +1,9 @@
 ## general info
 
+https://github.com/sharkdp/fd
+
+Written in Rust.
+
 ```
 sudo pacman -S fd
 ```
