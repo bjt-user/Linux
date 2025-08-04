@@ -10,6 +10,27 @@ sudo pacman -S fd
 
 ## usage
 
+#### general syntax
+
+```
+fd [OPTIONS] [pattern] [path]
+```
+
+#### find files in a dir that match a regex
+
+The search pattern is treated as a regular expression.
+
+`sudo` is the search pattern here and `/etc` is the path:
+```
+fd sudo /etc
+```
+
+#### find files with the exact name in a dir
+
+```
+fd -g sudo /etc
+```
+
 #### find all files with a specific extension
 
 ```
