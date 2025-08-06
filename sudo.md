@@ -4,6 +4,8 @@
 sudo -ll
 ```
 
+## logs
+
 #### reduce maximum size of logs
 
 Set max number of log files to 100:
@@ -24,4 +26,10 @@ sudoreplay -l | sort
 
 ```
 sudoreplay -l user myuser
+```
+
+#### filter by date
+
+```
+sudoreplay -l fromdate 2025-08-06 todate 2025-08-07
 ```
