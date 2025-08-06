@@ -1,3 +1,9 @@
+## general info
+
+https://github.com/sudo-project/sudo
+
+## usage
+
 #### print current config
 
 ```
