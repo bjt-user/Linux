@@ -1,4 +1,4 @@
-## search for specific file names
+#### search for specific file names
 
 to show files that start with "te" and are in the current directory:
 ```
