@@ -87,6 +87,13 @@ find . -type f -name myfilename.csv
 find . -type f -mtime -14
 ```
 
+#### -delete
+
+To show successfully deleted files add `-print` to the command:
+```
+find /tmp -iname "*.txt" -type f -delete -print
+```
+
 #### deleting old files (dumps, logs)
 
 deleting logs who were not modified in the last 90 days
