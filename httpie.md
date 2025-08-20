@@ -113,6 +113,12 @@ The `--verify=mysslcert.crt` must come before the http method.
     "JOB-TOKEN: ${CI_JOB_TOKEN}" < ${BINARY}
 ```
 
+#### ignore ssl
+
+```
+http GET [URL] --verify false
+```
+
 #### download file
 
 WARNING: Always use `--output` with `--download`!\
