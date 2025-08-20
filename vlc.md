@@ -1,3 +1,8 @@
+## general info
+
+bug tracker:\
+https://code.videolan.org/videolan/vlc/-/issues/
+
 ## troubleshooting
 
 #### TODO: codec h264 not supported
