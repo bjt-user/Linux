@@ -69,6 +69,13 @@ https://ffmpeg.org/ffmpeg-filters.html#toc-ebur128-1
 
 https://de.wikipedia.org/wiki/EBU-Empfehlung_R_128
 
+#### watch videos
+
+This worked and played the video with sound:
+```
+ffplay myvideo.mp4
+```
+
 ## troubleshooting
 
 #### reencoding
