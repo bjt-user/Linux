@@ -21,3 +21,13 @@ rg -i -u 'startsec'
 ```
 
 > To disable all automatic filtering by default, use `rg -uuu`.
+
+#### dont exclude hidden files
+
+```
+rg -. 'pattern'
+```
+or
+```
+rg --hidden 'pattern'
+```
