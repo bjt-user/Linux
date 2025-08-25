@@ -5,6 +5,6 @@ getent group | sort
 
 #### get information about a user
 ```
-# getent passwd gknxaupvsT
-gknxaupvsT:x:1059:1049:SFTP user Upvest:/home/gknxaupvsT:/sbin/nologin
+# getent passwd gknxa
+gknxa:x:1059:1049:SFTP user:/home/gknxa:/sbin/nologin
 ```
