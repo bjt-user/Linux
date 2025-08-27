@@ -35,6 +35,13 @@ Generate and insert a password for a new service:
 pass generate fooservice.com/myemail@gmail.com
 ```
 
+#### find entries
+
+Find passwords that contain "ansible":
+```
+pass find "ansible"
+```
+
 ## troubleshooting
 
 ### tab-completion does not work
