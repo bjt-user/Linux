@@ -331,8 +331,6 @@ to disable:
 :set noscrollbind
 ```
 
-***
-
 #### multiline edit
 
 to write in multiple lines at once:
@@ -344,7 +342,10 @@ to write in multiple lines at once:
 - hit <kbd>Esc</kbd>
   => and your text will appear in multiple lines
 
-***
+append a `+` sign after every line from line 10 to 20:
+```
+:10,20s/$/+/gc
+```
 
 #### Execute terminal commands inside of vim
 
