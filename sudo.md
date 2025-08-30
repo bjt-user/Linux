@@ -2,6 +2,14 @@
 
 https://github.com/sudo-project/sudo
 
+Big project:
+```
+C                              374          16171          23117         113271
+PO File                         75          31481          51072          81558
+Bourne Shell                    95           8883           6392          51409
+...
+```
+
 ## usage
 
 #### print current config
