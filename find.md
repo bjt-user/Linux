@@ -114,6 +114,16 @@ Find all files in a directory and all its subdirectories:
 find . -type f | wc -l
 ```
 
+#### exclude files with specific name
+
+```
+sudo find ~ -type d -name "*vim*" ! -name "neo*"
+```
+
+This will only exclude `neo*` in the basename of files, not inside the path.
+
+### ownership
+
 #### find files that are owned by a specific user
 
 ```
@@ -126,10 +136,12 @@ find . -type f -user root
 find . ! -user tomcat
 ```
 
-#### exclude files with specific name
+#### find files that have no group attached
 
-```
-sudo find ~ -type d -name "*vim*" ! -name "neo*"
-```
+When a group was given a new id or was deleted, the files owned by that group \
+will not be attached to any group but are still owned by a specific group id.
 
-This will only exclude `neo*` in the basename of files, not inside the path.
+Find files that are not owned by any existing group:
+```
+find . -nogroup
+```
