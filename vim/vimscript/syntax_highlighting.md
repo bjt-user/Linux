@@ -11,3 +11,10 @@
 ```
 :hi
 ```
+
+#### show a specific highlight group
+
+```
+:hi Todo
+Todo           xxx term=standout ctermfg=0 ctermbg=11 guifg=Blue guibg=Yellow
+```
