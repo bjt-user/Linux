@@ -1,8 +1,20 @@
 ## general info
 
 ```
+:help filetypes
+```
+
+```
 :help ftdetect
 ```
+
+#### predefined filetypes
+
+They are defined in `$VIMRUNTIME/filetype.vim`.
+
+For example `/usr/share/vim/vim91/filetype.vim`.
+
+Don't edit this file as it will be overwritten by updates.
 
 ## usage
 
