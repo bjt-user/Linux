@@ -27,6 +27,15 @@ in your vimscripts for syntax highlighting to take effect.
 Todo           xxx term=standout ctermfg=0 ctermbg=11 guifg=Blue guibg=Yellow
 ```
 
+#### syntax match
+
+This will hightlight all lines that start with a pound sign:
+```
+syntax match heading "^#.*"
+
+highlight heading ctermfg=10 cterm=bold
+```
+
 ## examples
 
 #### keywords
