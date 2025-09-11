@@ -14,6 +14,17 @@ highlight clear
 ```
 for some reason to make it work.
 
+#### best practice
+
+> It is usually a good practice not to define exact colors in a syntax files \
+unless it is for your own use only.
+
+> Usual approach is to link syntax definitions to existing highlight groups,\
+:h group-name should give you an idea what is available.
+
+> Having your syntax definitions linked to the existing highlight group names \
+would make it work with different colorschemes (dark/light/whatever).
+
 ## usage
 
 #### highlight clear
