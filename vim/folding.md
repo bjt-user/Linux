@@ -2,6 +2,14 @@
 
 https://www.vimfromscratch.com/articles/vim-folding
 
+## folding bindings
+
+`za` toggle the folding under cursor \
+`zo` open the folding under cursor \
+`zc` close the folding under cursor \
+`zM` to close all folds \
+`zR` to open all folds
+
 ## foldmethod manual
 
 If `set foldmethod?` is manual you can make parts of the buffer foldable.
