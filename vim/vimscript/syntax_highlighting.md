@@ -4,11 +4,21 @@
 :help highlight
 ```
 
+#### location of syntax files
+
+Put them in `~/.vim/syntax`.
+
+If you put them in `~/.vim/after/syntax` you need to use
+```
+highlight clear
+```
+for some reason to make it work.
+
 ## usage
 
 #### highlight clear
 
-For some reason you need to do:
+If you put your syntax files in `~/.vim/after/syntax` you need
 ```
 highlight clear
 ```
