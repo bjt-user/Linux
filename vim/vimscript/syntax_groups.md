@@ -8,4 +8,14 @@ inside the group "block":
 syntax region block start="{" end="}" skip="#.*" contains=comment fold
 ```
 
-## TODO: contained keyword
+## contained keyword
+
+```
+contained                                               :syn-contained
+When the "contained" argument is given, this item will not be recognized at
+the top level, but only when it is mentioned in the "contains" field of
+another match.
+Example:
+:syntax keyword Todo    TODO    contained
+:syntax match   Comment "//.*"  contains=Todo
+```
