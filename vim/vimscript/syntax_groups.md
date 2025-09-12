@@ -1,3 +1,10 @@
+## show a syntax group
+
+List the group "markdownH2":
+```
+syn list markdownH2
+```
+
 ## nested syntax groups
 
 Use the `contains` keyword.
