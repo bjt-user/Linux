@@ -57,6 +57,16 @@ syntax match heading "^#.*"
 highlight heading ctermfg=10 cterm=bold
 ```
 
+#### syntax region
+
+This worked for defining a region (or syntax group) named "block" that is \
+surrounded by quirly braces:
+```
+syntax region block start="{" end="}"
+
+highlight block cterm=inverse
+```
+
 ## examples
 
 #### keywords
