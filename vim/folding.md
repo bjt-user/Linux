@@ -26,4 +26,4 @@ set foldmethod=indent
 
 Use `zM` to close all folds and `zR` to open all folds.
 
-This seems to work good for go files.
+For go files it did not fold some main functions...
