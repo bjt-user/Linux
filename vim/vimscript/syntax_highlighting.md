@@ -67,6 +67,12 @@ syntax region block start="{" end="}"
 highlight block cterm=inverse
 ```
 
+You can use `skip=[regex]` to skip looking for the end of the region on \
+lines that match a regex:
+```
+syntax region block start="{" end="}" skip="^#.*"
+```
+
 ## examples
 
 #### keywords
