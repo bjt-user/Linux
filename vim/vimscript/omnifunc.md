@@ -26,6 +26,16 @@ On the second invocation the arguments are:
 So you have to check if `findstart` is 1, then look at what is behind the cursor \
 and return the number of columns that have to be replaced by a completion.
 
+If the last strings are not what you want you can probably skip completion with -2:
+```
+Negative return values:
+   -2	To cancel silently and stay in completion mode.
+   -3	To cancel silently and leave completion mode.
+   Another negative value: completion starts at the cursor column
+```
+
+TODO: How to check the words behind the cursor?
+
 ## examples
 
 #### broken example
