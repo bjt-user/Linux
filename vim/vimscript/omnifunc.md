@@ -95,6 +95,8 @@ setlocal completeopt=menu,menuone,noselect
 setlocal omnifunc=MyOmniFunc
 ```
 
+Doesnt work if you already typed part of the module like `ansible.builtin.gr`.
+
 #### broken example
 
 It does some completion, but not the way you want to.
