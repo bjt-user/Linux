@@ -83,6 +83,30 @@ Pattern not found
 
 ## examples
 
+#### simple func
+
+This function will always propose the string "foobar" with the beginning of \
+the line prefixed. (Beginning of the line until the cursor + "foobar")
+
+```
+vim9script
+
+def MyOmniFunc(findstart: number, base: string): any
+	var matches = []
+
+	if findstart == 1
+		return 0
+	endif
+
+	add(matches, base .. "foobar")
+
+	return matches
+enddef
+
+setlocal completeopt=menu,menuone,noselect
+setlocal omnifunc=MyOmniFunc
+```
+
 #### completion for ansible builtin modules
 
 ```
