@@ -1,6 +1,7 @@
 ## general information
 
-More useful than `search` because it also returns the cursor position.
+More useful than `search` because it also returns the column of the first char \
+of the match.
 
 ## examples
 
