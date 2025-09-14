@@ -2,7 +2,32 @@
 
 `:h match()`
 
+```
+match({expr}, {pat} [, {start} [, {count}]])                    match()
+When {expr} is a List then this returns the index of the
+first item where {pat} matches.  Each item is used as a
+String, Lists and Dictionaries are used as echoed.
+
+Otherwise, {expr} is used as a String.  The result is a
+Number, which gives the index (byte offset) in {expr} where
+{pat} matches.
+
+A match at the first character or List item returns zero.
+If there is no match -1 is returned.
+
+For getting submatches see matchlist().
+```
+
+```
+If {start} is given, the search starts from byte index
+{start} in a String or item {start} in a List.
+The result, however, is still the index counted from the
+first character/item.
+```
+
+Return value:\
 > If there is no match -1 is returned.
+
 
 ## examples
 
