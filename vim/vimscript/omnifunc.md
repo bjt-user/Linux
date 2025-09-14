@@ -9,18 +9,24 @@ Write a custom omnifunc to get your own autocompletion.
 ```
 
 ```
-:h completefunc
-```
-
-```
 The function is called in two different ways:
 - First the function is called to find the start of the text to be completed.
 - Later the function is called to actually find the matches.
+```
 
+The function is called two times.
+
+#### first call
+
+```
 On the first invocation the arguments are:
    a:findstart  1
-   a:base       empty
+   a:base	empty
+```
 
+#### return value (first call)
+
+```
 The function must return the column where the completion starts.
 It must be a number between zero and the cursor column "col('.')".
 This involves looking at the characters just before the cursor and
@@ -29,13 +35,7 @@ The text between this column and the cursor column will be replaced with the mat
 If the returned value is larger than the cursor column, the cursor column is used.
 ```
 
-The function is called two times.
-
-```
-On the first invocation the arguments are:
-   a:findstart  1
-   a:base	empty
-```
+#### second call
 
 ```
 On the second invocation the arguments are:
@@ -55,7 +55,25 @@ Negative return values:
    Another negative value: completion starts at the cursor column
 ```
 
-TODO: How to check the words behind the cursor?
+#### return value (second call)
+
+```
+The function must return a List with the matching words.
+These matches usually include the "a:base" text.
+When there are no matches return an empty List.
+Note that the cursor may have moved since the first invocation,
+the text may have been changed.
+
+In order to return more information than the matching words, return a Dict
+that contains the List.
+The Dict can have these items:
+        words           The List of matching words (mandatory).
+        refresh         A string to control re-invocation of the function
+                        (optional).
+                        The only value currently recognized is "always", the
+                        effect is that the function is called whenever the
+                        leading text is changed.
+```
 
 ## examples
 
