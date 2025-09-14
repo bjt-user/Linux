@@ -42,6 +42,14 @@ The normal way to access an entry is by putting the key in square brackets:
 You can add new entries to an existing Dictionary this way, unlike Lists.
 ```
 
+```
+If you want both the key and the value use the items() function.  It returns
+a List in which each item is a List with two items, the key and the value:
+        :for [key, value] in items(mydict)
+        :   echo key .. ': ' .. value
+        :endfor
+```
+
 ## examples
 
 #### simple dictionary
@@ -61,4 +69,16 @@ outputs:
 ```
 {'Adam': 55, 'Joe': 44}
 dict<number>
+```
+
+#### print all key value pairs of a dict
+
+```
+vim9script
+
+var my_dict = {Joe: 22, John: 88}
+
+for [key,value] in items(my_dict)
+	echo key .. ": " .. value
+endfor
 ```
