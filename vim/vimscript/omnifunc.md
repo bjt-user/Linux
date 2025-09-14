@@ -42,6 +42,38 @@ TODO: How to check the words behind the cursor?
 
 ## examples
 
+#### completion for ansible builtin modules
+
+```
+vim9script
+
+def MyOmniFunc(findstart: number, base: string): any
+	# Define the dictionary
+	var my_dict = {group: 'manage groups', user: 'manage users'}
+
+	if findstart == 1
+		var complete_start = searchpos('ansible.builtin.', 'bn', line('.'))[1]
+
+		if complete_start == 0
+			return -3
+		endif
+
+		return complete_start - 1
+	endif
+
+
+	var matches = []
+	for key in keys(my_dict)
+		add(matches, {word: base .. key, menu: my_dict[key]})
+	endfor
+	return {words: matches}
+enddef
+
+# Set the custom omnifunction
+setlocal completeopt=menu,menuone,noselect
+setlocal omnifunc=MyOmniFunc
+```
+
 #### broken example
 
 It does some completion, but not the way you want to.
