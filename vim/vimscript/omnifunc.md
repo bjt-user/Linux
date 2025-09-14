@@ -75,6 +75,12 @@ The Dict can have these items:
                         leading text is changed.
 ```
 
+If an empty list is returned the following red warning appears under the \
+status bar:
+```
+Pattern not found
+```
+
 ## examples
 
 #### completion for ansible builtin modules
