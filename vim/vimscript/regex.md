@@ -1,5 +1,14 @@
 # investigate vims regex implementation
 
+## general info
+
+`:h pattern-overview`
+
+TODO: test this:
+```
+/\%#    \%#     \%#     cursor position /zero-width
+```
+
 #### match comments
 
 ```
