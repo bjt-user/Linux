@@ -1,3 +1,11 @@
+## usage
+
+#### append to list
+
+```
+add(my_list, "hello")
+```
+
 ## examples
 
 #### defining an empty list
