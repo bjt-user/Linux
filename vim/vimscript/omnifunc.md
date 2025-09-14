@@ -12,6 +12,23 @@ Write a custom omnifunc to get your own autocompletion.
 :h completefunc
 ```
 
+```
+The function is called in two different ways:
+- First the function is called to find the start of the text to be completed.
+- Later the function is called to actually find the matches.
+
+On the first invocation the arguments are:
+   a:findstart  1
+   a:base       empty
+
+The function must return the column where the completion starts.
+It must be a number between zero and the cursor column "col('.')".
+This involves looking at the characters just before the cursor and
+including those characters that could be part of the completed item.
+The text between this column and the cursor column will be replaced with the matches.
+If the returned value is larger than the cursor column, the cursor column is used.
+```
+
 The function is called two times.
 
 ```
