@@ -39,3 +39,15 @@ is a line
 ```
 
 It starts at index 5 `i` and then reads in 9 chars.
+
+#### without {len}
+
+```
+vim9script
+
+echo strcharpart("foobar", 3)
+```
+outputs:
+```
+bar
+```
