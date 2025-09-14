@@ -16,3 +16,10 @@ let foo = searchpos("words", "bn")
 
 echo foo
 ```
+The output depends on the cursor position.
+
+Possible output is:
+```
+[6, 11]
+```
+Where the first number is the row and the second the column of the first char.
