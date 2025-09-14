@@ -5,6 +5,10 @@ Write a custom omnifunc to get your own autocompletion.
 #### documentation
 
 ```
+:h complete-func
+```
+
+```
 :h completefunc
 ```
 
