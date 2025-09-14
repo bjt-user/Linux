@@ -1,3 +1,9 @@
+## general info
+
+`:h match()`
+
+> If there is no match -1 is returned.
+
 ## examples
 
 #### substring
