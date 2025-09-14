@@ -1,6 +1,6 @@
 ## examples
 
-#### get substring by start and end index
+#### get substring by start index and length
 
 ```
 vim9script
@@ -11,3 +11,5 @@ outputs
 ```
 is a line
 ```
+
+It starts at index 5 `i` and then reads in 9 chars.
