@@ -5,9 +5,9 @@
 ```
 vim9script
 
-var my_object = []
+var my_list = []
 
-echo typename(my_object)
+echo typename(my_list)
 ```
 outputs:
 ```
