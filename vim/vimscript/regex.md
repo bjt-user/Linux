@@ -9,6 +9,8 @@ TODO: test this:
 /\%#    \%#     \%#     cursor position /zero-width
 ```
 
+## usage
+
 #### match comments
 
 ```
