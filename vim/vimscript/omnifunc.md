@@ -16,6 +16,12 @@ The function is called in two different ways:
 
 The function is called two times.
 
+```
+Note that the cursor may have moved since the first invocation, the
+text may have been changed.
+```
+This is IMPORTANT - the cursor moves after the first invocation!
+
 #### first call
 
 ```
