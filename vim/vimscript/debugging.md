@@ -2,6 +2,10 @@
 
 Might be helpful for "printf debugging".
 
+But it is probably better to join at least two `echoerr` commands together \
+because then it does not get overwritten by subsequent echoes and you \
+have to "acknoledge" it by pressing enter.
+
 ```
 echoerr "foobar"
 ```
