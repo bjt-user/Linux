@@ -14,3 +14,8 @@ script "export" needs to be used for those to be used elsewhere.
         def g:ThatFunction()        # global
         export def Function()       # for import and import autoload
 ```
+
+```
+The use of the "s:" prefix is not supported at the Vim9 script level.
+All functions and variables without a prefix are script-local.
+```
