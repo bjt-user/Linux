@@ -20,6 +20,12 @@ Exit Code 0, so it seemed to have worked.
 
 ## syntax tests
 
+#### general info
+
+Read `runtime/syntax/testdir/README.txt`.
+
+This tells how to compare failed tests with the expected result.
+
 #### run tests
 
 ```
@@ -33,7 +39,7 @@ Those dirs can be cleaned with
 ```
 make clean
 ```
-inside `testdir`.
+inside `runtime/syntax`.
 
 #### viewing screendumps
 
