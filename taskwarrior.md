@@ -7,3 +7,9 @@ task 20 modify wait:2025-05-19
 ```
 
 This task will then not be visible anymore until that date arrives.
+
+#### show waiting tasks (scheduled for the future)
+
+```
+task waiting
+```
