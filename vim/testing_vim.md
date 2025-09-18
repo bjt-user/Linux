@@ -1,3 +1,5 @@
+## general tests
+
 `src/testdir/README.txt`
 
 > 4) Use make test_<subject> to run a single test.
@@ -15,3 +17,27 @@ sys	0m0.063s
 ```
 
 Exit Code 0, so it seemed to have worked.
+
+## syntax tests
+
+#### run tests
+
+```
+cd runtime/syntax/testdir
+make test
+```
+
+After that the dirs `done` and `failed` with screen dumps will be created.
+
+Those dirs can be cleaned with
+```
+make clean
+```
+inside `testdir`.
+
+#### viewing screendumps
+
+In `runtime/syntax/testdir/failed` do:
+```
+vim --clean -S sh_02_01.dump
+```
