@@ -18,3 +18,8 @@ To build Vim on Ubuntu from scratch on a clean system using git:
         Run tests to check there are no problems:
         % make test
 ```
+
+`libtool` might be this pacman package:
+```
+core/libtool
+```
