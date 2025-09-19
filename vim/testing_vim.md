@@ -43,7 +43,14 @@ inside `runtime/syntax`.
 
 #### viewing screendumps
 
-In `runtime/syntax/testdir/failed` do:
+The files in dumps (for example `runtime/syntax/testdir/dumps/sh_ksh93_generic_01.dump`) \
+are not really human readable.
+
 ```
-vim --clean -S sh_02_01.dump
+:call term_dumpload('awk_00.dump')
+```
+
+If you have the file opened in vim you can do:
+```
+:call term_dumpload(expand('%'))
 ```
