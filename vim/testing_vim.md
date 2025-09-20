@@ -54,3 +54,11 @@ If you have the file opened in vim you can do:
 ```
 :call term_dumpload(expand('%'))
 ```
+
+#### rerecord tests
+
+1. edit files in `input` dir (maybe add comments)
+2. run `make clean;make test` to get the failures
+3. carefully check that the screendumps in the `failed` dir are good
+4. move the screendumps from the `failed` dir to the `dumps` dir
+5. run `make clean;make test` and no failures should be visible
