@@ -62,3 +62,18 @@ If you have the file opened in vim you can do:
 3. carefully check that the screendumps in the `failed` dir are good
 4. move the screendumps from the `failed` dir to the `dumps` dir
 5. run `make clean;make test` and no failures should be visible
+
+#### adding a new test
+
+1. Create a source file in the language you want to test in the "input"
+directory.
+2. run `make clean;make test`
+
+(Or you can run the tests for a filetype only by passing its name as another
+target, e.g. "java", before "test"):
+```
+make java test
+```
+3. the new test will fail, check the screendump in `failed` dir
+4. put the screendump from `failed` dir to `dumps` dir
+5. run `make clean;make test` and it should succeed now
