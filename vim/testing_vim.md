@@ -1,3 +1,7 @@
+# testing vim
+
+This is about testing vim itself for doing development on vim.
+
 ## general tests
 
 `src/testdir/README.txt`
