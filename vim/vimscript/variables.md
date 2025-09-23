@@ -30,6 +30,10 @@ This works for legacy vimscript:
 ```
 let g:my_var = 0
 ```
+or
+```
+const g:my_var = 0
+```
 
 TODO: vim9script
 
