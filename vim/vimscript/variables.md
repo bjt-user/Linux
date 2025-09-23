@@ -35,12 +35,16 @@ or
 const g:my_var = 0
 ```
 
-TODO: vim9script
+For vim9script this works:
+```
+const g:my_var = "foo"
+```
+or
+```
+g:my_var = "foo"
+```
 
-I think it is:
-```
-g:my_var = 1
-```
+The `var` keyword will not work in `vim9script`.
 
 ## print variables in scope
 
