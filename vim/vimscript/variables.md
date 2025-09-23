@@ -31,6 +31,13 @@ This works for legacy vimscript:
 let g:my_var = 0
 ```
 
+TODO: vim9script
+
+I think it is:
+```
+g:my_var = 1
+```
+
 ## print variables in scope
 
 #### print all globals vars
