@@ -1,3 +1,10 @@
+## general info
+
+See the default groups:
+```
+:h group-name
+```
+
 ## show a syntax group
 
 List the group "markdownH2":
