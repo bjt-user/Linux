@@ -30,3 +30,10 @@ This regex seems to be compatible with basic `grep`.
 
 According to regex101.com:\
 > `*` matches the previous token between zero and unlimited times
+
+#### number of occurencces
+
+Looks like you have to escape the curly braces:
+```
+start="^#\{1,6}"
+```
