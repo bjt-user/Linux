@@ -29,6 +29,35 @@ let my_list = ['Adam','Eva','Hugo']
 echo my_list
 ```
 
+#### minimum/maximum of a list
+
+This will return the minimum value of a list:
+```
+min(my_list)
+```
+If it is a list of numbers, the lowest number will be returned.
+
+
+It works for a list of strings as well:
+```
+vim9script
+
+var names =
+    [
+        "Zorro",
+        "Adalbert",
+        "Hugo",
+    ]
+
+echo "min: " .. min(names)
+echo "max: " .. max(names)
+```
+outputs:
+```
+min: Adalbert
+max: Zorro
+```
+
 ## examples
 
 #### defining an empty list
