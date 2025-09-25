@@ -6,6 +6,19 @@
 :h var
 ```
 
+## types
+
+#### get type of a variable
+
+```
+var flevelmin = 0
+echo typename(flevelmin)
+```
+will output
+```
+number
+```
+
 ## declaring vars
 
 #### declare local variable
