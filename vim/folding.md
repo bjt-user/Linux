@@ -8,7 +8,10 @@ https://www.vimfromscratch.com/articles/vim-folding
 `zo` open the folding under cursor \
 `zc` close the folding under cursor \
 `zM` to close all folds \
-`zR` to open all folds
+`zR` to open all folds \
+
+`zm` reduce folding level by one (fold more) \
+`zr` increment folding level by one (reduce folding)
 
 ## foldmethod manual
 
