@@ -83,6 +83,14 @@ Sets the maximum nesting of folds for the "indent" and "syntax" methods.
 This avoids that too many folds will be created.
 Using more than 20 doesn't work, because the internal limit is 20.
 ```
+
+### foldignore
+
+Show the foldignore char:
+```
+set foldignore?
+```
+
 ## foldmethod manual
 
 If `set foldmethod?` is manual you can make parts of the buffer foldable.
