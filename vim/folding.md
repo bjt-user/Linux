@@ -1,8 +1,16 @@
-## sources
+## general info
+
+#### sources
 
 https://www.vimfromscratch.com/articles/vim-folding
 
-## folding bindings
+#### behavior
+
+If there is only one line that would be folded it will not be folded.
+
+## usage
+
+### folding bindings
 
 `za` toggle the folding under cursor \
 `zo` open the folding under cursor \
@@ -12,6 +20,8 @@ https://www.vimfromscratch.com/articles/vim-folding
 
 `zm` reduce folding level by one (fold more) \
 `zr` increment folding level by one (reduce folding)
+
+### foldmethods
 
 ## foldmethod manual
 
@@ -31,7 +41,7 @@ Use `zM` to close all folds and `zR` to open all folds.
 
 For go files it did not fold some main functions...
 
-## foldcolumn
+### foldcolumn
 
 ```
 'foldcolumn' 'fdc'
@@ -43,4 +53,11 @@ When non-zero, a column with the specified width is shown at the side
 of the window which indicates open and closed folds.
 The maximum value is 12.
 See folding.
+```
+
+### foldlevel
+
+see current foldlevel:
+```
+set foldlevel?
 ```
