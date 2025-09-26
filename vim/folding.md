@@ -14,6 +14,11 @@ If there is only one line that would be folded it will not be folded.
 > You can yank, delete and put folds as if it was a single line.\
 This is very useful if you want to reorder functions in a program.
 
+> Folds are opened automatically when jumping around or moving the cursor left
+or right.\
+For example, the "0" command opens the fold under the cursor
+(if 'foldopen' contains "hor", which is the default).
+
 ## usage
 
 ### folding bindings
