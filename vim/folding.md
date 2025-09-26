@@ -34,24 +34,6 @@ For example, the "0" command opens the fold under the cursor
 
 ### foldmethods
 
-## foldmethod manual
-
-If `set foldmethod?` is manual you can make parts of the buffer foldable.
-
-Select lines with `V` and hit `zf`.
-
-Now you can open that fold with `zo` and close it with `zc`.
-
-## foldmethod indent
-
-```
-set foldmethod=indent
-```
-
-Use `zM` to close all folds and `zR` to open all folds.
-
-For go files it did not fold some main functions...
-
 ### foldcolumn
 
 ```
@@ -101,3 +83,20 @@ Sets the maximum nesting of folds for the "indent" and "syntax" methods.
 This avoids that too many folds will be created.
 Using more than 20 doesn't work, because the internal limit is 20.
 ```
+## foldmethod manual
+
+If `set foldmethod?` is manual you can make parts of the buffer foldable.
+
+Select lines with `V` and hit `zf`.
+
+Now you can open that fold with `zo` and close it with `zc`.
+
+## foldmethod indent
+
+```
+set foldmethod=indent
+```
+
+Use `zM` to close all folds and `zR` to open all folds.
+
+For go files it did not fold some main functions...
