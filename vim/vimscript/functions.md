@@ -15,3 +15,21 @@ You need to make them global so you can access them from outside:
 ```
 def g:GetStrAtCursor()
 ```
+
+## examples
+
+#### return a number
+
+```
+vim9script
+
+def Three(): number
+	return 3
+enddef
+
+echo Three()
+```
+outputs:
+```
+3
+```
