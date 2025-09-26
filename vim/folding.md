@@ -91,6 +91,20 @@ Show the foldignore char:
 set foldignore?
 ```
 
+`:h foldignore`:
+```
+foldignore' 'fdi'
+'foldignore' 'fdi'      string (default: "#")
+                        local to window
+                        {not available when compiled without the +folding
+                        feature}
+Used only when 'foldmethod' is "indent".
+Lines starting with characters in 'foldignore' will get their fold level from surrounding
+lines.
+White space is skipped before checking for this character.
+The default "#" works well for C programs.  See fold-indent.
+```
+
 ## foldmethod manual
 
 If `set foldmethod?` is manual you can make parts of the buffer foldable.
