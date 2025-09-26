@@ -30,3 +30,17 @@ set foldmethod=indent
 Use `zM` to close all folds and `zR` to open all folds.
 
 For go files it did not fold some main functions...
+
+## foldcolumn
+
+```
+'foldcolumn' 'fdc'
+'foldcolumn' 'fdc'      number (default 0)
+                        local to window
+                        {not available when compiled without the +folding
+                        feature}
+When non-zero, a column with the specified width is shown at the side
+of the window which indicates open and closed folds.
+The maximum value is 12.
+See folding.
+```
