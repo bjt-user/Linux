@@ -55,6 +55,20 @@ The maximum value is 12.
 See folding.
 ```
 
+`:h fold-foldcolumn`:
+```
+An open fold is indicated with a column that has a '-' at the top and '|'
+characters below it.  This column stops where the open fold stops.  When folds
+nest, the nested fold is one character right of the fold it's contained in.
+
+A closed fold is indicated with a '+'.
+
+These characters can be changed with the 'fillchars' option.
+
+Where the fold column is too narrow to display all nested folds, digits are
+shown to indicate the nesting level.
+```
+
 ### foldlevel
 
 see current foldlevel:
