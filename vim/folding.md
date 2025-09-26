@@ -86,3 +86,18 @@ see current foldlevel:
 ```
 set foldlevel?
 ```
+
+### foldnestmax
+
+`:h foldnestmax`
+
+```
+'foldnestmax' 'fdn'
+'foldnestmax' 'fdn'     number (default: 20)
+                        local to window
+                        {not available when compiled without the +folding
+                        feature}
+Sets the maximum nesting of folds for the "indent" and "syntax" methods.
+This avoids that too many folds will be created.
+Using more than 20 doesn't work, because the internal limit is 20.
+```
