@@ -1,3 +1,13 @@
+## general info
+
+```
+:h list
+```
+
+```
+:h list-func
+```
+
 ## usage
 
 #### append to list
@@ -56,6 +66,27 @@ outputs:
 ```
 min: Adalbert
 max: Zorro
+```
+
+#### count number of occurences in a list
+
+Count the number of times an element is in a list.
+```
+vim9script
+
+var my_list = [
+	1,
+	10,
+	1,
+	5,
+	1,
+]
+
+echo count(my_list, 1
+```
+outputs:
+```
+3
 ```
 
 ## examples
