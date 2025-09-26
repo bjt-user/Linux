@@ -105,6 +105,11 @@ White space is skipped before checking for this character.
 The default "#" works well for C programs.  See fold-indent.
 ```
 
+To set foldignore to nothing:
+```
+set foldignore=
+```
+
 ## foldmethod manual
 
 If `set foldmethod?` is manual you can make parts of the buffer foldable.
