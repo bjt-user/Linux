@@ -2,11 +2,17 @@
 
 #### sources
 
+`:h usr_28.txt`
+
 https://www.vimfromscratch.com/articles/vim-folding
 
 #### behavior
 
 If there is only one line that would be folded it will not be folded.
+
+`:h 28.3`:
+> You can yank, delete and put folds as if it was a single line.\
+This is very useful if you want to reorder functions in a program.
 
 ## usage
 
