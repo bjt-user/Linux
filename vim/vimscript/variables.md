@@ -72,3 +72,20 @@ echo g:
 ```
 echo b:
 ```
+
+## predefined vim variables
+
+```
+:h :v
+```
+
+```
+v:lnum lnum-variable
+v:lnum
+
+Line number for the 'foldexpr' fold-expr, 'formatexpr' and
+'indentexpr' expressions, tab page number for 'guitablabel'
+and 'guitabtooltip'.
+Only valid while one of these expressions is being evaluated.
+Read-only when in the sandbox.
+```
