@@ -30,6 +30,10 @@ This also tells you the path to the config file:
 
 https://neovim.io/doc/user/lsp.html
 
+`:h lsp`
+
+`:h lsp-core`
+
 Create a file `${HOME}/.config/nvim/lsp/go.lua` with this content:
 ```
 vim.lsp.config['gols'] = {
