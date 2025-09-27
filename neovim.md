@@ -34,6 +34,8 @@ https://neovim.io/doc/user/lsp.html
 
 `:h lsp-core`
 
+Example configurations: https://github.com/neovim/nvim-lspconfig/tree/master/lsp
+
 Create a file `${HOME}/.config/nvim/lsp/go.lua` with this content:
 ```
 return {
