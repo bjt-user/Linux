@@ -1,3 +1,7 @@
+## general info
+
+#### installation
+
 ```
 sudo apt install neovim
 ```
@@ -20,7 +24,6 @@ This also tells you the path to the config file:
 :help config
 ```
 
-***
 ## HOW TO INSTALL PLUGINS
 
 (https://github.com/junegunn/vim-plug)
