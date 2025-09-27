@@ -24,9 +24,17 @@ This also tells you the path to the config file:
 :help config
 ```
 
-## HOW TO INSTALL PLUGINS
+## usage
+
+#### native lsp
+
+https://neovim.io/doc/user/lsp.html
+
+#### how to install plugins
 
 (https://github.com/junegunn/vim-plug)
+
+Are there also `vim packages`?
 
 #### with "vim-plug"
 
@@ -126,9 +134,7 @@ now I open nvim by typing `nvim` and get the following error:
 
 to build that from source you have to use `yarn` and I dont know about that and it didnt work out of the box
 
-***
-
-#### How to install a bash language server?
+#### How to install a bash language server? (with coc.nvim)
 
 ```
 sudo dnf install nodejs
@@ -185,9 +191,7 @@ https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#manage-coc-extens
 You could also manage extensions in a config file\
 https://github.com/neoclide/coc.nvim/wiki/Language-servers
 
-***
-
-#### java language server
+#### java language server (with coc.nvim)
 
 It does not really work at the moment.\
 I insatlled like this:
@@ -220,7 +224,6 @@ tar -xvf jdt-language-server-latest.tar.gz
 
 => and now it works! but it takes a second to load the completion!
 
-***
 #### coc usage
 
 <kbd>ctrl + n</kbd> - select next suggestion \
