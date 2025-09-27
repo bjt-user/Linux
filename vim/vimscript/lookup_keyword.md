@@ -28,3 +28,11 @@ Special cases:
   in:
         !man 2 mkdir
 ```
+
+## usage
+
+#### show keywordprg
+
+```
+set keywordprg?
+```
