@@ -36,7 +36,7 @@ https://neovim.io/doc/user/lsp.html
 
 Create a file `${HOME}/.config/nvim/lsp/go.lua` with this content:
 ```
-vim.lsp.config['gols'] = {
+return {
   -- Command and arguments to start the server.
   cmd = { 'gopls' },
   -- Filetypes to automatically attach to.
@@ -48,8 +48,6 @@ Inside `nvim` you need to enable it:
 ```
 :lua vim.lsp.enable('go')
 ```
-NOTE: This string must be equal to the basename of the config file!\
-In this case (`go.lua`).
 
 You can check if it works with:
 ```
@@ -61,8 +59,6 @@ And it is pretty fast.
 
 However it does not do trigger `go fmt` on save and it does not use \
 the thing that automatically fixes the imports.
-
-Sometimes it doesnt work though...
 
 The log file for neovim lsp is here:
 ```
