@@ -5,6 +5,10 @@
 ```
 
 ```
+:h keywordprg
+```
+
+```
 K
 Run a program to lookup the keyword under the cursor.
 The name of the program is given with the 'keywordprg' (kp) option (default is "man").
