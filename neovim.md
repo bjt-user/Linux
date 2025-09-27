@@ -58,6 +58,13 @@ And it is pretty fast.
 However it does not do trigger `go fmt` on save and it does not use \
 the thing that automatically fixes the imports.
 
+Sometimes it doesnt work though...
+
+The log file for neovim lsp is here:
+```
+${HOME}/.local/state/nvim/lsp.log
+```
+
 #### how to install plugins
 
 (https://github.com/junegunn/vim-plug)
