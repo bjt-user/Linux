@@ -267,14 +267,3 @@ keybindings and executing terminal commands
 
 If you import the keybindings from vim you should delete the "!clear" commands.
 It creates unwanted characters in the output and you don't need to clear the terminal in nvim at this point.
-
----------------
-Multiline edits
----------------
-
-To insert text in multiple lines at once do the following:
-ctrl + v    : to go into visual block mode
-go up or down with j/k to select multiple lines
-I           : to go into insert mode on multiple lines (uppercase so shift+i)
-ESC         : to go out of insert mode
-Then the text should appear in multiple lines.
