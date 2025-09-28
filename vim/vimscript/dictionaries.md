@@ -50,6 +50,22 @@ a List in which each item is a List with two items, the key and the value:
         :endfor
 ```
 
+#### functions for dicts
+
+`:h E715`
+
+```
+Functions that can be used with a Dictionary:
+        :if has_key(dict, 'foo')        " TRUE if dict has entry with key "foo"
+        :if empty(dict)                 " TRUE if dict is empty
+        :let l = len(dict)              " number of items in dict
+        :let big = max(dict)            " maximum value in dict
+        :let small = min(dict)          " minimum value in dict
+        :let xs = count(dict, 'x')      " count nr of times 'x' appears in dict
+        :let s = string(dict)           " String representation of dict
+        :call map(dict, '">> " .. v:val')  " prepend ">> " to each item
+```
+
 ## examples
 
 #### simple dictionary
