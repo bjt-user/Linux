@@ -1,5 +1,20 @@
 ## general info
 
+#### resources
+
+https://neovim.io/doc/user/lua-guide.html#lua-guide
+
+#### differences to vim
+
+https://neovim.io/doc/user/vim_diff.html#_removed-legacy-features
+
+If you import the keybindings from vim you should delete the "!clear" commands.\
+It creates unwanted characters in the output and you don't need to clear the terminal in nvim at this point.
+
+> Vim9script (the Vim 9+ flavor of Vimscript) is not supported.
+
+> cscope support was removed in favour of plugin-based solutions such as: https://github.com/dhananjaylatkar/cscope_maps.nvim
+
 #### installation
 
 ```
@@ -298,12 +313,3 @@ function! ShowDocumentation()
   endif
 endfunction
 ```
-
-## DIFFERENCES TO VIM
-
--------------------------------------------
-keybindings and executing terminal commands
--------------------------------------------
-
-If you import the keybindings from vim you should delete the "!clear" commands.
-It creates unwanted characters in the output and you don't need to clear the terminal in nvim at this point.
