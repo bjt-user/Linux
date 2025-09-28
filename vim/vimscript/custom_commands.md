@@ -39,7 +39,7 @@ List all commands starting with "Lo":
 #### define a custom command
 
 ```
-command Greet echo "Hello, " .. <q-args>
+command Greet echo "Hello, " .. <args>
 ```
 Then you can use
 ```
@@ -47,5 +47,5 @@ Then you can use
 ```
 to output:
 ```
-Hello, "Joe"
+Hello, Joe
 ```
