@@ -1,3 +1,7 @@
+## general info
+
+https://vimhelp.org/channel.txt.html
+
 ## fails
 
 #### no output
