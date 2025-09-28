@@ -11,9 +11,28 @@ https://neovim.io/doc/user/vim_diff.html#_removed-legacy-features
 If you import the keybindings from vim you should delete the "!clear" commands.\
 It creates unwanted characters in the output and you don't need to clear the terminal in nvim at this point.
 
-> Vim9script (the Vim 9+ flavor of Vimscript) is not supported.
+> Vim9script (the Vim 9+ flavor of Vimscript) is NOT supported.
 
-> cscope support was removed in favour of plugin-based solutions such as: https://github.com/dhananjaylatkar/cscope_maps.nvim
+> cscope support was REMOVED in favour of plugin-based solutions such as: https://github.com/dhananjaylatkar/cscope_maps.nvim
+
+Lines of code (neovim):
+```
+vim script                        1977          50377          54578         333047
+Lua                                740          30567          54928         289098
+C                                  212          35026          53922         251940
+-----------------------------------------------------------------------------------
+SUM:                              3577         202469         222837        1160366
+```
+Lines of code (vim):
+```
+vim script                            2376          71186          62146         474663
+C                                      211          52866          86192         400023
+PO File                                 43          92191           9765         235266
+---------------------------------------------------------------------------------------
+SUM:                                  3379         281346         174849        1450795
+```
+
+So `neovim` slimmed down the C source code significantly.
 
 #### installation
 
