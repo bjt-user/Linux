@@ -49,3 +49,12 @@ to output:
 ```
 Hello, Joe
 ```
+
+#### define a custom command over multiple lines
+
+```
+command Greet {
+	echo "Hello, " .. <args>
+	echo "Goodbye!"
+}
+```
