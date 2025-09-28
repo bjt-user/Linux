@@ -1,6 +1,10 @@
 ## general info
 
 ```
+:h 40.2
+```
+
+```
 :h user-commands
 ```
 
@@ -17,6 +21,8 @@ command, but it is deprecated and can be overruled.
 :h command
 ```
 
+## usage
+
 #### list all user defined commands
 
 ```
@@ -28,4 +34,18 @@ command, but it is deprecated and can be overruled.
 List all commands starting with "Lo":
 ```
 :com Lo
+```
+
+#### define a custom command
+
+```
+command Greet echo "Hello, " .. <q-args>
+```
+Then you can use
+```
+:Greet "Joe"
+```
+to output:
+```
+Hello, "Joe"
 ```
