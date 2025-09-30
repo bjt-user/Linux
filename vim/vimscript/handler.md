@@ -1,3 +1,11 @@
+## general info
+
+```
+:h close_cb
+```
+
+> If it is not known if there is a message to be read, use a try/catch block
+
 ## examples
 
 #### simple sleep
@@ -15,6 +23,31 @@ After 3 seconds this outputs:
 ```
 hello from MyFunc
 ```
+
+#### catch output
+
+You need a try catch as written in the docs, otherwise you will get an \
+error when there is no data to read:
+```
+vim9script
+
+def MyFunc(my_channel: channel)
+        echo "hello from MyFunc"
+        var msg = ''
+
+        try
+                msg = ch_readraw(my_channel)
+        catch
+                msg = 'no message'
+        endtry
+        echo msg
+        sleep 1
+enddef
+
+var sleep_job = job_start(['./sleep_and_echo.sh'], {'close_cb': 'MyFunc'})
+```
+
+There really seems to be no other way than a try/catch.
 
 #### call script that sleeps and echoes
 
