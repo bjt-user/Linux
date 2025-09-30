@@ -33,3 +33,21 @@ outputs:
 ```
 3
 ```
+
+#### add three function
+
+Takes a number as an argument and returns a number.
+
+```
+vim9script
+
+def AddThree(my_num: number): number
+        return my_num + 3
+enddef
+
+echo AddThree(10)
+```
+ouputs:
+```
+13
+```
