@@ -15,3 +15,28 @@ After 3 seconds this outputs:
 ```
 hello from MyFunc
 ```
+
+#### call script that sleeps and echoes
+
+The script that is called here sleeps for 3 seconds \
+and then outputs "Sleeping is over".
+```
+vim9script
+
+def MyFunc(my_channel: channel)
+        echo "hello from MyFunc"
+        sleep 1
+        echo ch_read(my_channel)
+enddef
+
+var sleep_job = job_start(['./sleep_and_echo.sh'], {'close_cb': 'MyFunc'})
+```
+outputs:
+```
+hello from Myfunc
+Sleeping is over.
+```
+
+So you can get the output of the channel with `ch_read()`.
+
+But does it also include stderr?
