@@ -1,3 +1,13 @@
+## general info
+
+```
+job_status({job})                                       job_status() E916
+Returns a String with the status of {job}:
+"run"   job is running
+"fail"  job failed to start
+"dead"  job died or was stopped after running
+```
+
 ## examples
 
 #### sleep example
