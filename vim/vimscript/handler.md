@@ -39,4 +39,7 @@ Sleeping is over.
 
 So you can get the output of the channel with `ch_read()`.
 
-But does it also include stderr?
+But does it also include stderr?\
+=> No, if only stderr is received the error "channel is not open" \
+is received.\
+So you probably need to check the status of the channel/job first.
