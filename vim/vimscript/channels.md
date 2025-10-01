@@ -6,6 +6,10 @@ https://vimhelp.org/channel.txt.html
 :h channel-functions-details
 ```
 
+```
+:h channel-functions
+```
+
 ## fails
 
 #### no output
