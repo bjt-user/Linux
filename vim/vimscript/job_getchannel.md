@@ -2,6 +2,7 @@
 
 #### get channel from job
 
+(Calling a script that sleeps for 3 seconds.)
 ```
 vim9script
 
