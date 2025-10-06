@@ -83,6 +83,24 @@ my_dict['name'] = 'Joe'
 echo my_dict
 ```
 
+#### merging two dictionaries
+
+```
+vim9script
+
+var one = {'blue': 2, 'orange': 3}
+
+var two = {'green': 4, 'red': 5}
+
+var merged_dict = extend(one, two)
+
+echo merged_dict
+```
+Output:
+```
+{'orange': 3, 'blue': 2, 'green': 4, 'red': 5}
+```
+
 ## examples
 
 #### simple dictionary
