@@ -66,6 +66,23 @@ Functions that can be used with a Dictionary:
         :call map(dict, '">> " .. v:val')  " prepend ">> " to each item
 ```
 
+## usage
+
+#### appending to dict
+
+```
+vim9script
+
+var my_dict = {}
+
+echo my_dict
+
+my_dict['foo'] = 'bar'
+my_dict['name'] = 'Joe'
+
+echo my_dict
+```
+
 ## examples
 
 #### simple dictionary
