@@ -101,6 +101,14 @@ Output:
 {'orange': 3, 'blue': 2, 'green': 4, 'red': 5}
 ```
 
+#### dictionary as function argument
+
+```
+def TransformDict(some_dict: dict<string>): string
+        return string(some_dict)
+enddef
+```
+
 ## examples
 
 #### simple dictionary
