@@ -13,3 +13,6 @@ see `:h pager`
 
 The downside is that this is not compatible with the `less` commands \
 or using ctrl + f/b to go up/down one screen.
+
+`f` and `b` work to go forward/backward one screen.\
+But ctrl + f does not work for some reason, this triggers a help output.
