@@ -31,3 +31,10 @@ or
 ```
 rg --hidden 'pattern'
 ```
+
+#### exclude dirs
+
+Exclude the dirs `auto` and `testdir`:
+```
+rg 'more' -g '!auto/' -g '!testdir'
+```
