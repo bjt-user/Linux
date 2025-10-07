@@ -38,3 +38,9 @@ Exclude the dirs `auto` and `testdir`:
 ```
 rg 'more' -g '!auto/' -g '!testdir'
 ```
+
+#### only search in the top level (don't recurse)
+
+```
+rg -d1 'foo'
+```
