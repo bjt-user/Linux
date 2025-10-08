@@ -24,6 +24,15 @@ To build Vim on Ubuntu from scratch on a clean system using git:
 core/libtool
 ```
 
+```
+cd src
+```
+
+```
+time make -j$(nproc)
+```
+10 seconds on a fast modern thinkpad with 6 cores. (with debug flags)
+
 ## attempts
 
 #### first try
