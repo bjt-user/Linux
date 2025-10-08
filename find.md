@@ -1,3 +1,5 @@
+## usage
+
 #### search for specific file names
 
 to show files that start with "te" and are in the current directory:
@@ -121,6 +123,13 @@ sudo find ~ -type d -name "*vim*" ! -name "neo*"
 ```
 
 This will only exclude `neo*` in the basename of files, not inside the path.
+
+#### stop after the first match (-quit)
+
+You need `-print` so that the first match is printed:
+```
+find . -type f -iname '*vim*' -print -quit
+```
 
 ### ownership
 
