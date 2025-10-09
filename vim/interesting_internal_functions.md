@@ -1,9 +1,19 @@
-#### print character to cursor position
+#### print character to cursor position (out_char() and out_flush())
 
 This will print f (character 102) to the cursor position:
 ```
 (gdb) call out_char(102)
 (gdb) call out_flush()
+```
+
+#### do_more_prompt()
+
+```
+call do_more_prompt(0)
+```
+puts this in the status line:
+```
+-- More --
 ```
 
 #### functions to try
