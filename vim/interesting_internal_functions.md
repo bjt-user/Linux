@@ -1,3 +1,11 @@
+#### print character to cursor position
+
+This will print f (character 102) to the cursor position:
+```
+(gdb) call out_char(102)
+(gdb) call out_flush()
+```
+
 #### functions to try
 
 ```
