@@ -16,6 +16,15 @@ puts this in the status line:
 -- More --
 ```
 
+This
+```
+(gdb) call (int)do_more_prompt(1)
+```
+will output:
+```
+-- More -- SPACE/d/j: screen/page/line down, b/u/k: up, q: quit
+```
+
 #### functions to try
 
 ```
