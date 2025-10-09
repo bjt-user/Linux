@@ -2,7 +2,7 @@
 
 1. compile vim with `-g`
 
-2. type `vim` (the global vim without debug flags) in separate window
+2. type `./vim` (the program you compiled) in separate window
 
 3. Attach gdb to the process and use the symbol table from compiled vim:
 ```
