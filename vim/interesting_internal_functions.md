@@ -55,3 +55,7 @@ typval.c:
 typval_T *alloc_string_tv(char_u *);
 ```
 => probably initializing a vimscript string var?
+
+```
+void wait_return(int redraw)
+```
