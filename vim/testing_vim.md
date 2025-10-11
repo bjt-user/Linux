@@ -8,7 +8,7 @@ This is about testing vim itself for doing development on vim.
 
 > 4) Use make test_<subject> to run a single test.
 
-#### test a single test file
+#### run tests from a single test file
 
 In the `src` dir.
 
