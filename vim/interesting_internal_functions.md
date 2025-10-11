@@ -59,3 +59,4 @@ typval_T *alloc_string_tv(char_u *);
 ```
 void wait_return(int redraw)
 ```
+=> seems to do nothing
