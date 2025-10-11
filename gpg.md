@@ -18,7 +18,7 @@ gpg - OpenPGP encryption and signing tool
 There should be a way so that you automatically login into gpg when you log into your computer.\
 Gnome-keyring seems to accomplish this.
 
-***
+## usage
 
 #### show public keys
 
@@ -91,8 +91,6 @@ gpg --edit-key mykey
 ```
 
 
-```
-***
 ## troubleshooting
 
 #### arch: prompt for passphrase is broken
