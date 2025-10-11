@@ -50,6 +50,10 @@ The private key seems to be in `.gnupg/private-keys-v1.d`
 
 BUT: Where is the public key?
 
+#### no passphrase
+
+> To create a key without any protection --passphrase '' may be used.
+
 #### decrypt a key
 
 Also using the verbose flag:
