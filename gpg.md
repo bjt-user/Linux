@@ -54,6 +54,12 @@ BUT: Where is the public key?
 
 > To create a key without any protection --passphrase '' may be used.
 
+#### delete keys
+
+`--delete-sectret-keys` and `--delete-keys`
+
+But it opens a gui and throws up a `pinentry` menu.
+
 #### decrypt a key
 
 Also using the verbose flag:
