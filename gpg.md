@@ -38,6 +38,18 @@ gpg --list-keys [name/or email of that key]
 gpg --list-secret-keys
 ```
 
+#### generate key pairs
+
+`--generate-key`, `--gen-key`
+
+> Generate a new key pair using the current default parameters.\
+This is the standard command to create a new key.\
+In addition to the key a  revocation certificate is created and stored in the ‘openpgp-revocs.d’ directory below the GnuPG home directory.
+
+The private key seems to be in `.gnupg/private-keys-v1.d`
+
+BUT: Where is the public key?
+
 #### decrypt a key
 
 Also using the verbose flag:
