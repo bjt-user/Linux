@@ -8,7 +8,9 @@ This is about testing vim itself for doing development on vim.
 
 > 4) Use make test_<subject> to run a single test.
 
-#### trying to test a single test
+#### test a single test file
+
+In the `src` dir.
 
 ```
 time make test_syntax
@@ -21,6 +23,11 @@ sys	0m0.063s
 ```
 
 Exit Code 0, so it seemed to have worked.
+
+This will run all tests inside `testdir/test_messages.vim`:
+```
+make test_messages
+```
 
 ## syntax tests
 
