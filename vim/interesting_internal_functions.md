@@ -25,6 +25,11 @@ will output:
 -- More -- SPACE/d/j: screen/page/line down, b/u/k: up, q: quit
 ```
 
+#### wait_return()
+
+This plays a big role in the "hit enter" prompt, but it does not \
+directly print the "hit enter" message.
+
 #### functions to try
 
 ```
@@ -59,4 +64,5 @@ typval_T *alloc_string_tv(char_u *);
 ```
 void wait_return(int redraw)
 ```
-=> seems to do nothing
+=> seems to do nothing, when executed via gdb \
+=> but is important for the "hit enter" prompt
