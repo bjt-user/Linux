@@ -37,6 +37,8 @@ $ printf "%d\n" 0xff
 ```
 0x00-0xff
 
+But the output `gpg --list-keys` shows is more than 8 octets.
+
 ## usage
 
 #### show public keys
