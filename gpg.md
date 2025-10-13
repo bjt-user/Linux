@@ -31,6 +31,11 @@ https://en.wikipedia.org/wiki/Octet_(computing)
 
 An octet consists of eight bits.\
 0-255.
+```
+$ printf "%d\n" 0xff
+255
+```
+0x00-0xff
 
 ## usage
 
