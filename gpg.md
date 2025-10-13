@@ -27,6 +27,11 @@ Gnome-keyring seems to accomplish this.
 From RFC4880 3.3:
 > A Key ID is an eight-octet scalar that identifies a key.
 
+https://en.wikipedia.org/wiki/Octet_(computing)
+
+An octet consists of eight bits.\
+0-255.
+
 ## usage
 
 #### show public keys
