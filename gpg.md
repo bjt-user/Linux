@@ -22,6 +22,11 @@ gpg - OpenPGP encryption and signing tool
 There should be a way so that you automatically login into gpg when you log into your computer.\
 Gnome-keyring seems to accomplish this.
 
+#### keyid
+
+From RFC4880 3.3:
+> A Key ID is an eight-octet scalar that identifies a key.
+
 ## usage
 
 #### show public keys
