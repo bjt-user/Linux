@@ -1,4 +1,6 @@
-## resources
+## general info
+
+`gpg` implements `pgp` (https://en.wikipedia.org/wiki/Pretty_Good_Privacy).
 
 https://wiki.archlinux.org/title/GnuPG
 
