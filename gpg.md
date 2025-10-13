@@ -46,6 +46,10 @@ gpg --list-secret-keys
 This is the standard command to create a new key.\
 In addition to the key a  revocation certificate is created and stored in the ‘openpgp-revocs.d’ directory below the GnuPG home directory.
 
+```
+gpg --gen-key --pinentry-mode loopback
+```
+
 The private key seems to be in `.gnupg/private-keys-v1.d`
 
 BUT: Where is the public key?
