@@ -4,6 +4,8 @@
 
 https://wiki.archlinux.org/title/GnuPG
 
+https://www.rfc-editor.org/rfc/rfc4880
+
 ```
 man gpg
 ```
