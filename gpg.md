@@ -67,6 +67,13 @@ Also using the verbose flag:
 gpg -v -d ~/.password-store/somewebsite.com.gpg
 ```
 
+#### show public key of .gpg file
+
+This will show the public key, but not the private key:
+```
+gpg -v -d ~/.password-store/somewebsite.com.gpg
+```
+
 #### keyring
 
 This seems to be a keyring:
