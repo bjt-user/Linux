@@ -8,3 +8,9 @@ Your public key will look like this:
 $ cat id_ed25519.pub
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAicKaMiI3WvIt4QDr/rDuPRgYrOLoCBXQxn9oFVuWxFl7 gitlab-ansible
 ```
+
+#### generate public key from private key
+
+```
+ssh-keygen -y -f id_ed25519
+```
