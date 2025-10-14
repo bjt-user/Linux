@@ -34,6 +34,10 @@ For example, the "0" command opens the fold under the cursor
 
 ### foldmethods
 
+```
+:h foldmethod
+```
+
 ### foldcolumn
 
 ```
