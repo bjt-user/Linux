@@ -44,3 +44,10 @@ rg 'more' -g '!auto/' -g '!testdir'
 ```
 rg -d1 'foo'
 ```
+
+#### search in compressed files
+
+Add `-z` flag.
+```
+rg -z 'pattern'
+```
