@@ -16,6 +16,26 @@ You need to make them global so you can access them from outside:
 def g:GetStrAtCursor()
 ```
 
+## usage
+
+#### calling a function
+
+This works:
+```
+vim9script
+
+def EchoFoo()
+        echo "foo"
+enddef
+
+EchoFoo()
+```
+
+But you can also use the `call` keyword:
+```
+call EchoFoo()
+```
+
 ## examples
 
 #### return a number
