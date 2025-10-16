@@ -161,13 +161,16 @@ sudo pacman -S pacman-contrib
 rankmirrors /etc/pacman.d/mirrorlist
 ```
 
-#### autoremove packages
+#### maintenance - autoremove packages
 
 https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#Removing_unused_packages_(orphans)
 
 ```
 sudo pacman -Qdtq | sudo pacman -Rns -
 ```
+
+https://wiki.archlinux.org/title/System_maintenance#Check_for_orphans_and_dropped_packages:\
+> Use pacman -Qtd to check for packages that were installed as a dependency but now, no other packages depend on them.
 
 ## files
 
