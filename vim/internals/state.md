@@ -1,4 +1,10 @@
-#### 0x1001
+#### 0x10 (MODE_INSERT)
+
+```
+#define MODE_INSERT 0x10    // Insert mode, also for Replace mode
+```
+
+#### 0x1001 (MODE_NORMAL_BUSY)
 
 Which state is this:
 ```
