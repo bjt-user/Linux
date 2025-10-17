@@ -37,6 +37,12 @@ From `term.c`:
 
 What does it do?
 
+#### togoto()
+
+Seems to return an empty buffer.
+
+But maybe try calling it with different arguments to confirm that assumption.
+
 #### wait_return()
 
 This plays a big role in the "hit enter" prompt, but it does not \
