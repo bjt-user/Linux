@@ -1,5 +1,7 @@
 ## gdb
 
+#### general approach
+
 1. compile vim with `-g`
 
 2. type `./vim` (the program you compiled) in separate window
@@ -14,6 +16,21 @@ sudo gdb -p {PID} -s ./vim
 (gdb) call (int)msg("foo")
 ```
 This will print `foo` in the status line of vim.
+
+#### set breakpoint at function and continue
+
+First setup like shown under "general approach".
+
+Then:
+```
+(gdb) b do_more_prompt
+Breakpoint 1 at 0x6397380eb0fd: file message.c, line 3230.
+(gdb) c
+```
+Now the process is detached, you can do something in vim \
+and if the function `do_more_prompt` is called the execution \
+is stopped again and attached in gdb.\
+Then you can debug the function.
 
 ## termdebug
 
