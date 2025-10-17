@@ -25,6 +25,18 @@ will output:
 -- More -- SPACE/d/j: screen/page/line down, b/u/k: up, q: quit
 ```
 
+#### term_color()
+
+Is called very often.
+
+From `term.c`:
+```
+3177     static void
+3178 term_color(char_u *s, int n)
+```
+
+What does it do?
+
 #### wait_return()
 
 This plays a big role in the "hit enter" prompt, but it does not \
