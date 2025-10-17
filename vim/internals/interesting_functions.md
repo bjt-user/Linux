@@ -39,9 +39,11 @@ What does it do?
 
 #### togoto()
 
-Seems to return an empty buffer.
-
-But maybe try calling it with different arguments to confirm that assumption.
+Seems to return the first argument:
+```
+(gdb) call (char*)tgoto("foobar", 0, 0)
+$34 = 0x63976ef122e0 "foobar"
+```
 
 #### wait_return()
 
