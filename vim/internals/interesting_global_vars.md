@@ -53,7 +53,17 @@ $16 = 1
 ```
 EXTERN char     *xterm_display INIT(= NULL);
 ```
+Was a nil pointer in WSL:
+```
+(gdb) p xterm_display
+$18 = 0x0
+```
 
 ```
 EXTERN int      term_is_xterm INIT(= FALSE);    // xterm-like 'term'
+```
+Was true in WSL:
+```
+(gdb) p term_is_xterm
+$19 = 1
 ```
