@@ -44,6 +44,11 @@ EXTERN char     msg_buf[MSG_BUF_LEN];   // small buffer for messages
 ```
 EXTERN int      termcap_active INIT(= FALSE);   // set by starttermcap()
 ```
+This was true in WSL:
+```
+(gdb) p termcap_active
+$16 = 1
+```
 
 ```
 EXTERN char     *xterm_display INIT(= NULL);
