@@ -48,3 +48,7 @@ EXTERN int      termcap_active INIT(= FALSE);   // set by starttermcap()
 ```
 EXTERN char     *xterm_display INIT(= NULL);
 ```
+
+```
+EXTERN int      term_is_xterm INIT(= FALSE);    // xterm-like 'term'
+```
