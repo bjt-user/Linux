@@ -25,6 +25,15 @@ will output:
 -- More -- SPACE/d/j: screen/page/line down, b/u/k: up, q: quit
 ```
 
+#### out_flush()
+
+Writes the var `out_buf` to the screen.
+
+`out_buf` is defined in `term.c`:
+```
+2759 static char_u           out_buf[OUT_SIZE + 1];
+```
+
 #### term_color()
 
 Is called very often.
