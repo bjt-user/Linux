@@ -59,3 +59,7 @@ What happens if I initialize it with `memset` and null terminators.\
 
 What is the value of `tbuf` after the function exits?\
 => still empty
+
+ncurses ignores the buffer pointer bp, as do other termcap implementations conforming to portions of X/Open Curses now withdrawn.
+              The  BSD  termcap  library  would store a copy of the terminal type description in the area referenced by this pointer.  terminfo
+              stores terminal type descriptions in compiled form, which is not the same thing.
