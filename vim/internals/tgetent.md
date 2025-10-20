@@ -38,3 +38,7 @@ $1 = (char_u *) 0x7fffffffd330 "xg\235UUU"
 $2 = (char_u *) 0x5555559dc470 "xterm-256color"
 ```
 What is `tbuf` exactly?
+
+It seems like `tbuf` is used uninitialized.
+
+What happens if I initialize it with `memset` and null terminators.
