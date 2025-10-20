@@ -13,6 +13,13 @@
            plications to run), and
       -1   if the terminfo database could not be found.
 
+> Global Variables
+   The variables PC, UP and BC are set by tgetent to the terminfo entry's data for pad_char,\
+   cursor_up  and  backspace_if_not_bs,  respectively.
+   UP  is  not  used  by ncurses.  PC is used by delay_output(3X).
+   BC is used by tgoto emulation.  The variable ospeed is set by
+   ncurses using a system-specific encoding to indicate the terminal's data rate.
+
 It seems to be called only once at program startup.
 
 It is called by `invoke_tgetent` from `term.c`.
