@@ -41,4 +41,8 @@ What is `tbuf` exactly?
 
 It seems like `tbuf` is used uninitialized.
 
-What happens if I initialize it with `memset` and null terminators.
+What happens if I initialize it with `memset` and null terminators.\
+=> scheint keine Probleme zu machen
+
+What is the value of `tbuf` after the function exits?\
+=> still empty
