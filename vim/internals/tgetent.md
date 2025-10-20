@@ -12,3 +12,14 @@ This is the call stack: (backtrace)
 #3  0x00005555558063b9 in termcapinit (name=0x0) at term.c:2750
 #4  0x00005555558ef707 in main (argc=1, argv=0x7fffffffdcd8) at main.c:382
 ```
+
+#### invoke_tgetent
+
+```
+/*
+2415  * Call tgetent()
+2416  * Return error message if it fails, NULL if it's OK.
+2417  */
+2418     static char *
+2419 invoke_tgetent(char_u *tbuf, char_u *term)
+```
