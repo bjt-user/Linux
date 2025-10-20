@@ -29,3 +29,12 @@ So it directly calls `tgetent`.
 ```
 # define TGETENT(b, t)  tgetent((char *)(b), (char *)(t))
 ```
+It calls `tgetent` with these two char pointers:
+```
+2425        i = TGETENT(tbuf, term);
+(gdb) p tbuf
+$1 = (char_u *) 0x7fffffffd330 "xg\235UUU"
+(gdb) p term
+$2 = (char_u *) 0x5555559dc470 "xterm-256color"
+```
+What is `tbuf` exactly?
