@@ -1,4 +1,17 @@
+#### general info
+
 `tgetent` is from `ncurses` lib.
+
+`man tgetent`:
+> Initialization \
+   tgetent  loads  the terminal database entry for name; see term(7).\
+   This must be done before calling any of the other functions.\
+   It returns:
+      1    on success,
+      0    if there is no such entry\
+      (or if the matching entry describes a generic terminal, having too little information for  curses  ap‐
+           plications to run), and
+      -1   if the terminfo database could not be found.
 
 It seems to be called only once at program startup.
 
