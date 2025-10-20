@@ -20,7 +20,13 @@
    BC is used by tgoto emulation.  The variable ospeed is set by
    ncurses using a system-specific encoding to indicate the terminal's data rate.
 
-It seems to be called only once at program startup.
+The global vars seem to be empty all the time:
+```
+1: BC = 0x0
+2: PC = 0 '\000'
+```
+
+`tgetent` seems to be called only once at program startup.
 
 It is called by `invoke_tgetent` from `term.c`.
 
