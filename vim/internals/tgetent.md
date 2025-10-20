@@ -23,3 +23,9 @@ This is the call stack: (backtrace)
 2418     static char *
 2419 invoke_tgetent(char_u *tbuf, char_u *term)
 ```
+
+It calls `TGETENT`, but that is just a macro for `tgetent`.\
+So it directly calls `tgetent`.
+```
+# define TGETENT(b, t)  tgetent((char *)(b), (char *)(t))
+```
