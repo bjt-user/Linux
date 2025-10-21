@@ -66,6 +66,8 @@ This will print a message in the status line, similar to `:echo "foo"`:
 (gdb) call msg("foo")
 ```
 
+An `:echo 'foo'` insdie `vim` does not call this function at all.
+
 #### functions to try
 
 ```
