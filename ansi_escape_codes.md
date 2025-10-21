@@ -44,3 +44,9 @@ outputs:
 ```
 printf "\e[31mfoobar\n"
 ```
+
+#### green
+
+```
+\e[32m
+```
