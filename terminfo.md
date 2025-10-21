@@ -1,5 +1,10 @@
 ## general info
 
+https://en.wikipedia.org/wiki/Terminfo
+
+> Mary Ann Horton implemented the first terminfo library in 1981–1982 \
+as an improvement over termcap.
+
 ```
 man 5 terminfo
 ```
