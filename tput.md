@@ -14,3 +14,11 @@ man tput
 $ tput colors
 256
 ```
+
+#### move cursor to "home"
+
+```
+tput home
+```
+
+> Move the cursor to row 0, column 0: the upper left corner of the screen, usually known as the “home” cursor position.
