@@ -59,6 +59,13 @@ $34 = 0x63976ef122e0 "foobar"
 This plays a big role in the "hit enter" prompt, but it does not \
 directly print the "hit enter" message.
 
+#### msg()
+
+This will print a message in the status line, similar to `:echo "foo"`:
+```
+(gdb) call msg("foo")
+```
+
 #### functions to try
 
 ```
