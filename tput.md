@@ -22,3 +22,12 @@ tput home
 ```
 
 > Move the cursor to row 0, column 0: the upper left corner of the screen, usually known as the “home” cursor position.
+
+#### boolean capabilities
+
+This means that the `am` capability is set (is true):
+```
+$ tput am
+$ echo $?
+0
+```
