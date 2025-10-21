@@ -28,6 +28,7 @@ EXTERN int      debug_mode INIT(= FALSE);
 ```
 EXTERN int echo_attr INIT(= 0);   // attributes used for ":echo"
 ```
+=> seems to be 0 most of the time
 
 ```
 EXTERN int      finish_op INIT(= FALSE);// TRUE while an operator is pending
