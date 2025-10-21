@@ -25,6 +25,29 @@ will output:
 -- More -- SPACE/d/j: screen/page/line down, b/u/k: up, q: quit
 ```
 
+#### echo_string()
+
+The function `echo_string` is called when you do an `:echo 'foo'` inside vim.\
+But it is seems to be deeper in the call stack.
+
+In `eval.c`:
+```
+/*
+* Return a string with the string representation of a variable.
+* If the memory is allocated "tofree" is set to it, otherwise NULL.
+* "numbuf" is used for a number.
+* Does not put quotes around strings, as ":echo" displays values.
+* When "copyID" is not zero replace recursive lists and dicts with "...".
+* May return NULL.
+*/
+    char_u
+echo_string(
+    typval_T    *tv,
+    char_u      **tofree,
+    char_u      *numbuf,
+    int         copyID)
+```
+
 #### out_flush()
 
 Writes the var `out_buf` to the screen.
