@@ -1,3 +1,9 @@
+## general info
+
+```
+man 5 terminfo
+```
+
 Here are information about all terminals: `/usr/share/terminfo`
 
 For example the most common:
