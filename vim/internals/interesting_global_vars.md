@@ -64,6 +64,8 @@ Was a nil pointer in WSL:
 $18 = 0x0
 ```
 
+#### term_is_xterm
+
 ```
 EXTERN int      term_is_xterm INIT(= FALSE);    // xterm-like 'term'
 ```
@@ -71,4 +73,11 @@ Was true in WSL:
 ```
 (gdb) p term_is_xterm
 $19 = 1
+```
+
+#### vim_tempdir
+
+Vim seems to create temporary files in this dir:
+```
+EXTERN char_u   *vim_tempdir INIT(= NULL);
 ```
