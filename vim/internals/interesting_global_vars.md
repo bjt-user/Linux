@@ -81,3 +81,5 @@ Vim seems to create temporary files in this dir:
 ```
 EXTERN char_u   *vim_tempdir INIT(= NULL);
 ```
+
+When you start up `vim` this is a null pointer.
