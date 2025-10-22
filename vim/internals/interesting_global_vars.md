@@ -83,3 +83,9 @@ EXTERN char_u   *vim_tempdir INIT(= NULL);
 ```
 
 When you start up `vim` this is a null pointer.
+
+After executing a `:system` command it is set to:
+```
+(gdb) p vim_tempdir
+$1 = (char_u *) 0x5f70f27fb020 "/tmp/vieSPh7/"
+```
