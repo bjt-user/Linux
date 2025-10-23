@@ -13,4 +13,5 @@ f_system(typval_T *argvars, typval_T *rettv)
 
 #### call graph
 
-f_system -> get_cmd_output_as_rettv -> get_cmd_output -> call_shell
+f_system -> get_cmd_output_as_rettv -> get_cmd_output -> call_shell \
+-> mch_call_shell (from `os_unix.c`)
