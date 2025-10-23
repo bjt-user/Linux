@@ -48,6 +48,7 @@ $2 = 0x1e
 (gdb) p/t options
 $3 = 11110
 ```
+=> same as in Arch Linux and `terminator`
 
 From `vim.h`:
 ```
