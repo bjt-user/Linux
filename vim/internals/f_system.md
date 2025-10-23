@@ -63,3 +63,8 @@ From `vim.h`:
 ```
 
 So `SHELL_COOKED` has the binary value `100`.
+
+In Arch Linux `tmode` looks like this in the entire `mch_call_shell_fork` function:
+```
+tmode = TMODE_RAW
+```
