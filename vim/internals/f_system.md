@@ -26,6 +26,11 @@ File misc1.c:
 2408:   char_u *get_cmd_output(char_u *, char_u *, int, int *);
 ```
 
+The content of the file is read into `buffer` here:
+```
+2470		i = (int)fread((char *)buffer, (size_t)1, (size_t)len, fd);
+```
+
 #### mch_call_shell_fork (os_unix.c)
 
 ```
