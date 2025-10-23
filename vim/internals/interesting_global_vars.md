@@ -64,6 +64,12 @@ Was a nil pointer in WSL:
 $18 = 0x0
 ```
 
+#### cur_tmode
+
+```
+EXTERN tmode_T  cur_tmode INIT(= TMODE_COOK);   // input terminal mode
+```
+
 #### term_is_xterm
 
 ```
