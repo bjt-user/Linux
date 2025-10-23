@@ -45,4 +45,18 @@ In WSL these options are set:
 $1 = 30
 (gdb) p/x options
 $2 = 0x1e
+(gdb) p/t options
+$3 = 11110
+```
+
+From `vim.h`:
+```
+// Values for mch_call_shell() second argument
+#define SHELL_FILTER    1       // filtering text
+#define SHELL_EXPAND    2       // expanding wildcards
+#define SHELL_COOKED    4       // set term to cooked mode
+#define SHELL_DOOUT     8       // redirecting output
+#define SHELL_SILENT    16      // don't print error returned by command
+#define SHELL_READ      32      // read lines and insert into buffer
+#define SHELL_WRITE     64      // write lines from buffer
 ```
