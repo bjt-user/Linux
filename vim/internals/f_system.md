@@ -60,3 +60,5 @@ From `vim.h`:
 #define SHELL_READ      32      // read lines and insert into buffer
 #define SHELL_WRITE     64      // write lines from buffer
 ```
+
+So `SHELL_COOKED` has the binary value `100`.
