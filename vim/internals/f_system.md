@@ -25,3 +25,16 @@ after reading from the temporary file.
 File misc1.c:
 2408:   char_u *get_cmd_output(char_u *, char_u *, int, int *);
 ```
+
+#### mch_call_shell_fork (os_unix.c)
+
+```
+static int
+mch_call_shell_fork(
+char_u      *cmd,
+int         options)        // SHELL_*, see vim.h
+```
+The `options` seem to indicate if the terminal is in cooked or raw mode.\
+```
+if (options & SHELL_COOKED)
+```
