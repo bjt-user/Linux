@@ -38,3 +38,11 @@ The `options` seem to indicate if the terminal is in cooked or raw mode.\
 ```
 if (options & SHELL_COOKED)
 ```
+
+In WSL these options are set:
+```
+(gdb) p options
+$1 = 30
+(gdb) p/x options
+$2 = 0x1e
+```
