@@ -7,3 +7,5 @@ For example `bat` will not display colors, when redirected to a file:
 ```
 bat /etc/os-release > /tmp/foobar.txt
 ```
+
+The temporary file gets written when `mch_call_shell` is called.
