@@ -1,3 +1,10 @@
+#### prototype
+
+In `eval.c`:
+```
+void ex_echo(exarg_T *eap)
+```
+
 #### about
 
 It prints an argument to the status line.
