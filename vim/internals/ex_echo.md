@@ -17,3 +17,5 @@ $2 = {arg = 0x5572c94db915 "system('ansible-doc debug')", nextcmd = 0x0, cmd = 0
 #### cur_tmode
 
 `cur_tmode` is `TMODE_RAW` the entire function.
+
+Changing it to `TMODE_COOK` does not change anything.
