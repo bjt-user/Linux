@@ -17,3 +17,5 @@ When the second argument is a 2 the string will be bold.
 5 is white background and italic black foreground.
 
 6 is italic bold foreground.
+
+10 is underscore bold.
