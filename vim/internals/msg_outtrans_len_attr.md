@@ -25,3 +25,10 @@ execute this command in `gdb` and hit `n` until something is printed to the scre
 ```
 (gdb) call msg_outtrans_len_attr("foobar", 6, 0)
 ```
+
+```
+(gdb) n
+Cannot find bounds of current function
+```
+
+What is that?
