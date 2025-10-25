@@ -21,6 +21,13 @@ $2 = {arg = 0x5572c94db915 "system('ansible-doc debug')", nextcmd = 0x0, cmd = 0
   bad_char = 0, useridx = 0, errmsg = 0x0, ea_getline = 0x55728b5db499 <getexline>, cookie = 0x0, cstack = 0x7ffff07808f0}
 ```
 
+#### echo_one
+
+It gets called like this:
+```
+echo_one(&rettv, eap->cmdidx == CMD_echo, &atstart, &needclr);
+```
+
 #### cur_tmode
 
 `cur_tmode` is `TMODE_RAW` the entire function.
