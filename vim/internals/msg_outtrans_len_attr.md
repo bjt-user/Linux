@@ -7,3 +7,8 @@ $1 = 6
 (gdb) c
 Continuing.
 ```
+
+To clear the statusbar again:
+```
+call msg_clr_eos
+```
