@@ -12,3 +12,9 @@ To clear the statusbar again:
 ```
 call msg_clr_eos
 ```
+
+#### why do you need "continue"?
+
+What is the `main_loop` or another function further up in the call stack doing?
+
+And after which function call is the message printed to the screen?
