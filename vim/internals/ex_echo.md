@@ -11,6 +11,11 @@ It prints an argument to the status line.
 
 The argument is printed after the call of `echo_one`.
 
+`echo_one` calls (among others) this function:
+```
+int msg_outtrans_len_attr(char_u *msgstr, int len, int attr)
+```
+
 #### parameter
 
 ```
