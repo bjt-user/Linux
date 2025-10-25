@@ -91,6 +91,8 @@ This will print a message in the status line, similar to `:echo "foo"`:
 
 An `:echo 'foo'` insdie `vim` does not call this function at all.
 
+Does not render ansi escape sequences.
+
 #### functions to try
 
 ```
