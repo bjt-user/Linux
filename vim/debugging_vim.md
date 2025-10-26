@@ -32,15 +32,21 @@ and if the function `do_more_prompt` is called the execution \
 is stopped again and attached in gdb.\
 Then you can debug the function.
 
-## termdebug
+## TODO: termdebug
+
+First you need to start regular `vim`:
+```
+vim
+```
+(not a self compiled version)
 
 ```
 :packadd termdebug
 ```
 
+in `vim/src` dir:
 ```
-:Termdebug vim
+:Termdebug ./vim
 ```
 
-But no debug symbols found.\
-You need to compile with debug flags first.
+But there is no process attached.
