@@ -6,3 +6,10 @@ File eval.c:
 ```
 
 It makes repeated calls to `msg_outtrans_len_attr` in a for loop.
+
+#### triggered by
+
+This will trigger the function:
+```
+:echo "foo"
+```
