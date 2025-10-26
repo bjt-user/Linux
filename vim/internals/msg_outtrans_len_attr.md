@@ -32,3 +32,6 @@ Cannot find bounds of current function
 ```
 
 What is that?
+
+Because the function was called from gdb there seem to be problems for gdb \
+knowing where the current line is and so on...
