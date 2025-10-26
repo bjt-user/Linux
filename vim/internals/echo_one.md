@@ -37,3 +37,16 @@ msg_end();
 in `ex_echo()` is called.
 
 Maybe this is different for longer strings or strings with a newline character.
+
+#### test :echo "foo\n"
+
+After
+```
+:echo "foo\n"
+```
+
+"foo" will NOT be printed after `msg_end()`.\
+It will be printed much later in `do_cmdline` after:
+```
+wait_return(FALSE);
+```
