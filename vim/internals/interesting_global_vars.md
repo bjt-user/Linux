@@ -70,6 +70,22 @@ $18 = 0x0
 EXTERN tmode_T  cur_tmode INIT(= TMODE_COOK);   // input terminal mode
 ```
 
+#### Screen_Lines, ScreenAttrs, ScreenCols
+
+```
+31 /*
+  32  * The characters that are currently on the screen are kept in ScreenLines[].
+  33  * It is a single block of characters, the size of the screen plus one line.
+  34  * The attributes for those characters are kept in ScreenAttrs[].
+  35  * The virtual column in the line is kept in ScreenCols[].
+```
+
+```
+EXTERN schar_T  *ScreenLines INIT(= NULL);
+EXTERN sattr_T  *ScreenAttrs INIT(= NULL);
+EXTERN colnr_T  *ScreenCols INIT(= NULL);
+```
+
 #### term_is_xterm
 
 ```
