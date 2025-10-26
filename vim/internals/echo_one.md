@@ -21,7 +21,7 @@ The for loop iterates through the string to be printed under the status bar.
 The string is in variable `p`.\
 Every iteration removes the first character of `p` until the string is empty.
 
-#### test echo
+#### test :echo "foo"
 
 Given this command:
 ```
