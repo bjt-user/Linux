@@ -50,3 +50,15 @@ in `vim/src` dir:
 ```
 
 But there is no process attached.
+
+## calling functions in main_loop
+
+For testing functions you can inject them in `main_loop()`.
+
+After these lines:
+```
+1325     while (!cmdwin || cmdwin_result == 0)
+1326     {
+```
+
+Then compile with `make -j$(nproc)` and run `./vim`.
