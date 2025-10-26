@@ -19,3 +19,8 @@ When the second argument is a 2 the string will be bold.
 6 is italic bold foreground.
 
 10 is underscore bold.
+
+#### out_flush()
+
+Sometimes you need to call `out_flush()` afterwards.\
+No idea why.
