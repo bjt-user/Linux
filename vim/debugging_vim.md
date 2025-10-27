@@ -17,6 +17,12 @@ sudo gdb -p {PID} -s ./vim
 ```
 This will print `foo` in the status line of vim.
 
+
+After point 2 this command can be handy:
+```
+sudo gdb -p $(pgrep -af './vim' | awk {'print $1'}) ./vim
+```
+
 #### set breakpoint at function and continue
 
 First setup like shown under "general approach".
