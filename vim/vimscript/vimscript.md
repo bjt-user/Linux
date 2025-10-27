@@ -167,7 +167,11 @@ When you scroll down you see help files you can go into by placing the cursor on
 ```
 in vim9script you can use `#`
 
-#### extending autocomplete
+#### extending autocomplete (dictionaries)
+
+```
+:h dictionary
+```
 
 to extend the ctrl n and ctrl p autocompletion put this in your vimrc or lang specific files
 ```
