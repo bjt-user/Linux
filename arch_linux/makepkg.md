@@ -8,6 +8,8 @@ https://wiki.archlinux.org/title/Makepkg
 
 https://wiki.archlinux.org/title/Creating_packages
 
+https://wiki.archlinux.org/title/PKGBUILD
+
 ## examples
 
 #### minimal PKGBUILD
