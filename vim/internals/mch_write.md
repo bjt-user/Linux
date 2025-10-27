@@ -1,6 +1,6 @@
 ## general info
 
-There are 4 version of `mch_write` for every OS.\
+There are 4 version of `mch_write` - one for every OS.\
 One for Amiga, one for Windows, one for Mac and one for Unix.
 
 Definition in `os_unix.c`:
