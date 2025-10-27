@@ -18,7 +18,8 @@ So it just writes the string to stdout.
 
 It seems to be called everytime a character is written to the screen.\
 Or when changing to insert mode or when hitting the colon.\
-So probably everytime the screen changes in any way.
+So probably everytime the screen changes in any way.\
+Usually with `out_buf` as argument.
 
 ## call graph
 
