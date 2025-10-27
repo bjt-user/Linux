@@ -16,6 +16,10 @@ Argument one is the file descriptor (`1` means stdout).
 
 So it just writes the string to stdout.
 
+It seems to be called everytime a character is written to the screen.\
+Or when changing to insert mode or when hitting the colon.\
+So probably everytime the screen changes in any way.
+
 ## call graph
 
 out_flush -> ui_write(out_buf) -> mch_write -> write (syscall)
