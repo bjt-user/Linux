@@ -4,6 +4,8 @@ in `charset.c`:
 ```
 char_u * transchar_buf(buf_T *buf, int c)
 ```
+The second argument is the number of the character according to \
+the ascii table.
 
 Might convert ansi escape sequences into something else?
 
