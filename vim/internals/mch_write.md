@@ -15,3 +15,7 @@ vim_ignored = (int)write(1, (char *)s, len);
 Argument one is the file descriptor (`1` means stdout).
 
 So it just writes the string to stdout.
+
+## call graph
+
+out_flush -> ui_write(out_buf) -> mch_write -> write (syscall)
