@@ -19,7 +19,7 @@ What is the `main_loop` or another function further up in the call stack doing?
 
 And after which function call is the message printed to the screen?
 
-#### TODO
+#### NOT POSSIBLE: debug after call from gdb
 
 execute this command in `gdb` and hit `n` until something is printed to the screen:
 ```
