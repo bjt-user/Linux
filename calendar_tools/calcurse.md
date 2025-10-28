@@ -70,6 +70,20 @@ similar for the end time
 
 Just hit `a`
 
+#### insert multi day event
+
+Navigate to the start day.\
+Hit `a`.
+
+Now enter `00:00`.\
+In the next field enter
+```
++7d
+```
+for an event that lasts 7 days.
+
+Now enter the description.
+
 #### add or edit notes
 
 To add more information to an appointment hit `n` in \
