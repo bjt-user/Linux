@@ -127,10 +127,6 @@ foo
 
 Use `-n` or `--dry-run`.
 
-#### attributes
-
-https://just.systems/man/en/attributes.html
-
 #### builtin functions
 
 https://just.systems/man/en/functions.html
@@ -172,3 +168,16 @@ Might be more convenient to type than `cat justfile`:
 just --dump
 ```
 (only 11 characters instead of 12)
+
+## attributes
+
+https://just.systems/man/en/attributes.html
+
+#### working-directory
+
+To execute the recipe in a different directory:
+```
+[working-directory("/tmp")]
+touch_file:
+	touch foo.txt
+```
