@@ -181,3 +181,11 @@ To execute the recipe in a different directory:
 touch_file:
 	touch foo.txt
 ```
+
+## troubleshooting
+
+#### environment variables
+
+https://just.systems/man/en/sharing-environment-variables-between-recipes.html?highlight=environment#sharing-environment-variables-between-recipes
+
+> Each line of each recipe is executed by a fresh shell, so it is not possible to share environment variables between recipes.
