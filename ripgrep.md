@@ -51,3 +51,10 @@ Add `-z` flag.
 ```
 rg -z 'pattern'
 ```
+
+#### search for literal string
+
+Search for the exact string instead of using regex:
+```
+rg -F "call_func()"
+```
