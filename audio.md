@@ -372,3 +372,7 @@ sudo apt reinstall pulseaudio
 reboot
 ```
 And sound was working again.
+
+#### TODO: output only from one side of the headphones
+
+Tried two different head sets and both only output sound on one side.
