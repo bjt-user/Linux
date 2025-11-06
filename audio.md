@@ -372,3 +372,14 @@ sudo apt reinstall pulseaudio
 reboot
 ```
 And sound was working again.
+
+#### TODO: output only from one side of the headphones
+
+Tried two different head sets and both only output sound on one side.
+
+Both headphones only have one channel in `alsamixer`.
+
+Seems like one of the headsets was broken as it didnt work on another machine as well \
+and they were very old and had broken cables.\
+Ordered new ones and see if they work.\
+But the other head set worked on Windows with both speakers...
