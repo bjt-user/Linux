@@ -146,7 +146,19 @@ http -v PUT [URL] < myfile.txt
 
 `-a [USERNAME]:[PASSWORD]`
 
-Probably a token can also be used instead.
+From `man http`:
+```
+--auth, -a USER[:PASS] | TOKEN
+      For username/password based authentication mechanisms (e.g basic auth or digest auth) if only the username is provided (-a  user‐
+      name), HTTPie will prompt for the password.
+--auth-type, -A
+      The authentication mechanism to be used. Defaults to "basic".
+      "basic": Basic HTTP auth
+      "digest": Digest HTTP auth
+      "bearer": Bearer HTTP Auth
+      To see all available auth types on your system, including ones installed via plugins, run:
+      $ http --auth-type
+```
 
 #### setting the user agent
 
