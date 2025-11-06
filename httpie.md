@@ -142,6 +142,12 @@ The filename is guessed unless specified with --output [filename]. This action i
 http -v PUT [URL] < myfile.txt
 ```
 
+#### authorization
+
+`-a [USERNAME]:[PASSWORD]`
+
+Probably a token can also be used instead.
+
 #### setting the user agent
 
 ```
