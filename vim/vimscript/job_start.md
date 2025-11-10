@@ -1,5 +1,9 @@
 ## general info
 
+#### return type
+
+`job`
+
 #### useful options
 
 `drop`: `never` (allows reading from dead jobs) \
