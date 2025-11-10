@@ -59,6 +59,35 @@ g:my_var = "foo"
 
 The `var` keyword will not work in `vim9script`.
 
+#### predefined values
+
+```
+:h E1034
+```
+
+```
+In Vim9 script one can use the following predefined values:
+    true
+    false
+    null
+    null_blob
+    null_channel
+    null_class
+    null_dict
+    null_function
+    null_job
+    null_list
+    null_tuple
+    null_object
+    null_partial
+    null_string
+```
+
+So you can initialize a job like this:
+```
+var my_job = null_job
+```
+
 ## print variables in scope
 
 #### print all globals vars
