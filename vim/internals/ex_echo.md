@@ -26,6 +26,21 @@ $2 = {arg = 0x5572c94db915 "system('ansible-doc debug')", nextcmd = 0x0, cmd = 0
   bad_char = 0, useridx = 0, errmsg = 0x0, ea_getline = 0x55728b5db499 <getexline>, cookie = 0x0, cstack = 0x7ffff07808f0}
 ```
 
+#### basic call graph
+
+When `:echo 'foo'` is executed.
+
+do_cmdline -> do_one_cmd -> ex_echo -> echo_one
+
+do_one_cmd seems to use this call:
+```
+/*
+ * Call the function to execute the builtin command.
+ */
+(cmdnames[ea.cmdidx].cmd_func)(&ea);
+```
+to call ex_echo
+
 #### echo_one
 
 It gets called like this:
