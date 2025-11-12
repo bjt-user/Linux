@@ -14,3 +14,9 @@ But you can put a date infront of the string to use another starting point:
 $ date -d '2025-01-10 last month' +%Y%m
 202412
 ```
+
+#### convert epoch to human readable time
+
+```
+date -d@1762943191
+```
