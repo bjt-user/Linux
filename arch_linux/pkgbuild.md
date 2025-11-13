@@ -36,8 +36,19 @@ cksums=('SKIP')
 
 #### build()
 
-The optional build() function is used to compile and/or adjust the \
+> The optional build() function is used to compile and/or adjust the \
 source files in preparation to be installed by the package() function.\
+This function is run inside $srcdir.
+
+#### package()
+
+> package() Function \
+The package() function is used to install files into the directory \
+that will become the root directory of the built package and is run after \
+all the optional functions listed below.\
+The packaging stage is run using fakeroot to ensure correct file permissions in \
+the resulting package.\
+All other functions will be run as the user calling makepkg.\
 This function is run inside $srcdir.
 
 ## examples
