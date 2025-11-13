@@ -54,6 +54,17 @@ Appending the version yourself disables automatic detection.
 
 > Additional architecture-specific depends can be added by appending an underscore and the architecture name e.g., depends_x86_64=().
 
+If you just exeute `makepkg` you get this error:
+```
+==> ERROR: Could not resolve all dependencies.
+```
+
+You need to:
+```
+makepkg -s
+```
+> -s -> Install missing dependencies using pacman.
+
 ## packaging functions
 
 #### build()
