@@ -17,6 +17,14 @@ the current dir:
 ```
 source=('git+https://gittea.dev/bjoernf/countdown.git')
 ```
+And to fix this error:
+```
+==> ERROR: Integrity checks are missing for: source
+```
+You need this line:
+```
+cksums=('SKIP')
+```
 
 ## examples
 
