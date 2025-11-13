@@ -10,6 +10,17 @@ https://wiki.archlinux.org/title/Creating_packages
 
 https://wiki.archlinux.org/title/PKGBUILD
 
+#### dependencies
+
+You will need tools from this package:
+```
+sudo pacman -S base-devel
+```
+Otherwise you might get errors like this:
+```
+==> ERROR: Cannot find the debugedit binary required for including source files in debug packages.
+```
+
 ## examples
 
 #### minimal PKGBUILD
