@@ -32,6 +32,28 @@ cksums=('SKIP')
 > An array of packages this package depends on to build but are not needed at runtime.
 > Packages in this list follow the same format as depends.
 
+Example:
+```
+makedepends=('libpulse')
+```
+
+#### depends
+
+> depends (array) \
+An array of packages this package depends on to run.\
+Entries in this list should be surrounded with single quotes and contain at \
+least the package name.\
+Entries can also include a version requirement of the form `name<>version`, where `<>` is one of five \
+comparisons: `>=` (greater than or equal to), `<=` (less than or equal to), \
+`=` (equal to), `>` (greater than), or `<` (less than).
+
+> If the dependency name appears to be a library (ends with .so), \
+makepkg will try to find a binary that depends on the library in the \
+built package and append the version needed by the binary.\
+Appending the version yourself disables automatic detection.
+
+> Additional architecture-specific depends can be added by appending an underscore and the architecture name e.g., depends_x86_64=().
+
 ## packaging functions
 
 #### build()
