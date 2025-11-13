@@ -8,6 +8,16 @@ https://wiki.archlinux.org/title/PKGBUILD
 
 > A PKGBUILD is a Bash script containing the build information required by Arch Linux packages.
 
+## variables
+
+#### source
+
+If you include a git repo like this, `makepkg` will clone the BARE repo into \
+the current dir:
+```
+source=('git+https://gittea.dev/bjoernf/countdown.git')
+```
+
 ## examples
 
 https://gitlab.archlinux.org/archlinux/packaging/packages/fastfetch
