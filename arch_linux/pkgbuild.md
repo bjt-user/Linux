@@ -26,6 +26,14 @@ You need this line:
 cksums=('SKIP')
 ```
 
+## packaging functions
+
+#### build()
+
+The optional build() function is used to compile and/or adjust the \
+source files in preparation to be installed by the package() function.\
+This function is run inside $srcdir.
+
 ## examples
 
 https://gitlab.archlinux.org/archlinux/packaging/packages/fastfetch
