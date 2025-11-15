@@ -1,3 +1,7 @@
+## general info
+
+https://taskwarrior.org/docs/
+
 ## usage
 
 #### add a wait to an existing task
