@@ -210,6 +210,13 @@ Show the dependency tree of a package:
 pactree curl
 ```
 
+#### search for files with regex (-Fx)
+
+Find all .wav files in packages:
+```
+sudo pacman -Fx ".*wav$"
+```
+
 ## troubleshooting
 
 #### gpg keys
