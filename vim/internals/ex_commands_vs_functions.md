@@ -17,3 +17,7 @@ or assign to a variable:
 :let myvar = system('sudo dmesg')
 :echo myvar
 ```
+
+#### ex_cmds.h
+
+Ex commands should all be listed in `ex_cmds.h`.
