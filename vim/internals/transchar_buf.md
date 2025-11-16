@@ -39,4 +39,12 @@ What happens if you make character 27 (escape) character printable?
 Then ansi escape sequences are actually printed in color.\
 But after them follow some characters from the previous command.
 
-=> Debug to see what happens here
+The problem is that the global variable `msg_col` is now set incorrectly.\
+If you set it manually correct in `gdb` there will be no characters left from \
+the command.\
+```
+:echo "\e[31mred\e0m"
+```
+should be `msg_col = 3`, but `msg_col` is 12.
+
+So the escape sequence should not be counted as characters.
