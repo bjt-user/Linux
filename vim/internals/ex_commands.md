@@ -1,4 +1,6 @@
-## TODO: how to add a new ex command?
+## how to add a new ex command?
+
+#### cmdidxs
 
 From `ex_cmds.h`:
 ```
@@ -27,3 +29,54 @@ Even the `:x` command which usually doesn't need an argument:
 ```
 ex_docmd.c:ex_exit(exarg_T *eap)
 ```
+
+#### example hello world
+
+Put a new function in some .c file.\
+It probably does not matter where.
+
+In `eval.c` worked:
+```
+    void
+ex_echohello(exarg_T *eap)
+{
+    mch_write("hello world", 11);
+}
+```
+(The parameter needs to be the same, cannot be void.)
+
+In `ex_cmds.h` add this:
+```
++EXCMD(CMD_echohello,   "echohello",    ex_echohello,
++       EX_EXTRA|EX_TRLBAR|EX_SBOXOK|EX_CMDWIN|EX_LOCK_OK,
++       ADDR_NONE),
+```
+
+In `ex_docmd.c` add this:
+```
++# define ex_echohello          ex_ni
+```
+(probably not needed if you use an existing define)
+
+Then in `proto/eval.pro` add the prototype:
+```
++void ex_echohello(exarg_T *eap);
+```
+
+Now run
+```
+make cmdidxs
+```
+
+```
+make -j8
+```
+
+```
+./vim
+```
+
+```
+:echohello
+```
+And that should print a `hello world` message.
