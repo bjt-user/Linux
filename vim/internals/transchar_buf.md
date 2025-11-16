@@ -29,3 +29,14 @@ It can also look like this when hitting enter after `:echo "foo"`:
 #5  0x0000557f5cd59a3a in do_one_cmd (cmdlinep=0x7fff6aff3d50, flags=0, cstack=0x7fff6aff3e30, fgetline=0x557f5cd736ae <getexline>, cookie=0x0)
     at ex_docmd.c:2629
 ```
+
+## modifications
+
+#### make escape character printable
+
+What happens if you make character 27 (escape) character printable?
+
+Then ansi escape sequences are actually printed in color.\
+But after them follow some characters from the previous command.
+
+=> Debug to see what happens here
