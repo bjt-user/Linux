@@ -14,3 +14,8 @@ From `ex_cmds.h`:
  *    long name of the command.
  */
 ```
+
+```
+make cmdidxs
+```
+will change the file `ex_cmdidxs.h`
