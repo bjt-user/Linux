@@ -19,3 +19,11 @@ From `ex_cmds.h`:
 make cmdidxs
 ```
 will change the file `ex_cmdidxs.h`
+
+#### parameters
+
+All commands seem to have the same parameter `exarg_T *eap`.\
+Even the `:x` command which usually doesn't need an argument:
+```
+ex_docmd.c:ex_exit(exarg_T *eap)
+```
