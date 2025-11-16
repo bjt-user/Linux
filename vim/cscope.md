@@ -1,5 +1,6 @@
 #### using it inside vim
 
+Add a connection:
 ```
 :cs(cope) add .
 ```
