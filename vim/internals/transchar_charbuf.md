@@ -23,3 +23,19 @@ This did also not work:
 ```
 b msg_outtrans_len_attr if transchar_charbuf == "^["
 ```
+
+#### when the value changes
+
+Inside `transchar_buf` a new character seems to get loaded into the \
+variable at this point if it is a printable character:
+```
+549		// printable character
+550		transchar_charbuf[i] = c;
+```
+
+If it is not a printable character the function `transchar_nonprint` \
+changes the value of this variable in some situations to `^[`:
+```
+553	    else
+554		transchar_nonprint(buf, transchar_charbuf + i, c);
+```
