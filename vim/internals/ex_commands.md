@@ -62,6 +62,9 @@ Then in `proto/eval.pro` add the prototype:
 ```
 +void ex_echohello(exarg_T *eap);
 ```
+(This depends on the file where you have put the function.)\
+(In `ex_docmd.c` it seems to be enough when you put the prototype.)\
+(These are static functions that are put on the top of the file.)
 
 Now run
 ```
