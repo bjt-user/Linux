@@ -80,3 +80,21 @@ make -j8
 :echohello
 ```
 And that should print a `hello world` message.
+
+#### ex_ni
+
+What is `ex_ni` (which is used for macros)?
+
+A function in `ex_docmd.c`:
+```
+/*
+ * Function called for command which is Not Implemented.  NI!
+ */
+    void
+ex_ni(exarg_T *eap)
+{
+    if (!eap->skip)
+        eap->errmsg =
+                _(e_sorry_command_is_not_available_in_this_version);
+}
+```
