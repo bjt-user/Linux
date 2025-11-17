@@ -5,4 +5,6 @@ This similar to what happens when `:bw` is called:
 do_bufdel(DOBUF_WIPE, NULL, 0, 0, 0, 1);
 ```
 
-But `:bw` seems to call `ex_bunload`.
+But `:bw` seems to call `ex_bunload`.\
+And `ex_bunload` calls `do_bufdel`.\
+And when `:bw` is given, it probably calls it like above.
