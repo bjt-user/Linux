@@ -101,3 +101,11 @@ ex_ni(exarg_T *eap)
                 _(e_sorry_command_is_not_available_in_this_version);
 }
 ```
+
+#### exarg_T
+
+```
+typedef struct exarg exarg_T;
+```
+
+The struct `exarg` is defined in `ex_cmds.h`.
