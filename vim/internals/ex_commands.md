@@ -84,7 +84,7 @@ make -j8
 ```
 And that should print a `hello world` message.
 
-#### TODO: make test
+#### make test
 
 `make test` seems to want documentation for new ex commands:
 ```
@@ -101,6 +101,14 @@ make test_cmd_lists
 
 Putting the documentation in `/runtime/doc/index.txt` in the list at \
 `ex-cmd-index :index` did not work.
+
+You need to put pipes around the command like this:
+```
+|:bxit|         :bx[it]         write the buffer and delete it
+```
+And the pipes will disappear when editing the file in vim.\
+The command will be in yellow color after that.\
+With other commands like `less` you can still see the surrounding pipes.
 
 #### ex_ni
 
