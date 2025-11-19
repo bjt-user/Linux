@@ -84,13 +84,16 @@ make -j8
 ```
 And that should print a `hello world` message.
 
-#### make test
+#### TODO: make test
 
 `make test` seems to want documentation for new ex commands:
 ```
 Found errors in Test_cmd_lists():
 command line..script .../vim/src/testdir/runtest.vim[636]..function RunTheTest[63]..Test_cmd_lists line 57: Missing commands from `:help ex-cmd-index`: [':bxit']: Expected 0 but got 1
 ```
+
+Putting the documentation in `/runtime/doc/index.txt` in the list at \
+`ex-cmd-index :index` did not work.
 
 #### ex_ni
 
