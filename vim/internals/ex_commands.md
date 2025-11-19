@@ -95,6 +95,8 @@ command line..script .../vim/src/testdir/runtest.vim[636]..function RunTheTest[6
 Putting the documentation in `/runtime/doc/index.txt` in the list at \
 `ex-cmd-index :index` did not work.
 
+The test that fails is in `src/testdir/test_cmd_lists.vim`.
+
 #### ex_ni
 
 What is `ex_ni` (which is used for macros)?
