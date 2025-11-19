@@ -92,10 +92,15 @@ Found errors in Test_cmd_lists():
 command line..script .../vim/src/testdir/runtest.vim[636]..function RunTheTest[63]..Test_cmd_lists line 57: Missing commands from `:help ex-cmd-index`: [':bxit']: Expected 0 but got 1
 ```
 
+The test that fails is in `src/testdir/test_cmd_lists.vim`.
+
+To run only this test
+```
+make test_cmd_lists
+```
+
 Putting the documentation in `/runtime/doc/index.txt` in the list at \
 `ex-cmd-index :index` did not work.
-
-The test that fails is in `src/testdir/test_cmd_lists.vim`.
 
 #### ex_ni
 
