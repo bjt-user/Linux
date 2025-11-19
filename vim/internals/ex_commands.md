@@ -84,6 +84,14 @@ make -j8
 ```
 And that should print a `hello world` message.
 
+#### make test
+
+`make test` seems to want documentation for new ex commands:
+```
+Found errors in Test_cmd_lists():
+command line..script .../vim/src/testdir/runtest.vim[636]..function RunTheTest[63]..Test_cmd_lists line 57: Missing commands from `:help ex-cmd-index`: [':bxit']: Expected 0 but got 1
+```
+
 #### ex_ni
 
 What is `ex_ni` (which is used for macros)?
