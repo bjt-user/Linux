@@ -84,6 +84,32 @@ make -j8
 ```
 And that should print a `hello world` message.
 
+#### make test
+
+`make test` seems to want documentation for new ex commands:
+```
+Found errors in Test_cmd_lists():
+command line..script .../vim/src/testdir/runtest.vim[636]..function RunTheTest[63]..Test_cmd_lists line 57: Missing commands from `:help ex-cmd-index`: [':bxit']: Expected 0 but got 1
+```
+
+The test that fails is in `src/testdir/test_cmd_lists.vim`.
+
+To run only this test
+```
+make test_cmd_lists
+```
+
+Putting the documentation in `/runtime/doc/index.txt` in the list at \
+`ex-cmd-index :index` did not work.
+
+You need to put pipes around the command like this:
+```
+|:bxit|         :bx[it]         write the buffer and delete it
+```
+And the pipes will disappear when editing the file in vim.\
+The command will be in yellow color after that.\
+With other commands like `less` you can still see the surrounding pipes.
+
 #### ex_ni
 
 What is `ex_ni` (which is used for macros)?
@@ -109,3 +135,16 @@ typedef struct exarg exarg_T;
 ```
 
 The struct `exarg` is defined in `ex_cmds.h`.
+
+Probably `exarg->errmsg` should be used for error handling in ex commands:
+```
+struct exarg {
+    ...
+    char        *errmsg;        // returned error message
+```
+
+If you assign an error message to it:
+```
+eap->errmsg = "Writing buffer has failed!";
+```
+that will be printed in red after the ex command was executed.
