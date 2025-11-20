@@ -142,3 +142,9 @@ struct exarg {
     ...
     char        *errmsg;        // returned error message
 ```
+
+If you assign an error message to it:
+```
+eap->errmsg = "Writing buffer has failed!";
+```
+that will be printed in red after the ex command was executed.
