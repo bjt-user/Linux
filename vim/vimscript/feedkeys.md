@@ -1,3 +1,12 @@
+## general info
+
+`:h feedkeys`
+
+> To include special keys into {string}, use double-quotes \
+and "\..." notation expr-quote.\
+For example, `feedkeys("\<CR>")` simulates pressing of the <Enter> key.\
+But `feedkeys('\<CR>')` pushes 5 characters.
+
 ## examples
 
 #### :h
