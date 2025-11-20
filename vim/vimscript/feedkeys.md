@@ -9,6 +9,18 @@ But `feedkeys('\<CR>')` pushes 5 characters.
 
 ## examples
 
+#### write to a buffer
+
+Create temp file, edit the buffer, put "foo" into it.\
+Then write the buffer.
+```
+let temp_file = tempname()
+
+execute "e " . temp_file
+
+call feedkeys("ifoo\e:w\<CR>")
+```
+
 #### :h
 
 This will put `:h ex-cmd-index` in under the status bar:
