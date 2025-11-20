@@ -1,3 +1,5 @@
+## general info
+
 ```
 assert_equal()
 assert_equal({expected}, {actual} [, {msg}])
@@ -17,3 +19,5 @@ assert_equal({expected}, {actual} [, {msg}])
     Will add the following to v:errors: 
             test.vim line 12: baz: Expected 'foo' but got 'bar'
 ```
+
+Doesnt seem to work directly, it adds an error to `v:errors`.
