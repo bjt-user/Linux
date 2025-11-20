@@ -135,3 +135,10 @@ typedef struct exarg exarg_T;
 ```
 
 The struct `exarg` is defined in `ex_cmds.h`.
+
+Probably `exarg->errmsg` should be used for error handling in ex commands:
+```
+struct exarg {
+    ...
+    char        *errmsg;        // returned error message
+```
