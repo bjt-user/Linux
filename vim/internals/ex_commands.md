@@ -159,3 +159,9 @@ For example ":echo hi" has the `arg` `hi`.
 ```
 char_u* str = eap->arg;
 ```
+
+Every special character seems to be escaped:
+```
+p eap.arg
+$3 = (char_u *) 0x5643b1bcd768 "\"\\e[31mred\\e[0m\""
+```
