@@ -128,13 +128,15 @@ ex_ni(exarg_T *eap)
 }
 ```
 
-#### exarg_T
+## exarg_T
 
 ```
 typedef struct exarg exarg_T;
 ```
 
 The struct `exarg` is defined in `ex_cmds.h`.
+
+#### field errmsg
 
 Probably `exarg->errmsg` should be used for error handling in ex commands:
 ```
@@ -148,3 +150,12 @@ If you assign an error message to it:
 eap->errmsg = "Writing buffer has failed!";
 ```
 that will be printed in red after the ex command was executed.
+
+#### field arg
+
+This holds the argument that you pass to the ex command.\
+For example ":echo hi" has the `arg` `hi`.
+
+```
+char_u* str = eap->arg;
+```
