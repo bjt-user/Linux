@@ -7,6 +7,17 @@ and "\..." notation expr-quote.\
 For example, `feedkeys("\<CR>")` simulates pressing of the <Enter> key.\
 But `feedkeys('\<CR>')` pushes 5 characters.
 
+#### mode
+
+In vims unit testing framework you also need to set the mode to "x".
+
+> 'x'     Execute commands until typeahead is empty.
+
+Example:
+```
+call feedkeys("ifoo\e:bx\<CR>", "x")
+```
+
 ## examples
 
 #### write to a buffer
