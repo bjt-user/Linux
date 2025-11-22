@@ -20,3 +20,13 @@ Seems to get assigned here:
 ```
 925             if (fgetline == NULL || (next_cmdline = fgetline(':', cookie,
 ```
+
+#### function pointer "fgetline"
+
+When hitting a `:` there is the function `getexline` from `ex_getln.c` behind \
+the function pointer:
+```
+(gdb) p fgetline
+$1 = (char_u *(*)(int, void *, int,
+    getline_opt_T)) 0x561cd542d70a <getexline>
+```
