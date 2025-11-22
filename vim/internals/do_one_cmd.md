@@ -18,6 +18,8 @@ Break it down:
 
 => The literal backslash has to be converted to `\033` or `\e` (character 27).
 
+What function converts character 27 to two characters?
+
 And that seems to be independend of the ex command:
 ```
 (gdb) p *cmdlinep
