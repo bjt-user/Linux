@@ -11,6 +11,13 @@ $2 = (char_u *) 0x55d6ffa0e760 "echoraw \"\\e[31mred\\e[0m\""
 ```
 The string here has already escaped special chars.
 
+Break it down:
+- the outter double quotes belong to gdb (not part of the string)
+- the double quotes are just escaped with a single slash -> that is also normal in gdb
+- but the escape sequence should look like this in gdb: `\033[31m` (actually looks like `\\e[31m`)
+
+=> The literal backslash has to be converted to `\033` or `\e` (character 27).
+
 And that seems to be independend of the ex command:
 ```
 (gdb) p *cmdlinep
