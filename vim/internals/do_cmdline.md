@@ -13,3 +13,10 @@ It gets assigned a string value in this line:
 ```
 968		cmdline_copy = next_cmdline;
 ```
+
+#### next_cmdline
+
+Seems to get assigned here:
+```
+925             if (fgetline == NULL || (next_cmdline = fgetline(':', cookie,
+```
