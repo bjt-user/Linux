@@ -11,6 +11,25 @@ It makes repeated calls to `msg_outtrans_len_attr` in a for loop.
 
 ex_echo -> echo_one
 
+#### how to call it
+
+This is how it is called in `ex_echo`:
+```
+echo_one(&rettv, eap->cmdidx == CMD_echo, &atstart, &needclr);
+```
+
+And this is how `needclr` and `atstart` are initialized before:
+```
+int         needclr = TRUE;
+int         atstart = TRUE;
+```
+
+Calling it like this lead to a segfault:
+```
+echo_one(&rettv, 0, NULL, NULL);
+```
+
+
 #### triggered by
 
 This will trigger the function:
