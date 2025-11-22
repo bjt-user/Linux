@@ -2,7 +2,9 @@
 
 Is called when ex commands are executed.
 
-#### parameters
+## parameters
+
+#### cmdlinep
 
 `cmdlinep` contains the string of the command that will be executed:
 ```
