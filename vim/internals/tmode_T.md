@@ -9,3 +9,11 @@ typedef enum {
     TMODE_UNKNOWN   // after executing a shell
 } tmode_T;
 ```
+
+## TODO: how to set the terminal mode?
+
+Maybe with this from `term.c`?
+```
+    void
+settmode(tmode_T tmode)
+```
