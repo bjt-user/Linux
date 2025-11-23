@@ -17,3 +17,11 @@ Maybe with this from `term.c`?
     void
 settmode(tmode_T tmode)
 ```
+
+=> that function seems to drastically change the behavior of vim
+
+## determine current tmode
+
+```
+printf("cur_tmode: %d\n", cur_tmode);
+```
