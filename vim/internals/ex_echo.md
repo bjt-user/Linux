@@ -51,5 +51,3 @@ echo_one(&rettv, eap->cmdidx == CMD_echo, &atstart, &needclr);
 #### cur_tmode
 
 `cur_tmode` is `TMODE_RAW` the entire function.
-
-Changing it to `TMODE_COOK` does not change anything.
