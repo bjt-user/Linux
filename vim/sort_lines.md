@@ -9,3 +9,10 @@ Sort the entire file:
 ```
 :%:sort
 ```
+
+You can also just select lines in visual mode.
+
+#### using it for #includes
+
+In combination with `:uniq` this is probably great for include/import sections \
+at the beginning of source files.
