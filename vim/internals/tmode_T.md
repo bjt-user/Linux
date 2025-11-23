@@ -10,7 +10,7 @@ typedef enum {
 } tmode_T;
 ```
 
-## TODO: how to set the terminal mode?
+## how to set the terminal mode?
 
 Maybe with this from `term.c`?
 ```
@@ -19,6 +19,13 @@ settmode(tmode_T tmode)
 ```
 
 => that function seems to drastically change the behavior of vim
+
+Set it to cooked mode:
+```
+settmode(0);
+```
+Remember to change check `cur_tmode` before and change it back \
+to raw mode.
 
 ## determine current tmode
 
