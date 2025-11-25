@@ -1,3 +1,17 @@
+## general
+
+Function in `message.c`:
+```
+1723     int
+1724 msg_outtrans_len_attr(char_u *msgstr, int len, int attr)
+1725 {
+```
+
+It seems to be a recursive function.
+
+It seems to convert the input string `msgstr` and print it to the cmdline.\
+The flushing of the output does not happen instantly.
+
 #### call from gdb
 
 This prints "foobar" under the statusbar after continuing:
