@@ -32,6 +32,11 @@ do_cmdline(
 
 It gets called when you hit `:` in normal mode.
 
+It waits here for the user to type in the command:
+```
+925		    if (fgetline == NULL || (next_cmdline = fgetline(':', cookie,
+```
+
 It calls `do_one_cmd` with the variable `cmdline_copy`.\
 And in `cmdline_copy` is the command as a string.
 
