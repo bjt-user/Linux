@@ -37,6 +37,18 @@ It waits here for the user to type in the command:
 925		    if (fgetline == NULL || (next_cmdline = fgetline(':', cookie,
 ```
 
+This is the entire if condition:
+```
+925             if (fgetline == NULL || (next_cmdline = fgetline(':', cookie,
+926 #ifdef FEAT_EVAL
+927                     cstack.cs_idx < 0 ? 0 : (cstack.cs_idx + 1) * 2
+928 #else
+929                     0
+930 #endif
+931                     , in_vim9script() ? GETLINE_CONCAT_CONTBAR
+932                                                : GETLINE_CONCAT_CONT)) == NULL)
+```
+
 It calls `do_one_cmd` with the variable `cmdline_copy`.\
 And in `cmdline_copy` is the command as a string.
 
