@@ -27,6 +27,10 @@ To clear the statusbar again:
 call msg_clr_eos
 ```
 
+#### TODO: call it in an ex command
+
+Call it in a custom ex command or function to investigate this function.
+
 #### why do you need "continue"?
 
 What is the `main_loop` or another function further up in the call stack doing?
