@@ -49,6 +49,9 @@ This is the entire if condition:
 932                                                : GETLINE_CONCAT_CONT)) == NULL)
 ```
 
+`fgetline` is only a function pointer.\
+It points to `getexline`.
+
 It calls `do_one_cmd` with the variable `cmdline_copy`.\
 And in `cmdline_copy` is the command as a string.
 
