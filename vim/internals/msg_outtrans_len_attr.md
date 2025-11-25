@@ -31,6 +31,10 @@ call msg_clr_eos
 
 Call it in a custom ex command or function to investigate this function.
 
+#### used functions
+
+`vim_isprintc(int c)`
+
 #### why do you need "continue"?
 
 What is the `main_loop` or another function further up in the call stack doing?
