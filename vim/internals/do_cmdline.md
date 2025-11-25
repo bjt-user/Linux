@@ -35,6 +35,18 @@ It gets called when you hit `:` in normal mode.
 It calls `do_one_cmd` with the variable `cmdline_copy`.\
 And in `cmdline_copy` is the command as a string.
 
+#### basic call graph
+
+do_cmdline -> do_one_cmd
+
+```
+1042         next_cmdline = do_one_cmd(&cmdline_copy, flags,
+1043 #ifdef FEAT_EVAL
+1044                                 &cstack,
+1045 #endif
+1046                                 cmd_getline, cmd_cookie);
+```
+
 #### cmdline_copy
 
 It gets assigned a string value in this line:
