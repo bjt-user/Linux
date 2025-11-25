@@ -18,7 +18,25 @@ Break it down:
 - the double quotes are just escaped with a single slash -> that is also normal in gdb
 - but the escape sequence should look like this in gdb: `\033[31m` (actually looks like `\\e[31m`)
 
-=> The literal backslash has to be converted to `\033` or `\e` (character 27).
+This
+```
+:echo "\033[31mred\033[0m"
+```
+gets converted to:
+```
+"echo \"\\033[31mred\\033[0m\""
+```
+
+And this:
+```
+:echo "\x1b[31mred\x1b[0m"
+```
+gets converted to this:
+```
+(gdb) p *cmdlinep
+$4 = (char_u *) 0x558f4f5c5760 "echo \"\\x1b[31mred\\x1b[0m\""
+```
+
 
 What function converts character 27 to two characters?
 
