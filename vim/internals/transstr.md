@@ -10,7 +10,12 @@ Function in `charset.c`.
 transstr(char_u *s)
 ```
 
-## TODO: find out what it does
+## how it transforms strings
 
-Maybe execute it in ex commands or function commands to see how it \
+Execute it in ex command or function command to see how it \
 transforms the string.
+
+"foobar" -> "foobar" \
+"foo\nbar\n" -> "foo^@bar^@" \
+"\e[31mred\e[0m" -> "^[[31mred^[[0m" \
+"\x1b[31mred\x1b[0m" -> "^[[31mred^[[0m"
