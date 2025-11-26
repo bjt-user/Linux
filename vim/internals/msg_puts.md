@@ -43,3 +43,9 @@ will print
 foo
 bar
 ```
+
+It even prints unicode characters.\
+This will print a checkmark at cmdline:
+```
+msg_puts("\u2713\n");
+```
