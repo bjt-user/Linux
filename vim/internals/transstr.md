@@ -20,3 +20,7 @@ transforms the string.
 "\e[31mred\e[0m" -> "^[[31mred^[[0m" \
 "\x1b[31mred\x1b[0m" -> "^[[31mred^[[0m" \
 "\033[31mred\033[0m" -> "^[[31mred^[[0m"
+
+## when it gets called
+
+Seems to get called very rarely.
