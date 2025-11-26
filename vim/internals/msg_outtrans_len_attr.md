@@ -27,9 +27,21 @@ To clear the statusbar again:
 call msg_clr_eos
 ```
 
-#### TODO: call it in an ex command
+#### call it in an ex command
 
 Call it in a custom ex command or function to investigate this function.
+
+This will just print "foobar" to the cmdline:
+```
+char_u* str = (char_u*)"foobar";
+msg_outtrans_len_attr(str, (int)strlen((char*)str), 0);
+```
+
+If you use ansi escape codes, they will be transformed:\
+`\e[31mred\e[0m` -> `^[[31mred^[[0m`
+
+Newlines will also be transformed:\
+`foo\nbar\n` -> `foo^@bar^@`
 
 #### used functions
 
