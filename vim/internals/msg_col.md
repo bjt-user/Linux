@@ -12,3 +12,8 @@ And in that function the value is changed like this:
 ```
 msg_col += *t_col;
 ```
+
+This call changes the value in `msg_puts_attr_len`:
+```
+2362            msg_puts_display((char_u *)str, maxlen, attr, FALSE);
+```
