@@ -12,3 +12,7 @@ Function in `message.c`.
     void
 wait_return(int redraw)
 ```
+
+## behavior
+
+Prints the message "Press ENTER or type command to continue" to the cmdline.
