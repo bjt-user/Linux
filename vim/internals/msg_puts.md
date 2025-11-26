@@ -50,6 +50,11 @@ This will print a checkmark at cmdline:
 msg_puts("\u2713\n");
 ```
 
+#### assumptions
+
+Long escape sequences cannot be properly displayed because msg_row and msg_col \
+are not updated correctly.
+
 ## troubleshooting
 
 #### bat output
