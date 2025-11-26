@@ -32,3 +32,22 @@ echoraw({string})                                       echoraw()
 
         Return type: Number
 ```
+
+## behavior
+
+Newlines behave very weird.
+
+```
+:call echoraw("foo\nbar\nfoo\nbar\n")
+```
+
+```
+fooll echoraw("foo\nbar\nfoo\nbar\n")
+   bar
+      foo
+         bar
+```
+
+## assumptions
+
+I think this uses the raw mode of the terminal.
