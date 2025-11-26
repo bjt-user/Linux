@@ -18,4 +18,5 @@ transforms the string.
 "foobar" -> "foobar" \
 "foo\nbar\n" -> "foo^@bar^@" \
 "\e[31mred\e[0m" -> "^[[31mred^[[0m" \
-"\x1b[31mred\x1b[0m" -> "^[[31mred^[[0m"
+"\x1b[31mred\x1b[0m" -> "^[[31mred^[[0m" \
+"\033[31mred\033[0m" -> "^[[31mred^[[0m"
