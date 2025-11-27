@@ -1,4 +1,8 @@
-Is `enc_utf8` global?\
-And is it always set to 1?
+`enc_utf8` is a global var.
 
-What is `has_mbyte`?
+`globals.h`:
+```
+EXTERN int      enc_utf8 INIT(= FALSE);         // UTF-8 encoded Unicode
+
+EXTERN int      has_mbyte INIT(= 0);            // any multi-byte encoding
+```
