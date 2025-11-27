@@ -26,3 +26,10 @@ And after this call it was set to 0 again:
 ```
 2553			    s = screen_puts_mbyte(s, l, attr);
 ```
+
+#### msg_row
+
+`msg_row` was incremented by 1 after this line:
+```
+2536		    if (msg_col >= cmdline_width)
+```
