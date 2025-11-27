@@ -1,3 +1,5 @@
+There is some explanation at the beginning of `mbyte.c`.
+
 `enc_utf8` is a global var.
 
 `globals.h`:
