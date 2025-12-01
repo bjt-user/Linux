@@ -73,3 +73,14 @@ The output of this string will be misformatted:
 msg_puts("\033[38;5;246m──");
 ```
 The two unicode chars will be separated by whitespace.
+
+The output is the same with a unicode sequence:
+```
+msg_puts("\033[38;5;246m\u2500\u2500");
+```
+
+But different symbols do not behave the same way.\
+Two check marks will not be divided by whitespace. (`\u2713`)
+
+And without the ansi escape sequence the two characters will also \
+not be separated by whitespace.
