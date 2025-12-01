@@ -151,3 +151,13 @@ Navigate to "text/calendar" with ctrl + j.\
 ```
 :pipe calcurse -i -
 ```
+
+### tabs
+
+#### close composing tab
+
+ctrl + x to get into ex mode
+
+```
+:abort
+```
