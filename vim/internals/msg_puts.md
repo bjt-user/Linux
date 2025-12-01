@@ -70,14 +70,12 @@ are not updated correctly.
 
 The output of this string will be misformatted:
 ```
-msg_puts("\033[38;5;246m──");
+msg_puts("\033[38m\u2500\u2500");
 ```
 The two unicode chars will be separated by whitespace.
 
-The output is the same with a unicode sequence:
-```
-msg_puts("\033[38;5;246m\u2500\u2500");
-```
+The output is the same with a literal unicode code point copy and pasted from \
+somewhere else.
 
 But different symbols do not behave the same way.\
 Two check marks will not be divided by whitespace. (`\u2713`)
