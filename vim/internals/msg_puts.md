@@ -49,9 +49,10 @@ This will print a checkmark at cmdline:
 ```
 msg_puts("\u2713\n");
 ```
+Even two of these in a row will work.
 
-TODO: But maybe two unicode characters in a row will break?\
-Or some specific characters?
+TODO: Maybe some some specific characters break it?\
+Check what the first characters of `bat` output are.
 
 #### assumptions
 
