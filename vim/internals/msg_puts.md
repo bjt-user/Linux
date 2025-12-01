@@ -52,7 +52,8 @@ msg_puts("\u2713\n");
 Even two of these in a row will work.
 
 TODO: Maybe some some specific characters break it?\
-Check what the first characters of `bat` output are.
+Check what the first characters of `bat` output are.\
+=> it could be `"\u2500"`
 
 #### assumptions
 
