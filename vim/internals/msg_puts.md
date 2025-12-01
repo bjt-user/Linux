@@ -12,6 +12,10 @@ msg_puts(char *s)
 }
 ```
 
+## basic call graph
+
+msg_puts -> msg_puts_attr(s, 0) -> msg_puts_attr_len(s, -1, attr)
+
 ## behavior (when used in ex command)
 
 This will just print `foobar` to the "cmdline":
