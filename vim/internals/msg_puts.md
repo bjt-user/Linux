@@ -50,6 +50,9 @@ This will print a checkmark at cmdline:
 msg_puts("\u2713\n");
 ```
 
+TODO: But maybe two unicode characters in a row will break?\
+Or some specific characters?
+
 #### assumptions
 
 Long escape sequences cannot be properly displayed because msg_row and msg_col \
