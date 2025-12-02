@@ -64,6 +64,17 @@ Check what the first characters of `bat` output are.\
 Long escape sequences cannot be properly displayed because msg_row and msg_col \
 are not updated correctly.
 
+## bugs
+
+The second assert will fail:
+```
+assert(msg_col == 0);
+msg_puts("\033[38m");
+assert(msg_col == 0);
+```
+Which means that ansi escape sequences given to `msg_puts` will increment `msg_col`.\
+That should not be the case.
+
 ## troubleshooting
 
 #### bat output
