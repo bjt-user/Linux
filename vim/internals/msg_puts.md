@@ -14,7 +14,8 @@ msg_puts(char *s)
 
 ## basic call graph
 
-msg_puts -> msg_puts_attr(s, 0) -> msg_puts_attr_len(s, -1, attr)
+msg_puts -> msg_puts_attr(s, 0) -> msg_puts_attr_len(s, -1, attr) \
+-> msg_puts_display
 
 ## behavior (when used in ex command)
 

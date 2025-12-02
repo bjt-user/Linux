@@ -33,3 +33,14 @@ And after this call it was set to 0 again:
 ```
 2536		    if (msg_col >= cmdline_width)
 ```
+
+#### iteration over string
+
+This line iterate over the string `s`:
+```
+2484        while ((maxlen < 0 || (int)(s - str) < maxlen) && *s != NUL)
+```
+The char pointer is incremented by one in this line:
+```
+2719            ++s;
+```
