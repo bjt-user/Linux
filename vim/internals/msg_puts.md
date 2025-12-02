@@ -65,11 +65,32 @@ Check what the first characters of `bat` output are.\
 Long escape sequences cannot be properly displayed because msg_row and msg_col \
 are not updated correctly.
 
+## bugs
+
+The second assert will fail:
+```
+assert(msg_col == 0);
+msg_puts("\033[38m");
+assert(msg_col == 0);
+```
+Which means that ansi escape sequences given to `msg_puts` will increment `msg_col`.\
+That should not be the case.
+
 ## troubleshooting
 
 #### bat output
 
 The output of this string will be misformatted:
 ```
-msg_puts("\033[38;5;246m─────┬──────────────────────────────────────────────────────────────────────────\033[0m\n     \033[38;5;246m│ \033[0mF    ile: \033[1m/etc/os-release\033[0m\n\033[38;5;246m─────┼──────────────────────────────────────────────────────────────────────────\033[0m\n\    033[38;5;246m   1\033[0m \033[38;5;246m│\033[0m \033[38;5;231mNAME\033[0m\033[38;5;203m=\033[0m\033[38;5;231m\"\033[0m\033[38;5;186mArch Lin    ux\033[0m\033[38;5;231m\"\033[0m\n\033[38;5;246m   2\033[0m \033[38;5;246m│\033[0m \033[38;5;231mPRETTY_NAME\033[0m\033[38;5;203m=\033[0m\03    3[38;5;231m\"\033[0m\033[38;5;186mArch Linux\033[0m\033[38;5;231m\"\033[0m\n\033[38;5;246m   3\033[0m \033[38;5;246m│\033[0m \033[38;5;231mI    D\033[0m\033[38;5;203m=\033[0m\033[38;5;186march\033[0m\n\033[38;5;246m   4\033[0m \033[38;5;246m│\033[0m \033[38;5;231mBUILD_ID\033[0m\033[    38;5;203m=\033[0m\033[38;5;186mrolling\033[0m\n\033[38;5;246m   5\033[0m \033[38;5;246m│\033[0m \033[38;5;231mVERSION_ID\033[0m\033[38;5;203    m=\033[0m\033[38;5;186mTEMPLATE_VERSION_ID\033[0m\n\033[38;5;246m   6\033[0m \033[38;5;246m│\033[0m \033[38;5;231mANSI_COLOR\033[0m\033[38;5    ;203m=\033[0m\033[38;5;231m\"\033[0m\033[38;5;186m38;2;23;147;209\033[0m\033[38;5;231m\"\033[0m\n\033[38;5;246m   7\033[0m \033[38;5;246m│\0    33[0m \033[38;5;231mHOME_URL\033[0m\033[38;5;203m=\033[0m\033[38;5;231m\"\033[0m\033[38;5;186mhttps://archlinux.org/\033[0m\033[38;5;231m\"\    033[0m\n\033[38;5;246m   8\033[0m \033[38;5;246m│\033[0m \033[38;5;231mDOCUMENTATION_URL\033[0m\033[38;5;203m=\033[0m\033[38;5;231m\"\033[0m    \033[38;5;186mhttps://wiki.archlinux.org/\033[0m\033[38;5;231m\"\033[0m\n\033[38;5;246m   9\033[0m \033[38;5;246m│\033[0m \033[38;5;231mSUPP    ORT_URL\033[0m\033[38;5;203m=\033[0m\033[38;5;231m\"\033[0m\033[38;5;186mhttps://bbs.archlinux.org/\033[0m\033[38;5;231m\"\033[0m\n\033[38;5    ;246m  10\033[0m \033[38;5;246m│\033[0m \033[38;5;231mBUG_REPORT_URL\033[0m\033[38;5;203m=\033[0m\033[38;5;231m\"\033[0m\033[38;5;186mhttps:    //bugs.archlinux.org/\033[0m\033[38;5;231m\"\033[0m\n\033[38;5;246m  11\033[0m \033[38;5;246m│\033[0m \033[38;5;231mPRIVACY_POLICY_URL\033[0    m\033[38;5;203m=\033[0m\033[38;5;231m\"\033[0m\033[38;5;186mhttps://terms.archlinux.org/docs/privacy-policy/\033[0m\033[38;5;231m\"\033[0m\n    \033[38;5;246m  12\033[0m \033[38;5;246m│\033[0m \033[38;5;231mLOGO\033[0m\033[38;5;203m=\033[0m\033[38;5;186marchlinux-logo\033[0m\n\033[38    ;5;246m─────┴──────────────────────────────────────────────────────────────────────────\033[0m\n")
+msg_puts("\033[38m\u2500\u2500");
 ```
+The two unicode chars will be separated by whitespace.
+
+The output is the same with a literal unicode code point copy and pasted from \
+somewhere else.
+
+But different symbols do not behave the same way.\
+Two check marks will not be divided by whitespace. (`\u2713`)
+
+And without the ansi escape sequence the two characters will also \
+not be separated by whitespace.
