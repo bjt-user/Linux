@@ -15,6 +15,21 @@ msg_puts_display(
     int         recurse)
 ```
 
+#### iteration over string
+
+This line iterate over the string `s`:
+```
+2484        while ((maxlen < 0 || (int)(s - str) < maxlen) && *s != NUL)
+```
+The char pointer is incremented by one in this line:
+```
+2719            ++s;
+```
+
+`t_col` gets incremented after each character.\
+When the loop is done `t_col` will be added to `msg_col` and `t_col` will be \
+set back to 0.
+
 #### msg_col
 
 After this call `msg_col` was set to 77:
@@ -32,15 +47,4 @@ And after this call it was set to 0 again:
 `msg_row` was incremented by 1 after this line:
 ```
 2536		    if (msg_col >= cmdline_width)
-```
-
-#### iteration over string
-
-This line iterate over the string `s`:
-```
-2484        while ((maxlen < 0 || (int)(s - str) < maxlen) && *s != NUL)
-```
-The char pointer is incremented by one in this line:
-```
-2719            ++s;
 ```
