@@ -9,7 +9,8 @@ It makes repeated calls to `msg_outtrans_len_attr` in a for loop.
 
 #### call graph
 
-ex_echo -> echo_one -> msg_outtrans_len_attr (for every character)
+ex_echo -> echo_one -> msg_outtrans_len_attr (for every character) \
+-> msg_puts_attr_len -> msg_puts_display
 
 #### how to call it
 
