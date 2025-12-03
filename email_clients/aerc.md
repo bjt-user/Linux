@@ -18,6 +18,14 @@ ic = :pipe calcurse -i -
 And then you can hit `ic` when viewing a `text/calendar` file \
 to import it in `calcurse`.
 
+#### composing header-layout
+
+This is important if you want to send carbon copy mails:
+```
+[compose]
+header-layout=From,To,Cc,Subject
+```
+
 ## usage
 
 #### help
