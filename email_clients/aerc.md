@@ -126,6 +126,12 @@ In html mode, put the cursor on the link and type `:open` \
 :search -u
 ```
 
+#### mark as unread
+
+```
+:unread
+```
+
 #### search for strings in mail headers
 
 `/searchterm` `enter`
