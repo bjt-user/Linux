@@ -1,3 +1,11 @@
+## general info
+
+```
+:h tabpage.txt
+```
+
+## usage
+
 Open a file in a new tab:
 ```
 :tabnew <file>
