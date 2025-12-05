@@ -24,7 +24,12 @@ Go to the next tab:
 ```
 :tabn
 ```
+or `gt` or `<C-PgUp>`
+
 Go to the previous tab:
 ```
 :tabp
 ```
+or `gT` or `<C-PgDn>`
+
+> {count}gt       Go to tab page {count}.  The first tab page has number one.
