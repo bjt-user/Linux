@@ -30,3 +30,12 @@ Example:
 ```
 :find stdlib.h
 ```
+
+#### vimgrep
+
+Search for the string `cmp` in .c files:
+```
+:vimgrep cmp *.c
+```
+
+Advance to the next match with `:cn`.
