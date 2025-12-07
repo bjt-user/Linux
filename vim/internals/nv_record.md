@@ -8,3 +8,5 @@ Function responsible for the "recording" feature that gets started/stopped by hi
 `nv_record()` does not get called directly by any function.
 
 All normal commands (`nv_*` functions) probably get called by a function pointer.
+
+Assumption: It is called in `normal_cmd()`.
