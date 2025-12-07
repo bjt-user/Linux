@@ -11,7 +11,8 @@ See `:h job-options`
 `drop`: `never` (allows reading from dead jobs) \
 `mode`: `raw` (does not stop reading at new lines) \
 `timeout`: 5000 (waiting for 5 seconds for the job to finish) \
-`'err_io': 'out'` (stderr messages to go to stdout)
+`'err_io': 'out'` (stderr messages to go to stdout) \
+`'env'`: {dict} (set the environment for the command)
 
 With `timeout` you do not need a sleep loop to wait until the job has finished.
 
