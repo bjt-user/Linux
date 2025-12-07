@@ -9,4 +9,11 @@ Function responsible for the "recording" feature that gets started/stopped by hi
 
 All normal commands (`nv_*` functions) probably get called by a function pointer.
 
-Assumption: It is called in `normal_cmd()`.
+It is called in `normal_cmd()`:
+
+```
+    at normal.c:955
+955	    (nv_cmds[idx].cmd_func)(&ca);
+```
+
+normal_cmd -> nv_record
