@@ -29,6 +29,27 @@ This will run all tests inside `testdir/test_messages.vim`:
 make test_messages
 ```
 
+#### WaitForAssert
+
+This function is defined in `src/testdir/util/shared.vim` and is often \
+necessary for the assert to work:
+```
+" Wait for up to five seconds for "assert" to return zero.  "assert" must be a
+" (lambda) function containing one assert function.  Example:
+"   call WaitForAssert({-> assert_equal("dead", job_status(job)})
+"
+" A second argument can be used to specify a different timeout in msec.
+"
+" Return zero for success, one for failure (like the assert function).
+func g:WaitForAssert(assert, ...)
+    let timeout = get(a:000, 0, 5000)
+    if s:WaitForCommon(v:null, a:assert, timeout) < 0
+        return 1
+    endif
+    return 0
+endfunc
+```
+
 ## syntax tests
 
 #### general info
