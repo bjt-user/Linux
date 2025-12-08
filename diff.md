@@ -80,6 +80,10 @@ diff -rq -x "*.git*" repo-1/ repo-2/
 But this will also exclude files like `.gitlab-ci.yaml`, so it is not a \
 clean solution.
 
+#### ignore whitespace
+
+`-w`
+
 ## comparing directories
 
 Usually you want to compare recursively with `-r` to compare all subdirectories as well.
