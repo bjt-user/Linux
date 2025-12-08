@@ -1,3 +1,5 @@
+## general info
+
 You can compare files or entire directories with the `diff` command.
 ```
 diff file1 file2
@@ -28,6 +30,7 @@ The number on the right is the line number in file2.txt.\
 But it is not really clear what this means...\
 "The 3d2 and 5a5 can be ignored, they are commands for patch which is often used with diff."
 
+## usage
 
 #### Ignore The Order Of The lines
 
@@ -64,7 +67,6 @@ $ diff -u comparefiles1.txt comparefiles2.txt
  exit 0
 ```
 
-***
 #### colored output
 
 use the option `--color` for colored output
@@ -74,6 +76,7 @@ use the option `--color` for colored output
 Usually you want to compare recursively with `-r` to compare all subdirectories as well.
 
 #### only show if files differ
+
 ```
 diff -rq dir1 dir2
 ```
