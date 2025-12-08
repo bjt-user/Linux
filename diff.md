@@ -71,6 +71,15 @@ $ diff -u comparefiles1.txt comparefiles2.txt
 
 use the option `--color` for colored output
 
+#### exclude regex
+
+When comparing two separate git repos, this might help:
+```
+diff -rq -x "*.git*" repo-1/ repo-2/
+```
+But this will also exclude files like `.gitlab-ci.yaml`, so it is not a \
+clean solution.
+
 ## comparing directories
 
 Usually you want to compare recursively with `-r` to compare all subdirectories as well.
