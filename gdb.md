@@ -65,7 +65,7 @@ hello world
 6	}
 ```
 
-## TODO: building
+## building
 
 ```
 git clone https://sourceware.org/git/binutils-gdb.git
@@ -82,4 +82,4 @@ make -j$(nproc)
 Took about 6-8 minutes.\
 Load average rose to 7.
 
-But where is the binary?
+Binary seems to be here: `gdb/gdb`
