@@ -8,8 +8,6 @@ sudo apt install gdb
 
 But there was no man page installed for gdb.
 
-***
-
 ## usage
 
 #### compile your program with gcc
@@ -66,3 +64,22 @@ hello world
 (gdb) n
 6	}
 ```
+
+## TODO: building
+
+```
+git clone https://sourceware.org/git/binutils-gdb.git
+```
+
+```
+./configure
+```
+
+```
+make -j$(nproc)
+```
+
+Took about 6-8 minutes.\
+Load average rose to 7.
+
+But where is the binary?
