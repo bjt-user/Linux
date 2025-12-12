@@ -83,3 +83,6 @@ Took about 6-8 minutes.\
 Load average rose to 7.
 
 Binary seems to be here: `gdb/gdb`
+
+Maybe there is a way to only build `gdb` because there is a Makefile and \
+a Makefile.in in the `gdb` dir.
