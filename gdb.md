@@ -67,6 +67,8 @@ hello world
 
 ## building
 
+#### plain make
+
 ```
 git clone https://sourceware.org/git/binutils-gdb.git
 ```
@@ -86,3 +88,29 @@ Binary seems to be here: `gdb/gdb`
 
 Maybe there is a way to only build `gdb` because there is a Makefile and \
 a Makefile.in in the `gdb` dir.
+
+#### all-gdb target
+
+In the project dir do:
+```
+./configure
+```
+
+```
+time make all-gdb -j8
+```
+
+```
+real	9m0.640s
+```
+
+Now you have the binary:
+```
+./gdb/gdb
+```
+
+A
+```
+make clean
+```
+will remove it again.
