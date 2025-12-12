@@ -17,3 +17,9 @@ $ mktemp
 $ file /tmp/tmp.Nxnb8McRTv
 /tmp/tmp.Nxnb8McRTv: empty
 ```
+
+#### create temporary dir
+
+```
+mktemp -d
+```
