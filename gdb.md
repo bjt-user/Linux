@@ -1,4 +1,6 @@
-Gnu debugger for C.
+## general info
+
+Gnu debugger for C (and other languages) written in C++.
 
 #### installation
 
