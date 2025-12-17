@@ -37,7 +37,8 @@ to jump to the next warning/error.
 
 Very difficult syntax.
 
-A space has to be escaped by a backslash.
+A space has to be escaped by a backslash.\
+And double quotes seem to be not allowed around the string.
 
 For `sh` filetype this works:
 ```
@@ -48,5 +49,5 @@ set efm=%f:%l:%c:\ %trror:\ %m\ [SC%n],%f:%l:%c:\ %tarning:\ %m\ [SC%n],%f:%l:%c
 This was already in `/usr/share/vim/vim91/compiler/shellcheck.vim` but without the `%` \
 at the end of the `makeprg`.
 
-The `%trror` and `%tarning` does not really make sense according to the docs \
-and is generelly a weird syntax.
+`%tarning` seems to check the first character of `warning` which is `w`.\
+The `arning` is just the literal string and not part of the "item".
