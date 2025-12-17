@@ -23,9 +23,14 @@ or
 :tabe <file>
 ```
 
-#### Close the current tab
+#### close the current tab
+
 ```
 :tabc
+```
+or just
+```
+:x
 ```
 
 #### Go to the next tab
