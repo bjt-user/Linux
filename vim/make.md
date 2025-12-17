@@ -31,6 +31,10 @@ to jump to the next warning/error.
 
 #### errorformat
 
+```
+:h errorformat
+```
+
 The default is this:
 ```
 errorformat=%*[^"]"%f"%*\D%l: %m,"%f"%*\D%l: %m,%-Gg%\?make[%*\d]: *** [%f:%l:%m,%-Gg%\?make: *** [%f:%l:%m,%-G%f:%l: (Each undeclared identifier is reported only once,%-G%f:%l: for each function it appears in.),%-GIn file included from %f:%l:%c:,%-GIn file included from %f:%l:%c\,,%-G
