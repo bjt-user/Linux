@@ -35,8 +35,18 @@ to jump to the next warning/error.
 :h errorformat
 ```
 
-The default is this:
+Very difficult syntax.
+
+A space has to be escaped by a backslash.
+
+For `sh` filetype this works:
 ```
-errorformat=%*[^"]"%f"%*\D%l: %m,"%f"%*\D%l: %m,%-Gg%\?make[%*\d]: *** [%f:%l:%m,%-Gg%\?make: *** [%f:%l:%m,%-G%f:%l: (Each undeclared identifier is reported only once,%-G%f:%l: for each function it appears in.),%-GIn file included from %f:%l:%c:,%-GIn file included from %f:%l:%c\,,%-G
-In file included from %f:%l:%c,%-GIn file included from %f:%l,%-G%*[ ]from %f:%l:%c,%-G%*[ ]from %f:%l:,%-G%*[ ]from %f:%l\,,%-G%*[ ]from %f:%l,%f:%l:%c:%m,%f(%l):%m,%f:%l:%m,"%f"\, line %l%*\D%c%*[^ ] %m,%D%*\a[%*\d]: Entering directory %*[`']%f',%X%*\a[%*\d]: Leaving directory %*[`']%f',%D%*\a: Entering directory %*[`']%f',%X%*\a: Leaving directory %*[`']%f',%DMaking %*\a in %f,%f|%l| %m
+set makeprg=shellcheck\ -f\ gcc\ %
+set efm=%f:%l:%c:\ %trror:\ %m\ [SC%n],%f:%l:%c:\ %tarning:\ %m\ [SC%n],%f:%l:%c:\ %tote:\ %m\ [SC%n],%-G%.%#
 ```
+
+This was already in `/usr/share/vim/vim91/compiler/shellcheck.vim` but without the `%` \
+at the end of the `makeprg`.
+
+The `%trror` and `%tarning` does not really make sense according to the docs \
+and is generelly a weird syntax.
