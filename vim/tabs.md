@@ -6,6 +6,14 @@
 
 ## usage
 
+#### open files in tabs
+
+When starting vim:
+```
+vim -p foo.txt bar.txt
+```
+
+Inside vim:\
 Open a file in a new tab:
 ```
 :tabnew <file>
@@ -15,18 +23,19 @@ or
 :tabe <file>
 ```
 
-Close the current tab:
+#### Close the current tab
 ```
 :tabc
 ```
 
-Go to the next tab:
+#### Go to the next tab
 ```
 :tabn
 ```
 or `gt` or `<C-PgUp>`
 
-Go to the previous tab:
+#### Go to the previous tab
+
 ```
 :tabp
 ```
