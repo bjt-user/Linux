@@ -8,3 +8,4 @@ This command might fix it temporarily:
 ```
 :syn sync fromstart
 ```
+Putting it in the file type plugin of the file type can help.
