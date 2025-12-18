@@ -151,6 +151,10 @@ eap->errmsg = "Writing buffer has failed!";
 ```
 that will be printed in red after the ex command was executed.
 
+But those seem to get overridden by "exceptions".\
+(i.e. `E32: No file name`)\
+And then this `errmsg` is not even visible with `:messages`.
+
 #### field arg
 
 This holds the argument that you pass to the ex command.\
