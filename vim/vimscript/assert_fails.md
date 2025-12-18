@@ -1,5 +1,7 @@
 ## general info
 
+You will usually need `assert_exception` with a try/catch.
+
 ```
 assert_fails()
 assert_fails({cmd} [, {error} [, {msg} [, {lnum} [, {context}]]]])
