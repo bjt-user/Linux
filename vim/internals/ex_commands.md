@@ -181,3 +181,10 @@ Every special character seems to be escaped:
 p eap.arg
 $3 = (char_u *) 0x5643b1bcd768 "\"\\e[31mred\\e[0m\""
 ```
+
+## documentation
+
+All ex commands are listed here: `runtime/doc/index.txt`
+
+The ex commands are documented in more detail in other text files.\
+(i.e. `:x` is in `editing.txt`, `:bw` is in `windows.txt`)
