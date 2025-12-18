@@ -155,6 +155,18 @@ But those seem to get overridden by "exceptions".\
 (i.e. `E32: No file name`)\
 And then this `errmsg` is not even visible with `:messages`.
 
+In the vim source code, `eap->errmsg` is never directly set to literal strings.
+
+What you see is something like this:
+```
+eap->errmsg = _(e_finally_without_try);
+```
+And these refer to global error messages:
+```
+EXTERN char e_finally_without_try[]
+        INIT(= N_("E606: :finally without :try"));
+```
+
 #### field arg
 
 This holds the argument that you pass to the ex command.\
