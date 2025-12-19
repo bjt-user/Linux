@@ -8,3 +8,13 @@ do_bufdel(DOBUF_WIPE, NULL, 0, 0, 0, 1);
 But `:bw` seems to call `ex_bunload`.\
 And `ex_bunload` calls `do_bufdel`.\
 And when `:bw` is given, it probably calls it like above.
+
+#### basic call graph
+
+A call like this
+```
+do_bufdel(DOBUF_WIPE, NULL, 0, 0, 0, 1);
+```
+will do
+
+do_bufdel -> do_buffer -> do_buffer_ext
