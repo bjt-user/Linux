@@ -151,6 +151,22 @@ eap->errmsg = "Writing buffer has failed!";
 ```
 that will be printed in red after the ex command was executed.
 
+But those seem to get overridden by "exceptions".\
+(i.e. `E32: No file name`)\
+And then this `errmsg` is not even visible with `:messages`.
+
+In the vim source code, `eap->errmsg` is never directly set to literal strings.
+
+What you see is something like this:
+```
+eap->errmsg = _(e_finally_without_try);
+```
+And these refer to global error messages:
+```
+EXTERN char e_finally_without_try[]
+        INIT(= N_("E606: :finally without :try"));
+```
+
 #### field arg
 
 This holds the argument that you pass to the ex command.\
@@ -165,3 +181,10 @@ Every special character seems to be escaped:
 p eap.arg
 $3 = (char_u *) 0x5643b1bcd768 "\"\\e[31mred\\e[0m\""
 ```
+
+## documentation
+
+All ex commands are listed here: `runtime/doc/index.txt`
+
+The ex commands are documented in more detail in other text files.\
+(i.e. `:x` is in `editing.txt`, `:bw` is in `windows.txt`)
