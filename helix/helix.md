@@ -40,6 +40,10 @@ It is `v` instead of `V`.
 :sh ls -la
 ```
 
+#### file browser
+
+`<space>` + `e`
+
 ## lsp features
 
 #### show documentation for item under cursor
