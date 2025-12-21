@@ -63,3 +63,16 @@ Failure 1/1: prolog Git command failed.
   Failed to fetch tree-sitter grammars: 1 grammars failed to fetch
   note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ```
+
+This works:
+```
+time cargo install --path helix-term --locked
+real	8m37.915s
+user	53m42.185s
+sys	1m16.707s
+```
+
+Maybe try `cargo build --locked`.
+
+Or try this:\
+> If you do not want to fetch or build grammars, set an environment variable HELIX_DISABLE_AUTO_GRAMMAR_BUILD
