@@ -40,6 +40,10 @@ It is `v` instead of `V`.
 
 `:wbc`
 
+## navigation
+
+Try to use `gw` and then type a two character label.
+
 ## issues
 
 How to the next word without dragging a selction behind?\
