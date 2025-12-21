@@ -10,6 +10,10 @@ https://github.com/helix-editor/helix/wiki/Migrating-from-Vim
 
 https://github.com/helix-editor/helix/wiki/1.-Tutorial:-Getting-Started
 
+```
+helix --tutor
+```
+
 ## usage
 
 #### show documentation for item under cursor
@@ -33,6 +37,12 @@ It is `v` instead of `V`.
 #### go to start of the line
 
 `gh`
+
+#### shell commands
+
+```
+:sh ls -la
+```
 
 ## ex commands
 
