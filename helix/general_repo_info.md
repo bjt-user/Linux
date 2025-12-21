@@ -76,3 +76,9 @@ Maybe try `cargo build --locked`.
 
 Or try this:\
 > If you do not want to fetch or build grammars, set an environment variable HELIX_DISABLE_AUTO_GRAMMAR_BUILD
+
+#### cleaning
+
+```
+cargo clean
+```
