@@ -29,3 +29,9 @@ It is `v` instead of `V`.
 #### go to start of the line
 
 `gh`
+
+## ex commands
+
+#### write and exit buffer
+
+`:wbc`
