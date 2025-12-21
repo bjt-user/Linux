@@ -16,10 +16,6 @@ helix --tutor
 
 ## usage
 
-#### show documentation for item under cursor
-
-`<space>` + `k`
-
 #### delete a character
 
 It is not `x` as in `vim`, it is `d`.
@@ -43,6 +39,18 @@ It is `v` instead of `V`.
 ```
 :sh ls -la
 ```
+
+## lsp features
+
+#### show documentation for item under cursor
+
+`<space>` + `k`
+
+#### rename symbol
+
+This will rename all occurrences of the symbol.
+
+`<space>` + `r`
 
 ## ex commands
 
