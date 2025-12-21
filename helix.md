@@ -6,6 +6,10 @@ https://docs.helix-editor.com/from-vim.html
 
 https://github.com/helix-editor/helix/wiki/Migrating-from-Vim
 
+#### tutorial
+
+https://github.com/helix-editor/helix/wiki/1.-Tutorial:-Getting-Started
+
 ## usage
 
 #### show documentation for item under cursor
