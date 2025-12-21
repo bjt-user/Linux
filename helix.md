@@ -39,3 +39,8 @@ It is `v` instead of `V`.
 #### write and exit buffer
 
 `:wbc`
+
+## issues
+
+How to the next word without dragging a selction behind?\
+https://github.com/helix-editor/helix/discussions/6976
