@@ -275,6 +275,12 @@ Downgrading works like this:
 sudo pacman -U file:///var/cache/pacman/pkg/ansible-core-2.16.6-3-any.pkg.tar.zst
 ```
 
+###### downgrading vim
+
+```
+sudo pacman -U /var/cache/pacman/pkg/vim-9.1.1975-1-x86_64.pkg.tar.zst /var/cache/pacman/pkg/vim-runtime-9.1.1975-1-x86_64.pkg.tar.zst
+```
+
 #### skip packages from being upgraded
 
 https://wiki.archlinux.org/title/Pacman#Skip_package_from_being_upgraded
