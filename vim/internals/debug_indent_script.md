@@ -27,3 +27,17 @@ Old commits seem to be broken as well...
 
 No, `vim-9.1.1975-1` is at least not as broken as `vim-9.1.2077-1`.\
 I had to test that by downgrading pacman vim versions.
+
+#### minimal test case
+
+This should stay as it is:
+```
+- name: test playbook
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: hello world
+      ansible.builtin.debug:
+        msg: "hello world"
+```
