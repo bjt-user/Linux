@@ -172,6 +172,31 @@ sudo pacman -Qdtq | sudo pacman -Rns -
 https://wiki.archlinux.org/title/System_maintenance#Check_for_orphans_and_dropped_packages:\
 > Use pacman -Qtd to check for packages that were installed as a dependency but now, no other packages depend on them.
 
+#### downgrading a package
+
+`pacman` seems to save old packages in
+```
+/var/cache/pacman/pkg
+```
+
+Downgrading works like this:
+```
+sudo pacman -U file:///var/cache/pacman/pkg/ansible-core-2.16.6-3-any.pkg.tar.zst
+```
+
+###### downgrading vim
+
+```
+sudo pacman -U /var/cache/pacman/pkg/vim-9.1.1975-1-x86_64.pkg.tar.zst /var/cache/pacman/pkg/vim-runtime-9.1.1975-1-x86_64.pkg.tar.zst
+```
+
+###### upgrading a downgraded packages
+
+To install the latest version of a manually downgraded package again just do normal install:
+```
+sudo pacman -S vim
+```
+
 ## files
 
 To retrieve a list of the files installed by a package:
@@ -261,24 +286,6 @@ https://gitlab.archlinux.org/archlinux/packaging/packages?page=1
 With a `wget` on the "source" field I got the source code of the `coreutils` package.
 ```
 wget https://ftp.gnu.org/gnu/coreutils/coreutils-9.4.tar.xz
-```
-
-#### downgrading a package
-
-`pacman` seems to save old packages in
-```
-/var/cache/pacman/pkg
-```
-
-Downgrading works like this:
-```
-sudo pacman -U file:///var/cache/pacman/pkg/ansible-core-2.16.6-3-any.pkg.tar.zst
-```
-
-###### downgrading vim
-
-```
-sudo pacman -U /var/cache/pacman/pkg/vim-9.1.1975-1-x86_64.pkg.tar.zst /var/cache/pacman/pkg/vim-runtime-9.1.1975-1-x86_64.pkg.tar.zst
 ```
 
 #### skip packages from being upgraded
