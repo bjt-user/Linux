@@ -84,6 +84,11 @@ for an event that lasts 7 days.
 
 Now enter the description.
 
+Or in the end date/time field enter:
+```
+2026-05-05 00:00
+```
+
 #### add or edit notes
 
 To add more information to an appointment hit `n` in \
