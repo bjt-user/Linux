@@ -47,7 +47,7 @@ crontab -e
 
 ### you have to escape %
 
-**escape `%` sings with `\`!**
+**escape `%` characters with `\`!**
 ```
 0 20 * * * /home/myuser/scripts/backup.sh > ${HOME}/logs/backup$(date +\%Y\%m\%d).log 2>&1
 ```
