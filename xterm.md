@@ -1,3 +1,5 @@
+## general info
+
 xterm is the standard terminal emulator for the X Window System.
 
 https://wiki.archlinux.org/title/Xterm
@@ -15,6 +17,8 @@ in your `.bashrc`
 
 There is a config file at `/etc/X11/app-defaults/XTerm`\
 but not sure if you need it.
+
+## configuration
 
 #### configure background color and font size
 
