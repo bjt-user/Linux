@@ -235,6 +235,13 @@ Show the dependency tree of a package:
 pactree curl
 ```
 
+#### show which packages depend on a package
+
+This will show which packages depend on `python3`:
+```
+pactree -r python3
+```
+
 #### search for files with regex (-Fx)
 
 Find all .wav files in packages:

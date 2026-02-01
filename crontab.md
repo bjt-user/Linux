@@ -1,9 +1,17 @@
+## general info
+
 #### resources
 
 https://wiki.archlinux.org/title/Cron
 
 You can also use systemd as a replacement for cron:\
 https://wiki.archlinux.org/title/Systemd/Timers
+
+## syntax
+
+#### leading whitespace
+
+Any amount of whitespace is allowed in front of a crontab entry.
 
 ## installation
 
@@ -39,7 +47,7 @@ crontab -e
 
 ### you have to escape %
 
-**escape `%` sings with `\`!**
+**escape `%` characters with `\`!**
 ```
-0 20 * * * /home/bf/coding/scripts/backup_cron.sh "arch-celeron" > ${HOME}/logs/backup$(date +\%Y\%m\%d).log 2>&1
+0 20 * * * /home/myuser/scripts/backup.sh > ${HOME}/logs/backup$(date +\%Y\%m\%d).log 2>&1
 ```
