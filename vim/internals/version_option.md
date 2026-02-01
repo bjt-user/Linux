@@ -9,6 +9,19 @@ command_line_scan(&params);
 
 - `longVersion`
 
+## file scoped vars
+
+`included_patches` in `version.c`
+
+```
+static int included_patches[] =
+ 736 {   /* Add new patch number below this line */
+ 737 /**/
+ 738     2125,
+ 739 /**/
+ 740     2124,
+```
+
 ## macros
 
 In `version.h` are many macros.
