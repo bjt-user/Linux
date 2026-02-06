@@ -12,6 +12,17 @@ To paste the password of a record into your clipboard for 45 seconds:
 pass -c examplewebsite.com
 ```
 
+### otp
+
+#### otp uri
+
+https://github.com/google/google-authenticator/wiki/Key-Uri-Format
+
+The URI usually looks like this:
+```
+otpauth://totp/myuser?secret=3kpf55mznmg59dbs
+```
+
 #### totp (time based one time password / 2 factor authentication)
 
 ```
