@@ -19,3 +19,9 @@ It is hard to find information about that.
 
 When upgrading your system (and stuff like `NetworkManager`) it might make sense \
 to shutdown the PC for a few minutes, so that the NIC is cleared and can initialize cleanly.
+
+#### service units
+
+On a `reboot` the `ExecStop` directives of all systemd services seem to \
+get triggered.\
+So all systemd services do a graceful shutdown.
