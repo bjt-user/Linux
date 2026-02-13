@@ -4,28 +4,14 @@ Passwords are stored in `~/.password-store`.
 
 ## usage
 
+### general
+
 #### paste to clipboard
 
 To paste the password of a record into your clipboard for 45 seconds:
 
 ```
 pass -c examplewebsite.com
-```
-
-#### totp (time based one time password / 2 factor authentication)
-
-```
-pass otp insert service/username
-```
-
-You to insert a URI that looks like this:
-```
-otpauth://totp/myuser?secret=RH7ATYI5Y3H46LDTE74BB7PJ4YARGTK5&issuer=someissuer
-```
-
-Then you can get a one time password that lasts 30 seconds like this:
-```
-pass otp service/username
 ```
 
 #### pass generate
@@ -40,6 +26,40 @@ pass generate fooservice.com/myemail@gmail.com
 Find passwords that contain "ansible":
 ```
 pass find "ansible"
+```
+
+### otp
+
+#### otp uri
+
+https://github.com/google/google-authenticator/wiki/Key-Uri-Format
+
+The URI usually looks like this:
+```
+otpauth://totp/myuser?secret=3kpf55mznmg59dbs
+```
+
+#### totp (time based one time password / 2 factor authentication)
+
+(Maybe use `-e` to enable echoing the uri)
+```
+pass otp insert service/username
+```
+
+You to insert a URI that looks like this:
+```
+otpauth://totp/myuser?secret=RH7ATYI5Y3H46LDTE74BB7PJ4YARGTK5&issuer=someissuer
+```
+
+Then you can get a one time password that lasts 30 seconds like this:
+```
+pass otp service/username
+```
+
+#### print uri
+
+```
+pass otp uri ...
 ```
 
 ## troubleshooting
