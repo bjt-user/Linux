@@ -30,6 +30,13 @@ Inside dir with `PKGBUILD` run:
 makepkg
 ```
 
+#### cleanup after building
+
+This will cleanup the "src" and "pkg" dirs after building:
+```
+makepkg -c
+```
+
 ## examples
 
 #### minimal PKGBUILD
