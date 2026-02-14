@@ -21,6 +21,10 @@ Otherwise you might get errors like this:
 ==> ERROR: Cannot find the debugedit binary required for including source files in debug packages.
 ```
 
+## configuration
+
+`/etc/makepkg.conf`
+
 ## usage
 
 #### run without installing pkg
@@ -67,3 +71,8 @@ Now run `makepkg`.
 
 What is the "debug" package that `makepkg` wants to install alongside \
 my package?
+
+Set `!debug` in `OPTIONS` in `/etc/makepgk.conf`:
+```
+OPTIONS=(strip docs !libtool !staticlibs emptydirs zipman purge !debug lto)
+```
