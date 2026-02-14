@@ -8,6 +8,11 @@ https://wiki.archlinux.org/title/PKGBUILD
 
 > A PKGBUILD is a Bash script containing the build information required by Arch Linux packages.
 
+This file can be used as a template to create your own `PKGBUILD`:
+```
+/usr/share/pacman/PKGBUILD.proto
+```
+
 ## variables
 
 #### source
