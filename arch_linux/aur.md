@@ -69,3 +69,8 @@ It needs to be the `master` branch.
 A `git push` to the master branch worked.
 
 And immediatelly afterwards the package could be found on "aur.archlinux.org".
+
+Always update the `.SRCINFO`:
+```
+makepkg --printsrcinfo > .SRCINFO
+```
