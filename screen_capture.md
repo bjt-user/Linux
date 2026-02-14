@@ -4,6 +4,14 @@ Options are `ffmpeg`, `simplescreenrecorder`, `vlc`.
 
 ## examples
 
+#### ffmpeg
+
+This worked to capture the screen without audio.\
+But the video quality was bad.
+```
+ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -i :0.0+0,0 /tmp/screen_recording.flv
+```
+
 #### Record your screen (wayland fails)
 
 ```
