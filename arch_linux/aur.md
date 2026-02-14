@@ -34,3 +34,16 @@ View your successfully installed package:
 ```
 sudo pacman -Qi r8168
 ```
+
+#### push pkg to aur
+
+You first need to register at aur.archlinux.org.\
+Then you need to setup ssh keys.\
+(https://wiki.archlinux.org/title/AUR_submission_guidelines#Authentication)
+
+You can initialize a new local repo like this:
+```
+git -c init.defaultBranch=main clone ssh://aur@aur.archlinux.org/mdtoc.git
+```
+
+Then build your package and probably just push the commit.
