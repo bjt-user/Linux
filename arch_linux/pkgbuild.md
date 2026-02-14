@@ -70,6 +70,24 @@ makepkg -s
 ```
 > -s -> Install missing dependencies using pacman.
 
+#### predefined variables
+
+###### srcdir
+
+> This contains the directory where makepkg extracts, or copies, all source files.
+
+###### pkgdir
+
+> This contains the directory where makepkg bundles the installed package.\
+This directory will become the root directory of your built package.\
+This variable should only be used in the package() function.
+
+###### startdir
+
+> This contains the absolute path to the directory where the PKGBUILD is located,\
+which is usually the output of $(pwd) when makepkg is started.\
+Use of this variable is deprecated and strongly discouraged.
+
 ## packaging functions
 
 #### build()
