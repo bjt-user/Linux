@@ -34,7 +34,7 @@ cksums=('SKIP')
 #### makedepends
 
 > makedepends (array)
-> An array of packages this package depends on to build but are not needed at runtime.
+> An array of packages this package depends on to build but are NOT needed at runtime.
 > Packages in this list follow the same format as depends.
 
 Example:
