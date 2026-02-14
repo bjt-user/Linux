@@ -2,6 +2,8 @@
 
 Options are `ffmpeg`, `simplescreenrecorder`, `vlc`.
 
+`simplescreenrecorder` does not seem to have a pacman package.
+
 ## examples
 
 #### ffmpeg
