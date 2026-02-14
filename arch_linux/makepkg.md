@@ -37,6 +37,12 @@ This will cleanup the "src" and "pkg" dirs after building:
 makepkg -c
 ```
 
+#### install created package
+
+```
+sudo pacman -U mypackage-0.0.1-1-x86_64.pkg.tar.zst
+```
+
 ## examples
 
 #### minimal PKGBUILD
