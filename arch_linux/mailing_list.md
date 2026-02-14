@@ -1,5 +1,7 @@
 #### mailing list, irc
 
+https://lists.archlinux.org/mailman3/lists/
+
 subscribe to mailing list arch-general@lists.archlinux.org:\
 https://lists.archlinux.org/mailman3/lists/arch-general.lists.archlinux.org/
 
