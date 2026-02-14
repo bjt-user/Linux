@@ -47,3 +47,10 @@ package() {
 ```
 
 Now run `makepkg`.
+
+## troubleshooting
+
+#### debug package?
+
+What is the "debug" package that `makepkg` wants to install alongside \
+my package?
