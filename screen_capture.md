@@ -1,3 +1,9 @@
+## general info
+
+Options are `ffmpeg`, `simplescreenrecorder`, `vlc`.
+
+## examples
+
 #### Record your screen (wayland fails)
 
 ```
