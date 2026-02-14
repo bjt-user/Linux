@@ -21,6 +21,15 @@ Otherwise you might get errors like this:
 ==> ERROR: Cannot find the debugedit binary required for including source files in debug packages.
 ```
 
+## usage
+
+#### run without installing pkg
+
+Inside dir with `PKGBUILD` run:
+```
+makepkg
+```
+
 ## examples
 
 #### minimal PKGBUILD
