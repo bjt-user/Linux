@@ -21,6 +21,32 @@ Otherwise you might get errors like this:
 ==> ERROR: Cannot find the debugedit binary required for including source files in debug packages.
 ```
 
+## configuration
+
+`/etc/makepkg.conf`
+
+## usage
+
+#### run without installing pkg
+
+Inside dir with `PKGBUILD` run:
+```
+makepkg
+```
+
+#### cleanup after building
+
+This will cleanup the "src" and "pkg" dirs after building:
+```
+makepkg -c
+```
+
+#### install created package
+
+```
+sudo pacman -U mypackage-0.0.1-1-x86_64.pkg.tar.zst
+```
+
 ## examples
 
 #### minimal PKGBUILD
@@ -38,3 +64,15 @@ package() {
 ```
 
 Now run `makepkg`.
+
+## troubleshooting
+
+#### debug package?
+
+What is the "debug" package that `makepkg` wants to install alongside \
+my package?
+
+Set `!debug` in `OPTIONS` in `/etc/makepgk.conf`:
+```
+OPTIONS=(strip docs !libtool !staticlibs emptydirs zipman purge !debug lto)
+```

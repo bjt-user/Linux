@@ -1,50 +1,18 @@
-#### espeak
-```
-sudo apt install espeak
-```
+## general info
 
-```
-sudo pacman -S espeak-ng
-```
-(where `ng` seems to stand for "next generation")
+Options are `ffmpeg`, `simplescreenrecorder`, `vlc`.
 
-read a text file:
-```
-espeak -f tts.txt
-```
+`simplescreenrecorder` does not seem to have a pacman package.
 
-change the speed (default is 175):
-```
-espeak -f tts.txt -s 150
-```
+## examples
 
-save output to a wav file:
-```
-espeak -f tts.txt -s 150 -w festival-output.wav
-```
+#### ffmpeg
 
-***
-
-#### gTTS (Google Text To Speech) (better quality than festival, female voice)
+This worked to capture the screen without audio.\
+But the video quality was bad.
 ```
-sudo pip3 install gtts
+ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -i :0.0+0,0 /tmp/screen_recording.flv
 ```
-
-```
-gtts-cli -f test.txt -o output.mp3
-```
-
-***
-
-#### festival
-
-Text To Speech Software.
-```
-sudo apt install festival
-text2wave exampletext.txt -o output.wav
-```
-
-- - -
 
 #### Record your screen (wayland fails)
 
@@ -67,8 +35,3 @@ You can choose "window capture" and then add the window you want to record.
 
 **Just switch to "Default X11" in the login menu instead of wayland and SSR works.**  
 [see display_server.md](display_server.md)
-
-
-#### TODO
-
-https://github.com/mozilla/TTS

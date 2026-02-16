@@ -8,6 +8,11 @@ https://wiki.archlinux.org/title/PKGBUILD
 
 > A PKGBUILD is a Bash script containing the build information required by Arch Linux packages.
 
+This file can be used as a template to create your own `PKGBUILD`:
+```
+/usr/share/pacman/PKGBUILD.proto
+```
+
 ## variables
 
 #### source
@@ -29,7 +34,7 @@ cksums=('SKIP')
 #### makedepends
 
 > makedepends (array)
-> An array of packages this package depends on to build but are not needed at runtime.
+> An array of packages this package depends on to build but are NOT needed at runtime.
 > Packages in this list follow the same format as depends.
 
 Example:
@@ -64,6 +69,24 @@ You need to:
 makepkg -s
 ```
 > -s -> Install missing dependencies using pacman.
+
+#### predefined variables
+
+###### srcdir
+
+> This contains the directory where makepkg extracts, or copies, all source files.
+
+###### pkgdir
+
+> This contains the directory where makepkg bundles the installed package.\
+This directory will become the root directory of your built package.\
+This variable should only be used in the package() function.
+
+###### startdir
+
+> This contains the absolute path to the directory where the PKGBUILD is located,\
+which is usually the output of $(pwd) when makepkg is started.\
+Use of this variable is deprecated and strongly discouraged.
 
 ## packaging functions
 
