@@ -1,3 +1,5 @@
+## general info
+
 #### resources
 
 https://magcius.github.io/xplain/article/index.html
@@ -12,8 +14,6 @@ You can for example search for `pci` to look for when your graphics driver is lo
 
 On Fedora the log file is `/home/bf/.local/share/xorg/Xorg.0.log`.\
 (found it by doing a `lsof -p` on the `pid` of `xorg`)
-
----
 
 #### installation (without a window manager)
 
@@ -41,6 +41,8 @@ Show current configurations:
 ```
 xset q
 ```
+
+## configuration
 
 #### screensaver
 
@@ -100,5 +102,3 @@ reboot, login as a normal user and do:
 startx
 ```
 => and `i3` was started!
-
----
