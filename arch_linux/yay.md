@@ -5,3 +5,9 @@ yay --aur
 ```
 
 Then just hit enter a couple of times.
+
+#### remove an aur package
+
+```
+yay -Rnsc my_package
+```
