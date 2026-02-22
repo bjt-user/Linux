@@ -44,7 +44,8 @@ to that file in the current dir.
 The `image.raw` was 34 megabytes in size.\
 According to `file` it is a `DOS/MBR boot sector; partition 1 : ID=0xee, start-CHS...` file.
 
-TODO: Is this bootable from bare metal?
+TODO: Is this bootable from bare metal?\
+=> according to Archwiki and Poettering it is.
 
 It can NOT be booted by `systemd-nspawn`:
 ```
