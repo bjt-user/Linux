@@ -1,3 +1,5 @@
+## usage
+
 #### how to update aur packages?
 
 ```
@@ -25,3 +27,5 @@ This will *make sure* that the package will be built:
 ```
 yay -S my_package --rebuild
 ```
+
+Should you rebuild all aur packages after a system upgrade?
