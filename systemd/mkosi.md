@@ -1,5 +1,7 @@
 ## general info
 
+https://wiki.archlinux.org/title/Mkosi
+
 ```
 man mkosi
 ```
@@ -29,6 +31,32 @@ d %C/mkosi - - - 90d
 And nothing else.
 
 Arguments after `init` are not supported.
+
+#### without arguments
+
+If you run
+```
+mkosi
+```
+without arguments it will generate an `image.raw` and a symlink \
+to that file in the current dir.
+
+The `image.raw` was 34 megabytes in size.\
+According to `file` it is a `DOS/MBR boot sector; partition 1 : ID=0xee, start-CHS...` file.
+
+TODO: Is this bootable from bare metal?
+
+It can NOT be booted by `systemd-nspawn`:
+```
+systemd-nspawn --boot --image image.raw
+```
+```
+Failed to allocate user namespace with 64K users: No such file or directory
+```
+
+https://github.com/systemd/systemd/issues/35387
+
+Seems like an issue on Arch Linux, maybe try it on Rocky Linux?
 
 ## fails
 
