@@ -18,3 +18,9 @@ core/man-db 2.11.2-1 [installed: 2.13.1-1]
 ```
 man /usr/share/man/man3/assert.3.gz
 ```
+
+## syntax
+
+#### .sp
+
+Seems to be a line break.
