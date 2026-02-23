@@ -82,6 +82,12 @@ https://github.com/systemd/systemd/issues/35387
 
 Seems like an issue on Arch Linux, maybe try it on Rocky Linux?
 
+#### create a directory tree
+
+```
+mkosi --format=directory
+```
+
 ## fails
 
 #### first try
