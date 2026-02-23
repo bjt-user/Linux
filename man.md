@@ -25,6 +25,18 @@ man /usr/share/man/man3/assert.3.gz
 man 7 man
 ```
 
+#### .IP (indented paragraph)
+
+```
+.IP [tag] [indentation]
+  Set an indented paragraph with an optional tag.\
+  The tag and indentation arguments, if present, are handled as with .TP, with the\
+  exception that the tag argument to .IP cannot include a macro call.
+```
+
+> The indented paragraph (.IP) macro is useful to continue the indented \
+content of a narrative started with .TP, or to present an itemized or ordered list.
+
 #### .sp
 
 Seems to be a line break.
