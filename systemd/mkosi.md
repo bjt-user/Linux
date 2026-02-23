@@ -18,6 +18,25 @@ Written in Python.
 sudo pacman -S mkosi
 ```
 
+#### output formats
+
+From the manpage:
+```
+The following output formats are supported:
+
+   • Raw GPT disk image, created using systemd-repart (disk)
+
+   • Plain directory, containing the OS tree (directory)
+
+   • Tar archive (tar)
+
+   • CPIO archive (cpio)
+
+   • Unified Kernel Image (UKI)
+
+   • ...  and much more.  See Format= documentation below.
+```
+
 ## usage
 
 #### mkosi init
