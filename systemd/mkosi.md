@@ -1,5 +1,7 @@
 ## general info
 
+https://github.com/systemd/mkosi
+
 https://wiki.archlinux.org/title/Mkosi
 
 ```
@@ -7,6 +9,8 @@ man mkosi
 ```
 
 > mkosi - Build Bespoke OS Images
+
+Written in Python.
 
 #### installation
 
