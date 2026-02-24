@@ -18,3 +18,12 @@ container:
 ```
 sudo systemd-nspawn --directory=image
 ```
+
+#### -b/--boot
+
+> Automatically search for an init program and invoke it as PID 1,\
+instead of a shell or a user supplied program.\
+If this option is used, arguments specified on the command line are used \
+as arguments for the init program.
+
+But you need credentials to log in.
