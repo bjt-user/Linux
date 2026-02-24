@@ -109,6 +109,13 @@ extra/distribution-gpg-keys 1.117-1
 
 For `arch` it works without those keys. (maybe because it was the host)
 
+#### -p/--package=
+
+To install the systemd package in arch linux:
+```
+mkosi -d arch --format=directory -p systemd
+```
+
 ## fails
 
 #### first try
