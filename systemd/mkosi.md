@@ -121,6 +121,10 @@ For multiple package, separate them by comma:
 mkosi -d arch --format=directory -p systemd,psmisc
 ```
 
+#### -a/--autologin
+
+Then you can boot into the image with `systemd-nspawn` without authentication.
+
 ## fails
 
 #### first try
