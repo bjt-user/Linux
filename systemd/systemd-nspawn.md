@@ -9,6 +9,9 @@ man systemd-nspawn
 > systemd-nspawn may be invoked on any directory tree containing an operating system tree,\
 using the --directory= command line option.
 
+> systemd-nspawn may be invoked directly from the interactive command line \
+or run as system service in the background.
+
 ## usage
 
 #### exit container
@@ -40,6 +43,8 @@ mkosi -d arch -p systemd,psmisc -a --format=directory
 ```
 sudo systemd-nspawn -b --directory=image
 ```
+
+#### TODO: how to run in the background?
 
 ## troubleshooting
 
