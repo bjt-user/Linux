@@ -46,6 +46,15 @@ sudo systemd-nspawn -b --directory=image
 
 #### TODO: how to run in the background?
 
+### machinectl
+
+Show containers:
+```
+machinectl list
+```
+
+Looks like you need to place images in `/var/lib/machines/`.
+
 ## troubleshooting
 
 #### image.scope already running
