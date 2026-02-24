@@ -116,6 +116,11 @@ To install the systemd package in arch linux:
 mkosi -d arch --format=directory -p systemd
 ```
 
+For multiple package, separate them by comma:
+```
+mkosi -d arch --format=directory -p systemd,psmisc
+```
+
 ## fails
 
 #### first try
