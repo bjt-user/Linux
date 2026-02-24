@@ -149,6 +149,22 @@ mkosi -d arch --format=directory -p systemd,psmisc
 
 Then you can boot into the image with `systemd-nspawn` without authentication.
 
+## examples
+
+#### arch with systemd and autologin
+
+```
+[Distribution]
+Distribution=arch
+
+[Output]
+Format=directory
+
+[Content]
+Autologin=1
+Packages=systemd,psmisc
+```
+
 ## fails
 
 #### first try
