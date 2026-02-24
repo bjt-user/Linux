@@ -37,6 +37,18 @@ The following output formats are supported:
    • ...  and much more.  See Format= documentation below.
 ```
 
+#### -d/--distribution
+
+> choose from fedora, debian, kali, ubuntu, postmarketos, arch, opensuse, \
+mageia, centos, rhel, rhel-ubi, openmandriva, rocky, alma, azure, custom, )
+
+```
+$ mkosi -d rocky --format=directory
+‣ Validating certificates and keys
+‣ RPM-GPG-KEY-Rocky-10 GPG key not found in /usr/share/distribution-gpg-keys or /etc/pki/rpm-gpg
+‣ (Make sure the distribution-gpg-keys package is installed)
+```
+
 ## usage
 
 #### mkosi init
