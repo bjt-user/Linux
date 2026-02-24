@@ -37,18 +37,6 @@ The following output formats are supported:
    • ...  and much more.  See Format= documentation below.
 ```
 
-#### -d/--distribution
-
-> choose from fedora, debian, kali, ubuntu, postmarketos, arch, opensuse, \
-mageia, centos, rhel, rhel-ubi, openmandriva, rocky, alma, azure, custom, )
-
-```
-$ mkosi -d rocky --format=directory
-‣ Validating certificates and keys
-‣ RPM-GPG-KEY-Rocky-10 GPG key not found in /usr/share/distribution-gpg-keys or /etc/pki/rpm-gpg
-‣ (Make sure the distribution-gpg-keys package is installed)
-```
-
 ## usage
 
 #### mkosi init
@@ -99,6 +87,27 @@ Seems like an issue on Arch Linux, maybe try it on Rocky Linux?
 ```
 mkosi --format=directory
 ```
+
+#### -d/--distribution
+
+> choose from fedora, debian, kali, ubuntu, postmarketos, arch, opensuse, \
+mageia, centos, rhel, rhel-ubi, openmandriva, rocky, alma, azure, custom, )
+
+```
+$ mkosi -d rocky --format=directory
+‣ Validating certificates and keys
+‣ RPM-GPG-KEY-Rocky-10 GPG key not found in /usr/share/distribution-gpg-keys or /etc/pki/rpm-gpg
+‣ (Make sure the distribution-gpg-keys package is installed)
+```
+
+It is probably this package that is missing:
+```
+$ sudo pacman -Ss distribution-gpg-keys
+extra/distribution-gpg-keys 1.117-1
+    GPG keys used by various Linux distributions to sign packages
+```
+
+For `arch` it works without those keys. (maybe because it was the host)
 
 ## fails
 
