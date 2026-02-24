@@ -37,6 +37,19 @@ The following output formats are supported:
    • ...  and much more.  See Format= documentation below.
 ```
 
+## configuration
+
+> mkosi.local.conf and mkosi.local/ are parsed if they exists (in that order).\
+This file and directory should be in .gitignore (or equivalent) \
+and are intended for local configuration.
+
+> mkosi.conf is parsed if it exists in the directory configured \
+with --directory= or the current working directory if --directory= is \
+not used.\
+If the specified directory does not contain a mkosi.conf or mkosi.tools.conf \
+and a mkosi/mkosi.conf or mkosi/mkosi.tools.conf exists, the configuration \
+will be parsed from the mkosi/ subdirectory of the specified directory instead.
+
 ## usage
 
 #### mkosi init
