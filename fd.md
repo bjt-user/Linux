@@ -5,6 +5,14 @@ https://github.com/sharkdp/fd
 Written in Rust.
 
 ```
+man fd
+```
+
+> fd - find entries in the filesystem
+
+#### installation
+
+```
 sudo pacman -S fd
 ```
 
