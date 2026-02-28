@@ -10,28 +10,7 @@ You can read pdfs in Firefox
 
 #### zathura
 
-https://wiki.archlinux.org/title/Zathura
-
-```
-sudo pacman -S zathura
-```
-But you also need to install a plugin to read pdfs.
-
-```
-sudo pacman -S zathura-pdf-mupdf
-```
-
-```
-zathura debugging_with_gdb.pdf
-```
-<kbd>j/k</kbd> to scroll\
-<kbd>J/K</kbd> next page/previous page\
-<kbd>+/-</kbd> zoom in/out
-
-`:500` - go to page 500\
-`:bmark mystring` - set a bookmark for the current page with the label `mystring`\
-`:blist` - list all bookmarks\
-`:bdelete mystring` - delete bookmar named `mystring`
+[see zathura.md](zathura.md)
 
 #### Merge PDFs
 
