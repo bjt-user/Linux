@@ -10,6 +10,12 @@ sudo pacman -S zip
 zip -r foo.zip test.txt test1.txt
 ```
 
+#### zip directory
+
+```
+zip -r my_dir.zip my_dir/
+```
+
 #### print contents of zip file
 
 ```
