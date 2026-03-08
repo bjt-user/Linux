@@ -51,4 +51,16 @@ make -j$(nproc)
 sudo make install
 ```
 
-## TODO: enable/disable features
+## compile without wayland
+
+```
+./configure --without-wayland
+```
+
+```
+make -j$(nproc)
+```
+
+```
+sudo make install
+```
