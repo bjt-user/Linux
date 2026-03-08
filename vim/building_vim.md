@@ -51,7 +51,23 @@ make -j$(nproc)
 sudo make install
 ```
 
-## compile without wayland
+## enabling/disabling features
+
+You might need to
+```
+make distclean
+```
+and
+```
+make clean
+```
+before running `./configure`.
+
+```
+./configure --help
+```
+
+#### compile without wayland
 
 ```
 ./configure --without-wayland
