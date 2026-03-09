@@ -85,6 +85,11 @@ BUT: Where is the public key?
 
 But it opens a gui and throws up a `pinentry` menu.
 
+Or to delete both:
+```
+gpg --delete-secret-and-public-key 1E9E6E79B28C34022CFEA1149850F7239F5CC5F3
+```
+
 #### decrypt a key
 
 Also using the verbose flag:
