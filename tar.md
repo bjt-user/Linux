@@ -1,3 +1,6 @@
+## usage
+
+#### extract files
 ```
 tar -xvf filename.tar
 ```
@@ -34,3 +37,22 @@ and then remove all those files in the dir outside the tarball:
 ```
 tar -cvf bar.tar *.bar --remove-files
 ```
+
+## troubleshooting
+
+#### argument list too long
+
+If you have over 200k files you cannot archive them because the command line \
+does not allow so many characters.
+
+You can use a file list for that.
+
+```
+ls > file_list.txt
+```
+
+```
+tar -czv -T file_list.txt -f tarball.tar.gz
+```
+
+(https://stackoverflow.com/questions/23817787/bash-bin-tar-argument-list-too-long-when-compressing-many-files-with-tar)
