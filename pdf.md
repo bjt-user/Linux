@@ -2,7 +2,7 @@
 
 - pdfarranger (Helps merge or split PDF documents and rotate, crop and rearrange pages)
 
-## reading pdf
+## reading pdf / pdfviewer
 
 #### browser
 
@@ -11,6 +11,12 @@ You can read pdfs in Firefox
 #### zathura
 
 [see zathura.md](zathura.md)
+
+#### evince
+
+TODO
+
+## editing pdfs
 
 #### Merge PDFs
 
