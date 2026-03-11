@@ -1,3 +1,7 @@
+## general info
+
+https://en.wikipedia.org/wiki/PDF#
+
 ## useful tools
 
 - pdfarranger (Helps merge or split PDF documents and rotate, crop and rearrange pages)
