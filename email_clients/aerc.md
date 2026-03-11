@@ -1,5 +1,10 @@
 ## general info
 
+TODO: Read this:\
+https://wilw.dev/notes/aerc/
+
+Especially the `mbsync` part.
+
 #### installation
 
 ```
