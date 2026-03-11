@@ -2,6 +2,35 @@
 
 - pdfarranger (Helps merge or split PDF documents and rotate, crop and rearrange pages)
 
+## inspecting pdfs
+
+The `poppler` package has a tool called `pdfinfo`.
+
+```
+$ pdfinfo example.pdf
+Producer:        pdfjs v2.4.7 (github.com/rkusa/pdfjs)
+CreationDate:    Sun Apr 14 09:04:25 2024 CEST
+Custom Metadata: no
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           1
+Encrypted:       no
+Page size:       2475.12 x 1914 pts
+Page rot:        0
+File size:       1839651 bytes
+Optimized:       no
+PDF version:     1.6
+```
+
+The "Page size" is especially interesting.\
+A lot of pdfs have A4 format (`595 x 841 pts (A4)`).\
+If you merge pdfs with different page sizes together it can have weird \
+side effects.
+
 ## reading pdf / pdfviewer
 
 #### browser
