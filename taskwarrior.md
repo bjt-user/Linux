@@ -12,6 +12,12 @@ task 20 modify wait:2025-05-19
 
 This task will then not be visible anymore until that date arrives.
 
+#### add due date
+
+```
+task 12 modify due:2026-08-01
+```
+
 #### show waiting tasks (scheduled for the future)
 
 ```
