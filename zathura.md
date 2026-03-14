@@ -15,7 +15,7 @@ sudo pacman -S zathura-pdf-mupdf
 
 ## configuration
 
-Touch the file `${PATH}/.config/zathura/zathurarc`.
+Touch the file `${HOME}/.config/zathura/zathurarc`.
 
 #### copy to clipboard
 
