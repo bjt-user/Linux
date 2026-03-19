@@ -1,3 +1,5 @@
+## general info
+
 https://wiki.archlinux.org/title/Flatpak
 
 ## flatpak setup
