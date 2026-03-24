@@ -20,9 +20,8 @@ v4l2-ctl --list-devices
 
 an easy and fast way to test the webcam: (you might have to change the number behind `/dev/video`)
 ```
-ffplay -window_title Webcam -fast /dev/video0
+ffplay -fast /dev/video0
 ```
-(`-window_title` is optional)
 
 #### save webcam input to a file
 
