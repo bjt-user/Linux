@@ -4,7 +4,7 @@
 git clone https://github.com/mpv-player/mpv.git
 ```
 
-#### building
+#### TODO: building
 
 Edit `meson.options`.
 
@@ -26,6 +26,8 @@ meson install -C builddir
 ```
 
 But now only sound works, no video...
+
+And how to uninstall mpv now?
 
 ## configuration
 
