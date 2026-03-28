@@ -54,7 +54,7 @@ gg to go to top \
 G to go to bottom \
 ctrl + f/b go up/down one page
 
-#### send mail
+### send/compose mail
 
 `C`
 
@@ -62,11 +62,26 @@ Use `tab` to move to the next field.\
 It uses vim keybindings, go in insert mode, then save with `:x`.\
 Then send with `y`.
 
+#### navigate between header and body
+
+CTRL + j/k
+
 #### reply to a mail
 
 `rq` to reply to a mail with quoting the original mail.
 
 Or `rr` to reply without quoting the mail you are replying to.
+
+#### send attachment
+
+After composing the mail you are presented with options.\
+Just hit `a` then you can add an attachment.\
+```
+:attach /tmp/myfile.txt
+```
+(There is completion active.)
+
+### viewing mails
 
 #### viewing html only mails
 
@@ -75,6 +90,23 @@ You need to install `w3m` to read these messages:
 ```
 sudo pacman -S w3m
 ```
+
+#### save attachment
+
+In the "mail view" type:
+```
+:save -a /tmp/
+```
+to save all attachments in `/tmp`.
+
+#### click links
+
+With ctrl + j/k you can switch between text and html.
+
+In html mode, put the cursor on the link and type `:open` \
+(or just hit `o`) and the link will open in your default browser.
+
+### selecting and moving mails
 
 #### selecting multiple messages
 
@@ -85,23 +117,6 @@ To select multiple messages (to move/archive/delete them):\
 
 `d` and confirm with `y` or \
 `D` to instantly delete message
-
-#### save attachment
-
-In the "mail view" type:
-```
-:save -a /tmp/
-```
-to save all attachments in `/tmp`.
-
-#### send attachment
-
-After composing the mail you are presented with options.\
-Just hit `a` then you can add an attachment.\
-```
-:attach /tmp/myfile.txt
-```
-(There is completion active.)
 
 #### move message to different folder
 
@@ -117,13 +132,6 @@ Move the selected message to the `archive` dir:
 :archive flat
 ```
 or just hit `A`
-
-#### click links
-
-With ctrl + j/k you can switch between text and html.
-
-In html mode, put the cursor on the link and type `:open` \
-(or just hit `o`) and the link will open in your default browser.
 
 #### search for unread messages
 
