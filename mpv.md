@@ -29,7 +29,7 @@ But now only sound works, no video...
 
 And how to uninstall mpv now?
 
-#### uninstall
+#### TODO: uninstall
 
 ```
 rm -fv /usr/local/bin/mpv
@@ -37,6 +37,7 @@ rm -rfv /usr/share/doc/mpv
 rm -fv /usr/share/metainfo/mpv.metainfo.xml
 rm -fv /usr/share/applications/mpv.desktop
 rm -fv /usr/local/share/bash-completion/completions/mpv
+...
 ```
 
 Maybe just do this:
