@@ -4,13 +4,27 @@
 git clone https://github.com/mpv-player/mpv.git
 ```
 
-#### TODO: building
+#### building
+
+Dependencies:
+```
+sudo pacman -S libxpresent
+```
 
 Edit `meson.options`.
 
 Disable pipewire by changing the line to this:
 ```
 option('pipewire', type: 'feature', value: 'disabled', description: 'PipeWire audio output')
+```
+
+Also make sure `x11` is enabled and `wayland` is disabled.
+
+```
+-option('wayland', type: 'feature', value: 'auto', description: 'Wayland')
+-option('x11', type: 'feature', value: 'auto', description: 'X11')
++option('wayland', type: 'feature', value: 'disabled', description: 'Wayland')
++option('x11', type: 'feature', value: 'enabled', description: 'X11')
 ```
 
 ```
@@ -21,15 +35,11 @@ meson setup builddir
 meson compile -C builddir
 ```
 
-```
-meson install -C builddir
-```
-
-But now only sound works, no video...
-
-And how to uninstall mpv now?
+Then inside `builddir` there is the executable.
 
 #### TODO: uninstall
+
+Using `meson install -C builddir` is a problem as you cant cleanly uninstall...
 
 ```
 rm -fv /usr/local/bin/mpv
