@@ -37,7 +37,9 @@ meson compile -C builddir
 
 Then inside `builddir` there is the executable.
 
-#### TODO: uninstall
+To install it just put the executable into `/usr/local/bin`.
+
+#### TODO: uninstall after meson install
 
 Using `meson install -C builddir` is a problem as you cant cleanly uninstall...
 
