@@ -33,6 +33,13 @@ The search pattern is treated as a regular expression.
 fd sudo /etc
 ```
 
+#### glob (use wildcards for file name matching)
+
+To find all script files in a dir:
+```
+fd -tf --glob "*.sh"
+```
+
 #### find files with the exact name in a dir
 
 ```
