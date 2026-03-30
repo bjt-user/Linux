@@ -145,8 +145,9 @@ This will only exclude `neo*` in the basename of files, not inside the path.
 #### exclude files in a .git dir
 
 In a git repo you want to exclude all files in `.git` dir.
+
 ```
-find . -type f ! -path "./.git/*"
+find . -type f ! -path "*/.git/*"
 ```
 
 #### stop after the first match (-quit)
