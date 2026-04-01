@@ -30,6 +30,12 @@ pass find "ansible"
 
 ### otp
 
+#### install pass-otp
+
+```
+sudo pacman -S pass-otp
+```
+
 #### otp uri
 
 https://github.com/google/google-authenticator/wiki/Key-Uri-Format
