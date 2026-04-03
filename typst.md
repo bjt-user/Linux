@@ -91,3 +91,9 @@ End the page.
 https://typst.app/docs/reference/layout/page/
 
 You should be able to change the page size as described.
+
+#### cite
+
+https://typst.app/docs/reference/model/cite/
+
+> Before you starting citing, you need to add a bibliography somewhere in your document.
