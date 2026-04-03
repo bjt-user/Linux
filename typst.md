@@ -105,6 +105,14 @@ https://typst.app/docs/reference/layout/page/
 
 You should be able to change the page size as described.
 
+###### show page numbers
+
+```
+#set page(
+  numbering: "1 / 1",
+)
+```
+
 #### cite
 
 https://typst.app/docs/reference/model/cite/
