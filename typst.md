@@ -2,6 +2,8 @@
 
 Files seem to have the `.typ` ending.
 
+Playground: https://typst.app/play/
+
 #### installation
 
 ```
@@ -18,6 +20,31 @@ typst compile foo.typ
 will generate a `foo.pdf`.
 
 ## syntax
+
+#### title
+
+https://typst.app/docs/reference/model/title/
+
+```
+#set document(
+  title: [My Bachelor Thesis]
+)
+
+#title()
+```
+
+Change the size and alignment:
+```
+#set document(
+  title: [My Bachelor Thesis]
+)
+
+#show title: set text(size: 40pt)
+#show title: set align(center)
+
+#title()
+```
+(https://typst.app/docs/tutorial/advanced-styling/)
 
 #### math formulas
 
