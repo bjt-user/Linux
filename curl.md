@@ -1,4 +1,8 @@
+## general info
+
 https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+
+## general usage
 
 #### make curl ignore the proxy
 
@@ -209,4 +213,50 @@ curl ipinfo.io/ip
 this is probably your public ipv6:
 ```
 curl ifconfig.co
+```
+
+## telnet
+
+#### use telnet protocol to check open ports
+
+Open port:
+```
+$ timeout 2 curl -v telnet://example.com:443
+* Host example.com:443 was resolved.
+* IPv6: 2606:4700::6812:1b78, 2606:4700::6812:1a78
+* IPv4: 104.18.26.120, 104.18.27.120
+*   Trying [2606:4700::6812:1b78]:443...
+* Established connection to example.com (2606:4700::6812:1b78 port 443) from 2003:e6:7704:e000:b6b0:24ff:fed2:cb76 port 45274
+```
+
+Closed port:
+```
+$ timeout 2 curl -v telnet://example.com:444
+* Host example.com:444 was resolved.
+* IPv6: 2606:4700::6812:1a78, 2606:4700::6812:1b78
+* IPv4: 104.18.27.120, 104.18.26.120
+*   Trying [2606:4700::6812:1a78]:444...
+*   Trying 104.18.27.120:444...
+*   Trying [2606:4700::6812:1b78]:444...
+*   Trying 104.18.26.120:444...
+```
+
+#### send commands via telnet
+
+```
+$ curl -v telnet://example.com:443
+* Host example.com:443 was resolved.
+* IPv6: 2606:4700::6812:1b78, 2606:4700::6812:1a78
+* IPv4: 104.18.27.120, 104.18.26.120
+*   Trying [2606:4700::6812:1b78]:443...
+* Established connection to example.com (2606:4700::6812:1b78 port 443) from 2003:e6:7704:e000:b6b0:24ff:fed2:cb76 port 60930
+GET /index.html
+<html>
+<head><title>400 The plain HTTP request was sent to HTTPS port</title></head>
+<body>
+<center><h1>400 Bad Request</h1></center>
+<center>The plain HTTP request was sent to HTTPS port</center>
+<hr><center>cloudflare</center>
+</body>
+</html>
 ```
