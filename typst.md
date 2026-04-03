@@ -19,6 +19,13 @@ typst compile foo.typ
 ```
 will generate a `foo.pdf`.
 
+#### open in viewer
+
+Open output in `zathura`:
+```
+typst compile my_thesis.typ --open zathura
+```
+
 ## syntax
 
 #### title
