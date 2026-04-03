@@ -75,3 +75,13 @@ So that headings are automatically numbered you need this:
 #set heading(numbering: "1.")
 #outline()
 ```
+
+#### pagebreak
+
+https://typst.app/docs/reference/layout/pagebreak/
+
+End the page.
+
+```
+#pagebreak()
+```
