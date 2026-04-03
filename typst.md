@@ -85,3 +85,9 @@ End the page.
 ```
 #pagebreak()
 ```
+
+#### page
+
+https://typst.app/docs/reference/layout/page/
+
+You should be able to change the page size as described.
