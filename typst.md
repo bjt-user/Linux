@@ -28,6 +28,19 @@ typst compile my_thesis.typ --open zathura
 
 ## syntax
 
+#### comments
+
+```
+/*
+a comment
+*/
+```
+
+or single line:
+```
+// a comment
+```
+
 #### title
 
 https://typst.app/docs/reference/model/title/
