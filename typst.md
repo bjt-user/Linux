@@ -26,6 +26,12 @@ Open output in `zathura`:
 typst compile my_thesis.typ --open zathura
 ```
 
+#### show all fonts
+
+```
+typst fonts
+```
+
 ## syntax
 
 #### comments
