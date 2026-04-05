@@ -124,3 +124,30 @@ You should be able to change the page size as described.
 https://typst.app/docs/reference/model/cite/
 
 > Before you starting citing, you need to add a bibliography somewhere in your document.
+
+#### set font for the rest of the document
+
+```
+#set document(
+  title: "It's me.",
+)
+
+#set text(
+  font: "DejaVu Sans Mono",
+)
+
+#title()
+```
+
+For multiple fonts:
+```
+#set text(
+  font: "DejaVu Sans Mono",
+)
+This is DejaVu Sans Mono.
+
+#set text(
+  font: "FreeMono",
+)
+This is FreeMono.
+```
