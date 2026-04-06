@@ -125,6 +125,18 @@ You should be able to change the page size as described.
 )
 ```
 
+###### set margin
+
+> auto: The margins are set automatically to 2.5/21 times the smaller dimension of the page.\
+This results in 2.5 cm margins for an A4 page.
+
+You can use `pt` or `cm` as unit.
+```
+#set page(
+  margin: 5pt,
+)
+```
+
 #### cite
 
 https://typst.app/docs/reference/model/cite/
