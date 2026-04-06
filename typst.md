@@ -157,3 +157,11 @@ This is DejaVu Sans Mono.
 )
 This is FreeMono.
 ```
+
+#### underline
+
+https://typst.app/docs/reference/text/underline/
+
+```
+This is #underline[important].
+```
