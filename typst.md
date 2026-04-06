@@ -165,3 +165,11 @@ https://typst.app/docs/reference/text/underline/
 ```
 This is #underline[important].
 ```
+
+Make the underline gray and 2pt big and have an offset between the text und the line of 2pt:
+```
+#set underline(
+  stroke: 2pt + gray,
+  offset: 2pt,
+)
+```
