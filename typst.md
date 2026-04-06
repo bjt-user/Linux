@@ -173,3 +173,22 @@ Make the underline gray and 2pt big and have an offset between the text und the 
   offset: 2pt,
 )
 ```
+
+#### table
+
+https://typst.app/docs/reference/model/table/
+
+```
+#table(
+  columns: (auto, auto, auto),
+  table.header(
+    [Name], [Age], [Gender]
+  ),
+  [John Doe], [44], [male],
+  [Peter Smith], [55], [male],
+)
+```
+
+You can also use double quotes instead of the square brackets.
+
+The `columns` parameter sets the column sizes and the number of columns.
