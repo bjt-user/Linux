@@ -72,6 +72,12 @@ Change the size and alignment:
 ```
 (https://typst.app/docs/tutorial/advanced-styling/)
 
+#### headings
+
+```
+== This is a header level 2
+```
+
 #### math formulas
 
 https://typst.app/docs/reference/math/
