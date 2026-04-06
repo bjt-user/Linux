@@ -34,6 +34,14 @@ typst fonts
 
 ## syntax
 
+#### declaring variables
+
+```
+#let my_var = "hello"
+```
+
+You can then use `my_var` in other constructs.
+
 #### comments
 
 ```
@@ -204,3 +212,15 @@ https://typst.app/docs/reference/model/table/
 You can also use double quotes instead of the square brackets.
 
 The `columns` parameter sets the column sizes and the number of columns.
+
+#### block
+
+A block of text with a gray background:
+```
+#block(
+  fill: gray,
+  inset: 8pt,
+  [Date of birth: 8 Aug 1989 |
+  Phone number: +49 1515 7437271],
+)
+```
