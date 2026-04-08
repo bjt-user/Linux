@@ -10,6 +10,14 @@ Written in Rust.
 sudo pacman -S alacritty
 ```
 
+#### features
+
+- copy to clipboard by selection
+
+#### not supported
+
+Tabs are not supported.
+
 ## configuration
 
 https://alacritty.org/config-alacritty.html
