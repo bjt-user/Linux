@@ -168,6 +168,13 @@ copy-to = SENT
 ```
 in `~/.config/aerc/accounts.conf`
 
+#### save received messages
+
+When viewing an email:
+```
+:save /tmp/my_mail.txt
+```
+
 #### import icalendar files
 
 You need to pipe the email to your own script to do this.
