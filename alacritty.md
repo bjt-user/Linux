@@ -30,3 +30,10 @@ ${HOME}/.config/alacritty/alacritty.toml
 [selection]
 save_to_clipboard = true
 ```
+
+#### font size
+
+```
+[font]
+size = 16
+```
