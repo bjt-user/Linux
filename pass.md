@@ -56,6 +56,7 @@ You to insert a URI that looks like this:
 ```
 otpauth://totp/myuser?secret=RH7ATYI5Y3H46LDTE74BB7PJ4YARGTK5&issuer=someissuer
 ```
+(the `issuer` might not be necessary)
 
 Then you can get a one time password that lasts 30 seconds like this:
 ```
