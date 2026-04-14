@@ -31,6 +31,15 @@ This is important if you want to send carbon copy mails:
 header-layout=From,To,Cc,Subject
 ```
 
+#### logging
+
+From `man aerc`:
+
+> Aerc does not log by default [...]
+
+> Persistent logging can be configured via the log-file \
+and log-level settings in aerc.conf.
+
 ## usage
 
 #### help
