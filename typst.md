@@ -228,3 +228,8 @@ A block of text with a gray background:
   Phone number: +49 1515 7437271],
 )
 ```
+
+#### symbols
+
+Supported symbols:\
+https://typst.app/docs/reference/symbols/sym/
