@@ -96,6 +96,10 @@ $a, b in { 1/2, sqrt(4 a b) }$
 $f(x) = a - b / (c^2)$
 ```
 
+###### plus minus sign
+
+`plus.minus` when you are between dollar signs.
+
 #### table of contents
 
 It is possible to create an automatic toc:
