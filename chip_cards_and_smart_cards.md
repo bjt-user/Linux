@@ -32,13 +32,16 @@ sudo pacman -S ccid pcsclite
 
 ## usage
 
-#### general usage
+#### scan for readers and cards
 
 ```
 sudo systemctl start pcscd
 ```
 
-Scan for readers and cards:
 ```
 pcsc_scan
 ```
+The chip of the card has to point upwards.
+
+It works with debit cards, most other cards will just return \
+"unresponsive card".
