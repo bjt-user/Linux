@@ -23,3 +23,22 @@ Packager        : Christian Hesse <eworm@archlinux.org>
 Build Date      : Thu 05 Feb 2026 07:49:10 AM CET
 Validated By    : SHA-256 Sum  Signature
 ```
+
+#### installation
+
+```
+sudo pacman -S ccid pcsclite
+```
+
+## usage
+
+#### general usage
+
+```
+sudo systemctl start pcscd
+```
+
+Scan for readers and cards:
+```
+pcsc_scan
+```
