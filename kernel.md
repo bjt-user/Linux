@@ -1,3 +1,5 @@
+## general info
+
 #### resources
 
 https://kernelnewbies.org/KernelBuild
@@ -9,8 +11,6 @@ In that book is explained how to build and install a kernel.
 There is nothing about building a kernel here: https://doc.lagout.org/operating%20system%20/linux/Linux%20in%20a%20Nutshell,%206th%20Ed.pdf
 
 This is it: http://www.kroah.com/lkn/
-
-***
 
 #### kernel configuration
 
@@ -154,8 +154,9 @@ sys	0m0.581s
 
 => still nothing
 
-***
-#### try: building a kernel
+## building the kernel
+
+#### TODO: building a kernel
 
 First problem: where to get the kernel source code?
 
@@ -193,7 +194,7 @@ sys	0m12.495s
 
 This was way faster than doing a git clone...
 
-***
+## booting kernels
 
 #### delete boot option
 
@@ -202,5 +203,3 @@ If you don't want to boot into a kernel anymore you can delete it in `/boot`, bu
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 after that to get rid of the boot option.
-
-***
