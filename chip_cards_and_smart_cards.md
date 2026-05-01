@@ -27,7 +27,7 @@ Validated By    : SHA-256 Sum  Signature
 #### installation
 
 ```
-sudo pacman -S ccid pcsclite
+sudo pacman -S ccid pcsclite pcsc-tools
 ```
 
 ## usage
