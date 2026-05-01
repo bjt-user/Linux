@@ -4,6 +4,10 @@ Tool that can access dictionairy databases.
 
 https://wiki.archlinux.org/title/Dictd
 
+#### dict protocol
+
+https://en.wikipedia.org/wiki/DICT
+
 #### installation
 
 ```
@@ -11,6 +15,8 @@ sudo pacman -S dictd
 ```
 
 ## usage
+
+#### basic usage
 
 ```
 $ dict "hermeneutics"
@@ -32,13 +38,26 @@ From WordNet (r) 3.0 (2006) [wn]:
            exegesis
 ```
 
+#### use specific dict server
+
+```
+$ dict -h dict.org "right triangle"
+1 definition found
+
+From WordNet (r) 3.0 (2006) [wn]:
+
+  right triangle
+      n 1: a triangle with one right angle [syn: {right triangle},
+           {right-angled triangle}] [ant: {oblique triangle}]
+```
+
 #### show databases
 
 ```
 dict -I
 ```
 
-#### translate
+#### translate german to english
 
 ```
 $ dict -d fd-deu-eng "Wurst"
@@ -48,4 +67,16 @@ From German-English FreeDict Dictionary ver. 0.3.5 [fd-deu-eng]:
 
   Wurst /vurst/ <n, s>
   sausage
+```
+
+#### translate english to german
+
+```
+$ dict -d fd-eng-deu "triangle"
+1 definition found
+
+From English-German FreeDict Dictionary ver. 0.3.7 [fd-eng-deu]:
+
+  triangle /traiæŋgl/
+  Dreieck <n>, Dreieck  [math.] <n>
 ```
