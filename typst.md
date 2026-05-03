@@ -106,6 +106,18 @@ The `*` looks more like a star than a multiplication sign.
 
 You can also use `dot`.
 
+#### box around math
+
+Be sure to set `inset` to a big enough value as that is the space between \
+the box content and the border.
+```
+#box(
+  stroke: 1pt,
+  inset: 8pt,
+  [$root(n, a/b) = root(n, a)/root(n, b)$],
+)
+```
+
 #### table of contents
 
 It is possible to create an automatic toc:
