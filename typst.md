@@ -113,6 +113,15 @@ So that headings are automatically numbered you need this:
 #outline()
 ```
 
+#### linebreak
+
+Use `\`.
+
+For an empty line:
+```
+\
+```
+
 #### pagebreak
 
 https://typst.app/docs/reference/layout/pagebreak/
