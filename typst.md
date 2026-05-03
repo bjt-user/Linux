@@ -100,6 +100,12 @@ $f(x) = a - b / (c^2)$
 
 `plus.minus` when you are between dollar signs.
 
+###### multiplication sign
+
+The `*` looks more like a star than a multiplication sign.
+
+You can also use `dot`.
+
 #### table of contents
 
 It is possible to create an automatic toc:
