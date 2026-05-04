@@ -256,16 +256,27 @@ A block of text with a gray background:
 )
 ```
 
+#### padding
+
+Have some white space around your text.\
+Especially useful if you have set the page margin to 0.
+```
+#pad(
+  x: 20pt,
+  lorem(100),
+)
+```
+
 #### symbols
 
 Supported symbols:\
 https://typst.app/docs/reference/symbols/sym/
 
-## colors
+#### colors
 
 https://typst.app/docs/reference/visualize/color/
 
-#### predefined colors
+###### predefined colors
 
 ```
 black	luma(0)
