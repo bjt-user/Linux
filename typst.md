@@ -260,3 +260,30 @@ A block of text with a gray background:
 
 Supported symbols:\
 https://typst.app/docs/reference/symbols/sym/
+
+## colors
+
+https://typst.app/docs/reference/visualize/color/
+
+#### predefined colors
+
+```
+black	luma(0)
+gray	luma(170)
+silver	luma(221)
+white	luma(255)
+navy	rgb("#001f3f")
+blue	rgb("#0074d9")
+aqua	rgb("#7fdbff")
+teal	rgb("#39cccc")
+eastern	rgb("#239dad")
+purple	rgb("#b10dc9")
+fuchsia	rgb("#f012be")
+maroon	rgb("#85144b")
+red	rgb("#ff4136")
+orange	rgb("#ff851b")
+yellow	rgb("#ffdc00")
+olive	rgb("#3d9970")
+green	rgb("#2ecc40")
+lime	rgb("#01ff70")
+```
