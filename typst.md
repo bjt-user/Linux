@@ -42,6 +42,18 @@ typst fonts
 
 You can then use `my_var` in other constructs.
 
+###### declaring and using dictionairies
+
+```
+#let mail_receiver = (
+  first_name: "John",
+  last_name: "Doe",
+  age: 15,
+)
+
+Name: #applicant.first_name #applicant.last_name (#applicant.age)
+```
+
 #### defining functions
 
 A simple function without arguments:
