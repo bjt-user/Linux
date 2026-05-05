@@ -38,7 +38,7 @@ typst fonts
 
 https://typst.app/docs/reference/foundations/type/
 
-###### declaring and using dictionairies
+#### declaring and using dictionairies
 
 ```
 #let mail_receiver = (
@@ -49,6 +49,10 @@ https://typst.app/docs/reference/foundations/type/
 
 Name: #applicant.first_name #applicant.last_name (#applicant.age)
 ```
+
+#### datetime
+
+https://typst.app/docs/reference/foundations/datetime/
 
 ### misc
 
