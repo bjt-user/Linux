@@ -315,3 +315,24 @@ olive	rgb("#3d9970")
 green	rgb("#2ecc40")
 lime	rgb("#01ff70")
 ```
+
+#### alignment
+
+https://typst.app/docs/reference/layout/alignment/
+
+###### put something at the bottom
+
+Put the text "Foobar." at the end of the page.
+```
+#align(bottom)[Foobar.]
+```
+
+The works also with a function call:
+```
+#align(bottom)[#silver_box()]
+```
+
+To put it at the end of the page but also centered:
+```
+#align(bottom + center)[Foobar.]
+```
