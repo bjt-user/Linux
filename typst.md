@@ -34,13 +34,9 @@ typst fonts
 
 ## syntax
 
-#### declaring variables
+### types
 
-```
-#let my_var = "hello"
-```
-
-You can then use `my_var` in other constructs.
+https://typst.app/docs/reference/foundations/type/
 
 ###### declaring and using dictionairies
 
@@ -53,6 +49,16 @@ You can then use `my_var` in other constructs.
 
 Name: #applicant.first_name #applicant.last_name (#applicant.age)
 ```
+
+### misc
+
+#### declaring variables
+
+```
+#let my_var = "hello"
+```
+
+You can then use `my_var` in other constructs.
 
 #### defining functions
 
