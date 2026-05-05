@@ -40,6 +40,14 @@ ffmpeg -i output.wav -ss 55.5 -to 56.8 -c copy ingenieur3.wav
 ffmpeg -i input.mp4 -ss 0:10 -c copy output.mp4
 ```
 
+#### remove last part of a video
+
+If the video is 27:10 minutes long and you want to cut away the last two \
+seconds:
+```
+ffmpeg -i input.mp4 -t 27:00 -c copy output.mp4
+```
+
 #### record audio that is being played (to pulseaudio)
 
 Get the index of the audio device that the audio is currently being played to:
