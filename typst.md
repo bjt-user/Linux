@@ -42,6 +42,23 @@ typst fonts
 
 You can then use `my_var` in other constructs.
 
+#### defining functions
+
+A simple function without arguments:
+```
+#let gray_box() = {
+  box(
+    fill: gray,
+    width: 100%,
+    height: 10pt,
+  )
+}
+```
+You can then call it like this:
+```
+#gray_box()
+```
+
 #### comments
 
 ```
