@@ -1,6 +1,12 @@
 ## usage
 
-#### how to update aur packages?
+#### update a single package
+
+```
+yay -Sy mypackage
+```
+
+#### how to update all aur packages?
 
 ```
 yay --aur
