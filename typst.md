@@ -54,6 +54,17 @@ Name: #applicant.first_name #applicant.last_name (#applicant.age)
 
 https://typst.app/docs/reference/foundations/datetime/
 
+Example that displays a date:
+```
+#datetime(year: 2021, month: 10, day: 01,).display()
+```
+
+Display today's date:
+```
+#datetime.today().display()
+```
+(You may omit the `#` if you are inside a table or in something else)
+
 ### misc
 
 #### declaring variables
