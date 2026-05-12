@@ -156,6 +156,21 @@ The `*` looks more like a star than a multiplication sign.
 
 You can also use `dot`.
 
+###### degree sign
+
+Just use `degree` in between dollor signs.
+
+```
+$360 degree$
+```
+
+###### numbers at the bottom of unknowns
+
+To have a `1` at the right bottom of `x`:
+```
+$x_1
+```
+
 #### box around math
 
 Be sure to set `inset` to a big enough value as that is the space between \
