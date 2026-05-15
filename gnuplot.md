@@ -88,6 +88,14 @@ gnuplot> f(x) = 4*x + 2
 gnuplot> plot f(x)
 ```
 
+To plot the logarithm of base 2:
+```
+gnuplot> f(x) = (log(x))/(log(2))
+```
+
+Also see the builtin functions:\
+http://gnuplot.info/docs/loc1286.html
+
 #### replot
 
 The `replot` command is very handy if you want to change setttings and \
