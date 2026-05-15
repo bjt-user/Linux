@@ -1,3 +1,15 @@
+## general info
+
+http://gnuplot.info/documentation.html
+
+The html is broken, pdf works.
+
+#### installation
+
+```
+sudo pacman -S gnuplot
+```
+
 ## usage
 
 #### generate a graph from points
