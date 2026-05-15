@@ -16,3 +16,8 @@ You can generate a graph:
 gnuplot> plot "points.dat"
 ```
 (The double quotes are critical!)
+
+Or directly from the command line:
+```
+gnuplot -e "plot 'points.dat'" -p
+```
