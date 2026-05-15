@@ -27,3 +27,18 @@ gnuplot -e "plot 'points.dat'" -p
 ```
 gnuplot> set terminal dumb
 ```
+
+#### set xrange, yrange
+
+By default `gnuplot` will choose dimensions for x and y axis.
+
+You can explicitly set the `xrange` and `yrange` before using the \
+`plot` command.
+
+```
+set xrange [-1:3]
+```
+
+```
+set yrange [-1:4]
+```
