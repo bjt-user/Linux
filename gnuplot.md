@@ -40,6 +40,12 @@ gnuplot -e "plot 'points.dat'" -p
 gnuplot> set terminal dumb
 ```
 
+```
+gnuplot> show terminal
+
+   terminal type is dumb feed enhanced size 79, 24 aspect 2, 1 mono noattributes
+```
+
 #### set xrange, yrange
 
 By default `gnuplot` will choose dimensions for x and y axis.
