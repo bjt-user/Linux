@@ -42,3 +42,13 @@ set xrange [-1:3]
 ```
 set yrange [-1:4]
 ```
+
+#### show the axis
+
+To show lines where x is 0 and y is 0:
+```
+set xzeroaxis
+set yzeroaxis
+```
+
+This makes the graphs easier to understand.
