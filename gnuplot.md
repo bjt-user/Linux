@@ -21,3 +21,9 @@ Or directly from the command line:
 ```
 gnuplot -e "plot 'points.dat'" -p
 ```
+
+#### print plot in the terminal
+
+```
+gnuplot> set terminal dumb
+```
