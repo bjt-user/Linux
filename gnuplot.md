@@ -100,3 +100,25 @@ http://gnuplot.info/docs/loc1286.html
 
 The `replot` command is very handy if you want to change setttings and \
 then plot the last graph again.
+
+#### exucuting gnuplot script
+
+Given this file `script.gp`:
+```
+set terminal wxt
+
+set xrange [-4:4]
+set yrange [-4:4]
+
+set xzeroaxis
+set yzeroaxis
+
+f(x) = 0.5*x - 1
+
+plot f(x)
+```
+
+You can execute it like this:
+```
+gnuplot script.gp -p
+```
