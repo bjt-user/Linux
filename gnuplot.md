@@ -93,6 +93,11 @@ To plot the logarithm of base 2:
 gnuplot> f(x) = (log(x))/(log(2))
 ```
 
+Fractions seem to need a trailing dot:
+```
+f(x) = (1/2.)*x
+```
+
 Also see the builtin functions:\
 http://gnuplot.info/docs/loc1286.html
 
