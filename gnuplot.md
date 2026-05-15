@@ -80,3 +80,10 @@ set yzeroaxis
 ```
 
 This makes the graphs easier to understand.
+
+#### plotting functions
+
+```
+gnuplot> f(x) = 4*x + 2
+gnuplot> plot f(x)
+```
