@@ -103,7 +103,7 @@ then plot the last graph again.
 
 #### exucuting gnuplot script
 
-Given this file `script.gp`:
+Given this file `script.gnuplot`:
 ```
 set terminal wxt
 
@@ -120,5 +120,5 @@ plot f(x)
 
 You can execute it like this:
 ```
-gnuplot script.gp -p
+gnuplot script.gnuplot -p
 ```
