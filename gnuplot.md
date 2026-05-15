@@ -12,6 +12,16 @@ sudo pacman -S gnuplot
 
 ## usage
 
+#### help
+
+```
+help
+```
+
+```
+gnuplot> help terminal
+```
+
 #### generate a graph from points
 
 Given this file:
