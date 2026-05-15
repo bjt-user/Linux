@@ -87,3 +87,8 @@ This makes the graphs easier to understand.
 gnuplot> f(x) = 4*x + 2
 gnuplot> plot f(x)
 ```
+
+#### replot
+
+The `replot` command is very handy if you want to change setttings and \
+then plot the last graph again.
