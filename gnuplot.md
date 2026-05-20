@@ -98,6 +98,12 @@ Fractions seem to need a trailing dot:
 f(x) = (1/2.)*x
 ```
 
+Powers need two `*` signs.\
+This is a parabola:
+```
+f(x) = x**2
+```
+
 Also see the builtin functions:\
 http://gnuplot.info/docs/loc1286.html
 
