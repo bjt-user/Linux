@@ -15,7 +15,7 @@ vim -t my_function
 
 For example if you have prototypes and function definitions in your `tags` \
 file, then you have two tags with the same name.\
-`vim` will use the first tag it finds in the `tags` file.
+`vim` will use the **first** tag it finds in the `tags` file.
 
 #### add custom tags file
 
