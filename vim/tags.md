@@ -6,6 +6,17 @@
 
 ## usage
 
+#### jump to a tag from the cli
+
+Jump to the **first matching** tag `my_function` in your `tags` file:
+```
+vim -t my_function
+```
+
+For example if you have prototypes and function definitions in your `tags` \
+file, then you have two tags with the same name.\
+`vim` will use the first tag it finds in the `tags` file.
+
 #### add custom tags file
 
 Put this in your filetype file:
