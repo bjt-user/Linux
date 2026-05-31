@@ -270,4 +270,4 @@ In a recipe:
 - rm *.o
 ```
 the `-` will make sure, that the makefile continues even if the command failed \
-(for example when there are not object files to delete).
+(for example when there are no object files to delete).
