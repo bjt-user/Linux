@@ -8,6 +8,12 @@ yay -Sy mypackage
 
 Does not seem to always work...
 
+Seems like you need to do
+```
+pacman -Syu
+```
+first in order for this to work.
+
 #### how to update all aur packages?
 
 ```
