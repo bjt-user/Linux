@@ -6,6 +6,8 @@
 yay -Sy mypackage
 ```
 
+Does not seem to always work...
+
 #### how to update all aur packages?
 
 ```
