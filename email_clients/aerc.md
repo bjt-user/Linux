@@ -204,3 +204,11 @@ ctrl + x to get into ex mode
 ```
 :abort
 ```
+
+### folders
+
+#### create new folder
+
+```
+:mkdir new_folder
+```

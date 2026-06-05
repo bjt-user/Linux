@@ -1,3 +1,5 @@
+## general info
+
 #### documentation
 
 https://en.wikipedia.org/wiki/Sc_(spreadsheet_calculator) \
@@ -9,6 +11,8 @@ sc /usr/share/doc/sc/tutorial.sc
 ```
 
 #### installation
+
+Warning: not available anymore
 
 ```
 sudo pacman -S sc

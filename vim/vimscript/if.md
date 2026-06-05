@@ -1,3 +1,17 @@
+#### multiple conditions
+
+```
+if myvar == 1 && yourvar == 1
+	echo "Foobar."
+endif
+```
+
+```
+if myvar == 1 || yourvar == 1
+	echo "Foobar."
+endif
+```
+
 #### elseif
 
 ```

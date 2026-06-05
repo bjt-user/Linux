@@ -1,6 +1,20 @@
 ## usage
 
-#### how to update aur packages?
+#### update a single package
+
+```
+yay -Sy mypackage
+```
+
+Does not seem to always work...
+
+Seems like you need to do
+```
+pacman -Syu
+```
+first in order for this to work.
+
+#### how to update all aur packages?
 
 ```
 yay --aur
