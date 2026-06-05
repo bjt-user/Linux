@@ -17,3 +17,9 @@ This line seems to start up the tui:
 ```
 3570         i = get_wch(&c);
 ```
+
+`get_wch` is in `curses.h`.
+
+```
+extern NCURSES_EXPORT(int) get_wch (wint_t *);
+```
