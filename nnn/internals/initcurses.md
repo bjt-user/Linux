@@ -2,7 +2,4 @@
 
 Function in `nnn.c`.
 
-Seems to start up the ncurses window with the file manager and the \
-selection window.
-
-#### TODO: which function call starts up the window
+Seems to set colors and not to startup the ncurses tui.
