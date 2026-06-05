@@ -23,3 +23,6 @@ This line seems to start up the tui:
 ```
 extern NCURSES_EXPORT(int) get_wch (wint_t *);
 ```
+
+And it is also the same line which makes the cursor actually move to the \
+next selection after pressing `j`.
