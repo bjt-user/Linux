@@ -10,3 +10,10 @@ Function in `nnn.c`.
 3561  */
 3562 static int nextsel(int presel)
 ```
+
+#### startup tui
+
+This line seems to start up the tui:
+```
+3570         i = get_wch(&c);
+```
