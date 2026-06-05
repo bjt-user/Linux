@@ -8,4 +8,4 @@ But it **hides the cursor**.
 
 #### called by
 
-Function `browse()` in line 10719 and 10721.
+Function `main()` in line 10719 and 10721.
