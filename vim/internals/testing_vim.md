@@ -58,6 +58,8 @@ Read `runtime/syntax/testdir/README.txt`.
 
 This tells how to compare failed tests with the expected result.
 
+At first you need to compile `vim` itself in the project root dir.
+
 #### run tests
 
 ```
