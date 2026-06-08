@@ -58,3 +58,11 @@ It will also match numbers.
 ```
 syn match Error "[^A-Z]\{3,}"
 ```
+
+#### non uppercase and non number character class
+
+This will match three or more lower case characters and whitespace, \
+but not numbers or upper case characters:
+```
+syn match Error "[^A-Z0-9]\{3,}"
+```
