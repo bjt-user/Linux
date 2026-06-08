@@ -39,3 +39,14 @@ Match three or more `a`s:
 ```
 syn match Error "a\{3,}"
 ```
+
+#### whitespace
+
+This will match the strings "one" and "two" with zero or more spaces/tabs \
+in between.\
+`\s` will NOT match newlines.
+```
+syn match Error "one\s*two"
+```
+
+So this will match "onetwo", "one two", or "one     two".
