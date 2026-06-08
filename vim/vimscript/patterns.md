@@ -21,3 +21,10 @@ syn match Error ","
 ```
 syn match Error "^\."
 ```
+
+#### exactly three occurrences
+
+Match exactly three `a`s:
+```
+syn match Error "a\{3}"
+```
