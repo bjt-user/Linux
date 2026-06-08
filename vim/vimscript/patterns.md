@@ -66,3 +66,12 @@ but not numbers or upper case characters:
 ```
 syn match Error "[^A-Z0-9]\{3,}"
 ```
+
+#### lower case characters and whitespace in one character class
+
+This will match 3 or more lowercase characters and/or spaces or tabs.
+```
+syn match Error "[a-z[:space:]]\{3,}"
+```
+
+`\s` will NOT work.
