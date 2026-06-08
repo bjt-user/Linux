@@ -50,3 +50,11 @@ syn match Error "one\s*two"
 ```
 
 So this will match "onetwo", "one two", or "one     two".
+
+#### non uppercase
+
+This will match three or more non uppercase characters.\
+It will also match numbers.
+```
+syn match Error "[^A-Z]\{3,}"
+```
