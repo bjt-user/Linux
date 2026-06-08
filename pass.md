@@ -21,11 +21,15 @@ Generate and insert a password for a new service:
 pass generate fooservice.com/myemail@gmail.com
 ```
 
-#### find entries
+#### find/search entries
 
 Find passwords that contain "ansible":
 ```
 pass find "ansible"
+```
+it is the same as `search`:
+```
+pass search "foo"
 ```
 
 ### otp
