@@ -4,6 +4,10 @@
 :h pattern
 ```
 
+```
+:h pattern-overview
+```
+
 #### branches
 
 > A pattern is one or more branches, separated by `\|`.
@@ -27,4 +31,11 @@ syn match Error "^\."
 Match exactly three `a`s:
 ```
 syn match Error "a\{3}"
+```
+
+#### three or more occurrences
+
+Match three or more `a`s:
+```
+syn match Error "a\{3,}"
 ```
