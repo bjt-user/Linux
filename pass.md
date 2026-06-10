@@ -49,7 +49,7 @@ The URI usually looks like this:
 otpauth://totp/myuser?secret=3kpf55mznmg59dbs
 ```
 
-#### totp (time based one time password / 2 factor authentication)
+#### setup totp (time based one time password / 2 factor authentication)
 
 (Maybe use `-e` to enable echoing the uri)
 ```
