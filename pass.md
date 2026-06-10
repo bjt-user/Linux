@@ -51,9 +51,9 @@ otpauth://totp/myuser?secret=3kpf55mznmg59dbs
 
 #### setup totp (time based one time password / 2 factor authentication)
 
-(Maybe use `-e` to enable echoing the uri)
+(`-e` is useful to enable echoing the uri)
 ```
-pass otp insert service/username
+pass otp insert service/username -e
 ```
 
 You to insert a URI that looks like this:
