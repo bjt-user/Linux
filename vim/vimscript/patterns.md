@@ -75,3 +75,10 @@ syn match Error "[a-z[:space:]]\{3,}"
 ```
 
 `\s` will NOT work.
+
+#### @ symbol stuff
+
+This will highlight any "bar" that is not in "foobar":
+```
+syn match Error "\(foo\)\@<!bar"
+```
