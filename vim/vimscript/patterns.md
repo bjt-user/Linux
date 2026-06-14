@@ -12,6 +12,17 @@
 
 > A pattern is one or more branches, separated by `\|`.
 
+#### atoms
+
+```
+:h atom
+```
+
+> An atom can be one of a long list of items.\
+Many atoms match one character in the text.\
+It is often an ordinary character or a character class.\
+Parentheses can be used to make a pattern into an atom.
+
 ## examples
 
 #### single character
