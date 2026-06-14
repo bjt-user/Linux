@@ -372,10 +372,21 @@ or to first clear terminal and then execute script:
 ```
 
 #### detect trailing whitespace
+
 ```
 :set list
 ```
-***
+or this seems to work as well:
+```
+syn match Error "\s*$"
+```
+
+To do this for all filetypes - put this in `.vimrc`:
+```
+autocmd Syntax * syntax match Error "\s*$"
+```
+=> seems to be not working well in git hunks \
+==> and these are `.diff` files
 
 #### tabs
 
