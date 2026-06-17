@@ -134,6 +134,10 @@ Then you can execute this function in vim with `:call Commenter()`
 
 #### key mappings
 
+```
+:h mapping
+```
+
 If you are mapping a key stroke to a function you can use `<silent>` to surpress the \
 `:call MyFunction()` in the status line.
 
