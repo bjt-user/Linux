@@ -47,3 +47,17 @@ sudo swapon /swapfile
 It worked. Now I have additional 4GB of swap.
 
 But this is not yet permanent.
+
+#### relocate swapfile
+
+```
+sudo swapoff /swapfile
+```
+
+```
+sudo mv -v /swapfile /new_location/swapfile
+```
+
+```
+sudo swapon /new_location/swapfile
+```
