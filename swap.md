@@ -30,3 +30,18 @@ $ ls -lh /swapfile
 ```
 sudo chmod 600 /swapfile
 ```
+
+```
+sudo mkswap /swapfile
+```
+
+```
+$ sudo file /swapfile
+/swapfile: Linux/i386 swap file (new style), version 1 (4K pages), size 1048575 pages, no label, UUID=ced9d990-c6f1-4317-88c3-b7944ae3f1d5
+```
+
+```
+sudo swapon /swapfile
+```
+
+It worked. Now I have additional 4GB of swap.
