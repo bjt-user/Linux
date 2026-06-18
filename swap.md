@@ -15,3 +15,18 @@ dd: error writing '/swapfile': No space left on device
 ```
 
 Not enough disk space...
+
+Let's only use a 4GB swapfile.
+
+```
+time sudo dd if=/dev/zero of=/swapfile bs=1024 count=4194304 status=progress
+```
+
+```
+$ ls -lh /swapfile
+-rw-r-----. 1 root root 4.0G Jun 18 10:58 /swapfile
+```
+
+```
+sudo chmod 600 /swapfile
+```
