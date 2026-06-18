@@ -45,3 +45,5 @@ sudo swapon /swapfile
 ```
 
 It worked. Now I have additional 4GB of swap.
+
+But this is not yet permanent.
