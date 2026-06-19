@@ -31,3 +31,9 @@ CTRL-X CTRL-O
 ```
 
 See `:h ft-c-omni` for c specific completion.
+
+#### keywords in the current and included files
+
+i_CTRL-X_CTRL-I
+
+This is very helpful to search for keywords in included C header files.
