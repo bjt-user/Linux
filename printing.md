@@ -100,3 +100,14 @@ and it was displayed and it was correctly rendered but it had some ugly characte
 So i used `vim` to delete everything up to `<DOCTYPE HTML...>` then did `firefox example.html` and printed it from firefox.
 
 TODO: next time write a bash script that does the renaming and deleting.
+
+## troubleshooting
+
+#### TODO: print double sided
+
+This does NOT work:
+```
+lp -n 1 -o sides=two-sided-long-edge my_document.pdf
+```
+
+It even printed two pages although I requested 1 copy with `-n 1`.
