@@ -19,6 +19,9 @@ After saving the file, the space will be gone.
 
 You can add a space at the end of the file with `gedit`!
 
+Or you can add the space if you mv the file to `/tmp` edit it there \
+and then mv it back.
+
 Another way seems to be to copy the failed file from `testdir/failed` to \
 `testdir/dumps`.\
 But this might fail.
