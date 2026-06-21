@@ -1,5 +1,9 @@
 ## general info
 
+```
+:h terminal-screendump
+```
+
 `*.dump` files are just ascii text:
 ```
 $ file testdir/dumps/sh_functions_bash_00.dump
