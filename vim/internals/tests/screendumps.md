@@ -1,3 +1,11 @@
+## general info
+
+`*.dump` files are just ascii text:
+```
+$ file testdir/dumps/sh_functions_bash_00.dump
+testdir/dumps/sh_functions_bash_00.dump: ASCII text
+```
+
 #### whitespace
 
 Screendumps require a space at the end of the file.\
