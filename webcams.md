@@ -1,6 +1,15 @@
-## resources
+## general info
+
+#### resources
 
 https://wiki.ubuntuusers.de/Webcam/Treiber/
+
+https://wiki.archlinux.org/title/Webcam_setup
+
+#### tools
+
+- ffmpeg
+- mpv
 
 ## ffmpeg
 
@@ -22,6 +31,16 @@ an easy and fast way to test the webcam: (you might have to change the number be
 ```
 ffplay -fast /dev/video0
 ```
+
+#### make photo via webcam
+
+For example to make a picture of a document and save it as a file.
+```
+mpv /dev/video0
+```
+When you can see the object you want to take a photo of clear enough \
+hit `S` (shift + s).\
+A file will be saved in the current dir.
 
 #### save webcam input to a file
 
@@ -64,8 +83,9 @@ sudo apt install vlc
 vlc output.mp4
 ```
 
-#### use vlc to test the webcam
+#### TODO: use vlc to test the webcam
 
+Used to work like this:
 ```
 vlc
 ```
