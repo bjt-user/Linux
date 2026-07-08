@@ -9,3 +9,10 @@ echo "\n"
 ```
 The first line will output a literal backslash and the character `n`.\
 The second line will print a new line.
+
+#### multiline strings
+
+```
+var my_string = "foobar: A very long string"
+        .. " that expands over multiple lines"
+```
