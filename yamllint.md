@@ -14,3 +14,7 @@ if there are warnings.
 yamllint -d relaxed -s invalid.yaml
 ```
 See https://yamllint.readthedocs.io/en/stable/configuration.html
+
+#### custom configuration without a config file
+
+https://yamllint.readthedocs.io/en/stable/configuration.html#custom-configuration-without-a-config-file
