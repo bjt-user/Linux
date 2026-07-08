@@ -1,3 +1,9 @@
+## general info
+
+Spec: https://yaml.org/spec/
+
+## usage
+
 #### multiline strings
 
 This worked in a `.gitlab-ci.yml`:
