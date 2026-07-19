@@ -309,6 +309,11 @@ You can also use double quotes instead of the square brackets.
 
 The `columns` parameter sets the column sizes and the number of columns.
 
+To increase the size of the cells you can use the `inset` parameter.
+```
+inset: 10pt,
+```
+
 #### block
 
 A block of text with a gray background:
