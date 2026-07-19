@@ -337,6 +337,11 @@ Especially useful if you have set the page margin to 0.
 Supported symbols:\
 https://typst.app/docs/reference/symbols/sym/
 
+Example:
+```
+#sym.Theta
+```
+
 #### colors
 
 https://typst.app/docs/reference/visualize/color/
