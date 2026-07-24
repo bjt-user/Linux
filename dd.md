@@ -1,3 +1,5 @@
+## general info
+
 `man dd` says "dd - convert and copy a file"
 
 find your device or drive with
@@ -5,6 +7,8 @@ find your device or drive with
 watch -d lsblk
 ```
 then stick in the drive
+
+## usage
 
 #### flashing an iso-image on a usb-stick
 ```
@@ -96,4 +100,8 @@ Not sure what this does...
 sudo eject /dev/sdb
 ```
 
-***
+#### create a 1GB file
+
+```
+dd if=/dev/zero of=/tmp/foo.out bs=1G count=1
+```
