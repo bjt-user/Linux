@@ -4,6 +4,10 @@
 
 The function comments look nice.
 
+`lib/string.c`
+
+The kernel seems to have its own standard library implementations.
+
 `include/linux/string_helpers.h`
 
 `lib/string_helpers.c`
