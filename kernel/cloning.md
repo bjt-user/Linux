@@ -16,3 +16,7 @@ real    1m24.024s
 user    0m15.183s
 sys     0m24.574s
 ```
+
+#### TODO: cloning from a bundle
+
+https://www.kernel.org/cloning-linux-from-a-bundle.html
