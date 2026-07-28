@@ -6,6 +6,8 @@ The function comments look nice.
 
 `include/linux/string_helpers.h`
 
+`lib/string_helpers.c`
+
 ## interesting functions
 
 ```
