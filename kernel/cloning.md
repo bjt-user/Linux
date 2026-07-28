@@ -1,4 +1,4 @@
-#### cloning the torvalds kernel
+#### cloning the torvalds kernel with --depth=1
 
 ```
 $ time git clone --depth=1 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/li
