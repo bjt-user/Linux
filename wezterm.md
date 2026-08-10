@@ -9,3 +9,7 @@ Written in Rust.
 ```
 sudo pacman -S wezterm
 ```
+
+#### features
+
+- tabs
