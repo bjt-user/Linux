@@ -91,3 +91,9 @@ Then you are in a command prompt, then type \
 `resize-pane -R 10` - to expand the current pane 10 pixels (or whatever unit) to the right
 
 TODO: try to set key bindings for resizing the panes
+
+#### copy mode (select text)
+
+Prefix (ctrl + b) + `[`.
+
+Then you can move freely with h, j, k, l and select by holding the space key.
