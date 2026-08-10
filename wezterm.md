@@ -2,6 +2,8 @@
 
 Upstream: https://github.com/wezterm/wezterm
 
+https://wezterm.org
+
 Written in Rust.
 
 #### installation
