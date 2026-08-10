@@ -1,8 +1,16 @@
+## general info
+
+Upstream: https://github.com/tmux/tmux
+
+```
+man tmux
+```
+
 `tmux` allows you to have multiple terminals inside one terminal session.\
 It also saves your terminal session on the server side which might be helpful in case \
 of disconnects.
 
-type `tmux` to open a terminal session.\
+Type `tmux` to open a terminal session.\
 If you type `exit` inside that terminal session, you close the session again.
 
 `tmux ls` shows the `tmux` terminal sessions that are currently opened.
@@ -30,6 +38,8 @@ default `prefix key` is `ctrl + b`\
 `tmux kill-session -t foo`	to kill the session named `foo`\
 `tmux kill-server`    to kill all sessions
 
+## configuration
+
 #### customize tmux
 
 ```
@@ -54,6 +64,9 @@ bind -n C-l select-pane -R
 bind -n C-k select-pane -U
 bind -n C-j select-pane -D
 ```
+
+## usage
+
 #### converting panes to windows and converting windows to panes
 
 Let's say you have two panes.\
