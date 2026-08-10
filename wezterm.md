@@ -15,3 +15,4 @@ sudo pacman -S wezterm
 #### features
 
 - tabs
+- copy on selection is the default
