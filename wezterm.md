@@ -17,6 +17,17 @@ sudo pacman -S wezterm
 - tabs
 - copy on selection is the default
 
+#### build from source
+
+```
+git clone https://github.com/wezterm/wezterm
+```
+
+```
+cargo build
+```
+This takes about 15 minutes and really slows down your pc.
+
 ## configuration
 
 You can create the config file here:\
