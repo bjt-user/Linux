@@ -26,7 +26,7 @@ git clone https://github.com/wezterm/wezterm
 ```
 cargo build
 ```
-This takes about 15 minutes and really slows down your pc.
+This takes about 20 minutes and really slows down your pc.
 
 ## configuration
 
