@@ -33,6 +33,30 @@ This takes about 20 minutes and really slows down your pc.
 You can create the config file here:\
 `${HOME}/.config/wezterm/wezterm.lua`
 
+#### start and end block
+
+You need a start and end block in your config file:
+```
+-- Pull in the wezterm API
+local wezterm = require 'wezterm'
+
+-- This will hold the configuration.
+local config = wezterm.config_builder()
+
+-- This is where you actually apply your config choices.
+config.font_size = 10
+config.font = wezterm.font('DejaVueSansMono')
+
+-- Finally, return the configuration to wezterm:
+return config
+```
+
+#### different font
+
+```
+config.font = wezterm.font('DejaVueSansMono')
+```
+
 #### TODO: font size
 
 ## usage
