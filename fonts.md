@@ -1,8 +1,14 @@
+## general info
+
 #### resources
 
 xorg: https://wiki.archlinux.org/title/Font_configuration
 
 https://wiki.archlinux.org/title/Fonts
+
+#### packages
+
+`fontconfig` provides `fc-list`
 
 #### monospace fonts
 
