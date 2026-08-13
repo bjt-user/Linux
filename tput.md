@@ -1,5 +1,12 @@
 ## general info
 
+Part of the `ncurses` package in Arch:
+```
+$ sudo pacman -F tput
+core/ncurses 6.6-1 [installed: 6.6-2]
+    usr/bin/tput
+```
+
 ```
 man tput
 ```
