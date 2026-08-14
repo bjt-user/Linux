@@ -84,6 +84,15 @@ clean solution.
 
 `-w`
 
+#### comparing more than two files
+
+Use `foo1.txt` as base:
+```
+diff --from-file foo1.txt foo2.txt foo3.txt
+```
+But the output is not very user friendly as it does not show the \
+file names.
+
 ## comparing directories
 
 Usually you want to compare recursively with `-r` to compare all subdirectories as well.
