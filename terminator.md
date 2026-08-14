@@ -1,6 +1,16 @@
+## general info
+
 ```
 man terminator_config
 ```
+
+#### features
+
+Supports bold foreground out of the box.
+
+Copy on selection can be configured.
+
+## configuration
 
 #### color schemes
 
@@ -40,7 +50,6 @@ $ cat ~/.config/terminator/config
 ...
 ```
 
-***
 #### renaming tabs
 
 double click on the tab title\
