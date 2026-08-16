@@ -56,8 +56,18 @@ return config
 ```
 config.font = wezterm.font('DejaVueSansMono')
 ```
+But this font is not a real mono font and destroys the terminal.
 
-#### TODO: font size
+Better use `FreeMono`:
+```
+config.font = wezterm.font('FreeMono')
+```
+
+#### font size
+
+```
+config.font_size = 14
+```
 
 ## usage
 
@@ -74,9 +84,18 @@ https://wezterm.org/copymode.html
 
 ## troubleshooting
 
-#### TODO: foreground highlighting does not work
+#### foreground highlighting does not work
 
-By default this will not print in bold or highlighted:
+By default I could not see a difference between the bold and normal text:
 ```
-printf "\e[1mfoo\e[0m\n"
+printf "foo\e[1mfoo\e[0mfoo\n"
 ```
+
+This is a font issue!
+
+With `FreeMono` I can see a difference.
+```
+config.font = wezterm.font('FreeMono')
+```
+
+You can also set up `font_rules` and define fonts for different intensities.
