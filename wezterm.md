@@ -69,6 +69,34 @@ config.font = wezterm.font('FreeMono')
 config.font_size = 14
 ```
 
+#### font rules
+
+With font rules you can configure different fonts for bold/italic/normal.
+
+https://wezterm.org/config/lua/config/font_rules.html
+
+> When textual output in the terminal is styled with bold, italic \
+or other attributes, wezterm uses font_rules to decide how to render that text.
+
+Example:
+```
+config.font = wezterm.font('JetBrainsMono-Light')
+
+config.font_rules = {
+        {
+                intensity = 'Bold',
+                font = wezterm.font('JetBrainsMono-ExtraBold'),
+        }
+}
+```
+This will use "JetBrainsMono-Light" for normal text, and \
+"JetBrainsMono-ExtraBold" for bold text.
+
+Test it with:
+```
+printf "foo\e[1mfoo\e[0mfoo\n"
+```
+
 ## usage
 
 #### default keybindings
