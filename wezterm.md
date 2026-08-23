@@ -111,6 +111,12 @@ Configuration for italic could look like this:
 
 ## usage
 
+#### do not load config file
+
+```
+-n, --skip-config                Skip loading wezterm.lua
+```
+
 #### default keybindings
 
 https://wezterm.org/config/default-keys.html
