@@ -92,9 +92,13 @@ config.font_rules = {
 This will use "JetBrainsMono-Light" for normal text, and \
 "JetBrainsMono-ExtraBold" for bold text.
 
-Test it with:
+Test bold with:
 ```
 printf "foo\e[1mfoo\e[0mfoo\n"
+```
+Test italic with:
+```
+printf "foo\e[3mfoo\e[0mfoo\n"
 ```
 
 ## usage
