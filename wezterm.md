@@ -109,6 +109,16 @@ Configuration for italic could look like this:
         },
 ```
 
+#### disable ligatures
+
+Ligatures make different symbols out of character combinations like `=>`,\
+`->`, `==`, `!=`.
+
+To disable them:
+```
+config.harfbuzz_features = { 'calt = 0', 'clig = 0', 'liga = 0' }
+```
+
 ## usage
 
 #### do not load config file
