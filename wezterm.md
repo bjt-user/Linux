@@ -101,6 +101,14 @@ Test italic with:
 printf "foo\e[3mfoo\e[0mfoo\n"
 ```
 
+Configuration for italic could look like this:
+```
+        {
+                italic = true,
+                font = wezterm.font('JetBrainsMono-Italic'),
+        },
+```
+
 ## usage
 
 #### default keybindings
