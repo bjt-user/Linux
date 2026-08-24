@@ -5,6 +5,10 @@ https://wilw.dev/notes/aerc/
 
 Especially the `mbsync` part.
 
+#### documentation
+
+Unofficial docs: https://aerc-docs.com/
+
 #### installation
 
 ```
