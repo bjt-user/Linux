@@ -149,10 +149,14 @@ Installation:
 sudo pacman -S ttf-jetbrains-mono
 ```
 
-#### DejaVueSansMono
+#### DejaVuSansMono
 
 ```
 sudo pacman -S ttf-dejavu
+```
+
+```
+display /usr/share/fonts/TTF/DejaVuSansMono.ttf
 ```
 
 ## viewing fonts
