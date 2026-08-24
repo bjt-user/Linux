@@ -149,6 +149,12 @@ Installation:
 sudo pacman -S ttf-jetbrains-mono
 ```
 
+#### DejaVueSansMono
+
+```
+sudo pacman -S ttf-dejavu
+```
+
 ## viewing fonts
 
 #### imagemagick
