@@ -48,6 +48,12 @@ $ file /usr/share/fonts/truetype/inconsolata/Inconsolata.otf
 /usr/share/fonts/truetype/inconsolata/Inconsolata.otf: OpenType font data
 ```
 
+#### search for fonts
+
+```
+sudo pacman -Ss ^ttf
+```
+
 #### install fonts
 ```
 apt list fonts-*
