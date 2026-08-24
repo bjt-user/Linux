@@ -135,6 +135,9 @@ gnu-free-fonts usr/share/fonts/gnu-free/FreeSerifBoldItalic.otf
 gnu-free-fonts usr/share/fonts/gnu-free/FreeSerifItalic.otf
 ```
 
+Downsides:
+- the zero does not have a dot in the middle to distinguish from capital O
+
 #### JetBrainsMono
 
 Seems to be open source.
