@@ -104,3 +104,16 @@ View installed font families:
 ```
 fc-list : family | sort
 ```
+
+## specific fonts
+
+#### JetBrainsMono
+
+Seems to be open source.
+
+https://github.com/JetBrains/JetBrainsMono
+
+Installation:
+```
+sudo pacman -S ttf-jetbrains-mono
+```
