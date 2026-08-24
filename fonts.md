@@ -149,6 +149,12 @@ Installation:
 sudo pacman -S ttf-jetbrains-mono
 ```
 
+#### JetBrainsMonoNL
+
+NL means "no ligatures". So `->`, `=>`, `==`, and so on are displayed normally.
+
+Is part of the package `ttf-jetbrains-mono`.
+
 #### DejaVuSansMono
 
 ```
