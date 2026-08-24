@@ -113,6 +113,28 @@ fc-list : family | sort
 
 ## specific fonts
 
+#### FreeMono
+
+```
+$ sudo pacman -Fl gnu-free-fonts
+gnu-free-fonts usr/
+gnu-free-fonts usr/share/
+gnu-free-fonts usr/share/fonts/
+gnu-free-fonts usr/share/fonts/gnu-free/
+gnu-free-fonts usr/share/fonts/gnu-free/FreeMono.otf
+gnu-free-fonts usr/share/fonts/gnu-free/FreeMonoBold.otf
+gnu-free-fonts usr/share/fonts/gnu-free/FreeMonoBoldOblique.otf
+gnu-free-fonts usr/share/fonts/gnu-free/FreeMonoOblique.otf
+gnu-free-fonts usr/share/fonts/gnu-free/FreeSans.otf
+gnu-free-fonts usr/share/fonts/gnu-free/FreeSansBold.otf
+gnu-free-fonts usr/share/fonts/gnu-free/FreeSansBoldOblique.otf
+gnu-free-fonts usr/share/fonts/gnu-free/FreeSansOblique.otf
+gnu-free-fonts usr/share/fonts/gnu-free/FreeSerif.otf
+gnu-free-fonts usr/share/fonts/gnu-free/FreeSerifBold.otf
+gnu-free-fonts usr/share/fonts/gnu-free/FreeSerifBoldItalic.otf
+gnu-free-fonts usr/share/fonts/gnu-free/FreeSerifItalic.otf
+```
+
 #### JetBrainsMono
 
 Seems to be open source.
