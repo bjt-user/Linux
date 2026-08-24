@@ -32,7 +32,7 @@ In writing and typography, a ligature occurs where two or more graphemes or lett
 You have to be very careful when using this kind of fonts.
 
 
-#### view fonts
+#### view installed fonts
 
 viewing fonts that are installed on your system:\
 https://flathub.org/apps/details/org.gnome.font-viewer
@@ -122,4 +122,12 @@ https://github.com/JetBrains/JetBrainsMono
 Installation:
 ```
 sudo pacman -S ttf-jetbrains-mono
+```
+
+## viewing fonts
+
+#### imagemagick
+
+```
+display /usr/share/fonts/TTF/JetBrainsMono-Regular.ttf
 ```
