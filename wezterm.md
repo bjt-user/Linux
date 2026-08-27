@@ -28,6 +28,11 @@ cargo build
 ```
 This takes about 20 minutes and really slows down your pc.
 
+This is probably faster and will only build the terminal itself:
+```
+cargo build -p wezterm
+```
+
 ## configuration
 
 You can create the config file here:\
