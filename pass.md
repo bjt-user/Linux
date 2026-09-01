@@ -27,6 +27,10 @@ To create a pw with length 40:
 pass generate fooservice.com/myemail@gmail.com 40
 ```
 
+> The character sets used in generating passwords can be changed with the \
+`PASSWORD_STORE_CHARACTER_SET` and `PASSWORD_STORE_CHARACTER_SET_NO_SYMBOLS` \
+environment variables, described below.
+
 #### find/search entries
 
 Find passwords that contain "ansible":
