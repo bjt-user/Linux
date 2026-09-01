@@ -20,6 +20,12 @@ Generate and insert a password for a new service:
 ```
 pass generate fooservice.com/myemail@gmail.com
 ```
+By default this will generate a password with a length of 25 characters.
+
+To create a pw with length 40:
+```
+pass generate fooservice.com/myemail@gmail.com 40
+```
 
 #### find/search entries
 
