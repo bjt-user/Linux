@@ -37,3 +37,8 @@ See `:h ft-c-omni` for c specific completion.
 i_CTRL-X_CTRL-I
 
 This is very helpful to search for keywords in included C header files.
+
+#### file name completion
+
+Complete file names in the current dir:\
+CTRL-X CTRL-F
