@@ -33,3 +33,8 @@ Network Manager not available
 ```
 
 Both commands need the `NetworkManager`...
+
+## NetworkManager
+
+The package `networkmanager` does not conflict with `systemd-networkd`,\
+so maybe it can be installed alongside `systemd-networkd`.
