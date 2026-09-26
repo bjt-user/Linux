@@ -20,3 +20,16 @@ pip install --user eduvpn-client --break-system-packages
 ```
 reboot
 ```
+
+Now the following commands are in the PATH:
+```
+eduvpn-cli
+eduvpn-gui
+```
+
+```
+$ eduvpn-cli
+Network Manager not available
+```
+
+Both commands need the `NetworkManager`...
