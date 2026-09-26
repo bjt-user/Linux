@@ -38,3 +38,42 @@ Both commands need the `NetworkManager`...
 
 The package `networkmanager` does not conflict with `systemd-networkd`,\
 so maybe it can be installed alongside `systemd-networkd`.
+
+## server discovery
+
+By running `eduvpn-cli` in debugging mode I found this URL:\
+https://disco.eduvpn.org/v2/server_list.json
+
+Filter the json for your college or city name.\
+And there you have the `base_url` for every server.\
+
+## usage eduvpn-cli
+
+#### connect
+
+`-s/--search`:
+```
+eduvpn-cli connect -s my_city
+```
+Then select a number if an entry was found.
+
+Now something in the browser opened.
+
+Click on "Accept", then on "Approve".
+
+Then close the browser window.
+
+Go back to the cli and enter "1".
+
+```
+2026-09-26 15:15:51,432 - MainThread - ERROR - eduvpn.nm - nm.py:1059 - add connection error: nm-client-error-quark: NetworkManager is not running (1)
+```
+You need to start `NetworkManager` first.
+
+```
+sudo systemctl start NetworkManager
+```
+Now my internet is gone because I use `systemd-networkd`.
+
+And now I cannot resolve dns names anymore so the cli client does not work \
+anymore.
