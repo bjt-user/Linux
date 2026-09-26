@@ -1,5 +1,10 @@
 ## general info
 
+You do NOT need the `eduvpn` client.\
+You can use `openvpn`.
+
+Information about the aweful client, that only works with `NetworkManager`.
+
 https://docs.eduvpn.org/server/v3/source-code.html
 
 https://docs.eduvpn.org/server/v3/source-code.html#linux
@@ -8,9 +13,35 @@ https://codeberg.org/eduVPN/linux-app
 
 4700 lines of python.
 
-## TODO: installation
+## usage (openvpn) - SUCCESS
 
-#### pip install
+```
+sudo pacman -S openvpn
+```
+
+Go to eduvpn.th-ab.de -> accept.
+
+Then you can download a "configuration".\
+Select "Openvpn (bevorzuge TCP)".\
+Give it a name and click on "herunterladen".
+
+Put that config file into `/etc/openvpn/client`.
+
+```
+sudo -i
+```
+As root(!) do:
+```
+openvpn /etc/openvpn/client/name_of_your_config_file.ovpn
+```
+=> this worked
+
+Now this page https://search.lib.th-ab.de/vufind/ tells me that I have \
+access!
+
+## UNNECESSARY: installation
+
+#### pip install (DO NOT DO THIS)
 
 ```
 pip install --user eduvpn-client --break-system-packages
@@ -34,10 +65,17 @@ Network Manager not available
 
 Both commands need the `NetworkManager`...
 
-## NetworkManager
+## NetworkManager (FAIL)
 
 The package `networkmanager` does not conflict with `systemd-networkd`,\
 so maybe it can be installed alongside `systemd-networkd`.
+
+As soon as I start `NetworkManager` network is dead because I use \
+`systemd-networkd`.
+
+## systemd-networkd
+
+https://docs.eduvpn.org/server/v3/systemd-networkd.html
 
 ## server discovery
 
@@ -47,9 +85,12 @@ https://disco.eduvpn.org/v2/server_list.json
 Filter the json for your college or city name.\
 And there you have the `base_url` for every server.\
 
-## usage eduvpn-cli
+You can also search for your institution here:\
+https://disco.eduvpn.org/v2/
 
-#### connect
+## usage eduvpn-cli (FAIL)
+
+#### FAIL: connect
 
 `-s/--search`:
 ```
