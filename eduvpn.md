@@ -8,7 +8,7 @@ https://codeberg.org/eduVPN/linux-app
 
 4700 lines of python.
 
-## installation
+## TODO: installation
 
 #### pip install
 
