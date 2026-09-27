@@ -1,6 +1,6 @@
 ## usage
 
-#### extract files
+#### extract all files
 ```
 tar -xvf filename.tar
 ```
@@ -9,6 +9,12 @@ eXtract Verbose File
 output to a directory (that directory must exist):
 ```
 tar -xvf file_name.tar -C /target/directory
+```
+
+#### extract only a single file
+
+```
+tar -xvf my_tar.tar.gz path/to/the/file.pdf
 ```
 
 #### show files
