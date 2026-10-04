@@ -274,6 +274,14 @@ This is DejaVu Sans Mono.
 This is FreeMono.
 ```
 
+#### font size
+
+```
+#set text(
+  size: 11pt,
+)
+```
+
 #### underline
 
 https://typst.app/docs/reference/text/underline/
