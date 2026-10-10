@@ -292,6 +292,7 @@ Line spacing inside a paragraph:
   leading: 1em,
 )
 ```
+Default of leading: 0.65em
 
 To additionally set the spacing between paragraphs:
 ```
@@ -300,6 +301,8 @@ To additionally set the spacing between paragraphs:
   spacing: 2em,
 )
 ```
+
+Default of spacing: 1.2em
 
 #### underline
 
