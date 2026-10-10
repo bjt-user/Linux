@@ -282,6 +282,25 @@ This is FreeMono.
 )
 ```
 
+#### line spacing
+
+https://typst.app/docs/reference/model/par/
+
+Line spacing inside a paragraph:
+```
+#set par(
+  leading: 1em,
+)
+```
+
+To additionally set the spacing between paragraphs:
+```
+#set par(
+  leading: 1em,
+  spacing: 2em,
+)
+```
+
 #### underline
 
 https://typst.app/docs/reference/text/underline/
