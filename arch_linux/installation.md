@@ -461,24 +461,33 @@ pacman -S grub
 pacman -S efibootmgr dosfstools os-prober mtools
 ```
 
+Is `dosfstools` really needed on an EFI system?\
+I will not install it this time.
+
 #### create EFI dir
 
 ```
-mkdir /boot/EFI
+mkdir -v /boot/EFI
 ```
 ```
 mount /dev/sda1 /boot/EFI
+```
+or
+```
+mount /dev/nvme0n1p1 /boot/EFI
 ```
 
 #### installing grub
 
 When using `efi` you need to install the packages `efibootmgr` and `grub`.
 
-Depending on where you mounted your efi/boot partition you need to specify the `--efi-directory`.\
+Depending on where you mounted your efi/boot partition you need to specify \
+the `--efi-directory`.\
 Check with `mount` where you mounted it.\
 In this example I had mounted `/dev/sda1` on `/boot`:
 ```
-grub-install --target=x86_64-efi --bootloader-id=grub_uefi --efi-directory=boot --recheck
+grub-install --target=x86_64-efi --bootloader-id=grub_uefi \
+--efi-directory=boot --recheck
 ```
 Then create the config:
 ```
@@ -1078,3 +1087,11 @@ Or you have to use an EFI partition, but that is more complicated to setup.
 
 Another problem could be that "secure boot" is enabled!\
 That has to be disabled to boot into a USB stick.
+
+#### TODO: doesn't look like an EFI partition
+
+When `grub-install` fails with this error:
+```
+grub-install: error: boot doesn't look like an EFI partition.
+```
+What can you do?
