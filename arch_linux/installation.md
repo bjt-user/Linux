@@ -1,3 +1,5 @@
+#### obtain iso
+
 https://archlinux.org/download/
 
 Took the mirror from "Uni Bayreuth".\
@@ -30,7 +32,6 @@ gpg --keyserver-options auto-key-retrieve --verify archlinux-version-x86_64.iso.
 (the `.sig` file needs to have the same file name as the `.iso` file but then end with `.sig`) \
 => it says `good signature` but also a warning that it is not a trusted signature, whatever, it seeems to be ok
 
----
 #### burn iso to usb stick
 
 Then the plan is to use `dd` to flash the USB-stick.
@@ -70,9 +71,7 @@ It looks better.
 Mounting the device first and unmounting it later might ensure data integrity.\
 [mount.md](mount.md)
 
----
-
-#### installation
+#### booting into usb stick
 
 After booting into the flashed USB I get the option to choose between different installation types.\
 I chose the first option "Arch Installation..."\
@@ -85,11 +84,16 @@ BIOS mode might also be called CSM (compatibility support module)
 
 https://wiki.archlinux.org/title/Installation_guide#Verify_the_boot_mode
 
-#### keyboard layout
-First step will be to get rid of US keyboard layout.\
-`-` is at `ß`.\
-`y` is at `z`
+#### increase the font size during installation
 
+Double the font size during installation:
+```
+setfont -d
+```
+
+#### keyboard layout
+
+If you want to change the keyboard layout:
 ```
 loadkeys de-latin1
 ```
@@ -993,7 +997,6 @@ Firmware: BIOS
 
 => And that means you can only use MBR!
 
----
 ## troubleshooting
 
 #### keyboard layout doesn't persist
