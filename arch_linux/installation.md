@@ -425,6 +425,7 @@ and put in these lines:
 where myhostname is "arch-cli-machine".
 
 #### set root password
+
 ```
 passwd
 ```
@@ -486,8 +487,7 @@ When using `efi` you need to install the packages `efibootmgr` and `grub`.
 
 Depending on where you mounted your efi/boot partition you need to specify \
 the `--efi-directory`.\
-Check with `mount` where you mounted it.\
-In this example I had mounted `/dev/sda1` on `/boot`:
+Check with `mount` where you mounted it.
 ```
 grub-install --target=x86_64-efi --bootloader-id=grub_uefi \
 --efi-directory=/boot/EFI --recheck
