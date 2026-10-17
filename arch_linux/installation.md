@@ -692,7 +692,6 @@ passwd
 ```
 to set a pw for root (**mandatory - otherwise you cant login anymore**)
 
----
 creating a user is **optional**:
 ``` 
 useradd -m bf -s /bin/bash
@@ -712,7 +711,6 @@ and above the line that starts with root I enter
 ```
 bf ALL=(ALL:ALL) ALL
 ```
----
 
 ```
 pacman -S grub networkmanager network-manager-applet dialog dosfstools os-prober mtools linux-headers base-devel wpa_supplicant wireless_tools iwd man
@@ -771,7 +769,6 @@ Or maybe install `iwd` before then you can do it like described in the beginning
 
 **This will only work if CSM is enabled in UEFI!**
 
----
 #### qemu installation
 
 create disk:
