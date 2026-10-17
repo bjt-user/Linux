@@ -20,3 +20,14 @@ efibootmgr -b 0 -B
 ```
 It was a boot entry with the descripion "Windows Boot Manager" even though \
 Windows was not installed anymore on this system...
+
+#### remove boot order
+
+```
+efibootmgr -O
+```
+
+After that it will show:
+```
+No BootOrder is set; firmware will attempt recovery
+```
