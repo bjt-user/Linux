@@ -176,10 +176,12 @@ I get into a `less`ed output and scroll down with `j`.\
 ```
 timedatectl set-timezone Europe/Berlin
 ```
----
+
 #### partitioning the disk
 
-When recognized by the live system, disks are assigned to a block device such as /dev/sda, /dev/nvme0n1 or /dev/mmcblk0. To identify these devices, use `lsblk` or `fdisk`.
+When recognized by the live system, disks are assigned to a block device \
+such as `/dev/sda`, `/dev/nvme0n1` or `/dev/mmcblk0`.\
+To identify these devices, use `lsblk` or `fdisk`.
 ```
 fdisk -l
 ```
