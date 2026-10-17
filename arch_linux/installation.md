@@ -80,11 +80,21 @@ I chose the first option "Arch Installation..."\
 some commands are being ran.\
 Then I am in a command prompt called `root@archiso`.
 
+#### detect firmware mode (legacy BIOS or UEFI)
+
 **Important**: Before starting the installation figure out what mode your firmware is in.\
 UEFI or legacy BIOS?\
 BIOS mode might also be called CSM (compatibility support module)
 
 https://wiki.archlinux.org/title/Installation_guide#Verify_the_boot_mode
+
+> To verify the boot mode check the UEFI bitness:
+```
+cat /sys/firmware/efi/fw_platform_size
+```
+If it prints "64" you are in UEFI 64 bit.\
+If it prints "32" you are in UEFI 32 bit.\
+If it says "no such file" you are in legacy BIOS.
 
 #### increase the font size during installation
 
