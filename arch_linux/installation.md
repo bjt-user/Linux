@@ -487,7 +487,7 @@ Check with `mount` where you mounted it.\
 In this example I had mounted `/dev/sda1` on `/boot`:
 ```
 grub-install --target=x86_64-efi --bootloader-id=grub_uefi \
---efi-directory=boot --recheck
+--efi-directory=/boot/EFI --recheck
 ```
 Then create the config:
 ```
@@ -526,20 +526,33 @@ Maybe this laptop does not support `UEFI`?!
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+#### enable a network daemon
+
+Either `NetworkManager` or `systemd-networkd`.
+
 ```
 pacman -S networkmanager
 ```
 ```
 systemctl enable NetworkManager
 ```
-#### reboot
-Exit out of the `chroot`
+
+#### Exit out of the chroot
+
 ```
 exit
 umount -l /mnt
-shutdown -r now
 ```
-But before that disconnect the USB stick.
+
+#### reboot
+
+Check if `systemd-networkd` is enabled before rebooting.
+
+Pull out the USB stick.
+
+```
+reboot
+```
 
 ## FAIL
 
@@ -1088,10 +1101,15 @@ Or you have to use an EFI partition, but that is more complicated to setup.
 Another problem could be that "secure boot" is enabled!\
 That has to be disabled to boot into a USB stick.
 
-#### TODO: doesn't look like an EFI partition
+#### doesn't look like an EFI partition
 
 When `grub-install` fails with this error:
 ```
 grub-install: error: boot doesn't look like an EFI partition.
 ```
-What can you do?
+You might have selected the wrong efi directory.
+
+```
+grub-install --target=x86_64-efi --bootloader-id=grub_uefi \
+--efi-directory=/boot/EFI --recheck
+```
