@@ -1146,3 +1146,12 @@ such as wpa_supplicant or iwd.
 So `systemd-networkd` needs `iwd` to setup a wireless connection.
 
 Try again and put `iwd` in the `pacstrap` command.
+
+#### TODO: not booting into grub after reboot
+
+After the `reboot` the thinkpads boots into a BIOS screen with the title \
+"Boot Menu".
+
+"grub_uefi" is shown at the top.
+
+But how can you boot into grub?
