@@ -219,11 +219,19 @@ fdisk /dev/sda
 ```
 because I want to partition the hard drive and not the USB stick.
 
+This could also be:
+```
+fdisk /dev/nvme0n1
+```
+if you have an nvme device.
+
 Now I am in a new command prompt. (you can press `m` for help)
 
 Now it is time to choose a partition table.
 
-`MBR` partition table (also known as `DOS` or `MS-DOS` partition table)
+`MBR` partition table (also known as `DOS` or `MS-DOS` partition table) \
+would be `o`, but most modern computers have UEFI, so you probably need `g` \
+for GPT.
 
 Type
 ```
@@ -287,6 +295,10 @@ Now make the boot partition a FAT32 filesystem:
 ```
 mkfs.fat -F32 /dev/sda1
 ```
+or
+```
+mkfs.fat -F32 /dev/nvme0n1p1
+```
 
 Make the second partition
 ```
@@ -301,13 +313,18 @@ I hit `y` and then another prompt came with
 ```
 Creating journal...
 ```
-I didn't do anything for 1-2 minutes and then it seemed to have accepted a default answer.
+This can take a couple of seconds.
 
 #### mount the big partition
 
 ```
 mount /dev/sda2 /mnt
 ```
+or
+```
+mount /dev/nvme0n1p2 /mnt
+```
+
 #### base installation (2.2)
 ```
 pacstrap /mnt base linux linux-firmware vim
