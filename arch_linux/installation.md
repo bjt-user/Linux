@@ -1,3 +1,5 @@
+## installation
+
 #### obtain iso
 
 https://archlinux.org/download/
@@ -1040,4 +1042,5 @@ is not enabled in your UEFI.
 
 Or you have to use an EFI partition, but that is more complicated to setup.
 
----
+Another problem could be that "secure boot" is enabled!\
+That has to be disabled to boot into a USB stick.
