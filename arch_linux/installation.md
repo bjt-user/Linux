@@ -345,6 +345,8 @@ genfstab -U /mnt >> /mnt/etc/fstab
 ```
 (no output)
 
+#### enter the chroot
+
 ```
 arch-chroot /mnt
 ```
