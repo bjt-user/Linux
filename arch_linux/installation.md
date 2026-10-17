@@ -352,9 +352,12 @@ genfstab -U /mnt >> /mnt/etc/fstab
 #### enter the chroot
 
 ```
-arch-chroot /mnt
+arch-chroot -S /mnt
 ```
 And the prompt changes slightly.
+
+The current installation guide says to use the `-S` flag.\
+Which means "Perform chroot using systemd-run".
 
 #### configure locale 2
 
@@ -487,6 +490,11 @@ mount /dev/sda1 /boot/EFI
 or
 ```
 mount /dev/nvme0n1p1 /boot/EFI
+```
+
+Check the mounts by doing:
+```
+mount | sort
 ```
 
 #### grub-install
