@@ -898,7 +898,6 @@ ssh root@ipofvmhost -p 5555
 Then you can configure your VM in `.ssh/config`\
 and set the port in the ssh config so you dont have to remember the port!
 
----
 #### if you want to configure the locale
 
 ```
@@ -1160,3 +1159,6 @@ After the `reboot` the thinkpads boots into a BIOS screen with the title \
 "grub_uefi" is shown at the top.
 
 But how can you boot into grub?
+
+Maybe the problem is that I deleted the Windows boot option.\
+This was boot option 0000 on `efibootmgr`.
