@@ -343,13 +343,13 @@ genfstab -U /mnt >> /mnt/etc/fstab
 ```
 arch-chroot /mnt
 ```
-And the prompt changes slightly
+And the prompt changes slightly.
 
 #### configure locale 2
 
 Set time zone
 ```
-ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
+ln -sfv /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 ```
 To know how to enter the time zone you can do
 ```
@@ -362,6 +362,7 @@ ls /usr/share/zoneinfo/Europe
 to know the city
 
 #### set hardware clock
+
 ```
 hwclock --systohc
 ```
@@ -379,6 +380,11 @@ I uncommented this line:
 ```
 de_DE.UTF-8 UTF-8
 ```
+or for english:
+```
+en_US.UTF-8 UTF-8
+```
+
 Now run
 ```
 locale-gen
@@ -394,6 +400,7 @@ and insert the line
 KEYMAP=de-latin1
 ```
 #### create the hostname
+
 Create a file called `hostname` in `/etc`
 ```
 vim /etc/hostname
