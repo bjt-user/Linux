@@ -325,7 +325,7 @@ or
 mount /dev/nvme0n1p2 /mnt
 ```
 
-#### base installation (2.2)
+#### base installation (2.2) (pacstrap)
 ```
 pacstrap /mnt base linux linux-firmware vim iwd
 ```
@@ -334,6 +334,8 @@ Takes a couple of minutes.
 
 `iwd` is needed to setup wireless connections and it is gone after exiting \
 the chroot.
+
+Do you need to install `grub` here as well?
 
 https://wiki.archlinux.org/title/Installation_guide#Install_essential_packages
 
