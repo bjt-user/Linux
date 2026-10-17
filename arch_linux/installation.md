@@ -1117,7 +1117,7 @@ grub-install --target=x86_64-efi --bootloader-id=grub_uefi \
 --efi-directory=/boot/EFI --recheck
 ```
 
-#### TODO: no internet after reboot
+#### no internet after reboot
 
 A classic situation.
 
@@ -1127,3 +1127,14 @@ internet.
 
 Is there a way to solve this?\
 You should have installed `iwd`.
+
+I think this means game over at this point.
+
+> systemd is part of the default Arch installation and contains all needed \
+files to operate a wired network.\
+Wireless adapters, covered later in this article, can be set up by services, \
+such as wpa_supplicant or iwd. 
+
+So `systemd-networkd` needs `iwd` to setup a wireless connection.
+
+Try again and put `iwd` in the `pacstrap` command.
