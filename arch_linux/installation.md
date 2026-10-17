@@ -327,10 +327,13 @@ mount /dev/nvme0n1p2 /mnt
 
 #### base installation (2.2)
 ```
-pacstrap /mnt base linux linux-firmware vim
+pacstrap /mnt base linux linux-firmware vim iwd
 ```
 This seems to install the `Arch Linux` base package.\
 Takes a couple of minutes.
+
+`iwd` is needed to setup wireless connections and it is gone after exiting \
+the chroot.
 
 https://wiki.archlinux.org/title/Installation_guide#Install_essential_packages
 
@@ -1122,4 +1125,5 @@ After the reboot you have no internet.\
 And you cannot install things like `nslookup` because you have no \
 internet.
 
-Is there a way to solve this?
+Is there a way to solve this?\
+You should have installed `iwd`.
