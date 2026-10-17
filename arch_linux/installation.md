@@ -1113,3 +1113,13 @@ You might have selected the wrong efi directory.
 grub-install --target=x86_64-efi --bootloader-id=grub_uefi \
 --efi-directory=/boot/EFI --recheck
 ```
+
+#### TODO: no internet after reboot
+
+A classic situation.
+
+After the reboot you have no internet.\
+And you cannot install things like `nslookup` because you have no \
+internet.
+
+Is there a way to solve this?
