@@ -337,6 +337,10 @@ the chroot.
 
 Do you need to install `grub` here as well?
 
+Maybe also `bind` for `nslookup`?
+
+What about `mtools` and `efibootmgr`?
+
 https://wiki.archlinux.org/title/Installation_guide#Install_essential_packages
 
 #### generate file system table
@@ -485,7 +489,7 @@ or
 mount /dev/nvme0n1p1 /boot/EFI
 ```
 
-#### installing grub
+#### grub-install
 
 When using `efi` you need to install the packages `efibootmgr` and `grub`.
 
