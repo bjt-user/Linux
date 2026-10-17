@@ -1133,7 +1133,7 @@ I think this means game over at this point.
 > systemd is part of the default Arch installation and contains all needed \
 files to operate a wired network.\
 Wireless adapters, covered later in this article, can be set up by services, \
-such as wpa_supplicant or iwd. 
+such as wpa_supplicant or iwd.
 
 So `systemd-networkd` needs `iwd` to setup a wireless connection.
 
