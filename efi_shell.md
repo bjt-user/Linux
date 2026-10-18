@@ -17,14 +17,14 @@ TODO: make USB stick with EFI shell.
 
 ## usage
 
-#### -b
+### -b
 
 https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface#Important_UEFI_Shell_commands
 
 > UEFI Shell commands usually support -b option which makes output pause \
 after each page.
 
-#### help
+### help
 
 Show all available commands:
 ```
@@ -36,18 +36,28 @@ Show help for a specific command:
 help bcfg -b
 ```
 
+### bcfg
+
+> Manages the boot and driver options that are stored in NVRAM.
+
 #### dump a list of current boot entries
 
 ```
 Shell> bcfg boot dump -v
 ```
 
-#### map
+#### delete a boot option
+
+```
+bcfg boot rm 01 -b
+```
+
+### map
 
 `map` displays a list of device mappings i.e. the names of available \
 file systems (FS0) and storage devices (blk0).
 
-#### running file system commands
+### running file system commands
 
 > Before running file system commands such as cd or ls, \
 you need to change the shell to the appropriate file system by typing its name:
@@ -57,7 +67,7 @@ Shell> FS0:
 FS0:\> cd EFI/
 ```
 
-#### executing a .efi image
+### executing a .efi image
 
 You can cd into the dir of the image or use absolute/relative paths.\
 You need backslashes to separate dirs.
