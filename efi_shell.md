@@ -8,6 +8,13 @@ https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface#UEFI_Shel
 
 The Arch Linux install medium has an option called "EFI shell".
 
+Looks like you could download EFI images here:\
+https://github.com/acidanthera/OpenCorePkg/releases
+
+And then flash those to a USB stick.
+
+TODO: make USB stick with EFI shell.
+
 ## usage
 
 #### -b
@@ -16,6 +23,18 @@ https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface#Important
 
 > UEFI Shell commands usually support -b option which makes output pause \
 after each page.
+
+#### help
+
+Show all available commands:
+```
+help -b
+```
+
+Show help for a specific command:
+```
+help bcfg -b
+```
 
 #### dump a list of current boot entries
 
