@@ -56,3 +56,11 @@ you need to change the shell to the appropriate file system by typing its name:
 Shell> FS0:
 FS0:\> cd EFI/
 ```
+
+#### executing a .efi image
+
+You can cd into the dir of the image or use absolute/relative paths.\
+You need backslashes to separate dirs.
+```
+Shell> grueb_uefi\grubx64.efi
+```
