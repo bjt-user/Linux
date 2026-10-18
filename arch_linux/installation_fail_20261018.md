@@ -192,7 +192,8 @@ Remove the USB stick!
 exit
 ```
 
-TODO: Set root password again!!!
+TODO: Set root password again!!!\
+Maybe read `/etc/shadow` and check if root has a password.
 
 ```
 reboot
