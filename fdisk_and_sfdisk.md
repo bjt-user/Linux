@@ -1,4 +1,4 @@
-#### scripting fdisk
+## scripting fdisk
 
 You can either use the tool `sfdisk` or pipe into `fdisk`.
 
