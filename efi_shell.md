@@ -23,6 +23,11 @@ after each page.
 Shell> bcfg boot dump -v
 ```
 
+#### map
+
+`map` displays a list of device mappings i.e. the names of available \
+file systems (FS0) and storage devices (blk0).
+
 #### running file system commands
 
 > Before running file system commands such as cd or ls, \
