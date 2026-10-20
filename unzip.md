@@ -10,9 +10,14 @@ unzip zippedstuff.zip -d myfolder
 unzip -p myfile.zip
 ```
 
-#### wildcards
+#### extract multiple files with wildcards
 
 For some reason wildcards need to be escaped with a backslash:
 ```
 unzip -p \*.zip
+```
+
+Or use double quotes:
+```
+unzip "*foobar*.zip"
 ```
