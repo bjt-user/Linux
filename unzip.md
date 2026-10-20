@@ -21,3 +21,15 @@ Or use double quotes:
 ```
 unzip "*foobar*.zip"
 ```
+
+#### always overwrite files
+
+May be useful in scripts.
+
+`-o`
+
+#### never overwrite files
+
+May be useful in scripts.
+
+`-n`
