@@ -13,8 +13,10 @@ function is_package_installed() {
 }
 
 relevant_packages+=(base)
+relevant_packages+=(bind)
 relevant_packages+=(efibootmgr)
 relevant_packages+=(grub)
+relevant_packages+=(iwd)
 relevant_packages+=(linux)
 relevant_packages+=(linux-firmware)
 relevant_packages+=(vim)
