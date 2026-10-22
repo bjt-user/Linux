@@ -33,3 +33,8 @@ If your wifi interface name is `wlan0`:
 ```
 station wlan0 connect <SSID>
 ```
+
+Better is
+```
+iwctl --passphrase <PASSPHRASE> station wlan0 connect <SSID>
+```
