@@ -224,3 +224,20 @@ I hit ESC.
 #### FAIL
 
 I keep booting into the Thinkpads "Boot Menu".
+
+#### RESCUE?
+
+Can it be rescued by using the arch-installation medium, mounting the \
+file systems again and chrooting in?
+
+I will try to do the `grub-install` again.\
+Maybe the problem was that I remove boot options that Thinkpad treats \
+as defaults.
+
+And THAT WORKED!
+
+NEVER REMOVE BOOT ENTRIES THAT THE FIRMWARE HAS SET BY DEFAULT!
+
+#### network
+
+I can't resolve hostnames and I do not have an IPv4 address.
