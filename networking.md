@@ -47,3 +47,10 @@ curl: (6) Could not resolve host: www.google.com
 #### http response status codes
 
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+#### test internet connectivity without dns
+
+To test internet connectivity without using dns:
+```
+timeout 2 telnet 8.8.8.8 53
+```
