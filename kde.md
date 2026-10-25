@@ -29,6 +29,16 @@ And now you should be able to login.
 
 super key + pgup => maximize window
 
+## uninstalling plasma
+
+What happens when you uninstall plasma while you are in plasma?
+
+```
+sudo pacman -Rnsc plasma-meta
+```
+
+Nothing I could just reinstall the package and reboot.
+
 ## TODO: plasma audio
 
 `plasma` seems to use `pipewire` by default and when you try to install \
