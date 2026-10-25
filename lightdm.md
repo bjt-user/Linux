@@ -41,3 +41,15 @@ then:\
 <kbd>alt</kbd> + <kbd>F3</kbd>
 
 This does not always work though.
+
+#### TODO: failed to start session
+
+And ctrl + alt + f3 did not work...
+
+I used an Arch installation medium, mounted the root file system again.\
+Chrooted into `/mnt` and uninstalled `lightdm`.\
+Then I was able to login via the console again.
+
+No idea what the issue here was.
+
+`journalctl -u lightdm` just said "error writing to session".
