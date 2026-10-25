@@ -27,7 +27,8 @@ aplay example.wav
 ```
 With `-f` there are different formats available, but you would need to be an audio expert to understand what these mean.
 
-***
+#### speaker-test
+
 speaker-test is another useful binary from `alsa-utils`:
 ```
 speaker-test -l 1
@@ -199,7 +200,6 @@ Reducing the resolution of a video:
 ```
 ffmpeg -i <input> -vf scale=480x360,setdar=4:3 <output>
 ```
----
 
 #### play sounds on the command line
 
@@ -213,8 +213,6 @@ or directly with pulseaudio:
 ```
 paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
 ```
-
----
 
 #### test microphone
 
