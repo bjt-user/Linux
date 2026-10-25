@@ -24,3 +24,7 @@ sudo systemctl enable --now sddm
 ```
 
 And now you should be able to login.
+
+## plasma shortcuts
+
+super key + pgup => maximize window
