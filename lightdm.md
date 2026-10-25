@@ -19,6 +19,9 @@ sudo pacman -S lightdm-gtk-greeter
 sudo systemctl enable --now lightdm
 sudo reboot
 ```
+Warning: This will not always work.
+
+You can get a "Failed to start session" message when trying to log in.
 
 ## usage
 
@@ -28,8 +31,6 @@ You might need to select `i3` in the upper right corner instead of `XSession`.
 
 Then this will become the default.
 
-***
-
 ## troubleshooting
 
 #### switch back to linux terminal
@@ -38,3 +39,5 @@ If you `lightdm` is started up, but you forgot to install stuff, you can go back
 <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F1</kbd>\
 then:\
 <kbd>alt</kbd> + <kbd>F3</kbd>
+
+This does not always work though.
