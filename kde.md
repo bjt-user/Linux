@@ -44,3 +44,17 @@ Nothing I could just reinstall the package and reboot.
 `plasma` seems to use `pipewire` by default and when you try to install \
 `pulseaudio` it will fail because "removing pipewire-pulse breaks \
 dependency 'pipewire-pulse' required by pulse-native-provider".
+
+```
+sudo pacman -Rnsc plasma-meta
+sudo pacman -Rnsc pipewire
+```
+
+```
+sudo pacman -S pulseaudio
+sudo pacman -S plasma-meta
+sudo reboot
+```
+=> still no sound cards detected
+
+I install `gnome`, and gnome also does not have any sound...
