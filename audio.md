@@ -8,6 +8,9 @@ https://en.wikipedia.org/wiki/Pulse-code_modulation
 #### aplay
 
 `aplay` is part of the package `alsa-utils` on Fedora.
+
+#### show audio devices
+
 ```
 aplay -l
 ```
