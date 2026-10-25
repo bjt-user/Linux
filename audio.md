@@ -1,3 +1,11 @@
+## hardware
+
+#### detect audio hardware
+
+```
+lspci -v | grep -i 'audio'
+```
+
 ## alsa
 
 ALSA is part of the kernel.
@@ -373,6 +381,12 @@ sudo apt reinstall pulseaudio
 reboot
 ```
 And sound was working again.
+
+#### TODO: no soundcard found
+
+`aplay -l` did not detect a soundcard.\
+But the speakers are definatelly working because I can hear them in \
+thinkpad BIOS.
 
 #### TODO: output only from one side of the headphones
 
