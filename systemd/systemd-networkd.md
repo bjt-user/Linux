@@ -4,6 +4,10 @@ https://wiki.archlinux.org/title/Systemd-networkd
 
 ## configuration
 
+#### configuration path and extension
+
+`/etc/systemd/network` and the file should end with `.network`.
+
 #### match section
 
 Use `ip link show` to get the MAC address of the network adapter:

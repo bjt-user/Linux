@@ -1,3 +1,11 @@
+## hardware
+
+#### detect audio hardware
+
+```
+lspci -v | grep -i 'audio'
+```
+
 ## alsa
 
 ALSA is part of the kernel.
@@ -8,6 +16,9 @@ https://en.wikipedia.org/wiki/Pulse-code_modulation
 #### aplay
 
 `aplay` is part of the package `alsa-utils` on Fedora.
+
+#### show audio devices
+
 ```
 aplay -l
 ```
@@ -27,7 +38,8 @@ aplay example.wav
 ```
 With `-f` there are different formats available, but you would need to be an audio expert to understand what these mean.
 
-***
+#### speaker-test
+
 speaker-test is another useful binary from `alsa-utils`:
 ```
 speaker-test -l 1
@@ -199,7 +211,6 @@ Reducing the resolution of a video:
 ```
 ffmpeg -i <input> -vf scale=480x360,setdar=4:3 <output>
 ```
----
 
 #### play sounds on the command line
 
@@ -213,8 +224,6 @@ or directly with pulseaudio:
 ```
 paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
 ```
-
----
 
 #### test microphone
 
@@ -372,6 +381,12 @@ sudo apt reinstall pulseaudio
 reboot
 ```
 And sound was working again.
+
+#### TODO: no soundcard found
+
+`aplay -l` did not detect a soundcard.\
+But the speakers are definatelly working because I can hear them in \
+thinkpad BIOS.
 
 #### TODO: output only from one side of the headphones
 
