@@ -1,3 +1,5 @@
+## general info
+
 #### documentation
 
 https://graphviz.org
@@ -49,6 +51,14 @@ dot -Tsvg firsttry.gv > output.svg
 ```
 
 ## syntax
+
+#### single node with a label
+
+```
+digraph {
+        disk [label="Disk"];
+}
+```
 
 ## digraph
 
