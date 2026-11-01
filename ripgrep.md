@@ -59,6 +59,15 @@ Search for the exact string instead of using regex:
 rg -F "call_func()"
 ```
 
+#### search for regex
+
+Ripgrep uses Rust regex by default.
+
+To search for "boot" followed by "single" somewhere on the same line:
+```
+rg -i "boot.*single"
+```
+
 #### sorted output
 
 `--sort=path`
