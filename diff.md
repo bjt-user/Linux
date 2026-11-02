@@ -93,6 +93,13 @@ diff --from-file foo1.txt foo2.txt foo3.txt
 But the output is not very user friendly as it does not show the \
 file names.
 
+#### comparing command output
+
+Compare the output of two commands:
+```
+diff <(grep -i "pretty" /etc/os-release ) <(echo "PRETTY_NAME=\"Arch Linux\"")
+```
+
 ## comparing directories
 
 Usually you want to compare recursively with `-r` to compare all subdirectories as well.
