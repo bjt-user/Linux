@@ -24,3 +24,6 @@ the system.
 ```
 bindsym $mod+F8 exec --no-startup-id sleep 3 && systemctl suspend
 ```
+
+BUT you better use a script so you can also disable notifications.\
+These might also wake up the system or reveal private information.
